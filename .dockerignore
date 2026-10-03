@@ -1,0 +1,13 @@
+.git
+.venv
+**/__pycache__
+.mypy_cache
+.ruff_cache
+.pytest_cache
+.env
+data/resumes
+data/taxonomy/raw
+data/.checkpoints
+reports
+uploads
+sdks/js/node_modules
