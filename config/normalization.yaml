@@ -1,0 +1,13 @@
+# Normalization cascade thresholds (plan §6.2). Tuned in Phase 3.11.
+fuzzy:
+  min_score: 92          # rapidfuzz token_sort_ratio
+  require_unique_top: true
+embedding:
+  min_cosine: 0.82
+  min_margin: 0.05
+  top_k: 5
+llm:
+  min_confidence: 0.7
+emerging:
+  review_ready_occurrences: 3
+  max_example_contexts: 5

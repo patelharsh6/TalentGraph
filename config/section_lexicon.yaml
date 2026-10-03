@@ -1,0 +1,9 @@
+# Section header variants (plan §6.1 step 3). Seed list; expand to 150+ variants in Phase 2.7.
+contact: ["contact", "contact information", "personal details", "personal information"]
+summary: ["summary", "professional summary", "profile", "about me", "objective", "career objective"]
+experience: ["experience", "work experience", "professional experience", "employment history", "work history", "career history"]
+education: ["education", "academic background", "qualifications", "academic qualifications"]
+skills: ["skills", "technical skills", "core competencies", "key skills", "technologies", "tech stack"]
+certifications: ["certifications", "certificates", "licenses", "licenses & certifications"]
+projects: ["projects", "personal projects", "key projects", "selected projects"]
+publications: ["publications", "papers", "research", "selected publications"]

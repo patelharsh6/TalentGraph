@@ -1,0 +1,18 @@
+# Proficiency estimation weights (plan §6.2). Tuned in Phase 3.10.
+years_to_base_level:   # upper bound (years, exclusive) -> base level
+  - [2, 2]
+  - [5, 3]
+  - [8, 4]
+  - [.inf, 5]
+recency_penalty:
+  older_than_years: 5
+  delta: -1
+qualifiers:
+  raise: ["expert in", "led", "architected", "deep expertise", "mentored"]
+  lower: ["familiar with", "exposure to", "basic", "beginner", "learning"]
+  delta: 1
+breadth:
+  min_mentions: 3
+  delta: 1
+certification_delta: 1
+skills_section_only_cap: 2

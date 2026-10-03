@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy
+      - run: uv run pytest --cov
+        env:
+          LLM_MODE: fake
+
+  integration:
+    runs-on: ubuntu-latest
+    needs: checks
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - run: cp .env.example .env && echo "LLM_MODE=fake" >> .env
+      - run: docker compose up -d --build --wait
+      - run: uv sync --frozen
+      - run: uv run pytest -m integration
+        env:
+          LLM_MODE: fake
+          DATABASE_URL: postgresql+asyncpg://talentgraph:talentgraph@localhost:5432/talentgraph
+          REDIS_URL: redis://localhost:6379/0
+          CHROMA_HOST: localhost
+          CHROMA_PORT: "8001"
+      - if: always()
+        run: docker compose logs --no-color | tail -200
