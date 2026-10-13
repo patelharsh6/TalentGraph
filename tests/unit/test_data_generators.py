@@ -29,10 +29,12 @@ def test_candidate_profiles(taxonomy_slugs: set[str]) -> None:
     industries: Counter[str] = Counter()
     emerging = 0
     for f in files:
-        resume = ParsedResume.model_validate_json(f.read_text(encoding="utf-8"))
-        assert resume.personal.get("name") and resume.experience and resume.skills
-        industries[resume.meta["industry"]] += 1
-        for s in resume.skills:
+        raw = json.loads(f.read_text(encoding="utf-8"))
+        resume = ParsedResume.model_validate(raw)
+        assert resume.personal.name and resume.experience and resume.skills
+        industries[raw["meta"]["industry"]] += 1
+        # Gold-only fields (canonical slug, emerging) are not part of the ParsedResume contract.
+        for s in raw["skills"]:
             if s["emerging"]:
                 emerging += 1
                 assert s["canonical_slug"] is None, f"{f.name}: emerging skill has a slug"
@@ -66,8 +68,9 @@ def test_fixture_sample_covers_every_template() -> None:
     for gt_path in gts:
         gt = ParsedResume.model_validate_json(gt_path.read_text(encoding="utf-8"))
         stem = gt_path.name.removesuffix(".gt.json")
-        assert (FIXTURES_DIR / f"{stem}.{gt.meta['format']}").exists()
-        templates.add(gt.meta["template"])
+        extra = gt.meta.model_extra or {}
+        assert (FIXTURES_DIR / f"{stem}.{extra['format']}").exists()
+        templates.add(extra["template"])
     assert templates == TEMPLATES
 
 

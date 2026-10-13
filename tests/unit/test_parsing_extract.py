@@ -1,4 +1,4 @@
-"""Steps 2.2–2.6: type detection, limits and the PDF/DOCX/TXT extractors (exit criteria 2-A, 2-E)."""
+"""Steps 2.2–2.6: type detection, limits and the PDF/DOCX/TXT extractors (2-A, 2-E)."""
 
 import io
 
@@ -165,7 +165,9 @@ def test_table_template_reads_row_by_row() -> None:
     """Section titles in the left cell are followed by their own body, not by other titles."""
     sample = next(s for s in SAMPLES if s.template == "table_based")
     lines = [b.text for b in sample.layout().blocks]
-    exp_title = next(i for i, ln in enumerate(lines) if ln.endswith("Experience") or "History" in ln)
+    exp_title = next(
+        i for i, ln in enumerate(lines) if ln.endswith("Experience") or "History" in ln
+    )
     assert "|" in lines[exp_title + 1]  # "Title | Company", not another section title
 
 

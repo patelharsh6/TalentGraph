@@ -47,7 +47,5 @@ def _gold(path: Path) -> dict[str, Any]:
 
 
 SAMPLES = [
-    Sample(p)
-    for p in sorted(FIXTURE_DIR.iterdir())
-    if p.suffix in (".pdf", ".docx", ".txt")
+    Sample(p) for p in sorted(FIXTURE_DIR.iterdir()) if p.suffix in (".pdf", ".docx", ".txt")
 ]

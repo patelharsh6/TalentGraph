@@ -200,7 +200,9 @@ async def test_prompt_is_static_and_input_is_numbered(harness: _Agent) -> None:
 
 
 def test_aligner_tolerates_typography_but_not_fabrication() -> None:
-    aligner = EvidenceAligner("Senior  Engineer | Acme Corp\nJun 2018 – Oct. 2022\nLed  team")
+    aligner = EvidenceAligner(
+        "Senior  Engineer | Acme Corp\nJun 2018 – Oct. 2022\nLed the platform modernization team"
+    )
     assert aligner.score("senior engineer | acme corp") == 100
     assert aligner.score("Jun 2018 - Oct. 2022") == 100  # en dash vs hyphen
     assert aligner.score("Led the platfrom modernization team") >= 90  # a typo

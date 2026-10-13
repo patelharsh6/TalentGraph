@@ -25,6 +25,8 @@ COPY --chown=app:app src ./src
 COPY --chown=app:app migrations ./migrations
 COPY --chown=app:app alembic.ini ./
 COPY --chown=app:app config ./config
+# Taxonomy CSVs: the parser's rule-based skill candidates (Step 2.8) read them from TAXONOMY_DIR.
+COPY --chown=app:app data/taxonomy/skills.csv data/taxonomy/aliases.csv ./data/taxonomy/
 RUN mkdir -p /app/uploads && chown app:app /app/uploads
 USER app
 EXPOSE 8000
