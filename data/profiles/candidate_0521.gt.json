@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "John Estrada",
+    "email": "john.estrada.55@hotmail.com",
+    "phone": "+1-839-597-4185",
+    "location": {
+      "city": "East Saramouth",
+      "region": "WY",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/john-estrada",
+      "https://github.com/johnestrada"
+    ]
+  },
+  "summary": "Experienced Mid professional with 5+ years of expertise in marketing. Proven track record delivering scalable solutions using Google Analytics 4 (GA4), Email Marketing Campaigns, Search Engine Optimization (SEO).",
+  "experience": [
+    {
+      "company": "Herman-Williams",
+      "title": "Senior SEO Specialist",
+      "location": "North Erin, VA",
+      "start": "2021-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Growth Marketing, Salesforce Marketing Cloud.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Growth Marketing",
+        "Salesforce Marketing Cloud",
+        "Search Engine Optimization (SEO)",
+        "A/B Testing & CRO"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Wolffurt State University",
+      "degree": "PhD",
+      "field": "Marketing & Communications",
+      "start": "2017-09",
+      "end": "2021-05",
+      "grade": "3.93 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Google Analytics 4 (GA4)",
+      "canonical_slug": "google-analytics",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+    },
+    {
+      "raw": "Email Marketing Campaigns",
+      "canonical_slug": "email-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Email Marketing Campaigns across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Optimization (SEO)",
+      "canonical_slug": "search-engine-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Optimization (SEO) across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce Marketing Cloud",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+    },
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    },
+    {
+      "raw": "Copywriting",
+      "canonical_slug": "copywriting",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Copywriting across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Marketing (SEM)",
+      "canonical_slug": "search-engine-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Marketing (SEM) across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot across multiple enterprise roles."
+    },
+    {
+      "raw": "Content Strategy",
+      "canonical_slug": "content-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Content Strategy across multiple enterprise roles."
+    },
+    {
+      "raw": "Growth Marketing",
+      "canonical_slug": "growth-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-391945"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Google Analytics 4 (GA4).",
+      "technologies": [
+        "Google Analytics 4 (GA4)",
+        "Email Marketing Campaigns",
+        "Search Engine Optimization (SEO)"
+      ],
+      "url": "https://github.com/johnestrada/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "mid",
+    "total_experience_years": 5,
+    "is_emerging_profile": false,
+    "candidate_index": 521
+  }
+}

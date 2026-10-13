@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Adam Atkins",
+    "email": "adam.atkins.95@gmail.com",
+    "phone": "915-753-2341x59597",
+    "location": {
+      "city": "West Kevin",
+      "region": "AS",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/adam-atkins",
+      "https://github.com/adamatkins"
+    ]
+  },
+  "summary": "Experienced Senior professional with 6+ years of expertise in software. Proven track record delivering scalable solutions using React.js, PostgreSQL, AWS.",
+  "experience": [
+    {
+      "company": "Moore, Gilmore and Martin",
+      "title": "Senior Staff Software Architect",
+      "location": "New Reneechester, GA",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Python, AWS.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "AWS",
+        "Redis",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "company": "Tran, Harrison and Lucero",
+      "title": "Full Stack Engineer",
+      "location": "North Elizabeth, FL",
+      "start": "2020-07",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using AWS, PostgreSQL.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "AWS",
+        "PostgreSQL",
+        "Redis",
+        "Python"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Daviston State University",
+      "degree": "PhD",
+      "field": "Computer Science",
+      "start": "2016-09",
+      "end": "2020-05",
+      "grade": "3.69 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "React.js",
+      "canonical_slug": "react",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized React.js across multiple enterprise roles."
+    },
+    {
+      "raw": "PostgreSQL",
+      "canonical_slug": "postgresql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PostgreSQL across multiple enterprise roles."
+    },
+    {
+      "raw": "AWS",
+      "canonical_slug": "amazon-web-services",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized AWS across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "Docker",
+      "canonical_slug": "docker",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Docker across multiple enterprise roles."
+    },
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-160022"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging React.js.",
+      "technologies": [
+        "React.js",
+        "PostgreSQL",
+        "AWS"
+      ],
+      "url": "https://github.com/adamatkins/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "senior",
+    "total_experience_years": 6,
+    "is_emerging_profile": false,
+    "candidate_index": 352
+  }
+}

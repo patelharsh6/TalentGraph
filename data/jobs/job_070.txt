@@ -1,0 +1,34 @@
+JOB TITLE: DevOps / Site Reliability Engineer (Security & SRE)
+COMPANY: Warren Group
+LOCATION: West Brandontown, WI (Hybrid / Remote Available)
+SENIORITY LEVEL: Mid
+MINIMUM RELEVANT EXPERIENCE: 3+ Years
+
+--- ROLE OVERVIEW ---
+Warren Group is seeking an exceptional DevOps / Site Reliability Engineer (Security & SRE) to lead key initiatives within our Cloud organization.
+In this role, you will architect, build, and deploy mission-critical solutions that directly impact our customers and platform scale.
+
+--- KEY RESPONSIBILITIES ---
+• Design and maintain scalable, secure, and resilient systems.
+• Drive technical strategy and mentor team members in technical execution.
+• Collaborate cross-functionally with product managers and designers.
+• Deliver measurable impact on product performance and reliability.
+
+--- REQUIRED QUALIFICATIONS ---
+• Proven expertise in Linux (3+ years experience)
+• Proven expertise in Kubernetes (2+ years experience)
+• Proven expertise in Docker (2+ years experience)
+• Proven expertise in Terraform (2+ years experience)
+• Proven expertise in CI/CD (2+ years experience)
+• Proven expertise in AWS (2+ years experience)
+• Minimum of 3+ years of experience in cloud.
+• Bachelor's or Master's degree in relevant field, or equivalent practical experience.
+
+--- PREFERRED / NICE-TO-HAVE QUALIFICATIONS ---
+• Familiarity or hands-on experience with Prometheus.
+• Familiarity or hands-on experience with Grafana.
+
+--- WHAT WE OFFER ---
+• Competitive compensation package with equity options and performance bonuses.
+• Comprehensive health, dental, and vision insurance with 401(k) matching.
+• Flexible work environment and generous paid time off (PTO).

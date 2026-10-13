@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Loretta Gonzalez",
+    "email": "loretta.gonzalez.44@gmail.com",
+    "phone": "9292181331",
+    "location": {
+      "city": "Myersville",
+      "region": "ME",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/loretta-gonzalez",
+      "https://github.com/lorettagonzalez"
+    ]
+  },
+  "summary": "Experienced Junior professional with 1+ years of expertise in software. Proven track record delivering scalable solutions using Redis, Python, FastAPI.",
+  "experience": [
+    {
+      "company": "Webb-White",
+      "title": "Senior Backend Developer",
+      "location": "Port Melanie, KS",
+      "start": "2025-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 12,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using CI/CD Pipelines, JavaScript (ES6+).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "CI/CD Pipelines",
+        "JavaScript (ES6+)",
+        "Microservices",
+        "GraphQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Villarrealville State University",
+      "degree": "Bachelor of Arts",
+      "field": "Computer Science",
+      "start": "2021-09",
+      "end": "2025-05",
+      "grade": "3.58 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "FastAPI",
+      "canonical_slug": "fastapi",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized FastAPI across multiple enterprise roles."
+    },
+    {
+      "raw": "Docker",
+      "canonical_slug": "docker",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Docker across multiple enterprise roles."
+    },
+    {
+      "raw": "Microservices",
+      "canonical_slug": "microservices",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Microservices across multiple enterprise roles."
+    },
+    {
+      "raw": "CI/CD Pipelines",
+      "canonical_slug": "continuous-integration-and-continuous-delivery",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized CI/CD Pipelines across multiple enterprise roles."
+    },
+    {
+      "raw": "AWS",
+      "canonical_slug": "amazon-web-services",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized AWS across multiple enterprise roles."
+    },
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "GraphQL",
+      "canonical_slug": "graphql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized GraphQL across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-414070"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Redis.",
+      "technologies": [
+        "Redis",
+        "Python",
+        "FastAPI"
+      ],
+      "url": "https://github.com/lorettagonzalez/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "junior",
+    "total_experience_years": 1,
+    "is_emerging_profile": false,
+    "candidate_index": 275
+  }
+}

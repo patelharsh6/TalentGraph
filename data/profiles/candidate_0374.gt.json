@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Jonathon Sanchez",
+    "email": "jonathon.sanchez.12@gmail.com",
+    "phone": "702-619-2378",
+    "location": {
+      "city": "Jonesburgh",
+      "region": "OR",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/jonathon-sanchez",
+      "https://github.com/jonathonsanchez"
+    ]
+  },
+  "summary": "Experienced Principal professional with 15+ years of expertise in software. Proven track record delivering scalable solutions using FastAPI, PostgreSQL, Python.",
+  "experience": [
+    {
+      "company": "Wilson-Williams",
+      "title": "Senior Software Engineer",
+      "location": "East Kevin, WA",
+      "start": "2023-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using GraphQL, Microservices.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "GraphQL",
+        "Microservices",
+        "Python",
+        "React.js"
+      ]
+    },
+    {
+      "company": "Myers, Watson and Dixon",
+      "title": "Software Engineer",
+      "location": "North Aliciaview, OR",
+      "start": "2019-04",
+      "end": "2023-06",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Microservices, GraphQL.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Microservices",
+        "GraphQL",
+        "PostgreSQL",
+        "React.js"
+      ]
+    },
+    {
+      "company": "Smith, Beard and Taylor",
+      "title": "DevOps Engineer",
+      "location": "Port Timothy, IL",
+      "start": "2015-12",
+      "end": "2019-04",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using PostgreSQL, Microservices.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PostgreSQL",
+        "Microservices",
+        "Python",
+        "FastAPI"
+      ]
+    },
+    {
+      "company": "Beck Group",
+      "title": "Senior Backend Developer",
+      "location": "Lewisburgh, MS",
+      "start": "2011-11",
+      "end": "2015-12",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using AWS, GraphQL.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "AWS",
+        "GraphQL",
+        "PostgreSQL",
+        "Microservices"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "East Elizabethhaven State University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "start": "2007-09",
+      "end": "2011-05",
+      "grade": "3.85 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "FastAPI",
+      "canonical_slug": "fastapi",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized FastAPI across multiple enterprise roles."
+    },
+    {
+      "raw": "PostgreSQL",
+      "canonical_slug": "postgresql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PostgreSQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "GraphQL",
+      "canonical_slug": "graphql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized GraphQL across multiple enterprise roles."
+    },
+    {
+      "raw": "React.js",
+      "canonical_slug": "react",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized React.js across multiple enterprise roles."
+    },
+    {
+      "raw": "AWS",
+      "canonical_slug": "amazon-web-services",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized AWS across multiple enterprise roles."
+    },
+    {
+      "raw": "Microservices",
+      "canonical_slug": "microservices",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Microservices across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-626735"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging FastAPI.",
+      "technologies": [
+        "FastAPI",
+        "PostgreSQL",
+        "Python"
+      ],
+      "url": "https://github.com/jonathonsanchez/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "principal",
+    "total_experience_years": 15,
+    "is_emerging_profile": false,
+    "candidate_index": 374
+  }
+}

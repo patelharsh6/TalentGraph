@@ -1,0 +1,34 @@
+JOB TITLE: Senior Data Engineer (Data Warehousing)
+COMPANY: Bailey, Powell and Solis
+LOCATION: Elizabethstad, PA (Hybrid / Remote Available)
+SENIORITY LEVEL: Senior
+MINIMUM RELEVANT EXPERIENCE: 5+ Years
+
+--- ROLE OVERVIEW ---
+Bailey, Powell and Solis is seeking an exceptional Senior Data Engineer (Data Warehousing) to lead key initiatives within our Data organization.
+In this role, you will architect, build, and deploy mission-critical solutions that directly impact our customers and platform scale.
+
+--- KEY RESPONSIBILITIES ---
+• Design and maintain scalable, secure, and resilient systems.
+• Drive technical strategy and mentor team members in technical execution.
+• Collaborate cross-functionally with product managers and designers.
+• Deliver measurable impact on product performance and reliability.
+
+--- REQUIRED QUALIFICATIONS ---
+• Proven expertise in Python (3+ years experience)
+• Proven expertise in SQL (4+ years experience)
+• Proven expertise in Apache Spark (3+ years experience)
+• Proven expertise in Apache Airflow (2+ years experience)
+• Proven expertise in Data Engineering (3+ years experience)
+• Minimum of 5+ years of experience in data.
+• Bachelor's or Master's degree in relevant field, or equivalent practical experience.
+
+--- PREFERRED / NICE-TO-HAVE QUALIFICATIONS ---
+• Familiarity or hands-on experience with Snowflake.
+• Familiarity or hands-on experience with dbt.
+• Familiarity or hands-on experience with Apache Kafka.
+
+--- WHAT WE OFFER ---
+• Competitive compensation package with equity options and performance bonuses.
+• Comprehensive health, dental, and vision insurance with 401(k) matching.
+• Flexible work environment and generous paid time off (PTO).

@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Tina Robinson",
+    "email": "tina.robinson.46@gmail.com",
+    "phone": "8948318143",
+    "location": {
+      "city": "Garciaview",
+      "region": "NM",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/tina-robinson",
+      "https://github.com/tinarobinson"
+    ]
+  },
+  "summary": "Experienced Principal professional with 13+ years of expertise in design. Proven track record delivering scalable solutions using Design Systems, HTML5 / CSS3, Figma.",
+  "experience": [
+    {
+      "company": "Jackson and Sons",
+      "title": "Senior User Experience Researcher",
+      "location": "Danaport, VA",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using HTML5 / CSS3, UI/UX Design.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HTML5 / CSS3",
+        "UI/UX Design",
+        "Wireframing & Prototyping",
+        "Design Thinking"
+      ]
+    },
+    {
+      "company": "Davis PLC",
+      "title": "Senior Product Designer",
+      "location": "Stevensonbury, GA",
+      "start": "2020-06",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Design Systems, Wireframing & Prototyping.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Design Systems",
+        "Wireframing & Prototyping",
+        "Figma",
+        "Design Thinking"
+      ]
+    },
+    {
+      "company": "Maldonado-Jackson",
+      "title": "User Experience Researcher",
+      "location": "Rachelberg, AL",
+      "start": "2017-07",
+      "end": "2020-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Design Thinking, Design Systems.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Design Thinking",
+        "Design Systems",
+        "Wireframing & Prototyping",
+        "HTML5 / CSS3"
+      ]
+    },
+    {
+      "company": "Wells, Cook and Thompson",
+      "title": "UI/UX Designer",
+      "location": "Nicoleburgh, TX",
+      "start": "2013-04",
+      "end": "2017-07",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Design Systems, HTML5 / CSS3.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Design Systems",
+        "HTML5 / CSS3",
+        "Wireframing & Prototyping",
+        "UI/UX Design"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Michaelfort State University",
+      "degree": "Bachelor of Science",
+      "field": "Human-Computer Interaction / Graphic Design",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.87 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Design Systems",
+      "canonical_slug": "design-systems",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Design Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "HTML5 / CSS3",
+      "canonical_slug": "html5",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized HTML5 / CSS3 across multiple enterprise roles."
+    },
+    {
+      "raw": "Figma",
+      "canonical_slug": "figma",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Figma across multiple enterprise roles."
+    },
+    {
+      "raw": "Wireframing & Prototyping",
+      "canonical_slug": "wireframing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Wireframing & Prototyping across multiple enterprise roles."
+    },
+    {
+      "raw": "UI/UX Design",
+      "canonical_slug": "user-experience-design",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized UI/UX Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Design Thinking",
+      "canonical_slug": "design-thinking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Design Thinking across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Design Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-276919"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Design Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Design Systems.",
+      "technologies": [
+        "Design Systems",
+        "HTML5 / CSS3",
+        "Figma"
+      ],
+      "url": "https://github.com/tinarobinson/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "design",
+    "seniority": "principal",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 269
+  }
+}

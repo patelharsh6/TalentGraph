@@ -1,0 +1,34 @@
+JOB TITLE: Lead Frontend Web Engineer (Design Systems)
+COMPANY: Gibbs-Cook
+LOCATION: Lake Kevinshire, LA (Hybrid / Remote Available)
+SENIORITY LEVEL: Lead
+MINIMUM RELEVANT EXPERIENCE: 8+ Years
+
+--- ROLE OVERVIEW ---
+Gibbs-Cook is seeking an exceptional Lead Frontend Web Engineer (Design Systems) to lead key initiatives within our Engineering organization.
+In this role, you will architect, build, and deploy mission-critical solutions that directly impact our customers and platform scale.
+
+--- KEY RESPONSIBILITIES ---
+• Design and maintain scalable, secure, and resilient systems.
+• Drive technical strategy and mentor team members in technical execution.
+• Collaborate cross-functionally with product managers and designers.
+• Deliver measurable impact on product performance and reliability.
+
+--- REQUIRED QUALIFICATIONS ---
+• Proven expertise in JavaScript (3+ years experience)
+• Proven expertise in TypeScript (3+ years experience)
+• Proven expertise in React (3+ years experience)
+• Proven expertise in Next.js (2+ years experience)
+• Proven expertise in HTML5 (3+ years experience)
+• Proven expertise in CSS3 (3+ years experience)
+• Minimum of 8+ years of experience in engineering.
+• Bachelor's or Master's degree in relevant field, or equivalent practical experience.
+
+--- PREFERRED / NICE-TO-HAVE QUALIFICATIONS ---
+• Familiarity or hands-on experience with Tailwind CSS.
+• Familiarity or hands-on experience with Figma.
+
+--- WHAT WE OFFER ---
+• Competitive compensation package with equity options and performance bonuses.
+• Comprehensive health, dental, and vision insurance with 401(k) matching.
+• Flexible work environment and generous paid time off (PTO).

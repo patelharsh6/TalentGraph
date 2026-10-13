@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Timothy Dunn",
+    "email": "timothy.dunn.73@hotmail.com",
+    "phone": "(264)823-0412x027",
+    "location": {
+      "city": "West Christinafort",
+      "region": "IN",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/timothy-dunn",
+      "https://github.com/timothydunn"
+    ]
+  },
+  "summary": "Experienced Principal professional with 13+ years of expertise in marketing. Proven track record delivering scalable solutions using A/B Testing & CRO, Salesforce Marketing Cloud, Copywriting.",
+  "experience": [
+    {
+      "company": "Simpson, Brown and George",
+      "title": "Senior Demand Generation Strategist",
+      "location": "South Jenniferland, NE",
+      "start": "2023-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Google Analytics 4 (GA4), Email Marketing Campaigns.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Google Analytics 4 (GA4)",
+        "Email Marketing Campaigns",
+        "A/B Testing & CRO",
+        "Salesforce Marketing Cloud"
+      ]
+    },
+    {
+      "company": "Atkins-Johnson",
+      "title": "Demand Generation Strategist",
+      "location": "East David, LA",
+      "start": "2020-10",
+      "end": "2023-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Copywriting, HubSpot.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Copywriting",
+        "HubSpot",
+        "Email Marketing Campaigns",
+        "Search Engine Optimization (SEO)"
+      ]
+    },
+    {
+      "company": "Santos, Santana and Peterson",
+      "title": "Digital Marketing Lead",
+      "location": "Stephanieburgh, GU",
+      "start": "2017-11",
+      "end": "2020-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using A/B Testing & CRO, Search Engine Optimization (SEO).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "A/B Testing & CRO",
+        "Search Engine Optimization (SEO)",
+        "Copywriting",
+        "Growth Marketing"
+      ]
+    },
+    {
+      "company": "Welch, Smith and Haynes",
+      "title": "Digital Marketing Lead",
+      "location": "Antonioton, DE",
+      "start": "2013-08",
+      "end": "2017-11",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Search Engine Optimization (SEO), Google Analytics 4 (GA4).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Search Engine Optimization (SEO)",
+        "Google Analytics 4 (GA4)",
+        "Growth Marketing",
+        "Salesforce Marketing Cloud"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Michaelfurt State University",
+      "degree": "Bachelor of Science",
+      "field": "Marketing & Communications",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.67 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce Marketing Cloud",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+    },
+    {
+      "raw": "Copywriting",
+      "canonical_slug": "copywriting",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Copywriting across multiple enterprise roles."
+    },
+    {
+      "raw": "Email Marketing Campaigns",
+      "canonical_slug": "email-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Email Marketing Campaigns across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Optimization (SEO)",
+      "canonical_slug": "search-engine-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Optimization (SEO) across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot across multiple enterprise roles."
+    },
+    {
+      "raw": "Google Analytics 4 (GA4)",
+      "canonical_slug": "google-analytics",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+    },
+    {
+      "raw": "Growth Marketing",
+      "canonical_slug": "growth-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-969520"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging A/B Testing & CRO.",
+      "technologies": [
+        "A/B Testing & CRO",
+        "Salesforce Marketing Cloud",
+        "Copywriting"
+      ],
+      "url": "https://github.com/timothydunn/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "principal",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 444
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Kevin Warren",
+    "email": "kevin.warren.73@yahoo.com",
+    "phone": "453-552-1818x8355",
+    "location": {
+      "city": "East Jonathanburgh",
+      "region": "PA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/kevin-warren",
+      "https://github.com/kevinwarren"
+    ]
+  },
+  "summary": "Experienced Principal professional with 20+ years of expertise in data. Proven track record delivering scalable solutions using TensorFlow, Scikit-Learn, Snowflake.",
+  "experience": [
+    {
+      "company": "Wolf Ltd",
+      "title": "Senior Data Scientist",
+      "location": "East Stephaniefort, NH",
+      "start": "2021-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using TensorFlow, MLOps.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "TensorFlow",
+        "MLOps",
+        "Scikit-Learn",
+        "Snowflake"
+      ]
+    },
+    {
+      "company": "Wolf, Cole and Glass",
+      "title": "Data Engineer",
+      "location": "Michellemouth, FL",
+      "start": "2016-07",
+      "end": "2021-07",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using MLOps, TensorFlow.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "MLOps",
+        "TensorFlow",
+        "PyTorch",
+        "Apache Spark (PySpark)"
+      ]
+    },
+    {
+      "company": "Jones-Ramos",
+      "title": "Data Scientist",
+      "location": "Laurashire, AR",
+      "start": "2011-07",
+      "end": "2016-07",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using PyTorch, TensorFlow.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PyTorch",
+        "TensorFlow",
+        "Scikit-Learn",
+        "Apache Spark (PySpark)"
+      ]
+    },
+    {
+      "company": "Romero-Collins",
+      "title": "Data Engineer",
+      "location": "Johnsonstad, MP",
+      "start": "2006-03",
+      "end": "2011-07",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using MLOps, Snowflake.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "MLOps",
+        "Snowflake",
+        "PyTorch",
+        "Scikit-Learn"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Chaseland State University",
+      "degree": "PhD",
+      "field": "Data Science & Statistics",
+      "start": "2002-09",
+      "end": "2006-05",
+      "grade": "3.62 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "TensorFlow",
+      "canonical_slug": "tensorflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized TensorFlow across multiple enterprise roles."
+    },
+    {
+      "raw": "Scikit-Learn",
+      "canonical_slug": "scikit-learn",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Scikit-Learn across multiple enterprise roles."
+    },
+    {
+      "raw": "Snowflake",
+      "canonical_slug": "snowflake",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Snowflake across multiple enterprise roles."
+    },
+    {
+      "raw": "PyTorch",
+      "canonical_slug": "pytorch",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PyTorch across multiple enterprise roles."
+    },
+    {
+      "raw": "MLOps",
+      "canonical_slug": "machine-learning-operations",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized MLOps across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Spark (PySpark)",
+      "canonical_slug": "apache-spark",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Spark (PySpark) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-678043"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging TensorFlow.",
+      "technologies": [
+        "TensorFlow",
+        "Scikit-Learn",
+        "Snowflake"
+      ],
+      "url": "https://github.com/kevinwarren/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "principal",
+    "total_experience_years": 20,
+    "is_emerging_profile": false,
+    "candidate_index": 34
+  }
+}

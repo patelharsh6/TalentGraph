@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Ethan Fletcher",
+    "email": "ethan.fletcher.83@yahoo.com",
+    "phone": "001-532-511-1978x7180",
+    "location": {
+      "city": "Lake Erikafort",
+      "region": "IL",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/ethan-fletcher",
+      "https://github.com/ethanfletcher"
+    ]
+  },
+  "summary": "Experienced Principal professional with 13+ years of expertise in education. Proven track record delivering scalable solutions using Learning Management Systems (LMS), Instructional Design, Public Speaking & Lecturing.",
+  "experience": [
+    {
+      "company": "Sullivan LLC",
+      "title": "Senior Senior Academic Advisor",
+      "location": "North Nicole, PR",
+      "start": "2023-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Learning Management Systems (LMS), Curriculum Development.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Learning Management Systems (LMS)",
+        "Curriculum Development",
+        "Public Speaking & Lecturing",
+        "Active Mentoring"
+      ]
+    },
+    {
+      "company": "Cummings Inc",
+      "title": "EdTech Specialist",
+      "location": "Changmouth, MS",
+      "start": "2020-09",
+      "end": "2023-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Curriculum Development, Learning Management Systems (LMS).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Curriculum Development",
+        "Learning Management Systems (LMS)",
+        "Active Mentoring",
+        "Public Speaking & Lecturing"
+      ]
+    },
+    {
+      "company": "Murray PLC",
+      "title": "Instructional Designer",
+      "location": "Maxwellhaven, MH",
+      "start": "2017-07",
+      "end": "2020-09",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Curriculum Development, Public Speaking & Lecturing.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Curriculum Development",
+        "Public Speaking & Lecturing",
+        "Assessment Design",
+        "Active Mentoring"
+      ]
+    },
+    {
+      "company": "Smith and Sons",
+      "title": "Instructional Designer",
+      "location": "Port Anthony, AS",
+      "start": "2013-03",
+      "end": "2017-07",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Assessment Design, Public Speaking & Lecturing.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Assessment Design",
+        "Public Speaking & Lecturing",
+        "Active Mentoring",
+        "Learning Management Systems (LMS)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Danielchester State University",
+      "degree": "Bachelor of Science",
+      "field": "Education & Curriculum Design",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.61 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Learning Management Systems (LMS)",
+      "canonical_slug": "lms-platforms",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Learning Management Systems (LMS) across multiple enterprise roles."
+    },
+    {
+      "raw": "Instructional Design",
+      "canonical_slug": "instructional-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Instructional Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Public Speaking & Lecturing",
+      "canonical_slug": "public-speaking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Public Speaking & Lecturing across multiple enterprise roles."
+    },
+    {
+      "raw": "Curriculum Development",
+      "canonical_slug": "curriculum-development",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Curriculum Development across multiple enterprise roles."
+    },
+    {
+      "raw": "Active Mentoring",
+      "canonical_slug": "mentoring",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Active Mentoring across multiple enterprise roles."
+    },
+    {
+      "raw": "Educational Technology (EdTech)",
+      "canonical_slug": "edtech-solutions",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Educational Technology (EdTech) across multiple enterprise roles."
+    },
+    {
+      "raw": "Assessment Design",
+      "canonical_slug": "assessment-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Assessment Design across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Education Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-965553"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Education Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Learning Management Systems (LMS).",
+      "technologies": [
+        "Learning Management Systems (LMS)",
+        "Instructional Design",
+        "Public Speaking & Lecturing"
+      ],
+      "url": "https://github.com/ethanfletcher/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "education",
+    "seniority": "principal",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 414
+  }
+}

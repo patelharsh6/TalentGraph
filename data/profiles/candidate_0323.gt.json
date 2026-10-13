@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Erika Castro",
+    "email": "erika.castro.15@gmail.com",
+    "phone": "798.974.1132",
+    "location": {
+      "city": "Craneton",
+      "region": "WI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/erika-castro",
+      "https://github.com/erikacastro"
+    ]
+  },
+  "summary": "Experienced Lead professional with 9+ years of expertise in marketing. Proven track record delivering scalable solutions using A/B Testing & CRO, Salesforce Marketing Cloud, HubSpot.",
+  "experience": [
+    {
+      "company": "Price, Moyer and Mccarthy",
+      "title": "Senior Digital Marketing Lead",
+      "location": "West Valerie, OR",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using HubSpot, Search Engine Marketing (SEM).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HubSpot",
+        "Search Engine Marketing (SEM)",
+        "A/B Testing & CRO",
+        "Salesforce Marketing Cloud"
+      ]
+    },
+    {
+      "company": "Brown-Brown",
+      "title": "Senior SEO Specialist",
+      "location": "Joshuastad, NV",
+      "start": "2020-09",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Copywriting, Search Engine Marketing (SEM).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Copywriting",
+        "Search Engine Marketing (SEM)",
+        "A/B Testing & CRO",
+        "Google Analytics 4 (GA4)"
+      ]
+    },
+    {
+      "company": "Rodriguez-Taylor",
+      "title": "Senior SEO Specialist",
+      "location": "West Tiffanychester, GU",
+      "start": "2017-08",
+      "end": "2020-09",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Salesforce Marketing Cloud, Content Strategy.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Salesforce Marketing Cloud",
+        "Content Strategy",
+        "Search Engine Marketing (SEM)",
+        "A/B Testing & CRO"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Port Edward State University",
+      "degree": "Bachelor of Arts",
+      "field": "Marketing & Communications",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.59 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce Marketing Cloud",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot across multiple enterprise roles."
+    },
+    {
+      "raw": "Google Analytics 4 (GA4)",
+      "canonical_slug": "google-analytics",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+    },
+    {
+      "raw": "Copywriting",
+      "canonical_slug": "copywriting",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Copywriting across multiple enterprise roles."
+    },
+    {
+      "raw": "Content Strategy",
+      "canonical_slug": "content-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Content Strategy across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Marketing (SEM)",
+      "canonical_slug": "search-engine-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Marketing (SEM) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-598833"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging A/B Testing & CRO.",
+      "technologies": [
+        "A/B Testing & CRO",
+        "Salesforce Marketing Cloud",
+        "HubSpot"
+      ],
+      "url": "https://github.com/erikacastro/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "lead",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 323
+  }
+}

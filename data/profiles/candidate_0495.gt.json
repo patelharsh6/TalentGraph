@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Katherine Garcia",
+    "email": "katherine.garcia.52@gmail.com",
+    "phone": "4752384185",
+    "location": {
+      "city": "East Kimburgh",
+      "region": "MO",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/katherine-garcia",
+      "https://github.com/katherinegarcia"
+    ]
+  },
+  "summary": "Experienced Junior professional with 1+ years of expertise in software. Proven track record delivering scalable solutions using Kubernetes (K8s), CI/CD Pipelines, JavaScript (ES6+).",
+  "experience": [
+    {
+      "company": "Brown, Mueller and Beck",
+      "title": "Software Engineer",
+      "location": "New Maria, NJ",
+      "start": "2025-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 12,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using PostgreSQL, Python.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PostgreSQL",
+        "Python",
+        "JavaScript (ES6+)",
+        "Kubernetes (K8s)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Paulmouth State University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "start": "2021-09",
+      "end": "2025-05",
+      "grade": "3.72 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Kubernetes (K8s)",
+      "canonical_slug": "kubernetes",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Kubernetes (K8s) across multiple enterprise roles."
+    },
+    {
+      "raw": "CI/CD Pipelines",
+      "canonical_slug": "continuous-integration-and-continuous-delivery",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized CI/CD Pipelines across multiple enterprise roles."
+    },
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "Team Leadership",
+      "canonical_slug": "team-leadership",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Team Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Docker",
+      "canonical_slug": "docker",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Docker across multiple enterprise roles."
+    },
+    {
+      "raw": "PostgreSQL",
+      "canonical_slug": "postgresql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PostgreSQL across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-967962"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Kubernetes (K8s).",
+      "technologies": [
+        "Kubernetes (K8s)",
+        "CI/CD Pipelines",
+        "JavaScript (ES6+)"
+      ],
+      "url": "https://github.com/katherinegarcia/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "junior",
+    "total_experience_years": 1,
+    "is_emerging_profile": false,
+    "candidate_index": 495
+  }
+}

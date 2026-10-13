@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Michael Davenport",
+    "email": "michael.davenport.22@hotmail.com",
+    "phone": "(441)499-6264",
+    "location": {
+      "city": "New Sherry",
+      "region": "MA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/michael-davenport",
+      "https://github.com/michaeldavenport"
+    ]
+  },
+  "summary": "Experienced Principal professional with 13+ years of expertise in education. Proven track record delivering scalable solutions using Public Speaking & Lecturing, Educational Technology (EdTech), Instructional Design.",
+  "experience": [
+    {
+      "company": "Matthews, Cole and Shepherd",
+      "title": "Senior EdTech Specialist",
+      "location": "Jenniferstad, KY",
+      "start": "2023-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Instructional Design, Curriculum Development.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Instructional Design",
+        "Curriculum Development",
+        "Assessment Design",
+        "Learning Management Systems (LMS)"
+      ]
+    },
+    {
+      "company": "Garcia PLC",
+      "title": "Senior Academic Advisor",
+      "location": "Erinstad, NM",
+      "start": "2020-08",
+      "end": "2023-09",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Instructional Design, Assessment Design.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Instructional Design",
+        "Assessment Design",
+        "Active Mentoring",
+        "Educational Technology (EdTech)"
+      ]
+    },
+    {
+      "company": "Flores PLC",
+      "title": "Curriculum Developer",
+      "location": "North Megan, FL",
+      "start": "2017-09",
+      "end": "2020-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Public Speaking & Lecturing, Active Mentoring.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Public Speaking & Lecturing",
+        "Active Mentoring",
+        "Educational Technology (EdTech)",
+        "Instructional Design"
+      ]
+    },
+    {
+      "company": "Richard LLC",
+      "title": "EdTech Specialist",
+      "location": "Rivasshire, AK",
+      "start": "2013-09",
+      "end": "2017-09",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Assessment Design, Public Speaking & Lecturing.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Assessment Design",
+        "Public Speaking & Lecturing",
+        "Educational Technology (EdTech)",
+        "Curriculum Development"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "North Crystalbury State University",
+      "degree": "Bachelor of Arts",
+      "field": "Education & Curriculum Design",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.79 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Public Speaking & Lecturing",
+      "canonical_slug": "public-speaking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Public Speaking & Lecturing across multiple enterprise roles."
+    },
+    {
+      "raw": "Educational Technology (EdTech)",
+      "canonical_slug": "edtech-solutions",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Educational Technology (EdTech) across multiple enterprise roles."
+    },
+    {
+      "raw": "Instructional Design",
+      "canonical_slug": "instructional-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Instructional Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Curriculum Development",
+      "canonical_slug": "curriculum-development",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Curriculum Development across multiple enterprise roles."
+    },
+    {
+      "raw": "Assessment Design",
+      "canonical_slug": "assessment-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Assessment Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Active Mentoring",
+      "canonical_slug": "mentoring",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Active Mentoring across multiple enterprise roles."
+    },
+    {
+      "raw": "Learning Management Systems (LMS)",
+      "canonical_slug": "lms-platforms",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Learning Management Systems (LMS) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Education Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-994854"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Education Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Public Speaking & Lecturing.",
+      "technologies": [
+        "Public Speaking & Lecturing",
+        "Educational Technology (EdTech)",
+        "Instructional Design"
+      ],
+      "url": "https://github.com/michaeldavenport/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "education",
+    "seniority": "principal",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 469
+  }
+}

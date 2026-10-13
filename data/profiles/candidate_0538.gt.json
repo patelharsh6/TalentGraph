@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "William Wilkinson",
+    "email": "william.wilkinson.55@gmail.com",
+    "phone": "(240)243-2611",
+    "location": {
+      "city": "West Patrick",
+      "region": "NE",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/william-wilkinson",
+      "https://github.com/williamwilkinson"
+    ]
+  },
+  "summary": "Experienced Lead professional with 9+ years of expertise in operations. Proven track record delivering scalable solutions using Process Optimization, OKRs / KPIs Tracking, Cross-Functional Leadership.",
+  "experience": [
+    {
+      "company": "Watts and Sons",
+      "title": "Senior Business Operations Lead",
+      "location": "South Alexanderside, MO",
+      "start": "2023-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Operations Management, Cross-Functional Leadership.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Operations Management",
+        "Cross-Functional Leadership",
+        "Agile Scrum Methodology",
+        "Vendor Management & Procurement"
+      ]
+    },
+    {
+      "company": "Benson-Jackson",
+      "title": "Business Operations Lead",
+      "location": "Port Austin, PA",
+      "start": "2020-07",
+      "end": "2023-09",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Budgeting & Cost Reduction, Process Optimization.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Budgeting & Cost Reduction",
+        "Process Optimization",
+        "Operations Management",
+        "Vendor Management & Procurement"
+      ]
+    },
+    {
+      "company": "Chan-Young",
+      "title": "Operations Manager",
+      "location": "Griffithland, OK",
+      "start": "2017-05",
+      "end": "2020-07",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Agile Scrum Methodology, Jira & Confluence.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Agile Scrum Methodology",
+        "Jira & Confluence",
+        "Operations Management",
+        "Budgeting & Cost Reduction"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Jamesside State University",
+      "degree": "PhD",
+      "field": "Operations Research / Management",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.65 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Process Optimization",
+      "canonical_slug": "process-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Process Optimization across multiple enterprise roles."
+    },
+    {
+      "raw": "OKRs / KPIs Tracking",
+      "canonical_slug": "key-performance-indicators",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized OKRs / KPIs Tracking across multiple enterprise roles."
+    },
+    {
+      "raw": "Cross-Functional Leadership",
+      "canonical_slug": "cross-functional-collaboration",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Cross-Functional Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Operations Management",
+      "canonical_slug": "operations-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Operations Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Jira & Confluence",
+      "canonical_slug": "jira",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Jira & Confluence across multiple enterprise roles."
+    },
+    {
+      "raw": "Agile Scrum Methodology",
+      "canonical_slug": "agile-methodology",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Agile Scrum Methodology across multiple enterprise roles."
+    },
+    {
+      "raw": "Budgeting & Cost Reduction",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Budgeting & Cost Reduction across multiple enterprise roles."
+    },
+    {
+      "raw": "Vendor Management & Procurement",
+      "canonical_slug": "vendor-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Vendor Management & Procurement across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Operations Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-924558"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Operations Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Process Optimization.",
+      "technologies": [
+        "Process Optimization",
+        "OKRs / KPIs Tracking",
+        "Cross-Functional Leadership"
+      ],
+      "url": "https://github.com/williamwilkinson/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "operations",
+    "seniority": "lead",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 538
+  }
+}

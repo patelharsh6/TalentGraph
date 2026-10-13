@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Roy Wilson",
+    "email": "roy.wilson.61@yahoo.com",
+    "phone": "+1-705-218-4390x5529",
+    "location": {
+      "city": "Butlerton",
+      "region": "CA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/roy-wilson",
+      "https://github.com/roywilson"
+    ]
+  },
+  "summary": "Experienced Lead professional with 10+ years of expertise in manufacturing. Proven track record delivering scalable solutions using Supply Chain Management, Lean Manufacturing, SolidWorks CAD.",
+  "experience": [
+    {
+      "company": "Bryan PLC",
+      "title": "Senior Operations Lead",
+      "location": "Lake Joseph, HI",
+      "start": "2023-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using PLC Programming (Siemens/Allen-Bradley), Embedded C.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "Embedded C",
+        "Supply Chain Management",
+        "SolidWorks CAD"
+      ]
+    },
+    {
+      "company": "Williams-Franklin",
+      "title": "Industrial Automation Engineer",
+      "location": "Thompsontown, ME",
+      "start": "2020-02",
+      "end": "2023-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Internet of Things (IoT), SCADA Systems.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Internet of Things (IoT)",
+        "SCADA Systems",
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "Lean Manufacturing"
+      ]
+    },
+    {
+      "company": "Castro-Wilson",
+      "title": "Quality Assurance Engineer",
+      "location": "Carrollland, OK",
+      "start": "2016-11",
+      "end": "2020-02",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using PLC Programming (Siemens/Allen-Bradley), Internet of Things (IoT).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "Internet of Things (IoT)",
+        "SCADA Systems",
+        "Lean Manufacturing"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Davisland State University",
+      "degree": "Bachelor of Arts",
+      "field": "Industrial Engineering",
+      "start": "2012-09",
+      "end": "2016-05",
+      "grade": "3.54 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Supply Chain Management",
+      "canonical_slug": "supply-chain-management",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Supply Chain Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Lean Manufacturing",
+      "canonical_slug": "lean-manufacturing",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Lean Manufacturing across multiple enterprise roles."
+    },
+    {
+      "raw": "SolidWorks CAD",
+      "canonical_slug": "solidworks",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SolidWorks CAD across multiple enterprise roles."
+    },
+    {
+      "raw": "Root Cause Analysis",
+      "canonical_slug": "root-cause-analysis",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Root Cause Analysis across multiple enterprise roles."
+    },
+    {
+      "raw": "Six Sigma Green Belt",
+      "canonical_slug": "six-sigma",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Six Sigma Green Belt across multiple enterprise roles."
+    },
+    {
+      "raw": "PLC Programming (Siemens/Allen-Bradley)",
+      "canonical_slug": "plc-programming",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized PLC Programming (Siemens/Allen-Bradley) across multiple enterprise roles."
+    },
+    {
+      "raw": "Internet of Things (IoT)",
+      "canonical_slug": "internet-of-things",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Internet of Things (IoT) across multiple enterprise roles."
+    },
+    {
+      "raw": "SCADA Systems",
+      "canonical_slug": "scada",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized SCADA Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Embedded C",
+      "canonical_slug": "embedded-c",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Embedded C across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Manufacturing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-663539"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Manufacturing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Supply Chain Management.",
+      "technologies": [
+        "Supply Chain Management",
+        "Lean Manufacturing",
+        "SolidWorks CAD"
+      ],
+      "url": "https://github.com/roywilson/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "manufacturing",
+    "seniority": "lead",
+    "total_experience_years": 10,
+    "is_emerging_profile": false,
+    "candidate_index": 303
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Senior Industrial Automation & SCADA Engineer (Supply Chain Quality)",
+  "company": "Jimenez-Watts",
+  "role_family": "manufacturing",
+  "seniority": "senior",
+  "min_total_experience_years": 5.0,
+  "education": [
+    "Bachelor's Degree",
+    "Master's Degree"
+  ],
+  "requirements": [
+    {
+      "skill_slug": "scada",
+      "skill_name": "SCADA",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "plc-programming",
+      "skill_name": "PLC Programming",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "internet-of-things",
+      "skill_name": "IoT",
+      "required": true,
+      "importance": 4,
+      "min_years": 2.0
+    },
+    {
+      "skill_slug": "embedded-c",
+      "skill_name": "Embedded C",
+      "required": true,
+      "importance": 4,
+      "min_years": 2.0
+    },
+    {
+      "skill_slug": "six-sigma",
+      "skill_name": "Six Sigma",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    },
+    {
+      "skill_slug": "supply-chain-management",
+      "skill_name": "Supply Chain Management",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    }
+  ],
+  "raw_text_length": 1649
+}

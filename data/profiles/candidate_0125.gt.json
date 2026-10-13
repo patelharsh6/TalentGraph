@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Rebecca Martinez",
+    "email": "rebecca.martinez.59@gmail.com",
+    "phone": "685-973-0652x40778",
+    "location": {
+      "city": "New Jacob",
+      "region": "MI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/rebecca-martinez",
+      "https://github.com/rebeccamartinez"
+    ]
+  },
+  "summary": "Experienced Junior professional with 1+ years of expertise in marketing. Proven track record delivering scalable solutions using Growth Marketing, Email Marketing Campaigns, Copywriting.",
+  "experience": [
+    {
+      "company": "Oconnor-Hill",
+      "title": "Digital Marketing Lead",
+      "location": "North Amanda, NV",
+      "start": "2025-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 12,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Search Engine Marketing (SEM), Search Engine Optimization (SEO).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Search Engine Marketing (SEM)",
+        "Search Engine Optimization (SEO)",
+        "HubSpot",
+        "Copywriting"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Loriside State University",
+      "degree": "Master of Science",
+      "field": "Marketing & Communications",
+      "start": "2021-09",
+      "end": "2025-05",
+      "grade": "3.51 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Growth Marketing",
+      "canonical_slug": "growth-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+    },
+    {
+      "raw": "Email Marketing Campaigns",
+      "canonical_slug": "email-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Email Marketing Campaigns across multiple enterprise roles."
+    },
+    {
+      "raw": "Copywriting",
+      "canonical_slug": "copywriting",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Copywriting across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot across multiple enterprise roles."
+    },
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Optimization (SEO)",
+      "canonical_slug": "search-engine-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Optimization (SEO) across multiple enterprise roles."
+    },
+    {
+      "raw": "Content Strategy",
+      "canonical_slug": "content-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Content Strategy across multiple enterprise roles."
+    },
+    {
+      "raw": "Google Analytics 4 (GA4)",
+      "canonical_slug": "google-analytics",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Marketing (SEM)",
+      "canonical_slug": "search-engine-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Marketing (SEM) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-726121"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Growth Marketing.",
+      "technologies": [
+        "Growth Marketing",
+        "Email Marketing Campaigns",
+        "Copywriting"
+      ],
+      "url": "https://github.com/rebeccamartinez/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "junior",
+    "total_experience_years": 1,
+    "is_emerging_profile": false,
+    "candidate_index": 125
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Timothy Krause",
+    "email": "timothy.krause.32@gmail.com",
+    "phone": "+1-820-741-4474x32811",
+    "location": {
+      "city": "Lake Alejandro",
+      "region": "DC",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/timothy-krause",
+      "https://github.com/timothykrause"
+    ]
+  },
+  "summary": "Experienced Lead professional with 10+ years of expertise in operations. Proven track record delivering scalable solutions using Vendor Management & Procurement, Jira & Confluence, Cross-Functional Leadership.",
+  "experience": [
+    {
+      "company": "Burton, Smith and Johnson",
+      "title": "Senior Program Manager",
+      "location": "North Joshua, VT",
+      "start": "2023-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Agile Scrum Methodology, Operations Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Agile Scrum Methodology",
+        "Operations Management",
+        "Vendor Management & Procurement",
+        "Cross-Functional Leadership"
+      ]
+    },
+    {
+      "company": "Hernandez, Phelps and Anderson",
+      "title": "Program Manager",
+      "location": "Jimenezberg, UT",
+      "start": "2020-08",
+      "end": "2023-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using OKRs / KPIs Tracking, Jira & Confluence.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "OKRs / KPIs Tracking",
+        "Jira & Confluence",
+        "Cross-Functional Leadership",
+        "Budgeting & Cost Reduction"
+      ]
+    },
+    {
+      "company": "Sanchez Ltd",
+      "title": "Business Operations Lead",
+      "location": "North Rachel, WV",
+      "start": "2016-06",
+      "end": "2020-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Vendor Management & Procurement, Cross-Functional Leadership.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Vendor Management & Procurement",
+        "Cross-Functional Leadership",
+        "Operations Management",
+        "Jira & Confluence"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Clayton State University",
+      "degree": "Master of Science",
+      "field": "Operations Research / Management",
+      "start": "2012-09",
+      "end": "2016-05",
+      "grade": "3.70 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Vendor Management & Procurement",
+      "canonical_slug": "vendor-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Vendor Management & Procurement across multiple enterprise roles."
+    },
+    {
+      "raw": "Jira & Confluence",
+      "canonical_slug": "jira",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Jira & Confluence across multiple enterprise roles."
+    },
+    {
+      "raw": "Cross-Functional Leadership",
+      "canonical_slug": "cross-functional-collaboration",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Cross-Functional Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Operations Management",
+      "canonical_slug": "operations-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Operations Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Agile Scrum Methodology",
+      "canonical_slug": "agile-methodology",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Agile Scrum Methodology across multiple enterprise roles."
+    },
+    {
+      "raw": "Budgeting & Cost Reduction",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Budgeting & Cost Reduction across multiple enterprise roles."
+    },
+    {
+      "raw": "OKRs / KPIs Tracking",
+      "canonical_slug": "key-performance-indicators",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized OKRs / KPIs Tracking across multiple enterprise roles."
+    },
+    {
+      "raw": "Process Optimization",
+      "canonical_slug": "process-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Process Optimization across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Operations Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-642479"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Operations Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Vendor Management & Procurement.",
+      "technologies": [
+        "Vendor Management & Procurement",
+        "Jira & Confluence",
+        "Cross-Functional Leadership"
+      ],
+      "url": "https://github.com/timothykrause/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "operations",
+    "seniority": "lead",
+    "total_experience_years": 10,
+    "is_emerging_profile": false,
+    "candidate_index": 483
+  }
+}

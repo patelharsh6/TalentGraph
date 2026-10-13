@@ -1,0 +1,1201 @@
+raw,context,expected_slug,case_type,is_hard_case,split
+Go,Engineered high-throughput concurrent microservices in Go using goroutines.,golang,ambiguous,True,test
+Go,Led the go-to-market launch for our enterprise analytics product.,go-to-market-strategy,ambiguous,True,test
+R,Performed regression and time-series analysis in R with ggplot2.,r-language,ambiguous,True,test
+R&D,Managed a 12-person R&D group building next-generation sensors.,research-and-development,ambiguous,True,val
+C,Wrote kernel device drivers and memory allocators in C.,c-language,ambiguous,True,test
+C-level,Presented quarterly results to C-level stakeholders.,executive-communication,ambiguous,True,val
+Spring,Built Java microservices with Spring Boot and Spring Data JPA.,spring-framework,ambiguous,True,val
+Swift,Built a native iOS app in Swift using SwiftUI.,swift-language,ambiguous,True,val
+SWIFT,Processed SWIFT MT103 international wire transfers.,swift-network,ambiguous,True,val
+Rust,Implemented memory-safe WebAssembly modules in Rust.,rust-language,ambiguous,True,test
+Excel,Built three-statement forecasting models in Excel.,microsoft-excel,ambiguous,True,test
+Word,Drafted and formatted contracts in Word with tracked changes.,microsoft-word,ambiguous,True,test
+Git,"Managed branching, rebasing and pull requests in Git.",git-version-control,ambiguous,True,test
+Ruby,Maintained a Ruby on Rails monolith.,ruby-language,ambiguous,True,test
+PM,Served as PM owning the product requirements and roadmap.,product-management,ambiguous,True,val
+PM,Performed scheduled PM on CNC machines to prevent breakdowns.,preventive-maintenance,ambiguous,True,val
+CV,Trained object-detection models for CV using PyTorch.,computer-vision,ambiguous,True,val
+CV,Screened candidate CVs and ran first-round interviews.,talent-acquisition,ambiguous,True,val
+REST,Designed REST endpoints documented with OpenAPI 3.,rest-api,ambiguous,True,test
+rest periods,Audited shift schedules for statutory rest periods.,workplace-compliance,ambiguous,True,test
+Spark,Ran distributed ETL jobs on Spark clusters.,apache-spark,ambiguous,True,test
+Chef,Automated server configuration with Chef cookbooks.,chef,ambiguous,True,val
+Puppet,Provisioned data-centre servers with Puppet manifests.,puppet,ambiguous,True,val
+Flask,Built lightweight Python APIs with Flask and Gunicorn.,flask,ambiguous,True,test
+Unity,Developed a 3D mobile game in Unity with C# scripts.,unity-3d,ambiguous,True,val
+Access,Maintained departmental databases and reports in Access.,microsoft-access,ambiguous,True,val
+Teams,Ran remote stand-ups and channels in Teams.,microsoft-teams,ambiguous,True,test
+Project,Scheduled the plant rollout with Gantt charts in Project.,microsoft-project,ambiguous,True,val
+Kafka,Streamed clickstream events through Kafka topics.,apache-kafka,ambiguous,True,val
+Airflow,Orchestrated nightly batch pipelines as Airflow DAGs.,apache-airflow,ambiguous,True,test
+Python 3.11,Delivered three releases using Python 3.11.,python,version,True,val
+Python3,Proficient in Python3 across several client engagements.,python,version,True,test
+Java 17,Proficient in Java 17 across several client engagements.,java,version,True,val
+Java SE 21,Delivered three releases using Java SE 21.,java,version,True,val
+C++20,Core skills include C++20 and cross-team collaboration.,c-plus-plus,version,True,val
+PostgreSQL 15.2,Proficient in PostgreSQL 15.2 across several client engagements.,postgresql,version,True,val
+Postgres 16,Proficient in Postgres 16 across several client engagements.,postgresql,version,True,val
+ReactJS 18,Proficient in ReactJS 18 across several client engagements.,react,version,True,val
+React 18.2,Delivered three releases using React 18.2.,react,version,True,val
+Angular 16,Proficient in Angular 16 across several client engagements.,angular,version,True,test
+Vue.js v3.2,Delivered three releases using Vue.js v3.2.,vue-js,version,True,val
+Node.js 20 LTS,Delivered three releases using Node.js 20 LTS.,node-js,version,True,test
+TypeScript 5.x,Delivered three releases using TypeScript 5.x.,typescript,version,True,test
+TensorFlow 2.14,Proficient in TensorFlow 2.14 across several client engagements.,tensorflow,version,True,test
+PyTorch 2.1 (CUDA 12),Delivered three releases using PyTorch 2.1 (CUDA 12).,pytorch,version,True,val
+Django 5.0,Core skills include Django 5.0 and cross-team collaboration.,django,version,True,test
+Spring Boot 3,Proficient in Spring Boot 3 across several client engagements.,spring-boot,version,True,test
+Kubernetes 1.29,Proficient in Kubernetes 1.29 across several client engagements.,kubernetes,version,True,val
+Docker 24,Proficient in Docker 24 across several client engagements.,docker,version,True,val
+Terraform 1.6,Proficient in Terraform 1.6 across several client engagements.,terraform,version,True,test
+Next.js 14 App Router,Proficient in Next.js 14 App Router across several client engagements.,next-js,version,True,test
+Tailwind CSS v3,Delivered three releases using Tailwind CSS v3.,tailwindcss,version,True,test
+MongoDB 6.0,Delivered three releases using MongoDB 6.0.,mongodb,version,True,val
+Redis 7,Proficient in Redis 7 across several client engagements.,redis,version,True,test
+Elasticsearch 8,Delivered three releases using Elasticsearch 8.,elasticsearch,version,True,val
+HTML5,Proficient in HTML5 across several client engagements.,html5,version,True,val
+CSS3,Delivered three releases using CSS3.,css3,version,True,test
+Microsoft Excel 365,Delivered three releases using Microsoft Excel 365.,microsoft-excel,version,True,val
+Excel 2019,Delivered three releases using Excel 2019.,microsoft-excel,version,True,val
+Scikit-learn 1.3,Delivered three releases using Scikit-learn 1.3.,scikit-learn,version,True,val
+Pandas 2.x,Core skills include Pandas 2.x and cross-team collaboration.,pandas,version,True,val
+Apache Spark 3.5,Proficient in Apache Spark 3.5 across several client engagements.,apache-spark,version,True,test
+Kafka 3.6,Core skills include Kafka 3.6 and cross-team collaboration.,apache-kafka,version,True,test
+GraphQL (Apollo 4),Delivered three releases using GraphQL (Apollo 4).,graphql,version,True,test
+Figma (2024),Core skills include Figma (2024) and cross-team collaboration.,figma,version,True,test
+Tableau 2023.3,Proficient in Tableau 2023.3 across several client engagements.,tableau,version,True,val
+Power BI Desktop,Proficient in Power BI Desktop across several client engagements.,power-bi,version,True,test
+Salesforce Lightning,Delivered three releases using Salesforce Lightning.,salesforce,version,True,test
+Jira Cloud,Core skills include Jira Cloud and cross-team collaboration.,jira,version,True,test
+SAP S/4HANA,Core skills include SAP S/4HANA and cross-team collaboration.,sap-erp,version,True,test
+Python/Django,Core skills include Python/Django and cross-team collaboration.,python|django,multi_skill,True,val
+Python & FastAPI,Proficient in Python & FastAPI across several client engagements.,python|fastapi,multi_skill,True,test
+React + TypeScript,Proficient in React + TypeScript across several client engagements.,react|typescript,multi_skill,True,val
+HTML/CSS/JavaScript,Core skills include HTML/CSS/JavaScript and cross-team collaboration.,html5|css3|javascript,multi_skill,True,val
+Docker & Kubernetes,Proficient in Docker & Kubernetes across several client engagements.,docker|kubernetes,multi_skill,True,test
+Terraform/Ansible,Proficient in Terraform/Ansible across several client engagements.,terraform|ansible,multi_skill,True,test
+"Pandas, NumPy","Core skills include Pandas, NumPy and cross-team collaboration.",pandas|numpy,multi_skill,True,test
+PyTorch/TensorFlow,Proficient in PyTorch/TensorFlow across several client engagements.,pytorch|tensorflow,multi_skill,True,test
+SQL & Tableau,Core skills include SQL & Tableau and cross-team collaboration.,sql|tableau,multi_skill,True,val
+Kafka/Spark Streaming,Core skills include Kafka/Spark Streaming and cross-team collaboration.,apache-kafka|apache-spark,multi_skill,True,test
+Jira & Confluence,Delivered three releases using Jira & Confluence.,jira|confluence,multi_skill,True,test
+SEO/SEM,Core skills include SEO/SEM and cross-team collaboration.,search-engine-optimization|search-engine-marketing,multi_skill,True,test
+GAAP & IFRS,Proficient in GAAP & IFRS across several client engagements.,gaap|ifrs,multi_skill,True,test
+HL7 / FHIR,Delivered three releases using HL7 / FHIR.,hl7-fhir,multi_skill,True,val
+Node.js/Express,Core skills include Node.js/Express and cross-team collaboration.,node-js|express-js,multi_skill,True,val
+Git/GitHub,Delivered three releases using Git/GitHub.,git-version-control|github,multi_skill,True,test
+Excel/VBA,Proficient in Excel/VBA across several client engagements.,microsoft-excel|excel-vba,multi_skill,True,val
+Figma & Sketch,Core skills include Figma & Sketch and cross-team collaboration.,figma|sketch,multi_skill,True,val
+Grafana + Prometheus,Proficient in Grafana + Prometheus across several client engagements.,grafana|prometheus,multi_skill,True,val
+Snowflake/dbt,Delivered three releases using Snowflake/dbt.,snowflake|dbt,multi_skill,True,val
+JS,Core skills include JS and cross-team collaboration.,javascript,abbreviation,True,test
+TS,Delivered three releases using TS.,typescript,abbreviation,True,val
+K8s,Delivered three releases using K8s.,kubernetes,abbreviation,True,val
+TF,Core skills include TF and cross-team collaboration.,tensorflow,abbreviation,True,val
+GCP,Delivered three releases using GCP.,google-cloud-platform,abbreviation,True,test
+AWS,Proficient in AWS across several client engagements.,amazon-web-services,abbreviation,True,val
+ML,Delivered three releases using ML.,machine-learning,abbreviation,True,val
+DL,Proficient in DL across several client engagements.,deep-learning,abbreviation,True,test
+NLP,Proficient in NLP across several client engagements.,natural-language-processing,abbreviation,True,test
+CI/CD,Delivered three releases using CI/CD.,continuous-integration-and-continuous-delivery,abbreviation,True,test
+UX,Proficient in UX across several client engagements.,user-experience-design,abbreviation,True,val
+LLMs,Core skills include LLMs and cross-team collaboration.,large-language-models,abbreviation,True,val
+RAG,Proficient in RAG across several client engagements.,retrieval-augmented-generation,abbreviation,True,test
+MLOps,Proficient in MLOps across several client engagements.,machine-learning-operations,abbreviation,True,test
+EHR,Proficient in EHR across several client engagements.,electronic-health-records,abbreviation,True,test
+SEO,Core skills include SEO and cross-team collaboration.,search-engine-optimization,abbreviation,True,val
+CRO,Core skills include CRO and cross-team collaboration.,conversion-rate-optimization,abbreviation,True,test
+IoT,Core skills include IoT and cross-team collaboration.,internet-of-things,abbreviation,True,val
+KPIs,Delivered three releases using KPIs.,key-performance-indicators,abbreviation,True,val
+OKRs,Core skills include OKRs and cross-team collaboration.,objectives-and-key-results,abbreviation,True,val
+GTM,Proficient in GTM across several client engagements.,go-to-market-strategy,abbreviation,True,test
+IaC,Core skills include IaC and cross-team collaboration.,infrastructure-as-code,abbreviation,True,val
+Postgres,Core skills include Postgres and cross-team collaboration.,postgresql,abbreviation,True,test
+ML Engineering,Proficient in ML Engineering across several client engagements.,machine-learning-engineering,abbreviation,True,val
+MS Excel,Delivered three releases using MS Excel.,microsoft-excel,abbreviation,True,test
+Mamba state-space models,Researched sub-quadratic sequence models with Mamba SSMs.,NEW,unknown,True,val
+Mojo,Wrote GPU kernels in Mojo for the Modular inference stack.,NEW,unknown,True,val
+Direct Preference Optimization,Aligned chat models with DPO instead of RLHF.,NEW,unknown,True,val
+DNA data storage,Encoded digital archives into synthetic DNA strands.,NEW,unknown,True,test
+Quantum error mitigation,Applied zero-noise extrapolation on noisy quantum circuits.,NEW,unknown,True,test
+Neuromorphic computing,Designed spiking neural networks for low-power edge chips.,NEW,unknown,True,val
+DePIN,Deployed token-incentivised wireless hardware networks.,NEW,unknown,True,test
+zk-STARK circuits,Built zk-STARK verification circuits for a Layer-2 rollup.,NEW,unknown,True,val
+Scope 3 carbon accounting,Modelled supplier Scope 3 emissions for CSRD reporting.,NEW,unknown,True,val
+Agentic tool-use protocols,Designed MCP tool schemas for autonomous agents.,NEW,unknown,True,test
+Gaussian splatting,Reconstructed 3D scenes from video using Gaussian splatting.,NEW,unknown,True,val
+Speculative decoding,Cut LLM latency 2x with speculative decoding.,NEW,unknown,True,test
+Vector-symbolic architectures,Prototyped hyperdimensional computing for edge inference.,NEW,unknown,True,val
+Kolmogorov-Arnold networks,Benchmarked KANs against MLPs on tabular data.,NEW,unknown,True,val
+Prompt caching strategy,Reduced inference cost with layered prompt caching.,NEW,unknown,True,val
+Digital product passports,Implemented EU digital product passports for batteries.,NEW,unknown,True,test
+Biochar carbon removal,Verified biochar carbon-removal credits for buyers.,NEW,unknown,True,test
+Precision fermentation,Scaled precision-fermentation dairy proteins to pilot plant.,NEW,unknown,True,test
+Solid-state battery cell design,Characterised solid-state electrolyte interfaces.,NEW,unknown,True,val
+Embodied AI simulation,Trained household robots in embodied-AI simulators.,NEW,unknown,True,val
+Federated analytics,Ran federated analytics across hospital sites without moving data.,NEW,unknown,True,val
+Synthetic biology CAD,Designed genetic circuits in a synthetic-biology CAD tool.,NEW,unknown,True,val
+Agent evaluation harnesses,Built evaluation harnesses for multi-step LLM agents.,NEW,unknown,True,test
+Ambient clinical documentation,Rolled out ambient AI scribes in outpatient clinics.,NEW,unknown,True,test
+Carbon-aware scheduling,Shifted batch jobs to low-carbon grid hours.,NEW,unknown,True,test
+Retrieval-interleaved generation,Prototyped retrieval-interleaved generation for QA.,NEW,unknown,True,test
+Post-quantum TLS migration,Migrated services to hybrid post-quantum TLS key exchange.,NEW,unknown,True,test
+Sovereign cloud compliance,Mapped workloads to EU sovereign-cloud requirements.,NEW,unknown,True,val
+Humanoid robot teleoperation,Collected teleoperation data for humanoid manipulation.,NEW,unknown,True,test
+Space-based solar power,Modelled microwave power beaming from orbital arrays.,NEW,unknown,True,test
+A/B Tetsing & CRO,Proficient in A/B Tetsing & CRO across several client engagements.,conversion-rate-optimization,typo,True,val
+Account Managemet,Proficient in Account Managemet across several client engagements.,customer-success,typo,True,test
+Actiive Mentoring,Core skills include Actiive Mentoring and cross-team collaboration.,mentoring,typo,True,test
+Adobee XD,Delivered three releases using Adobee XD.,adobe-xd,typo,True,val
+Advaced Excel,Proficient in Advaced Excel across several client engagements.,microsoft-excel,typo,True,test
+Agile Methodoloogy,Proficient in Agile Methodoloogy across several client engagements.,agile-methodology,typo,True,val
+Agile Scrum Metohdology,Core skills include Agile Scrum Metohdology and cross-team collaboration.,agile-methodology,typo,True,test
+Apaceh Airflow,Core skills include Apaceh Airflow and cross-team collaboration.,apache-airflow,typo,True,val
+Apache afka,Proficient in Apache afka across several client engagements.,apache-kafka,typo,True,test
+Apaceh Spark,Delivered three releases using Apaceh Spark.,apache-spark,typo,True,test
+Apache Sark (PySpark),Core skills include Apache Sark (PySpark) and cross-team collaboration.,apache-spark,typo,True,val
+Assesmsent Design,Core skills include Assesmsent Design and cross-team collaboration.,assessment-design,typo,True,test
+B2B Enterrprise Sales,Delivered three releases using B2B Enterrprise Sales.,b2b-sales,typo,True,test
+Bioinforrmatics,Delivered three releases using Bioinforrmatics.,bioinformatics,typo,True,val
+Bloombreg Terminal,Proficient in Bloombreg Terminal across several client engagements.,bloomberg-terminal,typo,True,test
+Budgeting & oCst Reduction,Delivered three releases using Budgeting & oCst Reduction.,financial-analysis,typo,True,val
+CI/CD Ppielines,Proficient in CI/CD Ppielines across several client engagements.,continuous-integration-and-continuous-delivery,typo,True,val
+Cernr,Delivered three releases using Cernr.,cerner,typo,True,val
+Client Relatonship Building,Delivered three releases using Client Relatonship Building.,effective-communication,typo,True,val
+Clinical Tirals,Core skills include Clinical Tirals and cross-team collaboration.,clinical-trials,typo,True,test
+Clinical Trials Managmeent,Core skills include Clinical Trials Managmeent and cross-team collaboration.,clinical-trials,typo,True,val
+Commpetitive Analysis,Core skills include Commpetitive Analysis and cross-team collaboration.,competitive-analysis,typo,True,val
+Coontent Strategy,Delivered three releases using Coontent Strategy.,content-marketing,typo,True,test
+Contrac Negotiation,Core skills include Contrac Negotiation and cross-team collaboration.,contract-negotiation,typo,True,val
+Coppywriting,Core skills include Coppywriting and cross-team collaboration.,copywriting,typo,True,test
+Corporate Contract Drating,Delivered three releases using Corporate Contract Drating.,contract-drafting,typo,True,val
+Corporate Finanec,Delivered three releases using Corporate Finanec.,corporate-finance,typo,True,test
+Cross-Functiional Leadership,Core skills include Cross-Functiional Leadership and cross-team collaboration.,cross-functional-collaboration,typo,True,test
+Curriculum Deveopment,Core skills include Curriculum Deveopment and cross-team collaboration.,curriculum-development,typo,True,val
+DCF Valluation,Proficient in DCF Valluation across several client engagements.,dcf-valuation,typo,True,test
+Data ngineering,Delivered three releases using Data ngineering.,data-engineering,typo,True,val
+Data Visuualization,Delivered three releases using Data Visuualization.,business-intelligence,typo,True,val
+Deepp Learning,Delivered three releases using Deepp Learning.,deep-learning,typo,True,test
+Desig Systems,Delivered three releases using Desig Systems.,design-systems,typo,True,val
+Dsign Thinking,Core skills include Dsign Thinking and cross-team collaboration.,design-thinking,typo,True,val
+Doker,Delivered three releases using Doker.,docker,typo,True,val
+Educational Technologyy (EdTech),Core skills include Educational Technologyy (EdTech) and cross-team collaboration.,edtech-solutions,typo,True,test
+Electronic Healt Records (EHR),Core skills include Electronic Healt Records (EHR) and cross-team collaboration.,electronic-health-records,typo,True,val
+Email Marrketing Campaigns,Core skills include Email Marrketing Campaigns and cross-team collaboration.,email-marketing,typo,True,test
+Embeddedd C,Proficient in Embeddedd C across several client engagements.,embedded-c,typo,True,val
+Epc Systems,Delivered three releases using Epc Systems.,epic-systems,typo,True,test
+FastAI,Proficient in FastAI across several client engagements.,fastapi,typo,True,val
+Fiigma,Core skills include Fiigma and cross-team collaboration.,figma,typo,True,test
+Finacnial Analysis,Proficient in Finacnial Analysis across several client engagements.,financial-analysis,typo,True,val
+Fniancial Modeling,Proficient in Fniancial Modeling across several client engagements.,financial-modeling,typo,True,test
+GDPR & Data PPrivacy,Proficient in GDPR & Data PPrivacy across several client engagements.,gdpr,typo,True,val
+Google Anlytics,Delivered three releases using Google Anlytics.,google-analytics,typo,True,test
+Google Annalytics 4 (GA4),Delivered three releases using Google Annalytics 4 (GA4).,google-analytics,typo,True,test
+Grafna,Core skills include Grafna and cross-team collaboration.,grafana,typo,True,test
+GrpahQL,Delivered three releases using GrpahQL.,graphql,typo,True,test
+Growth Marketnig,Proficient in Growth Marketnig across several client engagements.,growth-marketing,typo,True,test
+HIPAA Compliane,Proficient in HIPAA Compliane across several client engagements.,hipaa-compliance,typo,True,test
+HL7 / FFHIR,Delivered three releases using HL7 / FFHIR.,hl7-fhir,typo,True,val
+HL7 FHIR Prtoocols,Delivered three releases using HL7 FHIR Prtoocols.,hl7-fhir,typo,True,val
+HTLM5 / CSS3,Core skills include HTLM5 / CSS3 and cross-team collaboration.,html5,typo,True,test
+Heath Informatics,Delivered three releases using Heath Informatics.,health-informatics,typo,True,test
+HubSpoot,Delivered three releases using HubSpoot.,hubspot,typo,True,val
+HubSpo Sales Hub,Delivered three releases using HubSpo Sales Hub.,hubspot,typo,True,val
+IFRS Standrds,Delivered three releases using IFRS Standrds.,ifrs,typo,True,test
+Information Archtiecture,Delivered three releases using Information Archtiecture.,information-architecture,typo,True,val
+Instructional Desgn,Core skills include Instructional Desgn and cross-team collaboration.,instructional-design,typo,True,val
+Intellectual Property (IP) Proetction,Delivered three releases using Intellectual Property (IP) Proetction.,intellectual-property,typo,True,test
+Internet off Things (IoT),Core skills include Internet off Things (IoT) and cross-team collaboration.,internet-of-things,typo,True,val
+Javacript,Core skills include Javacript and cross-team collaboration.,javascript,typo,True,test
+JavvaScript (ES6+),Core skills include JavvaScript (ES6+) and cross-team collaboration.,javascript,typo,True,val
+Jira & onfluence,Core skills include Jira & onfluence and cross-team collaboration.,jira,typo,True,test
+Kuberneetes,Proficient in Kuberneetes across several client engagements.,kubernetes,typo,True,val
+Kubrenetes (K8s),Proficient in Kubrenetes (K8s) across several client engagements.,kubernetes,typo,True,val
+LBO Modelling,Proficient in LBO Modelling across several client engagements.,lbo-modeling,typo,True,test
+Large Lagnuage Models,Core skills include Large Lagnuage Models and cross-team collaboration.,large-language-models,typo,True,test
+Large Language Mdels (LLM),Delivered three releases using Large Language Mdels (LLM).,large-language-models,typo,True,test
+Lead Prosecting,Proficient in Lead Prosecting across several client engagements.,sales-prospecting,typo,True,val
+Lean anufacturing,Core skills include Lean anufacturing and cross-team collaboration.,lean-manufacturing,typo,True,test
+Learning Management Systems (LLMS),Delivered three releases using Learning Management Systems (LLMS).,lms-platforms,typo,True,val
+Leegal Research (Westlaw/LexisNexis),Core skills include Leegal Research (Westlaw/LexisNexis) and cross-team collaboration.,legal-research,typo,True,val
+Liunx,Core skills include Liunx and cross-team collaboration.,linux,typo,True,val
+M&A Due iligence,Core skills include M&A Due iligence and cross-team collaboration.,ma-due-diligence,typo,True,val
+MLOpps,Delivered three releases using MLOpps.,machine-learning-operations,typo,True,val
+Machine Leaarning,Proficient in Machine Leaarning across several client engagements.,machine-learning,typo,True,test
+Microserivces,Core skills include Microserivces and cross-team collaboration.,microservices,typo,True,val
+Next.s,Proficient in Next.s across several client engagements.,next-js,typo,True,test
+Node.s,Delivered three releases using Node.s.,node-js,typo,True,test
+Numy,Delivered three releases using Numy.,numpy,typo,True,val
+OKR / KPIs Tracking,Proficient in OKR / KPIs Tracking across several client engagements.,key-performance-indicators,typo,True,val
+Operations Managemetn,Core skills include Operations Managemetn and cross-team collaboration.,operations-management,typo,True,test
+PLC Programmming,Delivered three releases using PLC Programmming.,plc-programming,typo,True,val
+PLCC Programming (Siemens/Allen-Bradley),Delivered three releases using PLCC Programming (Siemens/Allen-Bradley).,plc-programming,typo,True,test
+Pandsa,Core skills include Pandsa and cross-team collaboration.,pandas,typo,True,val
+PosgtreSQL,Core skills include PosgtreSQL and cross-team collaboration.,postgresql,typo,True,test
+Process Optimiation,Proficient in Process Optimiation across several client engagements.,process-optimization,typo,True,test
+Product Dscovery,Core skills include Product Dscovery and cross-team collaboration.,product-discovery,typo,True,val
+Product Manageent,Core skills include Product Manageent and cross-team collaboration.,product-management,typo,True,val
+Product Roadmaping,Proficient in Product Roadmaping across several client engagements.,product-roadmapping,typo,True,test
+Promethesu,Delivered three releases using Promethesu.,prometheus,typo,True,val
+Prototypign,Core skills include Prototypign and cross-team collaboration.,prototyping,typo,True,test
+Public Speeaking & Lecturing,Proficient in Public Speeaking & Lecturing across several client engagements.,public-speaking,typo,True,test
+PTyorch,Proficient in PTyorch across several client engagements.,pytorch,typo,True,val
+Pyhton,Delivered three releases using Pyhton.,python,typo,True,val
+Quanttiative Risk Management,Proficient in Quanttiative Risk Management across several client engagements.,financial-risk-management,typo,True,val
+R Langguage,Proficient in R Langguage across several client engagements.,r-language,typo,True,val
+RAG Architetcure,Core skills include RAG Architetcure and cross-team collaboration.,retrieval-augmented-generation,typo,True,test
+Reat,Core skills include Reat and cross-team collaboration.,react,typo,True,val
+Reaact.js,Delivered three releases using Reaact.js.,react,typo,True,val
+Rediis,Proficient in Rediis across several client engagements.,redis,typo,True,test
+Regulaory Compliance,Proficient in Regulaory Compliance across several client engagements.,regulatory-compliance,typo,True,test
+Risk Assessemnt,Core skills include Risk Assessemnt and cross-team collaboration.,risk-management,typo,True,val
+Root Cause Annalysis,Core skills include Root Cause Annalysis and cross-team collaboration.,root-cause-analysis,typo,True,val
+SCAADA,Proficient in SCAADA across several client engagements.,scada,typo,True,val
+SCAADA Systems,Delivered three releases using SCAADA Systems.,scada,typo,True,test
+Sales Pipeline Managemetn,Proficient in Sales Pipeline Managemetn across several client engagements.,sales-strategy,typo,True,val
+Salesfforce CRM,Delivered three releases using Salesfforce CRM.,salesforce,typo,True,test
+Salessforce Marketing Cloud,Proficient in Salessforce Marketing Cloud across several client engagements.,salesforce,typo,True,test
+Scikit-LLearn,Core skills include Scikit-LLearn and cross-team collaboration.,scikit-learn,typo,True,val
+Search Engine Marketing (SM),Proficient in Search Engine Marketing (SM) across several client engagements.,search-engine-marketing,typo,True,test
+Search Engine Optimiization (SEO),Core skills include Search Engine Optimiization (SEO) and cross-team collaboration.,search-engine-optimization,typo,True,test
+Sx Sigma,Core skills include Sx Sigma and cross-team collaboration.,six-sigma,typo,True,test
+Si Sigma Green Belt,Core skills include Si Sigma Green Belt and cross-team collaboration.,six-sigma,typo,True,val
+Snowflke,Delivered three releases using Snowflke.,snowflake,typo,True,test
+SoldWorks CAD,Proficient in SoldWorks CAD across several client engagements.,solidworks,typo,True,val
+Stakeholder Managemment,Core skills include Stakeholder Managemment and cross-team collaboration.,stakeholder-communication,typo,True,test
+Supply Chain Managemnt,Core skills include Supply Chain Managemnt and cross-team collaboration.,supply-chain-management,typo,True,val
+Tailwindd CSS,Delivered three releases using Tailwindd CSS.,tailwindcss,typo,True,test
+Team Ladership,Proficient in Team Ladership across several client engagements.,team-leadership,typo,True,test
+TesorFlow,Core skills include TesorFlow and cross-team collaboration.,tensorflow,typo,True,test
+Teraform,Delivered three releases using Teraform.,terraform,typo,True,test
+TypeScrpt,Proficient in TypeScrpt across several client engagements.,typescript,typo,True,test
+UI Deign,Proficient in UI Deign across several client engagements.,user-interface-design,typo,True,val
+UI/UX Desing,Core skills include UI/UX Desing and cross-team collaboration.,user-experience-design,typo,True,test
+US GAP,Core skills include US GAP and cross-team collaboration.,gaap,typo,True,val
+UX Desiign,Core skills include UX Desiign and cross-team collaboration.,user-experience-design,typo,True,test
+User Reseacrh,Delivered three releases using User Reseacrh.,user-research,typo,True,val
+User Resaerch & Usability Testing,Proficient in User Resaerch & Usability Testing across several client engagements.,user-research,typo,True,test
+User Stoies,Delivered three releases using User Stoies.,user-stories,typo,True,val
+Vector Databasse,Delivered three releases using Vector Databasse.,vector-databases,typo,True,test
+Vendor Management & PProcurement,Delivered three releases using Vendor Management & PProcurement.,vendor-management,typo,True,test
+Wireframng,Proficient in Wireframng across several client engagements.,wireframing,typo,True,val
+Wirframing & Prototyping,Proficient in Wirframing & Prototyping across several client engagements.,wireframing,typo,True,val
+recruitiing,Proficient in recruitiing across several client engagements.,talent-acquisition,typo,True,val
+NortonnOnline,Delivered three releases using NortonnOnline.,norton-antivirus,typo,True,test
+sugarsnc.com,Delivered three releases using sugarsnc.com.,sugarsync,typo,True,test
+Torchadio,Delivered three releases using Torchadio.,torchaudio,typo,True,test
+Telemedicne,Core skills include Telemedicne and cross-team collaboration.,telemedicine,typo,True,test
+dbt-cre,Core skills include dbt-cre and cross-team collaboration.,dbt,typo,True,test
+m.faceobok.com,Proficient in m.faceobok.com across several client engagements.,facebook,typo,True,test
+Loker,Proficient in Loker across several client engagements.,looker,typo,True,test
+Padnas,Proficient in Padnas across several client engagements.,pandas,typo,True,test
+prioritizatin,Core skills include prioritizatin and cross-team collaboration.,time-management,typo,True,test
+resileince,Proficient in resileince across several client engagements.,adaptability,typo,True,val
+DeeSppeed,Core skills include DeeSppeed and cross-team collaboration.,deepspeed,typo,True,test
+Soidity,Proficient in Soidity across several client engagements.,solidity,typo,True,val
+Cyhon,Proficient in Cyhon across several client engagements.,cython,typo,True,test
+Kiinematics,Core skills include Kiinematics and cross-team collaboration.,kinematics,typo,True,val
+Adapptability,Core skills include Adapptability and cross-team collaboration.,adaptability,typo,True,val
+Perfect,Delivered three releases using Perfect.,prefect,typo,True,val
+nux.js,Core skills include nux.js and cross-team collaboration.,nuxt-js,typo,True,test
+sqlie3,Proficient in sqlie3 across several client engagements.,sqlite,typo,True,val
+bender3d.org,Core skills include bender3d.org and cross-team collaboration.,blender,typo,True,val
+recatnative,Core skills include recatnative and cross-team collaboration.,react-native,typo,True,val
+podmna.io,Delivered three releases using podmna.io.,podman,typo,True,val
+Mentoriing,Proficient in Mentoriing across several client engagements.,mentoring,typo,True,val
+A/B Testing & CRO,Hands-on experience with A/B Testing & CRO in production environments.,conversion-rate-optimization,alias,False,test
+Account Management,Trained two junior colleagues in Account Management best practices.,customer-success,alias,False,val
+Active Mentoring,"Led a project built on Active Mentoring, improving delivery speed by 30%.",mentoring,alias,False,test
+Adobe XD,Used Adobe XD daily to deliver features for internal and external customers.,adobe-xd,alias,False,test
+Advanced Excel,Hands-on experience with Advanced Excel in production environments.,microsoft-excel,alias,False,val
+Agile Methodology,Used Agile Methodology daily to deliver features for internal and external customers.,agile-methodology,alias,False,test
+Agile Scrum Methodology,Trained two junior colleagues in Agile Scrum Methodology best practices.,agile-methodology,alias,False,test
+Apache Airflow,"Skills: Apache Airflow, stakeholder communication, documentation.",apache-airflow,alias,False,val
+Apache Kafka,Trained two junior colleagues in Apache Kafka best practices.,apache-kafka,alias,False,test
+Apache Spark,Trained two junior colleagues in Apache Spark best practices.,apache-spark,alias,False,val
+Apache Spark (PySpark),Trained two junior colleagues in Apache Spark (PySpark) best practices.,apache-spark,alias,False,val
+Assessment Design,Hands-on experience with Assessment Design in production environments.,assessment-design,alias,False,val
+B2B Enterprise Sales,Trained two junior colleagues in B2B Enterprise Sales best practices.,b2b-sales,alias,False,val
+Bioinformatics,"Skills: Bioinformatics, stakeholder communication, documentation.",bioinformatics,alias,False,val
+Bloomberg Terminal,"Skills: Bloomberg Terminal, stakeholder communication, documentation.",bloomberg-terminal,alias,False,test
+Budgeting & Cost Reduction,"Skills: Budgeting & Cost Reduction, stakeholder communication, documentation.",financial-analysis,alias,False,val
+CI/CD Pipelines,Trained two junior colleagues in CI/CD Pipelines best practices.,continuous-integration-and-continuous-delivery,alias,False,val
+Cerner,Trained two junior colleagues in Cerner best practices.,cerner,alias,False,val
+Client Relationship Building,Trained two junior colleagues in Client Relationship Building best practices.,effective-communication,alias,False,test
+Clinical Trials,Used Clinical Trials daily to deliver features for internal and external customers.,clinical-trials,alias,False,test
+Clinical Trials Management,Trained two junior colleagues in Clinical Trials Management best practices.,clinical-trials,alias,False,test
+Competitive Analysis,Applied Competitive Analysis to automate reporting and cut manual effort.,competitive-analysis,alias,False,val
+Content Strategy,Used Content Strategy daily to deliver features for internal and external customers.,content-marketing,alias,False,test
+Contract Negotiation,Hands-on experience with Contract Negotiation in production environments.,contract-negotiation,alias,False,val
+Copywriting,Applied Copywriting to automate reporting and cut manual effort.,copywriting,alias,False,val
+Corporate Contract Drafting,Hands-on experience with Corporate Contract Drafting in production environments.,contract-drafting,alias,False,val
+Corporate Finance,"Led a project built on Corporate Finance, improving delivery speed by 30%.",corporate-finance,alias,False,val
+Cross-Functional Leadership,Applied Cross-Functional Leadership to automate reporting and cut manual effort.,cross-functional-collaboration,alias,False,test
+Curriculum Development,Used Curriculum Development daily to deliver features for internal and external customers.,curriculum-development,alias,False,test
+DCF Valuation,Hands-on experience with DCF Valuation in production environments.,dcf-valuation,alias,False,test
+Data Engineering,Hands-on experience with Data Engineering in production environments.,data-engineering,alias,False,val
+Data Visualization,Hands-on experience with Data Visualization in production environments.,business-intelligence,alias,False,val
+Deep Learning,Trained two junior colleagues in Deep Learning best practices.,deep-learning,alias,False,val
+Design Systems,Used Design Systems daily to deliver features for internal and external customers.,design-systems,alias,False,val
+Design Thinking,Hands-on experience with Design Thinking in production environments.,design-thinking,alias,False,val
+Docker,Used Docker daily to deliver features for internal and external customers.,docker,alias,False,val
+Educational Technology (EdTech),"Skills: Educational Technology (EdTech), stakeholder communication, documentation.",edtech-solutions,alias,False,test
+Electronic Health Records (EHR),Applied Electronic Health Records (EHR) to automate reporting and cut manual effort.,electronic-health-records,alias,False,test
+Email Marketing Campaigns,Trained two junior colleagues in Email Marketing Campaigns best practices.,email-marketing,alias,False,val
+Embedded C,"Skills: Embedded C, stakeholder communication, documentation.",embedded-c,alias,False,test
+Epic Systems,"Led a project built on Epic Systems, improving delivery speed by 30%.",epic-systems,alias,False,test
+FastAPI,Used FastAPI daily to deliver features for internal and external customers.,fastapi,alias,False,test
+Figma,Hands-on experience with Figma in production environments.,figma,alias,False,val
+Financial Analysis,"Led a project built on Financial Analysis, improving delivery speed by 30%.",financial-analysis,alias,False,test
+Financial Modeling,Applied Financial Modeling to automate reporting and cut manual effort.,financial-modeling,alias,False,val
+GAAP,"Led a project built on GAAP, improving delivery speed by 30%.",gaap,alias,False,val
+GDPR & Data Privacy,Applied GDPR & Data Privacy to automate reporting and cut manual effort.,gdpr,alias,False,val
+Google Analytics,"Skills: Google Analytics, stakeholder communication, documentation.",google-analytics,alias,False,val
+Google Analytics 4 (GA4),Used Google Analytics 4 (GA4) daily to deliver features for internal and external customers.,google-analytics,alias,False,test
+Grafana,Applied Grafana to automate reporting and cut manual effort.,grafana,alias,False,test
+GraphQL,Hands-on experience with GraphQL in production environments.,graphql,alias,False,val
+Growth Marketing,"Led a project built on Growth Marketing, improving delivery speed by 30%.",growth-marketing,alias,False,val
+HIPAA Compliance,Applied HIPAA Compliance to automate reporting and cut manual effort.,hipaa-compliance,alias,False,val
+HL7 FHIR Protocols,Applied HL7 FHIR Protocols to automate reporting and cut manual effort.,hl7-fhir,alias,False,test
+HTML5 / CSS3,"Skills: HTML5 / CSS3, stakeholder communication, documentation.",html5,alias,False,test
+Health Informatics,Used Health Informatics daily to deliver features for internal and external customers.,health-informatics,alias,False,test
+HubSpot,Trained two junior colleagues in HubSpot best practices.,hubspot,alias,False,test
+HubSpot Sales Hub,Hands-on experience with HubSpot Sales Hub in production environments.,hubspot,alias,False,test
+IFRS Standards,Applied IFRS Standards to automate reporting and cut manual effort.,ifrs,alias,False,test
+Information Architecture,Hands-on experience with Information Architecture in production environments.,information-architecture,alias,False,val
+Instructional Design,"Led a project built on Instructional Design, improving delivery speed by 30%.",instructional-design,alias,False,test
+Intellectual Property (IP) Protection,Hands-on experience with Intellectual Property (IP) Protection in production environments.,intellectual-property,alias,False,val
+Internet of Things (IoT),Used Internet of Things (IoT) daily to deliver features for internal and external customers.,internet-of-things,alias,False,val
+JavaScript,Hands-on experience with JavaScript in production environments.,javascript,alias,False,val
+JavaScript (ES6+),"Led a project built on JavaScript (ES6+), improving delivery speed by 30%.",javascript,alias,False,val
+Jira,Trained two junior colleagues in Jira best practices.,jira,alias,False,test
+Kubernetes,Trained two junior colleagues in Kubernetes best practices.,kubernetes,alias,False,test
+Kubernetes (K8s),"Led a project built on Kubernetes (K8s), improving delivery speed by 30%.",kubernetes,alias,False,test
+LBO Modeling,"Skills: LBO Modeling, stakeholder communication, documentation.",lbo-modeling,alias,False,val
+Large Language Models,Used Large Language Models daily to deliver features for internal and external customers.,large-language-models,alias,False,val
+Large Language Models (LLM),"Skills: Large Language Models (LLM), stakeholder communication, documentation.",large-language-models,alias,False,val
+Lead Prospecting,Applied Lead Prospecting to automate reporting and cut manual effort.,sales-prospecting,alias,False,test
+Lean Manufacturing,"Led a project built on Lean Manufacturing, improving delivery speed by 30%.",lean-manufacturing,alias,False,test
+Learning Management Systems (LMS),Applied Learning Management Systems (LMS) to automate reporting and cut manual effort.,lms-platforms,alias,False,val
+Legal Research (Westlaw/LexisNexis),"Skills: Legal Research (Westlaw/LexisNexis), stakeholder communication, documentation.",legal-research,alias,False,val
+Linux,"Led a project built on Linux, improving delivery speed by 30%.",linux,alias,False,test
+M&A Due Diligence,Trained two junior colleagues in M&A Due Diligence best practices.,ma-due-diligence,alias,False,val
+Machine Learning,"Skills: Machine Learning, stakeholder communication, documentation.",machine-learning,alias,False,val
+Microservices,"Skills: Microservices, stakeholder communication, documentation.",microservices,alias,False,val
+Next.js,Used Next.js daily to deliver features for internal and external customers.,next-js,alias,False,val
+Node.js,Trained two junior colleagues in Node.js best practices.,node-js,alias,False,test
+NumPy,Used NumPy daily to deliver features for internal and external customers.,numpy,alias,False,val
+OKRs / KPIs Tracking,"Skills: OKRs / KPIs Tracking, stakeholder communication, documentation.",key-performance-indicators,alias,False,val
+Operations Management,Applied Operations Management to automate reporting and cut manual effort.,operations-management,alias,False,val
+PLC Programming,"Led a project built on PLC Programming, improving delivery speed by 30%.",plc-programming,alias,False,test
+PLC Programming (Siemens/Allen-Bradley),Trained two junior colleagues in PLC Programming (Siemens/Allen-Bradley) best practices.,plc-programming,alias,False,test
+Pandas,"Led a project built on Pandas, improving delivery speed by 30%.",pandas,alias,False,test
+PostgreSQL,Used PostgreSQL daily to deliver features for internal and external customers.,postgresql,alias,False,test
+Process Optimization,Used Process Optimization daily to deliver features for internal and external customers.,process-optimization,alias,False,val
+Product Discovery,Hands-on experience with Product Discovery in production environments.,product-discovery,alias,False,val
+Product Management,Applied Product Management to automate reporting and cut manual effort.,product-management,alias,False,test
+Product Roadmapping,Trained two junior colleagues in Product Roadmapping best practices.,product-roadmapping,alias,False,test
+Prometheus,Trained two junior colleagues in Prometheus best practices.,prometheus,alias,False,val
+Prototyping,Used Prototyping daily to deliver features for internal and external customers.,prototyping,alias,False,val
+Public Speaking & Lecturing,Applied Public Speaking & Lecturing to automate reporting and cut manual effort.,public-speaking,alias,False,test
+PyTorch,"Led a project built on PyTorch, improving delivery speed by 30%.",pytorch,alias,False,val
+Python,Trained two junior colleagues in Python best practices.,python,alias,False,test
+Quantitative Risk Management,Used Quantitative Risk Management daily to deliver features for internal and external customers.,financial-risk-management,alias,False,test
+R Language,Hands-on experience with R Language in production environments.,r-language,alias,False,test
+RAG Architecture,Trained two junior colleagues in RAG Architecture best practices.,retrieval-augmented-generation,alias,False,test
+React,Applied React to automate reporting and cut manual effort.,react,alias,False,test
+React.js,"Skills: React.js, stakeholder communication, documentation.",react,alias,False,val
+Redis,"Led a project built on Redis, improving delivery speed by 30%.",redis,alias,False,test
+Regulatory Compliance,Hands-on experience with Regulatory Compliance in production environments.,regulatory-compliance,alias,False,test
+Risk Assessment,Trained two junior colleagues in Risk Assessment best practices.,risk-management,alias,False,val
+Root Cause Analysis,"Skills: Root Cause Analysis, stakeholder communication, documentation.",root-cause-analysis,alias,False,val
+SCADA,Applied SCADA to automate reporting and cut manual effort.,scada,alias,False,val
+SCADA Systems,"Skills: SCADA Systems, stakeholder communication, documentation.",scada,alias,False,val
+SEM,Used SEM daily to deliver features for internal and external customers.,search-engine-marketing,alias,False,val
+SQL,"Led a project built on SQL, improving delivery speed by 30%.",sql,alias,False,val
+Sales Pipeline Management,"Skills: Sales Pipeline Management, stakeholder communication, documentation.",sales-strategy,alias,False,val
+Salesforce CRM,"Led a project built on Salesforce CRM, improving delivery speed by 30%.",salesforce,alias,False,test
+Salesforce Marketing Cloud,"Led a project built on Salesforce Marketing Cloud, improving delivery speed by 30%.",salesforce,alias,False,val
+Scikit-Learn,Applied Scikit-Learn to automate reporting and cut manual effort.,scikit-learn,alias,False,val
+Search Engine Marketing (SEM),Used Search Engine Marketing (SEM) daily to deliver features for internal and external customers.,search-engine-marketing,alias,False,test
+Search Engine Optimization (SEO),Hands-on experience with Search Engine Optimization (SEO) in production environments.,search-engine-optimization,alias,False,val
+Six Sigma,"Led a project built on Six Sigma, improving delivery speed by 30%.",six-sigma,alias,False,val
+Six Sigma Green Belt,"Skills: Six Sigma Green Belt, stakeholder communication, documentation.",six-sigma,alias,False,test
+Snowflake,Applied Snowflake to automate reporting and cut manual effort.,snowflake,alias,False,val
+SolidWorks CAD,"Skills: SolidWorks CAD, stakeholder communication, documentation.",solidworks,alias,False,val
+Stakeholder Management,"Led a project built on Stakeholder Management, improving delivery speed by 30%.",stakeholder-communication,alias,False,val
+Supply Chain Management,Applied Supply Chain Management to automate reporting and cut manual effort.,supply-chain-management,alias,False,val
+Tailwind CSS,"Skills: Tailwind CSS, stakeholder communication, documentation.",tailwindcss,alias,False,val
+Team Leadership,Trained two junior colleagues in Team Leadership best practices.,team-leadership,alias,False,test
+TensorFlow,Used TensorFlow daily to deliver features for internal and external customers.,tensorflow,alias,False,test
+Terraform,"Skills: Terraform, stakeholder communication, documentation.",terraform,alias,False,val
+TypeScript,Used TypeScript daily to deliver features for internal and external customers.,typescript,alias,False,val
+UI Design,"Led a project built on UI Design, improving delivery speed by 30%.",user-interface-design,alias,False,test
+UI/UX Design,"Led a project built on UI/UX Design, improving delivery speed by 30%.",user-experience-design,alias,False,test
+US GAAP,"Led a project built on US GAAP, improving delivery speed by 30%.",gaap,alias,False,val
+UX Design,Used UX Design daily to deliver features for internal and external customers.,user-experience-design,alias,False,test
+User Research,"Skills: User Research, stakeholder communication, documentation.",user-research,alias,False,test
+User Research & Usability Testing,Trained two junior colleagues in User Research & Usability Testing best practices.,user-research,alias,False,val
+User Stories,Used User Stories daily to deliver features for internal and external customers.,user-stories,alias,False,test
+Vector Databases,Applied Vector Databases to automate reporting and cut manual effort.,vector-databases,alias,False,val
+Vendor Management & Procurement,Trained two junior colleagues in Vendor Management & Procurement best practices.,vendor-management,alias,False,val
+Wireframing,"Skills: Wireframing, stakeholder communication, documentation.",wireframing,alias,False,val
+Wireframing & Prototyping,"Skills: Wireframing & Prototyping, stakeholder communication, documentation.",wireframing,alias,False,test
+dbt,Used dbt daily to deliver features for internal and external customers.,dbt,alias,False,test
+ASP.NET Core,Used ASP.NET Core daily to deliver features for internal and external customers.,aspnet-core,alias,False,test
+Microsoft 365 Excel,"Led a project built on Microsoft 365 Excel, improving delivery speed by 30%.",microsoft-excel,alias,False,val
+onpoint digital onpoint learning performance suite,Trained two junior colleagues in onpoint digital onpoint learning performance suite best practices.,onpoint-digital-onpoint-learning-performance-suite,alias,False,test
+Amkai AmkaiCharts,Hands-on experience with Amkai AmkaiCharts in production environments.,amkai-amkaicharts,alias,False,val
+Data conversion software,Hands-on experience with Data conversion software in production environments.,data-conversion-software,alias,False,test
+Shiny for R,Trained two junior colleagues in Shiny for R best practices.,shiny,alias,False,test
+aircraft noise monitoring system,Applied aircraft noise monitoring system to automate reporting and cut manual effort.,aircraft-noise-monitoring-system-software,alias,False,test
+Lucero System Office Management,"Skills: Lucero System Office Management, stakeholder communication, documentation.",lucero-system-office-management,alias,False,val
+asana project management,Applied asana project management to automate reporting and cut manual effort.,asana,alias,False,val
+The R Project for Statistical Computing,Used The R Project for Statistical Computing daily to deliver features for internal and external customers.,r-language,alias,False,test
+precision rtl,"Led a project built on precision rtl, improving delivery speed by 30%.",mentor-graphics-precision-rtl,alias,False,val
+Saperion ECM,Used Saperion ECM daily to deliver features for internal and external customers.,saperion-ecm,alias,False,test
+Cryptographic Privacy Systems,Applied Cryptographic Privacy Systems to automate reporting and cut manual effort.,cryptographic-privacy-systems,alias,False,val
+The SeaMonkey Internet Application Suite,Trained two junior colleagues in The SeaMonkey Internet Application Suite best practices.,seamonkey,alias,False,test
+three dimensional modeling,Applied three dimensional modeling to automate reporting and cut manual effort.,three-dimensional-modeling-software,alias,False,test
+Capital Codeworks MenuMax,"Skills: Capital Codeworks MenuMax, stakeholder communication, documentation.",capital-codeworks-menumax,alias,False,test
+Torchvision,Trained two junior colleagues in Torchvision best practices.,torchvision,alias,False,test
+ISA Server,Trained two junior colleagues in ISA Server best practices.,microsoft-forefront-threat-management-gateway,alias,False,val
+e mds topsem coder,Hands-on experience with e mds topsem coder in production environments.,e-mds-topsem-coder,alias,False,test
+Viper Tools,Hands-on experience with Viper Tools in production environments.,viper-tools,alias,False,val
+Procedure management software,"Skills: Procedure management software, stakeholder communication, documentation.",procedure-management-software,alias,False,val
+micronaut.io,"Led a project built on micronaut.io, improving delivery speed by 30%.",micronaut,alias,False,val
+information systems integration,Applied information systems integration to automate reporting and cut manual effort.,information-systems-integration-software,alias,False,val
+Insightful S-PLUS,Hands-on experience with Insightful S-PLUS in production environments.,insightful-s-plus,alias,False,val
+Customer Success,Hands-on experience with Customer Success in production environments.,customer-success,alias,False,test
+E-Verify Program,"Skills: E-Verify Program, stakeholder communication, documentation.",e-verify,alias,False,val
+Piping & instrumentation design PID software,Applied Piping & instrumentation design PID software to automate reporting and cut manual effort.,piping-and-instrumentation-design-pid-software,alias,False,test
+Product lifecycle management PLM software,Hands-on experience with Product lifecycle management PLM software in production environments.,product-lifecycle-management-plm-software,alias,False,val
+Python (computing),Hands-on experience with Python (computing) in production environments.,python,alias,False,val
+rapidi rapidminer,"Led a project built on rapidi rapidminer, improving delivery speed by 30%.",rapid-i-rapidminer,alias,False,test
+Supply chain event management software,Used Supply chain event management software daily to deliver features for internal and external customers.,supply-chain-event-management-software,alias,False,test
+Unittest,Used Unittest daily to deliver features for internal and external customers.,unittest,alias,False,val
+NIH Image,Hands-on experience with NIH Image in production environments.,imagej,alias,False,val
+supply system,Trained two junior colleagues in supply system best practices.,supply-system-software,alias,False,test
+Microsoft OneNote,"Skills: Microsoft OneNote, stakeholder communication, documentation.",microsoft-onenote,alias,False,val
+API Technologies & Protocols,"Skills: API Technologies & Protocols, stakeholder communication, documentation.",api-technologies,alias,False,val
+Blackboard Learning System,Hands-on experience with Blackboard Learning System in production environments.,blackboard-learn,alias,False,test
+gamma camera,Applied gamma camera to automate reporting and cut manual effort.,gamma-camera-software,alias,False,test
+Hibernate ORM,Trained two junior colleagues in Hibernate ORM best practices.,hibernate-orm,alias,False,val
+dnn,"Skills: dnn, stakeholder communication, documentation.",deep-learning,alias,False,val
+C programming language,Hands-on experience with C programming language in production environments.,c-language,alias,False,val
+reliasoft weibull 6,Hands-on experience with reliasoft weibull 6 in production environments.,reliasoft-weibull-6,alias,False,val
+iZotope Ozone,"Skills: iZotope Ozone, stakeholder communication, documentation.",izotope-ozone,alias,False,val
+chroma,Trained two junior colleagues in chroma best practices.,chromadb,alias,False,val
+ChemStation,Applied ChemStation to automate reporting and cut manual effort.,agilent-chemstation,alias,False,val
+HSRP,Used HSRP daily to deliver features for internal and external customers.,cisco-systems-hot-standby-router-protocol-hsrp,alias,False,val
+Microsoft Office Document Imaging,Trained two junior colleagues in Microsoft Office Document Imaging best practices.,microsoft-office-document-imaging,alias,False,test
+Enterprise application integration software,"Led a project built on Enterprise application integration software, improving delivery speed by 30%.",enterprise-application-integration-software,alias,False,val
+"Vimeo, Inc.","Hands-on experience with Vimeo, Inc. in production environments.",vimeo,alias,False,val
+ms security esssentials,Hands-on experience with ms security esssentials in production environments.,microsoft-security-esssentials,alias,False,val
+Factiva,"Skills: Factiva, stakeholder communication, documentation.",factiva,alias,False,val
+Solid Framework,Used Solid Framework daily to deliver features for internal and external customers.,solidjs,alias,False,val
+land software customer profile,Used land software customer profile daily to deliver features for internal and external customers.,land-software-customer-pro-file,alias,False,test
+ConEst Intellibid,Applied ConEst Intellibid to automate reporting and cut manual effort.,conest-intellibid,alias,False,test
+ecs,Used ecs daily to deliver features for internal and external customers.,aws-ecs,alias,False,val
+Ruby programming language,Applied Ruby programming language to automate reporting and cut manual effort.,ruby-language,alias,False,val
+incisive enterprise simulator,Applied incisive enterprise simulator to automate reporting and cut manual effort.,cadence-incisive-enterprise-simulator,alias,False,val
+Prolog,"Skills: Prolog, stakeholder communication, documentation.",prolog,alias,False,test
+human centered design,Trained two junior colleagues in human centered design best practices.,design-thinking,alias,False,val
+LᴬTᴇX,"Skills: LᴬTᴇX, stakeholder communication, documentation.",latex,alias,False,val
+ChemSW Mass Spec tool,"Skills: ChemSW Mass Spec tool, stakeholder communication, documentation.",chemsw-mass-spec-tools,alias,False,val
+Apple QuickTime,Used Apple QuickTime daily to deliver features for internal and external customers.,apple-quicktime,alias,False,val
+Numerical Computing,"Skills: Numerical Computing, stakeholder communication, documentation.",numerical-computing,alias,False,test
+docs.google.com/document,"Led a project built on docs.google.com/document, improving delivery speed by 30%.",google-docs,alias,False,test
+mctrans hcs,Applied mctrans hcs to automate reporting and cut manual effort.,mctrans-hcs,alias,False,test
+Gnuplot,Trained two junior colleagues in Gnuplot best practices.,gnuplot,alias,False,val
+Alpine.js,Used Alpine.js daily to deliver features for internal and external customers.,alpine-js,alias,False,test
+ECMA-408,Applied ECMA-408 to automate reporting and cut manual effort.,dart,alias,False,val
+employee scheduling,Trained two junior colleagues in employee scheduling best practices.,employee-scheduling-software,alias,False,val
+Character Studio,Applied Character Studio to automate reporting and cut manual effort.,character-studio,alias,False,test
+openjdk,Trained two junior colleagues in openjdk best practices.,java,alias,False,val
+Puppet Labs,Applied Puppet Labs to automate reporting and cut manual effort.,puppet,alias,False,test
+reliasoft rcm,Used reliasoft rcm daily to deliver features for internal and external customers.,reliasoft-rcm,alias,False,test
+StarData,"Skills: StarData, stakeholder communication, documentation.",stardata,alias,False,val
+apis,"Skills: apis, stakeholder communication, documentation.",application-programming-interface,alias,False,test
+Julia programming language,Applied Julia programming language to automate reporting and cut manual effort.,julia,alias,False,test
+Cryptographic Privacy system,Used Cryptographic Privacy system daily to deliver features for internal and external customers.,cryptographic-privacy-systems,alias,False,test
+Web design software,"Led a project built on Web design software, improving delivery speed by 30%.",web-design-software,alias,False,test
+Database Migrations,"Skills: Database Migrations, stakeholder communication, documentation.",database-migrations,alias,False,test
+Astro framework,Applied Astro framework to automate reporting and cut manual effort.,astro,alias,False,val
+route planning,Used route planning daily to deliver features for internal and external customers.,route-planning-software,alias,False,val
+Agilent CGH Analytics,"Led a project built on Agilent CGH Analytics, improving delivery speed by 30%.",agilent-cgh-analytics,alias,False,val
+Celery,"Skills: Celery, stakeholder communication, documentation.",celery,alias,False,val
+Microsoft Office OneNote,Applied Microsoft Office OneNote to automate reporting and cut manual effort.,microsoft-onenote,alias,False,val
+National Union Catalog of Manuscript Collections,Trained two junior colleagues in National Union Catalog of Manuscript Collections best practices.,national-union-catalog-of-manuscript-collections-nucmc,alias,False,test
+Trimble Total Control,Applied Trimble Total Control to automate reporting and cut manual effort.,trimble-total-control,alias,False,val
+Natural Language Processing,Applied Natural Language Processing to automate reporting and cut manual effort.,natural-language-processing,alias,False,val
+Python (software),"Skills: Python (software), stakeholder communication, documentation.",python,alias,False,val
+fund accounting,"Skills: fund accounting, stakeholder communication, documentation.",fund-accounting-software,alias,False,test
+Visual Statement Vista FX3 CSI,Used Visual Statement Vista FX3 CSI daily to deliver features for internal and external customers.,visual-statement-vista-fx3-csi,alias,False,val
+Ppo,Used Ppo daily to deliver features for internal and external customers.,ppo,alias,False,val
+Internetwork Operating System,Hands-on experience with Internetwork Operating System in production environments.,cisco-ios,alias,False,test
+Automatic dynamic incremental nonlinear analysis,"Led a project built on Automatic dynamic incremental nonlinear analysis, improving delivery speed by 30%.",automatic-dynamic-incremental-nonlinear-analysis-adina,alias,False,val
+Economic forecasting software,Trained two junior colleagues in Economic forecasting software best practices.,economic-forecasting-software,alias,False,val
+nuxt 3,Used nuxt 3 daily to deliver features for internal and external customers.,nuxt-js,alias,False,val
+IPython Notebook,Applied IPython Notebook to automate reporting and cut manual effort.,jupyter-notebook,alias,False,val
+autocad blue sky,Hands-on experience with autocad blue sky in production environments.,autodesk-autocad-blue-sky,alias,False,test
+Fused deposition modeling FDM rapid prototyping systems,"Led a project built on Fused deposition modeling FDM rapid prototyping systems, improving delivery speed by 30%.",fused-deposition-modeling-fdm-rapid-prototyping-systems,alias,False,test
+devops engineering,"Skills: devops engineering, stakeholder communication, documentation.",devops,alias,False,val
+Adobe Audio,Applied Adobe Audio to automate reporting and cut manual effort.,adobe-audition,alias,False,val
+oracle db,"Led a project built on oracle db, improving delivery speed by 30%.",oracle-db,alias,False,val
+Oracle JD Edwards EnterpriseOne,Hands-on experience with Oracle JD Edwards EnterpriseOne in production environments.,oracle-jd-edwards-enterpriseone,alias,False,val
+Requirements analysis and system architecture software,Hands-on experience with Requirements analysis and system architecture software in production environments.,requirements-analysis-and-system-architecture-software,alias,False,test
+Prometheus Time Series Collection and Processing Server,"Skills: Prometheus Time Series Collection and Processing Server, stakeholder communication, documentation.",prometheus,alias,False,test
+video production,Hands-on experience with video production in production environments.,video-production-software,alias,False,val
+Tropics Claims Reserve Management,"Led a project built on Tropics Claims Reserve Management, improving delivery speed by 30%.",tropics-claims-reserve-management,alias,False,test
+vue,Used vue daily to deliver features for internal and external customers.,vue-js,alias,False,val
+ksh93,"Led a project built on ksh93, improving delivery speed by 30%.",kornshell,alias,False,val
+emissions tracking,Applied emissions tracking to automate reporting and cut manual effort.,emissions-tracking-software,alias,False,test
+i.Agri LandMark Farm,Applied i.Agri LandMark Farm to automate reporting and cut manual effort.,iagri-landmark-farm,alias,False,test
+Educational or reference software,Used Educational or reference software daily to deliver features for internal and external customers.,educational-or-reference-software,alias,False,test
+datastage,"Skills: datastage, stakeholder communication, documentation.",ibm-infosphere-datastage,alias,False,val
+Image analysis system,Applied Image analysis system to automate reporting and cut manual effort.,image-analysis-systems,alias,False,val
+Molecular simulation software,"Skills: Molecular simulation software, stakeholder communication, documentation.",molecular-simulation-software,alias,False,test
+MVFS,"Led a project built on MVFS, improving delivery speed by 30%.",ibm-rational-clearcase,alias,False,val
+functional modeling,"Led a project built on functional modeling, improving delivery speed by 30%.",functional-modeling-software,alias,False,test
+NovaStor NovaBACKUP,"Led a project built on NovaStor NovaBACKUP, improving delivery speed by 30%.",novastor-novabackup,alias,False,test
+leadership and strategy,Applied leadership and strategy to automate reporting and cut manual effort.,leadership-and-strategy,alias,False,test
+Navision,"Skills: Navision, stakeholder communication, documentation.",microsoft-dynamics-nav,alias,False,test
+remote access,"Led a project built on remote access, improving delivery speed by 30%.",remote-access-software,alias,False,val
+Domin-8 Enterprise Solutions RentRight,"Skills: Domin-8 Enterprise Solutions RentRight, stakeholder communication, documentation.",domin-8-enterprise-solutions-rentright,alias,False,test
+hugging face,Applied hugging face to automate reporting and cut manual effort.,huggingface-transformers,alias,False,val
+IBM Rational Application Developer for WebSphere Software,"Led a project built on IBM Rational Application Developer for WebSphere Software, improving delivery speed by 30%.",ibm-rational-application-developer,alias,False,test
+distributed component object model dcom,Trained two junior colleagues in distributed component object model dcom best practices.,distributed-component-object-model-dcom-software,alias,False,test
+Clark Labs IDRISI Selva,"Led a project built on Clark Labs IDRISI Selva, improving delivery speed by 30%.",clark-labs-idrisi-selva,alias,False,val
+rustlang,Trained two junior colleagues in rustlang best practices.,rust-language,alias,False,val
+Informix Dynamic Server,Used Informix Dynamic Server daily to deliver features for internal and external customers.,ibm-informix,alias,False,val
+automated financial,Hands-on experience with automated financial in production environments.,automated-financial-software,alias,False,test
+Xerox FreeFlow Print Server,Hands-on experience with Xerox FreeFlow Print Server in production environments.,xerox-freeflow-print-server,alias,False,val
+Preventive Maintenance,Trained two junior colleagues in Preventive Maintenance best practices.,preventive-maintenance,alias,False,test
+WebASM,"Led a project built on WebASM, improving delivery speed by 30%.",webassembly,alias,False,test
+Boundary scan description language,Used Boundary scan description language daily to deliver features for internal and external customers.,boundary-scan-description-language-bsdl,alias,False,test
+Deacom ERP,Hands-on experience with Deacom ERP in production environments.,deacom-erp,alias,False,test
+x86 assembly,"Led a project built on x86 assembly, improving delivery speed by 30%.",assembly-language,alias,False,test
+Programming in Logic,Trained two junior colleagues in Programming in Logic best practices.,prolog,alias,False,val
+atterbury consultants superaceflips,"Led a project built on atterbury consultants superaceflips, improving delivery speed by 30%.",atterbury-consultants-superaceflips,alias,False,test
+Graphics creation software,Applied Graphics creation software to automate reporting and cut manual effort.,graphics-creation-software,alias,False,test
+Fastly,"Led a project built on Fastly, improving delivery speed by 30%.",fastly,alias,False,test
+Hudson,"Led a project built on Hudson, improving delivery speed by 30%.",jenkins,alias,False,test
+complementarysymmetry/metaloxide semiconductor cmos layout software,Applied complementarysymmetry/metaloxide semiconductor cmos layout software to automate reporting and cut manual effort.,complementary-symmetrymetal-oxide-semiconductor-cmos-layout-software,alias,False,val
+Appium,Hands-on experience with Appium in production environments.,appium,alias,False,val
+angular 14,Trained two junior colleagues in angular 14 best practices.,angular,alias,False,test
+Spreadsheets,Applied Spreadsheets to automate reporting and cut manual effort.,google-sheets,alias,False,test
+rational clearquest,"Led a project built on rational clearquest, improving delivery speed by 30%.",ibm-rational-clearquest,alias,False,test
+TURBO Spring-Stat,"Skills: TURBO Spring-Stat, stakeholder communication, documentation.",turbo-spring-stat,alias,False,val
+Yarn,Applied Yarn to automate reporting and cut manual effort.,yarn,alias,False,test
+Transformers: Call of the Future,"Skills: Transformers: Call of the Future, stakeholder communication, documentation.",huggingface-transformers,alias,False,test
+incentive management system,Applied incentive management system to automate reporting and cut manual effort.,incentive-management-system-software,alias,False,val
+Rapid application development RAD software,"Led a project built on Rapid application development RAD software, improving delivery speed by 30%.",rapid-application-development-rad-software,alias,False,val
+Pyarrow,Hands-on experience with Pyarrow in production environments.,pyarrow,alias,False,val
+Efectos secundarios,Applied Efectos secundarios to automate reporting and cut manual effort.,adobe-after-effects,alias,False,val
+activex,Applied activex to automate reporting and cut manual effort.,microsoft-activex,alias,False,test
+ePsych,Hands-on experience with ePsych in production environments.,epsych,alias,False,test
+k8s cluster,Hands-on experience with k8s cluster in production environments.,kubernetes,alias,False,val
+paypal.com,Trained two junior colleagues in paypal.com best practices.,paypal,alias,False,test
+asp net core mvc,"Led a project built on asp net core mvc, improving delivery speed by 30%.",microsoft-aspnet-core-mvc,alias,False,val
+Corel CorelScan,"Skills: Corel CorelScan, stakeholder communication, documentation.",corel-corelscan,alias,False,test
+WAN switching software and firmware,"Led a project built on WAN switching software and firmware, improving delivery speed by 30%.",wan-switching-software-and-firmware,alias,False,val
+Image-J,Applied Image-J to automate reporting and cut manual effort.,imagej,alias,False,test
+lowlevel debugger software,Hands-on experience with lowlevel debugger software in production environments.,low-level-debugger-software,alias,False,test
+AASoftTech Web Organization Chart,Used AASoftTech Web Organization Chart daily to deliver features for internal and external customers.,aasofttech-web-organization-chart,alias,False,test
+Performance And Load Testing,Hands-on experience with Performance And Load Testing in production environments.,performance-and-load-testing,alias,False,test
+Netscape Enterprise Server,Trained two junior colleagues in Netscape Enterprise Server best practices.,oracle-iplanet-web-server,alias,False,test
+hewlettpackard hp openvms,"Led a project built on hewlettpackard hp openvms, improving delivery speed by 30%.",hewlett-packard-hp-openvms,alias,False,val
+Montgomery Investment Technology FinTools,Hands-on experience with Montgomery Investment Technology FinTools in production environments.,montgomery-investment-technology-fintools,alias,False,val
+elastic stack,Trained two junior colleagues in elastic stack best practices.,elasticsearch,alias,False,test
+Docker software,Used Docker software daily to deliver features for internal and external customers.,docker,alias,False,val
+automated media tracking,"Led a project built on automated media tracking, improving delivery speed by 30%.",automated-media-tracking-software,alias,False,test
+Askia Web,"Led a project built on Askia Web, improving delivery speed by 30%.",askia-web,alias,False,val
+computational biology,Applied computational biology to automate reporting and cut manual effort.,bioinformatics,alias,False,test
+Apache web server,Trained two junior colleagues in Apache web server best practices.,apache-http-server,alias,False,test
+aci appraisers choice,Applied aci appraisers choice to automate reporting and cut manual effort.,aci-appraisers-choice,alias,False,val
+Card key management software,Trained two junior colleagues in Card key management software best practices.,card-key-management-software,alias,False,test
+PowerShell,"Skills: PowerShell, stakeholder communication, documentation.",powershell,alias,False,val
+Sense,"Skills: Sense, stakeholder communication, documentation.",qlik-sense,alias,False,val
+alias automotive,Trained two junior colleagues in alias automotive best practices.,autodesk-alias-automotive,alias,False,test
+Online data collection systems,Hands-on experience with Online data collection systems in production environments.,online-data-collection-systems,alias,False,test
+Software as a Service (SaaS),"Led a project built on Software as a Service (SaaS), improving delivery speed by 30%.",software-as-a-service,alias,False,test
+podman.io,Applied podman.io to automate reporting and cut manual effort.,podman,alias,False,test
+food inventory,Hands-on experience with food inventory in production environments.,food-inventory-software,alias,False,val
+Texas Transportation Institute TTI Progression Analysis and Signal System Evaluation Routine PASSER,Trained two junior colleagues in Texas Transportation Institute TTI Progression Analysis and Signal System Evaluation Routine PASSER best practices.,texas-transportation-institute-tti-progression-analysis-and-signal-system-evaluation-routine-passer,alias,False,val
+open-cv,Trained two junior colleagues in open-cv best practices.,opencv,alias,False,val
+Corel Photopaint,"Led a project built on Corel Photopaint, improving delivery speed by 30%.",corel-photo-paint,alias,False,test
+net framework,Trained two junior colleagues in net framework best practices.,microsoft-net-framework,alias,False,test
+Astronomical information processing system AIPS++,"Led a project built on Astronomical information processing system AIPS++, improving delivery speed by 30%.",astronomical-information-processing-system-aips,alias,False,val
+go to market planning,"Skills: go to market planning, stakeholder communication, documentation.",go-to-market-strategy,alias,False,test
+Microsoft Internet Security and Acceleration Server,"Skills: Microsoft Internet Security and Acceleration Server, stakeholder communication, documentation.",microsoft-forefront-threat-management-gateway,alias,False,val
+building systems,Applied building systems to automate reporting and cut manual effort.,autodesk-building-systems,alias,False,test
+Collier Research HyperSizer,Hands-on experience with Collier Research HyperSizer in production environments.,collier-research-hypersizer,alias,False,test
+UI UX Design Tools,Trained two junior colleagues in UI UX Design Tools best practices.,ui-ux-design-tools,alias,False,val
+Reductive Labs,"Skills: Reductive Labs, stakeholder communication, documentation.",puppet,alias,False,val
+visual basic net compact framework cf,Hands-on experience with visual basic net compact framework cf in production environments.,microsoft-visual-basicnet-compact-framework-cf,alias,False,val
+dominKnow Learning Center,"Skills: dominKnow Learning Center, stakeholder communication, documentation.",dominknow-learning-center,alias,False,test
+Dart,"Skills: Dart, stakeholder communication, documentation.",dart,alias,False,test
+The LaTeX Project,Used The LaTeX Project daily to deliver features for internal and external customers.,latex,alias,False,test
+ms visual c# net,Applied ms visual c# net to automate reporting and cut manual effort.,microsoft-visual-c-net,alias,False,test
+Motion correction software,Used Motion correction software daily to deliver features for internal and external customers.,motion-correction-software,alias,False,test
+google ads,"Led a project built on google ads, improving delivery speed by 30%.",search-engine-marketing,alias,False,val
+Sun ONE Web Server,Hands-on experience with Sun ONE Web Server in production environments.,oracle-iplanet-web-server,alias,False,val
+erp human capital management,"Led a project built on erp human capital management, improving delivery speed by 30%.",sap-erp-human-capital-management,alias,False,val
+Advanced technologies and oceanic procedures ATOP,Hands-on experience with Advanced technologies and oceanic procedures ATOP in production environments.,advanced-technologies-and-oceanic-procedures-atop,alias,False,test
+ror,Hands-on experience with ror in production environments.,ruby-on-rails,alias,False,test
+Rational Application Developer for WebSphere Software,Hands-on experience with Rational Application Developer for WebSphere Software in production environments.,ibm-rational-application-developer,alias,False,val
+FANUC Robotics Diagnostic Resource Center,"Led a project built on FANUC Robotics Diagnostic Resource Center, improving delivery speed by 30%.",fanuc-robotics-diagnostic-resource-center-drc,alias,False,val
+Moss Adams Profit Mentor,Trained two junior colleagues in Moss Adams Profit Mentor best practices.,moss-adams-profit-mentor,alias,False,val
+AWS IAM,Applied AWS IAM to automate reporting and cut manual effort.,aws-iam,alias,False,val
+Jakarta Struts,Used Jakarta Struts daily to deliver features for internal and external customers.,apache-struts,alias,False,val
+Olap database,Applied Olap database to automate reporting and cut manual effort.,olap-databases,alias,False,val
+HRS Quickscore,Hands-on experience with HRS Quickscore in production environments.,hrs-quickscore,alias,False,test
+Storage networking software,"Led a project built on Storage networking software, improving delivery speed by 30%.",storage-networking-software,alias,False,test
+Autodesk Alias Studio,"Skills: Autodesk Alias Studio, stakeholder communication, documentation.",autodesk-aliasstudio,alias,False,val
+google compute engine gce,"Skills: google compute engine gce, stakeholder communication, documentation.",google-compute-engine-gce,alias,False,val
+NeTLIMS AutoLIMS Core Lab,Trained two junior colleagues in NeTLIMS AutoLIMS Core Lab best practices.,netlims-autolims-core-lab,alias,False,val
+dotnet c#,Applied dotnet c# to automate reporting and cut manual effort.,c-sharp,alias,False,val
+Forefront TMG,Used Forefront TMG daily to deliver features for internal and external customers.,microsoft-forefront-threat-management-gateway,alias,False,test
+edtech solutions,Applied edtech solutions to automate reporting and cut manual effort.,edtech-solutions,alias,False,val
+Gerber Technology AccuMark,Trained two junior colleagues in Gerber Technology AccuMark best practices.,gerber-technology-accumark,alias,False,val
+application security,Hands-on experience with application security in production environments.,application-security,alias,False,val
+Google Spreadsheets,Applied Google Spreadsheets to automate reporting and cut manual effort.,google-sheets,alias,False,test
+ear measurement,Hands-on experience with ear measurement in production environments.,ear-measurement-software,alias,False,val
+GEPASI,"Led a project built on GEPASI, improving delivery speed by 30%.",gepasi,alias,False,test
+google cloud,Applied google cloud to automate reporting and cut manual effort.,google-cloud-platform,alias,False,val
+Swift.org,Used Swift.org daily to deliver features for internal and external customers.,swift-language,alias,False,val
+hotel management system,"Skills: hotel management system, stakeholder communication, documentation.",hotel-management-system-software,alias,False,val
+MathWorks Simulink DSP Blockset,Applied MathWorks Simulink DSP Blockset to automate reporting and cut manual effort.,mathworks-simulink-dsp-blockset,alias,False,test
+Autodesk 3DS Max tools,"Led a project built on Autodesk 3DS Max tools, improving delivery speed by 30%.",character-studio,alias,False,val
+workspace software,Trained two junior colleagues in workspace software best practices.,google-workspace-software,alias,False,val
+MORSE-CG dose assessment computer code,Used MORSE-CG dose assessment computer code daily to deliver features for internal and external customers.,morse-cg-dose-assessment-computer-code,alias,False,val
+SwiftUI,"Led a project built on SwiftUI, improving delivery speed by 30%.",swiftui,alias,False,val
+Cool Edit Pro,Trained two junior colleagues in Cool Edit Pro best practices.,adobe-audition,alias,False,test
+babylonjs,Trained two junior colleagues in babylonjs best practices.,babylon-js,alias,False,val
+National Instruments TestStand,Applied National Instruments TestStand to automate reporting and cut manual effort.,national-instruments-teststand,alias,False,val
+LAN software,Trained two junior colleagues in LAN software best practices.,lan-software,alias,False,test
+Transformers Tatakai,Used Transformers Tatakai daily to deliver features for internal and external customers.,huggingface-transformers,alias,False,val
+assembly line balancing,Used assembly line balancing daily to deliver features for internal and external customers.,assembly-line-balancing-software,alias,False,test
+Spectroscopy databases,"Skills: Spectroscopy databases, stakeholder communication, documentation.",spectroscopy-databases,alias,False,test
+chroma db,Trained two junior colleagues in chroma db best practices.,chromadb,alias,False,val
+Godot Engine,Trained two junior colleagues in Godot Engine best practices.,godot,alias,False,val
+public affairs information service (pais) database,Hands-on experience with public affairs information service (pais) database in production environments.,proquest-public-affairs-information-service-pais-database,alias,False,test
+Cost accounting software,Hands-on experience with Cost accounting software in production environments.,cost-accounting-software,alias,False,test
+Kernel Auditing LInux,Applied Kernel Auditing LInux to automate reporting and cut manual effort.,kali-linux,alias,False,val
+threedimensional modeling software,Hands-on experience with threedimensional modeling software in production environments.,three-dimensional-modeling-software,alias,False,test
+M-Sim,Applied M-Sim to automate reporting and cut manual effort.,m-sim,alias,False,test
+AWS S3,Applied AWS S3 to automate reporting and cut manual effort.,aws-s3,alias,False,val
+Scala programming language,Hands-on experience with Scala programming language in production environments.,scala,alias,False,test
+ms bing,Hands-on experience with ms bing in production environments.,microsoft-bing,alias,False,val
+ESA MOSAICS,Applied ESA MOSAICS to automate reporting and cut manual effort.,esa-mosaics,alias,False,test
+Relay,Applied Relay to automate reporting and cut manual effort.,relay,alias,False,test
+3D max,"Skills: 3D max, stakeholder communication, documentation.",autodesk-3ds-max,alias,False,test
+tier generator,Hands-on experience with tier generator in production environments.,tier-generator-software,alias,False,val
+Electronic document management system EDMS,Used Electronic document management system EDMS daily to deliver features for internal and external customers.,electronic-document-management-system-edms,alias,False,val
+GitHub Actions,Trained two junior colleagues in GitHub Actions best practices.,github-actions,alias,False,val
+Aldus PageMaker,"Led a project built on Aldus PageMaker, improving delivery speed by 30%.",adobe-pagemaker,alias,False,val
+zephyr extra terminal emulation,Trained two junior colleagues in zephyr extra terminal emulation best practices.,zephyr-extra-terminal-emulation,alias,False,val
+MAYA Nastran,"Led a project built on MAYA Nastran, improving delivery speed by 30%.",maya-nastran,alias,False,val
+Amazon Neptune,Used Amazon Neptune daily to deliver features for internal and external customers.,amazon-neptune,alias,False,test
+Structural Query Language,Applied Structural Query Language to automate reporting and cut manual effort.,sql,alias,False,test
+data transformation services dts,Hands-on experience with data transformation services dts in production environments.,data-transformation-services-dts-software,alias,False,test
+Contract management software,Applied Contract management software to automate reporting and cut manual effort.,contract-management-software,alias,False,test
+Systems Skills,Used Systems Skills daily to deliver features for internal and external customers.,systems-skills-skills,alias,False,test
+Phoenix Framework,Hands-on experience with Phoenix Framework in production environments.,phoenix-framework,alias,False,test
+ms frontpage,Trained two junior colleagues in ms frontpage best practices.,microsoft-frontpage,alias,False,val
+AcmeStudio,"Led a project built on AcmeStudio, improving delivery speed by 30%.",acmestudio,alias,False,test
+Google Kubernetes Engine,Used Google Kubernetes Engine daily to deliver features for internal and external customers.,google-kubernetes-engine,alias,False,test
+Python Programming Language,Hands-on experience with Python Programming Language in production environments.,python,alias,False,val
+machine monitoring,Hands-on experience with machine monitoring in production environments.,machine-monitoring-software,alias,False,test
+World Vector Shoreline,Hands-on experience with World Vector Shoreline in production environments.,world-vector-shoreline,alias,False,val
+devops and containers,Trained two junior colleagues in devops and containers best practices.,devops-and-containers,alias,False,val
+Microsoft Navision,Trained two junior colleagues in Microsoft Navision best practices.,microsoft-dynamics-nav,alias,False,val
+WCCP,"Skills: WCCP, stakeholder communication, documentation.",cisco-systems-cisco-web-cache-communication-protocol-wccp,alias,False,test
+Coin Educational Products Coin Jr.,"Skills: Coin Educational Products Coin Jr., stakeholder communication, documentation.",coin-educational-products-coin-jr,alias,False,test
+solidity smart contracts,Used solidity smart contracts daily to deliver features for internal and external customers.,solidity,alias,False,test
+PHP Hypertext Preprocessor,Trained two junior colleagues in PHP Hypertext Preprocessor best practices.,php,alias,False,test
+Ordering & purchasing software,Used Ordering & purchasing software daily to deliver features for internal and external customers.,ordering-and-purchasing-software,alias,False,test
+Gregg Software Gregg Rock-It,"Led a project built on Gregg Software Gregg Rock-It, improving delivery speed by 30%.",gregg-software-gregg-rock-it,alias,False,test
+Sales Prospecting,Applied Sales Prospecting to automate reporting and cut manual effort.,sales-prospecting,alias,False,val
+Autodesk Alias,Used Autodesk Alias daily to deliver features for internal and external customers.,autodesk-aliasstudio,alias,False,val
+geomechanical design analysis gda,Hands-on experience with geomechanical design analysis gda in production environments.,geomechanical-design-analysis-gda-software,alias,False,test
+PaleoMag,"Skills: PaleoMag, stakeholder communication, documentation.",paleomag,alias,False,test
+Content management software,Used Content management software daily to deliver features for internal and external customers.,content-management-software,alias,False,test
+Ruby language,"Skills: Ruby language, stakeholder communication, documentation.",ruby-language,alias,False,test
+Sales & Marketing,Used Sales & Marketing daily to deliver features for internal and external customers.,sales-and-marketing-knowledge,alias,False,val
+National Geophysical Data Center GEODAS,"Skills: National Geophysical Data Center GEODAS, stakeholder communication, documentation.",national-geophysical-data-center-geodas,alias,False,test
+powershell core,Hands-on experience with powershell core in production environments.,powershell,alias,False,val
+J Programming Language,Used J Programming Language daily to deliver features for internal and external customers.,j,alias,False,test
+business management,Trained two junior colleagues in business management best practices.,business-management-software,alias,False,test
+Loom,Trained two junior colleagues in Loom best practices.,loom,alias,False,test
+android studio,Hands-on experience with android studio in production environments.,android-sdk,alias,False,val
+Defender,Trained two junior colleagues in Defender best practices.,microsoft-defender-antivirus,alias,False,test
+Disk file system,"Skills: Disk file system, stakeholder communication, documentation.",disk-file-systems,alias,False,val
+Distributed control system DCS,"Led a project built on Distributed control system DCS, improving delivery speed by 30%.",distributed-control-system-dcs,alias,False,test
+non-relational database,Trained two junior colleagues in non-relational database best practices.,nosql-databases,alias,False,test
+Jakarta Tomcat,Used Jakarta Tomcat daily to deliver features for internal and external customers.,apache-tomcat,alias,False,test
+Electronic train management systems,Trained two junior colleagues in Electronic train management systems best practices.,electronic-train-management-system-software,alias,False,val
+MapScenes Pro,"Skills: MapScenes Pro, stakeholder communication, documentation.",mapscenes-pro,alias,False,val
+Compiler and decompiler software,Used Compiler and decompiler software daily to deliver features for internal and external customers.,compiler-and-decompiler-software,alias,False,test
+EF Core,Applied EF Core to automate reporting and cut manual effort.,entity-framework-core,alias,False,test
+discrete event simulation,"Skills: discrete event simulation, stakeholder communication, documentation.",discrete-event-simulation-software,alias,False,val
+Intuit MRI Residential,Applied Intuit MRI Residential to automate reporting and cut manual effort.,intuit-mri-residential,alias,False,val
+Data base reporting software,Hands-on experience with Data base reporting software in production environments.,data-base-reporting-software,alias,False,val
+Lisp (programming language),Trained two junior colleagues in Lisp (programming language) best practices.,lisp,alias,False,test
+Land management database,Applied Land management database to automate reporting and cut manual effort.,land-management-databases,alias,False,test
+Extedo eCTDmanager Suite,Trained two junior colleagues in Extedo eCTDmanager Suite best practices.,extedo-ectdmanager-suite,alias,False,val
+general ledger,"Skills: general ledger, stakeholder communication, documentation.",financial-accounting,alias,False,test
+R programming language,Used R programming language daily to deliver features for internal and external customers.,r-language,alias,False,val
+allegro design entry capture and capture cis,"Led a project built on allegro design entry capture and capture cis, improving delivery speed by 30%.",cadence-allegro-design-entry-capture-and-capture-cis,alias,False,val
+Bosch Punch List,"Skills: Bosch Punch List, stakeholder communication, documentation.",bosch-punch-list,alias,False,val
+okr planning,Trained two junior colleagues in okr planning best practices.,objectives-and-key-results,alias,False,test
+Oracle DBMS,"Led a project built on Oracle DBMS, improving delivery speed by 30%.",oracle-db,alias,False,val
+elastic container service ecs,"Skills: elastic container service ecs, stakeholder communication, documentation.",amazon-elastic-container-service-ecs,alias,False,test
+Moodle,Applied Moodle to automate reporting and cut manual effort.,moodle,alias,False,val
+pl/sql,Hands-on experience with pl/sql in production environments.,oracle-db,alias,False,test
+Norton by Symantec,"Led a project built on Norton by Symantec, improving delivery speed by 30%.",norton-antivirus,alias,False,val
+cimatron computer aided design and manufacturing,Trained two junior colleagues in cimatron computer aided design and manufacturing best practices.,cimatron-computer-aided-design-and-manufacturing-software,alias,False,val
+Oracle Data Guard,"Skills: Oracle Data Guard, stakeholder communication, documentation.",oracle-data-guard,alias,False,val
+.net core,Trained two junior colleagues in .net core best practices.,aspnet-core,alias,False,val
+classdojo.com,"Led a project built on classdojo.com, improving delivery speed by 30%.",classdojo,alias,False,val
+spss statistics,Applied spss statistics to automate reporting and cut manual effort.,ibm-spss-statistics,alias,False,test
+Star Software Materiality Calculator,"Led a project built on Star Software Materiality Calculator, improving delivery speed by 30%.",star-software-materiality-calculator,alias,False,test
+Npm,"Led a project built on Npm, improving delivery speed by 30%.",npm,alias,False,test
+Quicken Software,Trained two junior colleagues in Quicken Software best practices.,quicken,alias,False,val
+doublecheck grct platform,Hands-on experience with doublecheck grct platform in production environments.,doublecheck-grct-platform,alias,False,test
+Autodesk Ecotect Analysis,"Led a project built on Autodesk Ecotect Analysis, improving delivery speed by 30%.",autodesk-ecotect-analysis,alias,False,val
+triton,"Led a project built on triton, improving delivery speed by 30%.",triton-inference-server,alias,False,test
+com.apple.facetime,Applied com.apple.facetime to automate reporting and cut manual effort.,facetime,alias,False,val
+cognos reportnet,Trained two junior colleagues in cognos reportnet best practices.,ibm-cognos-reportnet,alias,False,test
+Database capacity planning software,Trained two junior colleagues in Database capacity planning software best practices.,database-capacity-planning-software,alias,False,val
+Law and Public Safety,"Led a project built on Law and Public Safety, improving delivery speed by 30%.",law-and-public-safety-knowledge-group,alias,False,test
+m.facebook.com,Applied m.facebook.com to automate reporting and cut manual effort.,facebook,alias,False,val
+electronic lab notebook,"Skills: electronic lab notebook, stakeholder communication, documentation.",electronic-lab-notebook-software,alias,False,test
+Alteer Office,Used Alteer Office daily to deliver features for internal and external customers.,alteer-office,alias,False,val
+paid search,Hands-on experience with paid search in production environments.,search-engine-marketing,alias,False,val
+The Archivists’ Toolkit,"Skills: The Archivists’ Toolkit, stakeholder communication, documentation.",archivists-toolkit,alias,False,val
+kofficeorg kplato,Used kofficeorg kplato daily to deliver features for internal and external customers.,kofficeorg-kplato,alias,False,val
+Thomson Creative Solutions Engagement CS,"Led a project built on Thomson Creative Solutions Engagement CS, improving delivery speed by 30%.",thomson-creative-solutions-engagement-cs,alias,False,val
+qlora,Trained two junior colleagues in qlora best practices.,lora,alias,False,test
+Ventura Publisher,"Skills: Ventura Publisher, stakeholder communication, documentation.",corel-ventura,alias,False,test
+businessobjects crystal reports,"Skills: businessobjects crystal reports, stakeholder communication, documentation.",sap-businessobjects-crystal-reports,alias,False,test
+Autodesk AutoCAD Mechanical,Hands-on experience with Autodesk AutoCAD Mechanical in production environments.,autodesk-autocad-mechanical,alias,False,val
+oracle cerner,Hands-on experience with oracle cerner in production environments.,cerner,alias,False,test
+MS SQLServer,Used MS SQLServer daily to deliver features for internal and external customers.,sql-server,alias,False,test
+macos,"Skills: macos, stakeholder communication, documentation.",apple-macos,alias,False,val
+Component object model COM software,Applied Component object model COM software to automate reporting and cut manual effort.,component-object-model-com-software,alias,False,val
+Business Skills,"Led a project built on Business Skills, improving delivery speed by 30%.",business-skills,alias,False,test
+Open Graphics Library,Used Open Graphics Library daily to deliver features for internal and external customers.,opengl,alias,False,test
+futura international ops,"Skills: futura international ops, stakeholder communication, documentation.",futura-international-ops,alias,False,test
+RCS GSelector,"Led a project built on RCS GSelector, improving delivery speed by 30%.",rcs-gselector,alias,False,test
+MySQL,Applied MySQL to automate reporting and cut manual effort.,mysql,alias,False,val
+Apache,Applied Apache to automate reporting and cut manual effort.,apache-http-server,alias,False,val
+Delcam computer-aided design & manufacturing software,Trained two junior colleagues in Delcam computer-aided design & manufacturing software best practices.,delcam-computer-aided-design-and-manufacturing-software,alias,False,val
+Automated permit system software,Hands-on experience with Automated permit system software in production environments.,automated-permit-system-software,alias,False,val
+saas applications,Hands-on experience with saas applications in production environments.,software-as-a-service,alias,False,test
+KASH,Used KASH daily to deliver features for internal and external customers.,kant,alias,False,test
+vieux associates vflow,Hands-on experience with vieux associates vflow in production environments.,vieux-associates-vflow,alias,False,val
+Camstar Manufacturing Execution System MES,Hands-on experience with Camstar Manufacturing Execution System MES in production environments.,camstar-manufacturing-execution-system-mes,alias,False,test
+Terragrunt,"Led a project built on Terragrunt, improving delivery speed by 30%.",terragrunt,alias,False,test
+Photopaint,Trained two junior colleagues in Photopaint best practices.,corel-photo-paint,alias,False,test
+datafarm scubed,"Led a project built on datafarm scubed, improving delivery speed by 30%.",datafarm-s-cubed,alias,False,val
+SiSense Prism,"Led a project built on SiSense Prism, improving delivery speed by 30%.",sisense-prism,alias,False,val
+online marketing,Trained two junior colleagues in online marketing best practices.,digital-marketing,alias,False,val
+csh.1,"Skills: csh.1, stakeholder communication, documentation.",c-shell,alias,False,test
+precision trax,Used precision trax daily to deliver features for internal and external customers.,precision-trax,alias,False,val
+Redgate SQL Server,Applied Redgate SQL Server to automate reporting and cut manual effort.,redgate-sql-server,alias,False,test
+growth hacking,"Led a project built on growth hacking, improving delivery speed by 30%.",growth-marketing,alias,False,val
+The Julia Language,Trained two junior colleagues in The Julia Language best practices.,julia,alias,False,val
+NCAR Command Language,Hands-on experience with NCAR Command Language in production environments.,ncar-command-language-ncl,alias,False,test
+File transfer protocol FTP software,Trained two junior colleagues in File transfer protocol FTP software best practices.,file-transfer-protocol-ftp-software,alias,False,test
+Grpc,Applied Grpc to automate reporting and cut manual effort.,grpc,alias,False,val
+Ada programming language,Hands-on experience with Ada programming language in production environments.,ada,alias,False,test
+Law enforcement information database,"Led a project built on Law enforcement information database, improving delivery speed by 30%.",law-enforcement-information-databases,alias,False,test
+Stellar Processes EZ Sim,Hands-on experience with Stellar Processes EZ Sim in production environments.,stellar-processes-ez-sim,alias,False,test
+Fpga,Hands-on experience with Fpga in production environments.,fpga,alias,False,test
+latex-project.org,"Skills: latex-project.org, stakeholder communication, documentation.",latex,alias,False,val
+virtual server,Hands-on experience with virtual server in production environments.,microsoft-virtual-server,alias,False,test
+Pelion manufacturing process optimization MPO software,Hands-on experience with Pelion manufacturing process optimization MPO software in production environments.,pelion-manufacturing-process-optimization-mpo-software,alias,False,val
+Network Mapper,Applied Network Mapper to automate reporting and cut manual effort.,nmap,alias,False,val
+motion analysis,Hands-on experience with motion analysis in production environments.,motion-analysis-software,alias,False,test
+Building and Construction,"Led a project built on Building and Construction, improving delivery speed by 30%.",building-and-construction-knowledge,alias,False,val
+Expert system software,Trained two junior colleagues in Expert system software best practices.,expert-system-software,alias,False,test
+SeaMonkey Suite,"Skills: SeaMonkey Suite, stakeholder communication, documentation.",seamonkey,alias,False,val
+Computer aided design & drafting software CADD,Applied Computer aided design & drafting software CADD to automate reporting and cut manual effort.,computer-aided-design-and-drafting-software-cadd,alias,False,test
+On Center On-Screen Takeoff,Trained two junior colleagues in On Center On-Screen Takeoff best practices.,on-center-on-screen-takeoff,alias,False,val
+sso,"Skills: sso, stakeholder communication, documentation.",single-sign-on,alias,False,test
+Klayviyo,Applied Klayviyo to automate reporting and cut manual effort.,klaviyo,alias,False,val
+innovative software innsoft office manager,"Led a project built on innovative software innsoft office manager, improving delivery speed by 30%.",innovative-software-inn-soft-office-manager,alias,False,test
+Genome Analysis Toolkit GATK,Hands-on experience with Genome Analysis Toolkit GATK in production environments.,genome-analysis-toolkit-gatk,alias,False,val
+Clojure,"Led a project built on Clojure, improving delivery speed by 30%.",clojure,alias,False,test
+Ethereum Chain,"Skills: Ethereum Chain, stakeholder communication, documentation.",ethereum,alias,False,test
+automatic routing,"Led a project built on automatic routing, improving delivery speed by 30%.",automatic-routing-software,alias,False,test
+CCIS AccountAbility,"Led a project built on CCIS AccountAbility, improving delivery speed by 30%.",ccis-accountability,alias,False,val
+Network management software,Hands-on experience with Network management software in production environments.,network-management-software,alias,False,val
+Windows Embedded Compact efficient,"Led a project built on Windows Embedded Compact efficient, improving delivery speed by 30%.",windows-embedded-compact,alias,False,val
+"budgeting, forecasting, and planning","Led a project built on budgeting, forecasting, and planning, improving delivery speed by 30%.",budgeting-forecasting-and-planning-software,alias,False,val
+TerraSeer ClusterSeer,Applied TerraSeer ClusterSeer to automate reporting and cut manual effort.,terraseer-clusterseer,alias,False,test
+Apache Doris,"Led a project built on Apache Doris, improving delivery speed by 30%.",apache-doris,alias,False,test
+d3js,Applied d3js to automate reporting and cut manual effort.,d3-js,alias,False,val
+fire,"Led a project built on fire, improving delivery speed by 30%.",elite-software-fire,alias,False,test
+Datavantage,"Skills: Datavantage, stakeholder communication, documentation.",datavantage,alias,False,test
+nosql,"Led a project built on nosql, improving delivery speed by 30%.",nosql-databases,alias,False,val
+Aldus Persuasion,"Skills: Aldus Persuasion, stakeholder communication, documentation.",adobe-persuasion,alias,False,test
+jwt,Trained two junior colleagues in jwt best practices.,jwt,alias,False,test
+ChartWare EMR,"Skills: ChartWare EMR, stakeholder communication, documentation.",chartware-emr,alias,False,val
+FinTech & Financial Systems,"Skills: FinTech & Financial Systems, stakeholder communication, documentation.",fintech-and-banking,alias,False,val
+Macromedia Dreamweaver,Used Macromedia Dreamweaver daily to deliver features for internal and external customers.,adobe-dreamweaver,alias,False,val
+virus scanning,"Skills: virus scanning, stakeholder communication, documentation.",virus-scanning-software,alias,False,test
+The MathWorks Stateflow,Used The MathWorks Stateflow daily to deliver features for internal and external customers.,the-mathworks-stateflow,alias,False,test
+learning experience design,"Skills: learning experience design, stakeholder communication, documentation.",instructional-design,alias,False,val
+Solid JavaScript Library,"Led a project built on Solid JavaScript Library, improving delivery speed by 30%.",solidjs,alias,False,val
+webinspect,Applied webinspect to automate reporting and cut manual effort.,hp-webinspect,alias,False,test
+CitectSCADA Reports,Hands-on experience with CitectSCADA Reports in production environments.,citectscada-reports,alias,False,test
+healthcare regulations,"Skills: healthcare regulations, stakeholder communication, documentation.",healthcare-regulations,alias,False,val
+Swift (Apple programming language),"Led a project built on Swift (Apple programming language), improving delivery speed by 30%.",swift-language,alias,False,test
+Failure mode effects & criticality analysis FMECA software,Used Failure mode effects & criticality analysis FMECA software daily to deliver features for internal and external customers.,failure-mode-effects-and-criticality-analysis-fmeca-software,alias,False,val
+Synopsys Design Compiler,Applied Synopsys Design Compiler to automate reporting and cut manual effort.,synopsys-design-compiler,alias,False,val
+Mobile location based services software,Hands-on experience with Mobile location based services software in production environments.,mobile-location-based-services-software,alias,False,test
+LISt Processor,Hands-on experience with LISt Processor in production environments.,lisp,alias,False,val
+spectrophotometer analysis,Applied spectrophotometer analysis to automate reporting and cut manual effort.,spectrophotometer-analysis-software,alias,False,val
+Molecular visualization software,Applied Molecular visualization software to automate reporting and cut manual effort.,molecular-visualization-software,alias,False,test
+Synthetic Data Generation,"Led a project built on Synthetic Data Generation, improving delivery speed by 30%.",synthetic-data-generation,alias,False,test
+Maestro,"Led a project built on Maestro, improving delivery speed by 30%.",axum,alias,False,val
+multi router traffic grapher mrtg,"Led a project built on multi router traffic grapher mrtg, improving delivery speed by 30%.",multi-router-traffic-grapher-mrtg-software,alias,False,test
+Teradata Parallel Transporter,Used Teradata Parallel Transporter daily to deliver features for internal and external customers.,teradata-parallel-transporter,alias,False,test
+angular.js,"Led a project built on angular.js, improving delivery speed by 30%.",angular,alias,False,val
+ETH blockchain,"Skills: ETH blockchain, stakeholder communication, documentation.",ethereum,alias,False,test
+Geographic resources analysis support system,"Skills: Geographic resources analysis support system, stakeholder communication, documentation.",geographic-resources-analysis-support-system-grass,alias,False,val
+Thinc Technologies Virtual School,"Led a project built on Thinc Technologies Virtual School, improving delivery speed by 30%.",thinc-technologies-virtual-school,alias,False,val
+erlang elixir,Trained two junior colleagues in erlang elixir best practices.,elixir,alias,False,test
+Google Blogger,Trained two junior colleagues in Google Blogger best practices.,blogger,alias,False,val
+salesforcecom salesforce crm,Applied salesforcecom salesforce crm to automate reporting and cut manual effort.,salesforcecom-salesforce-crm,alias,False,val
+ImproMed Infinity,Hands-on experience with ImproMed Infinity in production environments.,impromed-infinity,alias,False,test
+epic ehr,Hands-on experience with epic ehr in production environments.,epic-systems,alias,False,val
+Extension:Cargo,Trained two junior colleagues in Extension:Cargo best practices.,cargo,alias,False,test
+Supervisory control & data acquisition SCADA software,Trained two junior colleagues in Supervisory control & data acquisition SCADA software best practices.,supervisory-control-and-data-acquisition-scada-software,alias,False,test
+IBM Rational ClearCase,"Skills: IBM Rational ClearCase, stakeholder communication, documentation.",ibm-rational-clearcase,alias,False,val
+Frontend Web Development,"Led a project built on Frontend Web Development, improving delivery speed by 30%.",frontend-web-development,alias,False,test
+Transformers: Generation Zero,Used Transformers: Generation Zero daily to deliver features for internal and external customers.,huggingface-transformers,alias,False,val
+Facility Energy Decision Systems,Used Facility Energy Decision Systems daily to deliver features for internal and external customers.,facility-energy-decision-systems-feds,alias,False,test
+DoubleBridge ROSETTA Pyramid,Hands-on experience with DoubleBridge ROSETTA Pyramid in production environments.,doublebridge-rosetta-pyramid,alias,False,val
+Wordpress.org,"Led a project built on Wordpress.org, improving delivery speed by 30%.",wordpress,alias,False,test
+icam campost,Applied icam campost to automate reporting and cut manual effort.,icam-cam-post,alias,False,val
+LSA Visual Easy Lean,"Skills: LSA Visual Easy Lean, stakeholder communication, documentation.",lsa-visual-easy-lean,alias,False,test
+Product Management & Design,Applied Product Management & Design to automate reporting and cut manual effort.,product-and-design,alias,False,val
+PhotoImpact,Trained two junior colleagues in PhotoImpact best practices.,ulead-photoimpact,alias,False,val
+fast fourier transform fft analysis,"Skills: fast fourier transform fft analysis, stakeholder communication, documentation.",fast-fourier-transform-fft-analysis-software,alias,False,val
+Pleier Audit Management System,Used Pleier Audit Management System daily to deliver features for internal and external customers.,pleier-audit-management-system,alias,False,val
+Behavior-Driven Development (BDD),Applied Behavior-Driven Development (BDD) to automate reporting and cut manual effort.,behavior-driven-development,alias,False,test
+Nanoscale Molecular Dynamics,"Skills: Nanoscale Molecular Dynamics, stakeholder communication, documentation.",namd,alias,False,test
+rational build forge,Applied rational build forge to automate reporting and cut manual effort.,ibm-rational-build-forge,alias,False,test
+Rediker Software School Office Suite,Applied Rediker Software School Office Suite to automate reporting and cut manual effort.,rediker-software-school-office-suite,alias,False,val
+Pinecone,"Skills: Pinecone, stakeholder communication, documentation.",pinecone,alias,False,val
+MapInfo Pro,Hands-on experience with MapInfo Pro in production environments.,mapinfo,alias,False,val
+seismic microtechnology kingdom,"Led a project built on seismic microtechnology kingdom, improving delivery speed by 30%.",seismic-micro-technology-kingdom,alias,False,test
+FlamMap,Trained two junior colleagues in FlamMap best practices.,flammap,alias,False,test
+Flutter,Trained two junior colleagues in Flutter best practices.,flutter,alias,False,test
+JotSpot,"Skills: JotSpot, stakeholder communication, documentation.",google-sites,alias,False,val
+solid edge,Used solid edge daily to deliver features for internal and external customers.,siemens-solid-edge,alias,False,test
+Object Management Group Object Request Broker,Used Object Management Group Object Request Broker daily to deliver features for internal and external customers.,object-management-group-object-request-broker,alias,False,val
+Csharp Testing,Used Csharp Testing daily to deliver features for internal and external customers.,csharp-testing,alias,False,test
+AstroJS,Applied AstroJS to automate reporting and cut manual effort.,astro,alias,False,val
+higher education banner unified digital campus,"Led a project built on higher education banner unified digital campus, improving delivery speed by 30%.",sungard-higher-education-banner-unified-digital-campus,alias,False,test
+Neurofax SpikeDetector,"Led a project built on Neurofax SpikeDetector, improving delivery speed by 30%.",neurofax-spikedetector,alias,False,test
+Mocha,Trained two junior colleagues in Mocha best practices.,mocha,alias,False,test
+GNU JACAL,"Led a project built on GNU JACAL, improving delivery speed by 30%.",jacal,alias,False,val
+Object-oriented programming language,"Skills: Object-oriented programming language, stakeholder communication, documentation.",object-oriented-programming-languages,alias,False,test
+SweetWARE nutraCoster Professional,"Led a project built on SweetWARE nutraCoster Professional, improving delivery speed by 30%.",sweetware-nutracoster-professional,alias,False,test
+WebWork,"Skills: WebWork, stakeholder communication, documentation.",apache-struts,alias,False,val
+xml authoring,Hands-on experience with xml authoring in production environments.,xml-authoring-software,alias,False,test
+Underhill Geomatics Copan,Applied Underhill Geomatics Copan to automate reporting and cut manual effort.,underhill-geomatics-copan,alias,False,val
+Financial Compliance And Risk,Used Financial Compliance And Risk daily to deliver features for internal and external customers.,financial-compliance-and-risk,alias,False,test
+Office Excel,"Led a project built on Office Excel, improving delivery speed by 30%.",microsoft-excel,alias,False,test
+ms visio,Applied ms visio to automate reporting and cut manual effort.,microsoft-visio,alias,False,test
+Amazon Web Services AWS software,"Skills: Amazon Web Services AWS software, stakeholder communication, documentation.",amazon-web-services-aws-software,alias,False,val
+corporate finance and valuation,Hands-on experience with corporate finance and valuation in production environments.,corporate-finance-and-valuation,alias,False,test
+Python (programming),Hands-on experience with Python (programming) in production environments.,python,alias,False,val
+building automation,Trained two junior colleagues in building automation best practices.,building-automation-software,alias,False,test
+Bidirectional encoder representations from transformers (BERT),"Led a project built on Bidirectional encoder representations from transformers (BERT), improving delivery speed by 30%.",bidirectional-encoder-representations-from-transformers-bert,alias,False,test
+Apache Cassandra,Trained two junior colleagues in Apache Cassandra best practices.,cassandra,alias,False,val
+Chef software,Hands-on experience with Chef software in production environments.,chef,alias,False,val
+Electronic medical record EMR system,Trained two junior colleagues in Electronic medical record EMR system best practices.,electronic-medical-record-emr-systems,alias,False,val
+TimeSolv Legal,Used TimeSolv Legal daily to deliver features for internal and external customers.,timesolv-legal,alias,False,val
+Jasmine,"Skills: Jasmine, stakeholder communication, documentation.",jasmine,alias,False,test
+shiny.rstudio.com,Hands-on experience with shiny.rstudio.com in production environments.,shiny,alias,False,val
+exacq technologies,"Led a project built on exacq technologies, improving delivery speed by 30%.",exacq-technologies-software,alias,False,test
+Conformance and validation testing software,Trained two junior colleagues in Conformance and validation testing software best practices.,conformance-and-validation-testing-software,alias,False,val
+Pattern design software,Trained two junior colleagues in Pattern design software best practices.,pattern-design-software,alias,False,test
+O*NET,Applied O*NET to automate reporting and cut manual effort.,onet-online,alias,False,val
+windows mobile,"Led a project built on windows mobile, improving delivery speed by 30%.",microsoft-windows-mobile,alias,False,val
+Paradigm SKUA-GOCAD,Trained two junior colleagues in Paradigm SKUA-GOCAD best practices.,paradigm-skua-gocad,alias,False,test
+bloomberg,Trained two junior colleagues in bloomberg best practices.,bloomberg-terminal,alias,False,val
+Autodesk Character Studio,"Led a project built on Autodesk Character Studio, improving delivery speed by 30%.",character-studio,alias,False,val
+virtual reality game,Applied virtual reality game to automate reporting and cut manual effort.,virtual-reality-game-software,alias,False,test
+Tradeweb Markets Tradeweb,Used Tradeweb Markets Tradeweb daily to deliver features for internal and external customers.,tradeweb-markets-tradeweb,alias,False,test
+postgresql db,Hands-on experience with postgresql db in production environments.,postgresql,alias,False,test
+Blogger.com,Used Blogger.com daily to deliver features for internal and external customers.,blogger,alias,False,test
+palisade bond nalyst,Applied palisade bond nalyst to automate reporting and cut manual effort.,palisade-bond-nalyst,alias,False,val
+Tariff databases,Applied Tariff databases to automate reporting and cut manual effort.,tariff-databases,alias,False,val
+Cython,Applied Cython to automate reporting and cut manual effort.,cython,alias,False,test
+shiny R,"Led a project built on shiny R, improving delivery speed by 30%.",shiny,alias,False,val
+computer modeling,"Led a project built on computer modeling, improving delivery speed by 30%.",computer-modeling-software,alias,False,val
+Expert Health Data Programming Vitalnet,"Skills: Expert Health Data Programming Vitalnet, stakeholder communication, documentation.",expert-health-data-programming-vitalnet,alias,False,val
+big data,Applied big data to automate reporting and cut manual effort.,big-data-processing,alias,False,val
+Macromedia ColdFusion,Hands-on experience with Macromedia ColdFusion in production environments.,adobe-coldfusion,alias,False,val
+jenmar international dlplus,Hands-on experience with jenmar international dlplus in production environments.,jenmar-international-dl-plus,alias,False,test
+Manhattan Supply Chain Process Platform,"Led a project built on Manhattan Supply Chain Process Platform, improving delivery speed by 30%.",manhattan-supply-chain-process-platform,alias,False,test
+Categorization or classification software,"Skills: Categorization or classification software, stakeholder communication, documentation.",categorization-or-classification-software,alias,False,val
+Transformers: Tatakai,Hands-on experience with Transformers: Tatakai in production environments.,huggingface-transformers,alias,False,val
+enterprise report management erm,"Skills: enterprise report management erm, stakeholder communication, documentation.",enterprise-report-management-erm-software,alias,False,val
+PTC Pro/ENGINEER Wildfire,"Led a project built on PTC Pro/ENGINEER Wildfire, improving delivery speed by 30%.",ptc-proengineer-wildfire,alias,False,test
+paas,"Led a project built on paas, improving delivery speed by 30%.",platform-as-a-service,alias,False,val
+Burpsuite,Hands-on experience with Burpsuite in production environments.,burp-suite,alias,False,test
+copilot flight planning e6b,Applied copilot flight planning e6b to automate reporting and cut manual effort.,copilot-flight-planning-e6b,alias,False,test
+Dassault Systemes SolidWorks,Applied Dassault Systemes SolidWorks to automate reporting and cut manual effort.,solidworks,alias,False,val
+Content Marketing,"Led a project built on Content Marketing, improving delivery speed by 30%.",content-marketing,alias,False,val
+Vautour,"Led a project built on Vautour, improving delivery speed by 30%.",phoenix-framework,alias,False,test
+wheelshop automationcom wheel shop management suite,Trained two junior colleagues in wheelshop automationcom wheel shop management suite best practices.,wheelshop-automationcom-wheel-shop-management-suite,alias,False,test
+White Clarke North America Credit Adjudication and Lending Management,Applied White Clarke North America Credit Adjudication and Lending Management to automate reporting and cut manual effort.,white-clarke-north-america-credit-adjudication-and-lending-management,alias,False,val
+cybersecurity and networking,Used cybersecurity and networking daily to deliver features for internal and external customers.,cybersecurity-and-networking,alias,False,val
+Practical Extraction and Reporting Language,Hands-on experience with Practical Extraction and Reporting Language in production environments.,perl,alias,False,val
+Hardware description & verification language,Used Hardware description & verification language daily to deliver features for internal and external customers.,hardware-description-and-verification-language,alias,False,test
+Collection Point Management System CPMS,Applied Collection Point Management System CPMS to automate reporting and cut manual effort.,collection-point-management-system-cpms,alias,False,val
+low rank adaptation,"Skills: low rank adaptation, stakeholder communication, documentation.",lora,alias,False,val
+web.facebook.com,"Skills: web.facebook.com, stakeholder communication, documentation.",facebook,alias,False,val
+wiredred software epop basic,"Skills: wiredred software epop basic, stakeholder communication, documentation.",wiredred-software-epop-basic,alias,False,val
+SAS Enterprise Miner,"Skills: SAS Enterprise Miner, stakeholder communication, documentation.",sas-enterprise-miner,alias,False,val
+Debezium,Used Debezium daily to deliver features for internal and external customers.,debezium,alias,False,val
+Python.org,Trained two junior colleagues in Python.org best practices.,python,alias,False,val
+event management,Used event management daily to deliver features for internal and external customers.,event-management-software,alias,False,val
+Computational statistics software,Trained two junior colleagues in Computational statistics software best practices.,computational-statistics-software,alias,False,val
+LLM Inference Optimization,"Led a project built on LLM Inference Optimization, improving delivery speed by 30%.",llm-inference-optimization,alias,False,val
+Apache webserver,Used Apache webserver daily to deliver features for internal and external customers.,apache-http-server,alias,False,val
+ezzone software alternative medical billing,Trained two junior colleagues in ezzone software alternative medical billing best practices.,ez-zone-software-alternative-medical-billing,alias,False,val
+Nielsen Arianna,"Skills: Nielsen Arianna, stakeholder communication, documentation.",nielsen-arianna,alias,False,val
+AWS ECS,Used AWS ECS daily to deliver features for internal and external customers.,aws-ecs,alias,False,test
+kubectl kustomize,Trained two junior colleagues in kubectl kustomize best practices.,kustomize,alias,False,test
+project visualization,"Led a project built on project visualization, improving delivery speed by 30%.",project-visualization-software,alias,False,val
+Boris FX Continuum Complete,Trained two junior colleagues in Boris FX Continuum Complete best practices.,boris-fx-continuum-complete,alias,False,val
+LlamaIndex,"Skills: LlamaIndex, stakeholder communication, documentation.",llamaindex,alias,False,val
+Audition CC,"Led a project built on Audition CC, improving delivery speed by 30%.",adobe-audition,alias,False,test
+palisade risk,Trained two junior colleagues in palisade risk best practices.,palisade-risk,alias,False,val
+Microsoft Mobile Explorer MME,"Led a project built on Microsoft Mobile Explorer MME, improving delivery speed by 30%.",microsoft-mobile-explorer-mme,alias,False,val
+Communication & Presentation,Applied Communication & Presentation to automate reporting and cut manual effort.,communication-and-presentation,alias,False,test
+ISO/IEC 13816,Used ISO/IEC 13816 daily to deliver features for internal and external customers.,lisp,alias,False,test
+National Resources Conservation Service Web Soil Survey,Applied National Resources Conservation Service Web Soil Survey to automate reporting and cut manual effort.,national-resources-conservation-service-web-soil-survey-wss,alias,False,val
+Tanner Research L-Edit,Used Tanner Research L-Edit daily to deliver features for internal and external customers.,tanner-research-l-edit,alias,False,test
+iso 27001,Trained two junior colleagues in iso 27001 best practices.,iso-27001,alias,False,test
+Windows Presentation Foundation Everywhere,Used Windows Presentation Foundation Everywhere daily to deliver features for internal and external customers.,microsoft-silverlight,alias,False,test
+laborsoft laborforce reportingdashboard manager module,Trained two junior colleagues in laborsoft laborforce reportingdashboard manager module best practices.,laborsoft-laborforce-reportingdashboard-manager-module,alias,False,test
+RockWare SieveGraph,Used RockWare SieveGraph daily to deliver features for internal and external customers.,rockware-sievegraph,alias,False,val
+Biomedical Engineering & Genomics,Trained two junior colleagues in Biomedical Engineering & Genomics best practices.,biomedical-and-genomics,alias,False,val
+slides.google.com,Hands-on experience with slides.google.com in production environments.,google-slides,alias,False,test
+wind river systems cc compiler suite,Trained two junior colleagues in wind river systems cc compiler suite best practices.,wind-river-systems-cc-compiler-suite,alias,False,test
+Samba,Used Samba daily to deliver features for internal and external customers.,samba,alias,False,val
+Digital Circuit Design,Trained two junior colleagues in Digital Circuit Design best practices.,digital-circuit-design,alias,False,test
+Kali,"Skills: Kali, stakeholder communication, documentation.",kali-linux,alias,False,val
+ms internet information services (iis),Trained two junior colleagues in ms internet information services (iis) best practices.,microsoft-internet-information-services-iis,alias,False,test
+Insurance Technologies ForeSight Enterprise,Applied Insurance Technologies ForeSight Enterprise to automate reporting and cut manual effort.,insurance-technologies-foresight-enterprise,alias,False,val
+React State Management,Hands-on experience with React State Management in production environments.,react-state-management,alias,False,val
+Condor,Used Condor daily to deliver features for internal and external customers.,phoenix-framework,alias,False,val
+bex report designer,Applied bex report designer to automate reporting and cut manual effort.,sap-bex-report-designer,alias,False,test
+Internet or intranet image distribution software,"Skills: Internet or intranet image distribution software, stakeholder communication, documentation.",internet-or-intranet-image-distribution-software,alias,False,val
+Python (language),"Skills: Python (language), stakeholder communication, documentation.",python,alias,False,test
+data reduction,"Skills: data reduction, stakeholder communication, documentation.",data-reduction-software,alias,False,val
+Elite Software Elite Salon & Spa Management,Applied Elite Software Elite Salon & Spa Management to automate reporting and cut manual effort.,elite-software-elite-salon-spa-management,alias,False,test
+html,Hands-on experience with html in production environments.,html5,alias,False,test
+Atom Shell,Applied Atom Shell to automate reporting and cut manual effort.,electron,alias,False,test
+FANUC Robotics MultiARM system,"Led a project built on FANUC Robotics MultiARM system, improving delivery speed by 30%.",fanuc-robotics-multiarm-systems,alias,False,val
+Trimble Pathfinder Office,Used Trimble Pathfinder Office daily to deliver features for internal and external customers.,trimble-pathfinder-office,alias,False,test
+Mongoose,Hands-on experience with Mongoose in production environments.,mongoose,alias,False,val
+"MyFitnessPal, Inc.","Applied MyFitnessPal, Inc. to automate reporting and cut manual effort.",myfitnesspal,alias,False,val
+GSAS,Trained two junior colleagues in GSAS best practices.,general-structural-analysis-system-gsas,alias,False,test
+REI Wise Commercial,"Led a project built on REI Wise Commercial, improving delivery speed by 30%.",rei-wise-commercial,alias,False,val
+github ci,"Skills: github ci, stakeholder communication, documentation.",github-actions,alias,False,val
+classroom.google.com,Trained two junior colleagues in classroom.google.com best practices.,google-classroom,alias,False,test
+e pattern language,Applied e pattern language to automate reporting and cut manual effort.,e-pattern-language,alias,False,val
+BioArray Software Environment BASE,Applied BioArray Software Environment BASE to automate reporting and cut manual effort.,bioarray-software-environment-base,alias,False,val
+Vite,"Skills: Vite, stakeholder communication, documentation.",vite,alias,False,test
+Oracle EBS,Used Oracle EBS daily to deliver features for internal and external customers.,oracle-e-business-suite,alias,False,test
+sequence database,"Skills: sequence database, stakeholder communication, documentation.",sequence-database-software,alias,False,test
+Oracle Manufacturing Scheduling,Trained two junior colleagues in Oracle Manufacturing Scheduling best practices.,oracle-manufacturing-scheduling,alias,False,test
+system and compiled languages,"Led a project built on system and compiled languages, improving delivery speed by 30%.",system-and-compiled-languages,alias,False,test
+Joomla!,Used Joomla! daily to deliver features for internal and external customers.,joomla,alias,False,test
+netweaver bw,Trained two junior colleagues in netweaver bw best practices.,sap-netweaver-bw,alias,False,val
+HASH Animation:Master,"Skills: HASH Animation:Master, stakeholder communication, documentation.",hash-animationmaster,alias,False,test
+t-sql,Used t-sql daily to deliver features for internal and external customers.,sql-server,alias,False,test
+Python (computer language),Used Python (computer language) daily to deliver features for internal and external customers.,python,alias,False,val
+hec1,Hands-on experience with hec1 in production environments.,hec-1,alias,False,val
+Skyscape AnesthesiaDrugs,"Led a project built on Skyscape AnesthesiaDrugs, improving delivery speed by 30%.",skyscape-anesthesiadrugs,alias,False,val
+generative ai and llms,"Skills: generative ai and llms, stakeholder communication, documentation.",generative-ai-and-llms,alias,False,val
+Python computer language,Hands-on experience with Python computer language in production environments.,python,alias,False,test
+centricity emr,"Led a project built on centricity emr, improving delivery speed by 30%.",ge-healthcare-centricity-emr,alias,False,test
+SofterWare DonorPerfect,Hands-on experience with SofterWare DonorPerfect in production environments.,softerware-donorperfect,alias,False,test
+helm v3,Trained two junior colleagues in helm v3 best practices.,helm,alias,False,test
+Kali Linux OS,Applied Kali Linux OS to automate reporting and cut manual effort.,kali-linux,alias,False,val
+B and I Computer Consultants Childcare Sage,"Led a project built on B and I Computer Consultants Childcare Sage, improving delivery speed by 30%.",bi-computer-consultants-childcare-sage,alias,False,val
+Oracle SQL Developer,Trained two junior colleagues in Oracle SQL Developer best practices.,oracle-sql-developer,alias,False,val
+jira software,"Skills: jira software, stakeholder communication, documentation.",jira,alias,False,val
+Windows Embedded CE,Applied Windows Embedded CE to automate reporting and cut manual effort.,windows-embedded-compact,alias,False,val
+VX Corporation VX Mold and Die,Applied VX Corporation VX Mold and Die to automate reporting and cut manual effort.,vx-corporation-vx-mold-die,alias,False,val
+Ingenious ProSched,Hands-on experience with Ingenious ProSched in production environments.,ingenious-prosched,alias,False,val
+capital budgeting,Trained two junior colleagues in capital budgeting best practices.,corporate-finance,alias,False,test
+Fractal Design Painter,"Led a project built on Fractal Design Painter, improving delivery speed by 30%.",corel-painter,alias,False,val
+ms dynamics crm,Applied ms dynamics crm to automate reporting and cut manual effort.,microsoft-dynamics-crm,alias,False,val
+FEAR,Trained two junior colleagues in FEAR best practices.,fear,alias,False,val
+lean six sigma,Hands-on experience with lean six sigma in production environments.,six-sigma,alias,False,val
+Ethereum network,Hands-on experience with Ethereum network in production environments.,ethereum,alias,False,test
+computer integrated manufacturing cim,Hands-on experience with computer integrated manufacturing cim in production environments.,computer-integrated-manufacturing-cim-software,alias,False,test
+CBORD Nutrition Service Suite,Hands-on experience with CBORD Nutrition Service Suite in production environments.,cbord-nutrition-service-suite,alias,False,val
+dart programming,"Led a project built on dart programming, improving delivery speed by 30%.",dart,alias,False,test
+Chrome Browser,Hands-on experience with Chrome Browser in production environments.,google-chrome,alias,False,test
+system center,Used system center daily to deliver features for internal and external customers.,microsoft-system-center,alias,False,val
+"USDA Database for Inventory, Monitoring and Assessment (DIMA)","Used USDA Database for Inventory, Monitoring and Assessment (DIMA) daily to deliver features for internal and external customers.",usda-database-for-inventory-monitoring-and-assessment-dima,alias,False,test
+ThreeJS,Trained two junior colleagues in ThreeJS best practices.,three-js,alias,False,val
+Membership database,Used Membership database daily to deliver features for internal and external customers.,membership-databases,alias,False,test
+Contour Storyteller,Hands-on experience with Contour Storyteller in production environments.,contour-storyteller,alias,False,val
+Billing and invoicing software,Trained two junior colleagues in Billing and invoicing software best practices.,billing-and-invoicing-software,alias,False,test
+The Transformers,"Led a project built on The Transformers, improving delivery speed by 30%.",huggingface-transformers,alias,False,test
+coin educational products climb k5 online,Used coin educational products climb k5 online daily to deliver features for internal and external customers.,coin-educational-products-climb-k-5-online,alias,False,test
+Technis BETAPLUS,"Led a project built on Technis BETAPLUS, improving delivery speed by 30%.",technis-betaplus,alias,False,test
+fhir,"Led a project built on fhir, improving delivery speed by 30%.",hl7-fhir,alias,False,val
+assembla.com,Hands-on experience with assembla.com in production environments.,assembla,alias,False,val
+sql plus,Applied sql plus to automate reporting and cut manual effort.,oracle-sql-plus,alias,False,test
+Newgen Software Technologies OmniDocs,Hands-on experience with Newgen Software Technologies OmniDocs in production environments.,newgen-software-technologies-omnidocs,alias,False,test
+Manufacturing and Production,Hands-on experience with Manufacturing and Production in production environments.,manufacturing-and-production-knowledge-group,alias,False,val
+Keras (Python package),"Led a project built on Keras (Python package), improving delivery speed by 30%.",keras,alias,False,test
+Resume extraction & search software,Hands-on experience with Resume extraction & search software in production environments.,resume-extraction-and-search-software,alias,False,val
+Claim processing system software,"Skills: Claim processing system software, stakeholder communication, documentation.",claim-processing-system-software,alias,False,val
+Linkerd,"Led a project built on Linkerd, improving delivery speed by 30%.",linkerd,alias,False,test
+Haskell programming language,Hands-on experience with Haskell programming language in production environments.,haskell,alias,False,val
+meter reading,Hands-on experience with meter reading in production environments.,meter-reading-software,alias,False,test
+Statistical energy analysis SEA software,"Led a project built on Statistical energy analysis SEA software, improving delivery speed by 30%.",statistical-energy-analysis-sea-software,alias,False,test
+Swift language,Hands-on experience with Swift language in production environments.,swift-language,alias,False,test
+adaptmodeler,"Skills: adaptmodeler, stakeholder communication, documentation.",adapt-modeler,alias,False,val
+Fanatic Software Informant,Used Fanatic Software Informant daily to deliver features for internal and external customers.,fanatic-software-informant,alias,False,test
+tailwind,"Skills: tailwind, stakeholder communication, documentation.",tailwindcss,alias,False,test
+Rust programming language,Used Rust programming language daily to deliver features for internal and external customers.,rust-language,alias,False,test
+voltagegated ion channels software,"Skills: voltagegated ion channels software, stakeholder communication, documentation.",voltage-gated-ion-channels-software,alias,False,test
+Mintel Reports,Applied Mintel Reports to automate reporting and cut manual effort.,mintel-reports,alias,False,val
+web assembly,Applied web assembly to automate reporting and cut manual effort.,webassembly,alias,False,test
+Light Gradient Boosting Machine,Hands-on experience with Light Gradient Boosting Machine in production environments.,lightgbm,alias,False,test
+process safety management,"Skills: process safety management, stakeholder communication, documentation.",process-safety-management-software,alias,False,test
+SAS/CONNECT,Used SAS/CONNECT daily to deliver features for internal and external customers.,sasconnect,alias,False,test
+Finance & Accounting,"Skills: Finance & Accounting, stakeholder communication, documentation.",finance-and-accounting,alias,False,test
+J Language,"Skills: J Language, stakeholder communication, documentation.",j,alias,False,test
+integrated construction management,"Skills: integrated construction management, stakeholder communication, documentation.",integrated-construction-management-software,alias,False,test
+Bloomz,Hands-on experience with Bloomz in production environments.,bloomz,alias,False,test
+Chain Of Thought,Hands-on experience with Chain Of Thought in production environments.,chain-of-thought,alias,False,val
+"Hootsuite Media, Inc.","Skills: Hootsuite Media, Inc., stakeholder communication, documentation.",hootsuite,alias,False,test
+communications and media knowledge,Trained two junior colleagues in communications and media knowledge best practices.,communications-and-media-knowledge,alias,False,val
+Computer assisted language learning CALL software,Used Computer assisted language learning CALL software daily to deliver features for internal and external customers.,computer-assisted-language-learning-call-software,alias,False,val
+JSUnit,Hands-on experience with JSUnit in production environments.,jasmine,alias,False,val
+personnel management,Trained two junior colleagues in personnel management best practices.,personnel-management-software,alias,False,test
+QPuncture II,Trained two junior colleagues in QPuncture II best practices.,qpuncture-ii,alias,False,val
+Corporate Legal Practice,Applied Corporate Legal Practice to automate reporting and cut manual effort.,corporate-legal-practice,alias,False,test
+Telelogic DOORS,Trained two junior colleagues in Telelogic DOORS best practices.,ibm-rational-doors,alias,False,test
+computerized testing,Used computerized testing daily to deliver features for internal and external customers.,computerized-testing-software,alias,False,test
+Novariant AutoFarm AF Viewer,Hands-on experience with Novariant AutoFarm AF Viewer in production environments.,novariant-autofarm-af-viewer,alias,False,val
+LLM Application Development,Hands-on experience with LLM Application Development in production environments.,llm-application-development,alias,False,val
+Microsoft Defender antimalware platform,Used Microsoft Defender antimalware platform daily to deliver features for internal and external customers.,microsoft-defender-antivirus,alias,False,test
+websphere mq,"Skills: websphere mq, stakeholder communication, documentation.",ibm-websphere-mq,alias,False,val
+Vero Software ALPHACAM,Applied Vero Software ALPHACAM to automate reporting and cut manual effort.,vero-software-alphacam,alias,False,val
+Computer Vision,Trained two junior colleagues in Computer Vision best practices.,computer-vision,alias,False,val
+Nmap Security Scanner,"Led a project built on Nmap Security Scanner, improving delivery speed by 30%.",nmap,alias,False,test
+edp payroll tax,Applied edp payroll tax to automate reporting and cut manual effort.,sage-edp-payroll-tax,alias,False,val
+Bashen LinkLine,"Led a project built on Bashen LinkLine, improving delivery speed by 30%.",bashen-linkline,alias,False,val
+Audit software,"Skills: Audit software, stakeholder communication, documentation.",audit-software,alias,False,test
+JAffer's Canonical ALgebra,Hands-on experience with JAffer's Canonical ALgebra in production environments.,jacal,alias,False,val
+workforce management,Hands-on experience with workforce management in production environments.,workforce-management-software,alias,False,test
+Cedrus SuperLab Pro,Used Cedrus SuperLab Pro daily to deliver features for internal and external customers.,cedrus-superlab-pro,alias,False,test
+3d Web Graphics,Trained two junior colleagues in 3d Web Graphics best practices.,3d-web-graphics,alias,False,test
+sheets.google.com,"Led a project built on sheets.google.com, improving delivery speed by 30%.",google-sheets,alias,False,test
+smart card management,"Skills: smart card management, stakeholder communication, documentation.",smart-card-management-software,alias,False,test
+Hospitality Control Solutions Aloha Point-of-Sale,"Led a project built on Hospitality Control Solutions Aloha Point-of-Sale, improving delivery speed by 30%.",hospitality-control-solutions-aloha-point-of-sale,alias,False,test
+Elixir,Trained two junior colleagues in Elixir best practices.,elixir,alias,False,test
+quizlet.com,Used quizlet.com daily to deliver features for internal and external customers.,quizlet,alias,False,test
+ptc propipe,"Skills: ptc propipe, stakeholder communication, documentation.",ptc-propipe,alias,False,val
+Digital Healthcare OptoMize,Used Digital Healthcare OptoMize daily to deliver features for internal and external customers.,digital-healthcare-optomize,alias,False,test
+supervised fine-tuning,Used supervised fine-tuning daily to deliver features for internal and external customers.,fine-tuning,alias,False,val
+Macromedia Breeze,"Skills: Macromedia Breeze, stakeholder communication, documentation.",adobe-connect,alias,False,test
+anti trojan,"Skills: anti trojan, stakeholder communication, documentation.",anti-trojan-software,alias,False,val
+Syntactically awesome style sheets SASS,"Skills: Syntactically awesome style sheets SASS, stakeholder communication, documentation.",sass-css,alias,False,val
+swift mt103,Used swift mt103 daily to deliver features for internal and external customers.,swift-network,alias,False,test
+Microsoft Flow,"Led a project built on Microsoft Flow, improving delivery speed by 30%.",microsoft-power-automate,alias,False,test
+apogee building automation software,"Led a project built on apogee building automation software, improving delivery speed by 30%.",siemens-apogee-building-automation-software,alias,False,test
+"EBSCO Library, Information Science, and Technology Abstracts LISTSA","Led a project built on EBSCO Library, Information Science, and Technology Abstracts LISTSA, improving delivery speed by 30%.",ebsco-library-information-science-and-technology-abstracts-listsa,alias,False,val
+Email Marketing,Used Email Marketing daily to deliver features for internal and external customers.,email-marketing,alias,False,test
+"Vimeo, LLC","Skills: Vimeo, LLC, stakeholder communication, documentation.",vimeo,alias,False,test
+statcodercom stat e&m coder,Applied statcodercom stat e&m coder to automate reporting and cut manual effort.,statcodercom-stat-em-coder,alias,False,test
+ERP INDUSTRIOS Material Planning,"Led a project built on ERP INDUSTRIOS Material Planning, improving delivery speed by 30%.",erp-industrios-material-planning,alias,False,val
+dbt cloud,Hands-on experience with dbt cloud in production environments.,dbt,alias,False,test
+Pearl,Applied Pearl to automate reporting and cut manual effort.,perl,alias,False,test
+sage accounting,Used sage accounting daily to deliver features for internal and external customers.,sage-accounting-software,alias,False,val
+Swan River Software Estimiser Pro,Applied Swan River Software Estimiser Pro to automate reporting and cut manual effort.,swan-river-software-estimiser-pro,alias,False,test
+SWIFT Interbank Messaging,Applied SWIFT Interbank Messaging to automate reporting and cut manual effort.,swift-network,alias,False,val
+MS SQL,"Skills: MS SQL, stakeholder communication, documentation.",sql-server,alias,False,test
+safety health and environmental management software,"Skills: safety health and environmental management software, stakeholder communication, documentation.",safety-health-and-environmental-management-software,alias,False,test
+MediaWiki,Used MediaWiki daily to deliver features for internal and external customers.,mediawiki,alias,False,val
+CoolEdit,Applied CoolEdit to automate reporting and cut manual effort.,adobe-audition,alias,False,test
+hewlettpackard hp soliddesigner,Applied hewlettpackard hp soliddesigner to automate reporting and cut manual effort.,hewlett-packard-hp-soliddesigner,alias,False,test
+Realm Business Solutions INSIGHT for ARGUS,"Led a project built on Realm Business Solutions INSIGHT for ARGUS, improving delivery speed by 30%.",realm-business-solutions-insight-for-argus,alias,False,val
+High Performance Data Processing,Used High Performance Data Processing daily to deliver features for internal and external customers.,high-performance-data-processing,alias,False,test
+PHYLogeny Inference Package,Hands-on experience with PHYLogeny Inference Package in production environments.,phylip,alias,False,test
+jdbc,Hands-on experience with jdbc in production environments.,oracle-jdbc,alias,False,test
+Strategic Reporting Systems ReportSmith,Hands-on experience with Strategic Reporting Systems ReportSmith in production environments.,strategic-reporting-systems-reportsmith,alias,False,test
+full stack,Trained two junior colleagues in full stack best practices.,full-stack-development,alias,False,val
+Blogspot,Used Blogspot daily to deliver features for internal and external customers.,blogger,alias,False,test
+casemap,Hands-on experience with casemap in production environments.,lexisnexis-casemap,alias,False,test
+Geac MPC Production,Trained two junior colleagues in Geac MPC Production best practices.,geac-mpc-production,alias,False,test
+Full-Stack Development,Hands-on experience with Full-Stack Development in production environments.,full-stack-development,alias,False,val
+www.facebook.com,Hands-on experience with www.facebook.com in production environments.,facebook,alias,False,test
+business process management bpm,Applied business process management bpm to automate reporting and cut manual effort.,business-process-management-bpm-software,alias,False,test
+GrassHopper PageStream,"Skills: GrassHopper PageStream, stakeholder communication, documentation.",grasshopper-pagestream,alias,False,val
+Web Server Administration,Used Web Server Administration daily to deliver features for internal and external customers.,web-server-administration,alias,False,val
+Cypress.io,Used Cypress.io daily to deliver features for internal and external customers.,cypress,alias,False,test
+Autonomous system,Trained two junior colleagues in Autonomous system best practices.,autonomous-systems,alias,False,test
+NCR Advanced Checkout Solution,Hands-on experience with NCR Advanced Checkout Solution in production environments.,ncr-advanced-checkout-solution,alias,False,test
+Klaviyo,Applied Klaviyo to automate reporting and cut manual effort.,klaviyo,alias,False,test
+Swift programming language,Applied Swift programming language to automate reporting and cut manual effort.,swift-language,alias,False,test
+elite software ecoord,"Led a project built on elite software ecoord, improving delivery speed by 30%.",elite-software-e-coord,alias,False,val
+Microsoft Azure Data Factory,"Led a project built on Microsoft Azure Data Factory, improving delivery speed by 30%.",microsoft-azure-data-factory,alias,False,test
+Transaction server software,Trained two junior colleagues in Transaction server software best practices.,transaction-server-software,alias,False,test
+WMDocker,"Skills: WMDocker, stakeholder communication, documentation.",docker,alias,False,test
+data modeling,Hands-on experience with data modeling in production environments.,data-modeling-software,alias,False,test
+Microsoft Visual Basic.NET Compact Framework CF,"Skills: Microsoft Visual Basic.NET Compact Framework CF, stakeholder communication, documentation.",microsoft-visual-basicnet-compact-framework-cf,alias,False,test
+next 14,Hands-on experience with next 14 in production environments.,next-js,alias,False,val
+ethereum.org,Hands-on experience with ethereum.org in production environments.,ethereum,alias,False,test
+deltek professional services,Trained two junior colleagues in deltek professional services best practices.,deltek-professional-services-software,alias,False,test
+SoftICE,Hands-on experience with SoftICE in production environments.,softice,alias,False,val
+Embedded Systems & IoT,Applied Embedded Systems & IoT to automate reporting and cut manual effort.,embedded-and-iot,alias,False,test
+Blender 3D,Applied Blender 3D to automate reporting and cut manual effort.,blender,alias,False,test
+Online title search & property report software,Hands-on experience with Online title search & property report software in production environments.,online-title-search-and-property-report-software,alias,False,val
+Outage management system OMS,"Led a project built on Outage management system OMS, improving delivery speed by 30%.",outage-management-system-oms,alias,False,test
+course design,Used course design daily to deliver features for internal and external customers.,curriculum-development,alias,False,val
+Autodesk Revit (software),Hands-on experience with Autodesk Revit (software) in production environments.,revit,alias,False,val
+Carpet Dealer Management System,Used Carpet Dealer Management System daily to deliver features for internal and external customers.,carpet-dealer-management-system-cdms,alias,False,val
+Cash flow software,"Skills: Cash flow software, stakeholder communication, documentation.",cash-flow-software,alias,False,test
+iOS Development,Hands-on experience with iOS Development in production environments.,ios-development,alias,False,test
+Celery Task Queue,"Led a project built on Celery Task Queue, improving delivery speed by 30%.",celery,alias,False,test
+point of sale pos bookstore,"Skills: point of sale pos bookstore, stakeholder communication, documentation.",point-of-sale-pos-bookstore-software,alias,False,test
+AIGHD OASIS,Applied AIGHD OASIS to automate reporting and cut manual effort.,aighd-oasis,alias,False,val
+Amplitude,"Led a project built on Amplitude, improving delivery speed by 30%.",amplitude,alias,False,test
+PHP programming language,"Led a project built on PHP programming language, improving delivery speed by 30%.",php,alias,False,test
+ilog cplex optimization studio,Trained two junior colleagues in ilog cplex optimization studio best practices.,ibm-ilog-cplex-optimization-studio,alias,False,val
+Windent OMS,"Led a project built on Windent OMS, improving delivery speed by 30%.",windent-oms,alias,False,test
+gha,Used gha daily to deliver features for internal and external customers.,github-actions,alias,False,val
+Tomcat Server,Used Tomcat Server daily to deliver features for internal and external customers.,apache-tomcat,alias,False,test
+scc soft computer softar,"Led a project built on scc soft computer softar, improving delivery speed by 30%.",scc-soft-computer-softar,alias,False,test
+SAP Crystal Reports,Used SAP Crystal Reports daily to deliver features for internal and external customers.,sap-crystal-reports,alias,False,val
+Embeddings,"Skills: Embeddings, stakeholder communication, documentation.",embeddings,alias,False,val
+Lua language,Used Lua language daily to deliver features for internal and external customers.,lua,alias,False,test
+genetic algorithm,Applied genetic algorithm to automate reporting and cut manual effort.,genetic-algorithm-software,alias,False,test
+Data Frenzy,Hands-on experience with Data Frenzy in production environments.,data-frenzy,alias,False,test
+credit risk,"Skills: credit risk, stakeholder communication, documentation.",credit-risk-modeling,alias,False,val
+Presentations,Used Presentations daily to deliver features for internal and external customers.,google-slides,alias,False,test
+final cut studio,Trained two junior colleagues in final cut studio best practices.,apple-final-cut-studio,alias,False,test
+Megger PowerDB,"Skills: Megger PowerDB, stakeholder communication, documentation.",megger-powerdb,alias,False,val
+spark sql,Trained two junior colleagues in spark sql best practices.,apache-spark,alias,False,val

@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Denise Nixon",
+    "email": "denise.nixon.67@hotmail.com",
+    "phone": "+1-410-579-8334",
+    "location": {
+      "city": "Lake Jennifer",
+      "region": "HI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/denise-nixon",
+      "https://github.com/denisenixon"
+    ]
+  },
+  "summary": "Experienced Principal professional with 18+ years of expertise in software. Proven track record delivering scalable solutions using Docker, React.js, FastAPI.",
+  "experience": [
+    {
+      "company": "Krause LLC",
+      "title": "Senior Staff Software Architect",
+      "location": "Christopherborough, VA",
+      "start": "2022-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Docker, React.js.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Docker",
+        "React.js",
+        "Redis",
+        "Python"
+      ]
+    },
+    {
+      "company": "Escobar and Sons",
+      "title": "Full Stack Engineer",
+      "location": "Brucebury, IA",
+      "start": "2018-08",
+      "end": "2022-09",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Docker, Python.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Docker",
+        "Python",
+        "Redis",
+        "React.js"
+      ]
+    },
+    {
+      "company": "Gill, Woods and Garcia",
+      "title": "Software Engineer",
+      "location": "West Kristyland, ID",
+      "start": "2013-06",
+      "end": "2018-08",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Redis, FastAPI.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Redis",
+        "FastAPI",
+        "Python",
+        "Docker"
+      ]
+    },
+    {
+      "company": "Wilson-Miller",
+      "title": "Staff Software Architect",
+      "location": "North Amy, IL",
+      "start": "2008-07",
+      "end": "2013-06",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using React.js, FastAPI.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "React.js",
+        "FastAPI",
+        "Docker",
+        "Python"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Evanstown State University",
+      "degree": "Master of Science",
+      "field": "Computer Science",
+      "start": "2004-09",
+      "end": "2008-05",
+      "grade": "3.97 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Docker",
+      "canonical_slug": "docker",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Docker across multiple enterprise roles."
+    },
+    {
+      "raw": "React.js",
+      "canonical_slug": "react",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized React.js across multiple enterprise roles."
+    },
+    {
+      "raw": "FastAPI",
+      "canonical_slug": "fastapi",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized FastAPI across multiple enterprise roles."
+    },
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-913432"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Docker.",
+      "technologies": [
+        "Docker",
+        "React.js",
+        "FastAPI"
+      ],
+      "url": "https://github.com/denisenixon/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "principal",
+    "total_experience_years": 18,
+    "is_emerging_profile": false,
+    "candidate_index": 319
+  }
+}

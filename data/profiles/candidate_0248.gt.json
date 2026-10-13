@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Joseph Patel PhD",
+    "email": "joseph.patel.phd.84@yahoo.com",
+    "phone": "296-589-3135",
+    "location": {
+      "city": "West Angelaberg",
+      "region": "PW",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/joseph-patel-phd",
+      "https://github.com/josephpatelphd"
+    ]
+  },
+  "summary": "Experienced Lead professional with 11+ years of expertise in manufacturing. Proven track record delivering scalable solutions using Embedded C, PLC Programming (Siemens/Allen-Bradley), Six Sigma Green Belt.",
+  "experience": [
+    {
+      "company": "Brown LLC",
+      "title": "Senior Industrial Automation Engineer",
+      "location": "Melindaberg, LA",
+      "start": "2023-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using PLC Programming (Siemens/Allen-Bradley), SCADA Systems.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "SCADA Systems",
+        "Internet of Things (IoT)",
+        "Supply Chain Management"
+      ]
+    },
+    {
+      "company": "Thomas-Castaneda",
+      "title": "Quality Assurance Engineer",
+      "location": "Sanchezbury, AR",
+      "start": "2019-08",
+      "end": "2023-07",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Six Sigma Green Belt, Supply Chain Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Six Sigma Green Belt",
+        "Supply Chain Management",
+        "Internet of Things (IoT)",
+        "SCADA Systems"
+      ]
+    },
+    {
+      "company": "Taylor, Hayden and Padilla",
+      "title": "Quality Assurance Engineer",
+      "location": "Quinnchester, MN",
+      "start": "2015-08",
+      "end": "2019-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Lean Manufacturing, Six Sigma Green Belt.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Lean Manufacturing",
+        "Six Sigma Green Belt",
+        "Supply Chain Management",
+        "Root Cause Analysis"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lake Danielshire State University",
+      "degree": "Master of Science",
+      "field": "Industrial Engineering",
+      "start": "2011-09",
+      "end": "2015-05",
+      "grade": "3.82 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Embedded C",
+      "canonical_slug": "embedded-c",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Embedded C across multiple enterprise roles."
+    },
+    {
+      "raw": "PLC Programming (Siemens/Allen-Bradley)",
+      "canonical_slug": "plc-programming",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized PLC Programming (Siemens/Allen-Bradley) across multiple enterprise roles."
+    },
+    {
+      "raw": "Six Sigma Green Belt",
+      "canonical_slug": "six-sigma",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Six Sigma Green Belt across multiple enterprise roles."
+    },
+    {
+      "raw": "Supply Chain Management",
+      "canonical_slug": "supply-chain-management",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Supply Chain Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Internet of Things (IoT)",
+      "canonical_slug": "internet-of-things",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Internet of Things (IoT) across multiple enterprise roles."
+    },
+    {
+      "raw": "Lean Manufacturing",
+      "canonical_slug": "lean-manufacturing",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Lean Manufacturing across multiple enterprise roles."
+    },
+    {
+      "raw": "SolidWorks CAD",
+      "canonical_slug": "solidworks",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SolidWorks CAD across multiple enterprise roles."
+    },
+    {
+      "raw": "SCADA Systems",
+      "canonical_slug": "scada",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized SCADA Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Root Cause Analysis",
+      "canonical_slug": "root-cause-analysis",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Root Cause Analysis across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Manufacturing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-382795"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Manufacturing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Embedded C.",
+      "technologies": [
+        "Embedded C",
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "Six Sigma Green Belt"
+      ],
+      "url": "https://github.com/josephpatelphd/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "manufacturing",
+    "seniority": "lead",
+    "total_experience_years": 11,
+    "is_emerging_profile": false,
+    "candidate_index": 248
+  }
+}

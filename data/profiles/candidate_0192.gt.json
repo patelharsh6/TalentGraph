@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Rebecca Richard",
+    "email": "rebecca.richard.44@hotmail.com",
+    "phone": "941.372.2329",
+    "location": {
+      "city": "Hahnfort",
+      "region": "ME",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/rebecca-richard",
+      "https://github.com/rebeccarichard"
+    ]
+  },
+  "summary": "Experienced Senior professional with 9+ years of expertise in design. Proven track record delivering scalable solutions using Adobe XD, UI/UX Design, Design Thinking.",
+  "experience": [
+    {
+      "company": "Clark Inc",
+      "title": "Senior User Experience Researcher",
+      "location": "West Nicolestad, TX",
+      "start": "2023-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using UI/UX Design, Design Thinking.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "UI/UX Design",
+        "Design Thinking",
+        "Adobe XD",
+        "Design Systems"
+      ]
+    },
+    {
+      "company": "Thompson PLC",
+      "title": "UI/UX Designer",
+      "location": "Port Brycechester, DE",
+      "start": "2020-06",
+      "end": "2023-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using UI/UX Design, Adobe XD.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "UI/UX Design",
+        "Adobe XD",
+        "Design Thinking",
+        "Figma"
+      ]
+    },
+    {
+      "company": "Perez, Hoffman and Tucker",
+      "title": "User Experience Researcher",
+      "location": "Kristenton, WI",
+      "start": "2017-06",
+      "end": "2020-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Wireframing & Prototyping, Adobe XD.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Wireframing & Prototyping",
+        "Adobe XD",
+        "UI/UX Design",
+        "Design Systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Paulahaven State University",
+      "degree": "Master of Science",
+      "field": "Human-Computer Interaction / Graphic Design",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.51 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Adobe XD",
+      "canonical_slug": "adobe-xd",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Adobe XD across multiple enterprise roles."
+    },
+    {
+      "raw": "UI/UX Design",
+      "canonical_slug": "user-experience-design",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized UI/UX Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Design Thinking",
+      "canonical_slug": "design-thinking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Design Thinking across multiple enterprise roles."
+    },
+    {
+      "raw": "HTML5 / CSS3",
+      "canonical_slug": "html5",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized HTML5 / CSS3 across multiple enterprise roles."
+    },
+    {
+      "raw": "Figma",
+      "canonical_slug": "figma",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Figma across multiple enterprise roles."
+    },
+    {
+      "raw": "Wireframing & Prototyping",
+      "canonical_slug": "wireframing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Wireframing & Prototyping across multiple enterprise roles."
+    },
+    {
+      "raw": "Design Systems",
+      "canonical_slug": "design-systems",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Design Systems across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Design Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-327738"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Design Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Adobe XD.",
+      "technologies": [
+        "Adobe XD",
+        "UI/UX Design",
+        "Design Thinking"
+      ],
+      "url": "https://github.com/rebeccarichard/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "design",
+    "seniority": "senior",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 192
+  }
+}

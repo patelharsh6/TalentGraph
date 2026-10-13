@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Blake Rhodes",
+    "email": "blake.rhodes.74@yahoo.com",
+    "phone": "001-988-864-9767",
+    "location": {
+      "city": "East William",
+      "region": "NM",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/blake-rhodes",
+      "https://github.com/blakerhodes"
+    ]
+  },
+  "summary": "Experienced Senior professional with 9+ years of expertise in operations. Proven track record delivering scalable solutions using Operations Management, Cross-Functional Leadership, Jira & Confluence.",
+  "experience": [
+    {
+      "company": "Ellis, Faulkner and Palmer",
+      "title": "Senior Business Operations Lead",
+      "location": "Lake Jasonfort, AZ",
+      "start": "2023-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Cross-Functional Leadership, Process Optimization.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Cross-Functional Leadership",
+        "Process Optimization",
+        "OKRs / KPIs Tracking",
+        "Budgeting & Cost Reduction"
+      ]
+    },
+    {
+      "company": "Moore, Hansen and Dorsey",
+      "title": "Director of People Operations",
+      "location": "New Melissaville, DE",
+      "start": "2020-03",
+      "end": "2023-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Jira & Confluence, OKRs / KPIs Tracking.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Jira & Confluence",
+        "OKRs / KPIs Tracking",
+        "Budgeting & Cost Reduction",
+        "Operations Management"
+      ]
+    },
+    {
+      "company": "Armstrong-Williams",
+      "title": "Operations Manager",
+      "location": "North Nathan, MN",
+      "start": "2017-04",
+      "end": "2020-03",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Operations Management, Cross-Functional Leadership.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Operations Management",
+        "Cross-Functional Leadership",
+        "Agile Scrum Methodology",
+        "Budgeting & Cost Reduction"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Kellytown State University",
+      "degree": "Master of Science",
+      "field": "Operations Research / Management",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.55 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Operations Management",
+      "canonical_slug": "operations-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Operations Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Cross-Functional Leadership",
+      "canonical_slug": "cross-functional-collaboration",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Cross-Functional Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Jira & Confluence",
+      "canonical_slug": "jira",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Jira & Confluence across multiple enterprise roles."
+    },
+    {
+      "raw": "OKRs / KPIs Tracking",
+      "canonical_slug": "key-performance-indicators",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized OKRs / KPIs Tracking across multiple enterprise roles."
+    },
+    {
+      "raw": "Process Optimization",
+      "canonical_slug": "process-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Process Optimization across multiple enterprise roles."
+    },
+    {
+      "raw": "Agile Scrum Methodology",
+      "canonical_slug": "agile-methodology",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Agile Scrum Methodology across multiple enterprise roles."
+    },
+    {
+      "raw": "Budgeting & Cost Reduction",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Budgeting & Cost Reduction across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Operations Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-300924"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Operations Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Operations Management.",
+      "technologies": [
+        "Operations Management",
+        "Cross-Functional Leadership",
+        "Jira & Confluence"
+      ],
+      "url": "https://github.com/blakerhodes/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "operations",
+    "seniority": "senior",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 197
+  }
+}

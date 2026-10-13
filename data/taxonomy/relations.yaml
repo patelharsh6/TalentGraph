@@ -1,0 +1,1275 @@
+# Skill relations graph (plan §6.2, ordered.md 1.4).
+# Used for upskilling paths, gap analysis, and semantic similarity bonus.
+# Contains >= 300 well-formed edges (prerequisite / related) with weights.
+
+relations:
+  # Languages & Core Foundations
+  - skill_slug: python
+    related_slug: django
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: python
+    related_slug: fastapi
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: python
+    related_slug: flask
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: python
+    related_slug: pandas
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: python
+    related_slug: numpy
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: python
+    related_slug: pytorch
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: python
+    related_slug: tensorflow
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: python
+    related_slug: scikit-learn
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: python
+    related_slug: pytest
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: python
+    related_slug: pyspark
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: python
+    related_slug: cython
+    kind: related
+    weight: 0.75
+  - skill_slug: python
+    related_slug: asyncio
+    kind: related
+    weight: 0.85
+  - skill_slug: python
+    related_slug: poetry
+    kind: related
+    weight: 0.80
+  - skill_slug: python
+    related_slug: pip
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: javascript
+    related_slug: typescript
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: javascript
+    related_slug: react
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: javascript
+    related_slug: vue-js
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: javascript
+    related_slug: angular
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: javascript
+    related_slug: node-js
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: javascript
+    related_slug: svelte
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: javascript
+    related_slug: webassembly
+    kind: related
+    weight: 0.75
+  - skill_slug: javascript
+    related_slug: npm
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: javascript
+    related_slug: yarn
+    kind: related
+    weight: 0.85
+  - skill_slug: typescript
+    related_slug: react
+    kind: related
+    weight: 0.85
+  - skill_slug: typescript
+    related_slug: nest-js
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: typescript
+    related_slug: next-js
+    kind: related
+    weight: 0.85
+  - skill_slug: typescript
+    related_slug: angular
+    kind: related
+    weight: 0.85
+  - skill_slug: typescript
+    related_slug: ts-node
+    kind: related
+    weight: 0.80
+  - skill_slug: java
+    related_slug: spring-boot
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: java
+    related_slug: spring-framework
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: java
+    related_slug: kotlin
+    kind: related
+    weight: 0.80
+  - skill_slug: java
+    related_slug: scala
+    kind: related
+    weight: 0.75
+  - skill_slug: java
+    related_slug: junit
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: java
+    related_slug: maven
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: java
+    related_slug: gradle
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: java
+    related_slug: hibernate
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: java
+    related_slug: jpa
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: c-sharp
+    related_slug: aspnet-core
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: c-sharp
+    related_slug: entity-framework-core
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: c-sharp
+    related_slug: unity-3d
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: c-sharp
+    related_slug: f-sharp
+    kind: related
+    weight: 0.75
+  - skill_slug: c-sharp
+    related_slug: nuget
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: c-plus-plus
+    related_slug: rust-language
+    kind: related
+    weight: 0.75
+  - skill_slug: c-plus-plus
+    related_slug: unreal-engine
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: c-plus-plus
+    related_slug: embedded-c
+    kind: related
+    weight: 0.85
+  - skill_slug: c-plus-plus
+    related_slug: opencv
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: c-plus-plus
+    related_slug: cuda
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: c-plus-plus
+    related_slug: cmake
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: c-language
+    related_slug: c-plus-plus
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: c-language
+    related_slug: embedded-c
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: c-language
+    related_slug: linux
+    kind: related
+    weight: 0.80
+  - skill_slug: c-language
+    related_slug: gdb
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: golang
+    related_slug: gin-gonic
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: golang
+    related_slug: docker
+    kind: related
+    weight: 0.80
+  - skill_slug: golang
+    related_slug: kubernetes
+    kind: related
+    weight: 0.80
+  - skill_slug: golang
+    related_slug: grpc
+    kind: related
+    weight: 0.85
+  - skill_slug: golang
+    related_slug: goroutines
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: rust-language
+    related_slug: actix-web
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: rust-language
+    related_slug: axum
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: rust-language
+    related_slug: webassembly
+    kind: related
+    weight: 0.85
+  - skill_slug: rust-language
+    related_slug: polars
+    kind: related
+    weight: 0.80
+  - skill_slug: rust-language
+    related_slug: cargo
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: ruby-language
+    related_slug: ruby-on-rails
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: ruby-language
+    related_slug: rspec
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: php
+    related_slug: laravel
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: php
+    related_slug: symfony
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: php
+    related_slug: composer
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: swift-language
+    related_slug: swiftui
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: swift-language
+    related_slug: uikit
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: swift-language
+    related_slug: ios-development
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: swift-language
+    related_slug: xcode
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: kotlin
+    related_slug: android-development
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: kotlin
+    related_slug: jetpack-compose
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: kotlin
+    related_slug: coroutines
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: dart
+    related_slug: flutter
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: scala
+    related_slug: apache-spark
+    kind: related
+    weight: 0.90
+  - skill_slug: scala
+    related_slug: sbt
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: r-language
+    related_slug: ggplot2
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: r-language
+    related_slug: tidyverse
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: r-language
+    related_slug: shiny
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: julia
+    related_slug: numerical-computing
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: elixir
+    related_slug: phoenix-framework
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: erlang
+    related_slug: elixir
+    kind: related
+    weight: 0.85
+  - skill_slug: clojure
+    related_slug: lisp
+    kind: related
+    weight: 0.80
+
+  # Frontend & UI
+  - skill_slug: html5
+    related_slug: css3
+    kind: related
+    weight: 0.95
+  - skill_slug: html5
+    related_slug: javascript
+    kind: related
+    weight: 0.90
+  - skill_slug: css3
+    related_slug: tailwindcss
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: css3
+    related_slug: sass-css
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: css3
+    related_slug: bootstrap
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: react
+    related_slug: next-js
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: react
+    related_slug: react-native
+    kind: related
+    weight: 0.85
+  - skill_slug: react
+    related_slug: redux
+    kind: related
+    weight: 0.85
+  - skill_slug: react
+    related_slug: zustand
+    kind: related
+    weight: 0.80
+  - skill_slug: react
+    related_slug: remix
+    kind: related
+    weight: 0.85
+  - skill_slug: react
+    related_slug: react-query
+    kind: related
+    weight: 0.85
+  - skill_slug: react
+    related_slug: storybook
+    kind: related
+    weight: 0.80
+  - skill_slug: vue-js
+    related_slug: nuxt-js
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: vue-js
+    related_slug: pinia
+    kind: related
+    weight: 0.85
+  - skill_slug: vue-js
+    related_slug: vuex
+    kind: related
+    weight: 0.80
+  - skill_slug: angular
+    related_slug: rxjs
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: angular
+    related_slug: ngrx
+    kind: related
+    weight: 0.85
+  - skill_slug: svelte
+    related_slug: sveltekit
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: node-js
+    related_slug: express-js
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: node-js
+    related_slug: nest-js
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: node-js
+    related_slug: fastify
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: vite
+    related_slug: webpack
+    kind: related
+    weight: 0.80
+  - skill_slug: webpack
+    related_slug: rollup
+    kind: related
+    weight: 0.75
+  - skill_slug: three-js
+    related_slug: webgl
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: d3-js
+    related_slug: svg
+    kind: prerequisite
+    weight: 0.85
+
+  # AI, ML & Data Science
+  - skill_slug: pandas
+    related_slug: polars
+    kind: related
+    weight: 0.85
+  - skill_slug: numpy
+    related_slug: scipy
+    kind: related
+    weight: 0.90
+  - skill_slug: machine-learning
+    related_slug: deep-learning
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: deep-learning
+    related_slug: generative-ai
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: deep-learning
+    related_slug: natural-language-processing
+    kind: related
+    weight: 0.85
+  - skill_slug: deep-learning
+    related_slug: computer-vision
+    kind: related
+    weight: 0.85
+  - skill_slug: deep-learning
+    related_slug: reinforcement-learning
+    kind: related
+    weight: 0.80
+  - skill_slug: pytorch
+    related_slug: tensorflow
+    kind: related
+    weight: 0.85
+  - skill_slug: pytorch
+    related_slug: huggingface-transformers
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: pytorch
+    related_slug: jax
+    kind: related
+    weight: 0.75
+  - skill_slug: pytorch
+    related_slug: pytorch-lightning
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: pytorch
+    related_slug: torchaudio
+    kind: related
+    weight: 0.80
+  - skill_slug: pytorch
+    related_slug: torchvision
+    kind: related
+    weight: 0.85
+  - skill_slug: tensorflow
+    related_slug: keras
+    kind: related
+    weight: 0.95
+  - skill_slug: tensorflow
+    related_slug: tensorboard
+    kind: related
+    weight: 0.90
+  - skill_slug: natural-language-processing
+    related_slug: large-language-models
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: natural-language-processing
+    related_slug: spacy
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: natural-language-processing
+    related_slug: nltk
+    kind: prerequisite
+    weight: 0.80
+  - skill_slug: natural-language-processing
+    related_slug: bert
+    kind: related
+    weight: 0.85
+  - skill_slug: large-language-models
+    related_slug: retrieval-augmented-generation
+    kind: related
+    weight: 0.90
+  - skill_slug: large-language-models
+    related_slug: langchain
+    kind: related
+    weight: 0.85
+  - skill_slug: large-language-models
+    related_slug: llamaindex
+    kind: related
+    weight: 0.85
+  - skill_slug: large-language-models
+    related_slug: prompt-engineering
+    kind: related
+    weight: 0.85
+  - skill_slug: large-language-models
+    related_slug: fine-tuning
+    kind: related
+    weight: 0.85
+  - skill_slug: fine-tuning
+    related_slug: lora
+    kind: related
+    weight: 0.90
+  - skill_slug: fine-tuning
+    related_slug: qlora
+    kind: related
+    weight: 0.90
+  - skill_slug: fine-tuning
+    related_slug: peft
+    kind: related
+    weight: 0.90
+  - skill_slug: retrieval-augmented-generation
+    related_slug: vector-databases
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: retrieval-augmented-generation
+    related_slug: hybrid-search
+    kind: related
+    weight: 0.85
+  - skill_slug: pinecone
+    related_slug: chromadb
+    kind: related
+    weight: 0.85
+  - skill_slug: chromadb
+    related_slug: weaviate
+    kind: related
+    weight: 0.85
+  - skill_slug: weaviate
+    related_slug: qdrant
+    kind: related
+    weight: 0.85
+  - skill_slug: qdrant
+    related_slug: milvus
+    kind: related
+    weight: 0.85
+  - skill_slug: machine-learning
+    related_slug: machine-learning-operations
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: mlflow
+    related_slug: weights-and-biases
+    kind: related
+    weight: 0.85
+  - skill_slug: vllm
+    related_slug: triton-inference-server
+    kind: related
+    weight: 0.80
+  - skill_slug: vllm
+    related_slug: text-generation-inference
+    kind: related
+    weight: 0.80
+  - skill_slug: scikit-learn
+    related_slug: xgboost
+    kind: related
+    weight: 0.85
+  - skill_slug: xgboost
+    related_slug: lightgbm
+    kind: related
+    weight: 0.90
+  - skill_slug: lightgbm
+    related_slug: catboost
+    kind: related
+    weight: 0.90
+  - skill_slug: computer-vision
+    related_slug: opencv
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: computer-vision
+    related_slug: yolo
+    kind: related
+    weight: 0.85
+  - skill_slug: computer-vision
+    related_slug: image-segmentation
+    kind: related
+    weight: 0.85
+
+  # Cloud & Infrastructure & DevOps
+  - skill_slug: docker
+    related_slug: kubernetes
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: docker
+    related_slug: podman
+    kind: related
+    weight: 0.85
+  - skill_slug: docker
+    related_slug: docker-compose
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: kubernetes
+    related_slug: helm
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: kubernetes
+    related_slug: istio
+    kind: related
+    weight: 0.80
+  - skill_slug: kubernetes
+    related_slug: argocd
+    kind: related
+    weight: 0.85
+  - skill_slug: kubernetes
+    related_slug: fluxcd
+    kind: related
+    weight: 0.80
+  - skill_slug: kubernetes
+    related_slug: kustomize
+    kind: related
+    weight: 0.85
+  - skill_slug: terraform
+    related_slug: ansible
+    kind: related
+    weight: 0.80
+  - skill_slug: terraform
+    related_slug: pulumi
+    kind: related
+    weight: 0.85
+  - skill_slug: terraform
+    related_slug: terragrunt
+    kind: prerequisite
+    weight: 0.85
+  - skill_slug: amazon-web-services
+    related_slug: google-cloud-platform
+    kind: related
+    weight: 0.80
+  - skill_slug: amazon-web-services
+    related_slug: microsoft-azure
+    kind: related
+    weight: 0.80
+  - skill_slug: amazon-web-services
+    related_slug: aws-lambda
+    kind: related
+    weight: 0.90
+  - skill_slug: amazon-web-services
+    related_slug: aws-s3
+    kind: related
+    weight: 0.90
+  - skill_slug: amazon-web-services
+    related_slug: aws-ec2
+    kind: related
+    weight: 0.90
+  - skill_slug: amazon-web-services
+    related_slug: aws-eks
+    kind: related
+    weight: 0.90
+  - skill_slug: amazon-web-services
+    related_slug: aws-ecs
+    kind: related
+    weight: 0.90
+  - skill_slug: amazon-web-services
+    related_slug: aws-iam
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: google-cloud-platform
+    related_slug: google-kubernetes-engine
+    kind: related
+    weight: 0.90
+  - skill_slug: google-cloud-platform
+    related_slug: bigquery
+    kind: related
+    weight: 0.90
+  - skill_slug: google-cloud-platform
+    related_slug: google-cloud-run
+    kind: related
+    weight: 0.85
+  - skill_slug: microsoft-azure
+    related_slug: azure-kubernetes-service
+    kind: related
+    weight: 0.90
+  - skill_slug: microsoft-azure
+    related_slug: azure-devops
+    kind: related
+    weight: 0.85
+  - skill_slug: continuous-integration-and-continuous-delivery
+    related_slug: github-actions
+    kind: related
+    weight: 0.90
+  - skill_slug: continuous-integration-and-continuous-delivery
+    related_slug: gitlab-ci
+    kind: related
+    weight: 0.85
+  - skill_slug: continuous-integration-and-continuous-delivery
+    related_slug: jenkins
+    kind: related
+    weight: 0.85
+  - skill_slug: continuous-integration-and-continuous-delivery
+    related_slug: circleci
+    kind: related
+    weight: 0.80
+  - skill_slug: prometheus
+    related_slug: grafana
+    kind: related
+    weight: 0.95
+  - skill_slug: opentelemetry
+    related_slug: jaeger
+    kind: related
+    weight: 0.90
+  - skill_slug: opentelemetry
+    related_slug: datadog
+    kind: related
+    weight: 0.80
+  - skill_slug: linux
+    related_slug: bash-scripting
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: linux
+    related_slug: shell-scripting
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: nginx
+    related_slug: caddy
+    kind: related
+    weight: 0.75
+  - skill_slug: nginx
+    related_slug: traefik
+    kind: related
+    weight: 0.80
+  - skill_slug: nginx
+    related_slug: haproxy
+    kind: related
+    weight: 0.80
+
+  # Databases & Big Data
+  - skill_slug: sql
+    related_slug: postgresql
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: sql
+    related_slug: mysql
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: sql
+    related_slug: sqlite
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: sql
+    related_slug: oracle-db
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: sql
+    related_slug: sql-server
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: postgresql
+    related_slug: mysql
+    kind: related
+    weight: 0.85
+  - skill_slug: postgresql
+    related_slug: sqlite
+    kind: related
+    weight: 0.80
+  - skill_slug: postgresql
+    related_slug: pgvector
+    kind: related
+    weight: 0.90
+  - skill_slug: postgresql
+    related_slug: postgis
+    kind: related
+    weight: 0.85
+  - skill_slug: mongodb
+    related_slug: dynamodb
+    kind: related
+    weight: 0.80
+  - skill_slug: mongodb
+    related_slug: couchbase
+    kind: related
+    weight: 0.75
+  - skill_slug: mongodb
+    related_slug: mongoose
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: redis
+    related_slug: memcached
+    kind: related
+    weight: 0.80
+  - skill_slug: redis
+    related_slug: keydb
+    kind: related
+    weight: 0.80
+  - skill_slug: elasticsearch
+    related_slug: opensearch
+    kind: related
+    weight: 0.95
+  - skill_slug: apache-spark
+    related_slug: pyspark
+    kind: related
+    weight: 0.95
+  - skill_slug: apache-spark
+    related_slug: databricks
+    kind: related
+    weight: 0.90
+  - skill_slug: apache-spark
+    related_slug: apache-flink
+    kind: related
+    weight: 0.80
+  - skill_slug: apache-kafka
+    related_slug: rabbitmq
+    kind: related
+    weight: 0.80
+  - skill_slug: apache-kafka
+    related_slug: apache-pulsar
+    kind: related
+    weight: 0.80
+  - skill_slug: apache-airflow
+    related_slug: prefect
+    kind: related
+    weight: 0.85
+  - skill_slug: apache-airflow
+    related_slug: dagster
+    kind: related
+    weight: 0.85
+  - skill_slug: snowflake
+    related_slug: bigquery
+    kind: related
+    weight: 0.85
+  - skill_slug: snowflake
+    related_slug: redshift
+    kind: related
+    weight: 0.85
+  - skill_slug: dbt
+    related_slug: snowflake
+    kind: related
+    weight: 0.85
+  - skill_slug: dbt
+    related_slug: bigquery
+    kind: related
+    weight: 0.85
+  - skill_slug: sqlalchemy
+    related_slug: alembic
+    kind: related
+    weight: 0.90
+  - skill_slug: prisma
+    related_slug: typeorm
+    kind: related
+    weight: 0.80
+
+  # Architecture & APIs
+  - skill_slug: rest-api
+    related_slug: graphql
+    kind: related
+    weight: 0.80
+  - skill_slug: rest-api
+    related_slug: grpc
+    kind: related
+    weight: 0.75
+  - skill_slug: microservices
+    related_slug: docker
+    kind: related
+    weight: 0.85
+  - skill_slug: microservices
+    related_slug: kubernetes
+    kind: related
+    weight: 0.85
+  - skill_slug: microservices
+    related_slug: event-driven-architecture
+    kind: related
+    weight: 0.85
+  - skill_slug: domain-driven-design
+    related_slug: clean-architecture
+    kind: related
+    weight: 0.85
+  - skill_slug: domain-driven-design
+    related_slug: cqrs
+    kind: related
+    weight: 0.85
+  - skill_slug: test-driven-development
+    related_slug: unit-testing
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: test-driven-development
+    related_slug: integration-testing
+    kind: related
+    weight: 0.85
+
+  # Security & Identity
+  - skill_slug: oauth2
+    related_slug: openid-connect
+    kind: related
+    weight: 0.95
+  - skill_slug: oauth2
+    related_slug: jwt
+    kind: related
+    weight: 0.90
+  - skill_slug: single-sign-on
+    related_slug: saml
+    kind: related
+    weight: 0.85
+  - skill_slug: single-sign-on
+    related_slug: okta
+    kind: related
+    weight: 0.85
+  - skill_slug: single-sign-on
+    related_slug: auth0
+    kind: related
+    weight: 0.85
+  - skill_slug: penetration-testing
+    related_slug: burp-suite
+    kind: related
+    weight: 0.85
+  - skill_slug: penetration-testing
+    related_slug: owasp-top-10
+    kind: related
+    weight: 0.90
+  - skill_slug: penetration-testing
+    related_slug: metasploit
+    kind: related
+    weight: 0.85
+  - skill_slug: soc2
+    related_slug: iso-27001
+    kind: related
+    weight: 0.85
+  - skill_slug: gdpr
+    related_slug: hipaa-compliance
+    kind: related
+    weight: 0.75
+
+  # Product, Design & Collaboration
+  - skill_slug: figma
+    related_slug: adobe-xd
+    kind: related
+    weight: 0.85
+  - skill_slug: figma
+    related_slug: sketch
+    kind: related
+    weight: 0.85
+  - skill_slug: wireframing
+    related_slug: prototyping
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: user-research
+    related_slug: usability-testing
+    kind: related
+    weight: 0.85
+  - skill_slug: design-systems
+    related_slug: component-libraries
+    kind: related
+    weight: 0.85
+  - skill_slug: agile-methodology
+    related_slug: scrum
+    kind: related
+    weight: 0.95
+  - skill_slug: agile-methodology
+    related_slug: kanban
+    kind: related
+    weight: 0.90
+  - skill_slug: jira
+    related_slug: linear
+    kind: related
+    weight: 0.80
+  - skill_slug: jira
+    related_slug: confluence
+    kind: related
+    weight: 0.85
+  - skill_slug: product-roadmapping
+    related_slug: user-stories
+    kind: related
+    weight: 0.85
+  - skill_slug: product-discovery
+    related_slug: competitive-analysis
+    kind: related
+    weight: 0.80
+
+  # Business, Finance & Marketing
+  - skill_slug: financial-modeling
+    related_slug: dcf-valuation
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: financial-modeling
+    related_slug: lbo-modeling
+    kind: related
+    weight: 0.85
+  - skill_slug: financial-accounting
+    related_slug: gaap
+    kind: related
+    weight: 0.90
+  - skill_slug: financial-accounting
+    related_slug: ifrs
+    kind: related
+    weight: 0.90
+  - skill_slug: search-engine-optimization
+    related_slug: search-engine-marketing
+    kind: related
+    weight: 0.85
+  - skill_slug: search-engine-optimization
+    related_slug: google-analytics
+    kind: related
+    weight: 0.85
+  - skill_slug: salesforce
+    related_slug: hubspot
+    kind: related
+    weight: 0.80
+  - skill_slug: power-bi
+    related_slug: tableau
+    kind: related
+    weight: 0.85
+  - skill_slug: power-bi
+    related_slug: looker
+    kind: related
+    weight: 0.80
+  - skill_slug: tableau
+    related_slug: looker
+    kind: related
+    weight: 0.80
+
+  # Soft Skills & Management
+  - skill_slug: team-leadership
+    related_slug: people-management
+    kind: related
+    weight: 0.90
+  - skill_slug: people-management
+    related_slug: mentoring
+    kind: related
+    weight: 0.85
+  - skill_slug: effective-communication
+    related_slug: stakeholder-communication
+    kind: related
+    weight: 0.90
+  - skill_slug: problem-solving
+    related_slug: root-cause-analysis
+    kind: related
+    weight: 0.85
+  - skill_slug: technical-writing
+    related_slug: documentation
+    kind: related
+    weight: 0.90
+  - skill_slug: public-speaking
+    related_slug: presentation-skills
+    kind: related
+    weight: 0.90
+  - skill_slug: negotiation
+    related_slug: conflict-resolution
+    kind: related
+    weight: 0.85
+  - skill_slug: critical-thinking
+    related_slug: analytical-skills
+    kind: related
+    weight: 0.85
+  - skill_slug: time-management
+    related_slug: prioritization
+    kind: related
+    weight: 0.90
+  - skill_slug: adaptability
+    related_slug: resilience
+    kind: related
+    weight: 0.85
+
+  # Healthcare & Life Sciences
+  - skill_slug: electronic-health-records
+    related_slug: epic-systems
+    kind: related
+    weight: 0.90
+  - skill_slug: electronic-health-records
+    related_slug: cerner
+    kind: related
+    weight: 0.90
+  - skill_slug: electronic-health-records
+    related_slug: hl7-fhir
+    kind: related
+    weight: 0.85
+  - skill_slug: hl7-fhir
+    related_slug: hipaa-compliance
+    kind: related
+    weight: 0.80
+  - skill_slug: clinical-trials
+    related_slug: bioinformatics
+    kind: related
+    weight: 0.80
+  - skill_slug: bioinformatics
+    related_slug: python
+    kind: related
+    weight: 0.85
+  - skill_slug: bioinformatics
+    related_slug: r-language
+    kind: related
+    weight: 0.85
+
+  # FinTech & Payments
+  - skill_slug: payment-gateways
+    related_slug: pci-dss
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: payment-gateways
+    related_slug: rest-api
+    kind: related
+    weight: 0.85
+  - skill_slug: anti-money-laundering
+    related_slug: know-your-customer
+    kind: related
+    weight: 0.95
+  - skill_slug: algorithmic-trading
+    related_slug: python
+    kind: related
+    weight: 0.90
+  - skill_slug: algorithmic-trading
+    related_slug: c-plus-plus
+    kind: related
+    weight: 0.85
+  - skill_slug: credit-risk-modeling
+    related_slug: financial-modeling
+    kind: related
+    weight: 0.90
+  - skill_slug: credit-risk-modeling
+    related_slug: machine-learning
+    kind: related
+    weight: 0.85
+
+  # Manufacturing & Industrial IoT
+  - skill_slug: supply-chain-management
+    related_slug: six-sigma
+    kind: related
+    weight: 0.85
+  - skill_slug: internet-of-things
+    related_slug: embedded-c
+    kind: related
+    weight: 0.90
+  - skill_slug: internet-of-things
+    related_slug: scada
+    kind: related
+    weight: 0.85
+  - skill_slug: scada
+    related_slug: plc-programming
+    kind: related
+    weight: 0.90
+  - skill_slug: embedded-c
+    related_slug: c-language
+    kind: prerequisite
+    weight: 0.95
+
+  # Legal & Governance
+  - skill_slug: gdpr
+    related_slug: privacy-and-data-governance
+    kind: related
+    weight: 0.90
+  - skill_slug: soc2
+    related_slug: iso-27001
+    kind: related
+    weight: 0.90
+  - skill_slug: contract-drafting
+    related_slug: negotiation
+    kind: related
+    weight: 0.80
+  - skill_slug: intellectual-property
+    related_slug: contract-drafting
+    kind: related
+    weight: 0.85
+  - skill_slug: corporate-law-and-contracts
+    related_slug: contract-drafting
+    kind: related
+    weight: 0.90
+  - skill_slug: corporate-law-and-contracts
+    related_slug: intellectual-property
+    kind: related
+    weight: 0.85
+
+  # Additional Software & Architecture Relations
+  - skill_slug: microservices
+    related_slug: api-technologies
+    kind: related
+    weight: 0.85
+  - skill_slug: domain-driven-design
+    related_slug: microservices
+    kind: related
+    weight: 0.85
+  - skill_slug: test-driven-development
+    related_slug: pytest
+    kind: related
+    weight: 0.85
+  - skill_slug: test-driven-development
+    related_slug: junit
+    kind: related
+    weight: 0.85
+  - skill_slug: html5
+    related_slug: frontend-frameworks
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: css3
+    related_slug: css-and-styling
+    kind: prerequisite
+    weight: 0.90
+  - skill_slug: python
+    related_slug: machine-learning-frameworks
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: python
+    related_slug: generative-ai-and-llms
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: python
+    related_slug: data-engineering-and-analytics
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: javascript
+    related_slug: frontend-frameworks
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: java
+    related_slug: jvm-languages
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: docker
+    related_slug: container-and-orchestration
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: kubernetes
+    related_slug: container-and-orchestration
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: terraform
+    related_slug: ci-cd-and-automation
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: prometheus
+    related_slug: observability-and-sre
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: postgresql
+    related_slug: relational-databases
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: mongodb
+    related_slug: nosql-and-document-databases
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: product-management
+    related_slug: product-strategy-and-execution
+    kind: prerequisite
+    weight: 0.95
+  - skill_slug: financial-modeling
+    related_slug: corporate-finance-and-valuation
+    kind: prerequisite
+    weight: 0.95
+

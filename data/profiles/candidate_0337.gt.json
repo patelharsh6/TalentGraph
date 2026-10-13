@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Carolyn Porter",
+    "email": "carolyn.porter.78@gmail.com",
+    "phone": "859-583-5411x65972",
+    "location": {
+      "city": "Melissafort",
+      "region": "MI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/carolyn-porter",
+      "https://github.com/carolynporter"
+    ]
+  },
+  "summary": "Experienced Senior professional with 8+ years of expertise in education. Proven track record delivering scalable solutions using Assessment Design, Active Mentoring, Instructional Design.",
+  "experience": [
+    {
+      "company": "Shaffer-Huang",
+      "title": "Senior Instructional Designer",
+      "location": "East Marcus, DE",
+      "start": "2022-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Educational Technology (EdTech), Instructional Design.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Educational Technology (EdTech)",
+        "Instructional Design",
+        "Public Speaking & Lecturing",
+        "Active Mentoring"
+      ]
+    },
+    {
+      "company": "Perkins PLC",
+      "title": "EdTech Specialist",
+      "location": "Katherineside, HI",
+      "start": "2018-10",
+      "end": "2022-10",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Active Mentoring, Educational Technology (EdTech).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Active Mentoring",
+        "Educational Technology (EdTech)",
+        "Assessment Design",
+        "Curriculum Development"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Montgomeryland State University",
+      "degree": "Bachelor of Science",
+      "field": "Education & Curriculum Design",
+      "start": "2014-09",
+      "end": "2018-05",
+      "grade": "3.54 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Assessment Design",
+      "canonical_slug": "assessment-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Assessment Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Active Mentoring",
+      "canonical_slug": "mentoring",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Active Mentoring across multiple enterprise roles."
+    },
+    {
+      "raw": "Instructional Design",
+      "canonical_slug": "instructional-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Instructional Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Public Speaking & Lecturing",
+      "canonical_slug": "public-speaking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Public Speaking & Lecturing across multiple enterprise roles."
+    },
+    {
+      "raw": "Educational Technology (EdTech)",
+      "canonical_slug": "edtech-solutions",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Educational Technology (EdTech) across multiple enterprise roles."
+    },
+    {
+      "raw": "Curriculum Development",
+      "canonical_slug": "curriculum-development",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Curriculum Development across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Education Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-828221"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Education Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Assessment Design.",
+      "technologies": [
+        "Assessment Design",
+        "Active Mentoring",
+        "Instructional Design"
+      ],
+      "url": "https://github.com/carolynporter/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "education",
+    "seniority": "senior",
+    "total_experience_years": 8,
+    "is_emerging_profile": false,
+    "candidate_index": 337
+  }
+}

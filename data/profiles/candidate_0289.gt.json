@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Julie Garcia",
+    "email": "julie.garcia.16@gmail.com",
+    "phone": "(602)312-8866x52683",
+    "location": {
+      "city": "Phyllismouth",
+      "region": "OR",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/julie-garcia",
+      "https://github.com/juliegarcia"
+    ]
+  },
+  "summary": "Experienced Principal professional with 16+ years of expertise in healthcare. Proven track record delivering scalable solutions using Electronic Health Records (EHR), Python, HIPAA Compliance.",
+  "experience": [
+    {
+      "company": "Jensen, Mcknight and Williams",
+      "title": "Senior Health Informatics Specialist",
+      "location": "Stephaniechester, SC",
+      "start": "2022-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Epic Systems, HIPAA Compliance.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Epic Systems",
+        "HIPAA Compliance",
+        "Clinical Trials Management",
+        "R Language"
+      ]
+    },
+    {
+      "company": "Yang-Graham",
+      "title": "Biomedical Data Lead",
+      "location": "Gravesburgh, VA",
+      "start": "2018-05",
+      "end": "2022-07",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Electronic Health Records (EHR), HL7 FHIR Protocols.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Electronic Health Records (EHR)",
+        "HL7 FHIR Protocols",
+        "Python",
+        "R Language"
+      ]
+    },
+    {
+      "company": "Hendricks, Zuniga and Miller",
+      "title": "Health Informatics Specialist",
+      "location": "New Brittanymouth, MS",
+      "start": "2014-04",
+      "end": "2018-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Python, HIPAA Compliance.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "HIPAA Compliance",
+        "R Language",
+        "Clinical Trials Management"
+      ]
+    },
+    {
+      "company": "Gonzales-Romero",
+      "title": "Healthcare Systems Analyst",
+      "location": "Shirleyville, IN",
+      "start": "2010-12",
+      "end": "2014-04",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Clinical Trials Management, HL7 FHIR Protocols.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Clinical Trials Management",
+        "HL7 FHIR Protocols",
+        "R Language",
+        "Python"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Trevorton State University",
+      "degree": "Bachelor of Science",
+      "field": "Health Informatics / Biology",
+      "start": "2006-09",
+      "end": "2010-05",
+      "grade": "3.76 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Electronic Health Records (EHR)",
+      "canonical_slug": "electronic-health-records",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Electronic Health Records (EHR) across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "HIPAA Compliance",
+      "canonical_slug": "hipaa-compliance",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HIPAA Compliance across multiple enterprise roles."
+    },
+    {
+      "raw": "Epic Systems",
+      "canonical_slug": "epic-systems",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Epic Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Clinical Trials Management",
+      "canonical_slug": "clinical-trials",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Clinical Trials Management across multiple enterprise roles."
+    },
+    {
+      "raw": "HL7 FHIR Protocols",
+      "canonical_slug": "hl7-fhir",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HL7 FHIR Protocols across multiple enterprise roles."
+    },
+    {
+      "raw": "R Language",
+      "canonical_slug": "r-language",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized R Language across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Healthcare Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-698514"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Healthcare Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Electronic Health Records (EHR).",
+      "technologies": [
+        "Electronic Health Records (EHR)",
+        "Python",
+        "HIPAA Compliance"
+      ],
+      "url": "https://github.com/juliegarcia/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "healthcare",
+    "seniority": "principal",
+    "total_experience_years": 16,
+    "is_emerging_profile": false,
+    "candidate_index": 289
+  }
+}

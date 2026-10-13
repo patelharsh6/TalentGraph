@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Shannon Rodriguez",
+    "email": "shannon.rodriguez.86@yahoo.com",
+    "phone": "001-939-697-0469x47258",
+    "location": {
+      "city": "Josephside",
+      "region": "IA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/shannon-rodriguez",
+      "https://github.com/shannonrodriguez"
+    ]
+  },
+  "summary": "Experienced Junior professional with 2+ years of expertise in data. Proven track record delivering scalable solutions using Apache Airflow, Apache Spark (PySpark), dbt.",
+  "experience": [
+    {
+      "company": "Hill-Hoffman",
+      "title": "Data Engineer",
+      "location": "Connieville, WV",
+      "start": "2024-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 24,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Python, Apache Airflow.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "Apache Airflow",
+        "Apache Spark (PySpark)",
+        "Large Language Models (LLM)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Adam State University",
+      "degree": "PhD",
+      "field": "Data Science & Statistics",
+      "start": "2020-09",
+      "end": "2024-05",
+      "grade": "3.53 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Apache Airflow",
+      "canonical_slug": "apache-airflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Spark (PySpark)",
+      "canonical_slug": "apache-spark",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Spark (PySpark) across multiple enterprise roles."
+    },
+    {
+      "raw": "dbt",
+      "canonical_slug": "dbt",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized dbt across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Large Language Models (LLM)",
+      "canonical_slug": "large-language-models",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Large Language Models (LLM) across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-740405"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Apache Airflow.",
+      "technologies": [
+        "Apache Airflow",
+        "Apache Spark (PySpark)",
+        "dbt"
+      ],
+      "url": "https://github.com/shannonrodriguez/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "junior",
+    "total_experience_years": 2,
+    "is_emerging_profile": false,
+    "candidate_index": 320
+  }
+}

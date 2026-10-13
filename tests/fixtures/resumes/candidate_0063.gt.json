@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Eric Snyder",
+    "email": "eric.snyder.12@gmail.com",
+    "phone": "(564)964-7154",
+    "location": {
+      "city": "South Daniel",
+      "region": "ME",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/eric-snyder",
+      "https://github.com/ericsnyder"
+    ]
+  },
+  "summary": "Experienced Lead professional with 11+ years of expertise in sales. Proven track record delivering scalable solutions using Account Management, Salesforce CRM, Client Relationship Building.",
+  "experience": [
+    {
+      "company": "Rush LLC",
+      "title": "Senior Senior Enterprise Sales Manager",
+      "location": "Brockmouth, NV",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using Decentralized Physical Infrastructure (DePIN), Contract Negotiation.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Decentralized Physical Infrastructure (DePIN)",
+        "Contract Negotiation",
+        "B2B Enterprise Sales",
+        "HubSpot Sales Hub"
+      ]
+    },
+    {
+      "company": "Jordan-Colon",
+      "title": "Senior Enterprise Sales Manager",
+      "location": "West Malik, UT",
+      "start": "2019-04",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using Decentralized Physical Infrastructure (DePIN), Salesforce CRM.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Decentralized Physical Infrastructure (DePIN)",
+        "Salesforce CRM",
+        "Account Management",
+        "B2B Enterprise Sales"
+      ]
+    },
+    {
+      "company": "Mendoza and Sons",
+      "title": "Business Development Representative",
+      "location": "Novakport, WA",
+      "start": "2015-05",
+      "end": "2019-04",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using Salesforce CRM, Account Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Salesforce CRM",
+        "Account Management",
+        "Decentralized Physical Infrastructure (DePIN)",
+        "Contract Negotiation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Faulknerbury State University",
+      "degree": "Bachelor of Arts",
+      "field": "Business Administration",
+      "start": "2011-09",
+      "end": "2015-05",
+      "grade": "3.97 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Account Management",
+      "canonical_slug": "customer-success",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Account Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce CRM",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce CRM across multiple enterprise roles."
+    },
+    {
+      "raw": "Client Relationship Building",
+      "canonical_slug": "effective-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Client Relationship Building across multiple enterprise roles."
+    },
+    {
+      "raw": "B2B Enterprise Sales",
+      "canonical_slug": "b2b-sales",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized B2B Enterprise Sales across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot Sales Hub",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot Sales Hub across multiple enterprise roles."
+    },
+    {
+      "raw": "Contract Negotiation",
+      "canonical_slug": "contract-negotiation",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Contract Negotiation across multiple enterprise roles."
+    },
+    {
+      "raw": "Decentralized Physical Infrastructure (DePIN)",
+      "canonical_slug": null,
+      "emerging": true,
+      "category_hint": "emerging",
+      "evidence": "Utilized Decentralized Physical Infrastructure (DePIN) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Sales Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-640418"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sales Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Account Management.",
+      "technologies": [
+        "Account Management",
+        "Salesforce CRM",
+        "Client Relationship Building"
+      ],
+      "url": "https://github.com/ericsnyder/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "sales",
+    "seniority": "lead",
+    "total_experience_years": 11,
+    "is_emerging_profile": true,
+    "candidate_index": 63,
+    "template": "sidebar",
+    "format": "docx",
+    "split": "val",
+    "noise": {
+      "typo_rate": 0.01,
+      "dropped_section": null,
+      "sections_shuffled": false
+    }
+  }
+}

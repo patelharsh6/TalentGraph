@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Ashley Dudley",
+    "email": "ashley.dudley.78@gmail.com",
+    "phone": "(582)733-9218",
+    "location": {
+      "city": "South Jillian",
+      "region": "VA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/ashley-dudley",
+      "https://github.com/ashleydudley"
+    ]
+  },
+  "summary": "Experienced Senior professional with 9+ years of expertise in software. Proven track record delivering scalable solutions using Team Leadership, Redis, AWS.",
+  "experience": [
+    {
+      "company": "Rice LLC",
+      "title": "Senior Senior Backend Developer",
+      "location": "South Stephaniefort, NM",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using AWS, Node.js.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "AWS",
+        "Node.js",
+        "Python",
+        "Kubernetes (K8s)"
+      ]
+    },
+    {
+      "company": "Davis-Williams",
+      "title": "Software Engineer",
+      "location": "Margaretburgh, AL",
+      "start": "2020-05",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using GraphQL, Kubernetes (K8s).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "GraphQL",
+        "Kubernetes (K8s)",
+        "Python",
+        "Redis"
+      ]
+    },
+    {
+      "company": "Nolan, Medina and Garcia",
+      "title": "Senior Backend Developer",
+      "location": "Johnland, RI",
+      "start": "2017-05",
+      "end": "2020-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Python, Redis.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "Redis",
+        "Node.js",
+        "Kubernetes (K8s)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Catherine State University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.87 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Team Leadership",
+      "canonical_slug": "team-leadership",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Team Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    },
+    {
+      "raw": "AWS",
+      "canonical_slug": "amazon-web-services",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized AWS across multiple enterprise roles."
+    },
+    {
+      "raw": "GraphQL",
+      "canonical_slug": "graphql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized GraphQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "Node.js",
+      "canonical_slug": "node-js",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Node.js across multiple enterprise roles."
+    },
+    {
+      "raw": "Kubernetes (K8s)",
+      "canonical_slug": "kubernetes",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Kubernetes (K8s) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-852110"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Team Leadership.",
+      "technologies": [
+        "Team Leadership",
+        "Redis",
+        "AWS"
+      ],
+      "url": "https://github.com/ashleydudley/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "senior",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 517
+  }
+}

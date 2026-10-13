@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Brenda Lawrence",
+    "email": "brenda.lawrence.22@gmail.com",
+    "phone": "643-927-0185x1067",
+    "location": {
+      "city": "Kimberlyfort",
+      "region": "MP",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/brenda-lawrence",
+      "https://github.com/brendalawrence"
+    ]
+  },
+  "summary": "Experienced Lead professional with 9+ years of expertise in software. Proven track record delivering scalable solutions using GraphQL, Team Leadership, Docker.",
+  "experience": [
+    {
+      "company": "Bass, Anderson and Taylor",
+      "title": "Senior Software Engineer",
+      "location": "Gillmouth, FL",
+      "start": "2023-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Microservices, Python.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Microservices",
+        "Python",
+        "Team Leadership",
+        "JavaScript (ES6+)"
+      ]
+    },
+    {
+      "company": "Nguyen, Marsh and Beck",
+      "title": "Software Engineer",
+      "location": "Hughesfurt, MA",
+      "start": "2020-06",
+      "end": "2023-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using PostgreSQL, TypeScript.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PostgreSQL",
+        "TypeScript",
+        "Node.js",
+        "Python"
+      ]
+    },
+    {
+      "company": "Williams, Santiago and Ramos",
+      "title": "Software Engineer",
+      "location": "Debbieburgh, VT",
+      "start": "2017-05",
+      "end": "2020-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using JavaScript (ES6+), Kubernetes (K8s).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "JavaScript (ES6+)",
+        "Kubernetes (K8s)",
+        "GraphQL",
+        "PostgreSQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Crystalport State University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.92 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "GraphQL",
+      "canonical_slug": "graphql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized GraphQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Team Leadership",
+      "canonical_slug": "team-leadership",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Team Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Docker",
+      "canonical_slug": "docker",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Docker across multiple enterprise roles."
+    },
+    {
+      "raw": "Microservices",
+      "canonical_slug": "microservices",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Microservices across multiple enterprise roles."
+    },
+    {
+      "raw": "Kubernetes (K8s)",
+      "canonical_slug": "kubernetes",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Kubernetes (K8s) across multiple enterprise roles."
+    },
+    {
+      "raw": "PostgreSQL",
+      "canonical_slug": "postgresql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PostgreSQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Node.js",
+      "canonical_slug": "node-js",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Node.js across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "TypeScript",
+      "canonical_slug": "typescript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized TypeScript across multiple enterprise roles."
+    },
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-181721"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging GraphQL.",
+      "technologies": [
+        "GraphQL",
+        "Team Leadership",
+        "Docker"
+      ],
+      "url": "https://github.com/brendalawrence/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "lead",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 198
+  }
+}

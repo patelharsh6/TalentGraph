@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Nathan Mcneil",
+    "email": "nathan.mcneil.31@gmail.com",
+    "phone": "+1-779-510-3368x2963",
+    "location": {
+      "city": "Lake Barbara",
+      "region": "AL",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/nathan-mcneil",
+      "https://github.com/nathanmcneil"
+    ]
+  },
+  "summary": "Experienced Senior professional with 7+ years of expertise in marketing. Proven track record delivering scalable solutions using A/B Testing & CRO, Google Analytics 4 (GA4), Email Marketing Campaigns.",
+  "experience": [
+    {
+      "company": "Cervantes-Smith",
+      "title": "Senior Senior SEO Specialist",
+      "location": "Wayneville, UT",
+      "start": "2023-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Search Engine Optimization (SEO), HubSpot.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Search Engine Optimization (SEO)",
+        "HubSpot",
+        "Search Engine Marketing (SEM)",
+        "Google Analytics 4 (GA4)"
+      ]
+    },
+    {
+      "company": "Banks-Bryant",
+      "title": "Growth Marketing Manager",
+      "location": "Bellside, NE",
+      "start": "2019-06",
+      "end": "2023-06",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Search Engine Marketing (SEM), Growth Marketing.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Search Engine Marketing (SEM)",
+        "Growth Marketing",
+        "Email Marketing Campaigns",
+        "Search Engine Optimization (SEO)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Danielburgh State University",
+      "degree": "PhD",
+      "field": "Marketing & Communications",
+      "start": "2015-09",
+      "end": "2019-05",
+      "grade": "3.77 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    },
+    {
+      "raw": "Google Analytics 4 (GA4)",
+      "canonical_slug": "google-analytics",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+    },
+    {
+      "raw": "Email Marketing Campaigns",
+      "canonical_slug": "email-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Email Marketing Campaigns across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce Marketing Cloud",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Marketing (SEM)",
+      "canonical_slug": "search-engine-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Marketing (SEM) across multiple enterprise roles."
+    },
+    {
+      "raw": "Copywriting",
+      "canonical_slug": "copywriting",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Copywriting across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Optimization (SEO)",
+      "canonical_slug": "search-engine-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Optimization (SEO) across multiple enterprise roles."
+    },
+    {
+      "raw": "Content Strategy",
+      "canonical_slug": "content-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Content Strategy across multiple enterprise roles."
+    },
+    {
+      "raw": "Growth Marketing",
+      "canonical_slug": "growth-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-270495"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging A/B Testing & CRO.",
+      "technologies": [
+        "A/B Testing & CRO",
+        "Google Analytics 4 (GA4)",
+        "Email Marketing Campaigns"
+      ],
+      "url": "https://github.com/nathanmcneil/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "senior",
+    "total_experience_years": 7,
+    "is_emerging_profile": false,
+    "candidate_index": 257
+  }
+}

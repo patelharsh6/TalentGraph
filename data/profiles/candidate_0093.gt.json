@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Katherine Welch",
+    "email": "katherine.welch.12@gmail.com",
+    "phone": "800-874-3292x71296",
+    "location": {
+      "city": "Sanfordfurt",
+      "region": "AL",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/katherine-welch",
+      "https://github.com/katherinewelch"
+    ]
+  },
+  "summary": "Experienced Lead professional with 13+ years of expertise in design. Proven track record delivering scalable solutions using UI/UX Design, Adobe XD, Figma.",
+  "experience": [
+    {
+      "company": "Ferguson Ltd",
+      "title": "Senior UI/UX Designer",
+      "location": "Stephaniemouth, WV",
+      "start": "2023-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Design Systems, Information Architecture.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Design Systems",
+        "Information Architecture",
+        "User Research & Usability Testing",
+        "HTML5 / CSS3"
+      ]
+    },
+    {
+      "company": "Lee, Rhodes and Sims",
+      "title": "Senior Product Designer",
+      "location": "East Heather, MI",
+      "start": "2020-07",
+      "end": "2023-07",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using HTML5 / CSS3, Adobe XD.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HTML5 / CSS3",
+        "Adobe XD",
+        "Design Systems",
+        "Information Architecture"
+      ]
+    },
+    {
+      "company": "Anderson-Reyes",
+      "title": "UI/UX Designer",
+      "location": "Garyton, ME",
+      "start": "2017-08",
+      "end": "2020-07",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Information Architecture, Design Thinking.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Information Architecture",
+        "Design Thinking",
+        "User Research & Usability Testing",
+        "HTML5 / CSS3"
+      ]
+    },
+    {
+      "company": "Bryant-Meyer",
+      "title": "UI/UX Designer",
+      "location": "Ryanberg, MA",
+      "start": "2013-06",
+      "end": "2017-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using UI/UX Design, Figma.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "UI/UX Design",
+        "Figma",
+        "Design Thinking",
+        "User Research & Usability Testing"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Howardborough State University",
+      "degree": "PhD",
+      "field": "Human-Computer Interaction / Graphic Design",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.82 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "UI/UX Design",
+      "canonical_slug": "user-experience-design",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized UI/UX Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Adobe XD",
+      "canonical_slug": "adobe-xd",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Adobe XD across multiple enterprise roles."
+    },
+    {
+      "raw": "Figma",
+      "canonical_slug": "figma",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Figma across multiple enterprise roles."
+    },
+    {
+      "raw": "User Research & Usability Testing",
+      "canonical_slug": "user-research",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized User Research & Usability Testing across multiple enterprise roles."
+    },
+    {
+      "raw": "HTML5 / CSS3",
+      "canonical_slug": "html5",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized HTML5 / CSS3 across multiple enterprise roles."
+    },
+    {
+      "raw": "Design Systems",
+      "canonical_slug": "design-systems",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Design Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Information Architecture",
+      "canonical_slug": "information-architecture",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Information Architecture across multiple enterprise roles."
+    },
+    {
+      "raw": "Wireframing & Prototyping",
+      "canonical_slug": "wireframing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Wireframing & Prototyping across multiple enterprise roles."
+    },
+    {
+      "raw": "Design Thinking",
+      "canonical_slug": "design-thinking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Design Thinking across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Design Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-447362"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Design Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging UI/UX Design.",
+      "technologies": [
+        "UI/UX Design",
+        "Adobe XD",
+        "Figma"
+      ],
+      "url": "https://github.com/katherinewelch/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "design",
+    "seniority": "lead",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 93
+  }
+}

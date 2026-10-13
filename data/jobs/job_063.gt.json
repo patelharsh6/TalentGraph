@@ -1,0 +1,56 @@
+{
+  "title": "Lead Growth Marketing Specialist (Lifecycle & Funnel Optimization)",
+  "company": "Erickson Ltd",
+  "role_family": "marketing",
+  "seniority": "lead",
+  "min_total_experience_years": 8.0,
+  "education": [
+    "Bachelor's Degree",
+    "Master's Degree"
+  ],
+  "requirements": [
+    {
+      "skill_slug": "search-engine-optimization",
+      "skill_name": "SEO",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "search-engine-marketing",
+      "skill_name": "SEM",
+      "required": true,
+      "importance": 4,
+      "min_years": 2.0
+    },
+    {
+      "skill_slug": "google-analytics",
+      "skill_name": "Google Analytics",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "growth-marketing",
+      "skill_name": "Growth Marketing",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "conversion-rate-optimization",
+      "skill_name": "CRO",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    },
+    {
+      "skill_slug": "hubspot",
+      "skill_name": "HubSpot",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    }
+  ],
+  "raw_text_length": 1621
+}

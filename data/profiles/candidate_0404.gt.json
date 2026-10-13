@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Nicholas Le",
+    "email": "nicholas.le.14@yahoo.com",
+    "phone": "549-536-9995x167",
+    "location": {
+      "city": "Brandonmouth",
+      "region": "MI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/nicholas-le",
+      "https://github.com/nicholasle"
+    ]
+  },
+  "summary": "Experienced Principal professional with 17+ years of expertise in sales. Proven track record delivering scalable solutions using Sales Pipeline Management, Salesforce CRM, Client Relationship Building.",
+  "experience": [
+    {
+      "company": "Blake-Patel",
+      "title": "Senior Sales Director",
+      "location": "Perezside, AK",
+      "start": "2022-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using HubSpot Sales Hub, Lead Prospecting.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HubSpot Sales Hub",
+        "Lead Prospecting",
+        "B2B Enterprise Sales",
+        "Contract Negotiation"
+      ]
+    },
+    {
+      "company": "Jones, Cunningham and Taylor",
+      "title": "Business Development Representative",
+      "location": "Delacruzborough, NH",
+      "start": "2018-09",
+      "end": "2022-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using Contract Negotiation, Account Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Contract Negotiation",
+        "Account Management",
+        "Client Relationship Building",
+        "B2B Enterprise Sales"
+      ]
+    },
+    {
+      "company": "Nichols-Rodgers",
+      "title": "Business Development Representative",
+      "location": "Lake Veronicaside, NV",
+      "start": "2014-05",
+      "end": "2018-09",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using Account Management, HubSpot Sales Hub.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Account Management",
+        "HubSpot Sales Hub",
+        "Contract Negotiation",
+        "Salesforce CRM"
+      ]
+    },
+    {
+      "company": "Taylor, Rojas and Robinson",
+      "title": "Sales Director",
+      "location": "North Jonathanshire, MT",
+      "start": "2009-06",
+      "end": "2014-05",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using Sales Pipeline Management, Lead Prospecting.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Sales Pipeline Management",
+        "Lead Prospecting",
+        "HubSpot Sales Hub",
+        "Salesforce CRM"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "West Dawnmouth State University",
+      "degree": "Bachelor of Arts",
+      "field": "Business Administration",
+      "start": "2005-09",
+      "end": "2009-05",
+      "grade": "3.92 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Sales Pipeline Management",
+      "canonical_slug": "sales-strategy",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Sales Pipeline Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce CRM",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce CRM across multiple enterprise roles."
+    },
+    {
+      "raw": "Client Relationship Building",
+      "canonical_slug": "effective-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Client Relationship Building across multiple enterprise roles."
+    },
+    {
+      "raw": "Contract Negotiation",
+      "canonical_slug": "contract-negotiation",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Contract Negotiation across multiple enterprise roles."
+    },
+    {
+      "raw": "Account Management",
+      "canonical_slug": "customer-success",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Account Management across multiple enterprise roles."
+    },
+    {
+      "raw": "B2B Enterprise Sales",
+      "canonical_slug": "b2b-sales",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized B2B Enterprise Sales across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot Sales Hub",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot Sales Hub across multiple enterprise roles."
+    },
+    {
+      "raw": "Lead Prospecting",
+      "canonical_slug": "sales-prospecting",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Lead Prospecting across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Sales Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-644172"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sales Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Sales Pipeline Management.",
+      "technologies": [
+        "Sales Pipeline Management",
+        "Salesforce CRM",
+        "Client Relationship Building"
+      ],
+      "url": "https://github.com/nicholasle/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "sales",
+    "seniority": "principal",
+    "total_experience_years": 17,
+    "is_emerging_profile": false,
+    "candidate_index": 404
+  }
+}

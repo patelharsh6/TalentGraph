@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Chad Neal",
+    "email": "chad.neal.42@yahoo.com",
+    "phone": "686-883-3901x98179",
+    "location": {
+      "city": "Jordanshire",
+      "region": "RI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/chad-neal",
+      "https://github.com/chadneal"
+    ]
+  },
+  "summary": "Experienced Junior professional with 1+ years of expertise in sales. Proven track record delivering scalable solutions using Contract Negotiation, Account Management, Client Relationship Building.",
+  "experience": [
+    {
+      "company": "Ho-Mendez",
+      "title": "Business Development Representative",
+      "location": "Stonefort, NM",
+      "start": "2025-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 12,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using Sales Pipeline Management, Client Relationship Building.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Sales Pipeline Management",
+        "Client Relationship Building",
+        "HubSpot Sales Hub",
+        "Contract Negotiation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Jesse State University",
+      "degree": "PhD",
+      "field": "Business Administration",
+      "start": "2021-09",
+      "end": "2025-05",
+      "grade": "3.53 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Contract Negotiation",
+      "canonical_slug": "contract-negotiation",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Contract Negotiation across multiple enterprise roles."
+    },
+    {
+      "raw": "Account Management",
+      "canonical_slug": "customer-success",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Account Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Client Relationship Building",
+      "canonical_slug": "effective-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Client Relationship Building across multiple enterprise roles."
+    },
+    {
+      "raw": "Lead Prospecting",
+      "canonical_slug": "sales-prospecting",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Lead Prospecting across multiple enterprise roles."
+    },
+    {
+      "raw": "Sales Pipeline Management",
+      "canonical_slug": "sales-strategy",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Sales Pipeline Management across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot Sales Hub",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot Sales Hub across multiple enterprise roles."
+    },
+    {
+      "raw": "B2B Enterprise Sales",
+      "canonical_slug": "b2b-sales",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized B2B Enterprise Sales across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce CRM",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce CRM across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Sales Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-389913"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sales Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Contract Negotiation.",
+      "technologies": [
+        "Contract Negotiation",
+        "Account Management",
+        "Client Relationship Building"
+      ],
+      "url": "https://github.com/chadneal/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "sales",
+    "seniority": "junior",
+    "total_experience_years": 1,
+    "is_emerging_profile": false,
+    "candidate_index": 140
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Terri Gonzalez",
+    "email": "terri.gonzalez.98@hotmail.com",
+    "phone": "001-422-550-1425x76270",
+    "location": {
+      "city": "West Kyle",
+      "region": "HI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/terri-gonzalez",
+      "https://github.com/terrigonzalez"
+    ]
+  },
+  "summary": "Experienced Senior professional with 9+ years of expertise in operations. Proven track record delivering scalable solutions using Jira & Confluence, Process Optimization, Cross-Functional Leadership.",
+  "experience": [
+    {
+      "company": "Hodge Group",
+      "title": "Senior Operations Manager",
+      "location": "Lake Johnside, PR",
+      "start": "2023-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using OKRs / KPIs Tracking, Operations Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "OKRs / KPIs Tracking",
+        "Operations Management",
+        "Vendor Management & Procurement",
+        "Jira & Confluence"
+      ]
+    },
+    {
+      "company": "Smith-Moore",
+      "title": "Program Manager",
+      "location": "South Andreafurt, UT",
+      "start": "2020-02",
+      "end": "2023-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Budgeting & Cost Reduction, Jira & Confluence.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Budgeting & Cost Reduction",
+        "Jira & Confluence",
+        "Agile Scrum Methodology",
+        "OKRs / KPIs Tracking"
+      ]
+    },
+    {
+      "company": "Durham Ltd",
+      "title": "Operations Manager",
+      "location": "Guerrabury, WV",
+      "start": "2017-03",
+      "end": "2020-02",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Budgeting & Cost Reduction, Agile Scrum Methodology.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Budgeting & Cost Reduction",
+        "Agile Scrum Methodology",
+        "Cross-Functional Leadership",
+        "Jira & Confluence"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Davidberg State University",
+      "degree": "Master of Science",
+      "field": "Operations Research / Management",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.56 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Jira & Confluence",
+      "canonical_slug": "jira",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Jira & Confluence across multiple enterprise roles."
+    },
+    {
+      "raw": "Process Optimization",
+      "canonical_slug": "process-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Process Optimization across multiple enterprise roles."
+    },
+    {
+      "raw": "Cross-Functional Leadership",
+      "canonical_slug": "cross-functional-collaboration",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Cross-Functional Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "OKRs / KPIs Tracking",
+      "canonical_slug": "key-performance-indicators",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized OKRs / KPIs Tracking across multiple enterprise roles."
+    },
+    {
+      "raw": "Agile Scrum Methodology",
+      "canonical_slug": "agile-methodology",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Agile Scrum Methodology across multiple enterprise roles."
+    },
+    {
+      "raw": "Budgeting & Cost Reduction",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Budgeting & Cost Reduction across multiple enterprise roles."
+    },
+    {
+      "raw": "Vendor Management & Procurement",
+      "canonical_slug": "vendor-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Vendor Management & Procurement across multiple enterprise roles."
+    },
+    {
+      "raw": "Operations Management",
+      "canonical_slug": "operations-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Operations Management across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Operations Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-419736"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Operations Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Jira & Confluence.",
+      "technologies": [
+        "Jira & Confluence",
+        "Process Optimization",
+        "Cross-Functional Leadership"
+      ],
+      "url": "https://github.com/terrigonzalez/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "operations",
+    "seniority": "senior",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 307
+  }
+}

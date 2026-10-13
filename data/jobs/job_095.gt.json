@@ -1,0 +1,56 @@
+{
+  "title": "Lead Financial Analyst (FP&A and Forecasting)",
+  "company": "Hutchinson-Thomas",
+  "role_family": "finance",
+  "seniority": "lead",
+  "min_total_experience_years": 8.0,
+  "education": [
+    "Bachelor's Degree",
+    "Master's Degree"
+  ],
+  "requirements": [
+    {
+      "skill_slug": "financial-modeling",
+      "skill_name": "Financial Modeling",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "dcf-valuation",
+      "skill_name": "DCF Valuation",
+      "required": true,
+      "importance": 4,
+      "min_years": 2.0
+    },
+    {
+      "skill_slug": "financial-analysis",
+      "skill_name": "Financial Analysis",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "gaap",
+      "skill_name": "GAAP",
+      "required": true,
+      "importance": 4,
+      "min_years": 2.0
+    },
+    {
+      "skill_slug": "corporate-finance",
+      "skill_name": "Corporate Finance",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "bloomberg-terminal",
+      "skill_name": "Bloomberg Terminal",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    }
+  ],
+  "raw_text_length": 1619
+}

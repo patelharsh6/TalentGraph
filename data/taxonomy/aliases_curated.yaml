@@ -1,0 +1,444 @@
+# Curated aliases and abbreviations for high-frequency technical and business terms.
+# Format:
+# - slug: canonical skill slug
+#   alias: surface form / abbreviation
+#   ambiguous: boolean (true if word is also common english word or overloaded)
+#   source: curated
+
+aliases:
+  - slug: javascript
+    alias: js
+    ambiguous: false
+    source: curated
+  - slug: typescript
+    alias: ts
+    ambiguous: false
+    source: curated
+  - slug: kubernetes
+    alias: k8s
+    ambiguous: false
+    source: curated
+  - slug: kubernetes
+    alias: k8
+    ambiguous: false
+    source: curated
+  - slug: tensorflow
+    alias: tf
+    ambiguous: false
+    source: curated
+  - slug: google-cloud-platform
+    alias: gcp
+    ambiguous: false
+    source: curated
+  - slug: amazon-web-services
+    alias: aws
+    ambiguous: false
+    source: curated
+  - slug: microsoft-azure
+    alias: azure
+    ambiguous: false
+    source: curated
+  - slug: machine-learning
+    alias: ml
+    ambiguous: false
+    source: curated
+  - slug: deep-learning
+    alias: dl
+    ambiguous: false
+    source: curated
+  - slug: natural-language-processing
+    alias: nlp
+    ambiguous: false
+    source: curated
+  - slug: computer-vision
+    alias: cv
+    ambiguous: true
+    source: curated
+  - slug: continuous-integration-and-continuous-delivery
+    alias: ci/cd
+    ambiguous: false
+    source: curated
+  - slug: continuous-integration-and-continuous-delivery
+    alias: cicd
+    ambiguous: false
+    source: curated
+  - slug: continuous-integration-and-continuous-delivery
+    alias: ci cd
+    ambiguous: false
+    source: curated
+  - slug: product-management
+    alias: pm
+    ambiguous: true
+    source: curated
+  - slug: project-management
+    alias: pmp
+    ambiguous: false
+    source: curated
+  - slug: user-experience-design
+    alias: ux
+    ambiguous: false
+    source: curated
+  - slug: user-interface-design
+    alias: ui
+    ambiguous: false
+    source: curated
+  - slug: user-experience-design
+    alias: ui/ux
+    ambiguous: false
+    source: curated
+  - slug: user-experience-design
+    alias: ui ux
+    ambiguous: false
+    source: curated
+  - slug: frontend-development
+    alias: fe
+    ambiguous: false
+    source: curated
+  - slug: backend-development
+    alias: be
+    ambiguous: false
+    source: curated
+  - slug: full-stack-development
+    alias: full stack
+    ambiguous: false
+    source: curated
+  - slug: full-stack-development
+    alias: fullstack
+    ambiguous: false
+    source: curated
+  - slug: full-stack-development
+    alias: full-stack
+    ambiguous: false
+    source: curated
+  - slug: postgresql
+    alias: postgres
+    ambiguous: false
+    source: curated
+  - slug: postgresql
+    alias: psql
+    ambiguous: false
+    source: curated
+  - slug: mongodb
+    alias: mongo
+    ambiguous: false
+    source: curated
+  - slug: react
+    alias: react.js
+    ambiguous: false
+    source: curated
+  - slug: react
+    alias: reactjs
+    ambiguous: false
+    source: curated
+  - slug: react
+    alias: react js
+    ambiguous: false
+    source: curated
+  - slug: react-native
+    alias: reactnative
+    ambiguous: false
+    source: curated
+  - slug: react-native
+    alias: react native
+    ambiguous: false
+    source: curated
+  - slug: vue-js
+    alias: vue
+    ambiguous: false
+    source: curated
+  - slug: vue-js
+    alias: vue.js
+    ambiguous: false
+    source: curated
+  - slug: vue-js
+    alias: vuejs
+    ambiguous: false
+    source: curated
+  - slug: angular
+    alias: angular.js
+    ambiguous: false
+    source: curated
+  - slug: angular
+    alias: angularjs
+    ambiguous: false
+    source: curated
+  - slug: angular
+    alias: angular 2+
+    ambiguous: false
+    source: curated
+  - slug: next-js
+    alias: nextjs
+    ambiguous: false
+    source: curated
+  - slug: next-js
+    alias: next.js
+    ambiguous: false
+    source: curated
+  - slug: next-js
+    alias: next js
+    ambiguous: false
+    source: curated
+  - slug: nuxt-js
+    alias: nuxtjs
+    ambiguous: false
+    source: curated
+  - slug: nuxt-js
+    alias: nuxt.js
+    ambiguous: false
+    source: curated
+  - slug: node-js
+    alias: nodejs
+    ambiguous: false
+    source: curated
+  - slug: node-js
+    alias: node.js
+    ambiguous: false
+    source: curated
+  - slug: node-js
+    alias: node js
+    ambiguous: false
+    source: curated
+  - slug: machine-learning-engineering
+    alias: ml engineering
+    ambiguous: false
+    source: curated
+  - slug: machine-learning-engineering
+    alias: mle
+    ambiguous: false
+    source: curated
+  - slug: machine-learning-engineering
+    alias: ml engineer
+    ambiguous: false
+    source: curated
+  - slug: machine-learning-operations
+    alias: mlops
+    ambiguous: false
+    source: curated
+  - slug: large-language-models
+    alias: llm
+    ambiguous: false
+    source: curated
+  - slug: large-language-models
+    alias: llms
+    ambiguous: false
+    source: curated
+  - slug: generative-ai
+    alias: genai
+    ambiguous: false
+    source: curated
+  - slug: generative-ai
+    alias: gen ai
+    ambiguous: false
+    source: curated
+  - slug: generative-ai
+    alias: generative ai
+    ambiguous: false
+    source: curated
+  - slug: retrieval-augmented-generation
+    alias: rag
+    ambiguous: false
+    source: curated
+  - slug: site-reliability-engineering
+    alias: sre
+    ambiguous: false
+    source: curated
+  - slug: devops
+    alias: dev ops
+    ambiguous: false
+    source: curated
+  - slug: devsecops
+    alias: dev sec ops
+    ambiguous: false
+    source: curated
+  - slug: data-engineering
+    alias: de
+    ambiguous: true
+    source: curated
+  - slug: business-intelligence
+    alias: bi
+    ambiguous: false
+    source: curated
+  - slug: extract-transform-load
+    alias: etl
+    ambiguous: false
+    source: curated
+  - slug: extract-load-transform
+    alias: elt
+    ambiguous: false
+    source: curated
+  - slug: relational-database-management-system
+    alias: rdbms
+    ambiguous: false
+    source: curated
+  - slug: object-relational-mapping
+    alias: orm
+    ambiguous: false
+    source: curated
+  - slug: application-programming-interface
+    alias: api
+    ambiguous: false
+    source: curated
+  - slug: application-programming-interface
+    alias: apis
+    ambiguous: false
+    source: curated
+  - slug: representational-state-transfer
+    alias: rest
+    ambiguous: true
+    source: curated
+  - slug: representational-state-transfer
+    alias: rest api
+    ambiguous: false
+    source: curated
+  - slug: representational-state-transfer
+    alias: restful
+    ambiguous: false
+    source: curated
+  - slug: representational-state-transfer
+    alias: rest apis
+    ambiguous: false
+    source: curated
+  - slug: domain-driven-design
+    alias: ddd
+    ambiguous: false
+    source: curated
+  - slug: test-driven-development
+    alias: tdd
+    ambiguous: false
+    source: curated
+  - slug: behavior-driven-development
+    alias: bdd
+    ambiguous: false
+    source: curated
+  - slug: infrastructure-as-code
+    alias: iac
+    ambiguous: false
+    source: curated
+  - slug: search-engine-optimization
+    alias: seo
+    ambiguous: false
+    source: curated
+  - slug: search-engine-marketing
+    alias: sem
+    ambiguous: false
+    source: curated
+  - slug: conversion-rate-optimization
+    alias: cro
+    ambiguous: false
+    source: curated
+  - slug: customer-relationship-management
+    alias: crm
+    ambiguous: false
+    source: curated
+  - slug: enterprise-resource-planning
+    alias: erp
+    ambiguous: false
+    source: curated
+  - slug: software-as-a-service
+    alias: saas
+    ambiguous: false
+    source: curated
+  - slug: platform-as-a-service
+    alias: paas
+    ambiguous: false
+    source: curated
+  - slug: infrastructure-as-a-service
+    alias: iaas
+    ambiguous: false
+    source: curated
+  - slug: single-sign-on
+    alias: sso
+    ambiguous: false
+    source: curated
+  - slug: identity-and-access-management
+    alias: iam
+    ambiguous: false
+    source: curated
+  - slug: role-based-access-control
+    alias: rbac
+    ambiguous: false
+    source: curated
+  - slug: key-performance-indicators
+    alias: kpi
+    ambiguous: false
+    source: curated
+  - slug: key-performance-indicators
+    alias: kpis
+    ambiguous: false
+    source: curated
+  - slug: objectives-and-key-results
+    alias: okr
+    ambiguous: false
+    source: curated
+  - slug: objectives-and-key-results
+    alias: okrs
+    ambiguous: false
+    source: curated
+  - slug: golang
+    alias: go
+    ambiguous: true
+    source: curated
+  - slug: golang
+    alias: go lang
+    ambiguous: false
+    source: curated
+  - slug: r-language
+    alias: r
+    ambiguous: true
+    source: curated
+  - slug: c-language
+    alias: c
+    ambiguous: true
+    source: curated
+  - slug: c-plus-plus
+    alias: c++
+    ambiguous: false
+    source: curated
+  - slug: c-plus-plus
+    alias: cpp
+    ambiguous: false
+    source: curated
+  - slug: c-sharp
+    alias: c#
+    ambiguous: false
+    source: curated
+  - slug: c-sharp
+    alias: csharp
+    ambiguous: false
+    source: curated
+  - slug: c-sharp
+    alias: c sharp
+    ambiguous: false
+    source: curated
+  - slug: spring-framework
+    alias: spring
+    ambiguous: true
+    source: curated
+  - slug: swift-language
+    alias: swift
+    ambiguous: true
+    source: curated
+  - slug: rust-language
+    alias: rust
+    ambiguous: true
+    source: curated
+  - slug: microsoft-excel
+    alias: excel
+    ambiguous: true
+    source: curated
+  - slug: microsoft-word
+    alias: word
+    ambiguous: true
+    source: curated
+  - slug: git-version-control
+    alias: git
+    ambiguous: true
+    source: curated
+  - slug: ruby-language
+    alias: ruby
+    ambiguous: true
+    source: curated
+  - slug: sass-css
+    alias: sass
+    ambiguous: true
+    source: curated

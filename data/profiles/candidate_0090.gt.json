@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Michelle Hill",
+    "email": "michelle.hill.75@yahoo.com",
+    "phone": "(774)637-4896x910",
+    "location": {
+      "city": "Gabriellefort",
+      "region": "CA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/michelle-hill",
+      "https://github.com/michellehill"
+    ]
+  },
+  "summary": "Experienced Junior professional with 2+ years of expertise in finance. Proven track record delivering scalable solutions using DCF Valuation, SQL, Bloomberg Terminal.",
+  "experience": [
+    {
+      "company": "Mcneil-Davidson",
+      "title": "Portfolio Manager",
+      "location": "Joseport, ID",
+      "start": "2024-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 24,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Stakeholder Management, Advanced Excel.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Stakeholder Management",
+        "Advanced Excel",
+        "Bloomberg Terminal",
+        "SQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Kathy State University",
+      "degree": "Master of Science",
+      "field": "Finance & Economics",
+      "start": "2020-09",
+      "end": "2024-05",
+      "grade": "3.66 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "DCF Valuation",
+      "canonical_slug": "dcf-valuation",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Bloomberg Terminal",
+      "canonical_slug": "bloomberg-terminal",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Bloomberg Terminal across multiple enterprise roles."
+    },
+    {
+      "raw": "US GAAP",
+      "canonical_slug": "gaap",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized US GAAP across multiple enterprise roles."
+    },
+    {
+      "raw": "Quantitative Risk Management",
+      "canonical_slug": "financial-risk-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Quantitative Risk Management across multiple enterprise roles."
+    },
+    {
+      "raw": "LBO Modeling",
+      "canonical_slug": "lbo-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized LBO Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "Advanced Excel",
+      "canonical_slug": "microsoft-excel",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Modeling",
+      "canonical_slug": "financial-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "Stakeholder Management",
+      "canonical_slug": "stakeholder-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Stakeholder Management across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-498290"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging DCF Valuation.",
+      "technologies": [
+        "DCF Valuation",
+        "SQL",
+        "Bloomberg Terminal"
+      ],
+      "url": "https://github.com/michellehill/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "junior",
+    "total_experience_years": 2,
+    "is_emerging_profile": false,
+    "candidate_index": 90
+  }
+}

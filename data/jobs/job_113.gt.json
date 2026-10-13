@@ -1,0 +1,70 @@
+{
+  "title": "Data Engineer (dbt & Snowflake)",
+  "company": "Flores Inc",
+  "role_family": "data",
+  "seniority": "mid",
+  "min_total_experience_years": 3.0,
+  "education": [
+    "Bachelor's Degree",
+    "Master's Degree"
+  ],
+  "requirements": [
+    {
+      "skill_slug": "python",
+      "skill_name": "Python",
+      "required": true,
+      "importance": 5,
+      "min_years": 2.0
+    },
+    {
+      "skill_slug": "sql",
+      "skill_name": "SQL",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "apache-spark",
+      "skill_name": "Apache Spark",
+      "required": true,
+      "importance": 4,
+      "min_years": 2.0
+    },
+    {
+      "skill_slug": "apache-airflow",
+      "skill_name": "Apache Airflow",
+      "required": true,
+      "importance": 4,
+      "min_years": 1.0
+    },
+    {
+      "skill_slug": "snowflake",
+      "skill_name": "Snowflake",
+      "required": false,
+      "importance": 4,
+      "min_years": null
+    },
+    {
+      "skill_slug": "dbt",
+      "skill_name": "dbt",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    },
+    {
+      "skill_slug": "apache-kafka",
+      "skill_name": "Apache Kafka",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    },
+    {
+      "skill_slug": "data-engineering",
+      "skill_name": "Data Engineering",
+      "required": true,
+      "importance": 4,
+      "min_years": 2.0
+    }
+  ],
+  "raw_text_length": 1647
+}

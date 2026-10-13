@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Kelly Turner",
+    "email": "kelly.turner.95@gmail.com",
+    "phone": "448-612-3083x4024",
+    "location": {
+      "city": "Lake Tinaborough",
+      "region": "ND",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/kelly-turner",
+      "https://github.com/kellyturner"
+    ]
+  },
+  "summary": "Experienced Lead professional with 13+ years of expertise in data. Proven track record delivering scalable solutions using Apache Airflow, MLOps, Snowflake.",
+  "experience": [
+    {
+      "company": "Smith LLC",
+      "title": "Senior Data Scientist",
+      "location": "Markside, KS",
+      "start": "2023-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Python, Apache Airflow.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "Apache Airflow",
+        "MLOps",
+        "TensorFlow"
+      ]
+    },
+    {
+      "company": "Anderson, Villanueva and Phillips",
+      "title": "Senior Machine Learning Engineer",
+      "location": "Lake Lisastad, IN",
+      "start": "2020-01",
+      "end": "2023-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Apache Airflow, Snowflake.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Apache Airflow",
+        "Snowflake",
+        "TensorFlow",
+        "Pandas"
+      ]
+    },
+    {
+      "company": "Sanford, Thompson and Bonilla",
+      "title": "Data Scientist",
+      "location": "Lake Juliefurt, SD",
+      "start": "2017-12",
+      "end": "2020-01",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Python, Snowflake.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "Snowflake",
+        "SQL",
+        "dbt"
+      ]
+    },
+    {
+      "company": "Berg-Walters",
+      "title": "Data Scientist",
+      "location": "Port Scott, MD",
+      "start": "2013-01",
+      "end": "2017-12",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using MLOps, Python.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "MLOps",
+        "Python",
+        "dbt",
+        "SQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Jamesfurt State University",
+      "degree": "Master of Science",
+      "field": "Data Science & Statistics",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.53 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Apache Airflow",
+      "canonical_slug": "apache-airflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+    },
+    {
+      "raw": "MLOps",
+      "canonical_slug": "machine-learning-operations",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized MLOps across multiple enterprise roles."
+    },
+    {
+      "raw": "Snowflake",
+      "canonical_slug": "snowflake",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Snowflake across multiple enterprise roles."
+    },
+    {
+      "raw": "PyTorch",
+      "canonical_slug": "pytorch",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PyTorch across multiple enterprise roles."
+    },
+    {
+      "raw": "dbt",
+      "canonical_slug": "dbt",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized dbt across multiple enterprise roles."
+    },
+    {
+      "raw": "TensorFlow",
+      "canonical_slug": "tensorflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized TensorFlow across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-312484"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Apache Airflow.",
+      "technologies": [
+        "Apache Airflow",
+        "MLOps",
+        "Snowflake"
+      ],
+      "url": "https://github.com/kellyturner/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "lead",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 243
+  }
+}

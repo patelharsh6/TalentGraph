@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Stephanie Mccoy",
+    "email": "stephanie.mccoy.60@yahoo.com",
+    "phone": "617.932.0309x3761",
+    "location": {
+      "city": "Levytown",
+      "region": "AZ",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/stephanie-mccoy",
+      "https://github.com/stephaniemccoy"
+    ]
+  },
+  "summary": "Experienced Junior professional with 1+ years of expertise in data. Proven track record delivering scalable solutions using MLOps, RAG Architecture, TensorFlow.",
+  "experience": [
+    {
+      "company": "Brown-French",
+      "title": "Data Scientist",
+      "location": "South Davidhaven, NH",
+      "start": "2025-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 12,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Python, Apache Airflow.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "Apache Airflow",
+        "SQL",
+        "Pandas"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lake Beth State University",
+      "degree": "Master of Science",
+      "field": "Data Science & Statistics",
+      "start": "2021-09",
+      "end": "2025-05",
+      "grade": "3.98 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "MLOps",
+      "canonical_slug": "machine-learning-operations",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized MLOps across multiple enterprise roles."
+    },
+    {
+      "raw": "RAG Architecture",
+      "canonical_slug": "retrieval-augmented-generation",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized RAG Architecture across multiple enterprise roles."
+    },
+    {
+      "raw": "TensorFlow",
+      "canonical_slug": "tensorflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized TensorFlow across multiple enterprise roles."
+    },
+    {
+      "raw": "Large Language Models (LLM)",
+      "canonical_slug": "large-language-models",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Large Language Models (LLM) across multiple enterprise roles."
+    },
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "NumPy",
+      "canonical_slug": "numpy",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized NumPy across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Airflow",
+      "canonical_slug": "apache-airflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-104548"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging MLOps.",
+      "technologies": [
+        "MLOps",
+        "RAG Architecture",
+        "TensorFlow"
+      ],
+      "url": "https://github.com/stephaniemccoy/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "junior",
+    "total_experience_years": 1,
+    "is_emerging_profile": false,
+    "candidate_index": 155
+  }
+}

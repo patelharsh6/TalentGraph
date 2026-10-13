@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Amanda Cervantes",
+    "email": "amanda.cervantes.85@gmail.com",
+    "phone": "+1-783-286-3840x666",
+    "location": {
+      "city": "Lake Johnmouth",
+      "region": "MP",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/amanda-cervantes",
+      "https://github.com/amandacervantes"
+    ]
+  },
+  "summary": "Experienced Senior professional with 7+ years of expertise in healthcare. Proven track record delivering scalable solutions using Electronic Health Records (EHR), Python, Epic Systems.",
+  "experience": [
+    {
+      "company": "Pruitt Ltd",
+      "title": "Senior Healthcare Systems Analyst",
+      "location": "Kariside, WA",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Bioinformatics, HIPAA Compliance.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Bioinformatics",
+        "HIPAA Compliance",
+        "Python",
+        "HL7 FHIR Protocols"
+      ]
+    },
+    {
+      "company": "Gonzalez, Hardy and Lee",
+      "title": "Healthcare Systems Analyst",
+      "location": "Thompsonland, HI",
+      "start": "2019-06",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Bioinformatics, Electronic Health Records (EHR).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Bioinformatics",
+        "Electronic Health Records (EHR)",
+        "Cerner",
+        "Health Informatics"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lake Willie State University",
+      "degree": "Bachelor of Arts",
+      "field": "Health Informatics / Biology",
+      "start": "2015-09",
+      "end": "2019-05",
+      "grade": "3.53 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Electronic Health Records (EHR)",
+      "canonical_slug": "electronic-health-records",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Electronic Health Records (EHR) across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "Epic Systems",
+      "canonical_slug": "epic-systems",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Epic Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Cerner",
+      "canonical_slug": "cerner",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Cerner across multiple enterprise roles."
+    },
+    {
+      "raw": "HL7 FHIR Protocols",
+      "canonical_slug": "hl7-fhir",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HL7 FHIR Protocols across multiple enterprise roles."
+    },
+    {
+      "raw": "Health Informatics",
+      "canonical_slug": "health-informatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Health Informatics across multiple enterprise roles."
+    },
+    {
+      "raw": "HIPAA Compliance",
+      "canonical_slug": "hipaa-compliance",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HIPAA Compliance across multiple enterprise roles."
+    },
+    {
+      "raw": "Bioinformatics",
+      "canonical_slug": "bioinformatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Bioinformatics across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Healthcare Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-146853"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Healthcare Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Electronic Health Records (EHR).",
+      "technologies": [
+        "Electronic Health Records (EHR)",
+        "Python",
+        "Epic Systems"
+      ],
+      "url": "https://github.com/amandacervantes/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "healthcare",
+    "seniority": "senior",
+    "total_experience_years": 7,
+    "is_emerging_profile": false,
+    "candidate_index": 102
+  }
+}

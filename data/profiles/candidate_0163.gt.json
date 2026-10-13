@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Harold Adams",
+    "email": "harold.adams.57@hotmail.com",
+    "phone": "(640)915-5778x81788",
+    "location": {
+      "city": "Laurenland",
+      "region": "ID",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/harold-adams",
+      "https://github.com/haroldadams"
+    ]
+  },
+  "summary": "Experienced Lead professional with 13+ years of expertise in legal. Proven track record delivering scalable solutions using Regulatory Compliance, Risk Assessment, Corporate Contract Drafting.",
+  "experience": [
+    {
+      "company": "Miller-Myers",
+      "title": "Senior Legal Compliance Specialist",
+      "location": "West Susan, CA",
+      "start": "2023-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key legal workflows using Intellectual Property (IP) Protection, M&A Due Diligence.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Intellectual Property (IP) Protection",
+        "M&A Due Diligence",
+        "Legal Research (Westlaw/LexisNexis)",
+        "Regulatory Compliance"
+      ]
+    },
+    {
+      "company": "Martin Inc",
+      "title": "Corporate Counsel",
+      "location": "South Edward, IL",
+      "start": "2020-06",
+      "end": "2023-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key legal workflows using Risk Assessment, Legal Research (Westlaw/LexisNexis).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Risk Assessment",
+        "Legal Research (Westlaw/LexisNexis)",
+        "Intellectual Property (IP) Protection",
+        "GDPR & Data Privacy"
+      ]
+    },
+    {
+      "company": "Crane, Johnson and Butler",
+      "title": "Legal Compliance Specialist",
+      "location": "South Michael, NV",
+      "start": "2017-07",
+      "end": "2020-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key legal workflows using M&A Due Diligence, Legal Research (Westlaw/LexisNexis).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "M&A Due Diligence",
+        "Legal Research (Westlaw/LexisNexis)",
+        "GDPR & Data Privacy",
+        "Regulatory Compliance"
+      ]
+    },
+    {
+      "company": "Newman, Carter and Brown",
+      "title": "Legal Compliance Specialist",
+      "location": "Port Stacey, SD",
+      "start": "2013-03",
+      "end": "2017-07",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key legal workflows using Regulatory Compliance, GDPR & Data Privacy.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Regulatory Compliance",
+        "GDPR & Data Privacy",
+        "Corporate Contract Drafting",
+        "Intellectual Property (IP) Protection"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Robertmouth State University",
+      "degree": "Bachelor of Science",
+      "field": "Juris Doctor (JD) / Legal Studies",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.54 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Regulatory Compliance",
+      "canonical_slug": "regulatory-compliance",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Regulatory Compliance across multiple enterprise roles."
+    },
+    {
+      "raw": "Risk Assessment",
+      "canonical_slug": "risk-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Risk Assessment across multiple enterprise roles."
+    },
+    {
+      "raw": "Corporate Contract Drafting",
+      "canonical_slug": "contract-drafting",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Corporate Contract Drafting across multiple enterprise roles."
+    },
+    {
+      "raw": "GDPR & Data Privacy",
+      "canonical_slug": "gdpr",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized GDPR & Data Privacy across multiple enterprise roles."
+    },
+    {
+      "raw": "M&A Due Diligence",
+      "canonical_slug": "ma-due-diligence",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized M&A Due Diligence across multiple enterprise roles."
+    },
+    {
+      "raw": "Legal Research (Westlaw/LexisNexis)",
+      "canonical_slug": "legal-research",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Legal Research (Westlaw/LexisNexis) across multiple enterprise roles."
+    },
+    {
+      "raw": "Intellectual Property (IP) Protection",
+      "canonical_slug": "intellectual-property",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Intellectual Property (IP) Protection across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Legal Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-286638"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Legal Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Regulatory Compliance.",
+      "technologies": [
+        "Regulatory Compliance",
+        "Risk Assessment",
+        "Corporate Contract Drafting"
+      ],
+      "url": "https://github.com/haroldadams/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "legal",
+    "seniority": "lead",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 163
+  }
+}

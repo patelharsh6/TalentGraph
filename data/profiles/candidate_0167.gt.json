@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Jennifer Ramos",
+    "email": "jennifer.ramos.42@gmail.com",
+    "phone": "001-366-829-9123x4785",
+    "location": {
+      "city": "North Robertview",
+      "region": "MT",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/jennifer-ramos",
+      "https://github.com/jenniferramos"
+    ]
+  },
+  "summary": "Experienced Senior professional with 6+ years of expertise in finance. Proven track record delivering scalable solutions using Stakeholder Management, Quantitative Risk Management, SQL.",
+  "experience": [
+    {
+      "company": "Peters Ltd",
+      "title": "Senior Portfolio Manager",
+      "location": "East Jacob, MS",
+      "start": "2023-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Advanced Excel, Stakeholder Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Advanced Excel",
+        "Stakeholder Management",
+        "Quantitative Risk Management",
+        "SQL"
+      ]
+    },
+    {
+      "company": "Spencer-Williams",
+      "title": "Corporate Finance Lead",
+      "location": "Maryport, NM",
+      "start": "2020-08",
+      "end": "2023-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using SQL, Advanced Excel.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "SQL",
+        "Advanced Excel",
+        "Corporate Finance",
+        "Quantitative Risk Management"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Walkertown State University",
+      "degree": "Bachelor of Arts",
+      "field": "Finance & Economics",
+      "start": "2016-09",
+      "end": "2020-05",
+      "grade": "3.90 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Stakeholder Management",
+      "canonical_slug": "stakeholder-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Stakeholder Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Quantitative Risk Management",
+      "canonical_slug": "financial-risk-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Quantitative Risk Management across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Bloomberg Terminal",
+      "canonical_slug": "bloomberg-terminal",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Bloomberg Terminal across multiple enterprise roles."
+    },
+    {
+      "raw": "Advanced Excel",
+      "canonical_slug": "microsoft-excel",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+    },
+    {
+      "raw": "DCF Valuation",
+      "canonical_slug": "dcf-valuation",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+    },
+    {
+      "raw": "Corporate Finance",
+      "canonical_slug": "corporate-finance",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Corporate Finance across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-549112"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Stakeholder Management.",
+      "technologies": [
+        "Stakeholder Management",
+        "Quantitative Risk Management",
+        "SQL"
+      ],
+      "url": "https://github.com/jenniferramos/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "senior",
+    "total_experience_years": 6,
+    "is_emerging_profile": false,
+    "candidate_index": 167
+  }
+}

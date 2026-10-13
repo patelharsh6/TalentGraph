@@ -1,0 +1,63 @@
+{
+  "title": "Lead Product Manager (AI/ML Products)",
+  "company": "Holland Ltd",
+  "role_family": "product",
+  "seniority": "lead",
+  "min_total_experience_years": 8.0,
+  "education": [
+    "Bachelor's Degree",
+    "Master's Degree"
+  ],
+  "requirements": [
+    {
+      "skill_slug": "product-management",
+      "skill_name": "Product Management",
+      "required": true,
+      "importance": 5,
+      "min_years": 4.0
+    },
+    {
+      "skill_slug": "product-roadmapping",
+      "skill_name": "Product Roadmapping",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "user-stories",
+      "skill_name": "User Stories",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "agile-methodology",
+      "skill_name": "Agile Methodology",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "competitive-analysis",
+      "skill_name": "Competitive Analysis",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    },
+    {
+      "skill_slug": "product-discovery",
+      "skill_name": "Product Discovery",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    },
+    {
+      "skill_slug": "jira",
+      "skill_name": "Jira",
+      "required": true,
+      "importance": 3,
+      "min_years": 2.0
+    }
+  ],
+  "raw_text_length": 1655
+}

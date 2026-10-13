@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Arthur Santana",
+    "email": "arthur.santana.90@yahoo.com",
+    "phone": "(402)850-8261x1231",
+    "location": {
+      "city": "South Jermaineburgh",
+      "region": "KY",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/arthur-santana",
+      "https://github.com/arthursantana"
+    ]
+  },
+  "summary": "Experienced Senior professional with 7+ years of expertise in software. Proven track record delivering scalable solutions using Redis, CI/CD Pipelines, PostgreSQL.",
+  "experience": [
+    {
+      "company": "Meyer, Peters and Byrd",
+      "title": "Senior Full Stack Engineer",
+      "location": "Oliviaburgh, MP",
+      "start": "2023-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using CI/CD Pipelines, Mojo Programming Language.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "CI/CD Pipelines",
+        "Mojo Programming Language",
+        "Docker",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "company": "Patel, Bradley and Mckay",
+      "title": "DevOps Engineer",
+      "location": "Jacksonmouth, KY",
+      "start": "2019-07",
+      "end": "2023-07",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Mojo Programming Language, CI/CD Pipelines.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Mojo Programming Language",
+        "CI/CD Pipelines",
+        "JavaScript (ES6+)",
+        "PostgreSQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Jorgeborough State University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "start": "2015-09",
+      "end": "2019-05",
+      "grade": "3.64 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    },
+    {
+      "raw": "CI/CD Pipelines",
+      "canonical_slug": "continuous-integration-and-continuous-delivery",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized CI/CD Pipelines across multiple enterprise roles."
+    },
+    {
+      "raw": "PostgreSQL",
+      "canonical_slug": "postgresql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PostgreSQL across multiple enterprise roles."
+    },
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "Microservices",
+      "canonical_slug": "microservices",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Microservices across multiple enterprise roles."
+    },
+    {
+      "raw": "Docker",
+      "canonical_slug": "docker",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Docker across multiple enterprise roles."
+    },
+    {
+      "raw": "Mojo Programming Language",
+      "canonical_slug": null,
+      "emerging": true,
+      "category_hint": "emerging",
+      "evidence": "Utilized Mojo Programming Language across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-250753"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Redis.",
+      "technologies": [
+        "Redis",
+        "CI/CD Pipelines",
+        "PostgreSQL"
+      ],
+      "url": "https://github.com/arthursantana/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "senior",
+    "total_experience_years": 7,
+    "is_emerging_profile": true,
+    "candidate_index": 407
+  }
+}

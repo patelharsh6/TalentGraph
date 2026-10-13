@@ -1,0 +1,655 @@
+# Curated list of technologies, frameworks, libraries, tools, and platforms.
+# Contains categories and subcategories covering languages, frameworks, cloud, data, ML/AI,
+# DevOps, security, mobile, design tools, and PM tools with detailed entries.
+
+domains:
+  - slug: technical-skills
+    name: Technical Skills
+    type: technical
+    categories:
+      - slug: programming-languages
+        name: Programming Languages
+        subcategories:
+          - slug: general-purpose-languages
+            name: General Purpose Languages
+            skills:
+              - slug: python
+                name: Python
+                description: High-level interpreted programming language widely used in data science, web development, and automation.
+                aliases: [python3, python 3, python programming, cpython, ipython, py]
+              - slug: javascript
+                name: JavaScript
+                description: High-level interpreted language for client-side and server-side web scripting.
+                aliases: [js, ecmascript, es6, es2020, esnext, modern javascript]
+              - slug: typescript
+                name: TypeScript
+                description: Strongly typed programming language that builds on JavaScript with static type definitions.
+                aliases: [ts, typed javascript, typescript 4, typescript 5]
+              - slug: java
+                name: Java
+                description: Object-oriented, class-based programming language running on the Java Virtual Machine (JVM).
+                aliases: [java 8, java 11, java 17, java 21, jvm, core java, openjdk]
+              - slug: c-sharp
+                name: C#
+                description: Modern, object-oriented programming language developed by Microsoft for the .NET platform.
+                aliases: [csharp, c sharp, c#.net, dotnet c#]
+              - slug: c-plus-plus
+                name: C++
+                description: General-purpose systems programming language featuring object-oriented, generic, and low-level memory facilities.
+                aliases: [cpp, c plus plus, c++11, c++14, c++17, c++20]
+              - slug: c-language
+                name: C
+                description: Procedural systems programming language with low-level memory access and minimal runtime overhead.
+                aliases: [c programming, ansi c, c99, c11]
+              - slug: golang
+                name: Go
+                description: Statically typed, compiled language engineered by Google for concurrent, networked, and scalable systems.
+                aliases: [go, go language, golang programming, go 1.x]
+              - slug: rust-language
+                name: Rust
+                description: Systems programming language focused on safety, memory speed, and fearless concurrency.
+                aliases: [rust, rustlang, rust programming]
+              - slug: kotlin
+                name: Kotlin
+                description: Cross-platform, statically typed general-purpose language with full Java interoperability.
+                aliases: [kotlinlang, kotlin android, kotlin jvm]
+              - slug: swift-language
+                name: Swift
+                description: Multi-paradigm compiled programming language developed by Apple for iOS, macOS, and server apps.
+                aliases: [swift, swift programming, apple swift, swift 5]
+              - slug: ruby-language
+                name: Ruby
+                description: Dynamic, reflective, object-oriented general-purpose programming language.
+                aliases: [ruby, ruby programming, mri ruby]
+              - slug: php
+                name: PHP
+                description: Server-side scripting language designed primarily for web development and backend APIs.
+                aliases: [php7, php8, php scripting]
+              - slug: scala
+                name: Scala
+                description: Strong static type system combining functional and object-oriented paradigms on the JVM.
+                aliases: [scalalang, scala 3, scala 2]
+              - slug: elixir
+                name: Elixir
+                description: Functional, concurrent language built on the BEAM VM for scalable, maintainable distributed systems.
+                aliases: [elixirlang, erlang elixir]
+              - slug: clojure
+                name: Clojure
+                description: Dynamic, general-purpose Lisp dialect targeting the JVM and JavaScript environments.
+                aliases: [clojurescript, clj]
+              - slug: dart
+                name: Dart
+                description: Client-optimized language developed by Google for fast apps on any platform, powering Flutter.
+                aliases: [dartlang, dart programming]
+              - slug: r-language
+                name: R
+                description: Programming language and free software environment for statistical computing and graphics.
+                aliases: [r, r language, r programming, rstats]
+              - slug: julia
+                name: Julia
+                description: High-performance, high-level dynamic language designed for numerical and scientific computing.
+                aliases: [julialang, julia computing]
+              - slug: lua
+                name: Lua
+                description: Lightweight, high-level, multi-paradigm language designed primarily for embedded use in applications.
+                aliases: [lua scripting, luajit]
+              - slug: perl
+                name: Perl
+                description: High-level, general-purpose interpreted language with powerful text processing capabilities.
+                aliases: [perl 5, perl scripting]
+              - slug: haskell
+                name: Haskell
+                description: Purely functional programming language with strong static typing and lazy evaluation.
+                aliases: [ghc, haskell programming]
+              - slug: shell-scripting
+                name: Shell Scripting
+                description: Scripting for Unix shells including Bash, Zsh, and POSIX shell for automation and administration.
+                aliases: [bash, zsh, sh, unix shell, bash scripting]
+              - slug: powershell
+                name: PowerShell
+                description: Task automation and configuration management framework consisting of a command-line shell and scripting language.
+                aliases: [pwsh, windows powershell, powershell core]
+              - slug: solidity
+                name: Solidity
+                description: Object-oriented, high-level language for implementing smart contracts on Ethereum and EVM blockchains.
+                aliases: [solidity smart contracts, evm solidity]
+              - slug: sql
+                name: SQL
+                description: Structured Query Language for domain-specific data management in relational database systems.
+                aliases: [structured query language, ansi sql, sql queries]
+
+      - slug: web-development
+        name: Web Development
+        subcategories:
+          - slug: frontend-frameworks
+            name: Frontend Frameworks & Libraries
+            skills:
+              - slug: react
+                name: React
+                description: Declarative, component-based JavaScript library for building interactive user interfaces.
+                aliases: [react.js, reactjs, react js, react framework]
+              - slug: vue-js
+                name: Vue.js
+                description: Progressive JavaScript framework for building user interfaces and single-page applications.
+                aliases: [vue, vue.js, vuejs, vue 3, vue 2]
+              - slug: angular
+                name: Angular
+                description: Component-based framework for building scalable web applications, authored by Google.
+                aliases: [angular.js, angularjs, angular 2+, angular 14, angular 16]
+              - slug: svelte
+                name: Svelte
+                description: Radical compiler approach to building web apps that shifts work into compile step rather than virtual DOM.
+                aliases: [sveltejs, svelte.js, svelte 4, svelte 5]
+              - slug: next-js
+                name: Next.js
+                description: React framework for full-stack web applications featuring SSR, SSG, and server actions.
+                aliases: [nextjs, next.js, next js, next 13, next 14]
+              - slug: nuxt-js
+                name: Nuxt.js
+                description: Intuitive Vue framework for building universal and server-side rendered applications.
+                aliases: [nuxtjs, nuxt.js, nuxt 3]
+              - slug: remix
+                name: Remix
+                description: Full-stack web framework focused on web standards and modern React server-rendered UI.
+                aliases: [remix.run, remix js]
+              - slug: astro
+                name: Astro
+                description: All-in-one web framework for building fast, content-focused websites with islands architecture.
+                aliases: [astro.build, astro js]
+              - slug: solidjs
+                name: SolidJS
+                description: Declarative, efficient JavaScript library for creating user interfaces without a virtual DOM.
+                aliases: [solid.js, solid js]
+              - slug: alpine-js
+                name: Alpine.js
+                description: Rugged, minimal framework for composing JavaScript behavior directly in HTML markup.
+                aliases: [alpinejs, alpine.js]
+              - slug: redux
+                name: Redux
+                description: Predictable state container for JavaScript apps, commonly used with React.
+                aliases: [redux toolkit, rtk, react-redux]
+              - slug: zustand
+                name: Zustand
+                description: Small, fast and scalable bearbones state-management solution for React.
+                aliases: [zustand state management]
+              - slug: mobx
+                name: MobX
+                description: Simple, scalable state management through transparent functional reactive programming.
+                aliases: [mobx-state-tree]
+              - slug: tailwindcss
+                name: Tailwind CSS
+                description: Utility-first CSS framework for rapidly building custom modern user interfaces.
+                aliases: [tailwind, tailwind css, tailwindcss 3]
+              - slug: bootstrap
+                name: Bootstrap
+                description: Popular HTML, CSS, and JS framework for responsive, mobile-first front-end web development.
+                aliases: [bootstrap 5, bootstrap 4, twitter bootstrap]
+              - slug: html5
+                name: HTML5
+                description: Fifth and current major version of the HTML standard for structuring web pages.
+                aliases: [html, semantic html, html5 web]
+              - slug: css3
+                name: CSS3
+                description: Style sheet language used for describing the presentation of a document written in HTML.
+                aliases: [css, cascading style sheets, modern css]
+              - slug: sass-css
+                name: Sass
+                description: Preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets.
+                aliases: [sass, scss, syntactically awesome style sheets]
+              - slug: webassembly
+                name: WebAssembly
+                description: Binary instruction format for a stack-based virtual machine enabling high performance in browsers.
+                aliases: [wasm, web assembly]
+
+          - slug: backend-frameworks
+            name: Backend Frameworks & Runtimes
+            skills:
+              - slug: node-js
+                name: Node.js
+                description: Open-source, cross-platform JavaScript runtime environment executing code outside a web browser.
+                aliases: [nodejs, node.js, node js, node runtime]
+              - slug: express-js
+                name: Express.js
+                description: Fast, unopinionated, minimalist web framework for Node.js.
+                aliases: [express, expressjs, express.js]
+              - slug: nest-js
+                name: NestJS
+                description: Progressive Node.js framework for building efficient, reliable and scalable enterprise server applications.
+                aliases: [nestjs, nest.js, nest js]
+              - slug: fastify
+                name: Fastify
+                description: Fast and low overhead web framework for Node.js.
+                aliases: [fastifyjs]
+              - slug: fastapi
+                name: FastAPI
+                description: Modern, high-performance web framework for building APIs with Python 3.8+ based on standard Python type hints.
+                aliases: [fast api, fastapi python]
+              - slug: django
+                name: Django
+                description: High-level Python web framework that encourages rapid development and clean, pragmatic design.
+                aliases: [django framework, django rest framework, drf]
+              - slug: flask
+                name: Flask
+                description: Lightweight WSGI web application microframework in Python.
+                aliases: [flask python, flask framework]
+              - slug: spring-boot
+                name: Spring Boot
+                description: Extension of the Spring framework that eliminates boilerplate configuration for enterprise Java apps.
+                aliases: [springboot, spring-boot 3, spring boot framework]
+              - slug: spring-framework
+                name: Spring Framework
+                description: Comprehensive Java programming and configuration model for modern enterprise applications.
+                aliases: [spring, spring mvc, spring security]
+              - slug: aspnet-core
+                name: ASP.NET Core
+                description: Cross-platform, high-performance, open-source framework for building modern, cloud-enabled web applications.
+                aliases: [asp.net, asp.net core, dotnet core, .net core]
+              - slug: ruby-on-rails
+                name: Ruby on Rails
+                description: Server-side web application framework written in Ruby following the MVC architecture.
+                aliases: [rails, ror, ruby on rails 7]
+              - slug: laravel
+                name: Laravel
+                description: PHP web framework with expressive, elegant syntax for modern web artisans.
+                aliases: [laravel framework, laravel 10]
+              - slug: gin-gonic
+                name: Gin
+                description: High-performance HTTP web framework written in Go featuring martini-like API with fast routing.
+                aliases: [gin, gin framework, gin-gonic]
+              - slug: actix-web
+                name: Actix Web
+                description: Powerful, pragmatic, and extremely fast web framework for Rust.
+                aliases: [actix, actix rust]
+              - slug: axum
+                name: Axum
+                description: Web application framework that focuses on ergonomics and modularity for Rust and Tokio.
+                aliases: [axum rust, tokio axum]
+
+      - slug: data-and-ai
+        name: Data Science, AI & Machine Learning
+        subcategories:
+          - slug: machine-learning-frameworks
+            name: Machine Learning & Deep Learning
+            skills:
+              - slug: machine-learning
+                name: Machine Learning
+                description: Study and application of statistical algorithms that improve automatically through experience.
+                aliases: [ml, statistical learning, predictive modeling, machine learning algorithms]
+              - slug: deep-learning
+                name: Deep Learning
+                description: Subset of machine learning based on artificial neural networks with representation learning.
+                aliases: [dl, deep neural networks, neural networks, ann, dnn]
+              - slug: pytorch
+                name: PyTorch
+                description: Open source machine learning framework based on Torch library, used for deep learning and neural networks.
+                aliases: [torch, pytorch deep learning, libtorch]
+              - slug: tensorflow
+                name: TensorFlow
+                description: End-to-end open source platform for machine learning by Google.
+                aliases: [tf, tensorflow 2, tf2]
+              - slug: keras
+                name: Keras
+                description: Deep learning API written in Python, running on top of TensorFlow, JAX, or PyTorch.
+                aliases: [keras deep learning, keras 3]
+              - slug: scikit-learn
+                name: Scikit-Learn
+                description: Machine learning library for the Python programming language featuring classification, regression, and clustering.
+                aliases: [sklearn, scikit learn]
+              - slug: jax
+                name: JAX
+                description: Autograd and XLA compiler for high-performance machine learning research by Google.
+                aliases: [google jax, flax jax]
+              - slug: xgboost
+                name: XGBoost
+                description: Optimized distributed gradient boosting library designed to be highly efficient, flexible and portable.
+                aliases: [extreme gradient boosting]
+              - slug: lightgbm
+                name: LightGBM
+                description: Gradient boosting framework that uses tree based learning algorithms by Microsoft.
+                aliases: [lgbm]
+              - slug: catboost
+                name: CatBoost
+                description: Fast, high-performance open-source gradient boosting on decision trees library.
+                aliases: [catboost ml]
+              - slug: huggingface-transformers
+                name: Transformers
+                description: State-of-the-art Machine Learning for PyTorch, TensorFlow, and JAX by Hugging Face.
+                aliases: [huggingface, hugging face, transformers, hf transformers]
+              - slug: large-language-models
+                name: Large Language Models
+                description: Deep learning models trained on vast text corpora for natural language comprehension and generation.
+                aliases: [llm, llms, foundational models, frontier models]
+              - slug: generative-ai
+                name: Generative AI
+                description: AI systems capable of generating text, images, code, or other media in response to prompts.
+                aliases: [genai, gen ai, generative artificial intelligence]
+              - slug: retrieval-augmented-generation
+                name: Retrieval-Augmented Generation
+                description: AI framework for improving the quality of LLM responses by grounding on external knowledge sources.
+                aliases: [rag, rag pipeline, semantic retrieval]
+              - slug: langchain
+                name: LangChain
+                description: Framework for developing applications powered by large language models.
+                aliases: [lang chain, langchain python]
+              - slug: llamaindex
+                name: LlamaIndex
+                description: Data framework for connecting custom data sources to large language models.
+                aliases: [gpt index, llama-index]
+              - slug: prompt-engineering
+                name: Prompt Engineering
+                description: Structuring and refining input prompts to effectively guide generative AI and LLM outputs.
+                aliases: [prompt design, in-context learning, few-shot prompting]
+              - slug: fine-tuning
+                name: Fine-Tuning
+                description: Process of taking a pre-trained model and further training it on domain-specific datasets.
+                aliases: [model fine tuning, supervised fine-tuning, sft]
+              - slug: lora
+                name: LoRA (Low-Rank Adaptation)
+                description: Parameter-efficient fine-tuning technique for large models using low-rank matrices.
+                aliases: [qlora, low rank adaptation, peft]
+              - slug: machine-learning-engineering
+                name: Machine Learning Engineering
+                description: Discipline combining software engineering and ML to deploy, scale, and maintain models in production.
+                aliases: [ml engineering, mle, ml engineer]
+              - slug: machine-learning-operations
+                name: MLOps
+                description: Practices for automating and monitoring the machine learning lifecycle from training to deployment.
+                aliases: [mlops, ml operations, model lifecycle management]
+              - slug: natural-language-processing
+                name: Natural Language Processing
+                description: Field of AI focused on the interaction between computers and human language.
+                aliases: [nlp, text analytics, computational linguistics]
+              - slug: computer-vision
+                name: Computer Vision
+                description: Field of AI that trains computers to interpret and understand the visual world.
+                aliases: [cv, image processing, visual ai]
+              - slug: opencv
+                name: OpenCV
+                description: Open Source Computer Vision and Machine Learning Software Library.
+                aliases: [cv2, open-cv]
+              - slug: vllm
+                name: vLLM
+                description: High-throughput and memory-efficient inference and serving engine for LLMs with PagedAttention.
+                aliases: [vllm inference]
+              - slug: deepspeed
+                name: DeepSpeed
+                description: Deep learning optimization library that makes distributed training and inference fast and dense.
+                aliases: [microsoft deepspeed]
+              - slug: triton-inference-server
+                name: Triton Inference Server
+                description: Open-source inference serving software by NVIDIA for deploying AI models at scale.
+                aliases: [triton, nvidia triton]
+              - slug: mlflow
+                name: MLflow
+                description: Open source platform for the machine learning lifecycle including tracking, registry, and deployment.
+                aliases: [mlflow tracking]
+              - slug: weights-and-biases
+                name: Weights & Biases
+                description: Developer platform for AI practitioners to track experiments, evaluate models, and version data.
+                aliases: [wandb, w&b]
+
+          - slug: data-manipulation-and-analytics
+            name: Data Manipulation & Analytics
+            skills:
+              - slug: pandas
+                name: Pandas
+                description: Fast, powerful, flexible and easy-to-use open-source data analysis and manipulation tool for Python.
+                aliases: [pandas dataframe, py-pandas]
+              - slug: numpy
+                name: NumPy
+                description: Fundamental package for scientific computing with Python providing multi-dimensional array objects.
+                aliases: [numpy arrays, py-numpy]
+              - slug: polars
+                name: Polars
+                description: Lightning-fast DataFrame library implemented in Rust and backed by Apache Arrow.
+                aliases: [polars dataframe, py-polars]
+              - slug: scipy
+                name: SciPy
+                description: Open-source Python library used for scientific computation and technical computing.
+                aliases: [scipy computing]
+              - slug: apache-spark
+                name: Apache Spark
+                description: Unified analytics engine for large-scale data processing with built-in modules for streaming and SQL.
+                aliases: [spark, spark sql, pyspark, spark streaming]
+              - slug: pyspark
+                name: PySpark
+                description: Python API for Apache Spark supporting distributed data processing.
+                aliases: [pyspark dataframe]
+              - slug: databricks
+                name: Databricks
+                description: Cloud-based data platform offering lakehouse architecture, Spark processing, and ML workspaces.
+                aliases: [databricks lakehouse]
+              - slug: dbt
+                name: dbt (data build tool)
+                description: Transformation workflow tool enabling data analysts and engineers to transform data in their warehouse.
+                aliases: [dbt-core, dbt-cloud, data build tool]
+              - slug: apache-kafka
+                name: Apache Kafka
+                description: Distributed event streaming platform capable of handling trillions of events a day.
+                aliases: [kafka, kafka streaming, kafka streams]
+              - slug: apache-airflow
+                name: Apache Airflow
+                description: Platform created to programmatically author, schedule and monitor data pipelines.
+                aliases: [airflow, airflow dag]
+              - slug: big-data-processing
+                name: Big Data Processing
+                description: Techniques and architectures for processing massive volumes of structured and unstructured data.
+                aliases: [big data, distributed data processing]
+              - slug: business-intelligence
+                name: Business Intelligence
+                description: Strategies and technologies used by enterprises for data analysis and management reporting.
+                aliases: [bi, corporate intelligence]
+              - slug: extract-transform-load
+                name: ETL (Extract, Transform, Load)
+                description: Data integration process combining data from multiple sources into a single consistent data store.
+                aliases: [etl, data ingestion, data pipelines]
+              - slug: extract-load-transform
+                name: ELT (Extract, Load, Transform)
+                description: Modern data integration pattern where transformations occur directly within the data warehouse.
+                aliases: [elt]
+
+      - slug: cloud-and-infrastructure
+        name: Cloud Computing, DevOps & Infrastructure
+        subcategories:
+          - slug: cloud-platforms
+            name: Cloud Platforms
+            skills:
+              - slug: amazon-web-services
+                name: Amazon Web Services (AWS)
+                description: Comprehensive cloud computing platform offered by Amazon covering computing, storage, and networking.
+                aliases: [aws, amazon cloud, aws cloud]
+              - slug: google-cloud-platform
+                name: Google Cloud Platform (GCP)
+                description: Suite of cloud computing services running on the same infrastructure Google uses internally.
+                aliases: [gcp, google cloud]
+              - slug: microsoft-azure
+                name: Microsoft Azure
+                description: Cloud computing service created by Microsoft for building, testing, deploying, and managing applications.
+                aliases: [azure, azure cloud, ms azure]
+              - slug: cloudflare
+                name: Cloudflare
+                description: Global network designed to make everything connected to the Internet secure, private, fast, and productive.
+                aliases: [cloudflare workers, cloudflare cdn]
+              - slug: vercel
+                name: Vercel
+                description: Frontend cloud platform for static sites and Serverless Functions with native Next.js integration.
+                aliases: [vercel deployment]
+              - slug: aws-lambda
+                name: AWS Lambda
+                description: Serverless event-driven compute service that lets you run code without provisioning servers.
+                aliases: [lambda, serverless lambda]
+              - slug: aws-s3
+                name: AWS S3
+                description: Object storage service offering industry-leading scalability, data availability, and security.
+                aliases: [s3, simple storage service, amazon s3]
+              - slug: aws-ec2
+                name: AWS EC2
+                description: Elastic Compute Cloud providing secure, resizable compute capacity in the cloud.
+                aliases: [ec2, amazon ec2]
+              - slug: aws-eks
+                name: AWS EKS
+                description: Amazon Elastic Kubernetes Service for running Kubernetes on AWS without installing control plane.
+                aliases: [eks, amazon eks]
+              - slug: aws-ecs
+                name: AWS ECS
+                description: Fully managed container orchestration service that makes it easy to deploy containerized applications.
+                aliases: [ecs, amazon ecs]
+              - slug: bigquery
+                name: Google BigQuery
+                description: Serverless, highly scalable, and cost-effective multicloud data warehouse.
+                aliases: [bigquery, gcp bigquery]
+              - slug: snowflake
+                name: Snowflake
+                description: Cloud data platform providing data warehousing, data lakes, data engineering, and data sharing.
+                aliases: [snowflake data warehouse, snowflake cloud]
+
+          - slug: devops-and-containers
+            name: DevOps, CI/CD & Containers
+            skills:
+              - slug: docker
+                name: Docker
+                description: Platform designed to help developers build, share, and run modern containerized applications.
+                aliases: [docker container, dockerfile, docker compose]
+              - slug: kubernetes
+                name: Kubernetes
+                description: Open-source container orchestration system for automating application deployment, scaling, and management.
+                aliases: [k8s, k8, kube, k8s cluster]
+              - slug: helm
+                name: Helm
+                description: Package manager for Kubernetes that helps you define, install, and upgrade complex Kubernetes apps.
+                aliases: [helm charts, helm v3]
+              - slug: terraform
+                name: Terraform
+                description: Open-source infrastructure as code software tool that provides a consistent CLI workflow to manage cloud.
+                aliases: [hashicorp terraform, terraform iac]
+              - slug: ansible
+                name: Ansible
+                description: IT automation engine that automates cloud provisioning, configuration management, and application deployment.
+                aliases: [ansible playbooks, red hat ansible]
+              - slug: continuous-integration-and-continuous-delivery
+                name: CI/CD
+                description: Method to frequently deliver apps to customers by introducing automation into stages of app development.
+                aliases: [ci/cd, cicd, ci cd, continuous integration, continuous delivery, continuous deployment]
+              - slug: github-actions
+                name: GitHub Actions
+                description: Continuous integration and continuous delivery platform that allows you to automate your build pipeline.
+                aliases: [gha, github ci, actions]
+              - slug: gitlab-ci
+                name: GitLab CI
+                description: Continuous Integration and Deployment built directly into the GitLab DevOps platform.
+                aliases: [gitlab ci/cd, gitlab pipelines]
+              - slug: jenkins
+                name: Jenkins
+                description: Open source automation server which enables developers around the world to reliably build, test, and deploy.
+                aliases: [jenkins ci, jenkins pipeline]
+              - slug: prometheus
+                name: Prometheus
+                description: Open-source systems monitoring and alerting toolkit originally built at SoundCloud.
+                aliases: [prometheus monitoring, promql]
+              - slug: grafana
+                name: Grafana
+                description: Multi-platform open source analytics and interactive visualization web application.
+                aliases: [grafana dashboards]
+              - slug: jaeger
+                name: Jaeger
+                description: Open-source, end-to-end distributed tracing system for monitoring microservices-based architectures.
+                aliases: [jaeger tracing]
+              - slug: opentelemetry
+                name: OpenTelemetry
+                description: Collection of tools, APIs, and SDKs to instrument, generate, collect, and export telemetry data.
+                aliases: [otel, open telemetry]
+              - slug: linux
+                name: Linux
+                description: Open-source Unix-like operating system kernel running on servers, containers, and embedded systems.
+                aliases: [unix, linux os, ubuntu, debian, redhat, centos]
+              - slug: nginx
+                name: Nginx
+                description: High-performance HTTP and reverse proxy server, as well as a generic TCP/UDP proxy server.
+                aliases: [nginx server, nginx reverse proxy]
+              - slug: site-reliability-engineering
+                name: Site Reliability Engineering (SRE)
+                description: Software engineering discipline applied to operations problems to create scalable and reliable systems.
+                aliases: [sre, reliability engineering]
+              - slug: devops
+                name: DevOps
+                description: Combination of cultural philosophies, practices, and tools that increases an organization's delivery speed.
+                aliases: [dev ops, devops engineering]
+
+      - slug: databases-and-storage
+        name: Databases & Data Storage
+        subcategories:
+          - slug: relational-databases
+            name: Relational Databases
+            skills:
+              - slug: postgresql
+                name: PostgreSQL
+                description: Powerful, open source object-relational database system with over 35 years of active development.
+                aliases: [postgres, psql, postgresql db, postgres 15, postgres 16]
+              - slug: mysql
+                name: MySQL
+                description: Widely deployed open-source relational database management system.
+                aliases: [mysql db, mysql 8]
+              - slug: sqlite
+                name: SQLite
+                description: C-language library that implements a small, fast, self-contained, high-reliability SQL database engine.
+                aliases: [sqlite3, sqlite db]
+              - slug: oracle-db
+                name: Oracle Database
+                description: Multi-model database management system produced and marketed by Oracle Corporation.
+                aliases: [oracle sql, pl/sql, oracle rdbms]
+              - slug: sql-server
+                name: Microsoft SQL Server
+                description: Relational database management system developed by Microsoft.
+                aliases: [mssql, ms sql server, t-sql]
+              - slug: relational-database-management-system
+                name: RDBMS
+                description: Database management system based on the relational model as invented by E. F. Codd.
+                aliases: [rdbms, relational database]
+
+          - slug: nosql-and-vector-databases
+            name: NoSQL & Vector Databases
+            skills:
+              - slug: mongodb
+                name: MongoDB
+                description: Source-available cross-platform document-oriented database program classified as a NoSQL database.
+                aliases: [mongo, mongodb atlas, mongo db]
+              - slug: redis
+                name: Redis
+                description: Open source, in-memory data store used by millions of developers as a database, cache, and message broker.
+                aliases: [redis cache, redis db]
+              - slug: cassandra
+                name: Apache Cassandra
+                description: Free and open-source, distributed, wide-column store NoSQL database management system.
+                aliases: [cassandra, cql]
+              - slug: dynamodb
+                name: Amazon DynamoDB
+                description: Fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.
+                aliases: [dynamo, aws dynamodb]
+              - slug: elasticsearch
+                name: Elasticsearch
+                description: Distributed, JSON-based search and analytics engine designed for horizontal scalability and high reliability.
+                aliases: [elastic search, elastic stack, elk stack]
+              - slug: pinecone
+                name: Pinecone
+                description: Managed, cloud-native vector database designed specifically for machine learning and AI applications.
+                aliases: [pinecone vector db, pinecone io]
+              - slug: chromadb
+                name: ChromaDB
+                description: Open-source AI-native embedding vector database designed to make it easy to build LLM apps.
+                aliases: [chroma, chroma db, chromadb vector]
+              - slug: weaviate
+                name: Weaviate
+                description: Open-source vector search engine and vector database designed to scale AI applications.
+                aliases: [weaviate vector db]
+              - slug: qdrant
+                name: Qdrant
+                description: Vector similarity search engine and vector database with extended filtering support.
+                aliases: [qdrant vector db]
+              - slug: vector-databases
+                name: Vector Databases
+                description: Databases optimized for storing, indexing, and querying high-dimensional vector embeddings.
+                aliases: [vector db, vector stores, embedding stores]
+              - slug: nosql-databases
+                name: NoSQL Databases
+                description: Non-relational databases providing flexible schemas and horizontal scalability.
+                aliases: [nosql, non-relational database]

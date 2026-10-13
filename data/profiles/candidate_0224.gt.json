@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Kim Tanner",
+    "email": "kim.tanner.49@hotmail.com",
+    "phone": "961-219-5243x6402",
+    "location": {
+      "city": "North Kimchester",
+      "region": "NC",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/kim-tanner",
+      "https://github.com/kimtanner"
+    ]
+  },
+  "summary": "Experienced Principal professional with 16+ years of expertise in marketing. Proven track record delivering scalable solutions using Growth Marketing, Copywriting, A/B Testing & CRO.",
+  "experience": [
+    {
+      "company": "Pena-Quinn",
+      "title": "Senior Senior SEO Specialist",
+      "location": "East Nicholas, VT",
+      "start": "2022-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Content Strategy, Growth Marketing.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Content Strategy",
+        "Growth Marketing",
+        "Email Marketing Campaigns",
+        "HubSpot"
+      ]
+    },
+    {
+      "company": "Gonzalez and Sons",
+      "title": "Growth Marketing Manager",
+      "location": "South Ashleyborough, HI",
+      "start": "2018-06",
+      "end": "2022-09",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Google Analytics 4 (GA4), Content Strategy.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Google Analytics 4 (GA4)",
+        "Content Strategy",
+        "A/B Testing & CRO",
+        "Email Marketing Campaigns"
+      ]
+    },
+    {
+      "company": "Brown and Sons",
+      "title": "Digital Marketing Lead",
+      "location": "West Tonya, VI",
+      "start": "2014-05",
+      "end": "2018-06",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using A/B Testing & CRO, Salesforce Marketing Cloud.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "A/B Testing & CRO",
+        "Salesforce Marketing Cloud",
+        "HubSpot",
+        "Content Strategy"
+      ]
+    },
+    {
+      "company": "Alexander-Durham",
+      "title": "Senior SEO Specialist",
+      "location": "Port Danaland, LA",
+      "start": "2010-05",
+      "end": "2014-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Copywriting, A/B Testing & CRO.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Copywriting",
+        "A/B Testing & CRO",
+        "Content Strategy",
+        "Email Marketing Campaigns"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Davidland State University",
+      "degree": "PhD",
+      "field": "Marketing & Communications",
+      "start": "2006-09",
+      "end": "2010-05",
+      "grade": "3.53 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Growth Marketing",
+      "canonical_slug": "growth-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+    },
+    {
+      "raw": "Copywriting",
+      "canonical_slug": "copywriting",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Copywriting across multiple enterprise roles."
+    },
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    },
+    {
+      "raw": "Google Analytics 4 (GA4)",
+      "canonical_slug": "google-analytics",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+    },
+    {
+      "raw": "Content Strategy",
+      "canonical_slug": "content-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Content Strategy across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce Marketing Cloud",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+    },
+    {
+      "raw": "Email Marketing Campaigns",
+      "canonical_slug": "email-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Email Marketing Campaigns across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-130401"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Growth Marketing.",
+      "technologies": [
+        "Growth Marketing",
+        "Copywriting",
+        "A/B Testing & CRO"
+      ],
+      "url": "https://github.com/kimtanner/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "principal",
+    "total_experience_years": 16,
+    "is_emerging_profile": false,
+    "candidate_index": 224
+  }
+}

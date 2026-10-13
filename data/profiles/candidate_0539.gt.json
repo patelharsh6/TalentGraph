@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Alexandra Marshall",
+    "email": "alexandra.marshall.46@hotmail.com",
+    "phone": "900-317-3259x00739",
+    "location": {
+      "city": "Port Kimberly",
+      "region": "SD",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/alexandra-marshall",
+      "https://github.com/alexandramarshall"
+    ]
+  },
+  "summary": "Experienced Principal professional with 13+ years of expertise in software. Proven track record delivering scalable solutions using Team Leadership, Python, React.js.",
+  "experience": [
+    {
+      "company": "Jackson-Davis",
+      "title": "Senior Software Engineer",
+      "location": "New Lisa, OK",
+      "start": "2023-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Team Leadership, Node.js.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Team Leadership",
+        "Node.js",
+        "PostgreSQL",
+        "Python"
+      ]
+    },
+    {
+      "company": "Paul Group",
+      "title": "DevOps Engineer",
+      "location": "Lake Peterberg, HI",
+      "start": "2020-05",
+      "end": "2023-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Team Leadership, PostgreSQL.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Team Leadership",
+        "PostgreSQL",
+        "React.js",
+        "Node.js"
+      ]
+    },
+    {
+      "company": "Johnson LLC",
+      "title": "Software Engineer",
+      "location": "Mollyview, WA",
+      "start": "2017-04",
+      "end": "2020-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using JavaScript (ES6+), Python.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "JavaScript (ES6+)",
+        "Python",
+        "TypeScript",
+        "FastAPI"
+      ]
+    },
+    {
+      "company": "Sparks-Lutz",
+      "title": "Full Stack Engineer",
+      "location": "New Garyland, NJ",
+      "start": "2013-04",
+      "end": "2017-04",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Python, JavaScript (ES6+).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "Kubernetes (K8s)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Jonathanbury State University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.52 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Team Leadership",
+      "canonical_slug": "team-leadership",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Team Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "React.js",
+      "canonical_slug": "react",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized React.js across multiple enterprise roles."
+    },
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "Node.js",
+      "canonical_slug": "node-js",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Node.js across multiple enterprise roles."
+    },
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    },
+    {
+      "raw": "PostgreSQL",
+      "canonical_slug": "postgresql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PostgreSQL across multiple enterprise roles."
+    },
+    {
+      "raw": "TypeScript",
+      "canonical_slug": "typescript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized TypeScript across multiple enterprise roles."
+    },
+    {
+      "raw": "FastAPI",
+      "canonical_slug": "fastapi",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized FastAPI across multiple enterprise roles."
+    },
+    {
+      "raw": "Kubernetes (K8s)",
+      "canonical_slug": "kubernetes",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Kubernetes (K8s) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-500019"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Team Leadership.",
+      "technologies": [
+        "Team Leadership",
+        "Python",
+        "React.js"
+      ],
+      "url": "https://github.com/alexandramarshall/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "principal",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 539
+  }
+}

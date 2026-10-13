@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Julie Olsen",
+    "email": "julie.olsen.68@yahoo.com",
+    "phone": "253-766-3778",
+    "location": {
+      "city": "New Morgan",
+      "region": "ME",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/julie-olsen",
+      "https://github.com/julieolsen"
+    ]
+  },
+  "summary": "Experienced Lead professional with 9+ years of expertise in marketing. Proven track record delivering scalable solutions using Email Marketing Campaigns, Copywriting, Salesforce Marketing Cloud.",
+  "experience": [
+    {
+      "company": "Smith, Cochran and Flowers",
+      "title": "Senior Growth Marketing Manager",
+      "location": "Jeremiahchester, TX",
+      "start": "2023-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Copywriting, Salesforce Marketing Cloud.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Copywriting",
+        "Salesforce Marketing Cloud",
+        "HubSpot",
+        "Search Engine Optimization (SEO)"
+      ]
+    },
+    {
+      "company": "Farmer-Vaughn",
+      "title": "Digital Marketing Lead",
+      "location": "Marktown, OK",
+      "start": "2020-04",
+      "end": "2023-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using HubSpot, Copywriting.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HubSpot",
+        "Copywriting",
+        "Growth Marketing",
+        "Salesforce Marketing Cloud"
+      ]
+    },
+    {
+      "company": "Weeks and Sons",
+      "title": "Growth Marketing Manager",
+      "location": "Ashleyshire, VI",
+      "start": "2017-01",
+      "end": "2020-04",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using A/B Testing & CRO, Search Engine Optimization (SEO).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "A/B Testing & CRO",
+        "Search Engine Optimization (SEO)",
+        "Copywriting",
+        "HubSpot"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Bairdborough State University",
+      "degree": "PhD",
+      "field": "Marketing & Communications",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.55 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Email Marketing Campaigns",
+      "canonical_slug": "email-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Email Marketing Campaigns across multiple enterprise roles."
+    },
+    {
+      "raw": "Copywriting",
+      "canonical_slug": "copywriting",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Copywriting across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce Marketing Cloud",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Optimization (SEO)",
+      "canonical_slug": "search-engine-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Optimization (SEO) across multiple enterprise roles."
+    },
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    },
+    {
+      "raw": "Growth Marketing",
+      "canonical_slug": "growth-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-624977"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Email Marketing Campaigns.",
+      "technologies": [
+        "Email Marketing Campaigns",
+        "Copywriting",
+        "Salesforce Marketing Cloud"
+      ],
+      "url": "https://github.com/julieolsen/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "lead",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 213
+  }
+}

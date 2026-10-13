@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Jesse Turner",
+    "email": "jesse.turner.62@gmail.com",
+    "phone": "534.976.4273x720",
+    "location": {
+      "city": "Robinsonside",
+      "region": "NY",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/jesse-turner",
+      "https://github.com/jesseturner"
+    ]
+  },
+  "summary": "Experienced Lead professional with 12+ years of expertise in education. Proven track record delivering scalable solutions using Learning Management Systems (LMS), Educational Technology (EdTech), Public Speaking & Lecturing.",
+  "experience": [
+    {
+      "company": "Villa, Rodriguez and Griffith",
+      "title": "Senior Curriculum Developer",
+      "location": "Hannahview, VI",
+      "start": "2023-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Curriculum Development, Active Mentoring.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Curriculum Development",
+        "Active Mentoring",
+        "Assessment Design",
+        "Public Speaking & Lecturing"
+      ]
+    },
+    {
+      "company": "Black, Collins and Powell",
+      "title": "Senior Academic Advisor",
+      "location": "New Susanville, IA",
+      "start": "2020-05",
+      "end": "2023-09",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Assessment Design, Public Speaking & Lecturing.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Assessment Design",
+        "Public Speaking & Lecturing",
+        "Curriculum Development",
+        "Learning Management Systems (LMS)"
+      ]
+    },
+    {
+      "company": "King-Sanchez",
+      "title": "Instructional Designer",
+      "location": "Lake Tyler, NC",
+      "start": "2017-06",
+      "end": "2020-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Learning Management Systems (LMS), Assessment Design.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Learning Management Systems (LMS)",
+        "Assessment Design",
+        "Instructional Design",
+        "Active Mentoring"
+      ]
+    },
+    {
+      "company": "Hernandez Inc",
+      "title": "Senior Academic Advisor",
+      "location": "Kaylaside, MT",
+      "start": "2014-07",
+      "end": "2017-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Assessment Design, Curriculum Development.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Assessment Design",
+        "Curriculum Development",
+        "Instructional Design",
+        "Learning Management Systems (LMS)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Aaronborough State University",
+      "degree": "PhD",
+      "field": "Education & Curriculum Design",
+      "start": "2010-09",
+      "end": "2014-05",
+      "grade": "3.75 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Learning Management Systems (LMS)",
+      "canonical_slug": "lms-platforms",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Learning Management Systems (LMS) across multiple enterprise roles."
+    },
+    {
+      "raw": "Educational Technology (EdTech)",
+      "canonical_slug": "edtech-solutions",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Educational Technology (EdTech) across multiple enterprise roles."
+    },
+    {
+      "raw": "Public Speaking & Lecturing",
+      "canonical_slug": "public-speaking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Public Speaking & Lecturing across multiple enterprise roles."
+    },
+    {
+      "raw": "Active Mentoring",
+      "canonical_slug": "mentoring",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Active Mentoring across multiple enterprise roles."
+    },
+    {
+      "raw": "Curriculum Development",
+      "canonical_slug": "curriculum-development",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Curriculum Development across multiple enterprise roles."
+    },
+    {
+      "raw": "Assessment Design",
+      "canonical_slug": "assessment-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Assessment Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Instructional Design",
+      "canonical_slug": "instructional-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Instructional Design across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Education Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-945016"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Education Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Learning Management Systems (LMS).",
+      "technologies": [
+        "Learning Management Systems (LMS)",
+        "Educational Technology (EdTech)",
+        "Public Speaking & Lecturing"
+      ],
+      "url": "https://github.com/jesseturner/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "education",
+    "seniority": "lead",
+    "total_experience_years": 12,
+    "is_emerging_profile": false,
+    "candidate_index": 403
+  }
+}

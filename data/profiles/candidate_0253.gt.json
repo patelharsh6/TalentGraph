@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Latasha Gamble",
+    "email": "latasha.gamble.75@gmail.com",
+    "phone": "4246817175",
+    "location": {
+      "city": "North Joshua",
+      "region": "MN",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/latasha-gamble",
+      "https://github.com/latashagamble"
+    ]
+  },
+  "summary": "Experienced Lead professional with 11+ years of expertise in software. Proven track record delivering scalable solutions using JavaScript (ES6+), Docker, FastAPI.",
+  "experience": [
+    {
+      "company": "Davis-White",
+      "title": "Senior DevOps Engineer",
+      "location": "Scottfort, KS",
+      "start": "2023-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Python, JavaScript (ES6+).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "JavaScript (ES6+)",
+        "Docker",
+        "Redis"
+      ]
+    },
+    {
+      "company": "Santos-Taylor",
+      "title": "Senior Backend Developer",
+      "location": "New Tracystad, PR",
+      "start": "2019-08",
+      "end": "2023-09",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Redis, JavaScript (ES6+).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Redis",
+        "JavaScript (ES6+)",
+        "Kubernetes (K8s)",
+        "FastAPI"
+      ]
+    },
+    {
+      "company": "Morales-Vincent",
+      "title": "Senior Backend Developer",
+      "location": "South Michael, PR",
+      "start": "2015-05",
+      "end": "2019-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Python, Docker.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "Docker",
+        "FastAPI",
+        "Redis"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Nathanielchester State University",
+      "degree": "Bachelor of Arts",
+      "field": "Computer Science",
+      "start": "2011-09",
+      "end": "2015-05",
+      "grade": "3.75 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "Docker",
+      "canonical_slug": "docker",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Docker across multiple enterprise roles."
+    },
+    {
+      "raw": "FastAPI",
+      "canonical_slug": "fastapi",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized FastAPI across multiple enterprise roles."
+    },
+    {
+      "raw": "Kubernetes (K8s)",
+      "canonical_slug": "kubernetes",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Kubernetes (K8s) across multiple enterprise roles."
+    },
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-543473"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging JavaScript (ES6+).",
+      "technologies": [
+        "JavaScript (ES6+)",
+        "Docker",
+        "FastAPI"
+      ],
+      "url": "https://github.com/latashagamble/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "lead",
+    "total_experience_years": 11,
+    "is_emerging_profile": false,
+    "candidate_index": 253
+  }
+}

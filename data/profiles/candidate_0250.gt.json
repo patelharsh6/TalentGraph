@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Jennifer Brown",
+    "email": "jennifer.brown.41@yahoo.com",
+    "phone": "(489)217-7566",
+    "location": {
+      "city": "Deborahborough",
+      "region": "KY",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/jennifer-brown",
+      "https://github.com/jenniferbrown"
+    ]
+  },
+  "summary": "Experienced Junior professional with 2+ years of expertise in sales. Proven track record delivering scalable solutions using Sales Pipeline Management, Contract Negotiation, Salesforce CRM.",
+  "experience": [
+    {
+      "company": "Garcia LLC",
+      "title": "Account Executive",
+      "location": "Anthonyport, GA",
+      "start": "2024-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 24,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using Client Relationship Building, B2B Enterprise Sales.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Client Relationship Building",
+        "B2B Enterprise Sales",
+        "Lead Prospecting",
+        "Account Management"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "North Jasontown State University",
+      "degree": "Bachelor of Science",
+      "field": "Business Administration",
+      "start": "2020-09",
+      "end": "2024-05",
+      "grade": "3.73 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Sales Pipeline Management",
+      "canonical_slug": "sales-strategy",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Sales Pipeline Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Contract Negotiation",
+      "canonical_slug": "contract-negotiation",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Contract Negotiation across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce CRM",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce CRM across multiple enterprise roles."
+    },
+    {
+      "raw": "Lead Prospecting",
+      "canonical_slug": "sales-prospecting",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Lead Prospecting across multiple enterprise roles."
+    },
+    {
+      "raw": "B2B Enterprise Sales",
+      "canonical_slug": "b2b-sales",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized B2B Enterprise Sales across multiple enterprise roles."
+    },
+    {
+      "raw": "Account Management",
+      "canonical_slug": "customer-success",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Account Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Client Relationship Building",
+      "canonical_slug": "effective-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Client Relationship Building across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot Sales Hub",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot Sales Hub across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Sales Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-352194"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sales Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Sales Pipeline Management.",
+      "technologies": [
+        "Sales Pipeline Management",
+        "Contract Negotiation",
+        "Salesforce CRM"
+      ],
+      "url": "https://github.com/jenniferbrown/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "sales",
+    "seniority": "junior",
+    "total_experience_years": 2,
+    "is_emerging_profile": false,
+    "candidate_index": 250
+  }
+}

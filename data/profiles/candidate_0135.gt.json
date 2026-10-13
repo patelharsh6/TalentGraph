@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "William Jensen",
+    "email": "william.jensen.80@hotmail.com",
+    "phone": "001-993-493-3051",
+    "location": {
+      "city": "Josephstad",
+      "region": "HI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/william-jensen",
+      "https://github.com/williamjensen"
+    ]
+  },
+  "summary": "Experienced Junior professional with 2+ years of expertise in healthcare. Proven track record delivering scalable solutions using R Language, Python, Electronic Health Records (EHR).",
+  "experience": [
+    {
+      "company": "Henry-Taylor",
+      "title": "Health Informatics Specialist",
+      "location": "East Antonio, WV",
+      "start": "2024-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 24,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Python, Clinical Trials Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "Clinical Trials Management",
+        "R Language",
+        "Electronic Health Records (EHR)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "West Stephaniebury State University",
+      "degree": "Bachelor of Arts",
+      "field": "Health Informatics / Biology",
+      "start": "2020-09",
+      "end": "2024-05",
+      "grade": "3.94 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "R Language",
+      "canonical_slug": "r-language",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized R Language across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "Electronic Health Records (EHR)",
+      "canonical_slug": "electronic-health-records",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Electronic Health Records (EHR) across multiple enterprise roles."
+    },
+    {
+      "raw": "Bioinformatics",
+      "canonical_slug": "bioinformatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Bioinformatics across multiple enterprise roles."
+    },
+    {
+      "raw": "Clinical Trials Management",
+      "canonical_slug": "clinical-trials",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Clinical Trials Management across multiple enterprise roles."
+    },
+    {
+      "raw": "HIPAA Compliance",
+      "canonical_slug": "hipaa-compliance",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HIPAA Compliance across multiple enterprise roles."
+    },
+    {
+      "raw": "HL7 FHIR Protocols",
+      "canonical_slug": "hl7-fhir",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HL7 FHIR Protocols across multiple enterprise roles."
+    },
+    {
+      "raw": "Health Informatics",
+      "canonical_slug": "health-informatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Health Informatics across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Healthcare Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-376967"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Healthcare Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging R Language.",
+      "technologies": [
+        "R Language",
+        "Python",
+        "Electronic Health Records (EHR)"
+      ],
+      "url": "https://github.com/williamjensen/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "healthcare",
+    "seniority": "junior",
+    "total_experience_years": 2,
+    "is_emerging_profile": false,
+    "candidate_index": 135
+  }
+}

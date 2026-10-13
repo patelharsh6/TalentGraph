@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Laura Vargas",
+    "email": "laura.vargas.80@yahoo.com",
+    "phone": "698-876-3514",
+    "location": {
+      "city": "Jamesfurt",
+      "region": "KS",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/laura-vargas",
+      "https://github.com/lauravargas"
+    ]
+  },
+  "summary": "Experienced Senior professional with 9+ years of expertise in data. Proven track record delivering scalable solutions using Pandas, Snowflake, MLOps.",
+  "experience": [
+    {
+      "company": "Robertson, Powers and Kelley",
+      "title": "Senior Senior Machine Learning Engineer",
+      "location": "Lake Jacquelineburgh, OK",
+      "start": "2023-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Data Visualization, Apache Airflow.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Data Visualization",
+        "Apache Airflow",
+        "Pandas",
+        "Snowflake"
+      ]
+    },
+    {
+      "company": "Lewis-Hayden",
+      "title": "Senior Machine Learning Engineer",
+      "location": "Adamsside, AS",
+      "start": "2020-05",
+      "end": "2023-07",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Pandas, Snowflake.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Pandas",
+        "Snowflake",
+        "Scikit-Learn",
+        "Apache Spark (PySpark)"
+      ]
+    },
+    {
+      "company": "Farrell, Meadows and Michael",
+      "title": "Analytics Engineer",
+      "location": "New Jamesmouth, FL",
+      "start": "2017-04",
+      "end": "2020-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Scikit-Learn, Apache Airflow.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Scikit-Learn",
+        "Apache Airflow",
+        "Pandas",
+        "Snowflake"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "East Julie State University",
+      "degree": "PhD",
+      "field": "Data Science & Statistics",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.98 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    },
+    {
+      "raw": "Snowflake",
+      "canonical_slug": "snowflake",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Snowflake across multiple enterprise roles."
+    },
+    {
+      "raw": "MLOps",
+      "canonical_slug": "machine-learning-operations",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized MLOps across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Spark (PySpark)",
+      "canonical_slug": "apache-spark",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Spark (PySpark) across multiple enterprise roles."
+    },
+    {
+      "raw": "Scikit-Learn",
+      "canonical_slug": "scikit-learn",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Scikit-Learn across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Airflow",
+      "canonical_slug": "apache-airflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+    },
+    {
+      "raw": "Data Visualization",
+      "canonical_slug": "business-intelligence",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Data Visualization across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-105547"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Pandas.",
+      "technologies": [
+        "Pandas",
+        "Snowflake",
+        "MLOps"
+      ],
+      "url": "https://github.com/lauravargas/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "senior",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 177
+  }
+}

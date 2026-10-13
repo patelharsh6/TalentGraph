@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Diane Yates",
+    "email": "diane.yates.88@hotmail.com",
+    "phone": "889-361-6423",
+    "location": {
+      "city": "Port Jaredfurt",
+      "region": "WI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/diane-yates",
+      "https://github.com/dianeyates"
+    ]
+  },
+  "summary": "Experienced Senior professional with 8+ years of expertise in software. Proven track record delivering scalable solutions using GraphQL, TypeScript, Team Leadership.",
+  "experience": [
+    {
+      "company": "Mitchell-Goodwin",
+      "title": "Senior Full Stack Engineer",
+      "location": "North Kenneth, AS",
+      "start": "2022-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Docker, FastAPI.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Docker",
+        "FastAPI",
+        "Python",
+        "Team Leadership"
+      ]
+    },
+    {
+      "company": "Fitzgerald-Dorsey",
+      "title": "Staff Software Architect",
+      "location": "West Elizabeth, MP",
+      "start": "2018-06",
+      "end": "2022-09",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using FastAPI, JavaScript (ES6+).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "FastAPI",
+        "JavaScript (ES6+)",
+        "Redis",
+        "Team Leadership"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Williamfort State University",
+      "degree": "PhD",
+      "field": "Computer Science",
+      "start": "2014-09",
+      "end": "2018-05",
+      "grade": "3.71 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "GraphQL",
+      "canonical_slug": "graphql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized GraphQL across multiple enterprise roles."
+    },
+    {
+      "raw": "TypeScript",
+      "canonical_slug": "typescript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized TypeScript across multiple enterprise roles."
+    },
+    {
+      "raw": "Team Leadership",
+      "canonical_slug": "team-leadership",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Team Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Microservices",
+      "canonical_slug": "microservices",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Microservices across multiple enterprise roles."
+    },
+    {
+      "raw": "FastAPI",
+      "canonical_slug": "fastapi",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized FastAPI across multiple enterprise roles."
+    },
+    {
+      "raw": "Docker",
+      "canonical_slug": "docker",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Docker across multiple enterprise roles."
+    },
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    },
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-292818"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging GraphQL.",
+      "technologies": [
+        "GraphQL",
+        "TypeScript",
+        "Team Leadership"
+      ],
+      "url": "https://github.com/dianeyates/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "senior",
+    "total_experience_years": 8,
+    "is_emerging_profile": false,
+    "candidate_index": 187
+  }
+}

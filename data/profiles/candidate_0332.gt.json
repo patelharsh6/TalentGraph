@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Sandra Martinez",
+    "email": "sandra.martinez.50@hotmail.com",
+    "phone": "425-547-6818x2683",
+    "location": {
+      "city": "East Jessicastad",
+      "region": "NC",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/sandra-martinez",
+      "https://github.com/sandramartinez"
+    ]
+  },
+  "summary": "Experienced Senior professional with 7+ years of expertise in finance. Proven track record delivering scalable solutions using Stakeholder Management, Financial Analysis, US GAAP.",
+  "experience": [
+    {
+      "company": "Chan, Hart and Schmidt",
+      "title": "Senior Portfolio Manager",
+      "location": "Port Amandaside, IN",
+      "start": "2023-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Stakeholder Management, Financial Modeling.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Stakeholder Management",
+        "Financial Modeling",
+        "IFRS Standards",
+        "Corporate Finance"
+      ]
+    },
+    {
+      "company": "Valentine, Schmidt and Brooks",
+      "title": "Portfolio Manager",
+      "location": "Lake Gabrielbury, MP",
+      "start": "2019-08",
+      "end": "2023-09",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using SQL, IFRS Standards.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "SQL",
+        "IFRS Standards",
+        "LBO Modeling",
+        "Corporate Finance"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Sheri State University",
+      "degree": "PhD",
+      "field": "Finance & Economics",
+      "start": "2015-09",
+      "end": "2019-05",
+      "grade": "3.88 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Stakeholder Management",
+      "canonical_slug": "stakeholder-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Stakeholder Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Analysis",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Analysis across multiple enterprise roles."
+    },
+    {
+      "raw": "US GAAP",
+      "canonical_slug": "gaap",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized US GAAP across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Advanced Excel",
+      "canonical_slug": "microsoft-excel",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+    },
+    {
+      "raw": "Corporate Finance",
+      "canonical_slug": "corporate-finance",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Corporate Finance across multiple enterprise roles."
+    },
+    {
+      "raw": "IFRS Standards",
+      "canonical_slug": "ifrs",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized IFRS Standards across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Modeling",
+      "canonical_slug": "financial-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "LBO Modeling",
+      "canonical_slug": "lbo-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized LBO Modeling across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-824061"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Stakeholder Management.",
+      "technologies": [
+        "Stakeholder Management",
+        "Financial Analysis",
+        "US GAAP"
+      ],
+      "url": "https://github.com/sandramartinez/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "senior",
+    "total_experience_years": 7,
+    "is_emerging_profile": false,
+    "candidate_index": 332
+  }
+}

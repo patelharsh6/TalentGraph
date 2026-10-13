@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Colleen Schneider",
+    "email": "colleen.schneider.16@yahoo.com",
+    "phone": "001-241-201-1947x072",
+    "location": {
+      "city": "Adamsmouth",
+      "region": "MH",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/colleen-schneider",
+      "https://github.com/colleenschneider"
+    ]
+  },
+  "summary": "Experienced Principal professional with 16+ years of expertise in software. Proven track record delivering scalable solutions using FastAPI, PostgreSQL, AWS.",
+  "experience": [
+    {
+      "company": "Andrews-Robertson",
+      "title": "Senior Senior Backend Developer",
+      "location": "Mendozafurt, PR",
+      "start": "2022-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using FastAPI, Kubernetes (K8s).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "FastAPI",
+        "Kubernetes (K8s)",
+        "AWS",
+        "GraphQL"
+      ]
+    },
+    {
+      "company": "Norman, Floyd and Fernandez",
+      "title": "DevOps Engineer",
+      "location": "South Stephaniefort, DE",
+      "start": "2018-04",
+      "end": "2022-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Python, Kubernetes (K8s).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "Kubernetes (K8s)",
+        "GraphQL",
+        "FastAPI"
+      ]
+    },
+    {
+      "company": "Nichols, Frey and Cook",
+      "title": "Senior Backend Developer",
+      "location": "Richardland, MN",
+      "start": "2014-05",
+      "end": "2018-04",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using GraphQL, AWS.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "GraphQL",
+        "AWS",
+        "Microservices",
+        "Kubernetes (K8s)"
+      ]
+    },
+    {
+      "company": "Castaneda, Peterson and Randall",
+      "title": "Staff Software Architect",
+      "location": "Deborahburgh, OH",
+      "start": "2010-01",
+      "end": "2014-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using PostgreSQL, CI/CD Pipelines.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PostgreSQL",
+        "CI/CD Pipelines",
+        "GraphQL",
+        "Python"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Donnaport State University",
+      "degree": "Master of Science",
+      "field": "Computer Science",
+      "start": "2006-09",
+      "end": "2010-05",
+      "grade": "3.56 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "FastAPI",
+      "canonical_slug": "fastapi",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized FastAPI across multiple enterprise roles."
+    },
+    {
+      "raw": "PostgreSQL",
+      "canonical_slug": "postgresql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PostgreSQL across multiple enterprise roles."
+    },
+    {
+      "raw": "AWS",
+      "canonical_slug": "amazon-web-services",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized AWS across multiple enterprise roles."
+    },
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    },
+    {
+      "raw": "CI/CD Pipelines",
+      "canonical_slug": "continuous-integration-and-continuous-delivery",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized CI/CD Pipelines across multiple enterprise roles."
+    },
+    {
+      "raw": "Kubernetes (K8s)",
+      "canonical_slug": "kubernetes",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Kubernetes (K8s) across multiple enterprise roles."
+    },
+    {
+      "raw": "Microservices",
+      "canonical_slug": "microservices",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Microservices across multiple enterprise roles."
+    },
+    {
+      "raw": "GraphQL",
+      "canonical_slug": "graphql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized GraphQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-993590"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging FastAPI.",
+      "technologies": [
+        "FastAPI",
+        "PostgreSQL",
+        "AWS"
+      ],
+      "url": "https://github.com/colleenschneider/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "principal",
+    "total_experience_years": 16,
+    "is_emerging_profile": false,
+    "candidate_index": 154,
+    "template": "creative",
+    "format": "docx",
+    "split": "val",
+    "noise": {
+      "typo_rate": 0.01,
+      "dropped_section": null,
+      "sections_shuffled": false
+    }
+  }
+}

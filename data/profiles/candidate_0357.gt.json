@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Jason Davidson",
+    "email": "jason.davidson.10@gmail.com",
+    "phone": "(245)838-0442x10175",
+    "location": {
+      "city": "Lake Kathymouth",
+      "region": "AL",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/jason-davidson",
+      "https://github.com/jasondavidson"
+    ]
+  },
+  "summary": "Experienced Senior professional with 8+ years of expertise in design. Proven track record delivering scalable solutions using Design Thinking, Wireframing & Prototyping, Information Architecture.",
+  "experience": [
+    {
+      "company": "Craig, Flores and Wise",
+      "title": "Senior Senior Product Designer",
+      "location": "Helenland, OK",
+      "start": "2022-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Design Systems, UI/UX Design.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Design Systems",
+        "UI/UX Design",
+        "Wireframing & Prototyping",
+        "Design Thinking"
+      ]
+    },
+    {
+      "company": "Acosta-Flores",
+      "title": "UI/UX Designer",
+      "location": "Judyfort, MN",
+      "start": "2018-03",
+      "end": "2022-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Design Systems, HTML5 / CSS3.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Design Systems",
+        "HTML5 / CSS3",
+        "Information Architecture",
+        "Design Thinking"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Evansfort State University",
+      "degree": "Bachelor of Arts",
+      "field": "Human-Computer Interaction / Graphic Design",
+      "start": "2014-09",
+      "end": "2018-05",
+      "grade": "3.92 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Design Thinking",
+      "canonical_slug": "design-thinking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Design Thinking across multiple enterprise roles."
+    },
+    {
+      "raw": "Wireframing & Prototyping",
+      "canonical_slug": "wireframing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Wireframing & Prototyping across multiple enterprise roles."
+    },
+    {
+      "raw": "Information Architecture",
+      "canonical_slug": "information-architecture",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Information Architecture across multiple enterprise roles."
+    },
+    {
+      "raw": "HTML5 / CSS3",
+      "canonical_slug": "html5",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized HTML5 / CSS3 across multiple enterprise roles."
+    },
+    {
+      "raw": "Design Systems",
+      "canonical_slug": "design-systems",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Design Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "UI/UX Design",
+      "canonical_slug": "user-experience-design",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized UI/UX Design across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Design Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-624112"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Design Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Design Thinking.",
+      "technologies": [
+        "Design Thinking",
+        "Wireframing & Prototyping",
+        "Information Architecture"
+      ],
+      "url": "https://github.com/jasondavidson/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "design",
+    "seniority": "senior",
+    "total_experience_years": 8,
+    "is_emerging_profile": false,
+    "candidate_index": 357
+  }
+}

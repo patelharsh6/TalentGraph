@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Gail Mason",
+    "email": "gail.mason.31@hotmail.com",
+    "phone": "581.679.4151x526",
+    "location": {
+      "city": "New Lindaland",
+      "region": "CA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/gail-mason",
+      "https://github.com/gailmason"
+    ]
+  },
+  "summary": "Experienced Mid professional with 4+ years of expertise in software. Proven track record delivering scalable solutions using JavaScript (ES6+), Node.js, Redis.",
+  "experience": [
+    {
+      "company": "Thomas and Sons",
+      "title": "Full Stack Engineer",
+      "location": "South Vickie, WV",
+      "start": "2022-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using FastAPI, Redis.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "FastAPI",
+        "Redis",
+        "AWS",
+        "Node.js"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Anthonyfurt State University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "start": "2018-09",
+      "end": "2022-05",
+      "grade": "3.99 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "Node.js",
+      "canonical_slug": "node-js",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Node.js across multiple enterprise roles."
+    },
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    },
+    {
+      "raw": "FastAPI",
+      "canonical_slug": "fastapi",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized FastAPI across multiple enterprise roles."
+    },
+    {
+      "raw": "CI/CD Pipelines",
+      "canonical_slug": "continuous-integration-and-continuous-delivery",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized CI/CD Pipelines across multiple enterprise roles."
+    },
+    {
+      "raw": "Microservices",
+      "canonical_slug": "microservices",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Microservices across multiple enterprise roles."
+    },
+    {
+      "raw": "AWS",
+      "canonical_slug": "amazon-web-services",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized AWS across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-611976"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging JavaScript (ES6+).",
+      "technologies": [
+        "JavaScript (ES6+)",
+        "Node.js",
+        "Redis"
+      ],
+      "url": "https://github.com/gailmason/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "mid",
+    "total_experience_years": 4,
+    "is_emerging_profile": false,
+    "candidate_index": 396
+  }
+}

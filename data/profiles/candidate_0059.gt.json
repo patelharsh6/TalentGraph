@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Crystal Mann",
+    "email": "crystal.mann.66@gmail.com",
+    "phone": "287.250.9977",
+    "location": {
+      "city": "Smithhaven",
+      "region": "VA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/crystal-mann",
+      "https://github.com/crystalmann"
+    ]
+  },
+  "summary": "Experienced Principal professional with 17+ years of expertise in marketing. Proven track record delivering scalable solutions using Growth Marketing, Email Marketing Campaigns, Copywriting.",
+  "experience": [
+    {
+      "company": "Nichols-Mitchell",
+      "title": "Senior Demand Generation Strategist",
+      "location": "Drakeburgh, CT",
+      "start": "2022-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using A/B Testing & CRO, Salesforce Marketing Cloud.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "A/B Testing & CRO",
+        "Salesforce Marketing Cloud",
+        "Email Marketing Campaigns",
+        "HubSpot"
+      ]
+    },
+    {
+      "company": "Warren and Sons",
+      "title": "Senior SEO Specialist",
+      "location": "New Alisha, GU",
+      "start": "2018-05",
+      "end": "2022-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Content Strategy, Growth Marketing.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Content Strategy",
+        "Growth Marketing",
+        "Search Engine Marketing (SEM)",
+        "Google Analytics 4 (GA4)"
+      ]
+    },
+    {
+      "company": "Adams-Sanders",
+      "title": "Growth Marketing Manager",
+      "location": "Susanmouth, OK",
+      "start": "2014-04",
+      "end": "2018-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using A/B Testing & CRO, Email Marketing Campaigns.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "A/B Testing & CRO",
+        "Email Marketing Campaigns",
+        "Copywriting",
+        "Growth Marketing"
+      ]
+    },
+    {
+      "company": "Branch and Sons",
+      "title": "Digital Marketing Lead",
+      "location": "Gabriellaland, SD",
+      "start": "2009-04",
+      "end": "2014-04",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using HubSpot, Copywriting.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HubSpot",
+        "Copywriting",
+        "Salesforce Marketing Cloud",
+        "Google Analytics 4 (GA4)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "North Richardfurt State University",
+      "degree": "Bachelor of Science",
+      "field": "Marketing & Communications",
+      "start": "2005-09",
+      "end": "2009-05",
+      "grade": "3.97 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Growth Marketing",
+      "canonical_slug": "growth-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+    },
+    {
+      "raw": "Email Marketing Campaigns",
+      "canonical_slug": "email-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Email Marketing Campaigns across multiple enterprise roles."
+    },
+    {
+      "raw": "Copywriting",
+      "canonical_slug": "copywriting",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Copywriting across multiple enterprise roles."
+    },
+    {
+      "raw": "Google Analytics 4 (GA4)",
+      "canonical_slug": "google-analytics",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+    },
+    {
+      "raw": "Content Strategy",
+      "canonical_slug": "content-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Content Strategy across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Marketing (SEM)",
+      "canonical_slug": "search-engine-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Marketing (SEM) across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce Marketing Cloud",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot across multiple enterprise roles."
+    },
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-332823"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Growth Marketing.",
+      "technologies": [
+        "Growth Marketing",
+        "Email Marketing Campaigns",
+        "Copywriting"
+      ],
+      "url": "https://github.com/crystalmann/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "principal",
+    "total_experience_years": 17,
+    "is_emerging_profile": false,
+    "candidate_index": 59
+  }
+}

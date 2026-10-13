@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Daniel Hunt",
+    "email": "daniel.hunt.70@yahoo.com",
+    "phone": "(614)597-8403x69003",
+    "location": {
+      "city": "Port Jonathan",
+      "region": "MD",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/daniel-hunt",
+      "https://github.com/danielhunt"
+    ]
+  },
+  "summary": "Experienced Lead professional with 13+ years of expertise in software. Proven track record delivering scalable solutions using Microservices, Node.js, TypeScript.",
+  "experience": [
+    {
+      "company": "Smith Ltd",
+      "title": "Senior Software Engineer",
+      "location": "Thompsonfurt, ND",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using TypeScript, Kubernetes (K8s).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "TypeScript",
+        "Kubernetes (K8s)",
+        "Redis",
+        "CI/CD Pipelines"
+      ]
+    },
+    {
+      "company": "Hall, Hansen and Barnett",
+      "title": "Full Stack Engineer",
+      "location": "Charleston, NE",
+      "start": "2020-06",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using JavaScript (ES6+), Microservices.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "JavaScript (ES6+)",
+        "Microservices",
+        "Redis",
+        "CI/CD Pipelines"
+      ]
+    },
+    {
+      "company": "Stevens Inc",
+      "title": "Full Stack Engineer",
+      "location": "Barbarashire, MO",
+      "start": "2017-05",
+      "end": "2020-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Kubernetes (K8s), Node.js.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Kubernetes (K8s)",
+        "Node.js",
+        "JavaScript (ES6+)",
+        "Redis"
+      ]
+    },
+    {
+      "company": "Bowman, Roberts and Sullivan",
+      "title": "Software Engineer",
+      "location": "Georgemouth, MP",
+      "start": "2013-02",
+      "end": "2017-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using AWS, CI/CD Pipelines.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "AWS",
+        "CI/CD Pipelines",
+        "Redis",
+        "Microservices"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Christopherville State University",
+      "degree": "Master of Science",
+      "field": "Computer Science",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.76 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Microservices",
+      "canonical_slug": "microservices",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Microservices across multiple enterprise roles."
+    },
+    {
+      "raw": "Node.js",
+      "canonical_slug": "node-js",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Node.js across multiple enterprise roles."
+    },
+    {
+      "raw": "TypeScript",
+      "canonical_slug": "typescript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized TypeScript across multiple enterprise roles."
+    },
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    },
+    {
+      "raw": "Docker",
+      "canonical_slug": "docker",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Docker across multiple enterprise roles."
+    },
+    {
+      "raw": "Kubernetes (K8s)",
+      "canonical_slug": "kubernetes",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Kubernetes (K8s) across multiple enterprise roles."
+    },
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "CI/CD Pipelines",
+      "canonical_slug": "continuous-integration-and-continuous-delivery",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized CI/CD Pipelines across multiple enterprise roles."
+    },
+    {
+      "raw": "AWS",
+      "canonical_slug": "amazon-web-services",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized AWS across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-752878"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Microservices.",
+      "technologies": [
+        "Microservices",
+        "Node.js",
+        "TypeScript"
+      ],
+      "url": "https://github.com/danielhunt/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "lead",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 33
+  }
+}

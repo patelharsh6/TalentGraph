@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "John Robinson",
+    "email": "john.robinson.30@yahoo.com",
+    "phone": "+1-329-529-8425x799",
+    "location": {
+      "city": "Cruzville",
+      "region": "AK",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/john-robinson",
+      "https://github.com/johnrobinson"
+    ]
+  },
+  "summary": "Experienced Mid professional with 4+ years of expertise in data. Proven track record delivering scalable solutions using Apache Airflow, Pandas, Scikit-Learn.",
+  "experience": [
+    {
+      "company": "Mills PLC",
+      "title": "Data Engineer",
+      "location": "Serranoville, HI",
+      "start": "2022-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using PyTorch, Pandas.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PyTorch",
+        "Pandas",
+        "SQL",
+        "Scikit-Learn"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Valenzuelaton State University",
+      "degree": "Bachelor of Science",
+      "field": "Data Science & Statistics",
+      "start": "2018-09",
+      "end": "2022-05",
+      "grade": "3.85 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Apache Airflow",
+      "canonical_slug": "apache-airflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+    },
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    },
+    {
+      "raw": "Scikit-Learn",
+      "canonical_slug": "scikit-learn",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Scikit-Learn across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "MLOps",
+      "canonical_slug": "machine-learning-operations",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized MLOps across multiple enterprise roles."
+    },
+    {
+      "raw": "PyTorch",
+      "canonical_slug": "pytorch",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PyTorch across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-101139"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Apache Airflow.",
+      "technologies": [
+        "Apache Airflow",
+        "Pandas",
+        "Scikit-Learn"
+      ],
+      "url": "https://github.com/johnrobinson/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "mid",
+    "total_experience_years": 4,
+    "is_emerging_profile": false,
+    "candidate_index": 111
+  }
+}

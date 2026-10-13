@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Miguel Simon",
+    "email": "miguel.simon.54@hotmail.com",
+    "phone": "622-231-9646x300",
+    "location": {
+      "city": "East Robert",
+      "region": "ID",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/miguel-simon",
+      "https://github.com/miguelsimon"
+    ]
+  },
+  "summary": "Experienced Senior professional with 6+ years of expertise in finance. Proven track record delivering scalable solutions using SQL, Corporate Finance, Bloomberg Terminal.",
+  "experience": [
+    {
+      "company": "Lloyd-Ware",
+      "title": "Senior Portfolio Manager",
+      "location": "Payneview, PW",
+      "start": "2023-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Bloomberg Terminal, IFRS Standards.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Bloomberg Terminal",
+        "IFRS Standards",
+        "Financial Modeling",
+        "Financial Analysis"
+      ]
+    },
+    {
+      "company": "Smith Inc",
+      "title": "Financial Analyst",
+      "location": "Port Benjamin, VA",
+      "start": "2020-10",
+      "end": "2023-09",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Financial Modeling, Financial Analysis.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Financial Modeling",
+        "Financial Analysis",
+        "Bloomberg Terminal",
+        "Corporate Finance"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Buchananbury State University",
+      "degree": "Bachelor of Science",
+      "field": "Finance & Economics",
+      "start": "2016-09",
+      "end": "2020-05",
+      "grade": "3.66 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Corporate Finance",
+      "canonical_slug": "corporate-finance",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Corporate Finance across multiple enterprise roles."
+    },
+    {
+      "raw": "Bloomberg Terminal",
+      "canonical_slug": "bloomberg-terminal",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Bloomberg Terminal across multiple enterprise roles."
+    },
+    {
+      "raw": "IFRS Standards",
+      "canonical_slug": "ifrs",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized IFRS Standards across multiple enterprise roles."
+    },
+    {
+      "raw": "DCF Valuation",
+      "canonical_slug": "dcf-valuation",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Analysis",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Analysis across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Modeling",
+      "canonical_slug": "financial-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "Stakeholder Management",
+      "canonical_slug": "stakeholder-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Stakeholder Management across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-233730"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging SQL.",
+      "technologies": [
+        "SQL",
+        "Corporate Finance",
+        "Bloomberg Terminal"
+      ],
+      "url": "https://github.com/miguelsimon/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "senior",
+    "total_experience_years": 6,
+    "is_emerging_profile": false,
+    "candidate_index": 387
+  }
+}

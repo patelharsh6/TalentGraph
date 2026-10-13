@@ -1,0 +1,32 @@
+MARIA JONES
+===========
+maria.jones.78@gmail.com | +1-464-749-2519 | Tammyfurt, DC | https://linkedin.com/in/maria-jones | https://github.com/mariajones
+
+--- ABOUT ME ---
+Experienced Mid professional with 4+ years of expertise in healthcrae. Proven track record delivering
+scalable solutions using Clinical Trials Management, R Language, Bioifnormatics.
+
+--- WORK EXPERIENCE ---
+Health Informatics Specialist | Fletcher, Miller and Hansen
+  Jul. 2022 – Present · Lisahaven, CO
+  * Led teh arhcitectural desigo and implementation of key healthcare workflows using Epic Systemt, Health Informatics.
+  * Improved cross-team delivery speed by 35% through standardized Cj/CD pipelines and automated testing.
+  * Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions.
+
+--- EDUCATION ---
+PhD in Health Informatics / Biology — Romerotown State University
+  Sep 2018 – 2022 · 3.99 GPA
+
+--- CORE COMPETENCIES ---
+Clinical Trials Management, R Language, Bioinformatics, HL7 FHIR Protocols, Cerner, Epic Systems,
+HIPAA Compilance, Health Informatics
+
+--- CERTIFICATIONS ---
+Certified Healthcare Professional
+  Industry Accreditation Board · Jun. 2023 · ID CERT-930884
+
+--- PROJECTS ---
+Healthcare Optimization System
+  2024 · https://github.com/mariajones/project-showcase
+  * Designed and delivered a high-impact prodcution tool leveragnig Clinical Trials Management.
+  * Technologies: Clinical Trials Management, R Language, Bioinformatics

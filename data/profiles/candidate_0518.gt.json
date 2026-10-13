@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Audrey Hull",
+    "email": "audrey.hull.61@hotmail.com",
+    "phone": "759-969-8384",
+    "location": {
+      "city": "Lake Emma",
+      "region": "VT",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/audrey-hull",
+      "https://github.com/audreyhull"
+    ]
+  },
+  "summary": "Experienced Lead professional with 11+ years of expertise in data. Proven track record delivering scalable solutions using SQL, TensorFlow, MLOps.",
+  "experience": [
+    {
+      "company": "Hernandez, Myers and Richardson",
+      "title": "Senior Data Engineer",
+      "location": "Fergusonburgh, RI",
+      "start": "2023-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using MLOps, Large Language Models (LLM).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "MLOps",
+        "Large Language Models (LLM)",
+        "Pandas",
+        "dbt"
+      ]
+    },
+    {
+      "company": "Andrews-Davis",
+      "title": "Senior Machine Learning Engineer",
+      "location": "Shaneport, RI",
+      "start": "2019-02",
+      "end": "2023-06",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using dbt, SQL.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "dbt",
+        "SQL",
+        "Pandas",
+        "Large Language Models (LLM)"
+      ]
+    },
+    {
+      "company": "Watkins, Vance and Martin",
+      "title": "Senior Machine Learning Engineer",
+      "location": "Jeffreyview, TN",
+      "start": "2015-03",
+      "end": "2019-02",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using MLOps, SQL.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "MLOps",
+        "SQL",
+        "dbt",
+        "Large Language Models (LLM)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Fullertown State University",
+      "degree": "Bachelor of Science",
+      "field": "Data Science & Statistics",
+      "start": "2011-09",
+      "end": "2015-05",
+      "grade": "3.92 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "TensorFlow",
+      "canonical_slug": "tensorflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized TensorFlow across multiple enterprise roles."
+    },
+    {
+      "raw": "MLOps",
+      "canonical_slug": "machine-learning-operations",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized MLOps across multiple enterprise roles."
+    },
+    {
+      "raw": "Scikit-Learn",
+      "canonical_slug": "scikit-learn",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Scikit-Learn across multiple enterprise roles."
+    },
+    {
+      "raw": "PyTorch",
+      "canonical_slug": "pytorch",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PyTorch across multiple enterprise roles."
+    },
+    {
+      "raw": "Large Language Models (LLM)",
+      "canonical_slug": "large-language-models",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Large Language Models (LLM) across multiple enterprise roles."
+    },
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Spark (PySpark)",
+      "canonical_slug": "apache-spark",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Spark (PySpark) across multiple enterprise roles."
+    },
+    {
+      "raw": "Snowflake",
+      "canonical_slug": "snowflake",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Snowflake across multiple enterprise roles."
+    },
+    {
+      "raw": "dbt",
+      "canonical_slug": "dbt",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized dbt across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-349382"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging SQL.",
+      "technologies": [
+        "SQL",
+        "TensorFlow",
+        "MLOps"
+      ],
+      "url": "https://github.com/audreyhull/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "lead",
+    "total_experience_years": 11,
+    "is_emerging_profile": false,
+    "candidate_index": 518
+  }
+}

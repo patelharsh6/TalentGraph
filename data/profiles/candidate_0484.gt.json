@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Anthony King",
+    "email": "anthony.king.23@gmail.com",
+    "phone": "8053937775",
+    "location": {
+      "city": "East Katrina",
+      "region": "TX",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/anthony-king",
+      "https://github.com/anthonyking"
+    ]
+  },
+  "summary": "Experienced Principal professional with 20+ years of expertise in software. Proven track record delivering scalable solutions using FastAPI, GraphQL, CI/CD Pipelines.",
+  "experience": [
+    {
+      "company": "Pearson PLC",
+      "title": "Senior Senior Backend Developer",
+      "location": "South Felicialand, NJ",
+      "start": "2021-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using CI/CD Pipelines, GraphQL.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "CI/CD Pipelines",
+        "GraphQL",
+        "JavaScript (ES6+)",
+        "Docker"
+      ]
+    },
+    {
+      "company": "Gray-Franklin",
+      "title": "Software Engineer",
+      "location": "New Kaitlyn, NC",
+      "start": "2016-08",
+      "end": "2021-10",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using JavaScript (ES6+), Docker.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "JavaScript (ES6+)",
+        "Docker",
+        "Team Leadership",
+        "FastAPI"
+      ]
+    },
+    {
+      "company": "Wilson Inc",
+      "title": "Staff Software Architect",
+      "location": "Johnside, GU",
+      "start": "2011-07",
+      "end": "2016-08",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using CI/CD Pipelines, FastAPI.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "CI/CD Pipelines",
+        "FastAPI",
+        "JavaScript (ES6+)",
+        "Docker"
+      ]
+    },
+    {
+      "company": "Jones-Hughes",
+      "title": "Staff Software Architect",
+      "location": "East Ashley, AS",
+      "start": "2006-06",
+      "end": "2011-07",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Docker, CI/CD Pipelines.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Docker",
+        "CI/CD Pipelines",
+        "Team Leadership",
+        "FastAPI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "North Robert State University",
+      "degree": "Master of Science",
+      "field": "Computer Science",
+      "start": "2002-09",
+      "end": "2006-05",
+      "grade": "3.99 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "FastAPI",
+      "canonical_slug": "fastapi",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized FastAPI across multiple enterprise roles."
+    },
+    {
+      "raw": "GraphQL",
+      "canonical_slug": "graphql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized GraphQL across multiple enterprise roles."
+    },
+    {
+      "raw": "CI/CD Pipelines",
+      "canonical_slug": "continuous-integration-and-continuous-delivery",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized CI/CD Pipelines across multiple enterprise roles."
+    },
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "Team Leadership",
+      "canonical_slug": "team-leadership",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Team Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Docker",
+      "canonical_slug": "docker",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Docker across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-657540"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging FastAPI.",
+      "technologies": [
+        "FastAPI",
+        "GraphQL",
+        "CI/CD Pipelines"
+      ],
+      "url": "https://github.com/anthonyking/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "principal",
+    "total_experience_years": 20,
+    "is_emerging_profile": false,
+    "candidate_index": 484
+  }
+}

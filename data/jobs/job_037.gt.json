@@ -1,0 +1,70 @@
+{
+  "title": "Principal DevOps / Site Reliability Engineer (Security & SRE)",
+  "company": "Smith Ltd",
+  "role_family": "cloud",
+  "seniority": "principal",
+  "min_total_experience_years": 12.0,
+  "education": [
+    "Bachelor's Degree",
+    "Master's Degree"
+  ],
+  "requirements": [
+    {
+      "skill_slug": "linux",
+      "skill_name": "Linux",
+      "required": true,
+      "importance": 5,
+      "min_years": 4.0
+    },
+    {
+      "skill_slug": "kubernetes",
+      "skill_name": "Kubernetes",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "docker",
+      "skill_name": "Docker",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "terraform",
+      "skill_name": "Terraform",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "continuous-integration-and-continuous-delivery",
+      "skill_name": "CI/CD",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "amazon-web-services",
+      "skill_name": "AWS",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "prometheus",
+      "skill_name": "Prometheus",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    },
+    {
+      "skill_slug": "grafana",
+      "skill_name": "Grafana",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    }
+  ],
+  "raw_text_length": 1697
+}

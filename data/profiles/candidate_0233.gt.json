@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "John Edwards",
+    "email": "john.edwards.76@yahoo.com",
+    "phone": "+1-488-531-0303x243",
+    "location": {
+      "city": "Joshuachester",
+      "region": "CA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/john-edwards",
+      "https://github.com/johnedwards"
+    ]
+  },
+  "summary": "Experienced Lead professional with 13+ years of expertise in finance. Proven track record delivering scalable solutions using US GAAP, SQL, DCF Valuation.",
+  "experience": [
+    {
+      "company": "Scott, James and Mckee",
+      "title": "Senior Risk Analyst",
+      "location": "Bryantview, TX",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using US GAAP, Advanced Excel.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "US GAAP",
+        "Advanced Excel",
+        "IFRS Standards",
+        "DCF Valuation"
+      ]
+    },
+    {
+      "company": "Bentley-Thomas",
+      "title": "Risk Analyst",
+      "location": "North Crystal, KY",
+      "start": "2020-06",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Corporate Finance, DCF Valuation.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Corporate Finance",
+        "DCF Valuation",
+        "Advanced Excel",
+        "SQL"
+      ]
+    },
+    {
+      "company": "Terry, Lee and Watson",
+      "title": "Portfolio Manager",
+      "location": "South Lorraine, MD",
+      "start": "2017-05",
+      "end": "2020-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using SQL, US GAAP.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "SQL",
+        "US GAAP",
+        "DCF Valuation",
+        "Advanced Excel"
+      ]
+    },
+    {
+      "company": "Gray-Maynard",
+      "title": "Portfolio Manager",
+      "location": "North Joseph, ND",
+      "start": "2013-02",
+      "end": "2017-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using US GAAP, Advanced Excel.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "US GAAP",
+        "Advanced Excel",
+        "SQL",
+        "DCF Valuation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lake Amyland State University",
+      "degree": "Bachelor of Science",
+      "field": "Finance & Economics",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.83 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "US GAAP",
+      "canonical_slug": "gaap",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized US GAAP across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "DCF Valuation",
+      "canonical_slug": "dcf-valuation",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+    },
+    {
+      "raw": "Advanced Excel",
+      "canonical_slug": "microsoft-excel",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+    },
+    {
+      "raw": "IFRS Standards",
+      "canonical_slug": "ifrs",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized IFRS Standards across multiple enterprise roles."
+    },
+    {
+      "raw": "Corporate Finance",
+      "canonical_slug": "corporate-finance",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Corporate Finance across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-405925"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging US GAAP.",
+      "technologies": [
+        "US GAAP",
+        "SQL",
+        "DCF Valuation"
+      ],
+      "url": "https://github.com/johnedwards/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "lead",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 233
+  }
+}

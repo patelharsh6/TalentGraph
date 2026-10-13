@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Amy Collins",
+    "email": "amy.collins.98@yahoo.com",
+    "phone": "454.298.2274x95450",
+    "location": {
+      "city": "New Lori",
+      "region": "OH",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/amy-collins",
+      "https://github.com/amycollins"
+    ]
+  },
+  "summary": "Experienced Senior professional with 6+ years of expertise in legal. Proven track record delivering scalable solutions using Legal Research (Westlaw/LexisNexis), M&A Due Diligence, Risk Assessment.",
+  "experience": [
+    {
+      "company": "Henderson and Sons",
+      "title": "Senior Senior Contracts Manager",
+      "location": "Lake Rebekah, WY",
+      "start": "2023-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key legal workflows using Legal Research (Westlaw/LexisNexis), Corporate Contract Drafting.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Legal Research (Westlaw/LexisNexis)",
+        "Corporate Contract Drafting",
+        "GDPR & Data Privacy",
+        "Intellectual Property (IP) Protection"
+      ]
+    },
+    {
+      "company": "Peterson Ltd",
+      "title": "Senior Contracts Manager",
+      "location": "Nealmouth, PA",
+      "start": "2020-03",
+      "end": "2023-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key legal workflows using Regulatory Compliance, GDPR & Data Privacy.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Regulatory Compliance",
+        "GDPR & Data Privacy",
+        "Risk Assessment",
+        "Legal Research (Westlaw/LexisNexis)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Melissashire State University",
+      "degree": "Bachelor of Science",
+      "field": "Juris Doctor (JD) / Legal Studies",
+      "start": "2016-09",
+      "end": "2020-05",
+      "grade": "3.65 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Legal Research (Westlaw/LexisNexis)",
+      "canonical_slug": "legal-research",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Legal Research (Westlaw/LexisNexis) across multiple enterprise roles."
+    },
+    {
+      "raw": "M&A Due Diligence",
+      "canonical_slug": "ma-due-diligence",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized M&A Due Diligence across multiple enterprise roles."
+    },
+    {
+      "raw": "Risk Assessment",
+      "canonical_slug": "risk-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Risk Assessment across multiple enterprise roles."
+    },
+    {
+      "raw": "Corporate Contract Drafting",
+      "canonical_slug": "contract-drafting",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Corporate Contract Drafting across multiple enterprise roles."
+    },
+    {
+      "raw": "Intellectual Property (IP) Protection",
+      "canonical_slug": "intellectual-property",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Intellectual Property (IP) Protection across multiple enterprise roles."
+    },
+    {
+      "raw": "Regulatory Compliance",
+      "canonical_slug": "regulatory-compliance",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Regulatory Compliance across multiple enterprise roles."
+    },
+    {
+      "raw": "GDPR & Data Privacy",
+      "canonical_slug": "gdpr",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized GDPR & Data Privacy across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Legal Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-780956"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Legal Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Legal Research (Westlaw/LexisNexis).",
+      "technologies": [
+        "Legal Research (Westlaw/LexisNexis)",
+        "M&A Due Diligence",
+        "Risk Assessment"
+      ],
+      "url": "https://github.com/amycollins/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "legal",
+    "seniority": "senior",
+    "total_experience_years": 6,
+    "is_emerging_profile": false,
+    "candidate_index": 207
+  }
+}

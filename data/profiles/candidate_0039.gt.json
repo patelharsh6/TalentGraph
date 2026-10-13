@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Alfred Galvan",
+    "email": "alfred.galvan.88@hotmail.com",
+    "phone": "+1-252-620-4727x7901",
+    "location": {
+      "city": "Port Edward",
+      "region": "VA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/alfred-galvan",
+      "https://github.com/alfredgalvan"
+    ]
+  },
+  "summary": "Experienced Principal professional with 19+ years of expertise in manufacturing. Proven track record delivering scalable solutions using Embedded C, SolidWorks CAD, SCADA Systems.",
+  "experience": [
+    {
+      "company": "Rose, Rodriguez and Roberts",
+      "title": "Senior Quality Assurance Engineer",
+      "location": "Davidbury, MT",
+      "start": "2022-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using PLC Programming (Siemens/Allen-Bradley), SCADA Systems.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "SCADA Systems",
+        "Embedded C",
+        "Six Sigma Green Belt"
+      ]
+    },
+    {
+      "company": "Bauer, Bryant and Rodriguez",
+      "title": "Operations Lead",
+      "location": "Carlsontown, SC",
+      "start": "2017-09",
+      "end": "2022-10",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Internet of Things (IoT), PLC Programming (Siemens/Allen-Bradley).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Internet of Things (IoT)",
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "Six Sigma Green Belt",
+        "SCADA Systems"
+      ]
+    },
+    {
+      "company": "Andrews, Higgins and Carter",
+      "title": "Quality Assurance Engineer",
+      "location": "New Michaelshire, MT",
+      "start": "2012-09",
+      "end": "2017-09",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Lean Manufacturing, SolidWorks CAD.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Lean Manufacturing",
+        "SolidWorks CAD",
+        "Supply Chain Management",
+        "Six Sigma Green Belt"
+      ]
+    },
+    {
+      "company": "Beck Inc",
+      "title": "Operations Lead",
+      "location": "Carloshaven, ND",
+      "start": "2007-06",
+      "end": "2012-09",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using PLC Programming (Siemens/Allen-Bradley), Supply Chain Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "Supply Chain Management",
+        "Embedded C",
+        "Root Cause Analysis"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Morganton State University",
+      "degree": "PhD",
+      "field": "Industrial Engineering",
+      "start": "2003-09",
+      "end": "2007-05",
+      "grade": "3.64 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Embedded C",
+      "canonical_slug": "embedded-c",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Embedded C across multiple enterprise roles."
+    },
+    {
+      "raw": "SolidWorks CAD",
+      "canonical_slug": "solidworks",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SolidWorks CAD across multiple enterprise roles."
+    },
+    {
+      "raw": "SCADA Systems",
+      "canonical_slug": "scada",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized SCADA Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Six Sigma Green Belt",
+      "canonical_slug": "six-sigma",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Six Sigma Green Belt across multiple enterprise roles."
+    },
+    {
+      "raw": "PLC Programming (Siemens/Allen-Bradley)",
+      "canonical_slug": "plc-programming",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized PLC Programming (Siemens/Allen-Bradley) across multiple enterprise roles."
+    },
+    {
+      "raw": "Root Cause Analysis",
+      "canonical_slug": "root-cause-analysis",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Root Cause Analysis across multiple enterprise roles."
+    },
+    {
+      "raw": "Internet of Things (IoT)",
+      "canonical_slug": "internet-of-things",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Internet of Things (IoT) across multiple enterprise roles."
+    },
+    {
+      "raw": "Lean Manufacturing",
+      "canonical_slug": "lean-manufacturing",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Lean Manufacturing across multiple enterprise roles."
+    },
+    {
+      "raw": "Supply Chain Management",
+      "canonical_slug": "supply-chain-management",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Supply Chain Management across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Manufacturing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-693419"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Manufacturing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Embedded C.",
+      "technologies": [
+        "Embedded C",
+        "SolidWorks CAD",
+        "SCADA Systems"
+      ],
+      "url": "https://github.com/alfredgalvan/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "manufacturing",
+    "seniority": "principal",
+    "total_experience_years": 19,
+    "is_emerging_profile": false,
+    "candidate_index": 39
+  }
+}

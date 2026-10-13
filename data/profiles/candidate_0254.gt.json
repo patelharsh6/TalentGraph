@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Deborah Hutchinson",
+    "email": "deborah.hutchinson.45@hotmail.com",
+    "phone": "8904380214",
+    "location": {
+      "city": "Nashbury",
+      "region": "MS",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/deborah-hutchinson",
+      "https://github.com/deborahhutchinson"
+    ]
+  },
+  "summary": "Experienced Principal professional with 13+ years of expertise in data. Proven track record delivering scalable solutions using Pandas, Data Visualization, Apache Spark (PySpark).",
+  "experience": [
+    {
+      "company": "Caldwell-Bailey",
+      "title": "Senior Analytics Engineer",
+      "location": "Daymouth, CT",
+      "start": "2023-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Apache Airflow, Snowflake.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Apache Airflow",
+        "Snowflake",
+        "Apache Spark (PySpark)",
+        "Data Visualization"
+      ]
+    },
+    {
+      "company": "White Inc",
+      "title": "Data Engineer",
+      "location": "Tateborough, MO",
+      "start": "2020-04",
+      "end": "2023-07",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Apache Airflow, Pandas.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Apache Airflow",
+        "Pandas",
+        "Data Visualization",
+        "RAG Architecture"
+      ]
+    },
+    {
+      "company": "Brown-Peterson",
+      "title": "Data Scientist",
+      "location": "Lewisfort, DE",
+      "start": "2017-05",
+      "end": "2020-04",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using RAG Architecture, Data Visualization.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "RAG Architecture",
+        "Data Visualization",
+        "Apache Spark (PySpark)",
+        "Pandas"
+      ]
+    },
+    {
+      "company": "Gibson-Gardner",
+      "title": "Senior Machine Learning Engineer",
+      "location": "Thomasborough, MD",
+      "start": "2013-06",
+      "end": "2017-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Apache Spark (PySpark), Pandas.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Apache Spark (PySpark)",
+        "Pandas",
+        "Data Visualization",
+        "RAG Architecture"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Kimton State University",
+      "degree": "Master of Science",
+      "field": "Data Science & Statistics",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.94 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    },
+    {
+      "raw": "Data Visualization",
+      "canonical_slug": "business-intelligence",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Data Visualization across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Spark (PySpark)",
+      "canonical_slug": "apache-spark",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Spark (PySpark) across multiple enterprise roles."
+    },
+    {
+      "raw": "RAG Architecture",
+      "canonical_slug": "retrieval-augmented-generation",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized RAG Architecture across multiple enterprise roles."
+    },
+    {
+      "raw": "Snowflake",
+      "canonical_slug": "snowflake",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Snowflake across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Airflow",
+      "canonical_slug": "apache-airflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-645980"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Pandas.",
+      "technologies": [
+        "Pandas",
+        "Data Visualization",
+        "Apache Spark (PySpark)"
+      ],
+      "url": "https://github.com/deborahhutchinson/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "principal",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 254
+  }
+}

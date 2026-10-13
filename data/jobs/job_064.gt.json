@@ -1,0 +1,56 @@
+{
+  "title": "Senior Health Informatics Specialist (Clinical Systems Integration)",
+  "company": "Johnson, Neal and Stewart",
+  "role_family": "healthcare",
+  "seniority": "senior",
+  "min_total_experience_years": 5.0,
+  "education": [
+    "Bachelor's Degree",
+    "Master's Degree"
+  ],
+  "requirements": [
+    {
+      "skill_slug": "electronic-health-records",
+      "skill_name": "EHR",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "epic-systems",
+      "skill_name": "Epic Systems",
+      "required": true,
+      "importance": 4,
+      "min_years": 2.0
+    },
+    {
+      "skill_slug": "hl7-fhir",
+      "skill_name": "HL7 / FHIR",
+      "required": true,
+      "importance": 4,
+      "min_years": 2.0
+    },
+    {
+      "skill_slug": "hipaa-compliance",
+      "skill_name": "HIPAA Compliance",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "clinical-trials",
+      "skill_name": "Clinical Trials",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    },
+    {
+      "skill_slug": "python",
+      "skill_name": "Python",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    }
+  ],
+  "raw_text_length": 1659
+}

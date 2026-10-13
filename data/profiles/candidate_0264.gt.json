@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Theresa Aguirre",
+    "email": "theresa.aguirre.79@hotmail.com",
+    "phone": "996-965-5330",
+    "location": {
+      "city": "West Robertville",
+      "region": "NV",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/theresa-aguirre",
+      "https://github.com/theresaaguirre"
+    ]
+  },
+  "summary": "Experienced Principal professional with 18+ years of expertise in software. Proven track record delivering scalable solutions using Team Leadership, Microservices, GraphQL.",
+  "experience": [
+    {
+      "company": "Guzman PLC",
+      "title": "Senior Senior Backend Developer",
+      "location": "Youngtown, LA",
+      "start": "2022-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using CI/CD Pipelines, GraphQL.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "CI/CD Pipelines",
+        "GraphQL",
+        "Node.js",
+        "FastAPI"
+      ]
+    },
+    {
+      "company": "Schneider PLC",
+      "title": "Senior Backend Developer",
+      "location": "South Justinfurt, AZ",
+      "start": "2018-09",
+      "end": "2022-10",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Microservices, Redis.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Microservices",
+        "Redis",
+        "JavaScript (ES6+)",
+        "CI/CD Pipelines"
+      ]
+    },
+    {
+      "company": "Hull, Williams and Newman",
+      "title": "Senior Backend Developer",
+      "location": "South Codychester, VA",
+      "start": "2013-09",
+      "end": "2018-09",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Microservices, Node.js.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Microservices",
+        "Node.js",
+        "JavaScript (ES6+)",
+        "Team Leadership"
+      ]
+    },
+    {
+      "company": "Hill-Molina",
+      "title": "Senior Backend Developer",
+      "location": "Millermouth, NM",
+      "start": "2008-10",
+      "end": "2013-09",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key software workflows using Team Leadership, Node.js.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Team Leadership",
+        "Node.js",
+        "GraphQL",
+        "FastAPI"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Kennethmouth State University",
+      "degree": "Bachelor of Arts",
+      "field": "Computer Science",
+      "start": "2004-09",
+      "end": "2008-05",
+      "grade": "3.57 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Team Leadership",
+      "canonical_slug": "team-leadership",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Team Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Microservices",
+      "canonical_slug": "microservices",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Microservices across multiple enterprise roles."
+    },
+    {
+      "raw": "GraphQL",
+      "canonical_slug": "graphql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized GraphQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Node.js",
+      "canonical_slug": "node-js",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Node.js across multiple enterprise roles."
+    },
+    {
+      "raw": "CI/CD Pipelines",
+      "canonical_slug": "continuous-integration-and-continuous-delivery",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized CI/CD Pipelines across multiple enterprise roles."
+    },
+    {
+      "raw": "FastAPI",
+      "canonical_slug": "fastapi",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized FastAPI across multiple enterprise roles."
+    },
+    {
+      "raw": "JavaScript (ES6+)",
+      "canonical_slug": "javascript",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+    },
+    {
+      "raw": "Redis",
+      "canonical_slug": "redis",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Redis across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Software Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-563405"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Team Leadership.",
+      "technologies": [
+        "Team Leadership",
+        "Microservices",
+        "GraphQL"
+      ],
+      "url": "https://github.com/theresaaguirre/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "software",
+    "seniority": "principal",
+    "total_experience_years": 18,
+    "is_emerging_profile": false,
+    "candidate_index": 264
+  }
+}

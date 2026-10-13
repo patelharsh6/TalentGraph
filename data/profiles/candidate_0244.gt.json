@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "David Barber",
+    "email": "david.barber.64@yahoo.com",
+    "phone": "(971)472-7223",
+    "location": {
+      "city": "Andrewburgh",
+      "region": "FM",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/david-barber",
+      "https://github.com/davidbarber"
+    ]
+  },
+  "summary": "Experienced Principal professional with 18+ years of expertise in finance. Proven track record delivering scalable solutions using Bloomberg Terminal, DCF Valuation, Quantitative Risk Management.",
+  "experience": [
+    {
+      "company": "Roth Ltd",
+      "title": "Senior Portfolio Manager",
+      "location": "North Douglas, NE",
+      "start": "2022-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Quantitative Risk Management, Corporate Finance.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Quantitative Risk Management",
+        "Corporate Finance",
+        "DCF Valuation",
+        "SQL"
+      ]
+    },
+    {
+      "company": "Gibson Ltd",
+      "title": "Risk Analyst",
+      "location": "Garciahaven, DC",
+      "start": "2018-09",
+      "end": "2022-10",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Quantitative Risk Management, Financial Modeling.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Quantitative Risk Management",
+        "Financial Modeling",
+        "DCF Valuation",
+        "LBO Modeling"
+      ]
+    },
+    {
+      "company": "Christensen, Smith and Garcia",
+      "title": "Senior Investment Analyst",
+      "location": "Smithtown, WV",
+      "start": "2013-10",
+      "end": "2018-09",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using DCF Valuation, Corporate Finance.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "DCF Valuation",
+        "Corporate Finance",
+        "Financial Modeling",
+        "Stakeholder Management"
+      ]
+    },
+    {
+      "company": "Michael, Anderson and Carrillo",
+      "title": "Corporate Finance Lead",
+      "location": "Douglastown, WY",
+      "start": "2008-11",
+      "end": "2013-10",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using DCF Valuation, Bloomberg Terminal.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "DCF Valuation",
+        "Bloomberg Terminal",
+        "Financial Modeling",
+        "Stakeholder Management"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Port Danielmouth State University",
+      "degree": "Bachelor of Science",
+      "field": "Finance & Economics",
+      "start": "2004-09",
+      "end": "2008-05",
+      "grade": "3.85 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Bloomberg Terminal",
+      "canonical_slug": "bloomberg-terminal",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Bloomberg Terminal across multiple enterprise roles."
+    },
+    {
+      "raw": "DCF Valuation",
+      "canonical_slug": "dcf-valuation",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+    },
+    {
+      "raw": "Quantitative Risk Management",
+      "canonical_slug": "financial-risk-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Quantitative Risk Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Advanced Excel",
+      "canonical_slug": "microsoft-excel",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+    },
+    {
+      "raw": "LBO Modeling",
+      "canonical_slug": "lbo-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized LBO Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Corporate Finance",
+      "canonical_slug": "corporate-finance",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Corporate Finance across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Modeling",
+      "canonical_slug": "financial-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "Stakeholder Management",
+      "canonical_slug": "stakeholder-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Stakeholder Management across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-722571"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Bloomberg Terminal.",
+      "technologies": [
+        "Bloomberg Terminal",
+        "DCF Valuation",
+        "Quantitative Risk Management"
+      ],
+      "url": "https://github.com/davidbarber/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "principal",
+    "total_experience_years": 18,
+    "is_emerging_profile": false,
+    "candidate_index": 244
+  }
+}

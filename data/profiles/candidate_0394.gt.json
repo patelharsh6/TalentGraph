@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Gary Russell",
+    "email": "gary.russell.52@hotmail.com",
+    "phone": "576-979-9359",
+    "location": {
+      "city": "Kevinton",
+      "region": "GU",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/gary-russell",
+      "https://github.com/garyrussell"
+    ]
+  },
+  "summary": "Experienced Principal professional with 19+ years of expertise in legal. Proven track record delivering scalable solutions using Corporate Contract Drafting, Legal Research (Westlaw/LexisNexis), Intellectual Property (IP) Protection.",
+  "experience": [
+    {
+      "company": "Barnett PLC",
+      "title": "Senior Senior Contracts Manager",
+      "location": "Ralphtown, NC",
+      "start": "2022-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key legal workflows using Legal Research (Westlaw/LexisNexis), Regulatory Compliance.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Legal Research (Westlaw/LexisNexis)",
+        "Regulatory Compliance",
+        "Risk Assessment",
+        "Corporate Contract Drafting"
+      ]
+    },
+    {
+      "company": "Williams Group",
+      "title": "Corporate Counsel",
+      "location": "South Aaron, AR",
+      "start": "2017-06",
+      "end": "2022-10",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key legal workflows using M&A Due Diligence, Legal Research (Westlaw/LexisNexis).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "M&A Due Diligence",
+        "Legal Research (Westlaw/LexisNexis)",
+        "Regulatory Compliance",
+        "GDPR & Data Privacy"
+      ]
+    },
+    {
+      "company": "Lang LLC",
+      "title": "Legal Compliance Specialist",
+      "location": "Smithport, WI",
+      "start": "2012-02",
+      "end": "2017-06",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key legal workflows using GDPR & Data Privacy, Regulatory Compliance.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "GDPR & Data Privacy",
+        "Regulatory Compliance",
+        "M&A Due Diligence",
+        "Intellectual Property (IP) Protection"
+      ]
+    },
+    {
+      "company": "Alvarado, Crawford and Carpenter",
+      "title": "Legal Compliance Specialist",
+      "location": "Kimberlybury, MS",
+      "start": "2007-12",
+      "end": "2012-02",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key legal workflows using Intellectual Property (IP) Protection, Regulatory Compliance.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Intellectual Property (IP) Protection",
+        "Regulatory Compliance",
+        "M&A Due Diligence",
+        "Risk Assessment"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Gregoryborough State University",
+      "degree": "Bachelor of Science",
+      "field": "Juris Doctor (JD) / Legal Studies",
+      "start": "2003-09",
+      "end": "2007-05",
+      "grade": "3.95 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Corporate Contract Drafting",
+      "canonical_slug": "contract-drafting",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Corporate Contract Drafting across multiple enterprise roles."
+    },
+    {
+      "raw": "Legal Research (Westlaw/LexisNexis)",
+      "canonical_slug": "legal-research",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Legal Research (Westlaw/LexisNexis) across multiple enterprise roles."
+    },
+    {
+      "raw": "Intellectual Property (IP) Protection",
+      "canonical_slug": "intellectual-property",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Intellectual Property (IP) Protection across multiple enterprise roles."
+    },
+    {
+      "raw": "Risk Assessment",
+      "canonical_slug": "risk-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Risk Assessment across multiple enterprise roles."
+    },
+    {
+      "raw": "GDPR & Data Privacy",
+      "canonical_slug": "gdpr",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized GDPR & Data Privacy across multiple enterprise roles."
+    },
+    {
+      "raw": "M&A Due Diligence",
+      "canonical_slug": "ma-due-diligence",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized M&A Due Diligence across multiple enterprise roles."
+    },
+    {
+      "raw": "Regulatory Compliance",
+      "canonical_slug": "regulatory-compliance",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Regulatory Compliance across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Legal Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-911781"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Legal Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Corporate Contract Drafting.",
+      "technologies": [
+        "Corporate Contract Drafting",
+        "Legal Research (Westlaw/LexisNexis)",
+        "Intellectual Property (IP) Protection"
+      ],
+      "url": "https://github.com/garyrussell/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "legal",
+    "seniority": "principal",
+    "total_experience_years": 19,
+    "is_emerging_profile": false,
+    "candidate_index": 394
+  }
+}

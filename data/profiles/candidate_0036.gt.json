@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Maria Jones",
+    "email": "maria.jones.78@gmail.com",
+    "phone": "+1-464-749-2519",
+    "location": {
+      "city": "Tammyfurt",
+      "region": "DC",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/maria-jones",
+      "https://github.com/mariajones"
+    ]
+  },
+  "summary": "Experienced Mid professional with 4+ years of expertise in healthcare. Proven track record delivering scalable solutions using Clinical Trials Management, R Language, Bioinformatics.",
+  "experience": [
+    {
+      "company": "Fletcher, Miller and Hansen",
+      "title": "Health Informatics Specialist",
+      "location": "Lisahaven, CO",
+      "start": "2022-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Epic Systems, Health Informatics.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Epic Systems",
+        "Health Informatics",
+        "HL7 FHIR Protocols",
+        "HIPAA Compliance"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Romerotown State University",
+      "degree": "PhD",
+      "field": "Health Informatics / Biology",
+      "start": "2018-09",
+      "end": "2022-05",
+      "grade": "3.99 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Clinical Trials Management",
+      "canonical_slug": "clinical-trials",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Clinical Trials Management across multiple enterprise roles."
+    },
+    {
+      "raw": "R Language",
+      "canonical_slug": "r-language",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized R Language across multiple enterprise roles."
+    },
+    {
+      "raw": "Bioinformatics",
+      "canonical_slug": "bioinformatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Bioinformatics across multiple enterprise roles."
+    },
+    {
+      "raw": "HL7 FHIR Protocols",
+      "canonical_slug": "hl7-fhir",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HL7 FHIR Protocols across multiple enterprise roles."
+    },
+    {
+      "raw": "Cerner",
+      "canonical_slug": "cerner",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Cerner across multiple enterprise roles."
+    },
+    {
+      "raw": "Epic Systems",
+      "canonical_slug": "epic-systems",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Epic Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "HIPAA Compliance",
+      "canonical_slug": "hipaa-compliance",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HIPAA Compliance across multiple enterprise roles."
+    },
+    {
+      "raw": "Health Informatics",
+      "canonical_slug": "health-informatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Health Informatics across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Healthcare Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-930884"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Healthcare Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Clinical Trials Management.",
+      "technologies": [
+        "Clinical Trials Management",
+        "R Language",
+        "Bioinformatics"
+      ],
+      "url": "https://github.com/mariajones/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "healthcare",
+    "seniority": "mid",
+    "total_experience_years": 4,
+    "is_emerging_profile": false,
+    "candidate_index": 36
+  }
+}

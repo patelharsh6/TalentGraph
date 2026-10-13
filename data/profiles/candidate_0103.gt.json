@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Jeffrey Hawkins",
+    "email": "jeffrey.hawkins.24@gmail.com",
+    "phone": "(794)205-7202",
+    "location": {
+      "city": "Tracyshire",
+      "region": "OH",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/jeffrey-hawkins",
+      "https://github.com/jeffreyhawkins"
+    ]
+  },
+  "summary": "Experienced Lead professional with 9+ years of expertise in marketing. Proven track record delivering scalable solutions using Search Engine Marketing (SEM), Google Analytics 4 (GA4), Growth Marketing.",
+  "experience": [
+    {
+      "company": "Jones-Zimmerman",
+      "title": "Senior Senior SEO Specialist",
+      "location": "East Abigail, WY",
+      "start": "2023-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using HubSpot, Salesforce Marketing Cloud.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HubSpot",
+        "Salesforce Marketing Cloud",
+        "Google Analytics 4 (GA4)",
+        "Content Strategy"
+      ]
+    },
+    {
+      "company": "Moore, Daniels and Powell",
+      "title": "Demand Generation Strategist",
+      "location": "Jeffreyborough, TN",
+      "start": "2020-03",
+      "end": "2023-07",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using HubSpot, Search Engine Marketing (SEM).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HubSpot",
+        "Search Engine Marketing (SEM)",
+        "Salesforce Marketing Cloud",
+        "Copywriting"
+      ]
+    },
+    {
+      "company": "Rivera-Carter",
+      "title": "Demand Generation Strategist",
+      "location": "Barajastown, DE",
+      "start": "2017-03",
+      "end": "2020-03",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using HubSpot, A/B Testing & CRO.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HubSpot",
+        "A/B Testing & CRO",
+        "Search Engine Marketing (SEM)",
+        "Google Analytics 4 (GA4)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Seanbury State University",
+      "degree": "Master of Science",
+      "field": "Marketing & Communications",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.64 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Search Engine Marketing (SEM)",
+      "canonical_slug": "search-engine-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Marketing (SEM) across multiple enterprise roles."
+    },
+    {
+      "raw": "Google Analytics 4 (GA4)",
+      "canonical_slug": "google-analytics",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+    },
+    {
+      "raw": "Growth Marketing",
+      "canonical_slug": "growth-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+    },
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    },
+    {
+      "raw": "Copywriting",
+      "canonical_slug": "copywriting",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Copywriting across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce Marketing Cloud",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot across multiple enterprise roles."
+    },
+    {
+      "raw": "Content Strategy",
+      "canonical_slug": "content-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Content Strategy across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-837945"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Search Engine Marketing (SEM).",
+      "technologies": [
+        "Search Engine Marketing (SEM)",
+        "Google Analytics 4 (GA4)",
+        "Growth Marketing"
+      ],
+      "url": "https://github.com/jeffreyhawkins/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "lead",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 103
+  }
+}

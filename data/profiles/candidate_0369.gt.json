@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Gregory Carter",
+    "email": "gregory.carter.73@hotmail.com",
+    "phone": "001-478-265-6194x25577",
+    "location": {
+      "city": "Williamberg",
+      "region": "PA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/gregory-carter",
+      "https://github.com/gregorycarter"
+    ]
+  },
+  "summary": "Experienced Principal professional with 13+ years of expertise in manufacturing. Proven track record delivering scalable solutions using Root Cause Analysis, Internet of Things (IoT), Embedded C.",
+  "experience": [
+    {
+      "company": "Fernandez-Collier",
+      "title": "Senior Supply Chain Analyst",
+      "location": "Port Lauren, DC",
+      "start": "2023-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Six Sigma Green Belt, Supply Chain Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Six Sigma Green Belt",
+        "Supply Chain Management",
+        "Internet of Things (IoT)",
+        "PLC Programming (Siemens/Allen-Bradley)"
+      ]
+    },
+    {
+      "company": "Summers Group",
+      "title": "Supply Chain Analyst",
+      "location": "Port Robertville, NY",
+      "start": "2020-01",
+      "end": "2023-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using PLC Programming (Siemens/Allen-Bradley), Embedded C.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "Embedded C",
+        "Supply Chain Management",
+        "SCADA Systems"
+      ]
+    },
+    {
+      "company": "Williams, Garcia and Smith",
+      "title": "Industrial Automation Engineer",
+      "location": "Lake Jeremy, VT",
+      "start": "2017-01",
+      "end": "2020-01",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Internet of Things (IoT), Supply Chain Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Internet of Things (IoT)",
+        "Supply Chain Management",
+        "Six Sigma Green Belt",
+        "SolidWorks CAD"
+      ]
+    },
+    {
+      "company": "Burns-Nguyen",
+      "title": "Operations Lead",
+      "location": "Amyfurt, NC",
+      "start": "2013-10",
+      "end": "2017-01",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Root Cause Analysis, Six Sigma Green Belt.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Root Cause Analysis",
+        "Six Sigma Green Belt",
+        "Lean Manufacturing",
+        "PLC Programming (Siemens/Allen-Bradley)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Robinsonstad State University",
+      "degree": "Master of Science",
+      "field": "Industrial Engineering",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.69 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Root Cause Analysis",
+      "canonical_slug": "root-cause-analysis",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Root Cause Analysis across multiple enterprise roles."
+    },
+    {
+      "raw": "Internet of Things (IoT)",
+      "canonical_slug": "internet-of-things",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Internet of Things (IoT) across multiple enterprise roles."
+    },
+    {
+      "raw": "Embedded C",
+      "canonical_slug": "embedded-c",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Embedded C across multiple enterprise roles."
+    },
+    {
+      "raw": "Lean Manufacturing",
+      "canonical_slug": "lean-manufacturing",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Lean Manufacturing across multiple enterprise roles."
+    },
+    {
+      "raw": "SCADA Systems",
+      "canonical_slug": "scada",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized SCADA Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Supply Chain Management",
+      "canonical_slug": "supply-chain-management",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Supply Chain Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Six Sigma Green Belt",
+      "canonical_slug": "six-sigma",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Six Sigma Green Belt across multiple enterprise roles."
+    },
+    {
+      "raw": "PLC Programming (Siemens/Allen-Bradley)",
+      "canonical_slug": "plc-programming",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized PLC Programming (Siemens/Allen-Bradley) across multiple enterprise roles."
+    },
+    {
+      "raw": "SolidWorks CAD",
+      "canonical_slug": "solidworks",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SolidWorks CAD across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Manufacturing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-218733"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Manufacturing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Root Cause Analysis.",
+      "technologies": [
+        "Root Cause Analysis",
+        "Internet of Things (IoT)",
+        "Embedded C"
+      ],
+      "url": "https://github.com/gregorycarter/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "manufacturing",
+    "seniority": "principal",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 369
+  }
+}

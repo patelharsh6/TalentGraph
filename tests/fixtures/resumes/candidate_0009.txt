@@ -1,0 +1,48 @@
+STEVEN FLYNN
+============
+steven.flynn.23@gmail.com | (833)215-8692x322 | Lake Sandra, WY | https://linkedin.com/in/steven-flynn | https://github.com/stevenflynn
+
+--- PROFESSIONAL SUMMARY ---
+Experienced Principal professional with 16+ years of expertise in legal. Proven track record delivering
+scalable solutions using Intellectual Property (IP) Protection, Legal Research (Westlaw/LexisNexis),
+Regulatory Compliance.
+
+--- EMPLOYMENT HISTORY ---
+Senior IP Legal Advisor | Pham-Shields
+  10/2022 – Present · West Erik, UT
+  * Led the architectural design and implementatioo of key legal workflows using GDPR & Data Privacy, M&A Due Diligence.
+  * Improved cross-team delviery speed by 35% through standardized CI/CD pipelines and automated testing.
+  * Collaborated with eexcutive stakeholders and product teams to drive data-informed roadmap decisions.
+Corporate Counsel | Reyes Inc
+  Jun 2018 – Oct. 2022 · Walkermouth, MI
+  * Led the architectural design and implementation of kye legam workflowt uisng Intellecutal Property (IP) Protection, Legal Research (Westlaw/LexisNexis).
+  * Improved cross-team delivery speed by 35% throuhg standardized CI/CD pipelines and automated testing.
+  * Collaborated with executive stakeholders and prodcut teams to drive data-informed roadmap decisions.
+IP Legal Advisor | Hoover-Savage
+  Apr. 2014 – 06/2018 · North Donna, MO
+  * Led the architectural design and implementation of key legal workflows suing Legal Research (Wsetlaw/LexisNexis), Risk Assessment.
+  * Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and autoamted testing.
+  * Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions.
+Corporate Counsel | Ramirez-Jones
+  02/2010 – 2014-04 · Michaelhaven, MO
+  * Led the architectural design and implementation fo key legal workflows using Risk Assessment, Regulatory Compliance.
+  * Improved cross-team delivery speed bz 35% through standardized CI/CD pipelines and automated testinh.
+  * Collaborated with executive stakeholders and product teams tp drive data-informed roadmap decisions.
+
+--- ACADEMIC CREDENTIALS ---
+PhD in Juris Doctor (JD) / Legal Studies — Sheilaville State University
+  09/2006 – 2010 · 3.85 GPA
+
+--- AREAS OF EXPERTISE ---
+Intellectual Property (IP) Protcetion, Legal Research (Westlaw/LexisNexis), Regulatory Compliance, Risk
+Assessment, M&A Due Diligence, Corporate Contract Drafting, GDPR & Data Privacy
+
+--- CERTIFICATIONS & LICENSES ---
+Certified Legal Professional
+  Industry Accreditation Board · Jun 2023 · ID CERT-865990
+
+--- KEY PROJECTS ---
+Legal Optimization System
+  2024 · https://github.com/stevenflynn/project-showcase
+  * Designed and delivered a high-impact production tool leveraging Intellectual Property (IP) Protection.
+  * Technologies: Intellectual Property (IP) Protection, Legal Research (Westlaw/LexisNexis), Regulatory Compliance

@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Pamela Johnson",
+    "email": "pamela.johnson.79@yahoo.com",
+    "phone": "(345)760-7540",
+    "location": {
+      "city": "New Joannabury",
+      "region": "HI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/pamela-johnson",
+      "https://github.com/pamelajohnson"
+    ]
+  },
+  "summary": "Experienced Junior professional with 1+ years of expertise in finance. Proven track record delivering scalable solutions using Advanced Excel, US GAAP, SQL.",
+  "experience": [
+    {
+      "company": "Nichols and Sons",
+      "title": "Senior Investment Analyst",
+      "location": "Lake Trevor, MH",
+      "start": "2025-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 12,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Financial Analysis, IFRS Standards.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Financial Analysis",
+        "IFRS Standards",
+        "US GAAP",
+        "Bloomberg Terminal"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Michaelmouth State University",
+      "degree": "Bachelor of Arts",
+      "field": "Finance & Economics",
+      "start": "2021-09",
+      "end": "2025-05",
+      "grade": "3.70 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Advanced Excel",
+      "canonical_slug": "microsoft-excel",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+    },
+    {
+      "raw": "US GAAP",
+      "canonical_slug": "gaap",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized US GAAP across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Stakeholder Management",
+      "canonical_slug": "stakeholder-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Stakeholder Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Modeling",
+      "canonical_slug": "financial-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "Quantitative Risk Management",
+      "canonical_slug": "financial-risk-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Quantitative Risk Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Bloomberg Terminal",
+      "canonical_slug": "bloomberg-terminal",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Bloomberg Terminal across multiple enterprise roles."
+    },
+    {
+      "raw": "IFRS Standards",
+      "canonical_slug": "ifrs",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized IFRS Standards across multiple enterprise roles."
+    },
+    {
+      "raw": "DCF Valuation",
+      "canonical_slug": "dcf-valuation",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Analysis",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Analysis across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-147168"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Advanced Excel.",
+      "technologies": [
+        "Advanced Excel",
+        "US GAAP",
+        "SQL"
+      ],
+      "url": "https://github.com/pamelajohnson/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "junior",
+    "total_experience_years": 1,
+    "is_emerging_profile": false,
+    "candidate_index": 310
+  }
+}

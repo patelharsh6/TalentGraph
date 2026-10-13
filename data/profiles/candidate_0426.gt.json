@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Carolyn Lopez",
+    "email": "carolyn.lopez.73@gmail.com",
+    "phone": "(817)498-2134",
+    "location": {
+      "city": "Jessicafort",
+      "region": "WY",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/carolyn-lopez",
+      "https://github.com/carolynlopez"
+    ]
+  },
+  "summary": "Experienced Mid professional with 5+ years of expertise in sales. Proven track record delivering scalable solutions using Client Relationship Building, Account Management, Salesforce CRM.",
+  "experience": [
+    {
+      "company": "Mcdaniel, Kim and Chang",
+      "title": "Account Executive",
+      "location": "Port Lynn, IA",
+      "start": "2021-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using B2B Enterprise Sales, Salesforce CRM.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "B2B Enterprise Sales",
+        "Salesforce CRM",
+        "Client Relationship Building",
+        "Contract Negotiation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Port Zacharyside State University",
+      "degree": "Bachelor of Science",
+      "field": "Business Administration",
+      "start": "2017-09",
+      "end": "2021-05",
+      "grade": "3.61 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Client Relationship Building",
+      "canonical_slug": "effective-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Client Relationship Building across multiple enterprise roles."
+    },
+    {
+      "raw": "Account Management",
+      "canonical_slug": "customer-success",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Account Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce CRM",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce CRM across multiple enterprise roles."
+    },
+    {
+      "raw": "Contract Negotiation",
+      "canonical_slug": "contract-negotiation",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Contract Negotiation across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot Sales Hub",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot Sales Hub across multiple enterprise roles."
+    },
+    {
+      "raw": "Sales Pipeline Management",
+      "canonical_slug": "sales-strategy",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Sales Pipeline Management across multiple enterprise roles."
+    },
+    {
+      "raw": "B2B Enterprise Sales",
+      "canonical_slug": "b2b-sales",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized B2B Enterprise Sales across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Sales Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-965568"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sales Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Client Relationship Building.",
+      "technologies": [
+        "Client Relationship Building",
+        "Account Management",
+        "Salesforce CRM"
+      ],
+      "url": "https://github.com/carolynlopez/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "sales",
+    "seniority": "mid",
+    "total_experience_years": 5,
+    "is_emerging_profile": false,
+    "candidate_index": 426
+  }
+}

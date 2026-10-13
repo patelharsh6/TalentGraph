@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Charlene Wright",
+    "email": "charlene.wright.73@gmail.com",
+    "phone": "+1-389-746-3389x15624",
+    "location": {
+      "city": "New Kathleen",
+      "region": "VA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/charlene-wright",
+      "https://github.com/charlenewright"
+    ]
+  },
+  "summary": "Experienced Mid professional with 3+ years of expertise in finance. Proven track record delivering scalable solutions using Corporate Finance, Stakeholder Management, LBO Modeling.",
+  "experience": [
+    {
+      "company": "Thompson-Landry",
+      "title": "Senior Investment Analyst",
+      "location": "Jacksonshire, GA",
+      "start": "2023-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Corporate Finance, Financial Modeling.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Corporate Finance",
+        "Financial Modeling",
+        "Bloomberg Terminal",
+        "Stakeholder Management"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Shahbury State University",
+      "degree": "Bachelor of Science",
+      "field": "Finance & Economics",
+      "start": "2019-09",
+      "end": "2023-05",
+      "grade": "3.76 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Corporate Finance",
+      "canonical_slug": "corporate-finance",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Corporate Finance across multiple enterprise roles."
+    },
+    {
+      "raw": "Stakeholder Management",
+      "canonical_slug": "stakeholder-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Stakeholder Management across multiple enterprise roles."
+    },
+    {
+      "raw": "LBO Modeling",
+      "canonical_slug": "lbo-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized LBO Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "IFRS Standards",
+      "canonical_slug": "ifrs",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized IFRS Standards across multiple enterprise roles."
+    },
+    {
+      "raw": "Advanced Excel",
+      "canonical_slug": "microsoft-excel",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+    },
+    {
+      "raw": "Bloomberg Terminal",
+      "canonical_slug": "bloomberg-terminal",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Bloomberg Terminal across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Modeling",
+      "canonical_slug": "financial-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Modeling across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-359214"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Corporate Finance.",
+      "technologies": [
+        "Corporate Finance",
+        "Stakeholder Management",
+        "LBO Modeling"
+      ],
+      "url": "https://github.com/charlenewright/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "mid",
+    "total_experience_years": 3,
+    "is_emerging_profile": false,
+    "candidate_index": 431
+  }
+}

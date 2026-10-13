@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Michelle Phelps",
+    "email": "michelle.phelps.96@gmail.com",
+    "phone": "(387)205-6227",
+    "location": {
+      "city": "Jacquelineborough",
+      "region": "UT",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/michelle-phelps",
+      "https://github.com/michellephelps"
+    ]
+  },
+  "summary": "Experienced Principal professional with 18+ years of expertise in finance. Proven track record delivering scalable solutions using LBO Modeling, Quantitative Risk Management, US GAAP.",
+  "experience": [
+    {
+      "company": "Medina LLC",
+      "title": "Senior Corporate Finance Lead",
+      "location": "North Colleenburgh, CA",
+      "start": "2022-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Quantitative Risk Management, Corporate Finance.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Quantitative Risk Management",
+        "Corporate Finance",
+        "IFRS Standards",
+        "US GAAP"
+      ]
+    },
+    {
+      "company": "Fields-Ware",
+      "title": "Senior Investment Analyst",
+      "location": "Courtneyborough, KY",
+      "start": "2018-06",
+      "end": "2022-06",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Advanced Excel, LBO Modeling.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Advanced Excel",
+        "LBO Modeling",
+        "SQL",
+        "US GAAP"
+      ]
+    },
+    {
+      "company": "Hoover-Parrish",
+      "title": "Portfolio Manager",
+      "location": "Michaelfurt, KS",
+      "start": "2013-05",
+      "end": "2018-06",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using US GAAP, Advanced Excel.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "US GAAP",
+        "Advanced Excel",
+        "Corporate Finance",
+        "DCF Valuation"
+      ]
+    },
+    {
+      "company": "Weaver, Hopkins and Jones",
+      "title": "Financial Analyst",
+      "location": "North Jessica, KY",
+      "start": "2008-06",
+      "end": "2013-05",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Bloomberg Terminal, Corporate Finance.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Bloomberg Terminal",
+        "Corporate Finance",
+        "LBO Modeling",
+        "DCF Valuation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "West Anne State University",
+      "degree": "Master of Science",
+      "field": "Finance & Economics",
+      "start": "2004-09",
+      "end": "2008-05",
+      "grade": "3.56 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "LBO Modeling",
+      "canonical_slug": "lbo-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized LBO Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "Quantitative Risk Management",
+      "canonical_slug": "financial-risk-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Quantitative Risk Management across multiple enterprise roles."
+    },
+    {
+      "raw": "US GAAP",
+      "canonical_slug": "gaap",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized US GAAP across multiple enterprise roles."
+    },
+    {
+      "raw": "IFRS Standards",
+      "canonical_slug": "ifrs",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized IFRS Standards across multiple enterprise roles."
+    },
+    {
+      "raw": "DCF Valuation",
+      "canonical_slug": "dcf-valuation",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+    },
+    {
+      "raw": "Bloomberg Terminal",
+      "canonical_slug": "bloomberg-terminal",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Bloomberg Terminal across multiple enterprise roles."
+    },
+    {
+      "raw": "Corporate Finance",
+      "canonical_slug": "corporate-finance",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Corporate Finance across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Advanced Excel",
+      "canonical_slug": "microsoft-excel",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-334981"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging LBO Modeling.",
+      "technologies": [
+        "LBO Modeling",
+        "Quantitative Risk Management",
+        "US GAAP"
+      ],
+      "url": "https://github.com/michellephelps/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "principal",
+    "total_experience_years": 18,
+    "is_emerging_profile": false,
+    "candidate_index": 299
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Henry Gray",
+    "email": "henry.gray.19@gmail.com",
+    "phone": "236.315.1718x27548",
+    "location": {
+      "city": "Tristanfurt",
+      "region": "LA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/henry-gray",
+      "https://github.com/henrygray"
+    ]
+  },
+  "summary": "Experienced Senior professional with 8+ years of expertise in education. Proven track record delivering scalable solutions using Instructional Design, Active Mentoring, Assessment Design.",
+  "experience": [
+    {
+      "company": "Burke-Collins",
+      "title": "Senior Instructional Designer",
+      "location": "Perezchester, LA",
+      "start": "2022-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Learning Management Systems (LMS), Curriculum Development.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Learning Management Systems (LMS)",
+        "Curriculum Development",
+        "Educational Technology (EdTech)",
+        "Public Speaking & Lecturing"
+      ]
+    },
+    {
+      "company": "Lopez-Jones",
+      "title": "Curriculum Developer",
+      "location": "Crosbystad, HI",
+      "start": "2018-08",
+      "end": "2022-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Curriculum Development, Learning Management Systems (LMS).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Curriculum Development",
+        "Learning Management Systems (LMS)",
+        "Instructional Design",
+        "Active Mentoring"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lake Travisville State University",
+      "degree": "Bachelor of Science",
+      "field": "Education & Curriculum Design",
+      "start": "2014-09",
+      "end": "2018-05",
+      "grade": "3.56 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Instructional Design",
+      "canonical_slug": "instructional-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Instructional Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Active Mentoring",
+      "canonical_slug": "mentoring",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Active Mentoring across multiple enterprise roles."
+    },
+    {
+      "raw": "Assessment Design",
+      "canonical_slug": "assessment-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Assessment Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Learning Management Systems (LMS)",
+      "canonical_slug": "lms-platforms",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Learning Management Systems (LMS) across multiple enterprise roles."
+    },
+    {
+      "raw": "Public Speaking & Lecturing",
+      "canonical_slug": "public-speaking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Public Speaking & Lecturing across multiple enterprise roles."
+    },
+    {
+      "raw": "Curriculum Development",
+      "canonical_slug": "curriculum-development",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Curriculum Development across multiple enterprise roles."
+    },
+    {
+      "raw": "Educational Technology (EdTech)",
+      "canonical_slug": "edtech-solutions",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Educational Technology (EdTech) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Education Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-721121"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Education Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Instructional Design.",
+      "technologies": [
+        "Instructional Design",
+        "Active Mentoring",
+        "Assessment Design"
+      ],
+      "url": "https://github.com/henrygray/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "education",
+    "seniority": "senior",
+    "total_experience_years": 8,
+    "is_emerging_profile": false,
+    "candidate_index": 172
+  }
+}

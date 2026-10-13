@@ -1,0 +1,676 @@
+# Skill implication rules (plan §6.2, ordered.md 1.4).
+# A candidate possessing >= min_count of antecedent_slugs implies consequent_slug with confidence.
+# Contains >= 150 well-formed rules across tech, data, business, and domain areas.
+
+implications:
+  # Machine Learning & AI
+  - antecedent_slugs: [tensorflow, pytorch, keras]
+    consequent_slug: deep-learning
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [tensorflow, pytorch, jax]
+    consequent_slug: deep-learning
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [deep-learning, natural-language-processing, computer-vision]
+    consequent_slug: artificial-intelligence
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [huggingface-transformers, langchain, llamaindex]
+    consequent_slug: generative-ai
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [vllm, deepspeed, triton-inference-server]
+    consequent_slug: llm-inference-optimization
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [scikit-learn, xgboost, lightgbm]
+    consequent_slug: machine-learning
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [spacy, nltk, transformers]
+    consequent_slug: natural-language-processing
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [opencv, torchvision, detectron2]
+    consequent_slug: computer-vision
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [mlflow, weights-and-biases, kubeflow]
+    consequent_slug: machine-learning-operations
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [pinecone, chromadb, weaviate, qdrant]
+    consequent_slug: vector-databases
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [rag, vector-databases, embeddings]
+    consequent_slug: retrieval-augmented-generation
+    min_count: 2
+    confidence: 0.90
+  - antecedent_slugs: [pandas, numpy, scipy]
+    consequent_slug: data-analysis
+    min_count: 1
+    confidence: 0.80
+  - antecedent_slugs: [polars, pyarrow, dask]
+    consequent_slug: high-performance-data-processing
+    min_count: 1
+    confidence: 0.80
+
+  # Frontend Development
+  - antecedent_slugs: [react, vue-js, angular, svelte]
+    consequent_slug: frontend-development
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [next-js, remix, astro]
+    consequent_slug: react
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [nuxt-js]
+    consequent_slug: vue-js
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [react, redux, zustand]
+    consequent_slug: react-state-management
+    min_count: 2
+    confidence: 0.85
+  - antecedent_slugs: [typescript, react]
+    consequent_slug: frontend-web-development
+    min_count: 2
+    confidence: 0.90
+  - antecedent_slugs: [tailwindcss, sass-css, css3]
+    consequent_slug: styling-and-css
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [webpack, vite, rollup, esbuild]
+    consequent_slug: frontend-build-tools
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [jest, cypress, playwright, vitest]
+    consequent_slug: frontend-testing
+    min_count: 1
+    confidence: 0.85
+
+  # Backend & Languages
+  - antecedent_slugs: [fastapi, django, flask]
+    consequent_slug: python
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [fastapi, django, flask]
+    consequent_slug: backend-development
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [express-js, nest-js, fastify]
+    consequent_slug: node-js
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [spring-boot, spring-framework, micronaut]
+    consequent_slug: java
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [spring-boot, spring-framework]
+    consequent_slug: backend-development
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [aspnet-core, entity-framework-core]
+    consequent_slug: c-sharp
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [ruby-on-rails]
+    consequent_slug: ruby-language
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [laravel, symfony]
+    consequent_slug: php
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [gin-gonic, fiber-go, echo-go]
+    consequent_slug: golang
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [actix-web, axum, rocket-rs]
+    consequent_slug: rust-language
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [phoenix-framework]
+    consequent_slug: elixir
+    min_count: 1
+    confidence: 0.95
+
+  # Cloud & DevOps
+  - antecedent_slugs: [kubernetes, docker]
+    consequent_slug: container-orchestration
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [kubernetes, helm, kustomize]
+    consequent_slug: kubernetes-management
+    min_count: 2
+    confidence: 0.90
+  - antecedent_slugs: [terraform, ansible, pulumi]
+    consequent_slug: infrastructure-as-code
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [aws-lambda, aws-ecs, aws-eks, aws-s3, aws-ec2]
+    consequent_slug: amazon-web-services
+    min_count: 2
+    confidence: 0.90
+  - antecedent_slugs: [google-cloud-storage, google-kubernetes-engine, bigquery, google-cloud-run]
+    consequent_slug: google-cloud-platform
+    min_count: 2
+    confidence: 0.90
+  - antecedent_slugs: [azure-devops, azure-blob-storage, azure-kubernetes-service, azure-app-service]
+    consequent_slug: microsoft-azure
+    min_count: 2
+    confidence: 0.90
+  - antecedent_slugs: [jenkins, github-actions, gitlab-ci, circleci]
+    consequent_slug: continuous-integration-and-continuous-delivery
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [prometheus, grafana, jaeger, opentelemetry]
+    consequent_slug: observability-and-monitoring
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [istio, envoy-proxy, linkerd]
+    consequent_slug: service-mesh
+    min_count: 1
+    confidence: 0.85
+
+  # Databases & Data Engineering
+  - antecedent_slugs: [postgresql, mysql, sqlite, oracle-db, sql-server]
+    consequent_slug: relational-database-management-system
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [postgresql, mysql]
+    consequent_slug: sql
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [mongodb, cassandra, couchbase, dynamodb]
+    consequent_slug: nosql-databases
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [apache-spark, databricks, pyspark]
+    consequent_slug: big-data-processing
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [apache-kafka, rabbitmq, apache-pulsar]
+    consequent_slug: message-broker-and-event-streaming
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [apache-airflow, prefect, dagster]
+    consequent_slug: data-pipeline-orchestration
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [dbt, snowflake, bigquery, redshift]
+    consequent_slug: data-warehousing-and-analytics
+    min_count: 2
+    confidence: 0.90
+  - antecedent_slugs: [pyspark]
+    consequent_slug: python
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [sqlalchemy, prisma, hibernate, typeorm]
+    consequent_slug: object-relational-mapping
+    min_count: 1
+    confidence: 0.90
+
+  # Mobile Development
+  - antecedent_slugs: [react-native, expo]
+    consequent_slug: cross-platform-mobile-development
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [flutter, dart]
+    consequent_slug: cross-platform-mobile-development
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [swiftui, uikit, swift-language]
+    consequent_slug: ios-development
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [jetpack-compose, android-sdk, kotlin]
+    consequent_slug: android-development
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [ios-development, android-development]
+    consequent_slug: mobile-app-development
+    min_count: 1
+    confidence: 0.90
+
+  # Security & Networking
+  - antecedent_slugs: [oauth2, openid-connect, jwt, saml]
+    consequent_slug: authentication-and-authorization
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [penetration-testing, burp-suite, owasp-top-10, wireshark]
+    consequent_slug: cybersecurity-and-application-security
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [soc2, gdpr, hipaa-compliance, iso-27001]
+    consequent_slug: security-compliance-and-governance
+    min_count: 1
+    confidence: 0.85
+
+  # Software Architecture & Quality
+  - antecedent_slugs: [microservices, grpc, graphql, rest-api]
+    consequent_slug: software-architecture
+    min_count: 2
+    confidence: 0.85
+  - antecedent_slugs: [domain-driven-design, clean-architecture, solid-principles]
+    consequent_slug: software-design-patterns
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [test-driven-development, unit-testing, integration-testing]
+    consequent_slug: software-quality-assurance
+    min_count: 1
+    confidence: 0.85
+
+  # Product & Design
+  - antecedent_slugs: [figma, adobe-xd, sketch]
+    consequent_slug: ui-ux-design-tools
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [wireframing, prototyping, user-research, usability-testing]
+    consequent_slug: user-experience-design
+    min_count: 2
+    confidence: 0.85
+  - antecedent_slugs: [design-systems, component-libraries]
+    consequent_slug: design-systems-management
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [jira, linear, confluence, notion, asana]
+    consequent_slug: project-tracking-and-collaboration
+    min_count: 1
+    confidence: 0.80
+  - antecedent_slugs: [agile-methodology, scrum, kanban]
+    consequent_slug: agile-development-practices
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [product-roadmapping, user-stories, product-discovery]
+    consequent_slug: product-management
+    min_count: 2
+    confidence: 0.85
+
+  # Business & Finance
+  - antecedent_slugs: [financial-modeling, dcf-valuation, lbo-modeling]
+    consequent_slug: corporate-finance
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [financial-accounting, gaap, ifrs]
+    consequent_slug: accounting-principles
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [bloomberg-terminal, factset, capital-iq]
+    consequent_slug: financial-data-analytics
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [risk-management, value-at-risk, monte-carlo-simulation]
+    consequent_slug: financial-risk-management
+    min_count: 1
+    confidence: 0.85
+
+  # Marketing & Sales
+  - antecedent_slugs: [search-engine-optimization, search-engine-marketing, google-ads]
+    consequent_slug: digital-marketing
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [google-analytics, mixpanel, amplitude]
+    consequent_slug: product-and-web-analytics
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [salesforce, hubspot, marketo]
+    consequent_slug: crm-and-marketing-automation
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [b2b-sales, enterprise-sales, sales-pipeline-management]
+    consequent_slug: sales-strategy
+    min_count: 1
+    confidence: 0.85
+
+  # Healthcare & Life Sciences
+  - antecedent_slugs: [electronic-health-records, epic-systems, cerner]
+    consequent_slug: health-informatics
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [clinical-trials, gcp-guidelines, fda-regulations]
+    consequent_slug: clinical-research-compliance
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [bioinformatics, genomics, next-generation-sequencing]
+    consequent_slug: computational-biology
+    min_count: 1
+    confidence: 0.90
+
+  # Soft Skills & Leadership
+  - antecedent_slugs: [team-leadership, people-management, mentoring]
+    consequent_slug: leadership-and-management
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [technical-writing, public-speaking, stakeholder-communication]
+    consequent_slug: effective-communication
+    min_count: 1
+    confidence: 0.80
+  - antecedent_slugs: [root-cause-analysis, critical-thinking, analytical-skills]
+    consequent_slug: problem-solving
+    min_count: 1
+    confidence: 0.80
+
+  # Additional Expanded Rules (to ensure >= 150 well formed rules)
+  - antecedent_slugs: [solidity, ethereum, smart-contracts]
+    consequent_slug: blockchain-development
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [web3-js, ethers-js, hardhat]
+    consequent_slug: blockchain-development
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [graphql, apollo-client, relay]
+    consequent_slug: graphql-ecosystem
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [grpc, protocol-buffers]
+    consequent_slug: rpc-communication
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [webrtc, websocket, socket-io]
+    consequent_slug: realtime-web-applications
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [webgl, three-js, babylon-js]
+    consequent_slug: 3d-web-graphics
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [locust, jmeter, k6]
+    consequent_slug: performance-and-load-testing
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [sonarqube, snyk, checkmarx]
+    consequent_slug: static-code-analysis
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [apache-beam, apache-flink, apache-spark-streaming]
+    consequent_slug: real-time-stream-processing
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [presto, trino, apache-drill]
+    consequent_slug: distributed-sql-query-engines
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [debezium, kafka-connect]
+    consequent_slug: change-data-capture
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [neo4j, amazon-neptune, graph-databases]
+    consequent_slug: graph-data-modeling
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [clickhouse, apache-doris, starrocks]
+    consequent_slug: olap-databases
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [redis, memcached]
+    consequent_slug: in-memory-caching
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [celery, rq, bullmq]
+    consequent_slug: background-task-processing
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [nginx, caddy, apache-http-server]
+    consequent_slug: web-server-administration
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [linux, bash-scripting, shell-scripting]
+    consequent_slug: unix-system-administration
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [ansible, puppet, chef]
+    consequent_slug: configuration-management
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [cloudflare, fastly, aws-cloudfront]
+    consequent_slug: content-delivery-networks
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [oauth2, saml, openid-connect]
+    consequent_slug: single-sign-on
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [jwt, session-management, cookies]
+    consequent_slug: web-session-security
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [pytest, unittest, mock]
+    consequent_slug: python-testing
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [jest, mocha, chai, jasmine]
+    consequent_slug: javascript-testing
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [junit, mockito, testng]
+    consequent_slug: java-testing
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [nunit, xunit, moq]
+    consequent_slug: csharp-testing
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [selenium, cypress, playwright]
+    consequent_slug: end-to-end-browser-testing
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [postman, insomnia, swagger-ui]
+    consequent_slug: api-testing-and-documentation
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [alembic, flyway, liquibase]
+    consequent_slug: database-migrations
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [electron, tauri]
+    consequent_slug: desktop-application-development
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [unity-3d, unreal-engine, godot]
+    consequent_slug: game-development-engines
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [opencv, ffmpeg, librosa]
+    consequent_slug: multimedia-processing
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [power-bi, tableau, looker, qlik-sense]
+    consequent_slug: business-intelligence-and-reporting
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [excel-vba, google-apps-script]
+    consequent_slug: spreadsheet-automation
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [quickbooks, xero, netsuite, sap]
+    consequent_slug: enterprise-accounting-software
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [sap-erp, oracle-erp, microsoft-dynamics-365]
+    consequent_slug: enterprise-resource-planning
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [supply-chain-optimization, inventory-management, logistics]
+    consequent_slug: supply-chain-management
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [iso-9001, six-sigma, lean-manufacturing]
+    consequent_slug: quality-management-systems
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [scrum-master, product-owner, agile-coach]
+    consequent_slug: agile-leadership
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [content-marketing, copywriting, social-media-marketing]
+    consequent_slug: inbound-marketing
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [ab-testing, conversion-rate-optimization, landing-page-optimization]
+    consequent_slug: growth-marketing
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [email-marketing, mailchimp, klaviyo]
+    consequent_slug: email-campaign-management
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [contract-negotiation, vendor-management, procurement]
+    consequent_slug: strategic-sourcing
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [legal-research, contract-drafting, regulatory-compliance]
+    consequent_slug: corporate-legal-practice
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [talent-acquisition, technical-recruiting, candidate-sourcing]
+    consequent_slug: human-resources-recruitment
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [employee-relations, performance-management, hr-policies]
+    consequent_slug: human-resources-management
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [customer-success, account-management, churn-reduction]
+    consequent_slug: customer-retention-strategy
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [saas-metrics, arr-mrr-growth, customer-acquisition-cost]
+    consequent_slug: saas-business-strategy
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [event-driven-architecture, kafka, rabbitmq]
+    consequent_slug: event-driven-systems
+    min_count: 2
+    confidence: 0.90
+  - antecedent_slugs: [cqrs, event-sourcing]
+    consequent_slug: advanced-software-patterns
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [pwa, service-workers, web-manifest]
+    consequent_slug: progressive-web-apps
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [webassembly, rust-language, c-plus-plus]
+    consequent_slug: high-performance-web-computing
+    min_count: 2
+    confidence: 0.85
+  - antecedent_slugs: [solidity, vyper]
+    consequent_slug: smart-contract-programming
+    min_count: 1
+    confidence: 0.95
+  - antecedent_slugs: [zero-knowledge-proofs, zk-snarks, zk-rollups]
+    consequent_slug: cryptographic-privacy-systems
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [cuda, opencl, gpu-programming]
+    consequent_slug: parallel-computing-and-acceleration
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [quantization, pruning, tensorrt, onnx-runtime]
+    consequent_slug: machine-learning-model-optimization
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [fine-tuning, lora, qlora, peft]
+    consequent_slug: llm-fine-tuning
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [prompt-engineering, few-shot-prompting, chain-of-thought]
+    consequent_slug: llm-application-development
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [synthetic-data-generation, data-augmentation, label-studio]
+    consequent_slug: training-data-preparation
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [recommender-systems, collaborative-filtering, matrix-factorization]
+    consequent_slug: personalization-algorithms
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [time-series-forecasting, arima, prophet, lstm]
+    consequent_slug: time-series-analysis
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [anomaly-detection, isolation-forest, autoencoders]
+    consequent_slug: statistical-outlier-detection
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [graph-neural-networks, pytorch-geometric, dgl]
+    consequent_slug: graph-machine-learning
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [reinforcement-learning, q-learning, ppo, gym]
+    consequent_slug: reinforcement-learning-systems
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [audio-processing, speech-to-text, whisper-ai]
+    consequent_slug: speech-recognition-and-audio-ai
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [ocr, tesseract, easyocr]
+    consequent_slug: document-intelligence-and-ocr
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [synthetic-biology, crispr, computational-genetics]
+    consequent_slug: biotechnology-engineering
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [telemedicine, remote-patient-monitoring, hl7-fhir]
+    consequent_slug: digital-health-systems
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [pci-dss, payment-gateways, stripe-integration]
+    consequent_slug: payment-systems-and-fintech
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [algorithmic-trading, quantitative-finance, backtesting]
+    consequent_slug: quantitative-trading-systems
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [credit-risk-modeling, fraud-detection, kyc-aml]
+    consequent_slug: financial-compliance-and-risk
+    min_count: 1
+    confidence: 0.85
+  - antecedent_slugs: [iot-protocols, mqtt, coap, zigbee]
+    consequent_slug: internet-of-things
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [embedded-c, rtos, microcontrollers]
+    consequent_slug: embedded-systems-engineering
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [fpga, verilog, vhdl]
+    consequent_slug: digital-circuit-design
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [ros, kinematics, lidar, slam]
+    consequent_slug: robotics-engineering
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [autonomous-driving, adas, path-planning]
+    consequent_slug: autonomous-systems
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [bim, revit, autocad]
+    consequent_slug: architectural-design-software
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [gis, arcgis, qgis, spatial-analysis]
+    consequent_slug: geospatial-data-systems
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [scada, plc-programming, industrial-automation]
+    consequent_slug: industrial-control-systems
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [finite-element-analysis, ansys, solidworks]
+    consequent_slug: mechanical-engineering-simulation
+    min_count: 1
+    confidence: 0.90
+  - antecedent_slugs: [smart-grid, renewable-energy, solar-pv]
+    consequent_slug: clean-energy-technology
+    min_count: 1
+    confidence: 0.85

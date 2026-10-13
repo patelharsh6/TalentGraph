@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Christine Gonzalez",
+    "email": "christine.gonzalez.20@yahoo.com",
+    "phone": "385-571-4224x109",
+    "location": {
+      "city": "Andreaview",
+      "region": "FL",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/christine-gonzalez",
+      "https://github.com/christinegonzalez"
+    ]
+  },
+  "summary": "Experienced Principal professional with 20+ years of expertise in data. Proven track record delivering scalable solutions using Apache Airflow, PyTorch, Pandas.",
+  "experience": [
+    {
+      "company": "Brock, Andrews and Jackson",
+      "title": "Senior Analytics Engineer",
+      "location": "Christinamouth, ND",
+      "start": "2021-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Pandas, Data Visualization.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Pandas",
+        "Data Visualization",
+        "Apache Airflow",
+        "PyTorch"
+      ]
+    },
+    {
+      "company": "Williams-Johnson",
+      "title": "AI Research Scientist",
+      "location": "North Patrickland, NE",
+      "start": "2016-06",
+      "end": "2021-09",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Apache Spark (PySpark), Data Visualization.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Apache Spark (PySpark)",
+        "Data Visualization",
+        "Scikit-Learn",
+        "Large Language Models (LLM)"
+      ]
+    },
+    {
+      "company": "White-Carlson",
+      "title": "Data Scientist",
+      "location": "Jensenport, MA",
+      "start": "2011-04",
+      "end": "2016-06",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Apache Airflow, Python.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Apache Airflow",
+        "Python",
+        "PyTorch",
+        "Pandas"
+      ]
+    },
+    {
+      "company": "Marquez Ltd",
+      "title": "Data Engineer",
+      "location": "Port Kathyshire, DC",
+      "start": "2006-05",
+      "end": "2011-04",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Data Visualization, Apache Airflow.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Data Visualization",
+        "Apache Airflow",
+        "Large Language Models (LLM)",
+        "Apache Spark (PySpark)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Port Leahmouth State University",
+      "degree": "Master of Science",
+      "field": "Data Science & Statistics",
+      "start": "2002-09",
+      "end": "2006-05",
+      "grade": "3.61 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Apache Airflow",
+      "canonical_slug": "apache-airflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+    },
+    {
+      "raw": "PyTorch",
+      "canonical_slug": "pytorch",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PyTorch across multiple enterprise roles."
+    },
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    },
+    {
+      "raw": "Data Visualization",
+      "canonical_slug": "business-intelligence",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Data Visualization across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "Large Language Models (LLM)",
+      "canonical_slug": "large-language-models",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Large Language Models (LLM) across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Spark (PySpark)",
+      "canonical_slug": "apache-spark",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Spark (PySpark) across multiple enterprise roles."
+    },
+    {
+      "raw": "Scikit-Learn",
+      "canonical_slug": "scikit-learn",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Scikit-Learn across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-461076"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Apache Airflow.",
+      "technologies": [
+        "Apache Airflow",
+        "PyTorch",
+        "Pandas"
+      ],
+      "url": "https://github.com/christinegonzalez/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "principal",
+    "total_experience_years": 20,
+    "is_emerging_profile": false,
+    "candidate_index": 144
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Tammy Miles",
+    "email": "tammy.miles.70@yahoo.com",
+    "phone": "+1-666-483-4960x478",
+    "location": {
+      "city": "South Alexanderside",
+      "region": "MA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/tammy-miles",
+      "https://github.com/tammymiles"
+    ]
+  },
+  "summary": "Experienced Lead professional with 9+ years of expertise in finance. Proven track record delivering scalable solutions using Financial Modeling, Financial Analysis, Stakeholder Management.",
+  "experience": [
+    {
+      "company": "Cruz and Sons",
+      "title": "Senior Corporate Finance Lead",
+      "location": "Bethanybury, GU",
+      "start": "2023-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Stakeholder Management, Financial Analysis.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Stakeholder Management",
+        "Financial Analysis",
+        "LBO Modeling",
+        "SQL"
+      ]
+    },
+    {
+      "company": "Russell, Daniels and Martinez",
+      "title": "Portfolio Manager",
+      "location": "West Amanda, ND",
+      "start": "2020-03",
+      "end": "2023-07",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Financial Modeling, Stakeholder Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Financial Modeling",
+        "Stakeholder Management",
+        "SQL",
+        "IFRS Standards"
+      ]
+    },
+    {
+      "company": "Shaw, Mendez and Beard",
+      "title": "Financial Analyst",
+      "location": "West Randall, FL",
+      "start": "2017-11",
+      "end": "2020-03",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Financial Modeling, SQL.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Financial Modeling",
+        "SQL",
+        "Stakeholder Management",
+        "LBO Modeling"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Guzmanland State University",
+      "degree": "PhD",
+      "field": "Finance & Economics",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.82 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Financial Modeling",
+      "canonical_slug": "financial-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Analysis",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Analysis across multiple enterprise roles."
+    },
+    {
+      "raw": "Stakeholder Management",
+      "canonical_slug": "stakeholder-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Stakeholder Management across multiple enterprise roles."
+    },
+    {
+      "raw": "LBO Modeling",
+      "canonical_slug": "lbo-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized LBO Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "DCF Valuation",
+      "canonical_slug": "dcf-valuation",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "IFRS Standards",
+      "canonical_slug": "ifrs",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized IFRS Standards across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-876677"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Financial Modeling.",
+      "technologies": [
+        "Financial Modeling",
+        "Financial Analysis",
+        "Stakeholder Management"
+      ],
+      "url": "https://github.com/tammymiles/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "lead",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 453
+  }
+}

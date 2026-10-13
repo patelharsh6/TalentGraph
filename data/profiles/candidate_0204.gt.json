@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Bethany Mahoney",
+    "email": "bethany.mahoney.26@gmail.com",
+    "phone": "843.608.9487x06056",
+    "location": {
+      "city": "Lake Aprilfort",
+      "region": "MN",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/bethany-mahoney",
+      "https://github.com/bethanymahoney"
+    ]
+  },
+  "summary": "Experienced Principal professional with 18+ years of expertise in manufacturing. Proven track record delivering scalable solutions using SolidWorks CAD, Supply Chain Management, SCADA Systems.",
+  "experience": [
+    {
+      "company": "Blake, Stephenson and Walker",
+      "title": "Senior Industrial Automation Engineer",
+      "location": "Samanthaside, NV",
+      "start": "2022-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Supply Chain Management, Embedded C.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Supply Chain Management",
+        "Embedded C",
+        "Root Cause Analysis",
+        "Internet of Things (IoT)"
+      ]
+    },
+    {
+      "company": "Smith-Lee",
+      "title": "Industrial Automation Engineer",
+      "location": "New Lindseybury, UT",
+      "start": "2018-05",
+      "end": "2022-07",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Internet of Things (IoT), Root Cause Analysis.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Internet of Things (IoT)",
+        "Root Cause Analysis",
+        "Supply Chain Management",
+        "SolidWorks CAD"
+      ]
+    },
+    {
+      "company": "Rosario-Stark",
+      "title": "Operations Lead",
+      "location": "East Mark, CA",
+      "start": "2013-06",
+      "end": "2018-05",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Embedded C, SCADA Systems.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Embedded C",
+        "SCADA Systems",
+        "SolidWorks CAD",
+        "Root Cause Analysis"
+      ]
+    },
+    {
+      "company": "Garrett, Johnson and Reynolds",
+      "title": "Quality Assurance Engineer",
+      "location": "New Lauramouth, MP",
+      "start": "2008-02",
+      "end": "2013-06",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Embedded C, SCADA Systems.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Embedded C",
+        "SCADA Systems",
+        "Internet of Things (IoT)",
+        "SolidWorks CAD"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Johnfort State University",
+      "degree": "Bachelor of Arts",
+      "field": "Industrial Engineering",
+      "start": "2004-09",
+      "end": "2008-05",
+      "grade": "3.67 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "SolidWorks CAD",
+      "canonical_slug": "solidworks",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SolidWorks CAD across multiple enterprise roles."
+    },
+    {
+      "raw": "Supply Chain Management",
+      "canonical_slug": "supply-chain-management",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Supply Chain Management across multiple enterprise roles."
+    },
+    {
+      "raw": "SCADA Systems",
+      "canonical_slug": "scada",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized SCADA Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Embedded C",
+      "canonical_slug": "embedded-c",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Embedded C across multiple enterprise roles."
+    },
+    {
+      "raw": "Internet of Things (IoT)",
+      "canonical_slug": "internet-of-things",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Internet of Things (IoT) across multiple enterprise roles."
+    },
+    {
+      "raw": "Root Cause Analysis",
+      "canonical_slug": "root-cause-analysis",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Root Cause Analysis across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Manufacturing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-787247"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Manufacturing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging SolidWorks CAD.",
+      "technologies": [
+        "SolidWorks CAD",
+        "Supply Chain Management",
+        "SCADA Systems"
+      ],
+      "url": "https://github.com/bethanymahoney/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "manufacturing",
+    "seniority": "principal",
+    "total_experience_years": 18,
+    "is_emerging_profile": false,
+    "candidate_index": 204
+  }
+}

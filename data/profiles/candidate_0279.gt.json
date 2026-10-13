@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Heather Russell",
+    "email": "heather.russell.35@hotmail.com",
+    "phone": "752-787-3397",
+    "location": {
+      "city": "Port Carlos",
+      "region": "NE",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/heather-russell",
+      "https://github.com/heatherrussell"
+    ]
+  },
+  "summary": "Experienced Principal professional with 15+ years of expertise in marketing. Proven track record delivering scalable solutions using Google Analytics 4 (GA4), Search Engine Optimization (SEO), A/B Testing & CRO.",
+  "experience": [
+    {
+      "company": "Bennett, Jones and Miller",
+      "title": "Senior Demand Generation Strategist",
+      "location": "Craigfort, IN",
+      "start": "2023-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Google Analytics 4 (GA4), HubSpot.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Google Analytics 4 (GA4)",
+        "HubSpot",
+        "Search Engine Marketing (SEM)",
+        "A/B Testing & CRO"
+      ]
+    },
+    {
+      "company": "Guzman LLC",
+      "title": "Digital Marketing Lead",
+      "location": "East Loriport, MP",
+      "start": "2019-02",
+      "end": "2023-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Search Engine Optimization (SEO), Salesforce Marketing Cloud.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Search Engine Optimization (SEO)",
+        "Salesforce Marketing Cloud",
+        "A/B Testing & CRO",
+        "Google Analytics 4 (GA4)"
+      ]
+    },
+    {
+      "company": "Myers-Howard",
+      "title": "Senior SEO Specialist",
+      "location": "West Charles, OK",
+      "start": "2015-12",
+      "end": "2019-02",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Salesforce Marketing Cloud, Google Analytics 4 (GA4).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Salesforce Marketing Cloud",
+        "Google Analytics 4 (GA4)",
+        "Copywriting",
+        "Content Strategy"
+      ]
+    },
+    {
+      "company": "Castaneda PLC",
+      "title": "Digital Marketing Lead",
+      "location": "Reginaldton, ND",
+      "start": "2011-01",
+      "end": "2015-12",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using HubSpot, Google Analytics 4 (GA4).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HubSpot",
+        "Google Analytics 4 (GA4)",
+        "Search Engine Optimization (SEO)",
+        "Copywriting"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Thomasview State University",
+      "degree": "Bachelor of Science",
+      "field": "Marketing & Communications",
+      "start": "2007-09",
+      "end": "2011-05",
+      "grade": "3.89 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Google Analytics 4 (GA4)",
+      "canonical_slug": "google-analytics",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Optimization (SEO)",
+      "canonical_slug": "search-engine-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Optimization (SEO) across multiple enterprise roles."
+    },
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce Marketing Cloud",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+    },
+    {
+      "raw": "Copywriting",
+      "canonical_slug": "copywriting",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Copywriting across multiple enterprise roles."
+    },
+    {
+      "raw": "Content Strategy",
+      "canonical_slug": "content-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Content Strategy across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Marketing (SEM)",
+      "canonical_slug": "search-engine-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Marketing (SEM) across multiple enterprise roles."
+    },
+    {
+      "raw": "HubSpot",
+      "canonical_slug": "hubspot",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized HubSpot across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-428634"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Google Analytics 4 (GA4).",
+      "technologies": [
+        "Google Analytics 4 (GA4)",
+        "Search Engine Optimization (SEO)",
+        "A/B Testing & CRO"
+      ],
+      "url": "https://github.com/heatherrussell/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "principal",
+    "total_experience_years": 15,
+    "is_emerging_profile": false,
+    "candidate_index": 279
+  }
+}

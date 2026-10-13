@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Destiny Campbell",
+    "email": "destiny.campbell.15@gmail.com",
+    "phone": "001-811-597-3881x82730",
+    "location": {
+      "city": "Jeremiahshire",
+      "region": "WY",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/destiny-campbell",
+      "https://github.com/destinycampbell"
+    ]
+  },
+  "summary": "Experienced Mid professional with 3+ years of expertise in data. Proven track record delivering scalable solutions using Apache Spark (PySpark), NumPy, Data Visualization.",
+  "experience": [
+    {
+      "company": "Mason-Shields",
+      "title": "Data Scientist",
+      "location": "Lake Calvin, NC",
+      "start": "2023-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using RAG Architecture, dbt.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "RAG Architecture",
+        "dbt",
+        "Data Visualization",
+        "Apache Spark (PySpark)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Brendachester State University",
+      "degree": "Bachelor of Arts",
+      "field": "Data Science & Statistics",
+      "start": "2019-09",
+      "end": "2023-05",
+      "grade": "3.53 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Apache Spark (PySpark)",
+      "canonical_slug": "apache-spark",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Spark (PySpark) across multiple enterprise roles."
+    },
+    {
+      "raw": "NumPy",
+      "canonical_slug": "numpy",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized NumPy across multiple enterprise roles."
+    },
+    {
+      "raw": "Data Visualization",
+      "canonical_slug": "business-intelligence",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Data Visualization across multiple enterprise roles."
+    },
+    {
+      "raw": "PyTorch",
+      "canonical_slug": "pytorch",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PyTorch across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "dbt",
+      "canonical_slug": "dbt",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized dbt across multiple enterprise roles."
+    },
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    },
+    {
+      "raw": "RAG Architecture",
+      "canonical_slug": "retrieval-augmented-generation",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized RAG Architecture across multiple enterprise roles."
+    },
+    {
+      "raw": "Scikit-Learn",
+      "canonical_slug": "scikit-learn",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Scikit-Learn across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-241498"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Apache Spark (PySpark).",
+      "technologies": [
+        "Apache Spark (PySpark)",
+        "NumPy",
+        "Data Visualization"
+      ],
+      "url": "https://github.com/destinycampbell/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "mid",
+    "total_experience_years": 3,
+    "is_emerging_profile": false,
+    "candidate_index": 551
+  }
+}

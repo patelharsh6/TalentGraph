@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Andrea Bennett",
+    "email": "andrea.bennett.92@gmail.com",
+    "phone": "878-676-8868x7859",
+    "location": {
+      "city": "Jacksonfort",
+      "region": "DC",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/andrea-bennett",
+      "https://github.com/andreabennett"
+    ]
+  },
+  "summary": "Experienced Principal professional with 13+ years of expertise in operations. Proven track record delivering scalable solutions using Agile Scrum Methodology, OKRs / KPIs Tracking, Operations Management.",
+  "experience": [
+    {
+      "company": "Clark PLC",
+      "title": "Senior Operations Manager",
+      "location": "Meaganville, PA",
+      "start": "2023-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Process Optimization, Cross-Functional Leadership.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Process Optimization",
+        "Cross-Functional Leadership",
+        "Operations Management",
+        "Agile Scrum Methodology"
+      ]
+    },
+    {
+      "company": "Reyes-Evans",
+      "title": "Program Manager",
+      "location": "West Tonytown, IL",
+      "start": "2020-10",
+      "end": "2023-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Jira & Confluence, Process Optimization.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Jira & Confluence",
+        "Process Optimization",
+        "Vendor Management & Procurement",
+        "OKRs / KPIs Tracking"
+      ]
+    },
+    {
+      "company": "Hampton-Christensen",
+      "title": "Director of People Operations",
+      "location": "Grimesberg, SD",
+      "start": "2017-09",
+      "end": "2020-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Jira & Confluence, OKRs / KPIs Tracking.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Jira & Confluence",
+        "OKRs / KPIs Tracking",
+        "Cross-Functional Leadership",
+        "Agile Scrum Methodology"
+      ]
+    },
+    {
+      "company": "Sanders-Thomas",
+      "title": "Director of People Operations",
+      "location": "South Johnny, MO",
+      "start": "2013-06",
+      "end": "2017-09",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Cross-Functional Leadership, Process Optimization.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Cross-Functional Leadership",
+        "Process Optimization",
+        "Agile Scrum Methodology",
+        "Vendor Management & Procurement"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Marquezstad State University",
+      "degree": "Bachelor of Science",
+      "field": "Operations Research / Management",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.55 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Agile Scrum Methodology",
+      "canonical_slug": "agile-methodology",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Agile Scrum Methodology across multiple enterprise roles."
+    },
+    {
+      "raw": "OKRs / KPIs Tracking",
+      "canonical_slug": "key-performance-indicators",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized OKRs / KPIs Tracking across multiple enterprise roles."
+    },
+    {
+      "raw": "Operations Management",
+      "canonical_slug": "operations-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Operations Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Jira & Confluence",
+      "canonical_slug": "jira",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Jira & Confluence across multiple enterprise roles."
+    },
+    {
+      "raw": "Process Optimization",
+      "canonical_slug": "process-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Process Optimization across multiple enterprise roles."
+    },
+    {
+      "raw": "Cross-Functional Leadership",
+      "canonical_slug": "cross-functional-collaboration",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Cross-Functional Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Vendor Management & Procurement",
+      "canonical_slug": "vendor-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Vendor Management & Procurement across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Operations Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-411152"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Operations Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Agile Scrum Methodology.",
+      "technologies": [
+        "Agile Scrum Methodology",
+        "OKRs / KPIs Tracking",
+        "Operations Management"
+      ],
+      "url": "https://github.com/andreabennett/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "operations",
+    "seniority": "principal",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 384
+  }
+}

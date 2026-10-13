@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Tammy Mendoza",
+    "email": "tammy.mendoza.63@yahoo.com",
+    "phone": "2276278576",
+    "location": {
+      "city": "Angelatown",
+      "region": "IL",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/tammy-mendoza",
+      "https://github.com/tammymendoza"
+    ]
+  },
+  "summary": "Experienced Senior professional with 9+ years of expertise in operations. Proven track record delivering scalable solutions using Operations Management, Cross-Functional Leadership, Vendor Management & Procurement.",
+  "experience": [
+    {
+      "company": "Jennings, Marsh and Barron",
+      "title": "Senior Director of People Operations",
+      "location": "Carlberg, KY",
+      "start": "2023-05",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Process Optimization, Budgeting & Cost Reduction.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Process Optimization",
+        "Budgeting & Cost Reduction",
+        "Cross-Functional Leadership",
+        "Jira & Confluence"
+      ]
+    },
+    {
+      "company": "Morgan Group",
+      "title": "Director of People Operations",
+      "location": "New Catherine, HI",
+      "start": "2020-05",
+      "end": "2023-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Cross-Functional Leadership, OKRs / KPIs Tracking.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Cross-Functional Leadership",
+        "OKRs / KPIs Tracking",
+        "Jira & Confluence",
+        "Vendor Management & Procurement"
+      ]
+    },
+    {
+      "company": "Wilson, Patton and Parker",
+      "title": "Program Manager",
+      "location": "Jenniferview, MT",
+      "start": "2017-01",
+      "end": "2020-05",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Agile Scrum Methodology, Jira & Confluence.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Agile Scrum Methodology",
+        "Jira & Confluence",
+        "Operations Management",
+        "Cross-Functional Leadership"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Nataliestad State University",
+      "degree": "Bachelor of Arts",
+      "field": "Operations Research / Management",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.61 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Operations Management",
+      "canonical_slug": "operations-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Operations Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Cross-Functional Leadership",
+      "canonical_slug": "cross-functional-collaboration",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Cross-Functional Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Vendor Management & Procurement",
+      "canonical_slug": "vendor-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Vendor Management & Procurement across multiple enterprise roles."
+    },
+    {
+      "raw": "OKRs / KPIs Tracking",
+      "canonical_slug": "key-performance-indicators",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized OKRs / KPIs Tracking across multiple enterprise roles."
+    },
+    {
+      "raw": "Process Optimization",
+      "canonical_slug": "process-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Process Optimization across multiple enterprise roles."
+    },
+    {
+      "raw": "Agile Scrum Methodology",
+      "canonical_slug": "agile-methodology",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Agile Scrum Methodology across multiple enterprise roles."
+    },
+    {
+      "raw": "Budgeting & Cost Reduction",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Budgeting & Cost Reduction across multiple enterprise roles."
+    },
+    {
+      "raw": "Jira & Confluence",
+      "canonical_slug": "jira",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Jira & Confluence across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Operations Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-422002"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Operations Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Operations Management.",
+      "technologies": [
+        "Operations Management",
+        "Cross-Functional Leadership",
+        "Vendor Management & Procurement"
+      ],
+      "url": "https://github.com/tammymendoza/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "operations",
+    "seniority": "senior",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 142
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Gary Miller",
+    "email": "gary.miller.17@gmail.com",
+    "phone": "+1-771-750-6662x670",
+    "location": {
+      "city": "West Joefort",
+      "region": "MO",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/gary-miller",
+      "https://github.com/garymiller"
+    ]
+  },
+  "summary": "Experienced Principal professional with 18+ years of expertise in marketing. Proven track record delivering scalable solutions using Google Analytics 4 (GA4), A/B Testing & CRO, Content Strategy.",
+  "experience": [
+    {
+      "company": "Lewis, Jordan and Young",
+      "title": "Senior Senior SEO Specialist",
+      "location": "New Linda, MA",
+      "start": "2022-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using A/B Testing & CRO, Growth Marketing.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "A/B Testing & CRO",
+        "Growth Marketing",
+        "Salesforce Marketing Cloud",
+        "Search Engine Optimization (SEO)"
+      ]
+    },
+    {
+      "company": "Harper PLC",
+      "title": "Growth Marketing Manager",
+      "location": "Castanedaville, CO",
+      "start": "2018-08",
+      "end": "2022-10",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Salesforce Marketing Cloud, Content Strategy.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Salesforce Marketing Cloud",
+        "Content Strategy",
+        "Google Analytics 4 (GA4)",
+        "Growth Marketing"
+      ]
+    },
+    {
+      "company": "Hogan Inc",
+      "title": "Growth Marketing Manager",
+      "location": "New Roy, MH",
+      "start": "2013-04",
+      "end": "2018-08",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Search Engine Optimization (SEO), Salesforce Marketing Cloud.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Search Engine Optimization (SEO)",
+        "Salesforce Marketing Cloud",
+        "Email Marketing Campaigns",
+        "A/B Testing & CRO"
+      ]
+    },
+    {
+      "company": "Michael Ltd",
+      "title": "Senior SEO Specialist",
+      "location": "North Aaron, HI",
+      "start": "2008-05",
+      "end": "2013-04",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key marketing workflows using Growth Marketing, A/B Testing & CRO.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Growth Marketing",
+        "A/B Testing & CRO",
+        "Google Analytics 4 (GA4)",
+        "Salesforce Marketing Cloud"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "East Kellystad State University",
+      "degree": "Bachelor of Science",
+      "field": "Marketing & Communications",
+      "start": "2004-09",
+      "end": "2008-05",
+      "grade": "3.51 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Google Analytics 4 (GA4)",
+      "canonical_slug": "google-analytics",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+    },
+    {
+      "raw": "A/B Testing & CRO",
+      "canonical_slug": "conversion-rate-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+    },
+    {
+      "raw": "Content Strategy",
+      "canonical_slug": "content-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Content Strategy across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Marketing (SEM)",
+      "canonical_slug": "search-engine-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Marketing (SEM) across multiple enterprise roles."
+    },
+    {
+      "raw": "Email Marketing Campaigns",
+      "canonical_slug": "email-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Email Marketing Campaigns across multiple enterprise roles."
+    },
+    {
+      "raw": "Growth Marketing",
+      "canonical_slug": "growth-marketing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce Marketing Cloud",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+    },
+    {
+      "raw": "Search Engine Optimization (SEO)",
+      "canonical_slug": "search-engine-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Search Engine Optimization (SEO) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Marketing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-971437"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marketing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Google Analytics 4 (GA4).",
+      "technologies": [
+        "Google Analytics 4 (GA4)",
+        "A/B Testing & CRO",
+        "Content Strategy"
+      ],
+      "url": "https://github.com/garymiller/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "marketing",
+    "seniority": "principal",
+    "total_experience_years": 18,
+    "is_emerging_profile": false,
+    "candidate_index": 389
+  }
+}

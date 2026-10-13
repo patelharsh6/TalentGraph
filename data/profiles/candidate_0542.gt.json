@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Wendy Warner",
+    "email": "wendy.warner.26@hotmail.com",
+    "phone": "+1-886-247-8686x237",
+    "location": {
+      "city": "New Aliciaport",
+      "region": "NH",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/wendy-warner",
+      "https://github.com/wendywarner"
+    ]
+  },
+  "summary": "Experienced Senior professional with 7+ years of expertise in healthcare. Proven track record delivering scalable solutions using Epic Systems, Health Informatics, Cerner.",
+  "experience": [
+    {
+      "company": "Johnson-Curry",
+      "title": "Senior Clinical Research Associate",
+      "location": "Nicholsonside, CO",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Electronic Health Records (EHR), Cerner.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Electronic Health Records (EHR)",
+        "Cerner",
+        "Bioinformatics",
+        "Health Informatics"
+      ]
+    },
+    {
+      "company": "Rodriguez, Johnson and Carter",
+      "title": "Healthcare Systems Analyst",
+      "location": "North Samuel, AZ",
+      "start": "2019-05",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Cerner, HL7 FHIR Protocols.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Cerner",
+        "HL7 FHIR Protocols",
+        "Electronic Health Records (EHR)",
+        "Epic Systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Ashleyhaven State University",
+      "degree": "Bachelor of Science",
+      "field": "Health Informatics / Biology",
+      "start": "2015-09",
+      "end": "2019-05",
+      "grade": "3.70 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Epic Systems",
+      "canonical_slug": "epic-systems",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Epic Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Health Informatics",
+      "canonical_slug": "health-informatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Health Informatics across multiple enterprise roles."
+    },
+    {
+      "raw": "Cerner",
+      "canonical_slug": "cerner",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Cerner across multiple enterprise roles."
+    },
+    {
+      "raw": "Bioinformatics",
+      "canonical_slug": "bioinformatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Bioinformatics across multiple enterprise roles."
+    },
+    {
+      "raw": "HL7 FHIR Protocols",
+      "canonical_slug": "hl7-fhir",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HL7 FHIR Protocols across multiple enterprise roles."
+    },
+    {
+      "raw": "Electronic Health Records (EHR)",
+      "canonical_slug": "electronic-health-records",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Electronic Health Records (EHR) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Healthcare Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-311944"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Healthcare Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Epic Systems.",
+      "technologies": [
+        "Epic Systems",
+        "Health Informatics",
+        "Cerner"
+      ],
+      "url": "https://github.com/wendywarner/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "healthcare",
+    "seniority": "senior",
+    "total_experience_years": 7,
+    "is_emerging_profile": false,
+    "candidate_index": 542
+  }
+}

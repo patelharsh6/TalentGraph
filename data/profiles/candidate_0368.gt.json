@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Michael Johnson",
+    "email": "michael.johnson.91@yahoo.com",
+    "phone": "(676)520-9014x47340",
+    "location": {
+      "city": "Lake Shane",
+      "region": "AL",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/michael-johnson",
+      "https://github.com/michaeljohnson"
+    ]
+  },
+  "summary": "Experienced Lead professional with 11+ years of expertise in design. Proven track record delivering scalable solutions using Information Architecture, HTML5 / CSS3, Adobe XD.",
+  "experience": [
+    {
+      "company": "Williams, Hart and Vincent",
+      "title": "Senior Senior Product Designer",
+      "location": "Connerton, LA",
+      "start": "2023-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Adobe XD, Design Systems.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Adobe XD",
+        "Design Systems",
+        "Information Architecture",
+        "User Research & Usability Testing"
+      ]
+    },
+    {
+      "company": "Davis-Richardson",
+      "title": "Design Systems Lead",
+      "location": "Stephensstad, TN",
+      "start": "2019-05",
+      "end": "2023-07",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using User Research & Usability Testing, Information Architecture.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "User Research & Usability Testing",
+        "Information Architecture",
+        "Design Systems",
+        "UI/UX Design"
+      ]
+    },
+    {
+      "company": "Barber-Fernandez",
+      "title": "Senior Product Designer",
+      "location": "Jillstad, MT",
+      "start": "2015-01",
+      "end": "2019-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Information Architecture, HTML5 / CSS3.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Information Architecture",
+        "HTML5 / CSS3",
+        "UI/UX Design",
+        "User Research & Usability Testing"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Richard State University",
+      "degree": "Bachelor of Science",
+      "field": "Human-Computer Interaction / Graphic Design",
+      "start": "2011-09",
+      "end": "2015-05",
+      "grade": "3.87 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Information Architecture",
+      "canonical_slug": "information-architecture",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Information Architecture across multiple enterprise roles."
+    },
+    {
+      "raw": "HTML5 / CSS3",
+      "canonical_slug": "html5",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized HTML5 / CSS3 across multiple enterprise roles."
+    },
+    {
+      "raw": "Adobe XD",
+      "canonical_slug": "adobe-xd",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Adobe XD across multiple enterprise roles."
+    },
+    {
+      "raw": "Wireframing & Prototyping",
+      "canonical_slug": "wireframing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Wireframing & Prototyping across multiple enterprise roles."
+    },
+    {
+      "raw": "UI/UX Design",
+      "canonical_slug": "user-experience-design",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized UI/UX Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Design Systems",
+      "canonical_slug": "design-systems",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Design Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "User Research & Usability Testing",
+      "canonical_slug": "user-research",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized User Research & Usability Testing across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Design Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-681078"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Design Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Information Architecture.",
+      "technologies": [
+        "Information Architecture",
+        "HTML5 / CSS3",
+        "Adobe XD"
+      ],
+      "url": "https://github.com/michaeljohnson/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "design",
+    "seniority": "lead",
+    "total_experience_years": 11,
+    "is_emerging_profile": false,
+    "candidate_index": 368
+  }
+}

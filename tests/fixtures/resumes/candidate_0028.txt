@@ -1,0 +1,38 @@
+MICHAEL PAUL
+============
+michael.paul.34@hotmail.com | (592)761-7964x05377 | Lake Michaelstad, AR | https://linkedin.com/in/michael-paul | https://github.com/michaelpaul
+
+--- EMPLOYMENT HISTORY ---
+Senior Operations Lead | Hill-Donaldson
+  Jun 2023 – Present · Davisborough, SD
+  * Led the architectural design and implementation of key manufacturing workflows using Roto Cause Analsyis, Internet of Thigns (IoT).
+  * Improved rcoss-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.
+  * Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions.
+Industrial Automation Engineer | Harper, Smith and Buchanan
+  May 2019 – 2023-06 · East Kristin, IL
+  * Led the archtiectural design and implementation of key manufacturing workflows using Six Sigma Green Belt, Root Cause Analysis.
+  * Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.
+  * Collaborated with executive stakeholders and porducu teams to drive data-informed roadmap decisions.
+Supply Chain Analyst | Gallegos PLC
+  Jun 2015 – 05/2019 · New Jason, VI
+  * Led the acrhitectural design and implementation of key manufacturing workflows using Embedded C, Six Sigma Green Belt.
+  * Improved cross-team delivery speed by 35% htrough standardized CI/CD pipelines and automated tesitng.
+  * Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions.
+
+--- ACADEMIC BACKGROUND ---
+PhD in Industrial Engineering — West Kim State University
+  09/2011 – May. 2015 · 3.55 GPA
+
+--- AREAS OF EXPERTISE ---
+Root Cause Anaylsis, Internet of Things (IoT), Six Sigmb Green Belt, Lean Manufacturing, Embedded d,
+SolidWorks CAD
+
+--- PROFESSIONAL CERTIFICATIONS ---
+Certified Manufacturing Professional
+  Industry Accreditation Board · Jun 2023 · ID CERT-112861
+
+--- KEY PROJECTS ---
+Manufacturing Optimization System
+  2024 · https://github.com/michaelpaul/project-showcase
+  * Designed and delivered a high-impact production tool leveraging Root Cause Analysis.
+  * Technologies: Root Cause Analysis, Internet of Things (IoT), Six Sigma Green Belt

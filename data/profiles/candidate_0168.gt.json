@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Eric Davidson",
+    "email": "eric.davidson.31@hotmail.com",
+    "phone": "714.962.7301x4719",
+    "location": {
+      "city": "Oneillfort",
+      "region": "UT",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/eric-davidson",
+      "https://github.com/ericdavidson"
+    ]
+  },
+  "summary": "Experienced Lead professional with 9+ years of expertise in healthcare. Proven track record delivering scalable solutions using HL7 FHIR Protocols, Health Informatics, Bioinformatics.",
+  "experience": [
+    {
+      "company": "Brooks Ltd",
+      "title": "Senior Healthcare Systems Analyst",
+      "location": "Port Jordanshire, AR",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using HIPAA Compliance, Python.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "HIPAA Compliance",
+        "Python",
+        "HL7 FHIR Protocols",
+        "Health Informatics"
+      ]
+    },
+    {
+      "company": "Flores Ltd",
+      "title": "Health Informatics Specialist",
+      "location": "West Frank, KY",
+      "start": "2020-04",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Python, Clinical Trials Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "Clinical Trials Management",
+        "Health Informatics",
+        "HIPAA Compliance"
+      ]
+    },
+    {
+      "company": "Barnes-Barr",
+      "title": "Healthcare Systems Analyst",
+      "location": "Brandonport, NC",
+      "start": "2017-04",
+      "end": "2020-04",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Health Informatics, Epic Systems.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Health Informatics",
+        "Epic Systems",
+        "HL7 FHIR Protocols",
+        "Clinical Trials Management"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Jamesburgh State University",
+      "degree": "Bachelor of Science",
+      "field": "Health Informatics / Biology",
+      "start": "2013-09",
+      "end": "2017-05",
+      "grade": "3.91 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "HL7 FHIR Protocols",
+      "canonical_slug": "hl7-fhir",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HL7 FHIR Protocols across multiple enterprise roles."
+    },
+    {
+      "raw": "Health Informatics",
+      "canonical_slug": "health-informatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Health Informatics across multiple enterprise roles."
+    },
+    {
+      "raw": "Bioinformatics",
+      "canonical_slug": "bioinformatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Bioinformatics across multiple enterprise roles."
+    },
+    {
+      "raw": "Cerner",
+      "canonical_slug": "cerner",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Cerner across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "Epic Systems",
+      "canonical_slug": "epic-systems",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Epic Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Clinical Trials Management",
+      "canonical_slug": "clinical-trials",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Clinical Trials Management across multiple enterprise roles."
+    },
+    {
+      "raw": "HIPAA Compliance",
+      "canonical_slug": "hipaa-compliance",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HIPAA Compliance across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Healthcare Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-707021"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Healthcare Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging HL7 FHIR Protocols.",
+      "technologies": [
+        "HL7 FHIR Protocols",
+        "Health Informatics",
+        "Bioinformatics"
+      ],
+      "url": "https://github.com/ericdavidson/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "healthcare",
+    "seniority": "lead",
+    "total_experience_years": 9,
+    "is_emerging_profile": false,
+    "candidate_index": 168
+  }
+}

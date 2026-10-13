@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Jacqueline Villegas",
+    "email": "jacqueline.villegas.72@gmail.com",
+    "phone": "001-818-426-1990",
+    "location": {
+      "city": "West Jose",
+      "region": "MD",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/jacqueline-villegas",
+      "https://github.com/jacquelinevillegas"
+    ]
+  },
+  "summary": "Experienced Lead professional with 11+ years of expertise in data. Proven track record delivering scalable solutions using Pandas, Snowflake, RAG Architecture.",
+  "experience": [
+    {
+      "company": "Haynes-Moss",
+      "title": "Senior Data Engineer",
+      "location": "Shawnbury, CA",
+      "start": "2023-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Pandas, Scikit-Learn.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Pandas",
+        "Scikit-Learn",
+        "Apache Airflow",
+        "TensorFlow"
+      ]
+    },
+    {
+      "company": "Taylor PLC",
+      "title": "AI Research Scientist",
+      "location": "East Danielmouth, NH",
+      "start": "2019-08",
+      "end": "2023-09",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Scikit-Learn, NumPy.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Scikit-Learn",
+        "NumPy",
+        "Snowflake",
+        "SQL"
+      ]
+    },
+    {
+      "company": "Russell-Herrera",
+      "title": "Data Engineer",
+      "location": "South Kyle, KS",
+      "start": "2015-05",
+      "end": "2019-08",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using TensorFlow, Scikit-Learn.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "TensorFlow",
+        "Scikit-Learn",
+        "Snowflake",
+        "Pandas"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "North Ericport State University",
+      "degree": "Master of Science",
+      "field": "Data Science & Statistics",
+      "start": "2011-09",
+      "end": "2015-05",
+      "grade": "3.62 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    },
+    {
+      "raw": "Snowflake",
+      "canonical_slug": "snowflake",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Snowflake across multiple enterprise roles."
+    },
+    {
+      "raw": "RAG Architecture",
+      "canonical_slug": "retrieval-augmented-generation",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized RAG Architecture across multiple enterprise roles."
+    },
+    {
+      "raw": "Large Language Models (LLM)",
+      "canonical_slug": "large-language-models",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Large Language Models (LLM) across multiple enterprise roles."
+    },
+    {
+      "raw": "Scikit-Learn",
+      "canonical_slug": "scikit-learn",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Scikit-Learn across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Airflow",
+      "canonical_slug": "apache-airflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "NumPy",
+      "canonical_slug": "numpy",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized NumPy across multiple enterprise roles."
+    },
+    {
+      "raw": "TensorFlow",
+      "canonical_slug": "tensorflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized TensorFlow across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-802371"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Pandas.",
+      "technologies": [
+        "Pandas",
+        "Snowflake",
+        "RAG Architecture"
+      ],
+      "url": "https://github.com/jacquelinevillegas/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "lead",
+    "total_experience_years": 11,
+    "is_emerging_profile": false,
+    "candidate_index": 78
+  }
+}

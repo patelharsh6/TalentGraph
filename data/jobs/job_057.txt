@@ -1,0 +1,35 @@
+JOB TITLE: Principal Machine Learning Engineer (NLP & Information Retrieval)
+COMPANY: Burns, Austin and Russell
+LOCATION: Braunshire, DC (Hybrid / Remote Available)
+SENIORITY LEVEL: Principal
+MINIMUM RELEVANT EXPERIENCE: 12+ Years
+
+--- ROLE OVERVIEW ---
+Burns, Austin and Russell is seeking an exceptional Principal Machine Learning Engineer (NLP & Information Retrieval) to lead key initiatives within our Data organization.
+In this role, you will architect, build, and deploy mission-critical solutions that directly impact our customers and platform scale.
+
+--- KEY RESPONSIBILITIES ---
+• Design and maintain scalable, secure, and resilient systems.
+• Drive technical strategy and mentor team members in technical execution.
+• Collaborate cross-functionally with product managers and designers.
+• Deliver measurable impact on product performance and reliability.
+
+--- REQUIRED QUALIFICATIONS ---
+• Proven expertise in Python (4+ years experience)
+• Proven expertise in PyTorch (3+ years experience)
+• Proven expertise in Machine Learning (4+ years experience)
+• Proven expertise in Deep Learning (3+ years experience)
+• Proven expertise in Large Language Models (2+ years experience)
+• Minimum of 12+ years of experience in data.
+• Bachelor's or Master's degree in relevant field, or equivalent practical experience.
+
+--- PREFERRED / NICE-TO-HAVE QUALIFICATIONS ---
+• Familiarity or hands-on experience with RAG.
+• Familiarity or hands-on experience with Vector Databases.
+• Familiarity or hands-on experience with Docker.
+• Familiarity or hands-on experience with MLOps.
+
+--- WHAT WE OFFER ---
+• Competitive compensation package with equity options and performance bonuses.
+• Comprehensive health, dental, and vision insurance with 401(k) matching.
+• Flexible work environment and generous paid time off (PTO).

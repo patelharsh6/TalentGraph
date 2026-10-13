@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Karen Grant",
+    "email": "karen.grant.74@yahoo.com",
+    "phone": "355-972-7738x26460",
+    "location": {
+      "city": "Christopherhaven",
+      "region": "MN",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/karen-grant",
+      "https://github.com/karengrant"
+    ]
+  },
+  "summary": "Experienced Lead professional with 12+ years of expertise in design. Proven track record delivering scalable solutions using User Research & Usability Testing, Figma, UI/UX Design.",
+  "experience": [
+    {
+      "company": "Carter-Stewart",
+      "title": "Senior User Experience Researcher",
+      "location": "Johnsonshire, GA",
+      "start": "2023-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Design Systems, Figma.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Design Systems",
+        "Figma",
+        "User Research & Usability Testing",
+        "Design Thinking"
+      ]
+    },
+    {
+      "company": "Bell, Reynolds and Forbes",
+      "title": "UI/UX Designer",
+      "location": "Port Teresaside, WA",
+      "start": "2020-07",
+      "end": "2023-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Figma, Design Thinking.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Figma",
+        "Design Thinking",
+        "Design Systems",
+        "Wireframing & Prototyping"
+      ]
+    },
+    {
+      "company": "Fritz-Brooks",
+      "title": "User Experience Researcher",
+      "location": "South Catherine, PR",
+      "start": "2017-04",
+      "end": "2020-07",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Wireframing & Prototyping, User Research & Usability Testing.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Wireframing & Prototyping",
+        "User Research & Usability Testing",
+        "Figma",
+        "Design Thinking"
+      ]
+    },
+    {
+      "company": "Davis and Sons",
+      "title": "Senior Product Designer",
+      "location": "North Ashley, HI",
+      "start": "2014-03",
+      "end": "2017-04",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Figma, Design Thinking.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Figma",
+        "Design Thinking",
+        "Wireframing & Prototyping",
+        "UI/UX Design"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Port Kimberly State University",
+      "degree": "PhD",
+      "field": "Human-Computer Interaction / Graphic Design",
+      "start": "2010-09",
+      "end": "2014-05",
+      "grade": "3.52 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "User Research & Usability Testing",
+      "canonical_slug": "user-research",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized User Research & Usability Testing across multiple enterprise roles."
+    },
+    {
+      "raw": "Figma",
+      "canonical_slug": "figma",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Figma across multiple enterprise roles."
+    },
+    {
+      "raw": "UI/UX Design",
+      "canonical_slug": "user-experience-design",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized UI/UX Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Wireframing & Prototyping",
+      "canonical_slug": "wireframing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Wireframing & Prototyping across multiple enterprise roles."
+    },
+    {
+      "raw": "Design Thinking",
+      "canonical_slug": "design-thinking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Design Thinking across multiple enterprise roles."
+    },
+    {
+      "raw": "Design Systems",
+      "canonical_slug": "design-systems",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Design Systems across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Design Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-952118"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Design Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging User Research & Usability Testing.",
+      "technologies": [
+        "User Research & Usability Testing",
+        "Figma",
+        "UI/UX Design"
+      ],
+      "url": "https://github.com/karengrant/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "design",
+    "seniority": "lead",
+    "total_experience_years": 12,
+    "is_emerging_profile": false,
+    "candidate_index": 313
+  }
+}

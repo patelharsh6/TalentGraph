@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Brian Garner",
+    "email": "brian.garner.23@hotmail.com",
+    "phone": "900-783-8507x659",
+    "location": {
+      "city": "Justinton",
+      "region": "AS",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/brian-garner",
+      "https://github.com/briangarner"
+    ]
+  },
+  "summary": "Experienced Mid professional with 4+ years of expertise in data. Proven track record delivering scalable solutions using SQL, dbt, Pandas.",
+  "experience": [
+    {
+      "company": "Richards, Stephenson and Blake",
+      "title": "Data Engineer",
+      "location": "Gallagherton, TN",
+      "start": "2022-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using Pandas, Large Language Models (LLM).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Pandas",
+        "Large Language Models (LLM)",
+        "Data Visualization",
+        "dbt"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "East Sarahfurt State University",
+      "degree": "Bachelor of Arts",
+      "field": "Data Science & Statistics",
+      "start": "2018-09",
+      "end": "2022-05",
+      "grade": "3.81 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "dbt",
+      "canonical_slug": "dbt",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized dbt across multiple enterprise roles."
+    },
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    },
+    {
+      "raw": "Data Visualization",
+      "canonical_slug": "business-intelligence",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Data Visualization across multiple enterprise roles."
+    },
+    {
+      "raw": "RAG Architecture",
+      "canonical_slug": "retrieval-augmented-generation",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized RAG Architecture across multiple enterprise roles."
+    },
+    {
+      "raw": "Large Language Models (LLM)",
+      "canonical_slug": "large-language-models",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Large Language Models (LLM) across multiple enterprise roles."
+    },
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "PyTorch",
+      "canonical_slug": "pytorch",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PyTorch across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-400947"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging SQL.",
+      "technologies": [
+        "SQL",
+        "dbt",
+        "Pandas"
+      ],
+      "url": "https://github.com/briangarner/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "mid",
+    "total_experience_years": 4,
+    "is_emerging_profile": false,
+    "candidate_index": 386
+  }
+}

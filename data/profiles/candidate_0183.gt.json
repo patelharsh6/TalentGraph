@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Nathan Graham",
+    "email": "nathan.graham.83@yahoo.com",
+    "phone": "+1-571-633-3447x62639",
+    "location": {
+      "city": "South Henry",
+      "region": "WY",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/nathan-graham",
+      "https://github.com/nathangraham"
+    ]
+  },
+  "summary": "Experienced Lead professional with 11+ years of expertise in education. Proven track record delivering scalable solutions using Instructional Design, Educational Technology (EdTech), Learning Management Systems (LMS).",
+  "experience": [
+    {
+      "company": "Johnson LLC",
+      "title": "Senior Senior Academic Advisor",
+      "location": "New Shannon, IA",
+      "start": "2023-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Curriculum Development, Instructional Design.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Curriculum Development",
+        "Instructional Design",
+        "Active Mentoring",
+        "Learning Management Systems (LMS)"
+      ]
+    },
+    {
+      "company": "Aguilar-Holland",
+      "title": "Curriculum Developer",
+      "location": "North Taylormouth, UT",
+      "start": "2019-05",
+      "end": "2023-07",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Public Speaking & Lecturing, Instructional Design.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Public Speaking & Lecturing",
+        "Instructional Design",
+        "Curriculum Development",
+        "Active Mentoring"
+      ]
+    },
+    {
+      "company": "Mcdaniel-Reeves",
+      "title": "Instructional Designer",
+      "location": "Fitzgeraldview, CA",
+      "start": "2015-04",
+      "end": "2019-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Instructional Design, Assessment Design.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Instructional Design",
+        "Assessment Design",
+        "Educational Technology (EdTech)",
+        "Public Speaking & Lecturing"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Brianmouth State University",
+      "degree": "Bachelor of Science",
+      "field": "Education & Curriculum Design",
+      "start": "2011-09",
+      "end": "2015-05",
+      "grade": "3.66 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Instructional Design",
+      "canonical_slug": "instructional-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Instructional Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Educational Technology (EdTech)",
+      "canonical_slug": "edtech-solutions",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Educational Technology (EdTech) across multiple enterprise roles."
+    },
+    {
+      "raw": "Learning Management Systems (LMS)",
+      "canonical_slug": "lms-platforms",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Learning Management Systems (LMS) across multiple enterprise roles."
+    },
+    {
+      "raw": "Public Speaking & Lecturing",
+      "canonical_slug": "public-speaking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Public Speaking & Lecturing across multiple enterprise roles."
+    },
+    {
+      "raw": "Curriculum Development",
+      "canonical_slug": "curriculum-development",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Curriculum Development across multiple enterprise roles."
+    },
+    {
+      "raw": "Assessment Design",
+      "canonical_slug": "assessment-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Assessment Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Active Mentoring",
+      "canonical_slug": "mentoring",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Active Mentoring across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Education Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-742544"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Education Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Instructional Design.",
+      "technologies": [
+        "Instructional Design",
+        "Educational Technology (EdTech)",
+        "Learning Management Systems (LMS)"
+      ],
+      "url": "https://github.com/nathangraham/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "education",
+    "seniority": "lead",
+    "total_experience_years": 11,
+    "is_emerging_profile": false,
+    "candidate_index": 183
+  }
+}

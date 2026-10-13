@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Terry Burnett",
+    "email": "terry.burnett.82@gmail.com",
+    "phone": "732.230.9821",
+    "location": {
+      "city": "Mcdowellview",
+      "region": "WI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/terry-burnett",
+      "https://github.com/terryburnett"
+    ]
+  },
+  "summary": "Experienced Principal professional with 14+ years of expertise in manufacturing. Proven track record delivering scalable solutions using Supply Chain Management, Embedded C, Six Sigma Green Belt.",
+  "experience": [
+    {
+      "company": "Dean, Wheeler and Williams",
+      "title": "Senior Supply Chain Analyst",
+      "location": "Lake Maryton, UT",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Six Sigma Green Belt, SolidWorks CAD.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Six Sigma Green Belt",
+        "SolidWorks CAD",
+        "Supply Chain Management",
+        "Embedded C"
+      ]
+    },
+    {
+      "company": "Butler Group",
+      "title": "Industrial Automation Engineer",
+      "location": "New Johnnyberg, IL",
+      "start": "2020-05",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Lean Manufacturing, Embedded C.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Lean Manufacturing",
+        "Embedded C",
+        "Six Sigma Green Belt",
+        "Root Cause Analysis"
+      ]
+    },
+    {
+      "company": "Jennings, Smith and Fisher",
+      "title": "Industrial Automation Engineer",
+      "location": "Lake Abigailberg, MT",
+      "start": "2016-02",
+      "end": "2020-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Lean Manufacturing, SolidWorks CAD.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Lean Manufacturing",
+        "SolidWorks CAD",
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "Root Cause Analysis"
+      ]
+    },
+    {
+      "company": "Hunt PLC",
+      "title": "Supply Chain Analyst",
+      "location": "West Danielville, NM",
+      "start": "2012-02",
+      "end": "2016-02",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Internet of Things (IoT), SolidWorks CAD.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Internet of Things (IoT)",
+        "SolidWorks CAD",
+        "Supply Chain Management",
+        "Lean Manufacturing"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New James State University",
+      "degree": "PhD",
+      "field": "Industrial Engineering",
+      "start": "2008-09",
+      "end": "2012-05",
+      "grade": "3.62 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Supply Chain Management",
+      "canonical_slug": "supply-chain-management",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Supply Chain Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Embedded C",
+      "canonical_slug": "embedded-c",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Embedded C across multiple enterprise roles."
+    },
+    {
+      "raw": "Six Sigma Green Belt",
+      "canonical_slug": "six-sigma",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Six Sigma Green Belt across multiple enterprise roles."
+    },
+    {
+      "raw": "PLC Programming (Siemens/Allen-Bradley)",
+      "canonical_slug": "plc-programming",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized PLC Programming (Siemens/Allen-Bradley) across multiple enterprise roles."
+    },
+    {
+      "raw": "SCADA Systems",
+      "canonical_slug": "scada",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized SCADA Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "SolidWorks CAD",
+      "canonical_slug": "solidworks",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SolidWorks CAD across multiple enterprise roles."
+    },
+    {
+      "raw": "Lean Manufacturing",
+      "canonical_slug": "lean-manufacturing",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Lean Manufacturing across multiple enterprise roles."
+    },
+    {
+      "raw": "Root Cause Analysis",
+      "canonical_slug": "root-cause-analysis",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Root Cause Analysis across multiple enterprise roles."
+    },
+    {
+      "raw": "Internet of Things (IoT)",
+      "canonical_slug": "internet-of-things",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Internet of Things (IoT) across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Manufacturing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-179710"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Manufacturing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Supply Chain Management.",
+      "technologies": [
+        "Supply Chain Management",
+        "Embedded C",
+        "Six Sigma Green Belt"
+      ],
+      "url": "https://github.com/terryburnett/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "manufacturing",
+    "seniority": "principal",
+    "total_experience_years": 14,
+    "is_emerging_profile": false,
+    "candidate_index": 94
+  }
+}

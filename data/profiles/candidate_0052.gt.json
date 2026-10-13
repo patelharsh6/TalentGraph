@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Nicholas Wong",
+    "email": "nicholas.wong.51@hotmail.com",
+    "phone": "(805)749-3296",
+    "location": {
+      "city": "South Elizabethburgh",
+      "region": "DC",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/nicholas-wong",
+      "https://github.com/nicholaswong"
+    ]
+  },
+  "summary": "Experienced Senior professional with 6+ years of expertise in sales. Proven track record delivering scalable solutions using Client Relationship Building, Account Management, Sales Pipeline Management.",
+  "experience": [
+    {
+      "company": "Morris-Wright",
+      "title": "Senior Business Development Representative",
+      "location": "Patrickmouth, WV",
+      "start": "2023-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using Client Relationship Building, Salesforce CRM.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Client Relationship Building",
+        "Salesforce CRM",
+        "Lead Prospecting",
+        "Account Management"
+      ]
+    },
+    {
+      "company": "Finley-Turner",
+      "title": "Sales Director",
+      "location": "West Desireebury, AR",
+      "start": "2020-10",
+      "end": "2023-09",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key sales workflows using Client Relationship Building, Sales Pipeline Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Client Relationship Building",
+        "Sales Pipeline Management",
+        "Salesforce CRM",
+        "Contract Negotiation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "South Kurtfurt State University",
+      "degree": "PhD",
+      "field": "Business Administration",
+      "start": "2016-09",
+      "end": "2020-05",
+      "grade": "3.85 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Client Relationship Building",
+      "canonical_slug": "effective-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Client Relationship Building across multiple enterprise roles."
+    },
+    {
+      "raw": "Account Management",
+      "canonical_slug": "customer-success",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Account Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Sales Pipeline Management",
+      "canonical_slug": "sales-strategy",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Sales Pipeline Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Salesforce CRM",
+      "canonical_slug": "salesforce",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Salesforce CRM across multiple enterprise roles."
+    },
+    {
+      "raw": "Contract Negotiation",
+      "canonical_slug": "contract-negotiation",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Contract Negotiation across multiple enterprise roles."
+    },
+    {
+      "raw": "Lead Prospecting",
+      "canonical_slug": "sales-prospecting",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Lead Prospecting across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Sales Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-537983"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sales Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Client Relationship Building.",
+      "technologies": [
+        "Client Relationship Building",
+        "Account Management",
+        "Sales Pipeline Management"
+      ],
+      "url": "https://github.com/nicholaswong/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "sales",
+    "seniority": "senior",
+    "total_experience_years": 6,
+    "is_emerging_profile": false,
+    "candidate_index": 52
+  }
+}

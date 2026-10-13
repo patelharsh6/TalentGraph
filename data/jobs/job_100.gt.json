@@ -1,0 +1,70 @@
+{
+  "title": "Lead Frontend Web Engineer (Design Systems)",
+  "company": "Gibbs-Cook",
+  "role_family": "engineering",
+  "seniority": "lead",
+  "min_total_experience_years": 8.0,
+  "education": [
+    "Bachelor's Degree",
+    "Master's Degree"
+  ],
+  "requirements": [
+    {
+      "skill_slug": "javascript",
+      "skill_name": "JavaScript",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "typescript",
+      "skill_name": "TypeScript",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "react",
+      "skill_name": "React",
+      "required": true,
+      "importance": 5,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "next-js",
+      "skill_name": "Next.js",
+      "required": true,
+      "importance": 4,
+      "min_years": 2.0
+    },
+    {
+      "skill_slug": "tailwindcss",
+      "skill_name": "Tailwind CSS",
+      "required": false,
+      "importance": 3,
+      "min_years": null
+    },
+    {
+      "skill_slug": "html5",
+      "skill_name": "HTML5",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "css3",
+      "skill_name": "CSS3",
+      "required": true,
+      "importance": 4,
+      "min_years": 3.0
+    },
+    {
+      "skill_slug": "figma",
+      "skill_name": "Figma",
+      "required": false,
+      "importance": 2,
+      "min_years": null
+    }
+  ],
+  "raw_text_length": 1674
+}

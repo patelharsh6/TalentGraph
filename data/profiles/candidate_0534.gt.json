@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "James Martinez",
+    "email": "james.martinez.93@gmail.com",
+    "phone": "+1-488-302-7304x27636",
+    "location": {
+      "city": "Cynthiaview",
+      "region": "NH",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/james-martinez",
+      "https://github.com/jamesmartinez"
+    ]
+  },
+  "summary": "Experienced Principal professional with 20+ years of expertise in manufacturing. Proven track record delivering scalable solutions using PLC Programming (Siemens/Allen-Bradley), Six Sigma Green Belt, Supply Chain Management.",
+  "experience": [
+    {
+      "company": "Rice PLC",
+      "title": "Senior Quality Assurance Engineer",
+      "location": "New Logan, IL",
+      "start": "2021-07",
+      "end": null,
+      "is_current": true,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Six Sigma Green Belt, Supply Chain Management.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Six Sigma Green Belt",
+        "Supply Chain Management",
+        "Root Cause Analysis",
+        "PLC Programming (Siemens/Allen-Bradley)"
+      ]
+    },
+    {
+      "company": "Johnston PLC",
+      "title": "Operations Lead",
+      "location": "South Tylerview, UT",
+      "start": "2016-06",
+      "end": "2021-07",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Six Sigma Green Belt, Embedded C.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Six Sigma Green Belt",
+        "Embedded C",
+        "Supply Chain Management",
+        "Root Cause Analysis"
+      ]
+    },
+    {
+      "company": "Dalton, Sims and Holt",
+      "title": "Industrial Automation Engineer",
+      "location": "New Glennhaven, ND",
+      "start": "2011-07",
+      "end": "2016-06",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Supply Chain Management, Embedded C.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Supply Chain Management",
+        "Embedded C",
+        "Six Sigma Green Belt",
+        "PLC Programming (Siemens/Allen-Bradley)"
+      ]
+    },
+    {
+      "company": "Mays-Hicks",
+      "title": "Supply Chain Analyst",
+      "location": "Monicastad, DE",
+      "start": "2006-06",
+      "end": "2011-07",
+      "is_current": false,
+      "duration_months": 60,
+      "responsibilities": [
+        "Led the architectural design and implementation of key manufacturing workflows using Supply Chain Management, Embedded C.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Supply Chain Management",
+        "Embedded C",
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "Root Cause Analysis"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Port Marie State University",
+      "degree": "Bachelor of Arts",
+      "field": "Industrial Engineering",
+      "start": "2002-09",
+      "end": "2006-05",
+      "grade": "3.51 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "PLC Programming (Siemens/Allen-Bradley)",
+      "canonical_slug": "plc-programming",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized PLC Programming (Siemens/Allen-Bradley) across multiple enterprise roles."
+    },
+    {
+      "raw": "Six Sigma Green Belt",
+      "canonical_slug": "six-sigma",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Six Sigma Green Belt across multiple enterprise roles."
+    },
+    {
+      "raw": "Supply Chain Management",
+      "canonical_slug": "supply-chain-management",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Supply Chain Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Embedded C",
+      "canonical_slug": "embedded-c",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Embedded C across multiple enterprise roles."
+    },
+    {
+      "raw": "SCADA Systems",
+      "canonical_slug": "scada",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized SCADA Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Root Cause Analysis",
+      "canonical_slug": "root-cause-analysis",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Root Cause Analysis across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Manufacturing Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-735604"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Manufacturing Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging PLC Programming (Siemens/Allen-Bradley).",
+      "technologies": [
+        "PLC Programming (Siemens/Allen-Bradley)",
+        "Six Sigma Green Belt",
+        "Supply Chain Management"
+      ],
+      "url": "https://github.com/jamesmartinez/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "manufacturing",
+    "seniority": "principal",
+    "total_experience_years": 20,
+    "is_emerging_profile": false,
+    "candidate_index": 534
+  }
+}

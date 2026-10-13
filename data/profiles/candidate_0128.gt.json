@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Mario White",
+    "email": "mario.white.35@hotmail.com",
+    "phone": "+1-461-895-7612",
+    "location": {
+      "city": "Dianeside",
+      "region": "PA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/mario-white",
+      "https://github.com/mariowhite"
+    ]
+  },
+  "summary": "Experienced Lead professional with 10+ years of expertise in education. Proven track record delivering scalable solutions using Assessment Design, Instructional Design, Learning Management Systems (LMS).",
+  "experience": [
+    {
+      "company": "Mahoney-Orr",
+      "title": "Senior EdTech Specialist",
+      "location": "Meganchester, WV",
+      "start": "2023-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Assessment Design, Learning Management Systems (LMS).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Assessment Design",
+        "Learning Management Systems (LMS)",
+        "Curriculum Development",
+        "Active Mentoring"
+      ]
+    },
+    {
+      "company": "Jordan, Swanson and Franklin",
+      "title": "EdTech Specialist",
+      "location": "South Katie, WA",
+      "start": "2020-05",
+      "end": "2023-06",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Learning Management Systems (LMS), Instructional Design.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Learning Management Systems (LMS)",
+        "Instructional Design",
+        "Educational Technology (EdTech)",
+        "Curriculum Development"
+      ]
+    },
+    {
+      "company": "Ward-Chavez",
+      "title": "Senior Academic Advisor",
+      "location": "Smithton, LA",
+      "start": "2016-01",
+      "end": "2020-05",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key education workflows using Educational Technology (EdTech), Learning Management Systems (LMS).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Educational Technology (EdTech)",
+        "Learning Management Systems (LMS)",
+        "Instructional Design",
+        "Active Mentoring"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "New Derekport State University",
+      "degree": "Master of Science",
+      "field": "Education & Curriculum Design",
+      "start": "2012-09",
+      "end": "2016-05",
+      "grade": "3.83 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Assessment Design",
+      "canonical_slug": "assessment-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Assessment Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Instructional Design",
+      "canonical_slug": "instructional-design",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Instructional Design across multiple enterprise roles."
+    },
+    {
+      "raw": "Learning Management Systems (LMS)",
+      "canonical_slug": "lms-platforms",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Learning Management Systems (LMS) across multiple enterprise roles."
+    },
+    {
+      "raw": "Curriculum Development",
+      "canonical_slug": "curriculum-development",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Curriculum Development across multiple enterprise roles."
+    },
+    {
+      "raw": "Public Speaking & Lecturing",
+      "canonical_slug": "public-speaking",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Public Speaking & Lecturing across multiple enterprise roles."
+    },
+    {
+      "raw": "Educational Technology (EdTech)",
+      "canonical_slug": "edtech-solutions",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Educational Technology (EdTech) across multiple enterprise roles."
+    },
+    {
+      "raw": "Active Mentoring",
+      "canonical_slug": "mentoring",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Active Mentoring across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Education Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-954017"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Education Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Assessment Design.",
+      "technologies": [
+        "Assessment Design",
+        "Instructional Design",
+        "Learning Management Systems (LMS)"
+      ],
+      "url": "https://github.com/mariowhite/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "education",
+    "seniority": "lead",
+    "total_experience_years": 10,
+    "is_emerging_profile": false,
+    "candidate_index": 128
+  }
+}

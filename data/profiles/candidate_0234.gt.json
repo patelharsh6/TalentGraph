@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Brandon Blankenship",
+    "email": "brandon.blankenship.89@yahoo.com",
+    "phone": "(334)401-6361",
+    "location": {
+      "city": "Briannafort",
+      "region": "CT",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/brandon-blankenship",
+      "https://github.com/brandonblankenship"
+    ]
+  },
+  "summary": "Experienced Principal professional with 13+ years of expertise in healthcare. Proven track record delivering scalable solutions using Python, Epic Systems, Cerner.",
+  "experience": [
+    {
+      "company": "Bailey, Armstrong and Campbell",
+      "title": "Senior Healthcare Systems Analyst",
+      "location": "Catherineton, GA",
+      "start": "2023-08",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Python, Health Informatics.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Python",
+        "Health Informatics",
+        "Clinical Trials Management",
+        "Electronic Health Records (EHR)"
+      ]
+    },
+    {
+      "company": "Potts-Price",
+      "title": "Clinical Research Associate",
+      "location": "Lindaside, OH",
+      "start": "2020-08",
+      "end": "2023-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Clinical Trials Management, Cerner.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Clinical Trials Management",
+        "Cerner",
+        "Epic Systems",
+        "Bioinformatics"
+      ]
+    },
+    {
+      "company": "Macias, Powell and Vargas",
+      "title": "Clinical Research Associate",
+      "location": "Alberthaven, VT",
+      "start": "2017-04",
+      "end": "2020-08",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Clinical Trials Management, Epic Systems.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Clinical Trials Management",
+        "Epic Systems",
+        "Electronic Health Records (EHR)",
+        "Python"
+      ]
+    },
+    {
+      "company": "Sandoval and Sons",
+      "title": "Health Informatics Specialist",
+      "location": "Bradleyview, AR",
+      "start": "2013-03",
+      "end": "2017-04",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key healthcare workflows using Cerner, Electronic Health Records (EHR).",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Cerner",
+        "Electronic Health Records (EHR)",
+        "Epic Systems",
+        "HIPAA Compliance"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Jasminebury State University",
+      "degree": "PhD",
+      "field": "Health Informatics / Biology",
+      "start": "2009-09",
+      "end": "2013-05",
+      "grade": "3.89 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Python",
+      "canonical_slug": "python",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Python across multiple enterprise roles."
+    },
+    {
+      "raw": "Epic Systems",
+      "canonical_slug": "epic-systems",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Epic Systems across multiple enterprise roles."
+    },
+    {
+      "raw": "Cerner",
+      "canonical_slug": "cerner",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Cerner across multiple enterprise roles."
+    },
+    {
+      "raw": "HIPAA Compliance",
+      "canonical_slug": "hipaa-compliance",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized HIPAA Compliance across multiple enterprise roles."
+    },
+    {
+      "raw": "Electronic Health Records (EHR)",
+      "canonical_slug": "electronic-health-records",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Electronic Health Records (EHR) across multiple enterprise roles."
+    },
+    {
+      "raw": "Health Informatics",
+      "canonical_slug": "health-informatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Health Informatics across multiple enterprise roles."
+    },
+    {
+      "raw": "Bioinformatics",
+      "canonical_slug": "bioinformatics",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Bioinformatics across multiple enterprise roles."
+    },
+    {
+      "raw": "Clinical Trials Management",
+      "canonical_slug": "clinical-trials",
+      "emerging": false,
+      "category_hint": "domain",
+      "evidence": "Utilized Clinical Trials Management across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Healthcare Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-349505"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Healthcare Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Python.",
+      "technologies": [
+        "Python",
+        "Epic Systems",
+        "Cerner"
+      ],
+      "url": "https://github.com/brandonblankenship/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "healthcare",
+    "seniority": "principal",
+    "total_experience_years": 13,
+    "is_emerging_profile": false,
+    "candidate_index": 234
+  }
+}

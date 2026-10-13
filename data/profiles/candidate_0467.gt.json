@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Jenna Watson",
+    "email": "jenna.watson.75@gmail.com",
+    "phone": "001-613-940-7851x699",
+    "location": {
+      "city": "New Christinastad",
+      "region": "WI",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/jenna-watson",
+      "https://github.com/jennawatson"
+    ]
+  },
+  "summary": "Experienced Senior professional with 6+ years of expertise in design. Proven track record delivering scalable solutions using Information Architecture, Adobe XD, Wireframing & Prototyping.",
+  "experience": [
+    {
+      "company": "Wolf, Jordan and Kelley",
+      "title": "Senior Senior Product Designer",
+      "location": "Angelafurt, ND",
+      "start": "2023-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Adobe XD, HTML5 / CSS3.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Adobe XD",
+        "HTML5 / CSS3",
+        "Information Architecture",
+        "Figma"
+      ]
+    },
+    {
+      "company": "Bradley, Howell and Moore",
+      "title": "User Experience Researcher",
+      "location": "Gloverhaven, IN",
+      "start": "2020-08",
+      "end": "2023-10",
+      "is_current": false,
+      "duration_months": 36,
+      "responsibilities": [
+        "Led the architectural design and implementation of key design workflows using Adobe XD, Figma.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Adobe XD",
+        "Figma",
+        "HTML5 / CSS3",
+        "Information Architecture"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Granthaven State University",
+      "degree": "PhD",
+      "field": "Human-Computer Interaction / Graphic Design",
+      "start": "2016-09",
+      "end": "2020-05",
+      "grade": "3.70 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Information Architecture",
+      "canonical_slug": "information-architecture",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Information Architecture across multiple enterprise roles."
+    },
+    {
+      "raw": "Adobe XD",
+      "canonical_slug": "adobe-xd",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Adobe XD across multiple enterprise roles."
+    },
+    {
+      "raw": "Wireframing & Prototyping",
+      "canonical_slug": "wireframing",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Wireframing & Prototyping across multiple enterprise roles."
+    },
+    {
+      "raw": "HTML5 / CSS3",
+      "canonical_slug": "html5",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized HTML5 / CSS3 across multiple enterprise roles."
+    },
+    {
+      "raw": "Figma",
+      "canonical_slug": "figma",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Figma across multiple enterprise roles."
+    },
+    {
+      "raw": "Design Systems",
+      "canonical_slug": "design-systems",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Design Systems across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Design Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-411166"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Design Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Information Architecture.",
+      "technologies": [
+        "Information Architecture",
+        "Adobe XD",
+        "Wireframing & Prototyping"
+      ],
+      "url": "https://github.com/jennawatson/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "design",
+    "seniority": "senior",
+    "total_experience_years": 6,
+    "is_emerging_profile": false,
+    "candidate_index": 467
+  }
+}

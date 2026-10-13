@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Rebecca Young",
+    "email": "rebecca.young.20@hotmail.com",
+    "phone": "001-299-689-8972x117",
+    "location": {
+      "city": "Port Loriland",
+      "region": "ND",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/rebecca-young",
+      "https://github.com/rebeccayoung"
+    ]
+  },
+  "summary": "Experienced Junior professional with 1+ years of expertise in operations. Proven track record delivering scalable solutions using OKRs / KPIs Tracking, Cross-Functional Leadership, Vendor Management & Procurement.",
+  "experience": [
+    {
+      "company": "Shannon-Torres",
+      "title": "Business Operations Lead",
+      "location": "East Katherine, NV",
+      "start": "2025-06",
+      "end": null,
+      "is_current": true,
+      "duration_months": 12,
+      "responsibilities": [
+        "Led the architectural design and implementation of key operations workflows using Vendor Management & Procurement, Process Optimization.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Vendor Management & Procurement",
+        "Process Optimization",
+        "Cross-Functional Leadership",
+        "Jira & Confluence"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Alejandrabury State University",
+      "degree": "Master of Science",
+      "field": "Operations Research / Management",
+      "start": "2021-09",
+      "end": "2025-05",
+      "grade": "3.66 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "OKRs / KPIs Tracking",
+      "canonical_slug": "key-performance-indicators",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized OKRs / KPIs Tracking across multiple enterprise roles."
+    },
+    {
+      "raw": "Cross-Functional Leadership",
+      "canonical_slug": "cross-functional-collaboration",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Cross-Functional Leadership across multiple enterprise roles."
+    },
+    {
+      "raw": "Vendor Management & Procurement",
+      "canonical_slug": "vendor-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Vendor Management & Procurement across multiple enterprise roles."
+    },
+    {
+      "raw": "Operations Management",
+      "canonical_slug": "operations-management",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Operations Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Budgeting & Cost Reduction",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Budgeting & Cost Reduction across multiple enterprise roles."
+    },
+    {
+      "raw": "Jira & Confluence",
+      "canonical_slug": "jira",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Jira & Confluence across multiple enterprise roles."
+    },
+    {
+      "raw": "Process Optimization",
+      "canonical_slug": "process-optimization",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Process Optimization across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Operations Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-937818"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Operations Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging OKRs / KPIs Tracking.",
+      "technologies": [
+        "OKRs / KPIs Tracking",
+        "Cross-Functional Leadership",
+        "Vendor Management & Procurement"
+      ],
+      "url": "https://github.com/rebeccayoung/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "operations",
+    "seniority": "junior",
+    "total_experience_years": 1,
+    "is_emerging_profile": false,
+    "candidate_index": 450
+  }
+}

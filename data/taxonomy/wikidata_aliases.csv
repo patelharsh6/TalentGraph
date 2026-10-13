@@ -1,0 +1,491 @@
+slug,alias,wikidata_id
+act,ACT! by Sage,Q288749
+act,Act! LLC,Q288749
+act,Sage ACT!,Q288749
+ada,Ada programming language,Q154755
+adobe-after-effects,Efectos secundarios,Q83380
+adobe-air,AIR,Q360310
+adobe-air,Adobe Integrated Runtime,Q360310
+adobe-audition,Adobe Audio,Q360044
+adobe-audition,Adobe Audition CC,Q360044
+adobe-audition,Audition,Q360044
+adobe-audition,Audition CC,Q360044
+adobe-audition,Cool Edit,Q360044
+adobe-audition,Cool Edit Pro,Q360044
+adobe-audition,CoolEdit,Q360044
+adobe-coldfusion,Cold Fusion,Q468446
+adobe-coldfusion,ColdFusion,Q468446
+adobe-coldfusion,Macromedia ColdFusion,Q468446
+adobe-connect,Adobe Acrobat Connect Pro,Q2551337
+adobe-connect,Connect,Q2551337
+adobe-connect,Macromedia Breeze,Q2551337
+adobe-connect,Presedia Publishing System,Q2551337
+adobe-director,Macromedia Director,Q360109
+adobe-dreamweaver,DW,Q192324
+adobe-dreamweaver,Dreamweaver,Q192324
+adobe-dreamweaver,Macromedia Dreamweaver,Q192324
+adobe-framemaker,FrameMaker,Q1440655
+adobe-framemaker,Framemaker,Q1440655
+adobe-illustrator,AI,Q215016
+adobe-illustrator,Illustrator,Q215016
+adobe-imageready,ImageReady,Q360258
+adobe-pagemaker,Aldus PageMaker,Q360355
+adobe-pagemaker,PageMaker,Q360355
+adobe-persuasion,Aldus Persuasion,Q3780669
+adobe-photoshop-lightroom,Adobe Lightroom,Q360403
+adobe-photoshop-lightroom,Lightroom,Q360403
+adobe-photoshop-lightroom,Lightroom Photo & Video Editor,Q360403
+adobe-premiere-pro,Adobe Premiere,Q360424
+adobe-premiere-pro,Premiere Pro,Q360424
+agilent-chemstation,ChemStation,Q4692545
+airtable,airtable.com,Q23016614
+angular,Angular 2+,Q28925578
+ansible,ansible software,Q2852503
+apache-accumulo,Accumulo,Q63241426
+apache-airflow,Airflow,Q28915062
+apache-airflow,Apache Airflow software project,Q28915062
+apache-airflow,apache-airflow,Q28915062
+apache-ant,Ant,Q385970
+apache-avro,Avro,Q616580
+apache-continuum,Continuum,Q773148
+apache-hadoop,Hadoop,Q29120
+apache-hbase,HBase,Q2538066
+apache-hbase,hbase,Q2538066
+apache-hive,Hive,Q4778914
+apache-http-server,Apache,Q11354
+apache-http-server,Apache web server,Q11354
+apache-http-server,Apache webserver,Q11354
+apache-kafka,Kafka,Q16235208
+apache-pig,Pig,Q7193204
+apache-pulsar,Pulsar,Q89693880
+apache-solr,Apache Solr Enterprise Search Server,Q2858103
+apache-solr,Solr,Q2858103
+apache-spark,Spark,Q7573619
+apache-struts,Jakarta Struts,Q900957
+apache-struts,Struts,Q900957
+apache-struts,WebWork,Q900957
+apache-tomcat,Jakarta Tomcat,Q507430
+apache-tomcat,Tomcat,Q507430
+apache-tomcat,Tomcat Server,Q507430
+archivists-toolkit,The Archivists’ Toolkit,Q67080697
+aspnet-core,ASP.NET vNext,Q17513350
+assembla,assembla.com,Q17049702
+astro,Astro framework,Q114769542
+astro,Astro.build,Q114769542
+astro,Astro.js,Q114769542
+astro,AstroJS,Q114769542
+autodesk-3ds-max,3D max,Q212324
+autodesk-3ds-max,3ds Max,Q212324
+autodesk-aliasstudio,Autodesk Alias,Q3500946
+autodesk-aliasstudio,Autodesk Alias Studio,Q3500946
+autodesk-ecotect-analysis,Ecotect,Q16835936
+autodesk-inventor,Inventor,Q735441
+autodesk-maya,Maya,Q272597
+axum,Maestro,Q4830701
+blackboard-learn,Blackboard,Q15933979
+blackboard-learn,Blackboard Learning Management System,Q15933979
+blackboard-learn,Blackboard Learning System,Q15933979
+blat,BLAST-Like Alignment Tool,Q4835846
+blender,Blender 3D,Q173136
+blender,blender.org,Q173136
+blender,blender3d.org,Q173136
+blogger,Blogger beta,Q171186
+blogger,Blogger.com,Q171186
+blogger,Blogspot,Q171186
+blogger,Google Blogger,Q171186
+bootstrap,Extension:Bootstrap,Q21676802
+burp-suite,Burp,Q2324584
+burp-suite,Burpsuite,Q2324584
+c-language,C language,Q15777
+c-language,C programming language,Q15777
+c-sharp,Microsoft Java,Q2370
+c-shell,Csh,Q1064516
+c-shell,csh(1),Q1064516
+c-shell,csh.1,Q1064516
+cargo,Extension:Cargo,Q21676223
+cargo,cargo package manager,Q47258851
+cassandra,Cassandra,Q616639
+celery,Celery Task Queue,Q5057824
+character-studio,Autodesk 3DS Max tools,Q5073726
+character-studio,Autodesk Character Studio,Q5073726
+chef,Chef software,Q24479
+chef,Progress Chef,Q24479
+cisco-ios,Cisco Internetwork Operating System,Q753576
+cisco-ios,Internetwork Operating System,Q753576
+classdojo,Class Dojo,Q13645977
+classdojo,classdojo.com,Q13645977
+cloudera-impala,Apache Impala,Q16043862
+corel-painter,Fractal Design Painter,Q1070296
+corel-photo-paint,CPT file,Q24339
+corel-photo-paint,Corel Photo Paint,Q24339
+corel-photo-paint,Corel Photopaint,Q24339
+corel-photo-paint,PHOTO-PAINT,Q24339
+corel-photo-paint,Photopaint,Q24339
+corel-ventura,Ventura Publisher,Q1132555
+cypress,Cypress.io,Q115978662
+d3-js,D3,Q3011087
+d3-js,Data-Driven Documents,Q3011087
+d3-js,d3js,Q3011087
+dart,ECMA-408,Q406009
+dart,Google Dart,Q406009
+davinci-resolve,Blackmagic DaVinci Resolve,Q17628502
+davinci-resolve,ResolDaVince Resolveve,Q17628502
+django,Django Project,Q842014
+docker,Docker software,Q15206305
+docker,WMDocker,Q113469872
+docker-compose,docker-compose,Q66317867
+dynamodb,DynamoDB,Q15731832
+e-verify,E-Verify Program,Q5321473
+e-verify,EVerify,Q5321473
+eclipse-jersey,Project Jersey,Q15981991
+edmodo,edmodo.com,Q647397
+electron,Atom Shell,Q21614124
+emass,Enterprise Mission Assurance Support Service,Q5323347
+emboss,European Molecular Biology Open Software Suite,Q690201
+entity-framework-core,EF Core,Q24834697
+ethereum,ETH,Q16783523
+ethereum,ETH Mainnet,Q16783523
+ethereum,ETH Network,Q16783523
+ethereum,ETH blockchain,Q16783523
+ethereum,Ether,Q16783523
+ethereum,Ethereum Chain,Q16783523
+ethereum,Ethereum blockchain,Q16783523
+ethereum,Ethereum network,Q16783523
+ethereum,Ethereum platform,Q16783523
+ethereum,ethereum.org,Q16783523
+expo,expo.se,Q1384640
+express-js,Express,Q16878131
+express-js,Expressjs,Q16878131
+facebook,m.facebook.com,Q355
+facebook,web.facebook.com,Q355
+facebook,www.facebook.com,Q355
+facetime,com.apple.facetime,Q70031178
+fftw,Fastest Fourier Transform in the West,Q2251820
+geant4,GEometry ANd Tracking,Q1412851
+geant4,Geant4—a simulation toolkit,Q1412851
+gnu-octave,OCTAVE,Q223679
+godot,Godoh Engine,Q16972633
+godot,Godot Engine,Q16972633
+godot,Godot Game Engine,Q16972633
+golang,Go programming language,Q37227
+google-apps-script,GAS,Q5583799
+google-chrome,Chrome Browser,Q777
+google-classroom,Classroom,Q16927658
+google-classroom,classroom.google.com,Q16927658
+google-docs,Docs,Q9344
+google-docs,Documents,Q9344
+google-docs,Google Documents,Q9344
+google-docs,docs.google.com,Q9344
+google-docs,docs.google.com/document,Q9344
+google-kubernetes-engine,GKE,Q59848767
+google-sheets,Google Spreadsheets,Q46261310
+google-sheets,Sheets,Q46261310
+google-sheets,Spreadsheets,Q46261310
+google-sheets,docs.google.com/spreadsheets,Q46261310
+google-sheets,sheets.google.com,Q46261310
+google-sites,JotSpot,Q623456
+google-slides,Google Presentations,Q46272775
+google-slides,Presentations,Q46272775
+google-slides,Slides,Q46272775
+google-slides,docs.google.com/presentation,Q46272775
+google-slides,slides.google.com,Q46272775
+google-tag-manager,GTM,Q11775280
+google-tag-manager,Tag Manager,Q11775280
+gradle,Gradle Build Tool,Q965596
+gslib,Geostatistics Software Library,Q10287803
+gym,XU0y9BMAACEAislb,Q109503600
+hashicorp-vagrant,Vagrant,Q7725312
+haskell,Haskell programming language,Q34010
+hec-hms,Hydrologic Modeling System,Q5629419
+hec-ras,Hydrologic Engineering Center River Analysis System,Q594096
+hootsuite,"Hootsuite Media, Inc.",Q2749075
+hootsuite,hootsuite.com,Q2749075
+huggingface-transformers,The Transformers,Q3997509
+huggingface-transformers,The Transformers: Call of the Future,Q3997509
+huggingface-transformers,Transformers Tatakai,Q3997509
+huggingface-transformers,Transformers Tataki,Q3997509
+huggingface-transformers,Transformers: Assault,Q3997509
+huggingface-transformers,Transformers: Call of the Future,Q3997509
+huggingface-transformers,Transformers: Generation Zero,Q3997509
+huggingface-transformers,Transformers: Tatakai,Q3997509
+ibm-aix,AIX,Q269856
+ibm-informix,Informix Dynamic Server,Q1050734
+ibm-infosphere-datastage,datastage,Q5968866
+ibm-lotus-approach,Lotus Approach,Q1755003
+ibm-rational-application-developer,IBM Rational Application Developer for WebSphere Software,Q501149
+ibm-rational-application-developer,Rational Application Developer for WebSphere Software,Q501149
+ibm-rational-clearcase,MVFS,Q593863
+ibm-rational-clearcase,Rational ClearCase,Q593863
+ibm-rational-clearquest,ClearQuest,Q5968966
+ibm-rational-clearquest,Rational ClearQuest,Q5968966
+ibm-rational-doors,Rational DOORS,Q1154767
+ibm-rational-doors,Telelogic DOORS,Q1154767
+ibm-websphere-mq,IBM MQ,Q528294
+ibm-websphere-mq,MQSeries,Q528294
+imagej,Image-J,Q1659584
+imagej,NIH Image,Q1659584
+imagej,NIH-Image,Q1659584
+intel-integrated-performance-primitives,Integrated Performance Primitives,Q4041442
+iris,Intelligent Roadway Information System,Q5973524
+j,J Language,Q383994
+j,J Programming Language,Q383994
+jacal,GNU JACAL,Q76185133
+jacal,JAffer's Canonical ALgebra,Q76185133
+jasmine,JSUnit,Q6161738
+java,java programming language,Q251
+jax,Google JAX,Q107382149
+jenkins,Hudson,Q7491312
+jetpack-compose,Compose,Q114646061
+joomla,Joomla!,Q13167
+julia,Julia programming language,Q2613697
+julia,JuliaLang,Q2613697
+julia,The Julia Language,Q2613697
+jupyter-notebook,IPython Notebook,Q105099901
+jupyter-notebook,Jupyter Notebooks,Q105099901
+kali-linux,Kali,Q8364850
+kali-linux,Kali Linux OS,Q8364850
+kali-linux,Kernel Auditing LInux,Q8364850
+kant,KASH,Q6325167
+keras,Keras (Python package),Q28470421
+klaviyo,Clavio,Q106631196
+klaviyo,Klaviyo Inc.,Q106631196
+klaviyo,Klayviyo,Q106631196
+kornshell,ksh93,Q204222
+kubernetes,K8s,Q22661306
+kustomize,kubectl kustomize,Q136456654
+latex,LᴬTᴇX,Q5310
+latex,The LaTeX Project,Q5310
+latex,latex-project.org,Q5310
+lightgbm,Light Gradient Boosting Machine,Q57267665
+linux-virtual-server,LVS,Q1827146
+lisp,ISO/IEC 13816,Q132874
+lisp,JIS X 3012,Q132874
+lisp,LISt Processor,Q132874
+lisp,Lisp (programming language),Q132874
+lisp,List Processor,Q132874
+lua,Lua language,Q207316
+mapinfo,MapInfo Pro,Q64189
+mapinfo,MapInfo Professional,Q64189
+marklogic,MarkLogic Server,Q29364583
+maven,Maven,Q139941
+metasploit,Metasploit Framework,Q1147445
+metasploit,Metasploit Project,Q1147445
+micronaut,micronaut.io,Q110912899
+microsoft-defender-antivirus,Defender,Q243269
+microsoft-defender-antivirus,Microsoft AntiSpyware,Q243269
+microsoft-defender-antivirus,Microsoft Defender antimalware platform,Q243269
+microsoft-defender-antivirus,Windows Defender,Q243269
+microsoft-dynamics-365,D365,Q27556059
+microsoft-dynamics-365,Dynamics 365,Q27556059
+microsoft-dynamics-ax,Axapta,Q675860
+microsoft-dynamics-nav,Dynamics NAV,Q904533
+microsoft-dynamics-nav,Microsoft Navision,Q904533
+microsoft-dynamics-nav,Navision,Q904533
+microsoft-dynamics-nav,Navision A/S,Q904533
+microsoft-dynamics-nav,Navision Financials,Q904533
+microsoft-dynamics-nav,NavisionDamgaard A/S,Q904533
+microsoft-edge,Edge,Q18698690
+microsoft-edge,MS Edge,Q18698690
+microsoft-excel,Microsoft 365 Excel,Q11272
+microsoft-excel,Office Excel,Q11272
+microsoft-forefront-threat-management-gateway,Forefront TMG,Q632851
+microsoft-forefront-threat-management-gateway,ISA Server,Q632851
+microsoft-forefront-threat-management-gateway,Microsoft Internet Security and Acceleration Server,Q632851
+microsoft-frontpage,FrontPage,Q335162
+microsoft-frontpage,Microsoft Office FrontPage,Q335162
+microsoft-frontpage,Vermeer FrontPage,Q335162
+microsoft-mappoint,MapPoint,Q1853389
+microsoft-office-document-imaging,MODI,Q697315
+microsoft-onenote,Microsoft Office OneNote,Q706480
+microsoft-onenote,OneNote,Q706480
+microsoft-outlook,MS Outlook,Q80911
+microsoft-outlook,Microsoft Office Outlook,Q80911
+microsoft-outlook,Outlook,Q80911
+microsoft-paint,MS Paint,Q334046
+microsoft-paint,Microsoft Paintbrush,Q334046
+microsoft-paint,Paint,Q334046
+microsoft-paint,Paintbrush,Q334046
+microsoft-picture-it,Picture It!,Q1787522
+microsoft-power-automate,Microsoft Flow,Q28502244
+microsoft-power-automate,Power Automate,Q28502244
+microsoft-project,MS Project,Q80336
+microsoft-project,Project,Q80336
+microsoft-sharepoint,SharePoint,Q18833
+microsoft-silverlight,Silverlight,Q489048
+microsoft-silverlight,WPF/E,Q489048
+microsoft-silverlight,Windows Presentation Foundation Everywhere,Q489048
+microsoft-visio,MS Visio,Q194978
+microsoft-windows,MSFT Win,Q1406
+microsoft-word,Multi-Tool Word,Q11261
+myfitnesspal,"MyFitnessPal, Inc.",Q6944817
+nagios,NetSaint,Q1134360
+namd,Nanoscale Molecular Dynamics,Q2078655
+nest-js,Nest,Q107015664
+nest-js,Nest.js,Q107015664
+netscape-navigator,Netscape,Q235419
+next-js,NextJS,Q56062435
+nmap,Network Mapper,Q623332
+nmap,Nmap Security Scanner,Q623332
+node-js,Node,Q756100
+node-js,NodeJS,Q756100
+norton-antivirus,NAV,Q741128
+norton-antivirus,Norton Anti-Virus,Q741128
+norton-antivirus,Norton Security,Q741128
+norton-antivirus,Norton by Symantec,Q741128
+norton-antivirus,NortonOnline,Q741128
+nunjucks,NJ,Q101001102
+nunjucks,NJK,Q101001102
+nunjucks,NJX,Q101001102
+omegat,CAT tool,Q703012
+onet-online,O*NET,Q7075783
+onet-online,O*Net,Q7075783
+onet-online,ONET,Q7075783
+onet-online,ONET OnLine,Q7075783
+onet-online,Occupational Information Network,Q7075783
+open-dental,Free Dental,Q2327538
+opendronemap,ODM,Q65077013
+opengl,GL,Q178570
+opengl,OGL,Q178570
+opengl,Open GL,Q178570
+opengl,Open Graphics Library,Q178570
+openofficeorg,Open Office,Q511977
+openvas,Open Vulnerability Assessment System,Q1810573
+oracle-data-guard,Data Guard,Q2027927
+oracle-data-integrator,ODI,Q18154822
+oracle-db,Oracle,Q185524
+oracle-db,Oracle DBMS,Q185524
+oracle-db,Oracle RDBMS,Q185524
+oracle-e-business-suite,EBS,Q2426725
+oracle-e-business-suite,Oracle EBS,Q2426725
+oracle-iplanet-web-server,Netscape Enterprise Server,Q1225115
+oracle-iplanet-web-server,Sun Java System Web Server,Q1225115
+oracle-iplanet-web-server,Sun ONE Web Server,Q1225115
+oracle-iplanet-web-server,iPlanet Web Server,Q1225115
+pascal,Pascal programming language,Q81571
+paypal,paypal.com,Q483959
+perl,Pearl,Q42478
+perl,Perl/CGI,Q42478
+perl,Practical Extraction and Reporting Language,Q42478
+phoenix-framework,Condor,Q517640
+phoenix-framework,Falcon,Q517640
+phoenix-framework,Griffon,Q517640
+phoenix-framework,Phoenix Framework,Q55629889
+phoenix-framework,Vautour,Q517640
+php,PHP Hypertext Preprocessor,Q59
+php,PHP programming language,Q59
+phylip,PHYLogeny Inference Package,Q4046201
+podman,podman.io,Q70876440
+prolog,Programming in Logic,Q163468
+prometheus,Prometheus Time Series Collection and Processing Server,Q52534999
+protocol-buffers,Protobuf,Q1645574
+puppet,Puppet Labs,Q2095962
+puppet,Reductive Labs,Q2095962
+python,Python (Programming Language),Q28865
+python,Python (computer language),Q28865
+python,Python (computing),Q28865
+python,Python (lang),Q28865
+python,Python (language),Q28865
+python,Python (programming),Q28865
+python,Python (scripting language),Q28865
+python,Python (software),Q28865
+python,Python Programming Language,Q28865
+python,Python computer language,Q28865
+python,Python language,Q28865
+python,Python programming language,Q28865
+python,Python.org,Q28865
+qlik-sense,Sense,Q58194319
+quarkxpress,Quark XPress,Q678036
+quicken,Quicken Software,Q2123105
+quizlet,quizlet.com,Q7272716
+r-language,GNU R,Q113585511
+r-language,GNU R,Q206904
+r-language,GNU S,Q113585511
+r-language,GNU S,Q206904
+r-language,R language,Q206904
+r-language,R programming language,Q206904
+r-language,The R Project for Statistical Computing,Q113585511
+react,React.js,Q19399674
+react,Reactjs,Q19399674
+revit,Autodesk Revit (software),Q1457492
+rollup,RollupJS,Q114900810
+rollup,rollup.js,Q114900810
+ruby-language,Ruby language,Q161053
+ruby-language,Ruby programming language,Q161053
+ruby-on-rails,Rails,Q190478
+ruby-on-rails,RoR,Q190478
+rust-language,Rust language,Q575650
+rust-language,Rust programming language,Q575650
+salesforce-marketing-cloud,ExactTarget,Q5419210
+sap-erp,SAP,Q167533
+sap-erp,SAP enterprise resource planning,Q167533
+sass-css,.sass,Q1572865
+scala,Scala programming language,Q460584
+scipy,scipy.org,Q197492
+seamonkey,SeaMonkey Project,Q156197
+seamonkey,SeaMonkey Suite,Q156197
+seamonkey,The SeaMonkey Internet Application Suite,Q156197
+shiny,R Shiny,Q90803460
+shiny,Shiny for R,Q90803460
+shiny,shiny R,Q90803460
+shiny,shiny.rstudio.com,Q90803460
+skencil,Sketch,Q13564
+slack,Slack HQ,Q17130715
+solidjs,Solid Framework,Q114159171
+solidjs,Solid JS,Q114159171
+solidjs,Solid JavaScript Library,Q114159171
+solidjs,Solid.JS,Q114159171
+sonarqube,Sonar,Q541691
+spring-framework,ApplicationContext,Q720314
+spring-framework,Spring,Q720314
+sql,Structural Query Language,Q47607
+sql-server,MS SQL,Q215819
+sql-server,MS SQL Server,Q215819
+sql-server,MS SQL-Server,Q215819
+sql-server,MS SQLServer,Q215819
+sql-server,MS-SQL,Q215819
+sql-server,MS-SQL Server,Q215819
+sql-server,MSSQL,Q215819
+sql-server,SQL Server,Q215819
+sql-server,Windows SQL,Q215819
+sugarsync,sugarsync.com,Q641596
+swift-language,Apple Swift,Q17118377
+swift-language,Swift (Apple programming language),Q17118377
+swift-language,Swift language,Q17118377
+swift-language,Swift programming language,Q17118377
+swift-language,Swift.org,Q17118377
+swift-language,Swiftlang,Q17118377
+tailwindcss,Tailwind,Q102173844
+tailwindcss,TailwindCSS,Q102173844
+terraform,HashiCorp Terraform,Q28957072
+tesseract,Hewlett Packard OCR System,Q945242
+tesseract,Tesseract OCR,Q945242
+three-js,ThreeJS,Q3525922
+tiktok,Tik Tok,Q48938223
+transact-sql,T-SQL,Q1411245
+trino,Presto,Q110808774
+typescript,TS,Q978185
+ulead-photoimpact,PhotoImpact,Q1887791
+vimeo,"Vimeo, Inc.",Q156376
+vimeo,"Vimeo, LLC",Q156376
+vimeo,vimeo.com,Q156376
+vue-js,Vue,Q24589705
+vue-js,VueJS,Q24589705
+watir,Watin,Q4052880
+webassembly,WASM,Q20155677
+webassembly,Wasm,Q20155677
+webassembly,WebASM,Q20155677
+windows-embedded-compact,Microsoft Windows CE,Q488244
+windows-embedded-compact,WinCE,Q488244
+windows-embedded-compact,Windows CE,Q488244
+windows-embedded-compact,Windows Embedded CE,Q488244
+windows-embedded-compact,Windows Embedded Compact efficient,Q488244
+wordpress,Wordpress.org,Q13166
+xerox-docushare,DocuShare,Q523981
+xgboost,eXtreme Gradient Boosting,Q23793561
+youtube,YT,Q866
+youtube,YouTube.com,Q866
+youtube,Youtube.com,Q866
+youtube,www.youtube.com,Q866
+zig,Zig language,Q51885456
+zig,Zig programming language,Q51885456
+zig,Ziglang,Q51885456

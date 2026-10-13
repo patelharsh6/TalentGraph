@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Timothy Mcmahon",
+    "email": "timothy.mcmahon.99@hotmail.com",
+    "phone": "(201)843-7483x093",
+    "location": {
+      "city": "Millershire",
+      "region": "NM",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/timothy-mcmahon",
+      "https://github.com/timothymcmahon"
+    ]
+  },
+  "summary": "Experienced Mid professional with 4+ years of expertise in data. Proven track record delivering scalable solutions using PyTorch, SQL, Apache Spark (PySpark).",
+  "experience": [
+    {
+      "company": "Franklin Inc",
+      "title": "Senior Machine Learning Engineer",
+      "location": "South Brandon, FL",
+      "start": "2022-09",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key data workflows using SQL, PyTorch.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "SQL",
+        "PyTorch",
+        "MLOps",
+        "TensorFlow"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "North Jared State University",
+      "degree": "Bachelor of Science",
+      "field": "Data Science & Statistics",
+      "start": "2018-09",
+      "end": "2022-05",
+      "grade": "4.00 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "PyTorch",
+      "canonical_slug": "pytorch",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized PyTorch across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Spark (PySpark)",
+      "canonical_slug": "apache-spark",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Spark (PySpark) across multiple enterprise roles."
+    },
+    {
+      "raw": "MLOps",
+      "canonical_slug": "machine-learning-operations",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized MLOps across multiple enterprise roles."
+    },
+    {
+      "raw": "dbt",
+      "canonical_slug": "dbt",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized dbt across multiple enterprise roles."
+    },
+    {
+      "raw": "Pandas",
+      "canonical_slug": "pandas",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Pandas across multiple enterprise roles."
+    },
+    {
+      "raw": "Apache Airflow",
+      "canonical_slug": "apache-airflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+    },
+    {
+      "raw": "TensorFlow",
+      "canonical_slug": "tensorflow",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized TensorFlow across multiple enterprise roles."
+    },
+    {
+      "raw": "Data Visualization",
+      "canonical_slug": "business-intelligence",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Data Visualization across multiple enterprise roles."
+    },
+    {
+      "raw": "RAG Architecture",
+      "canonical_slug": "retrieval-augmented-generation",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized RAG Architecture across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Data Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-115622"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging PyTorch.",
+      "technologies": [
+        "PyTorch",
+        "SQL",
+        "Apache Spark (PySpark)"
+      ],
+      "url": "https://github.com/timothymcmahon/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "data",
+    "seniority": "mid",
+    "total_experience_years": 4,
+    "is_emerging_profile": false,
+    "candidate_index": 441
+  }
+}

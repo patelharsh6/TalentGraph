@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "personal": {
+    "name": "Melissa Williams",
+    "email": "melissa.williams.77@yahoo.com",
+    "phone": "(413)256-8044",
+    "location": {
+      "city": "Bondside",
+      "region": "WA",
+      "country": "United States"
+    },
+    "links": [
+      "https://linkedin.com/in/melissa-williams",
+      "https://github.com/melissawilliams"
+    ]
+  },
+  "summary": "Experienced Principal professional with 16+ years of expertise in finance. Proven track record delivering scalable solutions using Financial Modeling, DCF Valuation, Financial Analysis.",
+  "experience": [
+    {
+      "company": "Wright, Murray and Lara",
+      "title": "Senior Risk Analyst",
+      "location": "North Alexander, MP",
+      "start": "2022-10",
+      "end": null,
+      "is_current": true,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using DCF Valuation, Bloomberg Terminal.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "DCF Valuation",
+        "Bloomberg Terminal",
+        "Stakeholder Management",
+        "SQL"
+      ]
+    },
+    {
+      "company": "Anderson Group",
+      "title": "Senior Investment Analyst",
+      "location": "Ginaland, OR",
+      "start": "2018-06",
+      "end": "2022-10",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Advanced Excel, Financial Analysis.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Advanced Excel",
+        "Financial Analysis",
+        "Stakeholder Management",
+        "SQL"
+      ]
+    },
+    {
+      "company": "Green, Hess and Johnson",
+      "title": "Financial Analyst",
+      "location": "East Rachelmouth, AS",
+      "start": "2014-02",
+      "end": "2018-06",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using Advanced Excel, Financial Modeling.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "Advanced Excel",
+        "Financial Modeling",
+        "SQL",
+        "DCF Valuation"
+      ]
+    },
+    {
+      "company": "Davis LLC",
+      "title": "Financial Analyst",
+      "location": "North Sheriton, GA",
+      "start": "2010-11",
+      "end": "2014-02",
+      "is_current": false,
+      "duration_months": 48,
+      "responsibilities": [
+        "Led the architectural design and implementation of key finance workflows using DCF Valuation, Bloomberg Terminal.",
+        "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+        "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+      ],
+      "skills_mentioned": [
+        "DCF Valuation",
+        "Bloomberg Terminal",
+        "Advanced Excel",
+        "Financial Modeling"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Underwoodfurt State University",
+      "degree": "PhD",
+      "field": "Finance & Economics",
+      "start": "2006-09",
+      "end": "2010-05",
+      "grade": "3.89 GPA"
+    }
+  ],
+  "skills": [
+    {
+      "raw": "Financial Modeling",
+      "canonical_slug": "financial-modeling",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Modeling across multiple enterprise roles."
+    },
+    {
+      "raw": "DCF Valuation",
+      "canonical_slug": "dcf-valuation",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+    },
+    {
+      "raw": "Financial Analysis",
+      "canonical_slug": "financial-analysis",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Financial Analysis across multiple enterprise roles."
+    },
+    {
+      "raw": "Bloomberg Terminal",
+      "canonical_slug": "bloomberg-terminal",
+      "emerging": false,
+      "category_hint": "business",
+      "evidence": "Utilized Bloomberg Terminal across multiple enterprise roles."
+    },
+    {
+      "raw": "SQL",
+      "canonical_slug": "sql",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized SQL across multiple enterprise roles."
+    },
+    {
+      "raw": "Stakeholder Management",
+      "canonical_slug": "stakeholder-communication",
+      "emerging": false,
+      "category_hint": "soft",
+      "evidence": "Utilized Stakeholder Management across multiple enterprise roles."
+    },
+    {
+      "raw": "Advanced Excel",
+      "canonical_slug": "microsoft-excel",
+      "emerging": false,
+      "category_hint": "technical",
+      "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Finance Professional",
+      "issuer": "Industry Accreditation Board",
+      "date": "2023-06",
+      "expires": "2026-06",
+      "credential_id": "CERT-295361"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Finance Optimization System",
+      "description": "Designed and delivered a high-impact production tool leveraging Financial Modeling.",
+      "technologies": [
+        "Financial Modeling",
+        "DCF Valuation",
+        "Financial Analysis"
+      ],
+      "url": "https://github.com/melissawilliams/project-showcase",
+      "dates": "2024"
+    }
+  ],
+  "publications": [],
+  "meta": {
+    "industry": "finance",
+    "seniority": "principal",
+    "total_experience_years": 16,
+    "is_emerging_profile": false,
+    "candidate_index": 79,
+    "template": "table_based",
+    "format": "pdf",
+    "split": "val",
+    "noise": {
+      "typo_rate": 0.01,
+      "dropped_section": null,
+      "sections_shuffled": false
+    }
+  }
+}
