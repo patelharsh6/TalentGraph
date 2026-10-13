@@ -27,6 +27,9 @@ class Settings(BaseSettings):
     llm_timeout_s: float = 8.0
     llm_max_concurrency: int = 4
     llm_stub_latency_ms: int = 2500
+    # Gemini "thinking" adds latency and isn't needed for extraction: low | medium | high
+    # Blank leaves the model's default.
+    llm_thinking_level: str = "low"
 
     # Embeddings
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
@@ -35,14 +38,20 @@ class Settings(BaseSettings):
     api_key: SecretStr | None = None
     rate_limit_per_min: int = 60
     max_upload_mb: int = 10
+    max_pdf_pages: int = 20
     max_batch_files: int = 20
 
     # Uploads
     retain_uploads: bool = False
     upload_dir: str = "uploads"
 
-    # Paths
+    # Parsing
+    parse_cache_ttl_s: int = 7 * 24 * 3600
+
+    # Paths (relative to the working directory: the repo root, or /app in the container)
     fixtures_dir: str = Field(default="tests/fixtures/llm")
+    config_dir: str = "config"
+    taxonomy_dir: str = "data/taxonomy"
 
     @field_validator("gemini_api_key", "api_key", mode="before")
     @classmethod
