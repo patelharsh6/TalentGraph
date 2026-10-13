@@ -30,7 +30,7 @@ Step-by-step done/pending detail, owner actions and the metrics scoreboard are i
 | Milestone | Name | Status | Progress record |
 |---|---|---|---|
 | 0 | Foundation & data (v1 Phases 0–1) | 🟨 Done except 0-H (CI green), which needs the owner to push a branch | [phase-00](../docs/progress/phase-00.md), [phase-01](../docs/progress/phase-01.md) |
-| 1 | Scope cleanup | 🟨 Code and docs done; compose and migration checks (1-C, 1-D) wait for Docker | [milestone-01](../docs/progress/milestone-01.md) |
+| 1 | Scope cleanup | ✅ Done 2026-10-13 (all of 1-A to 1-E pass) | [milestone-01](../docs/progress/milestone-01.md) |
 | 2 | Parsing Agent + grounded extraction (F2) | ⬜ Not started | n/a |
 | 3 | Normalization Agent + fine-tuned embeddings (F5) | ⬜ Not started | n/a |
 | 4 | Matching Agent + pipeline + blind screening (F4) | ⬜ Not started | n/a |

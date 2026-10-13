@@ -1,6 +1,6 @@
 # TalentGraph: Project Status
 
-> **Last updated:** 2026-10-13 · **Current milestone:** 1 (Scope cleanup), waiting on the Docker checks · **Next:** Milestone 2 (Parsing Agent + F2)
+> **Last updated:** 2026-10-13 · **Current milestone:** 2 (Parsing Agent + F2) · Milestone 1 ✅ (0-H in Milestone 0 still waits on a pushed branch)
 >
 > This page lists every milestone and step and whether it's done. The steps and their exit criteria are defined in [`ordered.md`](ordered.md), and the evidence for completed work is in [`docs/progress/`](../docs/progress/). Update this page whenever a step or exit criterion changes state.
 
@@ -13,7 +13,7 @@
 | Milestone | Name | Steps done | Exit criteria | Status |
 |---|---|---|---|---|
 | 0 | Foundation & data (v1 Phases 0–1) | all | 17 / 18 (0-H waits on owner) | 🟨 |
-| 1 | Scope cleanup | 7 / 7 | 3 / 5 (1-C, 1-D need Docker) | 🟨 |
+| 1 | Scope cleanup | 7 / 7 | 5 / 5 | ✅ |
 | 2 | Parsing Agent + grounded extraction (F2) | 0 / 15 | 0 / 7 | ⬜ |
 | 3 | Normalization Agent + fine-tuned embeddings (F5) | 0 / 11 | 0 / 7 | ⬜ |
 | 4 | Matching Agent + pipeline + blind screening (F4) | 0 / 11 | 0 / 6 | ⬜ |
@@ -26,8 +26,8 @@
 
 | # | Action | Unblocks | Status |
 |---|---|---|---|
-| 1 | Start Docker Desktop and run the compose and migration checks (commands in [`milestone-01.md`](../docs/progress/milestone-01.md#known-issues--follow-ups)) | 1-C, 1-D → Milestone 1 ✅ | ⏳ |
-| 2 | Review and commit the changes, then push a branch so CI runs | 0-H → Milestone 0 ✅ | ⏳ |
+| 1 | Start Docker Desktop and run the compose and migration checks | 1-C, 1-D → Milestone 1 ✅ | ✅ done 2026-10-13 |
+| 2 | Review and commit the changes (including the one-line `db/models.py` index fix from 1-D), then push a branch so CI runs | 0-H → Milestone 0 ✅ | ⏳ |
 | 3 | Remove the deleted variables (`CELERY_*`, `LLM_FALLBACK_MODEL`, …) from your local `.env` and add `API_KEY=` | Clean config (not blocking) | ⏳ |
 | 4 | Set `GEMINI_API_KEY` in `.env` | Step 2.9 (record LLM fixtures), 2.14 | ⏳ |
 | 5 | Collect 10–20 resumes with written consent, including consent to Gemini free-tier processing | Step 2.15 | ⏳ |
@@ -61,7 +61,7 @@ Done in v1 Phases 0–1. Evidence: [`phase-00.md`](../docs/progress/phase-00.md)
 | 1-H | Label quality (human κ pending, allowed) | ✅ |
 | 1-I | Byte-for-byte reproducibility | ✅ |
 
-## Milestone 1: Scope cleanup 🟨
+## Milestone 1: Scope cleanup ✅
 
 Evidence: [`milestone-01.md`](../docs/progress/milestone-01.md).
 
@@ -80,8 +80,8 @@ Evidence: [`milestone-01.md`](../docs/progress/milestone-01.md).
 |---|---|---|
 | 1-A | Lint, types, tests (53 passed) | ✅ |
 | 1-B | No references to removed features | ✅ |
-| 1-C | Compose stack (4 services) healthy | ⏳ Docker not running |
-| 1-D | Migrations round-trip (`0001` ↔ `0002`) | ⏳ Docker not running |
+| 1-C | Compose stack (4 services) healthy | ✅ |
+| 1-D | Migrations round-trip (`0001` ↔ `0002`); `alembic check` clean after the `emerging_skills` index fix | ✅ |
 | 1-E | Docs consistent; D1–D12 unchanged | ✅ |
 
 ## Milestone 2: Parsing Agent + grounded extraction (F2) ⬜

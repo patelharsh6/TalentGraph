@@ -230,7 +230,7 @@ The frontend (milestone 7) can start in parallel once milestone 5's OpenAPI sche
 - [ ] Push a branch so CI runs and Phase 0 exit criterion 0-H can close.
 - [ ] Pick the demo hosting target (backend VM/container host; Vercel for frontend) and a Hugging Face account for the fine-tuned model.
 
-**Milestone 1: build first** (code and docs done 2026-10-13; see `docs/progress/milestone-01.md`)
+**Milestone 1: build first** (done 2026-10-13; see `docs/progress/milestone-01.md`)
 - [x] Write ADR-0003 "Portfolio re-scope", and add plan §14 rows superseding D2/D8 (Celery), D10 (load target) and the out-of-scope UI entry.
 - [x] Rewrite `documents/plan.md` and `documents/ordered.md` from this document; reset the status tracker to milestones 0–8.
 - [x] Delete `src/talentgraph/worker/` (Celery app and tasks), `api/webhooks.py`, `api/idempotency.py`, `observability/tracing.py`, `observability/metrics.py`, `llm/ratelimit.py`.
@@ -238,7 +238,7 @@ The frontend (milestone 7) can start in parallel once milestone 5's OpenAPI sche
 - [x] Remove `worker`, `flower`, `jaeger`, `prometheus` from `docker-compose.yml`; drop Celery, Flower, OTel, prometheus-client, pdfplumber, (Locust kept for the small M5 test) from `pyproject.toml`; `uv sync`.
 - [x] Alembic `0002`: drop `webhook_deliveries`; drop `api_keys` and every `api_key_id` (one key from the environment); keep `batch_jobs`, `batch_items`, `emerging_skills` (as the unrecognized-skill store).
 - [x] Remove the dropped variables from `config.py` and `.env.example`; update `CLAUDE.md`, `README.md`, CI workflow.
-- [ ] Run the global checks and record them in `docs/progress/` (ruff, mypy, pytest done; compose up and the migration round-trip wait for Docker).
+- [x] Run the global checks and record them in `docs/progress/` (ruff, mypy, pytest, compose up with 4 healthy services, migration round-trip and `alembic check`).
 
 **Milestone 2: next**
 - [ ] Add `verified`/`evidence` to the `ParsedResume` schema; write the Gemini extraction prompt; record FakeLLM fixtures.

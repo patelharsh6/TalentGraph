@@ -82,7 +82,7 @@ class SkillRelation(Base):
 class EmergingSkill(Base):
     __tablename__ = "emerging_skills"
     id: Mapped[int] = mapped_column(primary_key=True)
-    normalized_text: Mapped[str] = mapped_column(String(200), unique=True)
+    normalized_text: Mapped[str] = mapped_column(String(200), unique=True, index=True)
     occurrences: Mapped[int] = mapped_column(Integer, default=1)
     example_contexts: Mapped[list[Any]] = mapped_column(default=list)
 

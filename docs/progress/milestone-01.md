@@ -1,17 +1,17 @@
 # Milestone 01: Scope cleanup: progress record
 
-- **Completed by:** Claude Code (agent) for the owner   **Date:** 2026-10-13   **Git SHA:** uncommitted (on top of `88dff78`)
+- **Completed by:** Claude Code (agent) for the owner   **Date:** 2026-10-13   **Git SHA:** `a84c6b7` + one uncommitted line in `db/models.py` (see 1-D)
 - **LLM quota used:** 0 requests
-- **Status:** 🟨 1-A, 1-B and 1-E pass. **1-C and 1-D (Docker) are not run yet:** Docker Desktop wasn't running in this session (`failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine`).
+- **Status:** ✅ All five exit criteria pass. 1-A and 1-B were re-run at `a84c6b7`; 1-C and 1-D were run once Docker Desktop was up (Docker Engine 29.7.2). The first session couldn't run them (`failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine`).
 
 ## Exit criteria results
 
 | # | Check | Command run | Result / metric | Pass? |
 |---|---|---|---|---|
-| 1-A | Lint, types, tests | `uv run ruff check . && uv run ruff format --check . && uv run mypy && uv run pytest` | `All checks passed!`; `110 files already formatted`; `Success: no issues found in 74 source files`; `53 passed, 2 deselected` | ✅ |
-| 1-B | Nothing removed is still referenced | the grep in `ordered.md` 1-B | No matches (grep exit 1). Remaining hits elsewhere are Prometheus/Jaeger/OpenTelemetry as taxonomy *skills* in `scripts/` and "idempotent" in `scripts/seed.py` | ✅ |
-| 1-C | Stack comes up | `docker compose up -d --build --wait` | **Not run:** Docker daemon unavailable. `docker-compose.yml` parses with 4 services (`api`, `postgres`, `redis`, `chroma`) | ⏳ |
-| 1-D | Migrations round-trip | `alembic upgrade head` → `downgrade 0001_initial_schema` → `upgrade head` in the api container | **Not run:** Docker daemon unavailable. `0002_portfolio_rescope` passes ruff/mypy, and the ORM tables match the unit test | ⏳ |
+| 1-A | Lint, types, tests | `uv run ruff check . && uv run ruff format --check . && uv run mypy && uv run pytest` | `All checks passed!`; `113 files already formatted`; `Success: no issues found in 74 source files`; `53 passed, 2 deselected` (re-run at `a84c6b7` and again after the 1-D model fix) | ✅ |
+| 1-B | Nothing removed is still referenced | the grep in `ordered.md` 1-B | No matches (grep exit 1). The re-run first matched three stale, gitignored `__pycache__/*.pyc` files (one for the deleted `llm/ratelimit.py`); after clearing `__pycache__` under `src`/`tests`/`eval` the grep exits 1. Remaining hits elsewhere are Prometheus/Jaeger/OpenTelemetry as taxonomy *skills* in `scripts/` and "idempotent" in `scripts/seed.py` | ✅ |
+| 1-C | Stack comes up | `docker compose up -d --build --wait` | Exit 0. `docker compose ps`: `api`, `chroma`, `postgres`, `redis` all `running` / `healthy`, and no other `talentgraph-*` containers exist (no v1 leftovers). Extra checks: `GET /health` → `{"status":"ok","version":"0.1.0","pipeline_version":"1"}`; `GET /ready` → `{"status":"ok","checks":{"db":"ok","redis":"ok","chroma":"ok"}}`; `GET /metrics` → 404 (mount removed) | ✅ |
+| 1-D | Migrations round-trip | `docker compose exec api alembic` `current`, `upgrade head`, `downgrade 0001_initial_schema`, `current`, `upgrade head`, `current`; then `alembic check` | All exit 0. The DB was already at `0002_portfolio_rescope (head)`. Downgrade ran `0002 -> 0001` (`current` = `0001_initial_schema`), upgrade ran `0001 -> 0002`. Live tables: `agent_runs, batch_items, batch_jobs, candidate_skills, candidates, emerging_skills, jobs, matches, skill_aliases, skill_implications, skill_relations, skills` (+ `alembic_version`), which matches plan §7.1. No `api_key_id`, `callback_url` or `emerging_skills` review columns remain. `alembic check` first reported drift (see below); after the fix: `No new upgrade operations detected.` | ✅ |
 | 1-E | Docs consistent | manual read of `CLAUDE.md`, `README.md`, plan §14, ADR-0003 | No Celery/Flower/Jaeger/Prometheus commands or services remain; D13–D18 added; D1–D12 copied verbatim from `archive/plan-v1.md` | ✅ |
 
 ## What changed
@@ -49,18 +49,14 @@
 
 ## Deviations from plan
 
+- **ORM/migration drift fixed during 1-D:** `alembic check` reported `remove_index ix_emerging_skills_normalized_text` + `add_constraint UniqueConstraint(normalized_text)`. Migration `0001` creates a unique *index*, but `EmergingSkill.normalized_text` was declared `unique=True` only, which autogenerate reads as a unique *constraint*. This dates from Milestone 0, not `0002`. Uniqueness held either way. Fix: `db/models.py:85` is now `unique=True, index=True`, matching `skills.slug` and `skill_aliases.alias_normalized`. No migration was needed. The api image was rebuilt and `alembic check` is clean.
+
 - **slowapi and auth:** `project-plan-v2.md` listed "replace `api/ratelimit.py` with slowapi" under Milestone 1. Both `api/ratelimit.py` and `api/auth.py` were docstring-only stubs, so this milestone re-pointed them at Steps 5.2–5.3 and added the settings. The `slowapi` dependency is added in Step 5.3, when it is first used.
 
 ## Known issues / follow-ups
 
-- **1-C / 1-D:** start Docker Desktop and run:
-  ```bash
-  docker compose up -d --build --wait && docker compose ps
-  docker compose exec api alembic upgrade head
-  docker compose exec api alembic downgrade 0001_initial_schema
-  docker compose exec api alembic upgrade head
-  ```
-  An existing `pgdata` volume is at `0001`; `upgrade head` applies `0002`.
+- **Uncommitted:** the one-line `db/models.py` fix above. The owner should review and commit it.
+- **Build time:** any change under `src/` makes the api image rebuild take about 10 minutes. The builder re-runs `uv sync`, the embedding-model download and the venv copy (Dockerfile lines 10–22). Worth splitting those layers if it slows iteration.
 - **Local `.env`:** the owner's local `.env` (not in git) still holds the removed variables (`CELERY_*`, `LLM_FALLBACK_MODEL`, …). They are ignored (`extra="ignore"`), but should be cleaned up against `.env.example`. Add `API_KEY=` there too.
 - **0-H** (CI green) still needs a pushed branch. `ci.yml` needed no changes for the re-scope.
 - `core/schemas/messages.py` still has the v1 `AgentMessage` envelope; Step 4.6 simplifies it (plan §5).
