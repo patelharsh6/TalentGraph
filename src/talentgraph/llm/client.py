@@ -72,11 +72,15 @@ class GeminiLLM:
         raise AssertionError("unreachable")
 
     async def _call(self, model: str, schema: type[T], system: str, user: str) -> T:
+        level = self._settings.llm_thinking_level.strip().upper()
         config = types.GenerateContentConfig(
             system_instruction=system,
             response_mime_type="application/json",
             response_json_schema=schema.model_json_schema(),
             temperature=0,
+            thinking_config=types.ThinkingConfig(thinking_level=types.ThinkingLevel(level))
+            if level
+            else None,
         )
         start = time.perf_counter()
         async with self._semaphore, asyncio.timeout(self._settings.llm_timeout_s):

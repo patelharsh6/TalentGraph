@@ -29,7 +29,7 @@ Step-by-step done/pending detail, owner actions and the metrics scoreboard are i
 
 | Milestone | Name | Status | Progress record |
 |---|---|---|---|
-| 0 | Foundation & data (v1 Phases 0–1) | 🟨 Done except 0-H (CI green), which needs the owner to push a branch | [phase-00](../docs/progress/phase-00.md), [phase-01](../docs/progress/phase-01.md) |
+| 0 | Foundation & data (v1 Phases 0–1) | ✅ Done 2026-10-13 (0-H: CI green on `main`) | [phase-00](../docs/progress/phase-00.md), [phase-01](../docs/progress/phase-01.md) |
 | 1 | Scope cleanup | ✅ Done 2026-10-13 (all of 1-A to 1-E pass) | [milestone-01](../docs/progress/milestone-01.md) |
 | 2 | Parsing Agent + grounded extraction (F2) | ⬜ Not started | n/a |
 | 3 | Normalization Agent + fine-tuned embeddings (F5) | ⬜ Not started | n/a |
@@ -54,7 +54,7 @@ Legend: ⬜ Not started · 🟨 In progress · ✅ Complete · ⛔ Blocked (give
 
 Done. Scaffolding, tooling, Docker Compose, CI config, the Gemini/FakeLLM wrapper, the DB schema, the taxonomy (9,642 skills, 15,122 aliases), 560 synthetic resumes, 120 JDs and the gold sets. Details and evidence: [`phase-00.md`](../docs/progress/phase-00.md), [`phase-01.md`](../docs/progress/phase-01.md), [`data/README.md`](../data/README.md).
 
-**Open item:** 0-H (CI green) needs the owner to push a branch.
+**Open items:** none. 0-H passed on 2026-10-13 (CI run 38409286091).
 
 ---
 

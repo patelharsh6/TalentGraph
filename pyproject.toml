@@ -98,6 +98,12 @@ module = [
 ]
 ignore_missing_imports = true
 
+# PyMuPDF's partial inline hints fail strict mode (untyped calls, Document not iterable); treat it
+# as untyped.
+[[tool.mypy.overrides]]
+module = ["pymupdf", "pymupdf.*"]
+follow_imports = "skip"
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"

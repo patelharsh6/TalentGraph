@@ -1,6 +1,6 @@
 # Milestone 01: Scope cleanup: progress record
 
-- **Completed by:** Claude Code (agent) for the owner   **Date:** 2026-10-13   **Git SHA:** `a84c6b7` + one uncommitted line in `db/models.py` (see 1-D)
+- **Completed by:** Claude Code (agent) for the owner   **Date:** 2026-10-13   **Git SHA:** `a84c6b7`; the 1-D model fix was committed in `43a3d78`. CI is green at `0cdee4b` (run 38409286091)
 - **LLM quota used:** 0 requests
 - **Status:** ✅ All five exit criteria pass. 1-A and 1-B were re-run at `a84c6b7`; 1-C and 1-D were run once Docker Desktop was up (Docker Engine 29.7.2). The first session couldn't run them (`failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine`).
 
@@ -55,7 +55,6 @@
 
 ## Known issues / follow-ups
 
-- **Uncommitted:** the one-line `db/models.py` fix above. The owner should review and commit it.
 - **Build time:** any change under `src/` makes the api image rebuild take about 10 minutes. The builder re-runs `uv sync`, the embedding-model download and the venv copy (Dockerfile lines 10–22). Worth splitting those layers if it slows iteration.
 - **Local `.env`:** the owner's local `.env` (not in git) still holds the removed variables (`CELERY_*`, `LLM_FALLBACK_MODEL`, …). They are ignored (`extra="ignore"`), but should be cleaned up against `.env.example`. Add `API_KEY=` there too.
 - **0-H** (CI green) still needs a pushed branch. `ci.yml` needed no changes for the re-scope.

@@ -1,9 +1,192 @@
-# Section header variants (plan §6.1 step 3). Seed list; expand to 150+ variants in Step 2.7.
-contact: ["contact", "contact information", "personal details", "personal information"]
-summary: ["summary", "professional summary", "profile", "about me", "objective", "career objective"]
-experience: ["experience", "work experience", "professional experience", "employment history", "work history", "career history"]
-education: ["education", "academic background", "qualifications", "academic qualifications"]
-skills: ["skills", "technical skills", "core competencies", "key skills", "technologies", "tech stack"]
-certifications: ["certifications", "certificates", "licenses", "licenses & certifications"]
-projects: ["projects", "personal projects", "key projects", "selected projects"]
-publications: ["publications", "papers", "research", "selected publications"]
+# Section header variants (plan §6.1 step 3, Step 2.7). Matching is case-insensitive and ignores
+# leading icons/bullets, surrounding punctuation and a trailing colon; "&" and "and" are equivalent.
+# tests/unit/test_parsing_sections.py checks there are at least 150 variants and no duplicates.
+contact:
+  - contact
+  - contacts
+  - contact information
+  - contact info
+  - contact details
+  - personal details
+  - personal information
+  - personal info
+  - personal data
+  - get in touch
+  - reach me
+  - details
+summary:
+  - summary
+  - professional summary
+  - executive summary
+  - career summary
+  - summary of qualifications
+  - qualifications summary
+  - profile
+  - professional profile
+  - career profile
+  - personal profile
+  - personal statement
+  - about
+  - about me
+  - objective
+  - career objective
+  - professional objective
+  - objectives
+  - overview
+  - professional overview
+  - introduction
+  - highlights
+  - career highlights
+  - professional highlights
+  - who i am
+experience:
+  - experience
+  - work experience
+  - professional experience
+  - relevant experience
+  - employment
+  - employment history
+  - employment experience
+  - work history
+  - career history
+  - professional history
+  - career
+  - career experience
+  - positions held
+  - professional background
+  - work background
+  - industry experience
+  - experience summary
+  - roles
+  - internships
+  - internship experience
+  - military experience
+  - volunteer experience
+  - leadership experience
+  - teaching experience
+  - research experience
+  - consulting experience
+  - freelance experience
+education:
+  - education
+  - education and training
+  - education and qualifications
+  - educational background
+  - educational qualifications
+  - academic background
+  - academic qualifications
+  - academic credentials
+  - academic history
+  - academics
+  - qualifications
+  - degrees
+  - schooling
+  - training
+  - education history
+  - university education
+  - academic profile
+  - academic record
+skills:
+  - skills
+  - technical skills
+  - key skills
+  - core skills
+  - hard skills
+  - soft skills
+  - professional skills
+  - relevant skills
+  - skill set
+  - skillset
+  - skills and abilities
+  - skills and proficiencies
+  - skills and expertise
+  - skills summary
+  - core competencies
+  - competencies
+  - key competencies
+  - areas of expertise
+  - expertise
+  - technical expertise
+  - technical proficiencies
+  - proficiencies
+  - technologies
+  - technology stack
+  - tech stack
+  - tools
+  - tools and technologies
+  - technical tools
+  - programming languages
+  - languages and frameworks
+  - strengths
+  - capabilities
+  - abilities
+  - specialties
+  - specializations
+  - areas of strength
+certifications:
+  - certifications
+  - certification
+  - certificates
+  - certifications and licenses
+  - licenses and certifications
+  - licenses
+  - licensure
+  - professional certifications
+  - credentials
+  - professional credentials
+  - accreditations
+  - professional development
+  - courses
+  - courses and certifications
+  - training and certifications
+  - certifications and training
+  - professional licenses
+projects:
+  - projects
+  - project
+  - key projects
+  - selected projects
+  - technical projects
+  - personal projects
+  - academic projects
+  - side projects
+  - notable projects
+  - project experience
+  - project highlights
+  - relevant projects
+  - portfolio
+  - open source
+  - open source contributions
+publications:
+  - publications
+  - papers
+  - research
+  - research papers
+  - selected publications
+  - publications and presentations
+  - presentations
+  - conference papers
+  - patents
+  - articles
+other:
+  - awards
+  - honors
+  - honors and awards
+  - awards and honors
+  - achievements
+  - accomplishments
+  - interests
+  - hobbies
+  - hobbies and interests
+  - languages
+  - spoken languages
+  - volunteering
+  - volunteer work
+  - community involvement
+  - activities
+  - extracurricular activities
+  - affiliations
+  - memberships
+  - professional memberships
+  - references
+  - additional information

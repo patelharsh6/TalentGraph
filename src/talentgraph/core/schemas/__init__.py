@@ -8,7 +8,7 @@ from talentgraph.core.schemas.messages import (
     AgentResult,
     QualityScore,
 )
-from talentgraph.core.schemas.resume import ParsedResume
+from talentgraph.core.schemas.resume import ParsedResume, ParseResult, ResumeExtraction
 from talentgraph.core.schemas.skills import SkillProfile
 
 __all__ = [
@@ -17,7 +17,9 @@ __all__ = [
     "AgentName",
     "AgentResult",
     "MatchResult",
+    "ParseResult",
     "ParsedResume",
     "QualityScore",
+    "ResumeExtraction",
     "SkillProfile",
 ]

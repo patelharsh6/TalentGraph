@@ -2,7 +2,7 @@
 
 - **Completed by:** Claude Code (agent) for the owner   **Date:** 2026-10-03   **Git SHA:** uncommitted (on top of `88dff78`)
 - **LLM quota used:** 0 requests (no `GEMINI_API_KEY` configured; the live `llm` test skipped)
-- **Status:** 🟨 Every criterion that can run locally passes. **0-H (CI green) is pending**: it needs the owner to push a branch.
+- **Status:** ✅ All criteria pass. 0-H was verified on 2026-10-13: CI run [38409286091](https://github.com/patelharsh6/TalentGraph/actions/runs/38409286091) on `main` @ `0cdee4b` passed (0-I was later dropped by ADR-0003).
 
 ## Exit criteria results
 
@@ -15,7 +15,7 @@
 | 0-E | Migrations apply cleanly | `docker compose exec api alembic upgrade head`, then `downgrade base`, then `upgrade head` | exit 0 / 0 / 0. `pg_tables` lists 14 tables plus `alembic_version`: agent_runs, api_keys, batch_items, batch_jobs, candidate_skills, candidates, emerging_skills, jobs, matches, skill_aliases, skill_implications, skill_relations, skills, webhook_deliveries (all of plan §7.1) | ✅ |
 | 0-F | OpenAPI served | `GET /openapi.json`, `GET /docs` | `[200]`, `[200]` | ✅ |
 | 0-G | LLM wrapper is safe | `uv run pytest tests/unit/test_fake_llm.py tests/unit/test_config.py`; `uv run pytest -m llm` | `get_llm()` returns `FakeLLM` without a key (unit tests pass, including the new blank-key case). `-m llm`: `SKIPPED: GEMINI_API_KEY is not set` (allowed: the live half is optional without a key) | ✅ |
-| 0-H | CI green | push a branch (owner only) | **Not run.** The agent never commits or pushes. `ci.yml` parses and has jobs `checks` and `integration` | ⏳ pending owner |
+| 0-H | CI green | owner pushed `main`; `gh run watch 38409286091 --exit-status` | CI run [38409286091](https://github.com/patelharsh6/TalentGraph/actions/runs/38409286091) @ `0cdee4b`: `checks` ✓ 1m27s (`52 passed, 1 skipped, 2 deselected`, coverage 71%; the skip is the `data/resumes` test, which is gitignored by design); `integration` ✓ 3m26s (compose `--wait`, taxonomy seed, `1 passed`). Earlier runs failed (`3 failed, 30 errors`, `FileNotFoundError: data/taxonomy/skills.csv`) because `.gitignore` excluded all of `data/` and `tests/fixtures/`. Fixed in `0cdee4b` by committing the generated data | ✅ (2026-10-13) |
 | 0-I | Celery worker | `docker compose exec worker celery -A talentgraph.worker.celery_app inspect ping`; `send_task('talentgraph.ping').get()` | `pong` / `1 node online.`; `talentgraph.ping -> pong` | ✅ |
 
 ## Iteration log (metrics phases only)
@@ -38,7 +38,7 @@
 
 ## Known issues / follow-ups
 
-- **0-H** needs a pushed branch. CI hasn't been observed running, so the `integration` job (compose `--wait`, seed in container, parity test) is unverified on GitHub runners.
+- **0-H** ✅ 2026-10-13. Both CI jobs pass on GitHub runners. Keep the generated `data/` CSV/YAML/JSON and `tests/fixtures/` committed: both jobs read them. CI annotations to address eventually: `actions/checkout@v4` and `astral-sh/setup-uv@v3` target the deprecated Node.js 20, and `ubuntu-latest` moves to Ubuntu 26 from 2026-10-19.
 - The api logs `Transient error ... exporting spans batch` against jaeger even though `OTEL_ENABLED=false`. Phase 8 should check that the tracing setup honours the flag.
 - Right after `up --wait` returned, host `curl` saw one connection failure (`[000]`) before Docker Desktop's port-forward was ready. A retry seconds later returned 200. This is a Windows/Docker Desktop artifact, not an app issue.
 - Windows Application Control blocks torch's native DLL (as it already did for mypy 2.x). Anything that loads the encoder must run in a container on this machine.

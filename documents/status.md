@@ -1,6 +1,6 @@
 # TalentGraph: Project Status
 
-> **Last updated:** 2026-10-13 · **Current milestone:** 2 (Parsing Agent + F2) · Milestone 1 ✅ (0-H in Milestone 0 still waits on a pushed branch)
+> **Last updated:** 2026-10-13 · **Current milestone:** 2 (Parsing Agent + F2) · Milestones 0 and 1 ✅
 >
 > This page lists every milestone and step and whether it's done. The steps and their exit criteria are defined in [`ordered.md`](ordered.md), and the evidence for completed work is in [`docs/progress/`](../docs/progress/). Update this page whenever a step or exit criterion changes state.
 
@@ -12,7 +12,7 @@
 
 | Milestone | Name | Steps done | Exit criteria | Status |
 |---|---|---|---|---|
-| 0 | Foundation & data (v1 Phases 0–1) | all | 17 / 18 (0-H waits on owner) | 🟨 |
+| 0 | Foundation & data (v1 Phases 0–1) | all | 18 / 18 | ✅ |
 | 1 | Scope cleanup | 7 / 7 | 5 / 5 | ✅ |
 | 2 | Parsing Agent + grounded extraction (F2) | 0 / 15 | 0 / 7 | ⬜ |
 | 3 | Normalization Agent + fine-tuned embeddings (F5) | 0 / 11 | 0 / 7 | ⬜ |
@@ -27,7 +27,7 @@
 | # | Action | Unblocks | Status |
 |---|---|---|---|
 | 1 | Start Docker Desktop and run the compose and migration checks | 1-C, 1-D → Milestone 1 ✅ | ✅ done 2026-10-13 |
-| 2 | Review and commit the changes (including the one-line `db/models.py` index fix from 1-D), then push a branch so CI runs | 0-H → Milestone 0 ✅ | ⏳ |
+| 2 | Review and commit the changes, then push a branch so CI runs | 0-H → Milestone 0 ✅ | ✅ done 2026-10-13 (CI run 38409286091) |
 | 3 | Remove the deleted variables (`CELERY_*`, `LLM_FALLBACK_MODEL`, …) from your local `.env` and add `API_KEY=` | Clean config (not blocking) | ⏳ |
 | 4 | Set `GEMINI_API_KEY` in `.env` | Step 2.9 (record LLM fixtures), 2.14 | ⏳ |
 | 5 | Collect 10–20 resumes with written consent, including consent to Gemini free-tier processing | Step 2.15 | ⏳ |
@@ -36,7 +36,7 @@
 
 ---
 
-## Milestone 0: Foundation & data 🟨
+## Milestone 0: Foundation & data ✅
 
 Done in v1 Phases 0–1. Evidence: [`phase-00.md`](../docs/progress/phase-00.md), [`phase-01.md`](../docs/progress/phase-01.md).
 
@@ -49,7 +49,7 @@ Done in v1 Phases 0–1. Evidence: [`phase-00.md`](../docs/progress/phase-00.md)
 | 0-E | Migrations apply cleanly (v2 re-check is 1-D) | ✅ |
 | 0-F | OpenAPI served | ✅ |
 | 0-G | LLM wrapper safe (FakeLLM fallback) | ✅ |
-| 0-H | CI green on a pushed branch | ⏳ owner |
+| 0-H | CI green on a pushed branch | ✅ (run 38409286091) |
 | 0-I | Celery worker ping | ✅ then ➖ (Celery removed by ADR-0003) |
 | 1-A | Taxonomy size: 9,642 skills, 15,122 aliases | ✅ |
 | 1-B | Taxonomy integrity tests | ✅ |
