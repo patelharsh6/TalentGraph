@@ -1,1 +1,1 @@
-"""Phase 10.4: Locust load test mix (M5). Run with LLM_MODE=stub."""
+"""Step 5.8: small Locust load test (~10 users, M5). Run with LLM_MODE=stub."""

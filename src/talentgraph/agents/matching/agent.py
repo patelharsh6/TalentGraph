@@ -1,1 +1,1 @@
-"""Phase 4.6: MatchingAgent (score, breakdown, gaps, rank helper)."""
+"""Step 4.5: MatchingAgent (score, breakdown, gaps, rank helper)."""

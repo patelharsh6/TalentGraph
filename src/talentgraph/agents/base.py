@@ -1,5 +1,5 @@
-"""Agent protocol and registry. `run_agent()` (retries, timeouts, AgentRun records, spans) lands in
-Phase 5.1.
+"""Agent protocol and registry. `run_agent()` (retries, timeouts, AgentRun records) lands in
+Step 4.6.
 """
 
 from typing import Protocol

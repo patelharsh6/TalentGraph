@@ -1,3 +1,3 @@
-"""Data-access repositories. `taxonomy.py` arrives in Phase 3.3; candidates/jobs/batch in Phases
-5–7.
+"""Data-access repositories. `taxonomy.py` arrives in Step 3.1; candidates/jobs/batch in
+Milestones 4-5.
 """

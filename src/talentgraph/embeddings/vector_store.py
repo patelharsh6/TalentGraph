@@ -29,6 +29,8 @@ class VectorStore(Protocol):
 
     def count(self) -> int: ...
 
+    def ids(self) -> list[str]: ...
+
 
 class NumpyVectorStore:
     """In-memory brute-force cosine store. Expects L2-normalized vectors."""
@@ -72,6 +74,9 @@ class NumpyVectorStore:
     def count(self) -> int:
         return len(self._ids)
 
+    def ids(self) -> list[str]:
+        return list(self._ids)
+
 
 class ChromaVectorStore:
     """ChromaDB HTTP client, one collection per store, cosine space."""
@@ -105,6 +110,9 @@ class ChromaVectorStore:
 
     def count(self) -> int:
         return int(self._col.count())
+
+    def ids(self) -> list[str]:
+        return [str(i) for i in self._col.get(include=[])["ids"]]
 
     def heartbeat(self) -> int:
         return int(self._client.heartbeat())

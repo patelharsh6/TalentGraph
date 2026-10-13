@@ -26,6 +26,11 @@ jobs:
       - uses: astral-sh/setup-uv@v3
       - run: cp .env.example .env && echo "LLM_MODE=fake" >> .env
       - run: docker compose up -d --build --wait
+      # Seed the committed taxonomy into Postgres + Chroma (needed by the 1-C parity test).
+      - run: >-
+          docker compose run --rm --no-deps
+          -v "$PWD/scripts:/app/scripts:ro" -v "$PWD/data/taxonomy:/app/data/taxonomy:ro"
+          api python scripts/seed.py --taxonomy
       - run: uv sync --frozen
       - run: uv run pytest -m integration
         env:

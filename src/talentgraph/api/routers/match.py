@@ -1,1 +1,1 @@
-"""Phase 6.5: POST /api/v1/match (and /match/rank)."""
+"""Step 5.4: POST /api/v1/match and /match/rank (`?blind=true`)."""

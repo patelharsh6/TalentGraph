@@ -1,1 +1,1 @@
-"""Phase 6.3: per-key Redis sliding-window rate limiting and X-RateLimit-* headers."""
+"""Step 5.3: slowapi per-IP rate limiting."""

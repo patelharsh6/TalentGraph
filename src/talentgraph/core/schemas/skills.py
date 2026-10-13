@@ -1,4 +1,4 @@
-"""SkillProfile schema. Placeholder for Phase 0; finalized in Phase 3.1 (plan §6.2)."""
+"""SkillProfile schema. Placeholder for Phase 0; finalized in Step 3.1 (plan §6.2)."""
 
 from typing import Any
 

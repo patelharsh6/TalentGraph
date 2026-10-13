@@ -1,1 +1,1 @@
-"""Phase 7.1: batch job creation, item fan-out and final-status computation."""
+"""Step 5.5: batch job creation, BackgroundTasks processing, stale-item recovery, final status."""

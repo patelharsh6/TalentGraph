@@ -1,7 +1,7 @@
 """Async SQLAlchemy engine and session factory.
 
-Create one engine per process: the API creates it in the FastAPI lifespan, and Celery creates it
-in `worker_process_init`. Never share an async engine across a fork.
+Create one engine per process: the API creates it in the FastAPI lifespan (batch BackgroundTasks
+reuse it). Never share an async engine across a fork.
 """
 
 from collections.abc import AsyncIterator

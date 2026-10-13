@@ -1,4 +1,4 @@
-"""ParsedResume schema. Placeholder for Phase 0; the full schema (plan §6.1) is written in Phase
+"""ParsedResume schema. Placeholder for Phase 0; the full schema (plan §6.1) is written in Step
 2.1.
 """
 

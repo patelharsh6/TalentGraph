@@ -32,7 +32,7 @@ def _created_at() -> Mapped[datetime]:
     return mapped_column(DateTime(timezone=True), server_default=func.now())
 
 
-# --- Taxonomy -----------------------------------------------------------------------------------
+# --- Taxonomy -------------------------------------------------------------------------------------
 
 
 class Skill(Base):
@@ -85,37 +85,14 @@ class EmergingSkill(Base):
     normalized_text: Mapped[str] = mapped_column(String(200), unique=True)
     occurrences: Mapped[int] = mapped_column(Integer, default=1)
     example_contexts: Mapped[list[Any]] = mapped_column(default=list)
-    status: Mapped[str] = mapped_column(String(20), default="pending")
-    merged_into: Mapped[int | None] = mapped_column(ForeignKey("skills.id"))
-    reviewed_by: Mapped[str | None] = mapped_column(String(100))
-    reviewed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
 
-# --- Access -------------------------------------------------------------------------------------
-
-
-class ApiKey(Base):
-    __tablename__ = "api_keys"
-    id: Mapped[int] = mapped_column(primary_key=True)
-    key_prefix: Mapped[str] = mapped_column(String(16), index=True)
-    key_hash: Mapped[str] = mapped_column(String(64), unique=True)
-    name: Mapped[str] = mapped_column(String(100))
-    owner: Mapped[str] = mapped_column(String(200))
-    scopes: Mapped[list[str]] = mapped_column(ARRAY(String(20)))
-    rate_limit_per_min: Mapped[int] = mapped_column(Integer, default=60)
-    webhook_secret: Mapped[str] = mapped_column(String(64))
-    active: Mapped[bool] = mapped_column(Boolean, default=True)
-    created_at: Mapped[datetime] = _created_at()
-    last_used_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-
-
-# --- Candidates, jobs, matches ------------------------------------------------------------------
+# --- Candidates, jobs, matches --------------------------------------------------------------------
 
 
 class Candidate(Base):
     __tablename__ = "candidates"
     id: Mapped[uuid.UUID] = _uuid_pk()
-    api_key_id: Mapped[int] = mapped_column(ForeignKey("api_keys.id"), index=True)
     file_sha256: Mapped[str] = mapped_column(String(64), index=True)
     parsed: Mapped[dict[str, Any]] = mapped_column()
     quality: Mapped[float | None] = mapped_column(Float)
@@ -139,7 +116,6 @@ class CandidateSkill(Base):
 class Job(Base):
     __tablename__ = "jobs"
     id: Mapped[uuid.UUID] = _uuid_pk()
-    api_key_id: Mapped[int] = mapped_column(ForeignKey("api_keys.id"), index=True)
     title: Mapped[str] = mapped_column(String(300))
     raw_text: Mapped[str] = mapped_column(Text)
     requirements: Mapped[dict[str, Any]] = mapped_column()
@@ -162,20 +138,18 @@ class Match(Base):
     created_at: Mapped[datetime] = _created_at()
 
 
-# --- Batch processing & webhooks ----------------------------------------------------------------
+# --- Batch processing -----------------------------------------------------------------------------
 
 
 class BatchJob(Base):
     __tablename__ = "batch_jobs"
     id: Mapped[uuid.UUID] = _uuid_pk()
-    api_key_id: Mapped[int] = mapped_column(ForeignKey("api_keys.id"), index=True)
     # queued | running | completed | completed_with_errors | failed
     status: Mapped[str] = mapped_column(String(30), default="queued")
     total: Mapped[int] = mapped_column(Integer)
     succeeded: Mapped[int] = mapped_column(Integer, default=0)
     failed: Mapped[int] = mapped_column(Integer, default=0)
     partial: Mapped[int] = mapped_column(Integer, default=0)
-    callback_url: Mapped[str | None] = mapped_column(String(2000))
     created_at: Mapped[datetime] = _created_at()
     finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
@@ -192,21 +166,7 @@ class BatchItem(Base):
     error: Mapped[dict[str, Any] | None] = mapped_column()
 
 
-class WebhookDelivery(Base):
-    __tablename__ = "webhook_deliveries"
-    id: Mapped[int] = mapped_column(primary_key=True)
-    batch_job_id: Mapped[uuid.UUID] = mapped_column(
-        ForeignKey("batch_jobs.id", ondelete="CASCADE"), index=True
-    )
-    url: Mapped[str] = mapped_column(String(2000))
-    attempt: Mapped[int] = mapped_column(SmallInteger)
-    status_code: Mapped[int | None] = mapped_column(SmallInteger)
-    response_ms: Mapped[int | None] = mapped_column(Integer)
-    next_retry_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    delivered_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-
-
-# --- Observability ------------------------------------------------------------------------------
+# --- Observability --------------------------------------------------------------------------------
 
 
 class AgentRunRecord(Base):

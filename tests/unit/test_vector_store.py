@@ -27,5 +27,7 @@ def test_upsert_replaces_and_delete_removes() -> None:
     store.upsert(["a"], np.stack([_unit(0, 1)]), [{"v": 2}])
     assert store.count() == 1
     assert store.query(_unit(0, 1), k=1)[0].metadata == {"v": 2}
+    assert store.ids() == ["a"]
     store.delete(["a"])
     assert store.count() == 0
+    assert store.ids() == []

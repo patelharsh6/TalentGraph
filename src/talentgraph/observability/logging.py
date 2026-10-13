@@ -1,4 +1,4 @@
-"""structlog JSON logging. PII scrubbing processor is added in Phase 8.1."""
+"""structlog JSON logging. PII scrubbing processor is added in Step 5.6."""
 
 import logging
 

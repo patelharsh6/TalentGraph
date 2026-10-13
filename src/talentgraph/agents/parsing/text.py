@@ -1,1 +1,1 @@
-"""Phase 2.6: plain-text extraction (encoding detection, paragraphs, header hints)."""
+"""Step 2.6: plain-text extraction (encoding detection, paragraphs, header hints)."""

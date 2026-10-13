@@ -4,7 +4,6 @@ from collections.abc import AsyncIterator, Callable
 from contextlib import asynccontextmanager
 
 from fastapi import APIRouter, FastAPI
-from prometheus_client import make_asgi_app
 from redis.asyncio import Redis
 
 from talentgraph import __version__
@@ -33,7 +32,7 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     app.state.chroma_heartbeat = _chroma_heartbeat_factory(
         settings.chroma_host, settings.chroma_port
     )
-    # Phase 5.6: build the AgentRegistry, warm the Encoder, and call registry.startup() here.
+    # Milestone 4: build the agents, warm the Encoder, and call their startup hooks here.
     yield
     await app.state.redis.aclose()
     await dispose_engine()
@@ -50,10 +49,10 @@ def create_app() -> FastAPI:
     app.include_router(health.router)
 
     v1 = APIRouter(prefix="/api/v1")
-    # Phase 6/7: v1.include_router(parse.router), batch, jobs, candidates, match, skills
+    # Milestone 5: v1.include_router(parse.router), batch, jobs, candidates, match, skills
+    # Milestone 6: search, coach
     app.include_router(v1)
 
-    app.mount("/metrics", make_asgi_app())
     return app
 
 

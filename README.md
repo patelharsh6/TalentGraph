@@ -1,30 +1,35 @@
 # TalentGraph
 
-TalentGraph is a multi-agent AI system. It does four things:
+TalentGraph is a multi-agent AI system for talent intelligence. It does these things:
 
-- parses resumes in PDF, DOCX or TXT
-- normalizes skills against a hierarchical taxonomy
-- matches candidates to job descriptions semantically
-- exposes everything through a documented REST API
+- **parses** resumes in PDF, DOCX or TXT; every LLM-extracted field cites its source text, and a verifier checks it
+- **normalizes** skills against a 9,600-skill hierarchical taxonomy, using fine-tuned embeddings
+- **matches** candidates to jobs semantically, with a requirement-by-requirement explanation, gap analysis and a blind-screening mode
+- **searches** candidates in plain English, through an agent that calls tools
+- **coaches** candidates with a learning plan, interview questions and truthful resume suggestions, checked by a critic step
+
+Everything runs behind a documented REST API and a Next.js web app. Quality is measured (metrics M1–M10) and published.
 
 | Document | What it covers |
 |---|---|
-| [`idea.md`](idea.md) | The problem statement and requirements |
-| [`plan.md`](plan.md) | Architecture and design decisions |
-| [`ordered.md`](ordered.md) | Phase-by-phase build order, with exit criteria and a status tracker |
+| [`project-plan-v2.md`](documents/project-plan-v2.md) | One-page summary of the current plan |
+| [`plan.md`](documents/plan.md) | Architecture, agent designs, API, metrics and the decision log |
+| [`status.md`](documents/status.md) | What is done and pending, step by step |
+| [`ordered.md`](documents/ordered.md) | Milestone-by-milestone build order, with exit criteria and a status tracker |
+| [`idea.md`](documents/idea.md) | The original challenge brief |
 
-> **Status:** Phase 0 (scaffolding). Most modules are stubs that state which phase implements them.
+> **Status:** Milestone 0 (scaffolding and data foundation) and Milestone 1 (scope cleanup) are implemented; see `docs/progress/`. The agents are still stubs that name the build step that implements them. The taxonomy, synthetic corpora and gold sets are described in [`data/README.md`](data/README.md).
 
 > ⚠️ **Gemini free tier:** Google can use prompts sent on the free tier to improve its products. Only send synthetic or consented resumes. A paid key is needed before you process real personal data.
 
 ## Stack
 
-- Python 3.12, managed with uv
-- FastAPI for the API, LangGraph for the agent pipeline
-- Google Gemini API, free tier, through `google-genai`
-- sentence-transformers for embeddings, ChromaDB for vector search
-- PostgreSQL for data, Redis with Celery for background workers
-- Docker Compose for running the whole stack
+- Python 3.12 with uv; FastAPI; LangGraph for the agents
+- Google Gemini API (free tier) through `google-genai`
+- sentence-transformers for embeddings (fine-tuned on the taxonomy), ChromaDB for vector search
+- PostgreSQL for data, Redis for caching
+- Next.js + Tailwind for the web app (Milestone 7)
+- Docker Compose for the backend stack; GitHub Actions for CI and the eval gate
 
 ## Quick start (Docker)
 
@@ -41,24 +46,18 @@ The Docker Compose stack runs these services:
 | Service | Port |
 |---|---|
 | `api` | `8000` |
-| `worker` (Celery) | n/a |
 | `postgres` | `5432` |
 | `redis` | `6379` |
 | `chroma` | `8001` |
-| `jaeger` | `16686` (UI) |
-| `prometheus` | `9090` |
-
-Flower, a web UI for watching the Celery workers, is optional: `docker compose --profile tools up -d flower`, then open port `5555`.
 
 ## Local development (without Docker for the app)
 
 ```bash
 uv sync                                                      # install deps into .venv
 docker compose up -d postgres redis chroma                   # infra only
-# in .env, point hosts at localhost (DATABASE_URL, REDIS_URL, CHROMA_HOST=localhost, CHROMA_PORT=8001, CELERY_*)
+# in .env, point hosts at localhost (DATABASE_URL, REDIS_URL, CHROMA_HOST=localhost, CHROMA_PORT=8001)
 uv run alembic upgrade head
 uv run uvicorn talentgraph.api.main:app --reload
-uv run celery -A talentgraph.worker.celery_app worker --pool=solo -l info   # --pool=solo is required on Windows
 ```
 
 ## Quality checks

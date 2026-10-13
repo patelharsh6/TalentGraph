@@ -1,3 +1,1 @@
-"""Phase 2.7: section detection (header lexicon, typography and position signals, fallback
-classifier).
-"""
+"""Step 2.7: section detection (header lexicon plus typography and position signals)."""

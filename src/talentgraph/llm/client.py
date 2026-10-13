@@ -18,7 +18,6 @@ from tenacity import (
 
 from talentgraph.config import Settings, get_settings
 from talentgraph.core.errors import LLMError, LLMQuotaExceeded
-from talentgraph.llm.ratelimit import RateLimiter
 
 T = TypeVar("T", bound=BaseModel)
 log = structlog.get_logger(__name__)
@@ -33,38 +32,32 @@ class LLMClient(Protocol):
 def _is_retryable(exc: BaseException) -> bool:
     if isinstance(exc, genai_errors.APIError):
         return exc.code == 429 or exc.code >= 500
-    return isinstance(exc, (TimeoutError, ConnectionError, LLMError)) and not isinstance(
-        exc, LLMQuotaExceeded
-    )
+    return isinstance(exc, (TimeoutError, ConnectionError, LLMError))
 
 
 class GeminiLLM:
-    """Structured extraction on the Gemini API with rate limiting, retries and model fallback."""
+    """Structured extraction on the Gemini API with a timeout, retries and a concurrency cap.
 
-    def __init__(self, settings: Settings, rate_limiter: RateLimiter | None = None) -> None:
+    A 429 that survives the retries raises `LLMQuotaExceeded`; agents then degrade to rules-only
+    output (`status="partial"`).
+    """
+
+    def __init__(self, settings: Settings) -> None:
         if settings.gemini_api_key is None:
             raise LLMError("GEMINI_API_KEY is not configured")
         self._settings = settings
         self._client = genai.Client(api_key=settings.gemini_api_key.get_secret_value())
         self._semaphore = asyncio.Semaphore(settings.llm_max_concurrency)
-        self._rate_limiter = rate_limiter
 
     async def extract(self, schema: type[T], system: str, user: str) -> T:
-        models = [self._settings.llm_model]
-        if self._settings.llm_fallback_model:
-            models.append(self._settings.llm_fallback_model)
-
-        last_exc: BaseException | None = None
-        for model in models:
-            try:
-                return await self._extract_with_retries(model, schema, system, user)
-            except (genai_errors.APIError, LLMQuotaExceeded) as exc:
-                quota = isinstance(exc, LLMQuotaExceeded) or exc.code == 429
-                if not quota:
-                    raise LLMError(str(exc)) from exc
-                log.warning("llm.quota_fallback", model=model)
-                last_exc = exc
-        raise LLMQuotaExceeded("All configured Gemini models are over quota") from last_exc
+        model = self._settings.llm_model
+        try:
+            return await self._extract_with_retries(model, schema, system, user)
+        except genai_errors.APIError as exc:
+            if exc.code == 429:
+                log.warning("llm.quota_exceeded", model=model)
+                raise LLMQuotaExceeded(f"Gemini quota exceeded for {model}") from exc
+            raise LLMError(str(exc)) from exc
 
     async def _extract_with_retries(self, model: str, schema: type[T], system: str, user: str) -> T:
         retrying = AsyncRetrying(
@@ -79,8 +72,6 @@ class GeminiLLM:
         raise AssertionError("unreachable")
 
     async def _call(self, model: str, schema: type[T], system: str, user: str) -> T:
-        if self._rate_limiter is not None:
-            await self._rate_limiter.acquire(model)
         config = types.GenerateContentConfig(
             system_instruction=system,
             response_mime_type="application/json",
@@ -115,6 +106,6 @@ def get_llm(settings: Settings | None = None) -> LLMClient:
     settings = settings or get_settings()
     mode = settings.llm_effective_mode
     if mode == "real":
-        return GeminiLLM(settings, RateLimiter.from_settings(settings))
+        return GeminiLLM(settings)
     latency = settings.llm_stub_latency_ms if mode == "stub" else 0
     return FakeLLM(settings.fixtures_dir, latency_ms=latency)

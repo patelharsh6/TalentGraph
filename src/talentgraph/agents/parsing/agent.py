@@ -1,3 +1,3 @@
-"""Phase 2.10: ParsingAgent (merge rules and LLM output, validate, score quality, rules-only
+"""Step 2.11: ParsingAgent (merge rules and LLM output, validate, score quality, rules-only
 degradation).
 """

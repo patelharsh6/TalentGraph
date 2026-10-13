@@ -1,4 +1,4 @@
-# Normalization cascade thresholds (plan §6.2). Tuned in Phase 3.11.
+# Normalization cascade thresholds (plan §6.2). Tuned in Step 3.9.
 fuzzy:
   min_score: 92          # rapidfuzz token_sort_ratio
   require_unique_top: true

@@ -1,1 +1,1 @@
-"""Phase 6.2: API key authentication and scope checks."""
+"""Step 5.2: single X-API-Key check against API_KEY (a blank key disables auth)."""

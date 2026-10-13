@@ -1,4 +1,4 @@
-"""MatchResult schema. Placeholder for Phase 0; finalized in Phase 4.1 (plan §6.3)."""
+"""MatchResult schema. Placeholder for Phase 0; finalized in Step 4.1 (plan §6.3)."""
 
 from typing import Any
 
