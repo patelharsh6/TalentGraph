@@ -12,7 +12,7 @@ dist/
 htmlcov/
 data/
 tests/fixtures/
-
+CLAUDE.md
 # Env / secrets
 .env
 .env.*
