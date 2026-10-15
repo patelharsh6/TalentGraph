@@ -72,33 +72,22 @@ class _Agent:
     def extraction(self, **overrides: Any) -> dict[str, Any]:
         payload: dict[str, Any] = {
             "name": "Jane Roe",
-            "location": {"city": "Springfield", "region": "IL", "evidence": "Springfield, IL"},
-            "summary_lines": [self.line("Backend"), self.line("building")],
+            "location": {"city": "Springfield", "region": "IL"},
+            "summary_lines": [[self.line("Backend"), self.line("building")]],
             "experience": [
                 {
                     "title": "Senior Engineer",
                     "company": "Acme Corp",
                     "location": "Chicago, IL",
                     "dates_text": "Jan 2021 – Present",
-                    "start": "2021-01",
-                    "is_current": True,
-                    "bullet_lines": [
-                        self.line("* Built"),
-                        self.line("handling"),
-                        self.line("* Led"),
-                    ],
-                    "skills_mentioned": ["Python"],
-                    "confidence": 0.95,
+                    "bullet_lines": [[self.line("* Built"), self.line("* Led")]],
                 },
                 {
                     "title": "Engineer",
                     "company": "Globex",
                     "location": "Remote",
                     "dates_text": "06/2018 – 12/2020",
-                    "start": "2018-06",
-                    "end": "2020-12",
-                    "bullet_lines": [self.line("* Wrote")],
-                    "confidence": 0.95,
+                    "bullet_lines": [[self.line("* Wrote")]],
                 },
             ],
             "education": [
@@ -110,13 +99,8 @@ class _Agent:
                     "grade": "3.7 GPA",
                 }
             ],
-            "skills": [
-                {"name": "Python", "category": "technical"},
-                {"name": "Go", "category": "technical"},
-                {"name": "PostgreSQL", "category": "technical"},
-                {"name": "Kubernetes", "category": "technical"},
-            ],
-            "confidence": 0.95,
+            # Skills-section items aren't repeated; a near-duplicate only adds a category.
+            "skills": [{"name": "python", "category": "technical"}],
         }
         payload.update(overrides)
         return payload
@@ -172,7 +156,8 @@ async def test_full_parse_merges_rules_and_llm(harness: _Agent) -> None:
     assert (edu.start and edu.start.value, edu.end and edu.end.value) == ("2014", "2018")
 
     assert [s.raw for s in r.skills] == ["Python", "Go", "PostgreSQL", "Kubernetes"]
-    assert all(s.category_hint == "technical" for s in r.skills)
+    assert [s.category_hint for s in r.skills] == ["technical", "unknown", "unknown", "unknown"]
+    assert acme.skills_mentioned == ["Python"] and globex.skills_mentioned == ["Go"]
     assert r.meta.field_sources["email"] == "rules"
     assert r.meta.field_sources["experience"] == "llm"
     assert r.meta.field_sources["skills"] == "merged"
@@ -187,7 +172,7 @@ async def test_full_parse_merges_rules_and_llm(harness: _Agent) -> None:
 
 async def test_prompt_is_static_and_input_is_numbered(harness: _Agent) -> None:
     system = system_prompt()
-    assert "line numbers" in system and "Jane" not in system
+    assert "line ranges" in system and "Jane" not in system
     assert "<rule_hints>" in harness.user
     assert "email: jane.roe@example.com" in harness.user
     assert f"{harness.line('* Built')}| * Built the ingestion pipeline" in harness.user
@@ -215,13 +200,13 @@ async def test_corrupted_extraction_is_flagged_unverified(harness: _Agent) -> No
     """A deliberately corrupted extraction: a made-up employer and a skill not in the resume."""
     payload = harness.extraction()
     payload["experience"][1]["company"] = "Initech Quantum Holdings"
-    payload["skills"].append({"name": "Rust", "category": "technical", "confidence": 0.9})
+    payload["skills"].append({"name": "Rust", "category": "technical"})
     result = await harness.agent(payload).parse(RESUME)
     r = result.resume
 
     company = r.experience[1].company
     assert company is not None and company.verified is False
-    assert company.confidence == pytest.approx(0.95 * 0.5)
+    assert company.confidence == pytest.approx(0.9 * 0.5)
     rust = next(s for s in r.skills if s.raw == "Rust")
     assert rust.verified is False and rust.confidence == pytest.approx(0.45)
     assert r.experience[0].company and r.experience[0].company.verified is True
@@ -234,7 +219,7 @@ async def test_corrupted_extraction_is_flagged_unverified(harness: _Agent) -> No
 
 
 async def test_pointer_to_missing_line_counts_as_unverified(harness: _Agent) -> None:
-    payload = harness.extraction(summary_lines=[harness.line("Backend"), 999])
+    payload = harness.extraction(summary_lines=[[harness.line("Backend")], [999, 1000]])
     result = await harness.agent(payload).parse(RESUME)
     assert result.resume.meta.unverified_count == 1
     assert any("do not exist" in w for w in result.warnings)
@@ -281,6 +266,15 @@ def test_backwards_dates_are_reordered() -> None:
     exp = build_resume(RuleResult(), [], extraction, harness_lines(), today=TODAY).resume
     first = exp.experience[0]
     assert (first.start and first.start.value, first.end and first.end.value) == ("2018", "2022")
+
+
+def test_line_ranges_expand_and_count_invalid() -> None:
+    from talentgraph.agents.parsing.layout import Block
+    from talentgraph.agents.parsing.llm_extract import NumberedLines
+
+    nl = NumberedLines({n: Block(f"line {n}") for n in range(1, 11)})
+    assert nl.valid([[2, 4], [7], [9, 8]]) == ([2, 3, 4, 7, 8, 9], 0)
+    assert nl.valid([[5, 40], [], [1, 2, 3], [3, 3]]) == ([3], 3)  # each bad range counts once
 
 
 def harness_lines() -> Any:

@@ -106,6 +106,7 @@ follow_imports = "skip"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]  # tests import the eval harness (eval/)
 asyncio_mode = "auto"
 addopts = "-m 'not integration and not e2e and not llm and not slow'"
 markers = [

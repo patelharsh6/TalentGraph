@@ -35,6 +35,7 @@ class RecordingLLM:
         self._last_call = 0.0
         self.recorded = 0
         self.replayed = 0
+        self.failed = 0  # calls that raised (they still count against the quota)
 
     def fixture_path(self, schema: type[BaseModel], system: str, user: str) -> Path:
         return self._dir / schema.__name__ / f"{FakeLLM.fixture_key(system, user)}.json"
@@ -48,7 +49,11 @@ class RecordingLLM:
         if wait > 0:
             await asyncio.sleep(wait)
         self._last_call = time.monotonic()
-        result = await self._inner.extract(schema, system, user)
+        try:
+            result = await self._inner.extract(schema, system, user)
+        except Exception:
+            self.failed += 1
+            raise
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(result.model_dump_json(indent=1) + "\n", encoding="utf-8")
         self.recorded += 1

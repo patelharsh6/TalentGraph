@@ -4,13 +4,16 @@ Merge rules:
 
 - **Contact fields:** rules win for email, phone and links; the LLM only fills gaps. The LLM wins
   for the name and location, with the rule guesses as fallback.
-- **Structured entities** (experience, education, certifications, projects): the LLM wins. Its
-  verbatim date text is re-parsed by the date rules, so normalization is deterministic.
-- **Skills:** the items under a skills header (rules) are kept as written; LLM skills that match
-  one only add a category, and the rest are appended.
+- **Structured entities** (experience, education, certifications, projects): the LLM wins. It
+  returns dates only as verbatim text, which the date rules normalize (start, end, current).
+- **Skills:** the items under a skills header (rules) are kept as written; the LLM adds only
+  skills that are not in that list (a near-duplicate just adds its category). Each role's
+  `skills_mentioned` is every resume skill named in that role's bullets.
 - **Long text** (summary, bullets, project descriptions) is copied from the source lines the LLM
-  pointed at, so it is grounded by construction (`verified=True`). A pointer to a line that does
-  not exist counts as one unverified LLM field.
+  pointed at, so it is grounded by construction (`verified=True`). A reference to a line that
+  does not exist counts as one unverified LLM field.
+- **Confidence:** the model's own confidence was uninformative (always 0.95), so LLM values start
+  at `LLM_CONFIDENCE`; the verifier halves it when the evidence is not found (ADR-0005).
 
 Without an LLM extraction the result is rules-only: contact fields, the summary paragraph and
 skills (the skills section, else alias-index hits).
@@ -28,7 +31,6 @@ from talentgraph.agents.parsing.rules import (
     RuleResult,
     months_between,
     normalize_alias,
-    normalize_date,
     parse_date_text,
 )
 from talentgraph.agents.parsing.sections import Section
@@ -51,6 +53,7 @@ from talentgraph.core.schemas.resume import (
     Skill,
 )
 
+LLM_CONFIDENCE = 0.9
 RULE_CONFIDENCE = {
     "email": 0.98,
     "phone": 0.95,
@@ -75,14 +78,18 @@ def from_rule(m: Match, confidence: float) -> Extracted[str]:
     return Extracted[str](value=m.value, evidence=m.evidence, confidence=confidence, verified=True)
 
 
-def from_llm[V](value: V | None, evidence: str | None, confidence: float) -> Extracted[V] | None:
+def from_llm[V](
+    value: V | None, evidence: str | None, confidence: float = LLM_CONFIDENCE
+) -> Extracted[V] | None:
     """An LLM value, unverified until the evidence verifier runs; None stays None."""
     if value is None or (isinstance(value, str) and not value.strip()):
         return None
+    if isinstance(value, str):
+        value = value.strip()  # type: ignore[assignment]
     return Extracted[V](value=value, evidence=evidence, confidence=confidence)
 
 
-def grounded_text(value: str, confidence: float) -> Extracted[str]:
+def grounded_text(value: str, confidence: float = LLM_CONFIDENCE) -> Extracted[str]:
     """Text copied from source lines: verified by construction."""
     return Extracted[str](value=value, evidence=value, confidence=confidence, verified=True)
 
@@ -107,10 +114,10 @@ def build_resume(
 
     # Summary: LLM-selected lines, else the whole summary section.
     if use_llm and x.summary_lines:
-        known, unknown = nl.valid(x.summary_lines)
-        out.invalid_line_refs += unknown
+        known, invalid = nl.valid(x.summary_lines)
+        out.invalid_line_refs += invalid
         if known:
-            resume.summary = grounded_text(nl.paragraph(known), x.confidence)
+            resume.summary = grounded_text(nl.paragraph(known))
             sources["summary"] = "llm"
     elif not use_llm:
         summary_blocks = [b.text for s in sections if s.label == "summary" for b in s.blocks]
@@ -118,27 +125,30 @@ def build_resume(
             resume.summary = grounded_text(" ".join(summary_blocks), RULE_CONFIDENCE["summary"])
             sources["summary"] = "rules"
 
+    resume.skills, skill_source = _skills(rules, x.skills if use_llm else [])
+    if skill_source:
+        sources["skills"] = skill_source
+
     if use_llm:
         for item in x.experience:
-            exp, unknown = _experience(item, nl, ym)
-            out.invalid_line_refs += unknown
+            exp, invalid = _experience(item, nl, ym, resume.skills)
+            out.invalid_line_refs += invalid
             resume.experience.append(exp)
         resume.education = [_education(e) for e in x.education]
         resume.certifications = [_certification(c) for c in x.certifications if c.name.strip()]
         for p in x.projects:
             if p.name.strip():
-                project, unknown = _project(p, nl)
-                out.invalid_line_refs += unknown
+                project, invalid = _project(p, nl)
+                out.invalid_line_refs += invalid
                 resume.projects.append(project)
         for key in ("experience", "education", "certifications", "projects"):
             if getattr(resume, key):
                 sources[key] = "llm"
 
-    resume.skills, skill_source = _skills(rules, x.skills if use_llm else [])
-    if skill_source:
-        sources["skills"] = skill_source
     if out.invalid_line_refs:
-        out.warnings.append(f"LLM referenced {out.invalid_line_refs} line(s) that do not exist.")
+        out.warnings.append(
+            f"LLM referenced {out.invalid_line_refs} line range(s) that do not exist."
+        )
     return out
 
 
@@ -151,10 +161,9 @@ def _personal(
     rules: RuleResult, x: ResumeExtraction | None, sources: dict[str, FieldSource]
 ) -> Personal:
     personal = Personal()
-    confidence = x.confidence if x else 0.0
 
     if x and x.name:
-        personal.name = from_llm(x.name.strip(), x.name.strip(), confidence)
+        personal.name = from_llm(x.name, x.name)
         sources["name"] = "llm"
     elif rules.name:
         personal.name = from_rule(rules.name, RULE_CONFIDENCE["name"])
@@ -164,28 +173,29 @@ def _personal(
         personal.email = from_rule(rules.email, RULE_CONFIDENCE["email"])
         sources["email"] = "rules"
     elif x and x.email and EMAIL_RE.fullmatch(x.email.strip()):
-        personal.email = from_llm(x.email.strip().lower(), x.email.strip(), confidence)
+        personal.email = from_llm(x.email.strip().lower(), x.email)
         sources["email"] = "llm"
 
     if rules.phone:
         personal.phone = from_rule(rules.phone, RULE_CONFIDENCE["phone"])
         sources["phone"] = "rules"
     elif x and x.phone and sum(ch.isdigit() for ch in x.phone) >= 7:
-        personal.phone = from_llm(x.phone.strip(), x.phone.strip(), confidence)
+        personal.phone = from_llm(x.phone, x.phone)
         sources["phone"] = "llm"
 
     if rules.links:
         personal.links = [from_rule(m, RULE_CONFIDENCE["links"]) for m in rules.links]
         sources["links"] = "rules"
     elif x and x.links:
-        personal.links = [e for u in x.links if (e := from_llm(u.strip(), u.strip(), confidence))]
+        personal.links = [e for u in x.links if (e := from_llm(u, u))]
         sources["links"] = "llm"
 
     loc = x.location if x else None
     if loc and (loc.city or loc.region or loc.country):
         value = Location(city=loc.city, region=loc.region, country=loc.country)
-        evidence = loc.evidence or ", ".join(p for p in (loc.city, loc.region) if p)
-        personal.location = from_llm(value, evidence, confidence)
+        # Evidence: the city and region as written; the country is often implied, not written.
+        evidence = ", ".join(p for p in (loc.city, loc.region) if p) or loc.country
+        personal.location = from_llm(value, evidence)
         sources["location"] = "llm"
     elif rules.location:
         city, region = rules.location
@@ -199,21 +209,15 @@ def _personal(
     return personal
 
 
-def _dates(
-    dates_text: str | None, start: str | None, end: str | None, is_current: bool, confidence: float
-) -> tuple[Extracted[str] | None, Extracted[str] | None, bool]:
-    """Normalize a date range: rules parse the verbatim text, else the LLM's own values."""
+def _dates(dates_text: str | None) -> tuple[Extracted[str] | None, Extracted[str] | None, bool]:
+    """Normalize the verbatim date text with the date rules; the text is the evidence."""
     parsed = parse_date_text(dates_text)
-    if parsed:
-        s, e, current = parsed.start, parsed.end, parsed.is_current or is_current
-    else:
-        s, e, current = normalize_date(start), normalize_date(end), is_current
-    if current:
-        e = None
-    if s and e and _ym_tuple(e) < _ym_tuple(s):
-        s, e = e, s  # written backwards ("2022 – 2018"); keep both, in order
-    evidence = dates_text or None
-    return from_llm(s, evidence, confidence), from_llm(e, evidence, confidence), current
+    if parsed is None:
+        return None, None, False
+    start, end = parsed.start, None if parsed.is_current else parsed.end
+    if start and end and _ym_tuple(end) < _ym_tuple(start):
+        start, end = end, start  # written backwards ("2022 – 2018"); keep both, in order
+    return from_llm(start, dates_text), from_llm(end, dates_text), parsed.is_current
 
 
 def _ym_tuple(value: str) -> tuple[int, int]:
@@ -222,15 +226,16 @@ def _ym_tuple(value: str) -> tuple[int, int]:
 
 
 def _experience(
-    item: LLMExperience, nl: NumberedLines, today: tuple[int, int]
+    item: LLMExperience, nl: NumberedLines, today: tuple[int, int], skills: list[Skill]
 ) -> tuple[Experience, int]:
-    c = item.confidence
-    start, end, current = _dates(item.dates_text, item.start, item.end, item.is_current, c)
-    known, unknown = nl.valid(item.bullet_lines)
+    start, end, current = _dates(item.dates_text)
+    known, invalid = nl.valid(item.bullet_lines)
+    bullets = nl.bullets(known)
+    text = " ".join(bullets).casefold()
     exp = Experience(
-        company=from_llm(item.company.strip(), item.company.strip(), c),
-        title=from_llm(item.title.strip(), item.title.strip(), c),
-        location=from_llm(item.location, item.location, c),
+        company=from_llm(item.company, item.company),
+        title=from_llm(item.title, item.title),
+        location=from_llm(item.location, item.location),
         start=start,
         end=end,
         is_current=current,
@@ -239,52 +244,48 @@ def _experience(
         )
         if start and (end or current)
         else None,
-        responsibilities=[grounded_text(b, c) for b in nl.bullets(known)],
-        skills_mentioned=[s.strip() for s in item.skills_mentioned if s.strip()],
+        responsibilities=[grounded_text(b) for b in bullets],
+        skills_mentioned=[s.raw for s in skills if s.raw.casefold() in text],
     )
-    return exp, unknown
+    return exp, invalid
 
 
 def _education(item: LLMEducation) -> Education:
-    c = item.confidence
-    start, end, _ = _dates(item.dates_text, item.start, item.end, False, c)
+    start, end, _ = _dates(item.dates_text)
     return Education(
-        institution=from_llm(item.institution.strip(), item.institution.strip(), c),
-        degree=from_llm(item.degree, item.degree, c),
-        field=from_llm(item.field, item.field, c),
+        institution=from_llm(item.institution, item.institution),
+        degree=from_llm(item.degree, item.degree),
+        field=from_llm(item.field, item.field),
         start=start,
         end=end,
-        grade=from_llm(item.grade, item.grade, c),
+        grade=from_llm(item.grade, item.grade),
     )
 
 
 def _certification(item: LLMCertification) -> Certification:
-    c = item.confidence
     parsed = parse_date_text(item.date_text)
-    when = parsed.start if parsed else normalize_date(item.date)
-    name = from_llm(item.name.strip(), item.name.strip(), c)
+    name = from_llm(item.name, item.name)
     assert name is not None  # callers skip blank names
     return Certification(
         name=name,
-        issuer=from_llm(item.issuer, item.issuer, c),
-        date=from_llm(when, item.date_text, c),
-        credential_id=from_llm(item.credential_id, item.credential_id, c),
+        issuer=from_llm(item.issuer, item.issuer),
+        date=from_llm(parsed.start if parsed else None, item.date_text),
+        credential_id=from_llm(item.credential_id, item.credential_id),
     )
 
 
 def _project(item: LLMProject, nl: NumberedLines) -> tuple[Project, int]:
-    c = item.confidence
-    known, unknown = nl.valid(item.description_lines)
-    name = from_llm(item.name.strip(), item.name.strip(), c)
+    known, invalid = nl.valid(item.description_lines)
+    name = from_llm(item.name, item.name)
     assert name is not None  # callers skip blank names
     project = Project(
         name=name,
-        description=grounded_text(nl.paragraph(known), c) if known else None,
+        description=grounded_text(nl.paragraph(known)) if known else None,
         technologies=[t.strip() for t in item.technologies if t.strip()],
-        url=from_llm(item.url, item.url, c),
-        dates=from_llm(item.dates, item.dates, c),
+        url=from_llm(item.url, item.url),
+        dates=from_llm(item.dates, item.dates),
     )
-    return project, unknown
+    return project, invalid
 
 
 def _skills(
@@ -312,7 +313,7 @@ def _skills(
                 raw=name,
                 category_hint=llm_skill.category,
                 evidence=name,
-                confidence=llm_skill.confidence,
+                confidence=LLM_CONFIDENCE,
             )
         )
         keys.append(key)

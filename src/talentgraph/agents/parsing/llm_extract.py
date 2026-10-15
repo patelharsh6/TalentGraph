@@ -29,10 +29,25 @@ class NumberedLines:
 
     blocks: dict[int, Block]
 
-    def valid(self, numbers: list[int]) -> tuple[list[int], int]:
-        """The known line numbers (sorted, de-duplicated) and how many were unknown."""
-        known = sorted({n for n in numbers if n in self.blocks})
-        return known, len({n for n in numbers if n not in self.blocks})
+    def valid(self, ranges: list[list[int]]) -> tuple[list[int], int]:
+        """Expand inclusive `[first, last]` ranges (a bare `[n]` is one line).
+
+        Returns the known line numbers (sorted, de-duplicated) and how many ranges were invalid:
+        empty, or with an end that is not a line of the document. Each invalid range counts as
+        one unverified LLM field, however many lines it spans.
+        """
+        known: set[int] = set()
+        invalid = 0
+        for r in ranges:
+            if not r or len(r) > 2:
+                invalid += 1
+                continue
+            first, last = min(r), max(r)
+            if first not in self.blocks or last not in self.blocks:
+                invalid += 1
+                continue
+            known.update(range(first, last + 1))
+        return sorted(known), invalid
 
     def paragraph(self, numbers: list[int]) -> str:
         return " ".join(_strip_bullet(self.blocks[n].text) for n in numbers)
@@ -64,6 +79,8 @@ def build_user_message(sections: list[Section], rules: RuleResult) -> tuple[str,
     links = ", ".join(m.value for m in rules.links) or "not found"
     hints.append(f"links: {links}")
     hints.append(f"location: {rules.location_text or 'not found'}")
+    listed = "; ".join(rules.skills_section) or "none (no skills section)"
+    hints.append(f"skills section items: {listed}")
     hints.append("</rule_hints>")
 
     lines = ["<resume>"]

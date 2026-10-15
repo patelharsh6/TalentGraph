@@ -62,7 +62,27 @@ services:
       timeout: 5s
       retries: 10
 
+  # Dev toolchain in Linux, for machines whose Windows Application Control policy blocks native
+  # wheels (torch, PyMuPDF) and the uv-installed launchers (pytest.exe, mypy.exe). Not started by
+  # `docker compose up`; use: docker compose run --rm tools uv run pytest
+  tools:
+    profiles: ["tools"]
+    image: ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+    # No env_file: Settings reads /work/.env itself, and exported variables would leak into tests.
+    environment:
+      UV_PROJECT_ENVIRONMENT: /venv  # keeps the host's Windows .venv untouched
+      UV_LINK_MODE: copy
+      UV_CACHE_DIR: /uv-cache
+    working_dir: /work
+    volumes:
+      - .:/work
+      - tools-venv:/venv
+      - uv-cache:/uv-cache
+    entrypoint: ["sh", "-c", "uv sync --frozen --quiet && exec \"$$@\"", "--"]
+
 volumes:
   pgdata:
   chromadata:
   uploads:
+  tools-venv:
+  uv-cache:

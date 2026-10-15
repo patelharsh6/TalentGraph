@@ -62,7 +62,7 @@ class GeminiLLM:
     async def _extract_with_retries(self, model: str, schema: type[T], system: str, user: str) -> T:
         retrying = AsyncRetrying(
             retry=retry_if_exception(_is_retryable),
-            stop=stop_after_attempt(3),
+            stop=stop_after_attempt(self._settings.llm_max_attempts),
             wait=wait_exponential_jitter(initial=1, max=8),
             reraise=True,
         )
@@ -94,6 +94,7 @@ class GeminiLLM:
             latency_ms=int((time.perf_counter() - start) * 1000),
             prompt_tokens=usage.prompt_token_count if usage else None,
             output_tokens=usage.candidates_token_count if usage else None,
+            thinking_tokens=usage.thoughts_token_count if usage else None,
         )
         if not response.text:
             raise LLMError("Empty response from Gemini")

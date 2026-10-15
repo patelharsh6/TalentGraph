@@ -95,6 +95,28 @@ async def run_parser(files: list[Path], *, fake: bool, redis_url: str) -> dict[s
     }
 
 
+def from_records(n: int) -> dict[str, Any]:
+    """Sequential real-API parse latencies collected by the daily recording runs.
+
+    On the free tier (20 requests/day) a dedicated 20-call latency run would cost a day of
+    quota, so 2-F uses the first `n` successful real calls the daily runs already made: each is
+    a sequential parse of a val resume, timed without the pacing waits between calls.
+    """
+    rows: list[dict[str, Any]] = []
+    for path in sorted((ROOT / "reports").glob("record_daily_val_*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        rows += [
+            {**r, "run": path.name} for r in data["rows"] if r["called_api"] and r["status"] == "ok"
+        ]
+    rows = rows[:n]
+    return {
+        "source": "reports/record_daily_val_*.json",
+        "resumes": [r["file"] for r in rows],
+        "total_ms": percentiles([r["latency_ms"] for r in rows]),
+        "llm_ms": percentiles([r["timings_ms"].get("llm", 0) for r in rows]),
+    }
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Sequential latency measurement (M6, 2-F).")
     ap.add_argument("--target", choices=("parser",), default="parser")
@@ -102,6 +124,11 @@ def main() -> int:
     ap.add_argument("--n", type=int, default=20)
     ap.add_argument("--fake", action="store_true", help="FakeLLM fixtures instead of Gemini")
     ap.add_argument("--redis-url", default=None)
+    ap.add_argument(
+        "--from-records",
+        action="store_true",
+        help="real-call latencies from reports/record_daily_val_*.json (free-tier runs)",
+    )
     ap.add_argument("--out", type=Path, default=ROOT / "reports")
     args = ap.parse_args()
     configure_logging("WARNING")
@@ -110,6 +137,8 @@ def main() -> int:
     files = sorted(p for p in folder.iterdir() if p.suffix.lower() in RESUME_EXTS)[: args.n]
     redis_url = args.redis_url or get_settings().redis_url
     report = asyncio.run(run_parser(files, fake=args.fake, redis_url=redis_url))
+    if args.from_records:
+        report["real_api"] = from_records(args.n)
     report.update(
         split=args.split,
         generated_at=datetime.now(UTC).isoformat(timespec="seconds"),

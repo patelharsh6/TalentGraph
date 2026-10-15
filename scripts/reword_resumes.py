@@ -140,24 +140,48 @@ def render(gt: dict[str, Any], out_dir: Path, stem: str) -> None:
     )
 
 
-async def reword_all(paths: list[Path], llm: RecordingLLM | None) -> dict[str, list[str]]:
+async def reword_all(
+    paths: list[Path],
+    llm: RecordingLLM | None,
+    *,
+    max_calls: int | None = None,
+    max_consecutive_failures: int = 3,
+    failure_backoff_s: float = 90.0,
+) -> dict[str, list[str]]:
+    """Reword and render each resume; `rejected` maps left-out stems to the reasons.
+
+    `max_calls` caps real API calls (checkpointed responses replay for free); a resume skipped
+    for budget or an API error is reported as "pending" and picked up by the next run.
+    """
     system = PROMPT.read_text(encoding="utf-8")
     rejected: dict[str, list[str]] = {}
+    consecutive = 0
     for i, gt_path in enumerate(paths, 1):
         stem = gt_path.name.removesuffix(".gt.json")
         gt = json.loads(gt_path.read_text(encoding="utf-8"))
         user = user_message(gt)
-        if llm is None:  # --render-only: use the checkpoint if there is one
-            path = CHECKPOINTS / "RewordedResume" / f"{FakeLLM.fixture_key(system, user)}.json"
-            if not path.is_file():
-                rejected[stem] = ["no checkpoint"]
+        cached = CHECKPOINTS / "RewordedResume" / f"{FakeLLM.fixture_key(system, user)}.json"
+        if llm is None or cached.is_file():  # replay the checkpoint (no API call)
+            if not cached.is_file():
+                rejected[stem] = ["pending: no checkpoint"]
                 continue
-            out = RewordedResume.model_validate_json(path.read_text(encoding="utf-8"))
+            out = RewordedResume.model_validate_json(cached.read_text(encoding="utf-8"))
         else:
+            calls = llm.recorded + llm.failed
+            if max_calls is not None and calls >= max_calls:
+                rejected[stem] = ["pending: call budget reached"]
+                continue
+            if consecutive >= max_consecutive_failures:
+                rejected[stem] = ["pending: stopped after repeated API errors"]
+                continue
+            if consecutive:
+                await asyncio.sleep(failure_backoff_s)
             try:
                 out = await llm.extract(RewordedResume, system, user)
+                consecutive = 0
             except Exception as exc:  # quota or API error: report it and keep going
-                rejected[stem] = [f"LLM error: {exc}"[:200]]
+                consecutive += 1
+                rejected[stem] = [f"pending: LLM error: {exc}"[:200]]
                 print(f"[{i}/{len(paths)}] {stem}: LLM error", flush=True)
                 continue
         problems = validate(gt, out)
@@ -173,24 +197,36 @@ async def reword_all(paths: list[Path], llm: RecordingLLM | None) -> dict[str, l
     return rejected
 
 
+def make_llm(min_interval_s: float) -> RecordingLLM | None:
+    """Gemini behind a checkpointing recorder: one attempt per call (each attempt is quota)."""
+    settings = get_settings()
+    if settings.gemini_api_key is None:
+        return None
+    real = get_llm(
+        settings.model_copy(
+            update={"llm_mode": "real", "llm_max_attempts": 1, "llm_timeout_s": 60.0}
+        )
+    )
+    return RecordingLLM(real, CHECKPOINTS, min_interval_s=min_interval_s)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Reword val/test resumes with Gemini (ADR-0004 A).")
     ap.add_argument("--per-split", type=int, default=50)
     ap.add_argument("--splits", default="val,test")
     ap.add_argument("--render-only", action="store_true")
-    ap.add_argument("--min-interval", type=float, default=4.0)
+    ap.add_argument("--min-interval", type=float, default=15.0)
+    ap.add_argument("--max-calls", type=int, default=18, help="API calls this run (20/day)")
     args = ap.parse_args()
 
     paths = [p for split in args.splits.split(",") for p in select(split, args.per_split)]
     llm: RecordingLLM | None = None
     if not args.render_only:
-        settings = get_settings()
-        if settings.gemini_api_key is None:
+        llm = make_llm(args.min_interval)
+        if llm is None:
             print("GEMINI_API_KEY is not set.", file=sys.stderr)
             return 2
-        real = get_llm(settings.model_copy(update={"llm_mode": "real"}))
-        llm = RecordingLLM(real, CHECKPOINTS, min_interval_s=args.min_interval)
-    rejected = asyncio.run(reword_all(paths, llm))
+    rejected = asyncio.run(reword_all(paths, llm, max_calls=args.max_calls))
     print(f"{len(paths) - len(rejected)} rendered, {len(rejected)} left out")
     for stem, problems in sorted(rejected.items()):
         print(f"  {stem}: {'; '.join(problems[:3])}")

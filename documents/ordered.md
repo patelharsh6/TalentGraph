@@ -31,7 +31,7 @@ Step-by-step done/pending detail, owner actions and the metrics scoreboard are i
 |---|---|---|---|
 | 0 | Foundation & data (v1 Phases 0–1) | ✅ Done 2026-10-13 (0-H: CI green on `main`) | [phase-00](../docs/progress/phase-00.md), [phase-01](../docs/progress/phase-01.md) |
 | 1 | Scope cleanup | ✅ Done 2026-10-13 (all of 1-A to 1-E pass) | [milestone-01](../docs/progress/milestone-01.md) |
-| 2 | Parsing Agent + grounded extraction (F2) | ⬜ Not started | n/a |
+| 2 | Parsing Agent + grounded extraction (F2) | 🟨 In progress (real-API runs wait on Gemini quota) | [milestone-02](../docs/progress/milestone-02.md) |
 | 3 | Normalization Agent + fine-tuned embeddings (F5) | ⬜ Not started | n/a |
 | 4 | Matching Agent + pipeline + blind screening (F4) | ⬜ Not started | n/a |
 | 5 | REST API, batches, CI eval gate (F5) | ⬜ Not started | n/a |

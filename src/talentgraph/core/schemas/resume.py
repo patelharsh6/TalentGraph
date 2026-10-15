@@ -148,11 +148,20 @@ class ParsedResume(BaseModel):
 # -------------------------------------------------------------------------------------------------
 
 
+# Output tokens are the latency budget (~90 tokens/s on the free tier), so this schema carries
+# nothing the parser can derive itself (ADR-0005):
+# - line references are inclusive ranges, `[[27, 33]]`, not `[27, 28, ..., 33]`;
+# - dates come back only as verbatim text; the date rules normalize them (start, end, current);
+# - no model-reported confidence (it was a constant 0.95); the parser assigns one;
+# - skills already listed under a skills header (a rule hint) are not repeated;
+# - per-role `skills_mentioned` is derived by matching skills against the role's bullets.
+LineRanges = list[list[int]]
+
+
 class LLMLocation(BaseModel):
     city: str | None = None
     region: str | None = None
     country: str | None = None
-    evidence: str = ""
 
 
 class LLMExperience(BaseModel):
@@ -160,12 +169,7 @@ class LLMExperience(BaseModel):
     company: str = ""
     location: str | None = None
     dates_text: str | None = None  # verbatim date range, e.g. "Jun 2018 – Oct. 2022"
-    start: str | None = None
-    end: str | None = None
-    is_current: bool = False
-    bullet_lines: list[int] = Field(default_factory=list)
-    skills_mentioned: list[str] = Field(default_factory=list)
-    confidence: float = Field(default=0.9, ge=0.0, le=1.0)
+    bullet_lines: LineRanges = Field(default_factory=list)
 
 
 class LLMEducation(BaseModel):
@@ -173,34 +177,27 @@ class LLMEducation(BaseModel):
     degree: str | None = None
     field: str | None = None
     dates_text: str | None = None
-    start: str | None = None
-    end: str | None = None
     grade: str | None = None
-    confidence: float = Field(default=0.9, ge=0.0, le=1.0)
 
 
 class LLMSkill(BaseModel):
     name: str
     category: Literal["technical", "soft", "domain", "business", "unknown"] = "unknown"
-    confidence: float = Field(default=0.9, ge=0.0, le=1.0)
 
 
 class LLMCertification(BaseModel):
     name: str
     issuer: str | None = None
     date_text: str | None = None
-    date: str | None = None
     credential_id: str | None = None
-    confidence: float = Field(default=0.9, ge=0.0, le=1.0)
 
 
 class LLMProject(BaseModel):
     name: str
-    description_lines: list[int] = Field(default_factory=list)
+    description_lines: LineRanges = Field(default_factory=list)
     technologies: list[str] = Field(default_factory=list)
     url: str | None = None
     dates: str | None = None
-    confidence: float = Field(default=0.9, ge=0.0, le=1.0)
 
 
 class ResumeExtraction(BaseModel):
@@ -209,13 +206,12 @@ class ResumeExtraction(BaseModel):
     phone: str | None = None
     links: list[str] = Field(default_factory=list)
     location: LLMLocation | None = None
-    summary_lines: list[int] = Field(default_factory=list)
+    summary_lines: LineRanges = Field(default_factory=list)
     experience: list[LLMExperience] = Field(default_factory=list)
     education: list[LLMEducation] = Field(default_factory=list)
-    skills: list[LLMSkill] = Field(default_factory=list)
+    skills: list[LLMSkill] = Field(default_factory=list)  # only skills not in the hints
     certifications: list[LLMCertification] = Field(default_factory=list)
     projects: list[LLMProject] = Field(default_factory=list)
-    confidence: float = Field(default=0.9, ge=0.0, le=1.0)  # overall, for name/location
 
     def is_empty(self) -> bool:
         """True for a default instance, e.g. FakeLLM with no fixture for this input."""

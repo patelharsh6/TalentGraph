@@ -25,6 +25,8 @@ class Settings(BaseSettings):
     llm_mode: Literal["real", "fake", "stub"] = "real"
     llm_model: str = "gemini-3.8-flash"
     llm_timeout_s: float = 8.0
+    # Every attempt, failed or not, counts against the free-tier daily quota (20/day).
+    llm_max_attempts: int = 3
     llm_max_concurrency: int = 4
     llm_stub_latency_ms: int = 2500
     # Gemini "thinking" adds latency and isn't needed for extraction: low | medium | high
