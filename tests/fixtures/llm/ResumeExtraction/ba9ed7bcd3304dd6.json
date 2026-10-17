@@ -1,0 +1,67 @@
+{
+ "name": "Jack Snow",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Port Sarah",
+  "region": "KY",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Product Designer",
+   "company": "Sanchez-Marshall",
+   "location": "Rogersfort, PR",
+   "dates_text": "06/2021 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Hunterborough State University",
+   "degree": "Bachelor of Science",
+   "field": "Human-Computer Interaction / Graphic Design",
+   "dates_text": "Sep 2017 – 2021",
+   "grade": "3.76 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Design Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-945687"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Design Optimization System",
+   "description_lines": [
+    [
+     18,
+     18
+    ]
+   ],
+   "technologies": [
+    "Figma",
+    "Adobe XD",
+    "User Research & Usability Testing"
+   ],
+   "url": "https://github.com/jacksnow/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "name": "MARIA JONES",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Tammyfurt",
+  "region": "DC",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Health Informatics Specialist",
+   "company": "Fletcher, Miller and Hansen",
+   "location": "Lisahaven, CO",
+   "dates_text": "Jul. 2022 – Present",
+   "bullet_lines": [
+    [
+     7,
+     7
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     9,
+     9
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Romerotown State University",
+   "degree": "PhD",
+   "field": "Health Informatics / Biology",
+   "dates_text": "Sep 2018 – 2022",
+   "grade": "3.99 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Healthcare Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-930884"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Healthcare Optimization System",
+   "description_lines": [
+    [
+     18,
+     18
+    ]
+   ],
+   "technologies": [
+    "Clinical Trials Management",
+    "R Language",
+    "Bioinformatics"
+   ],
+   "url": "https://github.com/mariajones/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

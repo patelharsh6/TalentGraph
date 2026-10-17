@@ -1,0 +1,79 @@
+{
+ "name": "Olivia Harris",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Davisville",
+  "region": "NH",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   22,
+   22
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Senior Backend Developer",
+   "company": "Holland and Sons",
+   "location": "Cantuport, NY",
+   "dates_text": "Jul 2023 – Present",
+   "bullet_lines": [
+    [
+     10,
+     12
+    ]
+   ]
+  },
+  {
+   "title": "Software Engineer",
+   "company": "Hill, Davenport and Baird",
+   "location": "South Andrea, MS",
+   "dates_text": "2019 – 07/2023",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "New William State University",
+   "degree": "Master of Science",
+   "field": "Computer Science",
+   "dates_text": "Sep 2015 – May. 2019",
+   "grade": "3.53 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Software Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-497519"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Software Optimization System",
+   "description_lines": [
+    [
+     20,
+     20
+    ]
+   ],
+   "technologies": [
+    "React.js",
+    "Node.js",
+    "Docker"
+   ],
+   "url": "https://github.com/oliviaharris/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

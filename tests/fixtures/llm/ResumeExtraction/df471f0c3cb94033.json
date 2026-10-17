@@ -1,0 +1,103 @@
+{
+ "name": "Melissa Williams",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Bondside",
+  "region": "WA",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Risk Analyst",
+   "company": "Wright, Murray and Lara",
+   "location": "North Alexander, MP",
+   "dates_text": "2022-10 – Present",
+   "bullet_lines": [
+    [
+     7,
+     12
+    ]
+   ]
+  },
+  {
+   "title": "Senior Investment Analyst",
+   "company": "Anderson Group",
+   "location": "Ginaland, OR",
+   "dates_text": "2018-06 – 2022",
+   "bullet_lines": [
+    [
+     15,
+     20
+    ]
+   ]
+  },
+  {
+   "title": "Financial Analyst",
+   "company": "Green, Hess and Johnson",
+   "location": "East Rachelmouth, AS",
+   "dates_text": "2014 – 06/2018",
+   "bullet_lines": [
+    [
+     23,
+     28
+    ]
+   ]
+  },
+  {
+   "title": "Financial Analyst",
+   "company": "Davis LLC",
+   "location": "North Sheriton, GA",
+   "dates_text": "11/2010 – 02/2014",
+   "bullet_lines": [
+    [
+     31,
+     36
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Underwoodfurt State University",
+   "degree": "PhD",
+   "field": "Finance & Economics",
+   "dates_text": "Sep 2006 – May 2010",
+   "grade": "3.89 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Finance Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-295361"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Finance Optimization System",
+   "description_lines": [
+    [
+     45,
+     45
+    ]
+   ],
+   "technologies": [
+    "Financial Modeling",
+    "DCF Valuation",
+    "Financial Analysis"
+   ],
+   "url": "https://github.com/melissawilliams/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

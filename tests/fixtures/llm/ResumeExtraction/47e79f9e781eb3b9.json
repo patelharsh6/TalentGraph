@@ -1,0 +1,67 @@
+{
+ "name": "Melissa Bender",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "East Suzanneshire",
+  "region": "OR",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   4,
+   6
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Contracts Manager",
+   "company": "Key Ltd",
+   "location": "Barbaraburgh, NJ",
+   "dates_text": "2024-08 – Present",
+   "bullet_lines": [
+    [
+     9,
+     14
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Moonburgh State University",
+   "degree": "Master of Science",
+   "field": "Juris Doctor (JD) / Legal Studies",
+   "dates_text": "Sep. 2020 – 2024",
+   "grade": "3.69 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Legal Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-260227"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Legal Optimization System",
+   "description_lines": [
+    [
+     23,
+     23
+    ]
+   ],
+   "technologies": [
+    "Regulatory Compliance",
+    "M&A Due Diligence",
+    "Intellectual Property (IP) Protection"
+   ],
+   "url": "https://github.com/melissabender/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

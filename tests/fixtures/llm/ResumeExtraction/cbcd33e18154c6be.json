@@ -1,0 +1,135 @@
+{
+ "name": "Emily Newton",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Jeremyburgh",
+  "region": "ME",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   21,
+   24
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Curriculum Developer",
+   "company": "Erickson and Sons",
+   "location": "Brandonton, OH",
+   "dates_text": "Jul 2023 – Present",
+   "bullet_lines": [
+    [
+     27,
+     29
+    ],
+    [
+     30,
+     31
+    ],
+    [
+     32,
+     33
+    ]
+   ]
+  },
+  {
+   "title": "EdTech Specialist",
+   "company": "Terry-Martinez",
+   "location": "Garciatown, OK",
+   "dates_text": "2020 – 07/2023",
+   "bullet_lines": [
+    [
+     36,
+     38
+    ],
+    [
+     39,
+     40
+    ],
+    [
+     41,
+     42
+    ]
+   ]
+  },
+  {
+   "title": "EdTech Specialist",
+   "company": "Harrison-Alexander",
+   "location": "North Johnny, VI",
+   "dates_text": "Aug 2017 – 2020",
+   "bullet_lines": [
+    [
+     45,
+     47
+    ],
+    [
+     48,
+     49
+    ],
+    [
+     50,
+     51
+    ]
+   ]
+  },
+  {
+   "title": "Curriculum Developer",
+   "company": "Wilson-Jones",
+   "location": "Joneston, FL",
+   "dates_text": "2013 – 2017",
+   "bullet_lines": [
+    [
+     54,
+     56
+    ],
+    [
+     57,
+     58
+    ],
+    [
+     59,
+     60
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Port Anna State University",
+   "degree": "PhD",
+   "field": "Education & Curriculum Design",
+   "dates_text": "09/2009 – 05/2013",
+   "grade": "3.94 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Education Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-703634"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Education Optimization System",
+   "description_lines": [
+    [
+     17,
+     18
+    ]
+   ],
+   "technologies": [
+    "Learning Management Systems (LMS)",
+    "Active Mentoring",
+    "Instructional Design"
+   ],
+   "url": "https://github.com/emilynewton/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "name": "BRIAN FITZGERALD",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Lake Sean",
+  "region": "CO",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   5
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Business Operations Lead",
+   "company": "Ponce, Downs and Contreras",
+   "location": "New Amberport, PR",
+   "dates_text": "08/2023 – Present",
+   "bullet_lines": [
+    [
+     8,
+     10
+    ]
+   ]
+  },
+  {
+   "title": "Business Operations Lead",
+   "company": "Joseph Ltd",
+   "location": "Port Michael, IN",
+   "dates_text": "Aug. 2020 – Aug 2023",
+   "bullet_lines": [
+    [
+     13,
+     15
+    ]
+   ]
+  },
+  {
+   "title": "Program Manager",
+   "company": "Galloway and Sons",
+   "location": "Port Troy, MN",
+   "dates_text": "Jun. 2017 – Aug. 2020",
+   "bullet_lines": [
+    [
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "title": "Business Operations Lead",
+   "company": "Armstrong, Mcdonald and Bird",
+   "location": "New Nicole, CA",
+   "dates_text": "2013 – 06/2017",
+   "bullet_lines": [
+    [
+     23,
+     25
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Raymondfort State University",
+   "degree": "Master of Science",
+   "field": "Operations Research / Management",
+   "dates_text": "Sep. 2009 – May. 2013",
+   "grade": "3.72 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Operations Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-347582"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Operations Optimization System",
+   "description_lines": [
+    [
+     34,
+     34
+    ]
+   ],
+   "technologies": [
+    "Process Optimization",
+    "Vendor Management & Procurement",
+    "Agile Scrum Methodology"
+   ],
+   "url": "https://github.com/brianfitzgerald/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

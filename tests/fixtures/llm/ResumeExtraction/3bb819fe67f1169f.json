@@ -1,0 +1,95 @@
+{
+ "name": "Molly Hansen",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Port Cynthiashire",
+  "region": "RI",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   15,
+   18
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Demand Generation Strategist",
+   "company": "Kennedy and Sons",
+   "location": "Port Erinhaven, ME",
+   "dates_text": "2023-06 – Present",
+   "bullet_lines": [
+    [
+     21,
+     23
+    ],
+    [
+     24,
+     25
+    ],
+    [
+     26,
+     27
+    ]
+   ]
+  },
+  {
+   "title": "Demand Generation Strategist",
+   "company": "Brown-Dickerson",
+   "location": "East Matthew, OK",
+   "dates_text": "Mar 2020 – 2023-06",
+   "bullet_lines": [
+    [
+     30,
+     32
+    ],
+    [
+     33,
+     34
+    ],
+    [
+     35,
+     36
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Thomasburgh State University",
+   "degree": "Bachelor of Arts",
+   "field": "Marketing & Communications",
+   "dates_text": "09/2016 – 2020-05",
+   "grade": "3.77 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Marketing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-400614"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Marketing Optimization System",
+   "description_lines": [
+    [
+     39,
+     40
+    ]
+   ],
+   "technologies": [
+    "Google Analytics 4 (GA4)",
+    "Growth Marketing",
+    "Search Engine Marketing (SEM)"
+   ],
+   "url": "https://github.com/mollyhansen/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

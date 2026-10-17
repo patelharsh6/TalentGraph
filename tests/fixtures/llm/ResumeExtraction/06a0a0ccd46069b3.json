@@ -1,0 +1,91 @@
+{
+ "name": "Tammy Barron",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Toddborough",
+  "region": "WV",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   19,
+   21
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Legal Compliance Specialist",
+   "company": "Becker PLC",
+   "location": "New Seanstad, CA",
+   "dates_text": "10/2023 – Present",
+   "bullet_lines": [
+    [
+     24,
+     29
+    ]
+   ]
+  },
+  {
+   "title": "Senior Contracts Manager",
+   "company": "Rodriguez, Poole and Leach",
+   "location": "New Amanda, GA",
+   "dates_text": "Aug 2020 – Oct 2023",
+   "bullet_lines": [
+    [
+     32,
+     37
+    ]
+   ]
+  },
+  {
+   "title": "Corporate Counsel",
+   "company": "Bond-Ramos",
+   "location": "Lake Brandy, CO",
+   "dates_text": "2017-08 – 2020-08",
+   "bullet_lines": [
+    [
+     40,
+     45
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Stokesmouth State University",
+   "degree": "Bachelor of Arts",
+   "field": "Juris Doctor (JD) / Legal Studies",
+   "dates_text": "09/2013 – May 2017",
+   "grade": "3.68 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Legal Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-958729"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Legal Optimization System",
+   "description_lines": [
+    [
+     48,
+     49
+    ]
+   ],
+   "technologies": [
+    "Corporate Contract Drafting",
+    "GDPR & Data Privacy",
+    "Intellectual Property (IP) Protection"
+   ],
+   "url": "https://github.com/tammybarron/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

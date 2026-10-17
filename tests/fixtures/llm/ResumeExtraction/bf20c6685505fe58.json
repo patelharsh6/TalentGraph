@@ -1,0 +1,67 @@
+{
+ "name": "Robin Andrews",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Schultzbury",
+  "region": "TX",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "UI/UX Designer",
+   "company": "Hall, Stewart and Moses",
+   "location": "Lake Marilynbury, LA",
+   "dates_text": "May. 2025 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "South Emilymouth State University",
+   "degree": "Bachelor of Science",
+   "field": "Human-Computer Interaction / Graphic Design",
+   "dates_text": "2021-09 – 2025-05",
+   "grade": "3.62 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Design Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-555589"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Design Optimization System",
+   "description_lines": [
+    [
+     18,
+     18
+    ]
+   ],
+   "technologies": [
+    "Adobe XD",
+    "User Research & Usability Testing",
+    "Figma"
+   ],
+   "url": "https://github.com/robinandrews/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

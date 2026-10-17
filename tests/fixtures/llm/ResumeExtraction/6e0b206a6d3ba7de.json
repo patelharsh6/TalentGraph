@@ -1,0 +1,67 @@
+{
+ "name": "James Simmons MD",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "West Patrickchester",
+  "region": "ID",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Biomedical Data Lead",
+   "company": "Wilkerson, Fox and Mccoy",
+   "location": "South Kimberlystad, NJ",
+   "dates_text": "2025 – Present",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Coopershire State University",
+   "degree": "Master of Science",
+   "field": "Health Informatics / Biology",
+   "dates_text": "Sep 2021 – 05/2025",
+   "grade": "3.87 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Healthcare Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-779776"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Healthcare Optimization System",
+   "description_lines": [
+    [
+     16,
+     16
+    ]
+   ],
+   "technologies": [
+    "HIPAA Compliance",
+    "Epic Systems",
+    "Clinical Trials Management"
+   ],
+   "url": "https://github.com/jamessimmonsmd/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

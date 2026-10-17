@@ -1,0 +1,91 @@
+{
+ "name": "Eric Snyder",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "South Daniel",
+  "region": "ME",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Senior Enterprise Sales Manager",
+   "company": "Rush LLC",
+   "location": "Brockmouth, NV",
+   "dates_text": "08/2023 – Present",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Senior Enterprise Sales Manager",
+   "company": "Jordan-Colon",
+   "location": "West Malik, UT",
+   "dates_text": "Apr. 2019 – Aug 2023",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  },
+  {
+   "title": "Business Development Representative",
+   "company": "Mendoza and Sons",
+   "location": "Novakport, WA",
+   "dates_text": "May. 2015 – 2019",
+   "bullet_lines": [
+    [
+     21,
+     23
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Faulknerbury State University",
+   "degree": "Bachelor of Arts",
+   "field": "Business Administration",
+   "dates_text": "Sep 2011 – 05/2015",
+   "grade": "3.97 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Sales Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-640418"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Sales Optimization System",
+   "description_lines": [
+    [
+     26,
+     26
+    ]
+   ],
+   "technologies": [
+    "Account Management",
+    "Salesforce CRM",
+    "Client Relationship Building"
+   ],
+   "url": "https://github.com/ericsnyder/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

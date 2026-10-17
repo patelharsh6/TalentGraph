@@ -1,0 +1,67 @@
+{
+ "name": "Michael Poole",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Murphytown",
+  "region": "VI",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   12,
+   12
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Digital Marketing Lead",
+   "company": "Davis, Stanton and Reid",
+   "location": "Melissaside, MO",
+   "dates_text": "2025-05 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "South Mallory State University",
+   "degree": "Bachelor of Arts",
+   "field": "Marketing & Communications",
+   "dates_text": "09/2021 – May 2025",
+   "grade": "3.82 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Marketing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-416768"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Marketing Optimization System",
+   "description_lines": [
+    [
+     15,
+     15
+    ]
+   ],
+   "technologies": [
+    "Copywriting",
+    "Google Analytics 4 (GA4)",
+    "Email Marketing Campaigns"
+   ],
+   "url": "https://github.com/michaelpoole/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

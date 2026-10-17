@@ -1,0 +1,95 @@
+{
+ "name": "Jacqueline Stewart",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Phillipburgh",
+  "region": "NH",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   32,
+   34
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Instructional Designer",
+   "company": "Wolfe Group",
+   "location": "Hannahtown, TX",
+   "dates_text": "08/2022 – Present",
+   "bullet_lines": [
+    [
+     6,
+     7
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     10,
+     11
+    ]
+   ]
+  },
+  {
+   "title": "EdTech Specialist",
+   "company": "Gray Inc",
+   "location": "Michaelview, HI",
+   "dates_text": "2018-08 – Aug. 2022",
+   "bullet_lines": [
+    [
+     14,
+     15
+    ],
+    [
+     16,
+     17
+    ],
+    [
+     18,
+     19
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Joelfort State University",
+   "degree": "Master of Science",
+   "field": "Education & Curriculum Design",
+   "dates_text": "09/2014 – 2018-05",
+   "grade": "3.87 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Education Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-102693"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Education Optimization System",
+   "description_lines": [
+    [
+     22,
+     23
+    ]
+   ],
+   "technologies": [
+    "Learning Management Systems (LMS)",
+    "Educational Technology (EdTech)",
+    "Curriculum Development"
+   ],
+   "url": "https://github.com/jacquelinestewart/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

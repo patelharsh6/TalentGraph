@@ -1,21 +1,23 @@
 # Milestone 02: Parsing Agent + grounded extraction (F2): progress record
 
-- **Completed by:** Claude Code (agent)   **Dates:** 2026-10-13, 2026-10-15   **Git SHA:** 8b1bef2 + uncommitted
+- **Completed by:** Claude Code (agent)   **Dates:** 2026-10-13, 2026-10-15, 2026-10-17   **Git SHA:** 8b1bef2 + uncommitted
 - **LLM quota used:** `gemini-3.8-flash` free tier, 20 requests/day.
   - 2026-10-13: 20 requests, 0 succeeded (503s with 3× retries, plus availability pings).
   - 2026-10-15: 20 requests, 9 succeeded (10 failed with 503 "high demand", 1 per-minute 429), plus free `count_tokens` calls.
+  - 2026-10-16: no batch run.
+  - 2026-10-17: 19 requests (daily budget), **19 succeeded, 0 failed**: val fixtures 19/88 with the frozen prompt.
 - **Status:** 🟨 In progress. All code is written and tested. The owner chose to stay on the free tier (2026-10-15), so the remaining LLM work runs once a day with `scripts/daily_llm_batch.py` (status.md owner action 9): 88 val fixtures, then 100 rewordings, then the reworded val fixtures. The real-resume set (2.15) waits on the owner.
 
 ## Exit criteria results
 
 | # | Check | Command run | Result / metric | Pass? |
 |---|---|---|---|---|
-| 2-A | Unit tests on `tests/fixtures/resumes/` (6 templates, 3 formats) | `docker compose run --rm tools uv run pytest -q` | **222 passed, 18 skipped**, 46 s, offline. The 18 skips are `test_parsing_recorded.py`, the end-to-end check over recorded Gemini fixtures; each one switches on (and must pass: status ok, F1 ≥ 0.80, ≤ 10% unverified) as soon as its fixture is recorded. Also: `test_parsing_extract.py`, `test_parsing_sections_rules.py`, `test_parsing_agent.py` | ✅ |
-| 2-B | M1 on val (F1 ≥ 0.85; ≥ 0.95 name/email/phone) | `uv run python -m eval.parsing --split val [--ids …]` | Rules only (no LLM): F1 0.463, contact fields 1.000. **First 8 val resumes with Gemini** (pre-compact prompt, 2026-10-15): **F1 1.000** (443/443 fields), name/email/phone 1.000. Full val with the frozen prompt: pending daily recording | ⏳ |
-| 2-C | M7 ≤ 5%; corrupted fixture flagged | `pytest -k corrupted`; `eval.parsing` | Corrupted extraction (made-up employer, skill) → `verified: false`, confidence halved, quality penalized ✅. **First 8 val resumes: 0 of 222 checked LLM fields unverified (0.0%)**. Full val: pending | 🟨 |
+| 2-A | Unit tests on `tests/fixtures/resumes/` (6 templates, 3 formats) | `docker compose run --rm tools uv run pytest -q` | **222 passed, 18 skipped**, 46 s, offline (2026-10-17, with 19 fixtures recorded: **238 passed, 2 skipped**). The 18 skips are `test_parsing_recorded.py`, the end-to-end check over recorded Gemini fixtures; each one switches on (and must pass: status ok, F1 ≥ 0.80, ≤ 10% unverified) as soon as its fixture is recorded. Also: `test_parsing_extract.py`, `test_parsing_sections_rules.py`, `test_parsing_agent.py` | ✅ |
+| 2-B | M1 on val (F1 ≥ 0.85; ≥ 0.95 name/email/phone) | `uv run python -m eval.parsing --split val [--ids …]` | Rules only (no LLM): F1 0.463, contact fields 1.000. **First 8 val resumes with Gemini** (pre-compact prompt, 2026-10-15): **F1 1.000** (443/443 fields), name/email/phone 1.000. **Frozen prompt, first 19 val resumes (2026-10-17):** F1 **0.999**, name/email/phone 1.000, 19/19 `ok` (`reports/parsing_val_first19_*.md`). Full val (88): pending daily recording | 🟨 |
+| 2-C | M7 ≤ 5%; corrupted fixture flagged | `pytest -k corrupted`; `eval.parsing` | Corrupted extraction (made-up employer, skill) → `verified: false`, confidence halved, quality penalized ✅. **First 8 val resumes: 0 of 222 checked LLM fields unverified (0.0%)**. Frozen prompt, first 19: **0 of 497 (0.0%)**. Full val: pending | 🟨 |
 | 2-D | Degradation | `pytest -k "degrade or partial"`, plus live runs | FakeLLM with no fixture, `LLMQuotaExceeded`, `LLMError`, `TimeoutError` → `partial` with name, email, phone, summary and skills. Live: every real 503 and the 429 on 2026-10-15 degraded to `partial` the same way | ✅ |
 | 2-E | PNG → 415; 11 MB → 413; scanned PDF → 422 | `pytest -k problem_json` | 415 `unsupported_file_type`, 413 `file_too_large`, 422 `unsupported_content`, all `application/problem+json` | ✅ |
-| 2-F | Parser p95 < 7 s (real API, 20 val, sequential); cache hit < 200 ms | `record_llm_fixtures.py` reports; `eval.latency --from-records` | Old prompt, 9 real calls: p50 12.7 s, **p95 19.3 s** ❌. All of it was LLM output time (~90 tokens/s, no thinking tokens), so the output was compacted (ADR-0005 amendment): on the same resume, **1,225 → 616 tokens, 11.0 → 6.8 s**. The prompt now also asks for minified JSON (`count_tokens`: 642 → 365 tokens for the same content). The 20-resume sample with the frozen prompt builds up from the daily runs | ⏳ |
+| 2-F | Parser p95 < 7 s (real API, 20 val, sequential); cache hit < 200 ms | `record_llm_fixtures.py` reports; `eval.latency --from-records` | Old prompt, 9 real calls: p50 12.7 s, **p95 19.3 s** ❌. All of it was LLM output time (~90 tokens/s, no thinking tokens), so the output was compacted (ADR-0005 amendment): on the same resume, **1,225 → 616 tokens, 11.0 → 6.8 s**. The prompt now also asks for minified JSON (`count_tokens`: 642 → 365 tokens for the same content). **Frozen prompt, 19 real calls (2026-10-17):** p50 4.3 s, **p95 8.0 s**, max 9.5 s: p95 still misses 7 s. One more call completes the 20-call sample | 🟨 |
 | 2-G | M1 on reworded and real sets; no private data in git | n/a | Reworded: runs after the val fixtures (daily). Real set: owner action 5; the owner asked to keep it pending (2026-10-15). `eval.parsing --private` writes aggregates only, to `reports/private/` (gitignored) | ⏳ |
 
 Extra checks run along the way (not exit criteria):
@@ -35,7 +37,7 @@ Extra checks run along the way (not exit criteria):
 | 3 | Phones: regex for `001-…` / extension formats `phonenumbers` misses; drop candidates that are date ranges | phone 88/88 on val |
 | 4 | First real Gemini calls (v1 schema, 8 val) | M1 1.000, M7 0.0%, but latency p95 19.3 s |
 | 5 | Compact LLM output: line ranges, dates only as text, no model confidence, no repeated skills, derived `skills_mentioned` (ADR-0005 amendment) | candidate_0053: 1,225 → 616 output tokens; 11.0 → 6.8 s |
-| 6 | Prompt asks for minified JSON; prompt frozen | `count_tokens` of the same output: 642 → 365 (to be confirmed on real calls) |
+| 6 | Prompt asks for minified JSON; prompt frozen | `count_tokens` of the same output: 642 → 365. Real calls (19): p95 19.3 s → 8.0 s, p50 12.7 s → 4.3 s |
 
 ## Deviations from plan
 

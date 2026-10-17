@@ -1,6 +1,6 @@
 # TalentGraph: Project Status
 
-> **Last updated:** 2026-10-15 · **Current milestone:** 2 (Parsing Agent + F2), 🟨 in progress · Milestones 0 and 1 ✅
+> **Last updated:** 2026-10-17 · **Current milestone:** 2 (Parsing Agent + F2), 🟨 in progress · Milestones 0 and 1 ✅
 >
 > This page lists every milestone and step and whether it's done. The steps and their exit criteria are defined in [`ordered.md`](ordered.md), and the evidence for completed work is in [`docs/progress/`](../docs/progress/). Update this page whenever a step or exit criterion changes state.
 
@@ -100,22 +100,22 @@ Evidence so far: [`milestone-02.md`](../docs/progress/milestone-02.md).
 | 2.6 | TXT extraction | ✅ |
 | 2.7 | Section detection (150+ header variants) | ✅ (180 variants; sections match on 472/472 train+val) |
 | 2.8 | Rule extractors (email, phone, URLs, dates, skills) | ✅ (contact, links, dates 88/88 on val) |
-| 2.9 | Gemini extraction plus recorded FakeLLM fixtures | 🟨 prompt frozen 2026-10-15 (compact output, ADR-0005 amendment); fixtures 0/88, recorded daily (owner action 9) |
+| 2.9 | Gemini extraction plus recorded FakeLLM fixtures | 🟨 prompt frozen 2026-10-15 (compact output, ADR-0005 amendment); fixtures **19/88** (2026-10-17: 19/19 calls succeeded), recorded daily (owner action 9) |
 | 2.10 | Evidence verifier (F2) | ✅ |
 | 2.11 | ParsingAgent: merge, validate, quality, degradation | ✅ |
 | 2.12 | Redis parse cache | ✅ (hit latency measured in 2-F) |
-| 2.13 | Evaluation: F1, hallucination rate, latency | 🟨 harness done; rules-only val F1 0.463; first 8 val resumes with Gemini (pre-compact prompt): F1 1.000, 0/222 unverified; full val run ⏳ daily recording |
+| 2.13 | Evaluation: F1, hallucination rate, latency | 🟨 harness done; rules-only val F1 0.463; first 8 val resumes with Gemini (pre-compact prompt): F1 1.000, 0/222 unverified; frozen prompt, first 19 val: **F1 0.999, 0/497 unverified**; full val run ⏳ daily recording |
 | 2.14 | LLM-reworded resumes (ADR-0004 A) | 🟨 script done (budgeted, resumable); runs after the val fixtures (owner action 9) |
 | 2.15 | Consented real-resume check set (ADR-0004 B) | ⬜ (needs consented resumes) |
 
 | # | Exit criterion | Status |
 |---|---|---|
 | 2-A | Unit tests for every extractor, the verifier and merge rules | ✅ |
-| 2-B | M1 on val: F1 ≥ 0.85; ≥ 0.95 name/email/phone | ⬜ |
-| 2-C | M7: hallucination rate ≤ 5% | 🟨 corrupted extraction flagged ✅; rate ⏳ quota |
+| 2-B | M1 on val: F1 ≥ 0.85; ≥ 0.95 name/email/phone | 🟨 19/88 val: F1 0.999, contact 1.000; full val ⏳ |
+| 2-C | M7: hallucination rate ≤ 5% | 🟨 corrupted extraction flagged ✅; 19/88 val: 0.0%; full val ⏳ |
 | 2-D | Degradation to rules-only `partial` | ✅ |
 | 2-E | Error cases (415, 413, 422) | ✅ |
-| 2-F | Parser p95 < 7 s; cache hit < 200 ms | 🟨 old prompt p95 19.3 s → compact prompt 6.8 s on one resume; sample of 20 builds up from the daily runs (`eval.latency --from-records`) |
+| 2-F | Parser p95 < 7 s; cache hit < 200 ms | 🟨 frozen prompt, 19 real calls: p50 4.3 s, **p95 8.0 s** (misses 7 s); old prompt p95 19.3 s; sample of 20 builds up from the daily runs (`eval.latency --from-records`) |
 | 2-G | M1 reported on the reworded and real sets; no private data in git | ⏳ reworded: daily runs; real set: owner action 5 (owner: not yet, keep pending) |
 
 ## Milestone 3: Normalization Agent + fine-tuned embeddings (F5) ⬜

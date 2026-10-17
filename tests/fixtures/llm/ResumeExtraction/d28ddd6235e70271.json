@@ -1,0 +1,86 @@
+{
+ "name": "MICHAEL PAUL",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Lake Michaelstad",
+  "region": "AR",
+  "country": null
+ },
+ "summary_lines": [],
+ "experience": [
+  {
+   "title": "Senior Operations Lead",
+   "company": "Hill-Donaldson",
+   "location": "Davisborough, SD",
+   "dates_text": "Jun 2023 – Present",
+   "bullet_lines": [
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "title": "Industrial Automation Engineer",
+   "company": "Harper, Smith and Buchanan",
+   "location": "East Kristin, IL",
+   "dates_text": "May 2019 – 2023-06",
+   "bullet_lines": [
+    [
+     10,
+     12
+    ]
+   ]
+  },
+  {
+   "title": "Supply Chain Analyst",
+   "company": "Gallegos PLC",
+   "location": "New Jason, VI",
+   "dates_text": "Jun 2015 – 05/2019",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "West Kim State University",
+   "degree": "PhD",
+   "field": "Industrial Engineering",
+   "dates_text": "09/2011 – May. 2015",
+   "grade": "3.55 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Manufacturing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-112861"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Manufacturing Optimization System",
+   "description_lines": [
+    [
+     26,
+     26
+    ]
+   ],
+   "technologies": [
+    "Root Cause Analysis",
+    "Internet of Things (IoT)",
+    "Six Sigma Green Belt"
+   ],
+   "url": "https://github.com/michaelpaul/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "name": "Linda Ramirez",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "East Josephberg",
+  "region": "WA",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Senior Academic Advisor",
+   "company": "Fox-Reese",
+   "location": "Weststad, NY",
+   "dates_text": "10/2022 – Present",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Curriculum Developer",
+   "company": "Rodriguez, Gordon and Dougherty",
+   "location": "Lake Kristahaven, ME",
+   "dates_text": "10/2018 – 2022",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  },
+  {
+   "title": "Instructional Designer",
+   "company": "Schneider-Johnson",
+   "location": "Boonechester, TX",
+   "dates_text": "2014 – 2018-10",
+   "bullet_lines": [
+    [
+     21,
+     23
+    ]
+   ]
+  },
+  {
+   "title": "Senior Academic Advisor",
+   "company": "Henry Group",
+   "location": "North Marcberg, CA",
+   "dates_text": "2009-07 – 10/2014",
+   "bullet_lines": [
+    [
+     26,
+     28
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "West Claudia State University",
+   "degree": "Bachelor of Arts",
+   "field": "Education & Curriculum Design",
+   "dates_text": "09/2005 – 2009-05",
+   "grade": "3.78 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Education Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-163156"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Education Optimization System",
+   "description_lines": [
+    [
+     31,
+     31
+    ]
+   ],
+   "technologies": [
+    "Public Speaking & Lecturing",
+    "Active Mentoring",
+    "Learning Management Systems (LMS)"
+   ],
+   "url": "https://github.com/lindaramirez/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

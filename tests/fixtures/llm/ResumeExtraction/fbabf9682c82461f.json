@@ -1,0 +1,103 @@
+{
+ "name": "Jonathon Taylor",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "West Micheal",
+  "region": "NH",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   32,
+   32
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Data Scientist",
+   "company": "Sanders, Leblanc and Maldonado",
+   "location": "West Tracy, NV",
+   "dates_text": "Oct 2023 – Present",
+   "bullet_lines": [
+    [
+     14,
+     16
+    ]
+   ]
+  },
+  {
+   "title": "Data Engineer",
+   "company": "Horne Group",
+   "location": "Maxview, WA",
+   "dates_text": "09/2020 – Oct. 2023",
+   "bullet_lines": [
+    [
+     19,
+     21
+    ]
+   ]
+  },
+  {
+   "title": "AI Research Scientist",
+   "company": "Davis, Johnson and Williams",
+   "location": "Port Jeffrey, IN",
+   "dates_text": "Oct. 2016 – 2020",
+   "bullet_lines": [
+    [
+     24,
+     26
+    ]
+   ]
+  },
+  {
+   "title": "Data Engineer",
+   "company": "Clark, Pearson and Palmer",
+   "location": "South Rhondaburgh, PA",
+   "dates_text": "2012-07 – Oct 2016",
+   "bullet_lines": [
+    [
+     29,
+     31
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "East Johnnyport State University",
+   "degree": "Bachelor of Arts",
+   "field": "Data Science & Statistics",
+   "dates_text": "Sep. 2008 – 2012-05",
+   "grade": "3.65 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Data Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-477114"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Data Optimization System",
+   "description_lines": [
+    [
+     7,
+     7
+    ]
+   ],
+   "technologies": [
+    "MLOps",
+    "Pandas",
+    "SQL"
+   ],
+   "url": "https://github.com/jonathontaylor/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

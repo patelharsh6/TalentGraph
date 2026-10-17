@@ -1,0 +1,103 @@
+{
+ "name": "STEVEN FLYNN",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Lake Sandra",
+  "region": "WY",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   5
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior IP Legal Advisor",
+   "company": "Pham-Shields",
+   "location": "West Erik, UT",
+   "dates_text": "10/2022 – Present",
+   "bullet_lines": [
+    [
+     8,
+     10
+    ]
+   ]
+  },
+  {
+   "title": "Corporate Counsel",
+   "company": "Reyes Inc",
+   "location": "Walkermouth, MI",
+   "dates_text": "Jun 2018 – Oct. 2022",
+   "bullet_lines": [
+    [
+     13,
+     15
+    ]
+   ]
+  },
+  {
+   "title": "IP Legal Advisor",
+   "company": "Hoover-Savage",
+   "location": "North Donna, MO",
+   "dates_text": "Apr. 2014 – 06/2018",
+   "bullet_lines": [
+    [
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "title": "Corporate Counsel",
+   "company": "Ramirez-Jones",
+   "location": "Michaelhaven, MO",
+   "dates_text": "02/2010 – 2014-04",
+   "bullet_lines": [
+    [
+     23,
+     25
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Sheilaville State University",
+   "degree": "PhD",
+   "field": "Juris Doctor (JD) / Legal Studies",
+   "dates_text": "09/2006 – 2010",
+   "grade": "3.85 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Legal Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-865990"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Legal Optimization System",
+   "description_lines": [
+    [
+     34,
+     34
+    ]
+   ],
+   "technologies": [
+    "Intellectual Property (IP) Protection",
+    "Legal Research (Westlaw/LexisNexis)",
+    "Regulatory Compliance"
+   ],
+   "url": "https://github.com/stevenflynn/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}
