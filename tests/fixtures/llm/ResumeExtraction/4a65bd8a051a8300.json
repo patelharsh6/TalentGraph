@@ -1,0 +1,103 @@
+{
+ "name": "Drew Burgess",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Janetfurt",
+  "region": "AR",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior IP Legal Advisor",
+   "company": "Hernandez-Moran",
+   "location": "Lake Jill, VI",
+   "dates_text": "Aug 2023 – Present",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  },
+  {
+   "title": "Senior Contracts Manager",
+   "company": "Gates Ltd",
+   "location": "Evansburgh, AK",
+   "dates_text": "2020 – Aug. 2023",
+   "bullet_lines": [
+    [
+     20,
+     22
+    ]
+   ]
+  },
+  {
+   "title": "Senior Contracts Manager",
+   "company": "Long, Henderson and Kennedy",
+   "location": "Katherinefurt, CA",
+   "dates_text": "04/2017 – 2020",
+   "bullet_lines": [
+    [
+     25,
+     27
+    ]
+   ]
+  },
+  {
+   "title": "IP Legal Advisor",
+   "company": "Acosta, Campbell and Leblanc",
+   "location": "Davismouth, WV",
+   "dates_text": "Jan. 2013 – Apr. 2017",
+   "bullet_lines": [
+    [
+     30,
+     32
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Port Sarahport State University",
+   "degree": "Bachelor of Science",
+   "field": "Juris Doctor (JD) / Legal Studies",
+   "dates_text": "09/2009 – May 2013",
+   "grade": "3.50 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Legal Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-687234"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Legal Optimization System",
+   "description_lines": [
+    [
+     6,
+     6
+    ]
+   ],
+   "technologies": [
+    "Intellectual Property (IP) Protection",
+    "Risk Assessment",
+    "Legal Research (Westlaw/LexisNexis)"
+   ],
+   "url": "https://github.com/drewburgess/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

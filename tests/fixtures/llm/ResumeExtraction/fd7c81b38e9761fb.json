@@ -1,0 +1,103 @@
+{
+ "name": "William Lewis",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Ericview",
+  "region": "MN",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Senior Enterprise Sales Manager",
+   "company": "Wright, Scott and Evans",
+   "location": "Carrollborough, VA",
+   "dates_text": "Jun 2022 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  },
+  {
+   "title": "Account Executive",
+   "company": "Cummings Group",
+   "location": "South Margaret, UT",
+   "dates_text": "Feb. 2017 – Jun 2022",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Account Executive",
+   "company": "Johnston, Velez and Larson",
+   "location": "Benjaminshire, MS",
+   "dates_text": "Oct. 2012 – 2017-02",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  },
+  {
+   "title": "Senior Enterprise Sales Manager",
+   "company": "Deleon LLC",
+   "location": "Nicholechester, MT",
+   "dates_text": "Oct 2007 – 10/2012",
+   "bullet_lines": [
+    [
+     21,
+     23
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Port Kayleetown State University",
+   "degree": "Bachelor of Science",
+   "field": "Business Administration",
+   "dates_text": "2003-09 – May. 2007",
+   "grade": "3.52 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Sales Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-559507"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Sales Optimization System",
+   "description_lines": [
+    [
+     31,
+     31
+    ]
+   ],
+   "technologies": [
+    "Contract Negotiation",
+    "Salesforce CRM",
+    "Lead Prospecting"
+   ],
+   "url": "https://github.com/williamlewis/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

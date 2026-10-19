@@ -1,0 +1,67 @@
+{
+ "name": "Deborah Ross",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Kimberlymouth",
+  "region": "TX",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   19,
+   21
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Business Operations Lead",
+   "company": "Davis, Powers and Henderson",
+   "location": "Jamesstad, PA",
+   "dates_text": "Jun 2023 – Present",
+   "bullet_lines": [
+    [
+     24,
+     29
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Port Kevinstad State University",
+   "degree": "Master of Science",
+   "field": "Operations Research / Management",
+   "dates_text": "2019-09 – May 2023",
+   "grade": "3.99 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Operations Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-529161"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Operations Optimization System",
+   "description_lines": [
+    [
+     32,
+     32
+    ]
+   ],
+   "technologies": [
+    "Process Optimization",
+    "Jira & Confluence",
+    "Cross-Functional Leadership"
+   ],
+   "url": "https://github.com/deborahross/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

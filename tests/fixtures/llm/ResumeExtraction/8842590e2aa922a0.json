@@ -1,0 +1,79 @@
+{
+ "name": "Todd Hayes",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Waltershire",
+  "region": "IN",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Industrial Automation Engineer",
+   "company": "Vaughan PLC",
+   "location": "North Terri, ID",
+   "dates_text": "Aug. 2023 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  },
+  {
+   "title": "Quality Assurance Engineer",
+   "company": "Haynes-Jackson",
+   "location": "Williamsonview, FL",
+   "dates_text": "04/2019 – Aug. 2023",
+   "bullet_lines": [
+    [
+     12,
+     14
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "West Georgeshire State University",
+   "degree": "Bachelor of Arts",
+   "field": "Industrial Engineering",
+   "dates_text": "Sep. 2015 – 05/2019",
+   "grade": "3.81 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Manufacturing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-616256"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Manufacturing Optimization System",
+   "description_lines": [
+    [
+     23,
+     23
+    ]
+   ],
+   "technologies": [
+    "Embedded C",
+    "Root Cause Analysis",
+    "PLC Programming (Siemens/Allen-Bradley)"
+   ],
+   "url": "https://github.com/toddhayes/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

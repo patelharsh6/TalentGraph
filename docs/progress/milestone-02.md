@@ -1,11 +1,13 @@
 # Milestone 02: Parsing Agent + grounded extraction (F2): progress record
 
-- **Completed by:** Claude Code (agent)   **Dates:** 2026-10-13, 2026-10-15, 2026-10-17   **Git SHA:** 8b1bef2 + uncommitted
+- **Completed by:** Claude Code (agent)   **Dates:** 2026-10-13, 2026-10-15, 2026-10-17, 2026-10-19   **Git SHA:** 8b1bef2 + uncommitted
 - **LLM quota used:** `gemini-3.8-flash` free tier, 20 requests/day.
   - 2026-10-13: 20 requests, 0 succeeded (503s with 3× retries, plus availability pings).
   - 2026-10-15: 20 requests, 9 succeeded (10 failed with 503 "high demand", 1 per-minute 429), plus free `count_tokens` calls.
   - 2026-10-16: no batch run.
   - 2026-10-17: 19 requests (daily budget), **19 succeeded, 0 failed**: val fixtures 19/88 with the frozen prompt.
+  - 2026-10-18: no batch run.
+  - 2026-10-19: 19 requests, **19 succeeded, 0 failed**: val fixtures 38/88.
 - **Status:** 🟨 In progress. All code is written and tested. The owner chose to stay on the free tier (2026-10-15), so the remaining LLM work runs once a day with `scripts/daily_llm_batch.py` (status.md owner action 9): 88 val fixtures, then 100 rewordings, then the reworded val fixtures. The real-resume set (2.15) waits on the owner.
 
 ## Exit criteria results
@@ -13,11 +15,11 @@
 | # | Check | Command run | Result / metric | Pass? |
 |---|---|---|---|---|
 | 2-A | Unit tests on `tests/fixtures/resumes/` (6 templates, 3 formats) | `docker compose run --rm tools uv run pytest -q` | **222 passed, 18 skipped**, 46 s, offline (2026-10-17, with 19 fixtures recorded: **238 passed, 2 skipped**). The 18 skips are `test_parsing_recorded.py`, the end-to-end check over recorded Gemini fixtures; each one switches on (and must pass: status ok, F1 ≥ 0.80, ≤ 10% unverified) as soon as its fixture is recorded. Also: `test_parsing_extract.py`, `test_parsing_sections_rules.py`, `test_parsing_agent.py` | ✅ |
-| 2-B | M1 on val (F1 ≥ 0.85; ≥ 0.95 name/email/phone) | `uv run python -m eval.parsing --split val [--ids …]` | Rules only (no LLM): F1 0.463, contact fields 1.000. **First 8 val resumes with Gemini** (pre-compact prompt, 2026-10-15): **F1 1.000** (443/443 fields), name/email/phone 1.000. **Frozen prompt, first 19 val resumes (2026-10-17):** F1 **0.999**, name/email/phone 1.000, 19/19 `ok` (`reports/parsing_val_first19_*.md`). Full val (88): pending daily recording | 🟨 |
-| 2-C | M7 ≤ 5%; corrupted fixture flagged | `pytest -k corrupted`; `eval.parsing` | Corrupted extraction (made-up employer, skill) → `verified: false`, confidence halved, quality penalized ✅. **First 8 val resumes: 0 of 222 checked LLM fields unverified (0.0%)**. Frozen prompt, first 19: **0 of 497 (0.0%)**. Full val: pending | 🟨 |
+| 2-B | M1 on val (F1 ≥ 0.85; ≥ 0.95 name/email/phone) | `uv run python -m eval.parsing --split val [--ids …]` | Rules only (no LLM): F1 0.463, contact fields 1.000. **First 8 val resumes with Gemini** (pre-compact prompt, 2026-10-15): **F1 1.000** (443/443 fields), name/email/phone 1.000. **Frozen prompt, 38 val resumes (2026-10-19):** F1 **0.9995**, name/email/phone 1.000, 38/38 `ok` (`reports/parsing_val_first38_*.md`; first 19 on 2026-10-17: 0.999). Full val (88): pending daily recording | 🟨 |
+| 2-C | M7 ≤ 5%; corrupted fixture flagged | `pytest -k corrupted`; `eval.parsing` | Corrupted extraction (made-up employer, skill) → `verified: false`, confidence halved, quality penalized ✅. **First 8 val resumes: 0 of 222 checked LLM fields unverified (0.0%)**. Frozen prompt, 38 resumes: **0 of 993 (0.0%)**. Full val: pending | 🟨 |
 | 2-D | Degradation | `pytest -k "degrade or partial"`, plus live runs | FakeLLM with no fixture, `LLMQuotaExceeded`, `LLMError`, `TimeoutError` → `partial` with name, email, phone, summary and skills. Live: every real 503 and the 429 on 2026-10-15 degraded to `partial` the same way | ✅ |
 | 2-E | PNG → 415; 11 MB → 413; scanned PDF → 422 | `pytest -k problem_json` | 415 `unsupported_file_type`, 413 `file_too_large`, 422 `unsupported_content`, all `application/problem+json` | ✅ |
-| 2-F | Parser p95 < 7 s (real API, 20 val, sequential); cache hit < 200 ms | `record_llm_fixtures.py` reports; `eval.latency --from-records` | Old prompt, 9 real calls: p50 12.7 s, **p95 19.3 s** ❌. All of it was LLM output time (~90 tokens/s, no thinking tokens), so the output was compacted (ADR-0005 amendment): on the same resume, **1,225 → 616 tokens, 11.0 → 6.8 s**. The prompt now also asks for minified JSON (`count_tokens`: 642 → 365 tokens for the same content). **Frozen prompt, 19 real calls (2026-10-17):** p50 4.3 s, **p95 8.0 s**, max 9.5 s: p95 still misses 7 s. One more call completes the 20-call sample | 🟨 |
+| 2-F | Parser p95 < 10 s (ADR-0006; was < 7 s) (real API, 20 val, sequential); cache hit < 200 ms | `record_llm_fixtures.py` reports; `eval.latency --from-records` | Old prompt, 9 real calls: p50 12.7 s, **p95 19.3 s** ❌. All of it was LLM output time (~90 tokens/s, no thinking tokens), so the output was compacted (ADR-0005 amendment): on the same resume, **1,225 → 616 tokens, 11.0 → 6.8 s**. The prompt now also asks for minified JSON (`count_tokens`: 642 → 365 tokens for the same content). **Frozen prompt, 20-call sample** (`eval.latency --fake --from-records`, 2026-10-19): p50 4.3 s, **p95 8.0 s** ❌ (LLM 7.9 s of it). **Cache hit p95 0 ms** ✅. All 38 real calls so far: p50 4.4 s, p95 9.5 s, 5 over 7 s, outliers 15.0 s and 35.8 s, so the tail is Gemini free-tier server time, not output size. Target changed to p95 < 10 s by **ADR-0006** (owner decision 2026-10-19, plan §14 D22): **8.0 s < 10 s** | ✅ |
 | 2-G | M1 on reworded and real sets; no private data in git | n/a | Reworded: runs after the val fixtures (daily). Real set: owner action 5; the owner asked to keep it pending (2026-10-15). `eval.parsing --private` writes aggregates only, to `reports/private/` (gitignored) | ⏳ |
 
 Extra checks run along the way (not exit criteria):
@@ -41,6 +43,7 @@ Extra checks run along the way (not exit criteria):
 
 ## Deviations from plan
 
+- **2-F latency target 7 s → 10 s (ADR-0006, plan §14 D22, accepted 2026-10-19).** The compact-output prompt still gives p95 8.0 s on the 20-call sample, nearly all of it free-tier server time. M6 is unchanged and now has little headroom (see Known issues).
 - **Long text by line reference (ADR-0005, plan §14 D20, proposed).** The LLM returns line references for the summary, bullets and project descriptions. Short fields keep verbatim evidence and alignment. M7 counts short fields plus invalid line references; the target is unchanged.
 - **Compact LLM output (ADR-0005 amendment, plan §14 D21, proposed).** Dates come back only as verbatim text, normalized by the rules. Confidence is assigned by the parser (a 0.9 prior, halved if unverified), because the model's was always 0.95. Skills-section items are not repeated by the model, so their `category_hint` is `unknown` until Milestone 3. `skills_mentioned` is derived from the bullets.
 - **Prompt file renamed** to `llm/prompts/parse_resume.md`; added `llm/prompts/reword_resume.md` for Step 2.14.
@@ -54,7 +57,8 @@ Extra checks run along the way (not exit criteria):
 ## Known issues / follow-ups
 
 - **Free-tier availability:** on 2026-10-15 about half the calls failed with 503. At ~10 recordings a day the remaining ~230 calls take roughly 3–4 weeks. A paid key would finish them in an hour.
-- **2-F risk:** even at 616 output tokens, generation speed varied 65–115 tokens/s, i.e. 5.4–9.5 s. If minified output doesn't land near 365 tokens, p95 may still miss 7 s. That would need an ADR to adjust 2-F (M6, end-to-end p95 < 10 s, is the plan-level target).
+- **M6 headroom (after ADR-0006):** the parser alone can use most of M6's 10 s end-to-end p95. Milestone 3 must keep LLM disambiguation off the common path; Milestone 5 measures M6.
+- **2-F risk (historical, resolved by ADR-0006):** even at 616 output tokens, generation speed varied 65–115 tokens/s, i.e. 5.4–9.5 s. If minified output doesn't land near 365 tokens, p95 may still miss 7 s. That would need an ADR to adjust 2-F (M6, end-to-end p95 < 10 s, is the plan-level target).
 - **Alignment threshold on short spans:** one typo in a 9-character span scores 88.9 (< 90). If the model "fixes" a typo in a short company name, that field is flagged unverified.
 - Reading order uses top-band peeling when no gutter spans the whole region. A two-column body with a full-width *footer* can interleave columns; watch the real-resume set.
 

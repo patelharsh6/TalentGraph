@@ -1,0 +1,67 @@
+{
+ "name": "Jonathan Davis",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Rivasfort",
+  "region": "NH",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Director of People Operations",
+   "company": "Moses, Wheeler and Smith",
+   "location": "Lake Cindymouth, MD",
+   "dates_text": "2021-08 – Present",
+   "bullet_lines": [
+    [
+     9,
+     12
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "East Michelle State University",
+   "degree": "PhD",
+   "field": "Operations Research / Management",
+   "dates_text": "Sep. 2017 – 2021-05",
+   "grade": "3.94 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Operations Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-499581"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Operations Optimization System",
+   "description_lines": [
+    [
+     15,
+     15
+    ]
+   ],
+   "technologies": [
+    "Vendor Management & Procurement",
+    "Operations Management",
+    "Agile Scrum Methodology"
+   ],
+   "url": "https://github.com/jonathandavis/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "name": "REBECCA RICHARD",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Hahnfort",
+  "region": "ME",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior User Experience Researcher",
+   "company": "Clark Inc",
+   "location": "West Nicolestad, TX",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  },
+  {
+   "title": "UI/UX Designer",
+   "company": "Thompson PLC",
+   "location": "Port Brycechester, DE",
+   "dates_text": "Jun 2020 – May. 2023",
+   "bullet_lines": [
+    [
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "title": "User Experience Researcher",
+   "company": "Perez, Hoffman and Tucker",
+   "location": "Kristenton, WI",
+   "dates_text": "2017 – 2020-06",
+   "bullet_lines": [
+    [
+     17,
+     19
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Paulahaven State University",
+   "degree": "Master of Science",
+   "field": "Human-Computer Interaction / Graphic Design",
+   "dates_text": "09/2013 – May 2017",
+   "grade": "3.51 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Design Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-327738"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Design Optimization System",
+   "description_lines": [
+    [
+     28,
+     28
+    ]
+   ],
+   "technologies": [
+    "Adobe XD",
+    "UI/UX Design",
+    "Design Thinking"
+   ],
+   "url": "https://github.com/rebeccarichard/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

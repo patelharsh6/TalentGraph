@@ -1,0 +1,91 @@
+{
+ "name": "Todd David",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "South Stephanie",
+  "region": "NJ",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior EdTech Specialist",
+   "company": "Fernandez, Sanchez and Jackson",
+   "location": "North Ryantown, GA",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  },
+  {
+   "title": "Senior Academic Advisor",
+   "company": "Orr-Miranda",
+   "location": "Lake Jonathan, NJ",
+   "dates_text": "09/2020 – 08/2023",
+   "bullet_lines": [
+    [
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "title": "Instructional Designer",
+   "company": "Martinez, Taylor and Nichols",
+   "location": "Davismouth, VI",
+   "dates_text": "May. 2017 – Sep. 2020",
+   "bullet_lines": [
+    [
+     17,
+     19
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "New Katie State University",
+   "degree": "PhD",
+   "field": "Education & Curriculum Design",
+   "dates_text": "2013-09 – May. 2017",
+   "grade": "3.62 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Education Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-355528"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Education Optimization System",
+   "description_lines": [
+    [
+     28,
+     28
+    ]
+   ],
+   "technologies": [
+    "Curriculum Development",
+    "Public Speaking & Lecturing",
+    "Active Mentoring"
+   ],
+   "url": "https://github.com/todddavid/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "name": "Clarence Long",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Fergusontown",
+  "region": "MO",
+  "country": null
+ },
+ "summary_lines": [],
+ "experience": [
+  {
+   "title": "Senior Risk Analyst",
+   "company": "Smith Ltd",
+   "location": "Stevensfurt, VI",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     17,
+     22
+    ]
+   ]
+  },
+  {
+   "title": "Risk Analyst",
+   "company": "Church, Guzman and Tucker",
+   "location": "Hannahfurt, AS",
+   "dates_text": "2019 – 07/2023",
+   "bullet_lines": [
+    [
+     25,
+     30
+    ]
+   ]
+  },
+  {
+   "title": "Risk Analyst",
+   "company": "Miller-Taylor",
+   "location": "North Lisa, UT",
+   "dates_text": "2015 – Mar. 2019",
+   "bullet_lines": [
+    [
+     33,
+     39
+    ]
+   ]
+  },
+  {
+   "title": "Corporate Finance Lead",
+   "company": "Trevino and Sons",
+   "location": "Wongbury, NE",
+   "dates_text": "10/2011 – 11/2015",
+   "bullet_lines": [
+    [
+     42,
+     47
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "North Kevin State University",
+   "degree": "Bachelor of Arts",
+   "field": "Finance & Economics",
+   "dates_text": "2007-09 – May. 2011",
+   "grade": "3.68 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Finance Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-372427"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Finance Optimization System",
+   "description_lines": [
+    [
+     50,
+     51
+    ]
+   ],
+   "technologies": [
+    "Advanced Excel",
+    "LBO Modeling",
+    "Financial Modeling"
+   ],
+   "url": "https://github.com/clarencelong/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

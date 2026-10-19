@@ -1,0 +1,91 @@
+{
+ "name": "Arthur Stout",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "East Michelleburgh",
+  "region": "AL",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   15,
+   17
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Analytics Engineer",
+   "company": "West, Edwards and Williams",
+   "location": "Lake Evan, OH",
+   "dates_text": "2023-10 – Present",
+   "bullet_lines": [
+    [
+     20,
+     25
+    ]
+   ]
+  },
+  {
+   "title": "Analytics Engineer",
+   "company": "York-Johnson",
+   "location": "New Kennethside, GA",
+   "dates_text": "Jul 2020 – 2023-10",
+   "bullet_lines": [
+    [
+     28,
+     33
+    ]
+   ]
+  },
+  {
+   "title": "Data Engineer",
+   "company": "Rowland-Barrett",
+   "location": "West Brandon, NC",
+   "dates_text": "2017-05 – 2020-07",
+   "bullet_lines": [
+    [
+     36,
+     41
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Donnamouth State University",
+   "degree": "Bachelor of Arts",
+   "field": "Data Science & Statistics",
+   "dates_text": "Sep. 2013 – 2017-05",
+   "grade": "3.73 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Data Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-182034"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Data Optimization System",
+   "description_lines": [
+    [
+     44,
+     45
+    ]
+   ],
+   "technologies": [
+    "PyTorch",
+    "Apache Spark (PySpark)",
+    "Snowflake"
+   ],
+   "url": "https://github.com/arthurstout/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

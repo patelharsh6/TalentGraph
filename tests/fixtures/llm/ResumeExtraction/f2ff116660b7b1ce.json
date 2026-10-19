@@ -1,0 +1,67 @@
+{
+ "name": "Teresa Rush",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Georgeside",
+  "region": "AL",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Quality Assurance Engineer",
+   "company": "Garcia, Lewis and Gordon",
+   "location": "Richardonshire, HI",
+   "dates_text": "2021 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Nunezville State University",
+   "degree": "Master of Science",
+   "field": "Industrial Engineering",
+   "dates_text": "09/2017 – 2021-05",
+   "grade": "3.72 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Manufacturing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-341162"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Manufacturing Optimization System",
+   "description_lines": [
+    [
+     16,
+     16
+    ]
+   ],
+   "technologies": [
+    "Root Cause Analysis",
+    "SCADA Systems",
+    "Embedded C"
+   ],
+   "url": "https://github.com/teresarush/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "name": "Laura Vargas",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Jamesfurt",
+  "region": "KS",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Senior Machine Learning Engineer",
+   "company": "Robertson, Powers and Kelley",
+   "location": "Lake Jacquelineburgh, OK",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  },
+  {
+   "title": "Senior Machine Learning Engineer",
+   "company": "Lewis-Hayden",
+   "location": "Adamsside, AS",
+   "dates_text": "2020-05 – 2023-07",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Analytics Engineer",
+   "company": "Farrell, Meadows and Michael",
+   "location": "New Jamesmouth, FL",
+   "dates_text": "2017 – 2020-05",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "East Julie State University",
+   "degree": "PhD",
+   "field": "Data Science & Statistics",
+   "dates_text": "2013-09 – 2017",
+   "grade": "3.98 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Data Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-105547"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Data Optimization System",
+   "description_lines": [
+    [
+     26,
+     26
+    ]
+   ],
+   "technologies": [
+    "Pandas",
+    "Snowflake",
+    "MLOps"
+   ],
+   "url": "https://github.com/lauravargas/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

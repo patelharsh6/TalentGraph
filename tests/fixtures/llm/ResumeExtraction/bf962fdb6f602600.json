@@ -1,0 +1,103 @@
+{
+ "name": "Ashley Williams",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Lake Kelly",
+  "region": "NV",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   18,
+   20
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Supply Chain Analyst",
+   "company": "Jimenez, Harrell and Moore",
+   "location": "Matthewberg, DE",
+   "dates_text": "07/2023 – Present",
+   "bullet_lines": [
+    [
+     28,
+     33
+    ]
+   ]
+  },
+  {
+   "title": "Supply Chain Analyst",
+   "company": "Gonzales Group",
+   "location": "East Maryfort, MA",
+   "dates_text": "May. 2020 – 2023-07",
+   "bullet_lines": [
+    [
+     36,
+     41
+    ]
+   ]
+  },
+  {
+   "title": "Quality Assurance Engineer",
+   "company": "Wagner-Miller",
+   "location": "Jenniferchester, MN",
+   "dates_text": "Mar. 2017 – 2020",
+   "bullet_lines": [
+    [
+     44,
+     49
+    ]
+   ]
+  },
+  {
+   "title": "Supply Chain Analyst",
+   "company": "Ortega, Hernandez and Molina",
+   "location": "Cobbberg, AS",
+   "dates_text": "Jan. 2014 – 2017",
+   "bullet_lines": [
+    [
+     52,
+     57
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Gutierrezchester State University",
+   "degree": "Bachelor of Arts",
+   "field": "Industrial Engineering",
+   "dates_text": "2010 – May. 2014",
+   "grade": "3.58 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Manufacturing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-863611"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Manufacturing Optimization System",
+   "description_lines": [
+    [
+     23,
+     23
+    ]
+   ],
+   "technologies": [
+    "SolidWorks CAD",
+    "PLC Programming (Siemens/Allen-Bradley)",
+    "Embedded C"
+   ],
+   "url": "https://github.com/ashleywilliams/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

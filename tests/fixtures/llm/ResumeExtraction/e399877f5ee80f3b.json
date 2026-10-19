@@ -1,0 +1,91 @@
+{
+ "name": "James Adams",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "West Taylorland",
+  "region": "PW",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   26,
+   27
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Data Scientist",
+   "company": "Evans-Joyce",
+   "location": "Mckenziehaven, NE",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  },
+  {
+   "title": "Analytics Engineer",
+   "company": "Carroll-Arnold",
+   "location": "New Danielchester, MT",
+   "dates_text": "2020 – 10/2023",
+   "bullet_lines": [
+    [
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "title": "Senior Machine Learning Engineer",
+   "company": "Marshall Ltd",
+   "location": "Michaelshire, CO",
+   "dates_text": "2016-05 – Aug 2020",
+   "bullet_lines": [
+    [
+     17,
+     19
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "North Joymouth State University",
+   "degree": "Master of Science",
+   "field": "Data Science & Statistics",
+   "dates_text": "2012 – 2016-05",
+   "grade": "3.62 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Data Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-397979"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Data Optimization System",
+   "description_lines": [
+    [
+     22,
+     22
+    ]
+   ],
+   "technologies": [
+    "Apache Airflow",
+    "Scikit-Learn",
+    "Large Language Models (LLM)"
+   ],
+   "url": "https://github.com/jamesadams/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

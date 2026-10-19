@@ -1,0 +1,95 @@
+{
+ "name": "HENRY GRAY",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Tristanfurt",
+  "region": "LA",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Instructional Designer",
+   "company": "Burke-Collins",
+   "location": "Perezchester, LA",
+   "dates_text": "2022 – Present",
+   "bullet_lines": [
+    [
+     7,
+     7
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     9,
+     9
+    ]
+   ]
+  },
+  {
+   "title": "Curriculum Developer",
+   "company": "Lopez-Jones",
+   "location": "Crosbystad, HI",
+   "dates_text": "2018-08 – 2022",
+   "bullet_lines": [
+    [
+     12,
+     12
+    ],
+    [
+     13,
+     13
+    ],
+    [
+     14,
+     14
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Lake Travisville State University",
+   "degree": "Bachelor of Science",
+   "field": "Education & Curriculum Design",
+   "dates_text": "09/2014 – 2018",
+   "grade": "3.56 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Education Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-721121"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Education Optimization System",
+   "description_lines": [
+    [
+     23,
+     23
+    ]
+   ],
+   "technologies": [
+    "Instructional Design",
+    "Active Mentoring",
+    "Assessment Design"
+   ],
+   "url": "https://github.com/henrygray/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

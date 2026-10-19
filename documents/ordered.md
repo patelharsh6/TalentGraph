@@ -167,7 +167,7 @@ Update `db/models.py` and `tests/unit/test_models_schema.py` to match.
 | 2-C | M7 on val | Hallucination rate measured and ≤ 5%. A deliberately corrupted fixture (fake evidence) is flagged `verified: false` |
 | 2-D | Degradation | With `LLM_MODE=fake` and no fixture (or a forced `LLMQuotaExceeded`), status is `partial` and contact fields are still extracted |
 | 2-E | Error cases | PNG → 415; 11 MB file → 413; scanned PDF → 422 `unsupported_content` |
-| 2-F | Latency | Parser p95 < 7 s on 20 val resumes with the real API (sequential, within quota); cache hit < 200 ms |
+| 2-F | Latency | Parser p95 < 10 s on 20 val resumes with the real API (sequential, within quota); cache hit < 200 ms *(was < 7 s; ADR-0006, D22)* |
 | 2-G | Supplementary M1 | M1 reported on the reworded val set and on the real check set (no target). Nothing from `data/private/` appears in git or `reports/` |
 
 ---

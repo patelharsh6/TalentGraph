@@ -1,0 +1,103 @@
+{
+ "name": "Colleen Schneider",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Adamsmouth",
+  "region": "MH",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Senior Backend Developer",
+   "company": "Andrews-Robertson",
+   "location": "Mendozafurt, PR",
+   "dates_text": "05/2022 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  },
+  {
+   "title": "DevOps Engineer",
+   "company": "Norman, Floyd and Fernandez",
+   "location": "South Stephaniefort, DE",
+   "dates_text": "Apr 2018 – 05/2022",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Senior Backend Developer",
+   "company": "Nichols, Frey and Cook",
+   "location": "Richardland, MN",
+   "dates_text": "May 2014 – 2018",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  },
+  {
+   "title": "Staff Software Architect",
+   "company": "Castaneda, Peterson and Randall",
+   "location": "Deborahburgh, OH",
+   "dates_text": "01/2010 – 2014",
+   "bullet_lines": [
+    [
+     21,
+     23
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "South Donnaport State University",
+   "degree": "Master of Science",
+   "field": "Computer Science",
+   "dates_text": "2006-09 – 2010",
+   "grade": "3.56 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Software Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-993590"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Software Optimization System",
+   "description_lines": [
+    [
+     31,
+     31
+    ]
+   ],
+   "technologies": [
+    "FastAPI",
+    "PostgreSQL",
+    "AWS"
+   ],
+   "url": "https://github.com/colleenschneider/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

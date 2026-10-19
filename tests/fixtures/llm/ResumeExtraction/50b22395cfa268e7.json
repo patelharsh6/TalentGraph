@@ -1,0 +1,67 @@
+{
+ "name": "Glen Brown",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "North Samantha",
+  "region": "NV",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Curriculum Developer",
+   "company": "Turner Ltd",
+   "location": "Joneston, OH",
+   "dates_text": "2024-08 – Present",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "West Melissafurt State University",
+   "degree": "Bachelor of Science",
+   "field": "Education & Curriculum Design",
+   "dates_text": "09/2020 – 05/2024",
+   "grade": "3.62 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Education Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-751168"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Education Optimization System",
+   "description_lines": [
+    [
+     16,
+     16
+    ]
+   ],
+   "technologies": [
+    "Learning Management Systems (LMS)",
+    "Educational Technology (EdTech)",
+    "Public Speaking & Lecturing"
+   ],
+   "url": "https://github.com/glenbrown/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

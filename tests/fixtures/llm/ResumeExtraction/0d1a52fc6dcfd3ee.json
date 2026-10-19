@@ -1,0 +1,67 @@
+{
+ "name": "CORY WILSON",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "West Kevinside",
+  "region": "MD",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "IP Legal Advisor",
+   "company": "Wilson LLC",
+   "location": "Randyshire, RI",
+   "dates_text": "Jun 2022 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Port Gregorymouth State University",
+   "degree": "PhD",
+   "field": "Juris Doctor (JD) / Legal Studies",
+   "dates_text": "Sep 2018 – May. 2022",
+   "grade": "4.00 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Legal Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-372028"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Legal Optimization System",
+   "description_lines": [
+    [
+     18,
+     18
+    ]
+   ],
+   "technologies": [
+    "GDPR & Data Privacy",
+    "M&A Due Diligence",
+    "Risk Assessment"
+   ],
+   "url": "https://github.com/corywilson/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

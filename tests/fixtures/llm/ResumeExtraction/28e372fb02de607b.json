@@ -1,0 +1,67 @@
+{
+ "name": "Paul Hall",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "North Alexanderland",
+  "region": "OR",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Enterprise Sales Manager",
+   "company": "Strong and Sons",
+   "location": "Michaelfort, VA",
+   "dates_text": "May 2022 – Present",
+   "bullet_lines": [
+    [
+     7,
+     12
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Lopezberg State University",
+   "degree": "PhD",
+   "field": "Business Administration",
+   "dates_text": "09/2018 – 2022-05",
+   "grade": "3.81 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Sales Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-248213"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Sales Optimization System",
+   "description_lines": [
+    [
+     21,
+     21
+    ]
+   ],
+   "technologies": [
+    "Account Management",
+    "Client Relationship Building",
+    "B2B Enterprise Sales"
+   ],
+   "url": "https://github.com/paulhall/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}
