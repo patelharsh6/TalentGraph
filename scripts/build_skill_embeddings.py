@@ -68,4 +68,3 @@ def build_skill_embeddings(out_path: Path | None = None) -> Path:
 
 if __name__ == "__main__":
     build_skill_embeddings()
-

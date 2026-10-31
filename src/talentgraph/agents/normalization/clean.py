@@ -29,8 +29,9 @@ def strip_version(text: str) -> str:
     # Remove year patterns like '2019', '2023.3'
     s = re.sub(r"\b(?:19|20)\d{2}(?:\.\d+)?\b", "", s)
     # Remove standalone edition keywords and versions
+    edition_words = "LTS|App Router|Desktop|Cloud|Lightning|Enterprise"
     s = re.sub(
-        r"\b\d+(?:\.\d+)*(?:\.[xX])?(?:\s+(?:LTS|App Router|Desktop|Cloud|Lightning|Enterprise))?\b",
+        rf"\b\d+(?:\.\d+)*(?:\.[xX])?(?:\s+(?:{edition_words}))?\b",
         "",
         s,
         flags=re.IGNORECASE,
