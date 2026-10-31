@@ -6,9 +6,7 @@ from talentgraph.core.schemas.skills import (
     SkillProfile,
 )
 from talentgraph.db.repositories.taxonomy import (
-    TaxonomyRepository,
     get_taxonomy_repository,
-    normalize_alias_text,
 )
 
 
@@ -76,4 +74,3 @@ def test_taxonomy_implications() -> None:
     # Check trigger for Deep Learning or similar
     triggered = repo.get_implications_for({"tensorflow", "pytorch"})
     assert any(imp.consequent_slug == "deep-learning" for imp in triggered)
-
