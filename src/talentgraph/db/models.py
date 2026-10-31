@@ -133,6 +133,7 @@ class Match(Base):
     score: Mapped[float] = mapped_column(Float)
     threshold: Mapped[float] = mapped_column(Float)
     is_match: Mapped[bool] = mapped_column(Boolean)
+    blind: Mapped[bool] = mapped_column(Boolean, default=False)
     breakdown: Mapped[list[Any]] = mapped_column()
     gaps: Mapped[list[Any]] = mapped_column()
     created_at: Mapped[datetime] = _created_at()
