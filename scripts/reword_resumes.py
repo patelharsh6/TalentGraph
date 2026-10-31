@@ -67,7 +67,7 @@ def protected_terms(gt: dict[str, Any]) -> list[str]:
     terms = {s["raw"] for s in gt.get("skills", [])}
     for exp in gt.get("experience", []):
         terms.update(t for t in (exp.get("company"), exp.get("title")) if t)
-    return sorted(terms, key=len, reverse=True)
+    return sorted(terms, key=lambda t: (-len(t), t))
 
 
 def user_message(gt: dict[str, Any]) -> str:

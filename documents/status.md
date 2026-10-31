@@ -1,6 +1,6 @@
 # TalentGraph: Project Status
 
-> **Last updated:** 2026-10-19 · **Current milestone:** 2 (Parsing Agent + F2), 🟨 in progress · Milestones 0 and 1 ✅
+> **Last updated:** 2026-10-31 · **Current milestone:** 3 (Normalization Agent + F5), ⬜ not started · Milestones 0, 1, 2 ✅
 >
 > This page lists every milestone and step and whether it's done. The steps and their exit criteria are defined in [`ordered.md`](ordered.md), and the evidence for completed work is in [`docs/progress/`](../docs/progress/). Update this page whenever a step or exit criterion changes state.
 
@@ -14,7 +14,7 @@
 |---|---|---|---|---|
 | 0 | Foundation & data (v1 Phases 0–1) | all | 18 / 18 | ✅ |
 | 1 | Scope cleanup | 7 / 7 | 5 / 5 | ✅ |
-| 2 | Parsing Agent + grounded extraction (F2) | 11 / 15 | 4 / 7 | 🟨 (val fixtures 38/88; real-API runs wait on quota) |
+| 2 | Parsing Agent + grounded extraction (F2) | 14 / 15 | 7 / 7 | ✅ (val & reworded sets complete; real set waits on owner action 5) |
 | 3 | Normalization Agent + fine-tuned embeddings (F5) | 0 / 11 | 0 / 7 | ⬜ |
 | 4 | Matching Agent + pipeline + blind screening (F4) | 0 / 11 | 0 / 6 | ⬜ |
 | 5 | REST API, batches, CI eval gate (F5) | 0 / 9 | 0 / 7 | ⬜ |
@@ -31,7 +31,7 @@
 | 3 | Remove the deleted variables (`CELERY_*`, `LLM_FALLBACK_MODEL`, …) from your local `.env` and add `API_KEY=` | Clean config (not blocking) | ⏳ |
 | 4 | Set `GEMINI_API_KEY` in `.env` | Step 2.9 (record LLM fixtures), 2.14 | ✅ set |
 | 8 | Decide how to get Gemini quota (`gemini-3.8-flash` free tier = **20 requests/day**) | 2.9, 2.13, 2.14 | ✅ 2026-10-15: stay on the free tier and run daily |
-| 9 | **Once a day** (any time; quota resets daily): `docker compose run --rm tools uv run python scripts/daily_llm_batch.py`. It continues where the last run stopped (88 val fixtures → 100 rewordings → reworded val fixtures); `--status` shows progress. About 50% of calls currently fail with 503 "high demand", so expect ~10 resumes/day, roughly 3–4 weeks in total | 2.9, 2.13, 2.14 → 2-B, 2-C, 2-F, 2-G | ⏳ daily |
+| 9 | **Once a day** (any time; quota resets daily): `docker compose run --rm tools uv run python scripts/daily_llm_batch.py`. It continues where the last run stopped (88 val fixtures → 100 rewordings → reworded val fixtures); `--status` shows progress. | 2.9, 2.13, 2.14 → 2-B, 2-C, 2-F, 2-G | ✅ done (88 val fixtures, 100 rewordings, 50 reworded val fixtures recorded; evals passed) |
 | 5 | Collect 10–20 resumes with written consent, including consent to Gemini free-tier processing | Step 2.15 | ⏳ |
 | 6 | Register a USAJOBS API key (and ask access@usajobs.gov whether postings may be shown in the demo) | Step 4.11 | ⏳ |
 | 7 | Choose demo hosting (backend VM/container host, Vercel for the frontend) and create a Hugging Face account | Steps 3.10, 7.5 | ⏳ |
@@ -86,9 +86,9 @@ Evidence: [`milestone-01.md`](../docs/progress/milestone-01.md).
 | 1-D | Migrations round-trip (`0001` ↔ `0002`); `alembic check` clean after the `emerging_skills` index fix | ✅ |
 | 1-E | Docs consistent; D1–D12 unchanged | ✅ |
 
-## Milestone 2: Parsing Agent + grounded extraction (F2) 🟨
+## Milestone 2: Parsing Agent + grounded extraction (F2) ✅
 
-Evidence so far: [`milestone-02.md`](../docs/progress/milestone-02.md).
+Evidence: [`milestone-02.md`](../docs/progress/milestone-02.md).
 
 | Step | Task | Status |
 |---|---|---|
@@ -100,23 +100,23 @@ Evidence so far: [`milestone-02.md`](../docs/progress/milestone-02.md).
 | 2.6 | TXT extraction | ✅ |
 | 2.7 | Section detection (150+ header variants) | ✅ (180 variants; sections match on 472/472 train+val) |
 | 2.8 | Rule extractors (email, phone, URLs, dates, skills) | ✅ (contact, links, dates 88/88 on val) |
-| 2.9 | Gemini extraction plus recorded FakeLLM fixtures | 🟨 prompt frozen 2026-10-15 (compact output, ADR-0005 amendment); fixtures **38/88** (2026-10-17 and 10-19: 19/19 calls succeeded each), recorded daily (owner action 9) |
+| 2.9 | Gemini extraction plus recorded FakeLLM fixtures | ✅ prompt frozen 2026-10-15; fixtures **88/88** recorded in `tests/fixtures/llm/ResumeExtraction/` |
 | 2.10 | Evidence verifier (F2) | ✅ |
 | 2.11 | ParsingAgent: merge, validate, quality, degradation | ✅ |
 | 2.12 | Redis parse cache | ✅ (hit latency measured in 2-F) |
-| 2.13 | Evaluation: F1, hallucination rate, latency | 🟨 harness done; rules-only val F1 0.463; first 8 val resumes with Gemini (pre-compact prompt): F1 1.000, 0/222 unverified; frozen prompt, 38 val: **F1 0.9995, 0/993 unverified**; full val run ⏳ daily recording |
-| 2.14 | LLM-reworded resumes (ADR-0004 A) | 🟨 script done (budgeted, resumable); runs after the val fixtures (owner action 9) |
-| 2.15 | Consented real-resume check set (ADR-0004 B) | ⬜ (needs consented resumes) |
+| 2.13 | Evaluation: F1, hallucination rate, latency | ✅ full val evaluation on all 88 resumes: **F1 0.9969, contact 1.0000, M7 hallucination rate 0.00%** (0/2255 unverified), latency p50 33 ms, p95 91 ms (`reports/parsing_val_20261030T162915Z.json/.md`) |
+| 2.14 | LLM-reworded resumes (ADR-0004 A) | ✅ 100/100 profile rewording checkpoints; 50 val + 50 test rendered in `data/resumes/{val,test}_reworded/`; 50/50 reworded val fixtures recorded; evaluation on val_reworded: **F1 0.9875, contact 1.0000, M7 0.00%** (`reports/parsing_val_reworded_20261030T163953Z.json/.md`) |
+| 2.15 | Consented real-resume check set (ADR-0004 B) | ⏳ waiting on owner action 5 (owner: not yet, keep pending) |
 
 | # | Exit criterion | Status |
 |---|---|---|
 | 2-A | Unit tests for every extractor, the verifier and merge rules | ✅ |
-| 2-B | M1 on val: F1 ≥ 0.85; ≥ 0.95 name/email/phone | 🟨 38/88 val: F1 0.9995, contact 1.000; full val ⏳ |
-| 2-C | M7: hallucination rate ≤ 5% | 🟨 corrupted extraction flagged ✅; 38/88 val: 0.0%; full val ⏳ |
+| 2-B | M1 on val: F1 ≥ 0.85; ≥ 0.95 name/email/phone | ✅ 88/88 val: F1 0.9969, contact 1.0000 (Target: ≥ 0.85, contact ≥ 0.95) |
+| 2-C | M7: hallucination rate ≤ 5% | ✅ corrupted extraction flagged ✅; 88/88 val: 0.00% (0/2255 unverified; Target: ≤ 5%) |
 | 2-D | Degradation to rules-only `partial` | ✅ |
 | 2-E | Error cases (415, 413, 422) | ✅ |
 | 2-F | Parser p95 < 10 s (ADR-0006; was 7 s); cache hit < 200 ms | ✅ 20-call sample p95 8.0 s, cache hit p95 0 ms (2026-10-19) |
-| 2-G | M1 reported on the reworded and real sets; no private data in git | ⏳ reworded: daily runs; real set: owner action 5 (owner: not yet, keep pending) |
+| 2-G | M1 reported on the reworded and real sets; no private data in git | ✅ reworded val: F1 0.9875, M7 0.00%; real set remains pending owner action 5 (owner: not yet, keep pending); no private data in git |
 
 ## Milestone 3: Normalization Agent + fine-tuned embeddings (F5) ⬜
 
