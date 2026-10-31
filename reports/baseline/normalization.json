@@ -1,0 +1,12 @@
+{
+  "metric": "M2",
+  "target": "normalization",
+  "min_precision": 0.90,
+  "min_recall": 0.85,
+  "baseline": {
+    "precision": 0.9702,
+    "recall": 0.9310,
+    "f1": 0.9502
+  }
+}
+

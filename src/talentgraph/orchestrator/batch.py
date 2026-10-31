@@ -7,14 +7,14 @@ from datetime import UTC, datetime
 from typing import TYPE_CHECKING, Any
 from uuid import UUID, uuid4
 
-from sqlalchemy import select, update
 import structlog
+from sqlalchemy import select, update
 
 from talentgraph import PIPELINE_VERSION
 from talentgraph.agents.normalization.agent import NormalizationAgent
 from talentgraph.agents.parsing.agent import ParsingAgent
 from talentgraph.core.ids import sha256_hex
-from talentgraph.db.models import BatchJob, BatchItem, Candidate, CandidateSkill, Skill
+from talentgraph.db.models import BatchItem, BatchJob, Candidate, CandidateSkill, Skill
 from talentgraph.db.session import async_session_scope
 from talentgraph.orchestrator.graph import run_parse_pipeline
 from talentgraph.orchestrator.state import PipelineState
@@ -147,7 +147,9 @@ async def recover_stale_batches(engine: AsyncEngine | None = None) -> int:
                 )
             )
             res_jobs = await session.execute(stmt_jobs)
-            db_recovered = (res_items.rowcount or 0) + (res_jobs.rowcount or 0)
+            rc_items = getattr(res_items, "rowcount", 0) or 0
+            rc_jobs = getattr(res_jobs, "rowcount", 0) or 0
+            db_recovered = rc_items + rc_jobs
             if db_recovered > 0:
                 log.info("batch.recovered_stale_db", count=db_recovered)
             recovered += db_recovered
@@ -193,7 +195,9 @@ async def process_batch_job(
 
             try:
                 # Run parse pipeline
-                input_state = PipelineState.from_bytes(file_bytes, filename=filename)
+                input_state = PipelineState(
+                    file_bytes=file_bytes, input_meta={"filename": filename}
+                )
                 result_state = await run_parse_pipeline(
                     input_state, parser=p_agent, normalizer=n_agent
                 )
@@ -207,19 +211,18 @@ async def process_batch_job(
                             else "Parsing failed"
                         ),
                     }
-                    _record_item_result(
-                        batch_job_id, item_id, status="failed", error=error_info
-                    )
+                    _record_item_result(batch_job_id, item_id, status="failed", error=error_info)
                     return
 
                 # Candidate ID from state or generated
                 cand_id = uuid4()
                 sha = sha256_hex(file_bytes)
-                quality = (
-                    result_state.parsed_resume.quality.score
-                    if result_state.parsed_resume.quality
-                    else None
-                )
+                p_scores = [
+                    r.quality
+                    for r in result_state.agent_runs
+                    if r.agent == "parser" and r.quality is not None
+                ]
+                quality = p_scores[0] if p_scores else 1.0
 
                 # Persist to database if available
                 try:
@@ -238,7 +241,7 @@ async def process_batch_job(
                             for sk in result_state.skill_profile.skills:
                                 # Look up skill id if possible
                                 skill_res = await session.execute(
-                                    select(Skill.id).where(Skill.slug == sk.canonical_slug)
+                                    select(Skill.id).where(Skill.slug == sk.slug)
                                 )
                                 sk_id = skill_res.scalar_one_or_none()
                                 if sk_id is not None:
@@ -256,18 +259,14 @@ async def process_batch_job(
                     log.debug("batch.persist_candidate_skipped", error=str(exc))
 
                 status = "partial" if result_state.status == "partial" else "succeeded"
-                _record_item_result(
-                    batch_job_id, item_id, status=status, candidate_id=cand_id
-                )
+                _record_item_result(batch_job_id, item_id, status=status, candidate_id=cand_id)
 
             except Exception as exc:
                 err = {
                     "code": getattr(exc, "code", "error"),
                     "detail": getattr(exc, "detail", str(exc)),
                 }
-                _record_item_result(
-                    batch_job_id, item_id, status="failed", error=err
-                )
+                _record_item_result(batch_job_id, item_id, status="failed", error=err)
 
     tasks = [_process_item(item_id, fname, b) for item_id, fname, b in files_data]
     await asyncio.gather(*tasks, return_exceptions=True)
@@ -282,7 +281,8 @@ async def process_batch_job(
 
     try:
         async with async_session_scope() as session:
-            final_status = "completed_with_errors" if (job_mem and job_mem.get("failed", 0) > 0) else "completed"
+            has_failed = bool(job_mem and job_mem.get("failed", 0) > 0)
+            final_status = "completed_with_errors" if has_failed else "completed"
             await session.execute(
                 update(BatchJob)
                 .where(BatchJob.id == batch_job_id)

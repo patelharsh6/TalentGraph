@@ -32,7 +32,7 @@ from talentgraph.embeddings.skill_index import SkillIndex, get_skill_index
 from talentgraph.embeddings.vector_store import VectorHit
 from talentgraph.llm.client import LLMClient
 
-ROOT = Path(__file__).resolve().parent.parent.parent.parent
+ROOT = Path(__file__).resolve().parents[4]
 CONFIG_PATH = ROOT / "config" / "normalization.yaml"
 DISAMBIGUATE_PROMPT_PATH = (
     ROOT / "src" / "talentgraph" / "llm" / "prompts" / "disambiguate_skill.md"

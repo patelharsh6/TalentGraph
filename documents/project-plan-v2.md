@@ -266,12 +266,24 @@ The frontend (milestone 7) can start in parallel once milestone 5's OpenAPI sche
 - [x] Counterfactual fairness audit (M8): mean |Δ| = 0.0000, max |Δ| = 0.0000.
 - [x] Real federal job postings from USAJOBS: 100 parses with 0 errors, 30 spot checks at 100.0%.
 
-**Milestone 5: next**
-- [ ] Shared dependencies; CORS; API key auth; slowapi rate limiting.
-- [ ] Routers: parse, candidates, match, rank, skills.
-- [ ] Background batches with stale-item recovery.
-- [ ] Logging hygiene (PII scrubbing).
-- [ ] e2e API tests, small load test, CI eval gate.
+**Milestone 5: completed**
+- [x] Shared dependencies, CORS, lifespan, dependency injection.
+- [x] API key auth, slowapi rate limiting with Retry-After header.
+- [x] Routers: parse, candidates, match, rank, skills; RFC 7807 problem+json error handlers.
+- [x] Background batches with bounded concurrency (4) and server restart stale-item recovery.
+- [x] Logging hygiene (PII scrubbing).
+- [x] Comprehensive e2e API tests (tests/e2e/test_api.py), interactive demo, curl walkthrough.
+- [x] Latency evaluation (p50 < 5s, p95 < 10s, cache hit 11-13 ms < 200 ms).
+- [x] Locust load test (10 concurrent users, 0 failures, 0 5xx).
+- [x] CI evaluation gate (scripts/ci_eval_gate.py) blocking regressions across M1, M2, M3.
+
+**Milestone 6: next**
+- [ ] Chroma candidates index.
+- [ ] Search agent (planner + tool calling).
+- [ ] 30-query gold set; precision@10.
+- [ ] Coach agent (generate -> critic -> revise).
+- [ ] 20-case adversarial set.
+- [ ] /search and /coach routes.
 ---
 
 ## 6. Known Constraints & Risks

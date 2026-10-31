@@ -173,29 +173,31 @@ Evidence: [`milestone-04.md`](../docs/progress/milestone-04.md).
 | 4-E | M8: fairness Δ ≤ 0.02 mean, ≤ 0.05 max | ✅ (mean |Δ| = 0.0000, max |Δ| = 0.0000) |
 | 4-F | JD parser on real postings | ✅ (100 postings, 0 errors; 30 spot checks 100.0%) |
 
-## Milestone 5: REST API, batches, CI eval gate (F5) ⬜
+## Milestone 5: REST API, batches, CI eval gate (F5) ✅
+
+Evidence: [`milestone-05.md`](../docs/progress/milestone-05.md).
 
 | Step | Task | Status |
 |---|---|---|
-| 5.1 | Shared dependencies; CORS | ⬜ |
-| 5.2 | Single API key auth | ⬜ |
-| 5.3 | slowapi rate limiting | ⬜ |
-| 5.4 | Routers: parse, candidates, match, rank, skills | ⬜ |
-| 5.5 | Background batches with stale-item recovery | ⬜ |
-| 5.6 | Logging hygiene (PII scrubbing) | ⬜ |
-| 5.7 | e2e API tests; `examples/` | ⬜ |
-| 5.8 | Latency and small load test | ⬜ |
-| 5.9 | CI eval gate | ⬜ |
+| 5.1 | Shared dependencies; CORS | ✅ |
+| 5.2 | Single API key auth | ✅ |
+| 5.3 | slowapi rate limiting | ✅ |
+| 5.4 | Routers: parse, candidates, match, rank, skills | ✅ |
+| 5.5 | Background batches with stale-item recovery | ✅ |
+| 5.6 | Logging hygiene (PII scrubbing) | ✅ |
+| 5.7 | e2e API tests; `examples/` | ✅ |
+| 5.8 | Latency and small load test | ✅ |
+| 5.9 | CI eval gate | ✅ |
 
 | # | Exit criterion | Status |
 |---|---|---|
-| 5-A | M4: all endpoints tested; OpenAPI valid | ⬜ |
-| 5-B | RFC 7807 errors | ⬜ |
-| 5-C | Auth and rate limits | ⬜ |
-| 5-D | Batches and restart recovery | ⬜ |
-| 5-E | M5: 0 5xx at ~10 users | ⬜ |
-| 5-F | M6: p95 < 10 s, p50 < 5 s | ⬜ |
-| 5-G | CI gate blocks a regression | ⬜ |
+| 5-A | M4: all endpoints tested; OpenAPI valid | ✅ (7 e2e tests; OpenAPI 3.1 0 errors) |
+| 5-B | RFC 7807 errors | ✅ |
+| 5-C | Auth and rate limits | ✅ (401 on missing key, 429 with Retry-After) |
+| 5-D | Batches and restart recovery | ✅ (20 items, bounded concurrency 4, stale -> failed) |
+| 5-E | M5: 0 5xx at ~10 users | ✅ (Locust 10 users: 0 failures, 0 5xx) |
+| 5-F | M6: p95 < 10 s, p50 < 5 s | ✅ (real calls: p50=4.3s, p95=8.0s; cache hit 11-13ms < 200ms) |
+| 5-G | CI gate blocks a regression | ✅ (scripts/ci_eval_gate.py: pass=0, regressed=1) |
 
 ## Milestone 6: Talent Search (F1) + Career Coach (F3) ⬜
 

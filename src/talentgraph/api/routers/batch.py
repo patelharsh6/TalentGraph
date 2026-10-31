@@ -1,6 +1,6 @@
 """Step 5.5: POST /api/v1/parse/batch (plan §8)."""
 
-from uuid import uuid4
+from uuid import UUID, uuid4
 
 from fastapi import (
     APIRouter,
@@ -8,6 +8,7 @@ from fastapi import (
     Depends,
     File,
     Request,
+    Response,
     UploadFile,
     status,
 )
@@ -39,6 +40,7 @@ router = APIRouter(tags=["batch"])
 @limiter.limit("10/minute")
 async def parse_batch(
     request: Request,
+    response: Response,
     background_tasks: BackgroundTasks,
     files: list[UploadFile] = File(...),
     settings: Settings = Depends(get_current_settings),
@@ -55,7 +57,7 @@ async def parse_batch(
         )
 
     # Read uploaded bytes into memory
-    files_data: list[tuple[any, str, bytes]] = []
+    files_data: list[tuple[UUID, str, bytes]] = []
     filenames: list[str] = []
     for f in files:
         fname = f.filename or "resume.pdf"

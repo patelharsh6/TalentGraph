@@ -95,6 +95,63 @@ async def run_parser(files: list[Path], *, fake: bool, redis_url: str) -> dict[s
     }
 
 
+def run_parse_endpoint(files: list[Path], *, fake: bool) -> dict[str, Any]:
+    from fastapi.testclient import TestClient
+
+    from talentgraph.agents.normalization.agent import NormalizationAgent
+    from talentgraph.agents.parsing.agent import ParsingAgent
+    from talentgraph.agents.parsing.cache import InMemoryParseCache
+    from talentgraph.api.main import create_app
+    from talentgraph.db.repositories.taxonomy import get_taxonomy_repository
+
+    settings = get_settings()
+    llm = (
+        FakeLLM(settings.fixtures_dir)
+        if fake
+        else get_llm(settings.model_copy(update={"llm_mode": "real"}))
+    )
+    cache = InMemoryParseCache()
+    repo = get_taxonomy_repository(settings.taxonomy_dir)
+
+    app = create_app()
+    app.state.parsing_agent = ParsingAgent(settings=settings, llm=llm, cache=cache)
+    app.state.normalization_agent = NormalizationAgent(settings=settings, llm=llm, repo=repo)
+    client = TestClient(app)
+
+    totals: list[int] = []
+    hits: list[int] = []
+    statuses: dict[str, int] = {}
+
+    for i, path in enumerate(files, 1):
+        data = path.read_bytes()
+        t0 = time.perf_counter()
+        res1 = client.post("/api/v1/parse", files={"file": (path.name, data, "text/plain")})
+        ms1 = int((time.perf_counter() - t0) * 1000)
+        totals.append(ms1)
+        st = "ok" if res1.status_code == 200 else f"err_{res1.status_code}"
+        statuses[st] = statuses.get(st, 0) + 1
+
+        t1 = time.perf_counter()
+        res2 = client.post("/api/v1/parse", files={"file": (path.name, data, "text/plain")})
+        hit_ms = int((time.perf_counter() - t1) * 1000)
+        if res2.status_code == 200:
+            hits.append(hit_ms)
+        print(
+            f"[{i}/{len(files)}] {path.name}: {ms1} ms {st} (cache hit {hit_ms} ms)",
+            file=sys.stderr,
+            flush=True,
+        )
+
+    return {
+        "target": "parse_endpoint",
+        "llm": "fake" if fake else f"real ({settings.llm_model})",
+        "cache": "in-memory",
+        "statuses": statuses,
+        "total_ms": percentiles(totals),
+        "cache_hit_ms": percentiles(hits),
+    }
+
+
 def from_records(n: int) -> dict[str, Any]:
     """Sequential real-API parse latencies collected by the daily recording runs.
 
@@ -119,7 +176,7 @@ def from_records(n: int) -> dict[str, Any]:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Sequential latency measurement (M6, 2-F).")
-    ap.add_argument("--target", choices=("parser",), default="parser")
+    ap.add_argument("--target", choices=("parser", "parse_endpoint"), default="parser")
     ap.add_argument("--split", default="val")
     ap.add_argument("--n", type=int, default=20)
     ap.add_argument("--fake", action="store_true", help="FakeLLM fixtures instead of Gemini")
@@ -136,7 +193,11 @@ def main() -> int:
     folder = ROOT / "data" / "resumes" / args.split
     files = sorted(p for p in folder.iterdir() if p.suffix.lower() in RESUME_EXTS)[: args.n]
     redis_url = args.redis_url or get_settings().redis_url
-    report = asyncio.run(run_parser(files, fake=args.fake, redis_url=redis_url))
+
+    if args.target == "parse_endpoint":
+        report = run_parse_endpoint(files, fake=args.fake)
+    else:
+        report = asyncio.run(run_parser(files, fake=args.fake, redis_url=redis_url))
     if args.from_records:
         report["real_api"] = from_records(args.n)
     report.update(

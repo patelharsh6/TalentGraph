@@ -1,0 +1,13 @@
+{
+  "metric": "M1",
+  "target": "parsing",
+  "min_field_f1": 0.80,
+  "min_quality": 0.85,
+  "baseline": {
+    "f1": 0.9969,
+    "precision": 0.9969,
+    "recall": 0.9969,
+    "quality": 0.90
+  }
+}
+

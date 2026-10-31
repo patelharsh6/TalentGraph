@@ -1,0 +1,12 @@
+{
+  "metric": "M3",
+  "target": "matching",
+  "min_ndcg_at_5": 0.70,
+  "min_spearman_rho": 0.65,
+  "baseline": {
+    "ndcg_at_5": 0.9814,
+    "spearman_rho": 0.9358,
+    "balanced_f1": 0.8780
+  }
+}
+

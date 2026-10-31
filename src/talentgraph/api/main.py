@@ -1,13 +1,13 @@
 """FastAPI application. Run with `uvicorn talentgraph.api.main:app`."""
 
-from collections.abc import AsyncIterator, Callable
 import contextlib
+from collections.abc import AsyncIterator, Callable
 from contextlib import asynccontextmanager
 
+import structlog
 from fastapi import APIRouter, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from redis.asyncio import Redis
-import structlog
 
 from talentgraph import __version__
 from talentgraph.agents.matching.agent import MatchingAgent
