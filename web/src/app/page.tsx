@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import { toast } from "sonner";
 import {
   UploadCloud,
   FileCheck,
@@ -15,30 +17,83 @@ import {
   User,
   Target,
   ArrowRight,
+  X,
+  FileCode,
+  ShieldCheck,
+  Check,
+  ChevronRight,
+  TrendingUp,
 } from "lucide-react";
 import SkillChip from "@/components/SkillChip";
 import UploadWarning from "@/components/UploadWarning";
+import { Card } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
+import { Badge } from "@/components/ui/Badge";
 import { SAMPLE_CANDIDATES } from "@/data/samples";
-import { api, type ParseResponseData } from "@/lib/api";
+import { api, toText, type ParseResponseData } from "@/lib/api";
 
 export default function UploadPage() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [parsingStep, setParsingStep] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [parsedData, setParsedData] = useState<ParseResponseData | null>(null);
   const [selectedSample, setSelectedSample] = useState<string>("");
 
+  // Simulated step progression for smooth UX while backend parses
+  useEffect(() => {
+    let timer1: NodeJS.Timeout;
+    let timer2: NodeJS.Timeout;
+    if (loading) {
+      setParsingStep(1); // Extracting text
+      timer1 = setTimeout(() => setParsingStep(2), 700); // Detecting sections
+      timer2 = setTimeout(() => setParsingStep(3), 1400); // Building profile
+    } else {
+      setParsingStep(0);
+    }
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
+  }, [loading]);
+
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
-      setSelectedFile(e.target.files[0]);
+      const file = e.target.files[0];
+      setSelectedFile(file);
       setSelectedSample("");
       setError(null);
+      toast.success(`Selected file: ${file.name}`);
+    }
+  };
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragging(true);
+  };
+
+  const handleDragLeave = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragging(false);
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragging(false);
+    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+      const file = e.dataTransfer.files[0];
+      setSelectedFile(file);
+      setSelectedSample("");
+      setError(null);
+      toast.success(`Dropped file: ${file.name}`);
     }
   };
 
   const handleParse = async () => {
     if (!selectedFile) {
       setError("Please select a resume file or pick a sample resume.");
+      toast.error("Please select a resume file or pick a sample.");
       return;
     }
     setLoading(true);
@@ -46,8 +101,11 @@ export default function UploadPage() {
     try {
       const data = await api.parseResume(selectedFile);
       setParsedData(data);
+      toast.success("Resume parsed successfully!");
     } catch (err: any) {
-      setError(err?.message || "Failed to parse resume document.");
+      const msg = err?.message || "Failed to parse resume document.";
+      setError(msg);
+      toast.error(msg);
     } finally {
       setLoading(false);
     }
@@ -67,7 +125,11 @@ export default function UploadPage() {
         schema_version: "2.0",
         personal: {
           name: { value: sample.name, confidence: 1.0, verified: true },
-          email: { value: `${sample.name.toLowerCase().replace(/[^a-z]/g, "")}@example.com`, confidence: 1.0, verified: true },
+          email: {
+            value: `${sample.name.toLowerCase().replace(/[^a-z]/g, "")}@example.com`,
+            confidence: 1.0,
+            verified: true,
+          },
           phone: { value: "(555) 019-2834", confidence: 1.0, verified: true },
           location: {
             value: { city: "San Francisco", region: "CA", country: "USA" },
@@ -110,220 +172,315 @@ export default function UploadPage() {
             grade: { value: "3.85 GPA", confidence: 1.0, verified: true },
           },
         ],
-        skills: sample.skills.map((name) => ({
-          raw: name,
-          confidence: 1.0,
-          verified: true,
-          category_hint: "technical",
-          evidence: `Directly utilized ${name} in production project development.`,
-        })),
-        meta: {
-          confidence: 0.98,
-          field_sources: { name: "rules", experience: "llm", skills: "merged" },
-          llm_field_count: 8,
-          unverified_count: 0,
-        },
       },
       profile: {
-        skills: sample.skills.map((name) => ({
-          slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
-          name: name,
-          category: "technical",
-          proficiency: 4,
-          years: 3.0,
-          inferred: false,
+        skills: sample.skills.map((s, idx) => ({
+          slug: s.toLowerCase().replace(/\s+/g, "-"),
+          name: s,
+          category: idx % 3 === 0 ? "technical" : idx % 3 === 1 ? "soft" : "domain",
           confidence: 1.0,
-          evidence: [`Directly applied ${name} in production project development.`],
+          proficiency: 4,
+          years: 3.5,
+          evidence: [`Demonstrated proficiency in ${s} across production engineering workflows.`],
         })),
-        unrecognized: [],
       },
-      raw_text: sample.rawText,
-      confidence: 0.98,
-      unmapped_skills: [],
     } as any);
+
+    toast.info(`Loaded pre-cached demo: ${sample.name}`);
+  };
+
+  const getInitials = (name: string) => {
+    return name
+      .split(" ")
+      .map((n) => n[0])
+      .join("")
+      .slice(0, 2)
+      .toUpperCase();
   };
 
   return (
-    <div className="space-y-6">
-      {/* Top Banner */}
+    <motion.div
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.25 }}
+      className="space-y-8"
+    >
+      {/* Demo Caching Banner */}
       <UploadWarning />
 
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        <div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-            Resume Extraction & Talent Profile
-          </h1>
-          <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
-            Hybrid parser combining deterministic pattern extraction with grounded LLM reasoning.
-          </p>
+      {/* Hero Section */}
+      <div className="space-y-4">
+        {/* Eyebrow */}
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-50/80 dark:bg-brand-950/40 text-brand-600 dark:text-brand-300 border border-brand-200/80 dark:border-brand-800/60 shadow-sm">
+          <Sparkles className="w-3.5 h-3.5 text-brand-500" />
+          <span>AI-Powered Parsing</span>
         </div>
 
-        {/* Quick Sample Selector */}
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+        {/* Headline */}
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+          Resume Extraction &{" "}
+          <span className="bg-gradient-to-r from-brand-600 via-violet-600 to-cyan-500 bg-clip-text text-transparent">
+            Talent Profile
+          </span>
+        </h1>
+
+        {/* Subtitle */}
+        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+          Extract verbatim-grounded personal information, experience timelines, and normalize skills
+          into hierarchical ESCO/O*NET taxonomy standards with sub-3s latency.
+        </p>
+
+        {/* Demo Samples Pills */}
+        <div className="flex flex-wrap items-center gap-2.5 pt-2">
+          <span className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
             Demo Samples:
           </span>
-          <div className="flex flex-wrap gap-1.5">
-            {SAMPLE_CANDIDATES.map((sample) => (
+          {SAMPLE_CANDIDATES.map((sample) => {
+            const isSelected = selectedSample === sample.id;
+            return (
               <button
                 key={sample.id}
                 onClick={() => loadSample(sample.id)}
-                className={`px-2.5 py-1 text-xs font-medium rounded-lg border transition-all ${
-                  selectedSample === sample.id
-                    ? "bg-indigo-600 text-white border-indigo-600 shadow-sm"
-                    : "bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700 hover:border-indigo-400"
+                className={`group inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 ${
+                  isSelected
+                    ? "bg-brand-50 text-brand-700 dark:bg-brand-950/60 dark:text-brand-300 border-2 border-brand-500 shadow-glow shadow-brand-500/10 scale-[1.02]"
+                    : "bg-white dark:bg-[#111827] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-white/10 hover:border-brand-400 dark:hover:border-brand-500 hover:-translate-y-0.5 shadow-sm"
                 }`}
               >
-                {sample.name.split(" ")[0]} ({sample.title.split(" ")[0]})
+                <span
+                  className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
+                    isSelected
+                      ? "bg-brand-600 text-white"
+                      : "bg-slate-100 dark:bg-white/10 text-slate-600 dark:text-slate-300 group-hover:bg-brand-100 dark:group-hover:bg-brand-900/60"
+                  }`}
+                >
+                  {getInitials(sample.name)}
+                </span>
+                <span>{sample.name}</span>
+                <span className="text-[11px] opacity-60 font-normal">({sample.title.split(" ")[0]})</span>
               </button>
-            ))}
-          </div>
+            );
+          })}
         </div>
       </div>
 
-      {/* Upload Zone */}
-      <div className="bg-white dark:bg-slate-900 border-2 border-dashed border-slate-300 dark:border-slate-700 hover:border-indigo-500 rounded-xl p-6 sm:p-8 text-center transition-colors">
-        <UploadCloud className="w-12 h-12 text-indigo-500 mx-auto mb-3" />
-        <h3 className="text-base font-semibold text-slate-800 dark:text-slate-200">
-          Upload Candidate Resume
-        </h3>
-        <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto mt-1 mb-4">
-          Supports PDF, DOCX, or plain text formats. Text extraction is grounded with verbatim span references.
-        </p>
+      {/* Upload Dropzone (Main Focal Point) */}
+      <Card
+        onDragOver={handleDragOver}
+        onDragLeave={handleDragLeave}
+        onDrop={handleDrop}
+        className={`relative p-8 sm:p-10 transition-all duration-300 text-center border-2 ${
+          isDragging
+            ? "border-brand-500 bg-brand-50/20 dark:bg-brand-950/20 scale-[1.01]"
+            : "border-dashed border-slate-300/80 dark:border-white/15 hover:border-brand-400/80 dark:hover:border-brand-500/50"
+        }`}
+      >
+        {/* Animated Gradient Accent Glow */}
+        <div className="absolute -inset-0.5 rounded-[22px] bg-gradient-to-r from-brand-500/0 via-violet-500/10 to-cyan-500/0 opacity-0 group-hover:opacity-100 blur-xl transition-opacity pointer-events-none" />
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-          <label className="cursor-pointer inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 text-sm font-medium hover:bg-indigo-100 transition-colors">
-            <FileText className="w-4 h-4" />
-            <span>{selectedFile ? selectedFile.name : "Choose File..."}</span>
-            <input
-              type="file"
-              accept=".pdf,.docx,.txt"
-              className="hidden"
-              onChange={handleFileChange}
-            />
-          </label>
+        <div className="relative space-y-4 max-w-md mx-auto">
+          {/* Centered Floating Upload Icon inside Glow Ring */}
+          <div className="relative mx-auto w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-50 to-violet-50 dark:from-brand-950/60 dark:to-violet-950/60 border border-brand-200 dark:border-brand-800 flex items-center justify-center shadow-soft animate-float-slow">
+            <UploadCloud className="w-8 h-8 text-brand-600 dark:text-brand-400" />
+            <div className="absolute inset-0 rounded-2xl ring-4 ring-brand-500/10 dark:ring-brand-400/10" />
+          </div>
 
-          <button
-            onClick={handleParse}
-            disabled={!selectedFile || loading}
-            className={`inline-flex items-center gap-2 px-5 py-2 rounded-lg text-sm font-semibold text-white shadow-sm transition-all ${
-              !selectedFile || loading
-                ? "bg-slate-300 dark:bg-slate-700 cursor-not-allowed"
-                : "bg-indigo-600 hover:bg-indigo-700"
-            }`}
-          >
-            {loading ? (
-              <>
-                <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                <span>Parsing Pipeline...</span>
-              </>
+          <div className="space-y-1">
+            <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+              {isDragging ? "Drop your resume here" : "Upload Candidate Resume"}
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+              Drag and drop your file here, or browse from your device.
+            </p>
+          </div>
+
+          {/* Format Badges */}
+          <div className="flex items-center justify-center gap-2">
+            <span className="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-slate-100 dark:bg-white/10 text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-white/10">
+              PDF
+            </span>
+            <span className="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-slate-100 dark:bg-white/10 text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-white/10">
+              DOCX
+            </span>
+            <span className="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-slate-100 dark:bg-white/10 text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-white/10">
+              TXT
+            </span>
+          </div>
+
+          {/* Action Buttons & File Chip */}
+          <div className="pt-2 flex flex-col items-center gap-3">
+            {!selectedFile ? (
+              <label className="cursor-pointer inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-300 dark:border-white/15 text-sm font-semibold hover:bg-slate-50 dark:hover:bg-slate-700/80 hover:border-slate-400 hover:-translate-y-0.5 transition-all shadow-sm">
+                <FileText className="w-4 h-4 text-brand-500" />
+                <span>Choose File...</span>
+                <input
+                  type="file"
+                  accept=".pdf,.docx,.txt"
+                  className="hidden"
+                  onChange={handleFileChange}
+                />
+              </label>
             ) : (
-              <>
-                <Sparkles className="w-4 h-4" />
-                <span>Parse Resume</span>
-              </>
+              <div className="flex flex-col sm:flex-row items-center gap-3 w-full justify-center">
+                {/* Selected File Chip */}
+                <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-white/10 border border-slate-200 dark:border-white/10 text-xs text-slate-700 dark:text-slate-200">
+                  <FileText className="w-4 h-4 text-brand-500 flex-shrink-0" />
+                  <span className="font-semibold max-w-[200px] truncate">{selectedFile.name}</span>
+                  <span className="text-[10px] text-slate-400 font-mono">
+                    ({(selectedFile.size / 1024).toFixed(1)} KB)
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedFile(null)}
+                    className="p-0.5 rounded hover:bg-slate-200 dark:hover:bg-white/20 text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors"
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+
+                {/* Parse Resume Button */}
+                <Button
+                  onClick={handleParse}
+                  loading={loading}
+                  icon={<Sparkles className="w-4 h-4" />}
+                  size="md"
+                  variant="primary"
+                >
+                  Parse Resume
+                </Button>
+              </div>
             )}
-          </button>
-        </div>
-
-        {error && (
-          <div className="mt-4 p-3 rounded-lg bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 text-xs sm:text-sm flex items-center justify-center gap-2">
-            <AlertCircle className="w-4 h-4 flex-shrink-0" />
-            <span>{error}</span>
           </div>
-        )}
-      </div>
 
-      {/* Structured Profile Display */}
+          {/* Shimmer Stepper during parsing */}
+          <AnimatePresence>
+            {loading && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                className="pt-4 space-y-3"
+              >
+                <div className="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-gradient-to-r from-brand-600 via-violet-600 to-cyan-500 transition-all duration-500"
+                    style={{ width: `${parsingStep * 33.3}%` }}
+                  />
+                </div>
+                <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+                  <span className={parsingStep >= 1 ? "font-bold text-brand-600 dark:text-brand-400" : ""}>
+                    1. Extracting text
+                  </span>
+                  <span className={parsingStep >= 2 ? "font-bold text-violet-600 dark:text-violet-400" : ""}>
+                    2. Detecting sections
+                  </span>
+                  <span className={parsingStep >= 3 ? "font-bold text-cyan-600 dark:text-cyan-400" : ""}>
+                    3. Building profile
+                  </span>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {error && (
+            <div className="p-3.5 rounded-xl bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 text-xs sm:text-sm flex items-center justify-center gap-2 border border-rose-200 dark:border-rose-800">
+              <AlertCircle className="w-4 h-4 flex-shrink-0" />
+              <span>{error}</span>
+            </div>
+          )}
+        </div>
+      </Card>
+
+      {/* Structured Profile Display (Results View) */}
       {parsedData && (() => {
         const parsedResume = parsedData.parsed || (parsedData as any).profile;
         const skillsList = parsedData.profile?.skills || (parsedResume?.skills as any[]) || [];
         const confidencePct = Math.round(((parsedResume?.meta as any)?.confidence || 0.95) * 100);
 
         return (
-          <div className="space-y-6 animate-in fade-in duration-300">
-            {/* Header Card */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <div className="flex items-start gap-4">
-                <div className="w-14 h-14 rounded-full bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xl font-bold font-mono">
-                  {parsedResume?.personal?.name?.value?.[0] || "C"}
-                </div>
-                <div>
-                  <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                    <span>{parsedResume?.personal?.name?.value || "Candidate"}</span>
-                    <span className="inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-300">
-                      <CheckCircle2 className="w-3 h-3 text-emerald-500" />
-                      Confidence: {confidencePct}%
-                    </span>
-                  </h2>
-                  <div className="flex flex-wrap items-center gap-3 mt-1 text-xs text-slate-500 dark:text-slate-400">
-                    {parsedResume?.personal?.email?.value && (
-                      <span>{parsedResume.personal.email.value}</span>
-                    )}
-                    {parsedResume?.personal?.phone?.value && (
-                      <span>• {parsedResume.personal.phone.value}</span>
-                    )}
-                    {parsedResume?.personal?.location?.value && (
-                      <span>
-                        • {typeof parsedResume.personal.location.value === "object"
-                          ? `${(parsedResume.personal.location.value as any).city || ""}, ${(parsedResume.personal.location.value as any).region || ""}`
-                          : String(parsedResume.personal.location.value)}
-                      </span>
-                    )}
+          <div className="space-y-6">
+            {/* Header Profile Card */}
+            <Card className="p-6 sm:p-7">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div className="flex items-start sm:items-center gap-4">
+                  {/* Initials Avatar */}
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-tr from-brand-600 to-violet-600 text-white flex items-center justify-center text-xl sm:text-2xl font-black font-mono shadow-soft flex-shrink-0">
+                    {toText(parsedResume?.personal?.name, "C")[0] || "C"}
+                  </div>
+
+                  <div className="space-y-1">
+                    <div className="flex flex-wrap items-center gap-2.5">
+                      <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+                        {toText(parsedResume?.personal?.name, "Candidate")}
+                      </h2>
+                      <Badge variant="emerald" dot>
+                        Confidence: {confidencePct}%
+                      </Badge>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                      {toText(parsedResume?.personal?.email) && (
+                        <span>{toText(parsedResume?.personal?.email)}</span>
+                      )}
+                      {toText(parsedResume?.personal?.phone) && (
+                        <span>• {toText(parsedResume?.personal?.phone)}</span>
+                      )}
+                      {parsedResume?.personal?.location && (
+                        <span>
+                          •{" "}
+                          {typeof parsedResume.personal.location === "object" &&
+                          parsedResume.personal.location !== null
+                            ? parsedResume.personal.location.value
+                              ? typeof parsedResume.personal.location.value === "object"
+                                ? `${(parsedResume.personal.location.value as any).city || ""}, ${(parsedResume.personal.location.value as any).region || ""}`
+                                : String(parsedResume.personal.location.value)
+                              : (parsedResume.personal.location as any).city
+                              ? `${(parsedResume.personal.location as any).city}, ${(parsedResume.personal.location as any).region || ""}`
+                              : ""
+                            : String(parsedResume.personal.location)}
+                        </span>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Quick Actions & Pipeline Stage Indicators */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 border-t md:border-t-0 md:border-l border-slate-200 dark:border-slate-800 pt-3 md:pt-0 md:pl-6 text-xs">
-                <div className="flex items-center gap-2">
-                  <Link
-                    href={`/match?candidate_id=${parsedData.candidate_id || selectedSample}`}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-xs shadow-sm transition-colors"
-                  >
-                    <Target className="w-3.5 h-3.5" />
-                    <span>Match against Jobs</span>
-                    <ArrowRight className="w-3 h-3" />
+                {/* Quick 1-Click Action Buttons */}
+                <div className="flex flex-wrap items-center gap-2.5 border-t md:border-t-0 md:border-l border-slate-200/80 dark:border-white/10 pt-4 md:pt-0 md:pl-6">
+                  <Link href={`/match?candidate_id=${parsedData.candidate_id || selectedSample}`}>
+                    <Button variant="primary" size="sm" icon={<Target className="w-3.5 h-3.5" />}>
+                      Match against Jobs
+                    </Button>
                   </Link>
-                  <Link
-                    href={`/coach?candidate_id=${parsedData.candidate_id || selectedSample}`}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-medium text-xs border border-slate-200 dark:border-slate-700 transition-colors"
-                  >
-                    <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
-                    <span>Career Coach</span>
+                  <Link href={`/coach?candidate_id=${parsedData.candidate_id || selectedSample}`}>
+                    <Button variant="secondary" size="sm" icon={<Sparkles className="w-3.5 h-3.5 text-brand-500" />}>
+                      Career Coach
+                    </Button>
                   </Link>
                 </div>
-                <div className="hidden lg:flex items-center gap-2 text-slate-500 pl-2">
-                  <div className="text-right">
-                    <p className="font-semibold text-slate-700 dark:text-slate-300">Agent Trace</p>
-                    <p className="text-[11px]">Parser: Grounded</p>
-                  </div>
-                  <FileCheck className="w-7 h-7 text-indigo-500" />
-                </div>
               </div>
-            </div>
+            </Card>
 
-            {/* Executive Summary */}
-            {parsedResume?.summary?.value && (
-              <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-sm">
-                <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                  <User className="w-4 h-4 text-indigo-500" />
-                  Executive Summary
-                </h3>
-                <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                  {parsedResume.summary.value}
+            {/* Executive Summary Card */}
+            {toText(parsedResume?.summary) && (
+              <Card className="p-6">
+                <div className="flex items-center gap-2 mb-2.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                  <User className="w-4 h-4 text-brand-500" />
+                  <span>Executive Summary</span>
+                </div>
+                <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                  {toText(parsedResume?.summary)}
                 </p>
-              </div>
+              </Card>
             )}
 
-            {/* Normalized Skills Breakdown */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-sm">
-              <div className="flex items-center justify-between mb-3">
-                <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-indigo-500" />
-                  Normalized Skills & Provenance
-                </h3>
-                <span className="text-xs text-slate-400">
+            {/* Normalized Skills Grid */}
+            <Card className="p-6">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                  <Sparkles className="w-4 h-4 text-brand-500" />
+                  <span>Normalized Skills & Taxonomy Provenance</span>
+                </div>
+                <span className="text-xs font-mono font-medium text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/60 px-2.5 py-0.5 rounded-full border border-brand-200 dark:border-brand-800">
                   {skillsList.length} skills detected
                 </span>
               </div>
@@ -333,73 +490,90 @@ export default function UploadPage() {
                     key={idx}
                     name={sk.name || sk.raw || "Skill"}
                     category={sk.category || sk.category_hint || "technical"}
-                    evidence={sk.evidence ? (Array.isArray(sk.evidence) ? sk.evidence : [sk.evidence]) : []}
+                    evidence={
+                      sk.evidence ? (Array.isArray(sk.evidence) ? sk.evidence : [sk.evidence]) : []
+                    }
                     confidence={sk.confidence || 1.0}
                     inferred={sk.inferred}
                     years={sk.years}
                   />
                 ))}
               </div>
-            </div>
+            </Card>
 
             {/* Experience Timeline */}
             {parsedResume?.experience && parsedResume.experience.length > 0 && (
-              <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-sm">
-                <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 flex items-center gap-1.5">
-                  <Briefcase className="w-4 h-4 text-indigo-500" />
-                  Work Experience Timeline
-                </h3>
-                <div className="space-y-4">
+              <Card className="p-6 sm:p-7">
+                <div className="flex items-center gap-2 mb-6 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                  <Briefcase className="w-4 h-4 text-brand-500" />
+                  <span>Work Experience Timeline</span>
+                </div>
+
+                <div className="relative pl-6 space-y-8 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-gradient-to-b before:from-brand-500 before:via-violet-500 before:to-slate-300 dark:before:to-slate-700">
                   {parsedResume.experience.map((exp: any, idx: number) => (
-                    <div key={idx} className="border-l-2 border-indigo-200 dark:border-indigo-800 pl-4 py-1">
-                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                        <h4 className="text-sm font-semibold text-slate-900 dark:text-white">
-                          {exp.title?.value || "Role"} • {exp.company?.value || "Company"}
+                    <div key={idx} className="relative group">
+                      {/* Timeline dot */}
+                      <div className="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-white dark:bg-dark-surface border-2 border-brand-500 group-hover:scale-125 transition-transform" />
+
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h4 className="text-base font-bold text-slate-900 dark:text-white">
+                          {toText(exp.title, "Role")} •{" "}
+                          <span className="text-brand-600 dark:text-brand-400 font-semibold">
+                            {toText(exp.company, "Company")}
+                          </span>
                         </h4>
-                        <span className="text-xs text-slate-500 font-mono">
-                          {exp.start?.value || "Start"} – {exp.is_current ? "Present" : exp.end?.value || "End"}
+                        <span className="text-xs font-mono font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-white/10 px-2.5 py-0.5 rounded-md self-start sm:self-auto">
+                          {toText(exp.start, "Start")} – {exp.is_current ? "Present" : toText(exp.end, "End")}
                         </span>
                       </div>
+
                       {exp.responsibilities && (
-                        <ul className="mt-2 space-y-1 list-disc list-inside text-xs text-slate-600 dark:text-slate-300">
+                        <ul className="space-y-1.5 list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300">
                           {exp.responsibilities.map((r: any, rIdx: number) => (
-                            <li key={rIdx}>{r.value || String(r)}</li>
+                            <li key={rIdx} className="leading-relaxed">
+                              {toText(r)}
+                            </li>
                           ))}
                         </ul>
                       )}
                     </div>
                   ))}
                 </div>
-              </div>
+              </Card>
             )}
 
-            {/* Education */}
+            {/* Education Credentials */}
             {parsedResume?.education && parsedResume.education.length > 0 && (
-              <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-sm">
-                <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-1.5">
-                  <GraduationCap className="w-4 h-4 text-indigo-500" />
-                  Education & Credentials
-                </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Card className="p-6">
+                <div className="flex items-center gap-2 mb-4 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                  <GraduationCap className="w-4 h-4 text-brand-500" />
+                  <span>Education & Academic Credentials</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   {parsedResume.education.map((edu: any, idx: number) => (
-                    <div key={idx} className="p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
-                      <p className="font-semibold text-sm text-slate-900 dark:text-white">
-                        {edu.institution?.value || "University"}
+                    <div
+                      key={idx}
+                      className="p-4 rounded-xl bg-slate-50/70 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 space-y-1"
+                    >
+                      <p className="font-bold text-sm text-slate-900 dark:text-white">
+                        {toText(edu.institution, "University")}
                       </p>
                       <p className="text-xs text-slate-600 dark:text-slate-400">
-                        {edu.degree?.value} {edu.field?.value ? `in ${edu.field.value}` : ""}
+                        {toText(edu.degree)} {toText(edu.field) ? `in ${toText(edu.field)}` : ""}
                       </p>
-                      {edu.grade?.value && (
-                        <p className="text-[11px] text-slate-500 font-mono mt-1">GPA: {edu.grade.value}</p>
+                      {toText(edu.grade) && (
+                        <p className="text-[11px] text-brand-600 dark:text-brand-400 font-mono font-medium">
+                          GPA: {toText(edu.grade)}
+                        </p>
                       )}
                     </div>
                   ))}
                 </div>
-              </div>
+              </Card>
             )}
           </div>
         );
       })()}
-    </div>
+    </motion.div>
   );
 }

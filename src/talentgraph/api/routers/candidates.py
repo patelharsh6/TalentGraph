@@ -23,6 +23,17 @@ router = APIRouter(tags=["candidates"])
 log = structlog.get_logger(__name__)
 
 
+def _extract_str(val: Any, default: str = "") -> str:
+    """Extract plain string from ExtractedField or dict."""
+    if val is None:
+        return default
+    if isinstance(val, dict):
+        return str(val.get("value") or default)
+    if hasattr(val, "value"):
+        return str(getattr(val, "value") or default)
+    return str(val)
+
+
 @router.get(
     "/candidates",
     summary="List available candidates",
@@ -42,16 +53,19 @@ async def list_candidates() -> list[dict[str, Any]]:
             parsed_dict = {}
         personal = parsed_dict.get("personal", {})
         experiences = parsed_dict.get("experience", [])
-        title = experiences[0].get("title", "Candidate") if experiences else "Candidate"
+        raw_title = experiences[0].get("title", "Candidate") if experiences else "Candidate"
+        cand_title = _extract_str(raw_title, "Candidate")
+        cand_name = _extract_str(personal.get("name"), "Candidate")
+        cand_summary = _extract_str(parsed_dict.get("summary"), "")
         top_skills = (
             [s.name for s in mem.profile.skills[:6]] if mem.profile and mem.profile.skills else []
         )
         results.append(
             {
                 "id": str(mem.id),
-                "name": personal.get("name", "Candidate"),
-                "title": title,
-                "summary": parsed_dict.get("summary", ""),
+                "name": cand_name,
+                "title": cand_title,
+                "summary": cand_summary,
                 "skills_count": len(mem.profile.skills)
                 if mem.profile and mem.profile.skills
                 else 0,
@@ -70,13 +84,18 @@ async def list_candidates() -> list[dict[str, Any]]:
                     parsed_dict = cand.parsed or {}
                     personal = parsed_dict.get("personal", {})
                     experiences = parsed_dict.get("experience", [])
-                    title = experiences[0].get("title", "Candidate") if experiences else "Candidate"
+                    raw_title = (
+                        experiences[0].get("title", "Candidate") if experiences else "Candidate"
+                    )
+                    cand_title = _extract_str(raw_title, "Candidate")
+                    cand_name = _extract_str(personal.get("name"), "Candidate")
+                    cand_summary = _extract_str(parsed_dict.get("summary"), "")
                     results.append(
                         {
                             "id": str(cand.id),
-                            "name": personal.get("name", "Candidate"),
-                            "title": title,
-                            "summary": parsed_dict.get("summary", ""),
+                            "name": cand_name,
+                            "title": cand_title,
+                            "summary": cand_summary,
                             "skills_count": len(parsed_dict.get("skills", [])),
                             "top_skills": [
                                 s.get("name")

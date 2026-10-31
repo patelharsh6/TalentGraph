@@ -107,9 +107,13 @@ class SearchAgent:
             if cid not in candidate_pool:
                 candidate_pool.append(cid)
 
-        # Fallback if pool is empty: retrieve top semantic candidates
+        # Fallback if pool is empty: retrieve top semantic candidates or in-memory candidates
         if not candidate_pool and semantic_ids:
             candidate_pool = semantic_ids[:limit]
+        if not candidate_pool:
+            from talentgraph.db.in_memory import get_all_candidates_in_memory
+
+            candidate_pool = [str(c.id) for c in get_all_candidates_in_memory()][: limit * 2]
 
         # Round 4: Tool 4 - Match and score candidates against the plan
         evaluated_candidates: list[dict[str, Any]] = []
