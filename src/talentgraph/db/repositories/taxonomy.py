@@ -100,6 +100,14 @@ class TaxonomyRepository:
         return self._skills
 
     @property
+    def slug_map(self) -> dict[str, TaxonomySkill]:
+        return self._by_slug
+
+    @property
+    def alias_map(self) -> dict[str, AliasRecord]:
+        return self._alias_by_norm
+
+    @property
     def aliases(self) -> list[AliasRecord]:
         return self._aliases
 

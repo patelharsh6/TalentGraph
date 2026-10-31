@@ -7,10 +7,12 @@ from fastapi import Request
 from redis.asyncio import Redis
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from talentgraph.agents.coach.agent import CoachAgent
 from talentgraph.agents.matching.agent import MatchingAgent
 from talentgraph.agents.matching.job_parser import JobParser
 from talentgraph.agents.normalization.agent import NormalizationAgent
 from talentgraph.agents.parsing.agent import ParsingAgent
+from talentgraph.agents.search.agent import SearchAgent
 from talentgraph.config import Settings, get_settings
 from talentgraph.db.repositories.taxonomy import (
     TaxonomyRepository,
@@ -78,3 +80,21 @@ def get_taxonomy_repo(request: Request) -> TaxonomyRepository:
         repo = get_taxonomy_repository()
         request.app.state.taxonomy_repo = repo
     return cast(TaxonomyRepository, repo)
+
+
+def get_search_agent(request: Request) -> SearchAgent:
+    """Dependency returning SearchAgent from app state or default instance."""
+    agent = getattr(request.app.state, "search_agent", None)
+    if agent is None:
+        agent = SearchAgent()
+        request.app.state.search_agent = agent
+    return cast(SearchAgent, agent)
+
+
+def get_coach_agent(request: Request) -> CoachAgent:
+    """Dependency returning CoachAgent from app state or default instance."""
+    agent = getattr(request.app.state, "coach_agent", None)
+    if agent is None:
+        agent = CoachAgent()
+        request.app.state.coach_agent = agent
+    return cast(CoachAgent, agent)

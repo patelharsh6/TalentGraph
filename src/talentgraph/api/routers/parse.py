@@ -116,6 +116,33 @@ async def parse_resume(
         )
     )
 
+    # Upsert into CandidateIndex (Step 6.1)
+    try:
+        from talentgraph.embeddings.candidate_index import get_candidate_index
+
+        c_idx = get_candidate_index()
+        skills_text = ", ".join(s.name for s in profile.skills)
+        titles_list = [
+            exp.title.value
+            for exp in result_state.parsed_resume.experience
+            if exp.title and exp.title.value
+        ]
+        sum_val = (
+            result_state.parsed_resume.summary.value if result_state.parsed_resume.summary else ""
+        )
+        c_doc = f"Title: {', '.join(titles_list)}\nSummary: {sum_val}\nSkills: {skills_text}"
+        c_idx.upsert_candidate(
+            candidate_id=str(candidate_id),
+            document_text=c_doc,
+            metadata={
+                "candidate_id": str(candidate_id),
+                "pipeline_version": PIPELINE_VERSION,
+                "total_years": float(len(result_state.parsed_resume.experience) * 2.0),
+            },
+        )
+    except Exception as c_exc:
+        log.debug("candidate_index.upsert_skipped", error=str(c_exc))
+
     # Database persist if DB is running
     try:
         async with async_session_scope() as session:

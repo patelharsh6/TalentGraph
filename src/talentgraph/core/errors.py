@@ -68,3 +68,10 @@ class AgentTimeout(TalentGraphError):
     http_status = 504
     title = "Agent timed out"
     retryable = True
+
+
+class ServiceUnavailable(TalentGraphError):
+    code = "service_unavailable"
+    http_status = 503
+    title = "Service unavailable"
+    retryable = True

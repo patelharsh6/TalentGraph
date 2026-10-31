@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     gemini_api_key: SecretStr | None = None
     llm_mode: Literal["real", "fake", "stub"] = "real"
     llm_model: str = "gemini-3.8-flash"
-    llm_timeout_s: float = 8.0
+    llm_timeout_s: float = 20.0
     # Every attempt, failed or not, counts against the free-tier daily quota (20/day).
     llm_max_attempts: int = 3
     llm_max_concurrency: int = 4

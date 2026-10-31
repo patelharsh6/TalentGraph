@@ -139,3 +139,82 @@ class SkillSearchItem(BaseModel):
     score: float
     match_type: str
     type: str
+
+
+# --------------------------------------------------------------------------------------------------
+# Milestone 6: Search & Coach Schemas (plan §6.4, §6.5)
+# --------------------------------------------------------------------------------------------------
+
+
+class SearchRequest(BaseModel):
+    """Request payload for POST /api/v1/search."""
+
+    query: str = Field(..., min_length=2, description="Natural language search query")
+    limit: int = Field(10, ge=1, le=50, description="Maximum candidates to return")
+
+
+class SearchHit(BaseModel):
+    """Ranked candidate hit in talent search."""
+
+    candidate_id: str
+    score: float
+    reasons: list[str] = Field(default_factory=list)
+    citations: dict[str, list[str]] = Field(default_factory=dict)
+    matched_skills: list[str] = Field(default_factory=list)
+    missing_skills: list[str] = Field(default_factory=list)
+
+
+class SearchResponseData(BaseModel):
+    """Data envelope for POST /api/v1/search."""
+
+    plan: dict[str, Any]
+    total_candidates: int
+    results: list[SearchHit]
+
+
+class CoachRequest(BaseModel):
+    """Request payload for POST /api/v1/coach."""
+
+    candidate_id: str = Field(..., description="Target candidate ID")
+    job_id: str | None = Field(None, description="Target job ID (if previously saved)")
+    job: JobInput | None = Field(None, description="Inline job description")
+
+
+class LearningGoal(BaseModel):
+    """Structured learning plan item for a skill gap."""
+
+    skill_slug: str
+    skill_name: str
+    rationale: str
+    prerequisites: list[str] = Field(default_factory=list)
+    recommended_order: int
+
+
+class InterviewQuestion(BaseModel):
+    """Targeted interview question for requirement verification."""
+
+    requirement_name: str
+    question: str
+    target_competency: str
+    preparation_tip: str
+
+
+class BulletRewrite(BaseModel):
+    """Resume bullet rewrite grounded strictly in existing evidence."""
+
+    original_evidence: str
+    improved_bullet: str
+    highlighted_skills: list[str] = Field(default_factory=list)
+    rationale: str
+
+
+class CoachReport(BaseModel):
+    """Career coach comprehensive report (feature F3)."""
+
+    candidate_id: str
+    job_id: str | None = None
+    learning_plan: list[LearningGoal] = Field(default_factory=list)
+    interview_questions: list[InterviewQuestion] = Field(default_factory=list)
+    bullet_rewrites: list[BulletRewrite] = Field(default_factory=list)
+    removed_claims: list[str] = Field(default_factory=list)
+    revisions_count: int = 0

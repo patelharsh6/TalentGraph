@@ -10,20 +10,24 @@ from fastapi.middleware.cors import CORSMiddleware
 from redis.asyncio import Redis
 
 from talentgraph import __version__
+from talentgraph.agents.coach.agent import CoachAgent
 from talentgraph.agents.matching.agent import MatchingAgent
 from talentgraph.agents.matching.job_parser import JobParser
 from talentgraph.agents.normalization.agent import NormalizationAgent
 from talentgraph.agents.parsing.agent import ParsingAgent
 from talentgraph.agents.parsing.cache import InMemoryParseCache, RedisParseCache
+from talentgraph.agents.search.agent import SearchAgent
 from talentgraph.api.problems import register_problem_handlers
 from talentgraph.api.ratelimit import limiter
 from talentgraph.api.routers import (
     batch,
     candidates,
+    coach,
     health,
     jobs,
     match,
     parse,
+    search,
     skills,
 )
 from talentgraph.config import get_settings
@@ -80,6 +84,8 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     app.state.normalization_agent = NormalizationAgent(settings=settings, llm=llm, repo=repo)
     app.state.matching_agent = MatchingAgent(settings=settings, repo=repo)
     app.state.job_parser = JobParser(llm=llm)
+    app.state.search_agent = SearchAgent(settings=settings, llm=llm, repo=repo)
+    app.state.coach_agent = CoachAgent(settings=settings, llm=llm, repo=repo)
     app.state.taxonomy_repo = repo
 
     # 3. Recover stale batch items from previous runs (Step 5.5)
@@ -130,7 +136,8 @@ def create_app() -> FastAPI:
     v1.include_router(candidates.router)
     v1.include_router(match.router)
     v1.include_router(skills.router)
-    # Milestone 6 will add: search.router, coach.router
+    v1.include_router(search.router)
+    v1.include_router(coach.router)
 
     app.include_router(v1)
 
