@@ -1,0 +1,91 @@
+{
+ "name": "ASHLEY DURAN",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Tinaberg",
+  "region": "PA",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Biomedical Data Lead",
+   "company": "Bennett-Smith",
+   "location": "Lake Melanie, MI",
+   "dates_text": "Jul 2023 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  },
+  {
+   "title": "Clinical Research Associate",
+   "company": "James, Gibbs and Cochran",
+   "location": "Port Sarahshire, PA",
+   "dates_text": "2020-04 – Jul. 2023",
+   "bullet_lines": [
+    [
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "title": "Clinical Research Associate",
+   "company": "Anderson-Neal",
+   "location": "Colonville, IN",
+   "dates_text": "12/2016 – 2020",
+   "bullet_lines": [
+    [
+     17,
+     19
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Wilsonview State University",
+   "degree": "PhD",
+   "field": "Health Informatics / Biology",
+   "dates_text": "Sep 2012 – 2016",
+   "grade": "3.98 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Healthcare Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-122323"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Healthcare Optimization System",
+   "description_lines": [
+    [
+     28,
+     28
+    ]
+   ],
+   "technologies": [
+    "HIPAA Compliance",
+    "Clinical Trials Management",
+    "Health Informatics"
+   ],
+   "url": "https://github.com/ashleyduran/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

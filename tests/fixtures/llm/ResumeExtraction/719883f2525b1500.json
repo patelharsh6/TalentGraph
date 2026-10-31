@@ -1,0 +1,67 @@
+{
+ "name": "Carly Rodgers",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "East Kenneth",
+  "region": "AR",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Director of People Operations",
+   "company": "Cole, Montgomery and Johnson",
+   "location": "West Courtney, FM",
+   "dates_text": "05/2022 – Present",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Marychester State University",
+   "degree": "Bachelor of Science",
+   "field": "Operations Research / Management",
+   "dates_text": "2018 – May 2022",
+   "grade": "3.51 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Operations Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-112098"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Operations Optimization System",
+   "description_lines": [
+    [
+     16,
+     16
+    ]
+   ],
+   "technologies": [
+    "Jira & Confluence",
+    "Agile Scrum Methodology",
+    "Process Optimization"
+   ],
+   "url": "https://github.com/carlyrodgers/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "name": "Brian Garner",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Justinton",
+  "region": "AS",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Data Engineer",
+   "company": "Richards, Stephenson and Blake",
+   "location": "Gallagherton, TN",
+   "dates_text": "2022 – Present",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "East Sarahfurt State University",
+   "degree": "Bachelor of Arts",
+   "field": "Data Science & Statistics",
+   "dates_text": "2018 – 2022-05",
+   "grade": "3.81 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Data Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-400947"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Data Optimization System",
+   "description_lines": [
+    [
+     16,
+     16
+    ]
+   ],
+   "technologies": [
+    "SQL",
+    "dbt",
+    "Pandas"
+   ],
+   "url": "https://github.com/briangarner/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

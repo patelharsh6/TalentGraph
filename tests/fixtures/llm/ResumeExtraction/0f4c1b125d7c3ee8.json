@@ -1,0 +1,67 @@
+{
+ "name": "JESSICA HUNTER",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Estradaburgh",
+  "region": "MP",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   10,
+   11
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Software Engineer",
+   "company": "James Inc",
+   "location": "Caitlinland, WV",
+   "dates_text": "06/2023 – Present",
+   "bullet_lines": [
+    [
+     5,
+     7
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "East Williamfort State University",
+   "degree": "PhD",
+   "field": "Computer Science",
+   "dates_text": "2019 – 2023",
+   "grade": "3.89 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Software Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-340924"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Software Optimization System",
+   "description_lines": [
+    [
+     18,
+     18
+    ]
+   ],
+   "technologies": [
+    "FastAPI",
+    "CI/CD Pipelines",
+    "JavaScript (ES6+)"
+   ],
+   "url": "https://github.com/jessicahunter/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

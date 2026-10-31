@@ -1,0 +1,91 @@
+{
+ "name": "Jake Tran",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "New Sarahville",
+  "region": "NM",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Design Systems Lead",
+   "company": "Walton, Ho and Garcia",
+   "location": "Gordonton, TN",
+   "dates_text": "2023-05 – Present",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Senior Product Designer",
+   "company": "Christian-Lewis",
+   "location": "Arnoldville, ID",
+   "dates_text": "02/2019 – May. 2023",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  },
+  {
+   "title": "User Experience Researcher",
+   "company": "Sampson-Bell",
+   "location": "Gutierrezfurt, AL",
+   "dates_text": "2015 – Feb 2019",
+   "bullet_lines": [
+    [
+     21,
+     23
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Kimberlyhaven State University",
+   "degree": "Bachelor of Science",
+   "field": "Human-Computer Interaction / Graphic Design",
+   "dates_text": "Sep. 2011 – May 2015",
+   "grade": "3.70 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Design Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-981723"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Design Optimization System",
+   "description_lines": [
+    [
+     26,
+     26
+    ]
+   ],
+   "technologies": [
+    "Figma",
+    "Information Architecture",
+    "Wireframing & Prototyping"
+   ],
+   "url": "https://github.com/jaketran/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

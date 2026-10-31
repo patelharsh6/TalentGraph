@@ -1,0 +1,67 @@
+{
+ "name": "Carol Bowman",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Robertston",
+  "region": "AK",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Clinical Research Associate",
+   "company": "White, Nichols and King",
+   "location": "Port Jeffreyside, FM",
+   "dates_text": "Jun 2025 – Present",
+   "bullet_lines": [
+    [
+     7,
+     11
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Port Elizabeth State University",
+   "degree": "Master of Science",
+   "field": "Health Informatics / Biology",
+   "dates_text": "09/2021 – 2025",
+   "grade": "3.89 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Healthcare Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-308328"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Healthcare Optimization System",
+   "description_lines": [
+    [
+     21,
+     21
+    ]
+   ],
+   "technologies": [
+    "Epic Systems",
+    "Health Informatics",
+    "HIPAA Compliance"
+   ],
+   "url": "https://github.com/carolbowman/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

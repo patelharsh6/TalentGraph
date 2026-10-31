@@ -1,0 +1,91 @@
+{
+ "name": "Roy Wilson",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Butlerton",
+  "region": "CA",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   16,
+   19
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Operations Lead",
+   "company": "Bryan PLC",
+   "location": "Lake Joseph, HI",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     22,
+     27
+    ]
+   ]
+  },
+  {
+   "title": "Industrial Automation Engineer",
+   "company": "Williams-Franklin",
+   "location": "Thompsontown, ME",
+   "dates_text": "02/2020 – 05/2023",
+   "bullet_lines": [
+    [
+     31,
+     36
+    ]
+   ]
+  },
+  {
+   "title": "Quality Assurance Engineer",
+   "company": "Castro-Wilson",
+   "location": "Carrollland, OK",
+   "dates_text": "Nov 2016 – 02/2020",
+   "bullet_lines": [
+    [
+     40,
+     45
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Davisland State University",
+   "degree": "Bachelor of Arts",
+   "field": "Industrial Engineering",
+   "dates_text": "2012 – May. 2016",
+   "grade": "3.54 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Manufacturing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-663539"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Manufacturing Optimization System",
+   "description_lines": [
+    [
+     49,
+     49
+    ]
+   ],
+   "technologies": [
+    "Supply Chain Management",
+    "Lean Manufacturing",
+    "SolidWorks CAD"
+   ],
+   "url": "https://github.com/roywilson/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

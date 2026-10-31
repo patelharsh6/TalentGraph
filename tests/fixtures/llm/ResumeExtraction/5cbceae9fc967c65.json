@@ -1,0 +1,67 @@
+{
+ "name": "Cody aGrrett",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "West Rachel",
+  "region": "HI",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   28,
+   29
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Data Scientist",
+   "company": "Cooper, Brooks and King",
+   "location": "Murrayfurt, ID",
+   "dates_text": "Oct 2024 – Present",
+   "bullet_lines": [
+    [
+     22,
+     26
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "West Margaret State University",
+   "degree": "Master of Science",
+   "field": "Data Science & Statistics",
+   "dates_text": "2020 – 2024-05",
+   "grade": "3.76 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Data Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-689351"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Data Optimization System",
+   "description_lines": [
+    [
+     18,
+     18
+    ]
+   ],
+   "technologies": [
+    "Pandas",
+    "dbt",
+    "SQL"
+   ],
+   "url": "https://github.com/codygarrett/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

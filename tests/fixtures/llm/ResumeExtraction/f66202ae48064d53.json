@@ -1,0 +1,103 @@
+{
+ "name": "Nicolas Hunt",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Sandrabury",
+  "region": "MH",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Staff Software Architect",
+   "company": "Morales, Myers and Gonzalez",
+   "location": "North Sarah, NV",
+   "dates_text": "07/2023 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  },
+  {
+   "title": "Software Engineer",
+   "company": "James-Miller",
+   "location": "Lake Courtneymouth, NM",
+   "dates_text": "05/2020 – Jul. 2023",
+   "bullet_lines": [
+    [
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "title": "DevOps Engineer",
+   "company": "Patel, Cruz and Hernandez",
+   "location": "Wagnerberg, MP",
+   "dates_text": "May. 2016 – 2020-05",
+   "bullet_lines": [
+    [
+     17,
+     19
+    ]
+   ]
+  },
+  {
+   "title": "Staff Software Architect",
+   "company": "Flores PLC",
+   "location": "South Virginia, AZ",
+   "dates_text": "2012-06 – 05/2016",
+   "bullet_lines": [
+    [
+     22,
+     24
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Erintown State University",
+   "degree": "PhD",
+   "field": "Computer Science",
+   "dates_text": "09/2008 – 2012-05",
+   "grade": "3.92 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Software Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-188771"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Software Optimization System",
+   "description_lines": [
+    [
+     32,
+     32
+    ]
+   ],
+   "technologies": [
+    "PostgreSQL",
+    "Kubernetes (K8s)",
+    "CI/CD Pipelines"
+   ],
+   "url": "https://github.com/nicolashunt/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

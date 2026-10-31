@@ -1,0 +1,91 @@
+{
+ "name": "RANDALL COX",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Hallberg",
+  "region": "ND",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   18,
+   19
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Corporate Finance Lead",
+   "company": "Frank Group",
+   "location": "New Jorge, LA",
+   "dates_text": "09/2023 – Present",
+   "bullet_lines": [
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "title": "Risk Analyst",
+   "company": "Edwards-Miller",
+   "location": "Wagnerberg, OK",
+   "dates_text": "08/2020 – 2023",
+   "bullet_lines": [
+    [
+     10,
+     12
+    ]
+   ]
+  },
+  {
+   "title": "Portfolio Manager",
+   "company": "Chen-Barton",
+   "location": "South Alexis, DE",
+   "dates_text": "2016-08 – Aug. 2020",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Bakerside State University",
+   "degree": "PhD",
+   "field": "Finance & Economics",
+   "dates_text": "2012-09 – May 2016",
+   "grade": "3.53 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Finance Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-255840"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Finance Optimization System",
+   "description_lines": [
+    [
+     24,
+     24
+    ]
+   ],
+   "technologies": [
+    "Bloomberg Terminal",
+    "Advanced Excel",
+    "Financial Analysis"
+   ],
+   "url": "https://github.com/randallcox/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

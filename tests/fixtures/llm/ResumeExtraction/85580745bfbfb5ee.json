@@ -1,0 +1,79 @@
+{
+ "name": "Heather Murray",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Port Andrea",
+  "region": "CA",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior IP Legal Advisor",
+   "company": "Howell Ltd",
+   "location": "Coreyberg, FL",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Legal Compliance Specialist",
+   "company": "Stephens-Owens",
+   "location": "Hernandezfurt, KS",
+   "dates_text": "Apr. 2019 – May. 2023",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Harrisburgh State University",
+   "degree": "Master of Science",
+   "field": "Juris Doctor (JD) / Legal Studies",
+   "dates_text": "Sep. 2015 – May 2019",
+   "grade": "3.90 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Legal Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-143610"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Legal Optimization System",
+   "description_lines": [
+    [
+     21,
+     21
+    ]
+   ],
+   "technologies": [
+    "Legal Research (Westlaw/LexisNexis)",
+    "Intellectual Property (IP) Protection",
+    "Corporate Contract Drafting"
+   ],
+   "url": "https://github.com/heathermurray/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

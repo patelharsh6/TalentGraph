@@ -1,0 +1,67 @@
+{
+ "name": "Hannah Jones",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Douglasmouth",
+  "region": "PA",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Staff Software Architect",
+   "company": "Rogers-Russell",
+   "location": "Thomasport, RI",
+   "dates_text": "Aug 2023 – Present",
+   "bullet_lines": [
+    [
+     7,
+     11
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "East Michealport State University",
+   "degree": "Bachelor of Arts",
+   "field": "Computer Science",
+   "dates_text": "2019 – 2023-05",
+   "grade": "3.54 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Software Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-684056"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Software Optimization System",
+   "description_lines": [
+    [
+     21,
+     21
+    ]
+   ],
+   "technologies": [
+    "Node.js",
+    "React.js",
+    "Redis"
+   ],
+   "url": "https://github.com/hannahjones/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

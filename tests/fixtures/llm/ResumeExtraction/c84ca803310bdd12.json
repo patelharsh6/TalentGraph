@@ -1,0 +1,103 @@
+{
+ "name": "Brandon Blankenship",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Briannafort",
+  "region": "CT",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Healthcare Systems Analyst",
+   "company": "Bailey, Armstrong and Campbell",
+   "location": "Catherineton, GA",
+   "dates_text": "Aug. 2023 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  },
+  {
+   "title": "Clinical Research Associate",
+   "company": "Potts-Price",
+   "location": "Lindaside, OH",
+   "dates_text": "2020 – 2023",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Clinical Research Associate",
+   "company": "Macias, Powell and Vargas",
+   "location": "Alberthaven, VT",
+   "dates_text": "Apr. 2017 – Aug. 2020",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  },
+  {
+   "title": "Health Informatics Specialist",
+   "company": "Sandoval and Sons",
+   "location": "Bradleyview, AR",
+   "dates_text": "2013-03 – 04/2017",
+   "bullet_lines": [
+    [
+     21,
+     23
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Jasminebury State University",
+   "degree": "PhD",
+   "field": "Health Informatics / Biology",
+   "dates_text": "2009-09 – 2013-05",
+   "grade": "3.89 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Healthcare Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-349505"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Healthcare Optimization System",
+   "description_lines": [
+    [
+     31,
+     31
+    ]
+   ],
+   "technologies": [
+    "Python",
+    "Epic Systems",
+    "Cerner"
+   ],
+   "url": "https://github.com/brandonblankenship/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

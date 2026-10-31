@@ -1,0 +1,103 @@
+{
+ "name": "Heather Russell",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Port Carlos",
+  "region": "NE",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   12,
+   12
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Demand Generation Strategist",
+   "company": "Bennett, Jones and Miller",
+   "location": "Craigfort, IN",
+   "dates_text": "May 2023 – Present",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  },
+  {
+   "title": "Digital Marketing Lead",
+   "company": "Guzman LLC",
+   "location": "East Loriport, MP",
+   "dates_text": "Feb. 2019 – 05/2023",
+   "bullet_lines": [
+    [
+     20,
+     22
+    ]
+   ]
+  },
+  {
+   "title": "Senior SEO Specialist",
+   "company": "Myers-Howard",
+   "location": "West Charles, OK",
+   "dates_text": "Dec. 2015 – Feb 2019",
+   "bullet_lines": [
+    [
+     25,
+     27
+    ]
+   ]
+  },
+  {
+   "title": "Digital Marketing Lead",
+   "company": "Castaneda PLC",
+   "location": "Reginaldton, ND",
+   "dates_text": "01/2011 – 2015",
+   "bullet_lines": [
+    [
+     30,
+     32
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "New Thomasview State University",
+   "degree": "Bachelor of Science",
+   "field": "Marketing & Communications",
+   "dates_text": "2007-09 – May. 2011",
+   "grade": "3.89 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Marketing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-428634"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Marketing Optimization System",
+   "description_lines": [
+    [
+     5,
+     5
+    ]
+   ],
+   "technologies": [
+    "Google Analytics 4 (GA4)",
+    "Search Engine Optimization (SEO)",
+    "A/B Testing & CRO"
+   ],
+   "url": "https://github.com/heatherrussell/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

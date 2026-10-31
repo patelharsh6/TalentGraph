@@ -1,0 +1,67 @@
+{
+ "name": "Robert Barrett",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Port Deborah",
+  "region": "GU",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Quality Assurance Engineer",
+   "company": "Johnson, Rice and Hogan",
+   "location": "East Rebecca, NH",
+   "dates_text": "Aug 2024 – Present",
+   "bullet_lines": [
+    [
+     7,
+     10
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Andersonchester State University",
+   "degree": "PhD",
+   "field": "Industrial Engineering",
+   "dates_text": "2020-09 – 05/2024",
+   "grade": "3.78 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Manufacturing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-462072"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Manufacturing Optimization System",
+   "description_lines": [
+    [
+     19,
+     19
+    ]
+   ],
+   "technologies": [
+    "PLC Programming (Siemens/Allen-Bradley)",
+    "SolidWorks CAD",
+    "Six Sigma Green Belt"
+   ],
+   "url": "https://github.com/robertbarrett/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

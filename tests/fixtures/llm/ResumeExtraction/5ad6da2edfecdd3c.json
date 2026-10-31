@@ -1,0 +1,103 @@
+{
+ "name": "SEAN CRAWFORD",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Greenmouth",
+  "region": "AR",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   23,
+   24
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Senior Backend Developer",
+   "company": "Matthews, Willis and Johnson",
+   "location": "North Brandonside, MA",
+   "dates_text": "May. 2023 – Present",
+   "bullet_lines": [
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "title": "Staff Software Architect",
+   "company": "Perez-Smith",
+   "location": "Port Sarah, VT",
+   "dates_text": "06/2020 – 2023-05",
+   "bullet_lines": [
+    [
+     10,
+     12
+    ]
+   ]
+  },
+  {
+   "title": "Senior Backend Developer",
+   "company": "Martin-Padilla",
+   "location": "Alvaradoport, MH",
+   "dates_text": "04/2017 – 06/2020",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  },
+  {
+   "title": "Full Stack Engineer",
+   "company": "Jackson-Phillips",
+   "location": "Jillhaven, WI",
+   "dates_text": "Feb. 2013 – 2017",
+   "bullet_lines": [
+    [
+     20,
+     22
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Christinemouth State University",
+   "degree": "Bachelor of Science",
+   "field": "Computer Science",
+   "dates_text": "Sep 2009 – May. 2013",
+   "grade": "3.59 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Software Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-425611"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Software Optimization System",
+   "description_lines": [
+    [
+     29,
+     29
+    ]
+   ],
+   "technologies": [
+    "GraphQL",
+    "FastAPI",
+    "CI/CD Pipelines"
+   ],
+   "url": "https://github.com/seancrawford/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

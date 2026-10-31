@@ -1,0 +1,67 @@
+{
+ "name": "Julie Perry",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Michaelhaven",
+  "region": "OH",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Backend Developer",
+   "company": "Williams-Jarvis",
+   "location": "Jonesmouth, ID",
+   "dates_text": "Aug. 2024 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Sandraburgh State University",
+   "degree": "Master of Science",
+   "field": "Computer Science",
+   "dates_text": "09/2020 – 05/2024",
+   "grade": "4.00 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Software Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-335428"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Software Optimization System",
+   "description_lines": [
+    [
+     16,
+     16
+    ]
+   ],
+   "technologies": [
+    "Python",
+    "React.js",
+    "Microservices"
+   ],
+   "url": "https://github.com/julieperry/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

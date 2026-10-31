@@ -1,0 +1,103 @@
+{
+ "name": "Jennifer Edwards",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Rebeccaburgh",
+  "region": "MT",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Senior Enterprise Sales Manager",
+   "company": "Townsend Ltd",
+   "location": "Jenniferstad, MA",
+   "dates_text": "Aug. 2023 – Present",
+   "bullet_lines": [
+    [
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "title": "Account Executive",
+   "company": "Garcia PLC",
+   "location": "East Dylan, TX",
+   "dates_text": "2020-07 – Aug 2023",
+   "bullet_lines": [
+    [
+     17,
+     19
+    ]
+   ]
+  },
+  {
+   "title": "Business Development Representative",
+   "company": "Hodge, Manning and Hill",
+   "location": "Prestonshire, RI",
+   "dates_text": "08/2017 – 2020-07",
+   "bullet_lines": [
+    [
+     22,
+     24
+    ]
+   ]
+  },
+  {
+   "title": "Sales Director",
+   "company": "Gonzalez, Carrillo and Simon",
+   "location": "South Tamarashire, OH",
+   "dates_text": "2013-07 – Aug. 2017",
+   "bullet_lines": [
+    [
+     27,
+     29
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Ambermouth State University",
+   "degree": "Master of Science",
+   "field": "Business Administration",
+   "dates_text": "Sep. 2009 – 05/2013",
+   "grade": "3.85 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Sales Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-202110"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Sales Optimization System",
+   "description_lines": [
+    [
+     6,
+     6
+    ]
+   ],
+   "technologies": [
+    "B2B Enterprise Sales",
+    "Salesforce CRM",
+    "HubSpot Sales Hub"
+   ],
+   "url": "https://github.com/jenniferedwards/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

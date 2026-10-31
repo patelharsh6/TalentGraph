@@ -1,0 +1,91 @@
+{
+ "name": "Sarah Evans",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "New Sean",
+  "region": "MD",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Business Operations Lead",
+   "company": "Giles Group",
+   "location": "Jamesmouth, LA",
+   "dates_text": "2023-05 – Present",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Operations Manager",
+   "company": "Willis LLC",
+   "location": "North Brianmouth, OH",
+   "dates_text": "Apr 2020 – 2023",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  },
+  {
+   "title": "Business Operations Lead",
+   "company": "Wood-Stewart",
+   "location": "Piercechester, SD",
+   "dates_text": "Feb 2017 – Apr. 2020",
+   "bullet_lines": [
+    [
+     21,
+     23
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Randallmouth State University",
+   "degree": "Bachelor of Science",
+   "field": "Operations Research / Management",
+   "dates_text": "2013-09 – May. 2017",
+   "grade": "3.88 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Operations Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-317541"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Operations Optimization System",
+   "description_lines": [
+    [
+     26,
+     26
+    ]
+   ],
+   "technologies": [
+    "Agile Scrum Methodology",
+    "Operations Management",
+    "Cross-Functional Leadership"
+   ],
+   "url": "https://github.com/sarahevans/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

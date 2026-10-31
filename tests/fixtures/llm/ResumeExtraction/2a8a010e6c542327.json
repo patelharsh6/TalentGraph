@@ -1,0 +1,67 @@
+{
+ "name": "Joseph Newmna",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "South Nancy",
+  "region": "MD",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Biomedical Data Lead",
+   "company": "Huang Inc",
+   "location": "New Lindsay, NE",
+   "dates_text": "2024-07 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Murphyhaven State University",
+   "degree": "Bachelor of Science",
+   "field": "Health Informatics / Biology",
+   "dates_text": "Sep 2020 – 05/2024",
+   "grade": "3.91 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Healthcare Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-144008"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Healthcare Optimization System",
+   "description_lines": [
+    [
+     16,
+     16
+    ]
+   ],
+   "technologies": [
+    "Clinical Trials Management",
+    "Electronic Health Records (EHR)",
+    "HIPAA Compliance"
+   ],
+   "url": "https://github.com/josephnewman/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

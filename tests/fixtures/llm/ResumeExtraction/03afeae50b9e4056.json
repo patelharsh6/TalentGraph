@@ -1,0 +1,79 @@
+{
+ "name": "Katie Preston",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Gabriellemouth",
+  "region": "HI",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   5
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Director of People Operations",
+   "company": "Wallace LLC",
+   "location": "Murphyborough, MD",
+   "dates_text": "08/2023 – Present",
+   "bullet_lines": [
+    [
+     8,
+     12
+    ]
+   ]
+  },
+  {
+   "title": "Business Operations Lead",
+   "company": "Perez, Burnett and Mueller",
+   "location": "North Williamville, MI",
+   "dates_text": "07/2019 – 2023",
+   "bullet_lines": [
+    [
+     16,
+     20
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Jenningsborough State University",
+   "degree": "Bachelor of Arts",
+   "field": "Operations Research / Management",
+   "dates_text": "09/2015 – 2019",
+   "grade": "3.88 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Operations Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-268393"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Operations Optimization System",
+   "description_lines": [
+    [
+     30,
+     30
+    ]
+   ],
+   "technologies": [
+    "Vendor Management & Procurement",
+    "Operations Management",
+    "Jira & Confluence"
+   ],
+   "url": "https://github.com/katiepreston/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

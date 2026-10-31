@@ -1,0 +1,67 @@
+{
+ "name": "Mark Clark",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Millerfurt",
+  "region": "MI",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Product Designer",
+   "company": "Miller, Pacheco and Anderson",
+   "location": "Ashleyburgh, FL",
+   "dates_text": "Oct 2021 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Darylmouth State University",
+   "degree": "Bachelor of Arts",
+   "field": "Human-Computer Interaction / Graphic Design",
+   "dates_text": "Sep. 2017 – 2021",
+   "grade": "3.96 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Design Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-790138"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Design Optimization System",
+   "description_lines": [
+    [
+     16,
+     16
+    ]
+   ],
+   "technologies": [
+    "UI/UX Design",
+    "Wireframing & Prototyping",
+    "Information Architecture"
+   ],
+   "url": "https://github.com/markclark/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

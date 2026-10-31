@@ -1,0 +1,103 @@
+{
+ "name": "John Edwards",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Joshuachester",
+  "region": "CA",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Risk Analyst",
+   "company": "Scott, James and Mckee",
+   "location": "Bryantview, TX",
+   "dates_text": "2023-08 – Present",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  },
+  {
+   "title": "Risk Analyst",
+   "company": "Bentley-Thomas",
+   "location": "North Crystal, KY",
+   "dates_text": "Jun 2020 – 2023-08",
+   "bullet_lines": [
+    [
+     20,
+     22
+    ]
+   ]
+  },
+  {
+   "title": "Portfolio Manager",
+   "company": "Terry, Lee and Watson",
+   "location": "South Lorraine, MD",
+   "dates_text": "2017 – Jun. 2020",
+   "bullet_lines": [
+    [
+     25,
+     27
+    ]
+   ]
+  },
+  {
+   "title": "Portfolio Manager",
+   "company": "Gray-Maynard",
+   "location": "North Joseph, ND",
+   "dates_text": "Feb 2013 – May 2017",
+   "bullet_lines": [
+    [
+     30,
+     32
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Lake Amyland State University",
+   "degree": "Bachelor of Science",
+   "field": "Finance & Economics",
+   "dates_text": "Sep. 2009 – 2013",
+   "grade": "3.83 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Finance Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-405925"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Finance Optimization System",
+   "description_lines": [
+    [
+     11,
+     11
+    ]
+   ],
+   "technologies": [
+    "US GAAP",
+    "SQL",
+    "DCF Valuation"
+   ],
+   "url": "https://github.com/johnedwards/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

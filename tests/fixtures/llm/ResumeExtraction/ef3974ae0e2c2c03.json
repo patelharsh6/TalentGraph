@@ -1,0 +1,79 @@
+{
+ "name": "Nathan Mcneil",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Lake Barbara",
+  "region": "AL",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Senior SEO Specialist",
+   "company": "Cervantes-Smith",
+   "location": "Wayneville, UT",
+   "dates_text": "Jun. 2023 – Present",
+   "bullet_lines": [
+    [
+     13,
+     15
+    ]
+   ]
+  },
+  {
+   "title": "Growth Marketing Manager",
+   "company": "Banks-Bryant",
+   "location": "Bellside, NE",
+   "dates_text": "Jun. 2019 – 06/2023",
+   "bullet_lines": [
+    [
+     18,
+     20
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Danielburgh State University",
+   "degree": "PhD",
+   "field": "Marketing & Communications",
+   "dates_text": "09/2015 – 2019",
+   "grade": "3.77 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Marketing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-270495"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Marketing Optimization System",
+   "description_lines": [
+    [
+     7,
+     7
+    ]
+   ],
+   "technologies": [
+    "A/B Testing & CRO",
+    "Google Analytics 4 (GA4)",
+    "Email Marketing Campaigns"
+   ],
+   "url": "https://github.com/nathanmcneil/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

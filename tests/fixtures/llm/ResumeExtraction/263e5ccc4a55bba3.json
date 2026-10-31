@@ -1,0 +1,103 @@
+{
+ "name": "PATIRCIA WILSON",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Tinamouth",
+  "region": "NJ",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Account Executive",
+   "company": "Gibson LLC",
+   "location": "East Justin, VA",
+   "dates_text": "2022-05 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  },
+  {
+   "title": "Business Development Representative",
+   "company": "Mccarty Group",
+   "location": "Nicolestad, WA",
+   "dates_text": "2018 – May. 2022",
+   "bullet_lines": [
+    [
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "title": "Senior Enterprise Sales Manager",
+   "company": "Reynolds LLC",
+   "location": "North Steve, VT",
+   "dates_text": "2014 – May 2018",
+   "bullet_lines": [
+    [
+     17,
+     19
+    ]
+   ]
+  },
+  {
+   "title": "Sales Director",
+   "company": "Christian, Archer and Martinez",
+   "location": "Jaredfurt, MT",
+   "dates_text": "Feb 2010 – 2014",
+   "bullet_lines": [
+    [
+     22,
+     24
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Murraymouth State University",
+   "degree": "Master of Science",
+   "field": "Business Administration",
+   "dates_text": "Sep 2006 – May. 2010",
+   "grade": "3.59 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Sales Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-295454"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Sales Optimization System",
+   "description_lines": [
+    [
+     33,
+     33
+    ]
+   ],
+   "technologies": [
+    "HubSpot Sales Hub",
+    "Lead Prospecting",
+    "Sales Pipeline Management"
+   ],
+   "url": "https://github.com/patriciawilson/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

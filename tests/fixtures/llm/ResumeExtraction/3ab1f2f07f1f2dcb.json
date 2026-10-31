@@ -1,0 +1,103 @@
+{
+ "name": "Deborah Hutchinson",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Nashbury",
+  "region": "MS",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   4,
+   5
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Analytics Engineer",
+   "company": "Caldwell-Bailey",
+   "location": "Daymouth, CT",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     15,
+     19
+    ]
+   ]
+  },
+  {
+   "title": "Data Engineer",
+   "company": "White Inc",
+   "location": "Tateborough, MO",
+   "dates_text": "Apr. 2020 – 2023-07",
+   "bullet_lines": [
+    [
+     23,
+     26
+    ]
+   ]
+  },
+  {
+   "title": "Data Scientist",
+   "company": "Brown-Peterson",
+   "location": "Lewisfort, DE",
+   "dates_text": "May. 2017 – Apr 2020",
+   "bullet_lines": [
+    [
+     30,
+     34
+    ]
+   ]
+  },
+  {
+   "title": "Senior Machine Learning Engineer",
+   "company": "Gibson-Gardner",
+   "location": "Thomasborough, MD",
+   "dates_text": "Jun. 2013 – 05/2017",
+   "bullet_lines": [
+    [
+     38,
+     42
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "New Kimton State University",
+   "degree": "Master of Science",
+   "field": "Data Science & Statistics",
+   "dates_text": "Sep 2009 – 2013",
+   "grade": "3.94 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Data Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-645980"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Data Optimization System",
+   "description_lines": [
+    [
+     8,
+     8
+    ]
+   ],
+   "technologies": [
+    "Pandas",
+    "Data Visualization",
+    "Apache Spark (PySpark)"
+   ],
+   "url": "https://github.com/deborahhutchinson/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

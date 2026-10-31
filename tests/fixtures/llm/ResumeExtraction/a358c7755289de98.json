@@ -1,0 +1,67 @@
+{
+ "name": "Laura Lynch",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Mcdonaldton",
+  "region": "MN",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   13,
+   15
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Corporate Finance Lead",
+   "company": "Hernandez-Hensley",
+   "location": "Richardsbury, GU",
+   "dates_text": "2025-06 – Present",
+   "bullet_lines": [
+    [
+     18,
+     22
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Christophermouth State University",
+   "degree": "PhD",
+   "field": "Finance & Economics",
+   "dates_text": "Sep. 2021 – May. 2025",
+   "grade": "3.59 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Finance Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-643761"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Finance Optimization System",
+   "description_lines": [
+    [
+     26,
+     26
+    ]
+   ],
+   "technologies": [
+    "US GAAP",
+    "SQL",
+    "Stakeholder Management"
+   ],
+   "url": "https://github.com/lauralynch/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

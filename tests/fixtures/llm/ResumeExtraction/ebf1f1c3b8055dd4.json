@@ -1,0 +1,79 @@
+{
+ "name": "Lisa Booker",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "New Cherylport",
+  "region": "CA",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Digital Marketing Lead",
+   "company": "Daniels Ltd",
+   "location": "East Veronicamouth, FM",
+   "dates_text": "2022-07 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  },
+  {
+   "title": "Demand Generation Strategist",
+   "company": "Jensen, Thompson and Gardner",
+   "location": "Kathleenbury, PW",
+   "dates_text": "2018 – 07/2022",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Ginamouth State University",
+   "degree": "PhD",
+   "field": "Marketing & Communications",
+   "dates_text": "2014-09 – May 2018",
+   "grade": "3.58 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Marketing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-696337"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Marketing Optimization System",
+   "description_lines": [
+    [
+     21,
+     21
+    ]
+   ],
+   "technologies": [
+    "Growth Marketing",
+    "Copywriting",
+    "A/B Testing & CRO"
+   ],
+   "url": "https://github.com/lisabooker/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

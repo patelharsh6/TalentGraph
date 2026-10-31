@@ -1,0 +1,67 @@
+{
+ "name": "Stephanie Ortiz",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "North Toddhaven",
+  "region": "HI",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   15,
+   17
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Account Executive",
+   "company": "Barker Ltd",
+   "location": "Allenberg, MT",
+   "dates_text": "2024-07 – Present",
+   "bullet_lines": [
+    [
+     20,
+     25
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "South Shellyside State University",
+   "degree": "PhD",
+   "field": "Business Administration",
+   "dates_text": "09/2020 – May 2024",
+   "grade": "3.71 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Sales Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-594601"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Sales Optimization System",
+   "description_lines": [
+    [
+     29,
+     29
+    ]
+   ],
+   "technologies": [
+    "Client Relationship Building",
+    "Salesforce CRM",
+    "Lead Prospecting"
+   ],
+   "url": "https://github.com/stephanieortiz/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

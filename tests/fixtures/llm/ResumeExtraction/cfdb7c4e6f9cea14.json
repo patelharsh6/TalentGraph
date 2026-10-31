@@ -1,0 +1,67 @@
+{
+ "name": "JOSE YORK",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Prestonfurt",
+  "region": "OK",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Industrial Automation Engineer",
+   "company": "Smith-Clayton",
+   "location": "North Jeffreychester, FL",
+   "dates_text": "2024-05 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Melissashire State University",
+   "degree": "Master of Science",
+   "field": "Industrial Engineering",
+   "dates_text": "Sep 2020 – 2024",
+   "grade": "3.51 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Manufacturing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-983825"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Manufacturing Optimization System",
+   "description_lines": [
+    [
+     18,
+     18
+    ]
+   ],
+   "technologies": [
+    "Supply Chain Management",
+    "Embedded C",
+    "Six Sigma Green Belt"
+   ],
+   "url": "https://github.com/joseyork/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

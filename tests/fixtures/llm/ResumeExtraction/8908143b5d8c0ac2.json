@@ -1,0 +1,72 @@
+{
+ "name": "Steven Gordon",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Port Jennifer",
+  "region": "NY",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   6,
+   6
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Business Operations Lead",
+   "company": "Gay, Franklin and Mills",
+   "location": "Sethberg, MA",
+   "dates_text": "Oct 2023 – Present",
+   "bullet_lines": [
+    [
+     9,
+     11
+    ]
+   ]
+  },
+  {
+   "title": "Director of People Operations",
+   "company": "Ward-Chase",
+   "location": "Williamsfurt, IA",
+   "dates_text": "2020-08 – 2023-10",
+   "bullet_lines": [
+    [
+     14,
+     16
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "New Catherine State University",
+   "degree": "Bachelor of Arts",
+   "field": "Operations Research / Management",
+   "dates_text": "2016 – May 2020",
+   "grade": "3.87 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [],
+ "projects": [
+  {
+   "name": "Operations Optimization System",
+   "description_lines": [
+    [
+     19,
+     19
+    ]
+   ],
+   "technologies": [
+    "Budgeting & Cost Reduction",
+    "OKRs / KPIs Tracking",
+    "Process Optimization"
+   ],
+   "url": "https://github.com/stevengordon/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

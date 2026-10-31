@@ -1,0 +1,96 @@
+{
+ "name": "Deborah Wood",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Lake Michael",
+  "region": "UT",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   37,
+   39
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Corporate Counsel",
+   "company": "Bray, Nicholson and Walker",
+   "location": "Audreyton, NH",
+   "dates_text": "2022-06 – Present",
+   "bullet_lines": [
+    [
+     7,
+     11
+    ]
+   ]
+  },
+  {
+   "title": "Corporate Counsel",
+   "company": "Kim, Garza and Brown",
+   "location": "North Ann, OH",
+   "dates_text": "2018-03 – 2022",
+   "bullet_lines": [
+    [
+     15,
+     19
+    ]
+   ]
+  },
+  {
+   "title": "Legal Compliance Specialist",
+   "company": "Brown, Bailey and Dillon",
+   "location": "North Evelyn, CA",
+   "dates_text": "2014 – 2018",
+   "bullet_lines": [
+    [
+     23,
+     27
+    ]
+   ]
+  },
+  {
+   "title": "Corporate Counsel",
+   "company": "Hill, King and Mosley",
+   "location": "Lake Carlachester, VT",
+   "dates_text": "Mar 2010 – 02/2014",
+   "bullet_lines": [
+    [
+     31,
+     35
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "South Jason State University",
+   "degree": "Bachelor of Science",
+   "field": "Juris Doctor (JD) / Legal Studies",
+   "dates_text": "Sep 2006 – 2010-05",
+   "grade": "3.90 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [],
+ "projects": [
+  {
+   "name": "Legal Optimization System",
+   "description_lines": [
+    [
+     42,
+     42
+    ]
+   ],
+   "technologies": [
+    "M&A Due Diligence",
+    "Legal Research (Westlaw/LexisNexis)",
+    "Intellectual Property (IP) Protection"
+   ],
+   "url": "https://github.com/deborahwood/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

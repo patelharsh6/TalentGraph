@@ -1,0 +1,79 @@
+{
+ "name": "Lynn King",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Ramirezchester",
+  "region": "TN",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Biomedical Data Lead",
+   "company": "Lopez, Austin and Buchanan",
+   "location": "Jamesstad, VT",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  },
+  {
+   "title": "Healthcare Systems Analyst",
+   "company": "Tran, Harris and Ford",
+   "location": "North Jenny, FM",
+   "dates_text": "09/2020 – Oct 2023",
+   "bullet_lines": [
+    [
+     20,
+     22
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Danielleborough State University",
+   "degree": "Master of Science",
+   "field": "Health Informatics / Biology",
+   "dates_text": "2016-09 – 2020",
+   "grade": "3.67 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Healthcare Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-877301"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Healthcare Optimization System",
+   "description_lines": [
+    [
+     11,
+     11
+    ]
+   ],
+   "technologies": [
+    "Electronic Health Records (EHR)",
+    "Clinical Trials Management",
+    "HL7 FHIR Protocols"
+   ],
+   "url": "https://github.com/lynnking/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

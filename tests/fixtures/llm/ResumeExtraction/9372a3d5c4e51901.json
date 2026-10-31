@@ -1,0 +1,62 @@
+{
+ "name": "Katrina Simpsno",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "West Warren",
+  "region": "MD",
+  "country": null
+ },
+ "summary_lines": [],
+ "experience": [
+  {
+   "title": "Financial Analyst",
+   "company": "Kennedy, Cohen and Pennington",
+   "location": "New Emily, MD",
+   "dates_text": "2022-07 – Present",
+   "bullet_lines": [
+    [
+     5,
+     7
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "East Katie State University",
+   "degree": "Bachelor of Science",
+   "field": "Finance & Economics",
+   "dates_text": "Sep 2018 – 2022",
+   "grade": "3.73 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Finance Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-586758"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Finance Optimization System",
+   "description_lines": [
+    [
+     15,
+     15
+    ]
+   ],
+   "technologies": [
+    "DCF Valuation",
+    "Corporate Finance",
+    "Financial Modeling"
+   ],
+   "url": "https://github.com/katrinasimpson/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

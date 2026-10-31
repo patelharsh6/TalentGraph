@@ -1,0 +1,91 @@
+{
+ "name": "Jane Neal",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Edwardschester",
+  "region": "VT",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Industrial Automation Engineer",
+   "company": "Martinez, Robertson and Green",
+   "location": "Carolfurt, NM",
+   "dates_text": "2023-08 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  },
+  {
+   "title": "Supply Chain Analyst",
+   "company": "Williams PLC",
+   "location": "Lindsayport, NC",
+   "dates_text": "Apr. 2020 – Aug 2023",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Operations Lead",
+   "company": "Wright, Williams and Knapp",
+   "location": "Flemingview, WY",
+   "dates_text": "Dec. 2017 – 04/2020",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Reynoldschester State University",
+   "degree": "Bachelor of Science",
+   "field": "Industrial Engineering",
+   "dates_text": "2013 – 2017-05",
+   "grade": "3.62 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Manufacturing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-714825"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Manufacturing Optimization System",
+   "description_lines": [
+    [
+     26,
+     26
+    ]
+   ],
+   "technologies": [
+    "SolidWorks CAD",
+    "SCADA Systems",
+    "Supply Chain Management"
+   ],
+   "url": "https://github.com/janeneal/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

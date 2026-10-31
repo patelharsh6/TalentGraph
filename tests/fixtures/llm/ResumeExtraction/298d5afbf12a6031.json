@@ -1,0 +1,67 @@
+{
+ "name": "Joseph Crawford",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Samanthafort",
+  "region": "NY",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   4,
+   5
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Portfolio Manager",
+   "company": "Hughes-Pitts",
+   "location": "South Matthew, UT",
+   "dates_text": "2022 – Present",
+   "bullet_lines": [
+    [
+     8,
+     10
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Hesterside State University",
+   "degree": "PhD",
+   "field": "Finance & Economics",
+   "dates_text": "2018-09 – May 2022",
+   "grade": "3.62 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Finance Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-149866"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Finance Optimization System",
+   "description_lines": [
+    [
+     19,
+     19
+    ]
+   ],
+   "technologies": [
+    "IFRS Standards",
+    "Corporate Finance",
+    "US GAAP"
+   ],
+   "url": "https://github.com/josephcrawford/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

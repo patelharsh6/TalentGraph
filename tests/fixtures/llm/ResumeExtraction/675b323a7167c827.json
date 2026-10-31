@@ -1,0 +1,91 @@
+{
+ "name": "Austin Rose",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "North Jessica",
+  "region": "IN",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   27,
+   27
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior UI/UX Designer",
+   "company": "Ramirez, Smith and Simpson",
+   "location": "Georgefurt, GA",
+   "dates_text": "2023-10 – Present",
+   "bullet_lines": [
+    [
+     14,
+     16
+    ]
+   ]
+  },
+  {
+   "title": "Senior Product Designer",
+   "company": "Klein Group",
+   "location": "Lake Richard, VI",
+   "dates_text": "07/2020 – Oct. 2023",
+   "bullet_lines": [
+    [
+     19,
+     21
+    ]
+   ]
+  },
+  {
+   "title": "Design Systems Lead",
+   "company": "Powers-Carlson",
+   "location": "Andrewland, WA",
+   "dates_text": "03/2016 – Jul 2020",
+   "bullet_lines": [
+    [
+     24,
+     26
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Hardyfort State University",
+   "degree": "Bachelor of Arts",
+   "field": "Human-Computer Interaction / Graphic Design",
+   "dates_text": "2012 – 05/2016",
+   "grade": "3.83 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Design Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-365852"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Design Optimization System",
+   "description_lines": [
+    [
+     10,
+     10
+    ]
+   ],
+   "technologies": [
+    "Design Systems",
+    "HTML5 / CSS3",
+    "User Research & Usability Testing"
+   ],
+   "url": "https://github.com/austinrose/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

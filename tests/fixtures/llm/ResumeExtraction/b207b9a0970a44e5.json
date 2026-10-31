@@ -1,0 +1,103 @@
+{
+ "name": "Michele Perkins",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Mariaborough",
+  "region": "CT",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   12,
+   12
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Demand Generation Strategist",
+   "company": "Daniel LLC",
+   "location": "Port Robert, VA",
+   "dates_text": "2023-08 – Present",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  },
+  {
+   "title": "Demand Generation Strategist",
+   "company": "Davis, Lindsey and West",
+   "location": "Brandonview, PR",
+   "dates_text": "2020-06 – 2023-08",
+   "bullet_lines": [
+    [
+     20,
+     22
+    ]
+   ]
+  },
+  {
+   "title": "Demand Generation Strategist",
+   "company": "Terry Ltd",
+   "location": "West Stephanieland, AZ",
+   "dates_text": "Jul 2017 – 06/2020",
+   "bullet_lines": [
+    [
+     25,
+     27
+    ]
+   ]
+  },
+  {
+   "title": "Demand Generation Strategist",
+   "company": "Thompson-Reyes",
+   "location": "Lake Brittanyfort, OH",
+   "dates_text": "Mar 2013 – 07/2017",
+   "bullet_lines": [
+    [
+     30,
+     32
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "New Jessicaberg State University",
+   "degree": "PhD",
+   "field": "Marketing & Communications",
+   "dates_text": "2009 – 2013-05",
+   "grade": "3.64 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Marketing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-266004"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Marketing Optimization System",
+   "description_lines": [
+    [
+     10,
+     10
+    ]
+   ],
+   "technologies": [
+    "Content Strategy",
+    "Copywriting",
+    "A/B Testing & CRO"
+   ],
+   "url": "https://github.com/micheleperkins/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

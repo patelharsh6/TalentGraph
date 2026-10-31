@@ -1,0 +1,67 @@
+{
+ "name": "aCrly Ellis",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Mcculloughland",
+  "region": "NY",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Operations Manager",
+   "company": "Reid-Ware",
+   "location": "Thompsonmouth, CT",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "South Andrea State University",
+   "degree": "PhD",
+   "field": "Operations Research / Management",
+   "dates_text": "Sep. 2019 – May. 2023",
+   "grade": "3.99 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Operations Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-997728"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Operations Optimization System",
+   "description_lines": [
+    [
+     18,
+     18
+    ]
+   ],
+   "technologies": [
+    "OKRs / KPIs Tracking",
+    "Budgeting & Cost Reduction",
+    "Cross-Functional Leadership"
+   ],
+   "url": "https://github.com/carlyellis/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

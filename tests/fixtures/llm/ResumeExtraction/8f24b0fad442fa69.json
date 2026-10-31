@@ -1,0 +1,91 @@
+{
+ "name": "Shannon Ramirez",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "North Karinaberg",
+  "region": "FL",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   11,
+   11
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Health Informatics Specialist",
+   "company": "Carson-Duran",
+   "location": "South Kristie, SD",
+   "dates_text": "Jul. 2023 – Present",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  },
+  {
+   "title": "Biomedical Data Lead",
+   "company": "Myers-Lee",
+   "location": "Chadview, DC",
+   "dates_text": "Jun. 2019 – Jul. 2023",
+   "bullet_lines": [
+    [
+     20,
+     22
+    ]
+   ]
+  },
+  {
+   "title": "Clinical Research Associate",
+   "company": "Martinez-Singh",
+   "location": "East Scott, TX",
+   "dates_text": "2015-02 – Jun 2019",
+   "bullet_lines": [
+    [
+     25,
+     27
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Kathleentown State University",
+   "degree": "PhD",
+   "field": "Health Informatics / Biology",
+   "dates_text": "Sep 2011 – 05/2015",
+   "grade": "3.51 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Healthcare Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-308665"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Healthcare Optimization System",
+   "description_lines": [
+    [
+     5,
+     5
+    ]
+   ],
+   "technologies": [
+    "Health Informatics",
+    "Electronic Health Records (EHR)",
+    "R Language"
+   ],
+   "url": "https://github.com/shannonramirez/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

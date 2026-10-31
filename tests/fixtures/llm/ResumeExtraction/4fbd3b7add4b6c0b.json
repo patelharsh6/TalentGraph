@@ -1,0 +1,79 @@
+{
+ "name": "Jenna Watson",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "New Christinastad",
+  "region": "WI",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Senior Product Designer",
+   "company": "Wolf, Jordan and Kelley",
+   "location": "Angelafurt, ND",
+   "dates_text": "2023-10 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  },
+  {
+   "title": "User Experience Researcher",
+   "company": "Bradley, Howell and Moore",
+   "location": "Gloverhaven, IN",
+   "dates_text": "Aug 2020 – 2023",
+   "bullet_lines": [
+    [
+     12,
+     14
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Granthaven State University",
+   "degree": "PhD",
+   "field": "Human-Computer Interaction / Graphic Design",
+   "dates_text": "2016 – 2020",
+   "grade": "3.70 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Design Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-411166"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Design Optimization System",
+   "description_lines": [
+    [
+     22,
+     22
+    ]
+   ],
+   "technologies": [
+    "Information Architecture",
+    "Adobe XD",
+    "Wireframing & Prototyping"
+   ],
+   "url": "https://github.com/jennawatson/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

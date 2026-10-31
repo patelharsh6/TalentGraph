@@ -1,0 +1,67 @@
+{
+ "name": "Catherine Reynolds",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Arianachester",
+  "region": "CT",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   18,
+   20
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Account Executive",
+   "company": "Gordon and Sons",
+   "location": "Martinside, CO",
+   "dates_text": "2022 – Present",
+   "bullet_lines": [
+    [
+     23,
+     27
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Ashleymouth State University",
+   "degree": "PhD",
+   "field": "Business Administration",
+   "dates_text": "Sep. 2018 – 2022",
+   "grade": "3.77 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Sales Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-513188"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Sales Optimization System",
+   "description_lines": [
+    [
+     31,
+     31
+    ]
+   ],
+   "technologies": [
+    "Salesforce CRM",
+    "Client Relationship Building",
+    "Lead Prospecting"
+   ],
+   "url": "https://github.com/catherinereynolds/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

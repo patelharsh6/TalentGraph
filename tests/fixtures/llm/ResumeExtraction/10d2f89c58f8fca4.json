@@ -1,0 +1,67 @@
+{
+ "name": "Tyler Anderson",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Justinhaven",
+  "region": "NC",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   8,
+   8
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Operations Lead",
+   "company": "Reyes, Willis and Carney",
+   "location": "Thomasbury, NE",
+   "dates_text": "2024 – Present",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Nolanmouth State University",
+   "degree": "Bachelor of Science",
+   "field": "Industrial Engineering",
+   "dates_text": "Sep 2020 – 2024",
+   "grade": "3.72 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Manufacturing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-492505"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Manufacturing Optimization System",
+   "description_lines": [
+    [
+     16,
+     16
+    ]
+   ],
+   "technologies": [
+    "PLC Programming (Siemens/Allen-Bradley)",
+    "Embedded C",
+    "Lean Manufacturing"
+   ],
+   "url": "https://github.com/tyleranderson/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "name": "Curtis Miller",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Perezstad",
+  "region": "MA",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   3
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior User Experience Researcher",
+   "company": "Byrd Ltd",
+   "location": "Jonathantown, DC",
+   "dates_text": "2021 – Present",
+   "bullet_lines": [
+    [
+     6,
+     8
+    ]
+   ]
+  },
+  {
+   "title": "Senior Product Designer",
+   "company": "May Group",
+   "location": "Shafferton, MP",
+   "dates_text": "Jun. 2016 – 10/2021",
+   "bullet_lines": [
+    [
+     11,
+     13
+    ]
+   ]
+  },
+  {
+   "title": "Design Systems Lead",
+   "company": "Brown, Mayo and Brooks",
+   "location": "Forbeshaven, VI",
+   "dates_text": "Feb 2011 – 2016-06",
+   "bullet_lines": [
+    [
+     16,
+     18
+    ]
+   ]
+  },
+  {
+   "title": "Design Systems Lead",
+   "company": "Tyler-Vasquez",
+   "location": "Cynthialand, OK",
+   "dates_text": "2006-03 – 02/2011",
+   "bullet_lines": [
+    [
+     21,
+     23
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "New Kimberlyside State University",
+   "degree": "Bachelor of Science",
+   "field": "Human-Computer Interaction / Graphic Design",
+   "dates_text": "2002-09 – 2006-05",
+   "grade": "3.57 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Design Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023-06",
+   "credential_id": "CERT-561801"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Design Optimization System",
+   "description_lines": [
+    [
+     31,
+     31
+    ]
+   ],
+   "technologies": [
+    "Design Systems",
+    "Design Thinking",
+    "User Research & Usability Testing"
+   ],
+   "url": "https://github.com/curtismiller/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

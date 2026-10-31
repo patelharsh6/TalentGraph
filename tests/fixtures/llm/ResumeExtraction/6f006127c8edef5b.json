@@ -1,0 +1,67 @@
+{
+ "name": "SEAN ARELLANO",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Lindsayfort",
+  "region": "WI",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Machine Learning Engineer",
+   "company": "Bryant, Davis and Chase",
+   "location": "Bryanstad, NE",
+   "dates_text": "2021 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "New Davidbury State University",
+   "degree": "PhD",
+   "field": "Data Science & Statistics",
+   "dates_text": "2017 – 2021-05",
+   "grade": "3.67 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Data Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun 2023",
+   "credential_id": "CERT-190047"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Data Optimization System",
+   "description_lines": [
+    [
+     17,
+     17
+    ]
+   ],
+   "technologies": [
+    "Apache Spark (PySpark)",
+    "Apache Airflow",
+    "Snowflake"
+   ],
+   "url": "https://github.com/seanarellano/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

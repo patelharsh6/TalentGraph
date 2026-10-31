@@ -1,0 +1,103 @@
+{
+ "name": "Madeline Rogers",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "South Lisafurt",
+  "region": "AL",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   4,
+   5
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Growth Marketing Manager",
+   "company": "Lopez LLC",
+   "location": "Gibsonside, OR",
+   "dates_text": "Jun. 2023 – Present",
+   "bullet_lines": [
+    [
+     10,
+     12
+    ]
+   ]
+  },
+  {
+   "title": "Growth Marketing Manager",
+   "company": "Dixon-Fisher",
+   "location": "Brentchester, SC",
+   "dates_text": "Apr. 2020 – Jun 2023",
+   "bullet_lines": [
+    [
+     15,
+     17
+    ]
+   ]
+  },
+  {
+   "title": "Demand Generation Strategist",
+   "company": "Larson-Alvarez",
+   "location": "Edwardsberg, HI",
+   "dates_text": "2017-12 – Apr. 2020",
+   "bullet_lines": [
+    [
+     20,
+     23
+    ]
+   ]
+  },
+  {
+   "title": "Senior SEO Specialist",
+   "company": "Ward Inc",
+   "location": "Port Chadville, OH",
+   "dates_text": "12/2013 – 12/2017",
+   "bullet_lines": [
+    [
+     26,
+     28
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Davidville State University",
+   "degree": "Bachelor of Arts",
+   "field": "Marketing & Communications",
+   "dates_text": "09/2009 – May. 2013",
+   "grade": "3.95 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Marketing Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-570267"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Marketing Optimization System",
+   "description_lines": [
+    [
+     31,
+     31
+    ]
+   ],
+   "technologies": [
+    "Copywriting",
+    "HubSpot",
+    "Growth Marketing"
+   ],
+   "url": "https://github.com/madelinerogers/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "name": "Nicholas Calhoun",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Spencerburgh",
+  "region": "MN",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "IP Legal Advisor",
+   "company": "Gould-Thompson",
+   "location": "North Emily, UT",
+   "dates_text": "Jul 2024 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "New Mark State University",
+   "degree": "PhD",
+   "field": "Juris Doctor (JD) / Legal Studies",
+   "dates_text": "09/2020 – 2024",
+   "grade": "3.86 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Legal Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "2023",
+   "credential_id": "CERT-456349"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Legal Optimization System",
+   "description_lines": [
+    [
+     18,
+     18
+    ]
+   ],
+   "technologies": [
+    "Intellectual Property (IP) Protection",
+    "Regulatory Compliance",
+    "Corporate Contract Drafting"
+   ],
+   "url": "https://github.com/nicholascalhoun/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

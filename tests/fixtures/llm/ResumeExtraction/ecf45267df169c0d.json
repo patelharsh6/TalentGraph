@@ -1,0 +1,91 @@
+{
+ "name": "Rachel Foley",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Kathyfort",
+  "region": "NY",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   46,
+   49
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior Sales Director",
+   "company": "Peterson LLC",
+   "location": "South Melissa, SC",
+   "dates_text": "2023 – Present",
+   "bullet_lines": [
+    [
+     16,
+     21
+    ]
+   ]
+  },
+  {
+   "title": "Account Executive",
+   "company": "Farmer PLC",
+   "location": "Martinfurt, AK",
+   "dates_text": "Apr. 2020 – 2023-05",
+   "bullet_lines": [
+    [
+     25,
+     30
+    ]
+   ]
+  },
+  {
+   "title": "Sales Director",
+   "company": "Phillips LLC",
+   "location": "Changstad, WI",
+   "dates_text": "2017-03 – 2020",
+   "bullet_lines": [
+    [
+     34,
+     38
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Robertomouth State University",
+   "degree": "Bachelor of Arts",
+   "field": "Business Administration",
+   "dates_text": "2013-09 – May. 2017",
+   "grade": "3.77 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Sales Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "Jun. 2023",
+   "credential_id": "CERT-881156"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Sales Optimization System",
+   "description_lines": [
+    [
+     42,
+     42
+    ]
+   ],
+   "technologies": [
+    "Client Relationship Building",
+    "HubSpot Sales Hub",
+    "Account Management"
+   ],
+   "url": "https://github.com/rachelfoley/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}

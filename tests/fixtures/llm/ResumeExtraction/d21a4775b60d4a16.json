@@ -1,0 +1,103 @@
+{
+ "name": "Jessica Valentine",
+ "email": null,
+ "phone": null,
+ "links": [],
+ "location": {
+  "city": "Smithport",
+  "region": "SC",
+  "country": null
+ },
+ "summary_lines": [
+  [
+   3,
+   4
+  ]
+ ],
+ "experience": [
+  {
+   "title": "Senior EdTech Specialist",
+   "company": "Morgan LLC",
+   "location": "Carrberg, NC",
+   "dates_text": "2023-05 – Present",
+   "bullet_lines": [
+    [
+     7,
+     9
+    ]
+   ]
+  },
+  {
+   "title": "Curriculum Developer",
+   "company": "Peterson-Brooks",
+   "location": "West Annette, NJ",
+   "dates_text": "06/2020 – May. 2023",
+   "bullet_lines": [
+    [
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "title": "Curriculum Developer",
+   "company": "Smith LLC",
+   "location": "Sanchezmouth, UT",
+   "dates_text": "Apr 2017 – Jun. 2020",
+   "bullet_lines": [
+    [
+     17,
+     20
+    ]
+   ]
+  },
+  {
+   "title": "Curriculum Developer",
+   "company": "Kent LLC",
+   "location": "Buchananside, MA",
+   "dates_text": "03/2013 – 2017-04",
+   "bullet_lines": [
+    [
+     23,
+     26
+    ]
+   ]
+  }
+ ],
+ "education": [
+  {
+   "institution": "Hollyberg State University",
+   "degree": "Bachelor of Arts",
+   "field": "Education & Curriculum Design",
+   "dates_text": "Sep. 2009 – May. 2013",
+   "grade": "3.86 GPA"
+  }
+ ],
+ "skills": [],
+ "certifications": [
+  {
+   "name": "Certified Education Professional",
+   "issuer": "Industry Accreditation Board",
+   "date_text": "06/2023",
+   "credential_id": "CERT-703646"
+  }
+ ],
+ "projects": [
+  {
+   "name": "Education Optimization System",
+   "description_lines": [
+    [
+     35,
+     35
+    ]
+   ],
+   "technologies": [
+    "Public Speaking & Lecturing",
+    "Learning Management Systems (LMS)",
+    "Active Mentoring"
+   ],
+   "url": "https://github.com/jessicavalentine/project-showcase",
+   "dates": "2024"
+  }
+ ]
+}
