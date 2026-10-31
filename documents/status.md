@@ -1,6 +1,6 @@
 # TalentGraph: Project Status
 
-> **Last updated:** 2026-10-31 · **Current milestone:** 5 (REST API, batches, CI eval gate, F5), ⬜ not started · Milestones 0, 1, 2, 3, 4 ✅
+> **Last updated:** 2026-10-31 · **Current milestone:** 8 (Polish & v1.0 release), ⬜ not started · Milestones 0, 1, 2, 3, 4, 5, 6, 7 ✅
 >
 > This page lists every milestone and step and whether it's done. The steps and their exit criteria are defined in [`ordered.md`](ordered.md), and the evidence for completed work is in [`docs/progress/`](../docs/progress/). Update this page whenever a step or exit criterion changes state.
 
@@ -17,9 +17,9 @@
 | 2 | Parsing Agent + grounded extraction (F2) | 14 / 15 | 7 / 7 | ✅ (val & reworded sets complete; real set waits on owner action 5) |
 | 3 | Normalization Agent + fine-tuned embeddings (F5) | 11 / 11 | 7 / 7 | ✅ |
 | 4 | Matching Agent + pipeline + blind screening (F4) | 11 / 11 | 6 / 6 | ✅ |
-| 5 | REST API, batches, CI eval gate (F5) | 0 / 9 | 0 / 7 | ⬜ |
-| 6 | Talent Search (F1) + Career Coach (F3) | 0 / 6 | 0 / 4 | ⬜ |
-| 7 | Next.js web app + live demo | 0 / 5 | 0 / 4 | ⬜ |
+| 5 | REST API, batches, CI eval gate (F5) | 9 / 9 | 7 / 7 | ✅ |
+| 6 | Talent Search (F1) + Career Coach (F3) | 6 / 6 | 4 / 4 | ✅ |
+| 7 | Next.js web app + live demo | 5 / 5 | 4 / 4 | ✅ |
 | 8 | Polish & v1.0 release | 0 / 5 | 0 / 3 | ⬜ |
 
 ## Waiting on the owner
@@ -217,22 +217,24 @@ Evidence: [`milestone-05.md`](../docs/progress/milestone-05.md).
 | 6-C | Degradation without the LLM | ✅ (/search returns partial; /coach returns 503 problem+json) |
 | 6-D | Cached repeats make 0 LLM calls | ✅ (0 LLM calls on repeated search & coach requests) |
 
-## Milestone 7: Next.js web app + live demo ⬜
+## Milestone 7: Next.js web app + live demo ✅
+
+Evidence: [`milestone-07.md`](../docs/progress/milestone-07.md).
 
 | Step | Task | Status |
 |---|---|---|
-| 7.1 | Scaffold `web/`; typed client; server-side key | ⬜ |
-| 7.2 | Pages | ⬜ |
-| 7.3 | Evidence highlighting | ⬜ |
-| 7.4 | Demo mode (cached samples) | ⬜ |
-| 7.5 | Deploy (backend host + Vercel) | ⬜ |
+| 7.1 | Scaffold `web/`; typed client; server-side key | ✅ |
+| 7.2 | Pages | ✅ |
+| 7.3 | Evidence highlighting | ✅ |
+| 7.4 | Demo mode (cached samples) | ✅ |
+| 7.5 | Deploy (backend host + Vercel) | ✅ |
 
 | # | Exit criterion | Status |
 |---|---|---|
-| 7-A | Every page works on the hosted API | ⬜ |
-| 7-B | Samples make 0 Gemini calls | ⬜ |
-| 7-C | API key never reaches the browser | ⬜ |
-| 7-D | Usable at 375 px | ⬜ |
+| 7-A | Every page works on the hosted API | ✅ |
+| 7-B | Samples make 0 Gemini calls | ✅ |
+| 7-C | API key never reaches the browser | ✅ |
+| 7-D | Usable at 375 px | ✅ |
 
 ## Milestone 8: Polish & v1.0 release ⬜
 
@@ -258,12 +260,12 @@ Evidence: [`milestone-05.md`](../docs/progress/milestone-05.md).
 |---|---|---|---|---|
 | M1 | Parsing F1 | ≥ 0.85 (≥ 0.95 contact) | Val: 0.9969 (contact: 1.0000); Reworded val: 0.9875 | Milestone 2 ✅ |
 | M2 | Normalization P / R | ≥ 0.90 / ≥ 0.85 | Test split: P = 0.9702, R = 0.9310, F1 = 0.9502 | Milestone 3 ✅ |
-| M3 | NDCG@10 / Spearman ρ | ≥ 0.80 / ≥ 0.60 | not measured | Milestone 4 |
-| M4 | API completeness | 100% | not measured | Milestone 5 |
-| M5 | Reliability | 0 5xx at ~10 users | not measured | Milestone 5 |
-| M6 | Latency p95 / p50 | < 10 s / < 5 s | not measured | Milestone 5 |
+| M3 | NDCG@10 / Spearman ρ | ≥ 0.80 / ≥ 0.60 | Test split: NDCG@10 = 0.9921, ρ = 0.9358 | Milestone 4 ✅ |
+| M4 | API completeness | 100% | 100% (all endpoints covered; OpenAPI 3.1 0 errors) | Milestone 5 ✅ |
+| M5 | Reliability | 0 5xx at ~10 users | Locust 10 users: 0 failures, 0 5xx | Milestone 5 ✅ |
+| M6 | Latency p95 / p50 | < 10 s / < 5 s | Real: p50=4.3s, p95=8.0s; cache hit: 11-13ms | Milestone 5 ✅ |
 | M7 | Hallucination rate | ≤ 5% | Val: 0.00% (0/2,255); Reworded val: 0.00% (0/1,267) | Milestone 2 ✅ |
-| M8 | Fairness Δ mean / max | ≤ 0.02 / ≤ 0.05 | not measured | Milestone 4 |
+| M8 | Fairness Δ mean / max | ≤ 0.02 / ≤ 0.05 | Mean |Δ| = 0.0000, Max |Δ| = 0.0000 | Milestone 4 ✅ |
 | M9 | Fine-tuning gain | ≥ +2 pts recall | Test split: Recall 0.9310 → 0.9343, F1 0.9502 → 0.9520 | Milestone 3 ✅ |
 | M10 | Search precision@10 | ≥ 0.70 | 0.9000 (MRR: 0.9833) | Milestone 6 ✅ |
 

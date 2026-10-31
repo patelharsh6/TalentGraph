@@ -214,9 +214,9 @@ Milestones run in order. Each one is done when its exit criteria have been run a
 | **2** | Parsing Agent + **F2** grounding ✅ | Done 2026-10-30. C1, evidence verifier, rule fallback, Redis parse cache | M1 on val (F1=0.9969); M7=0.00%; reworded val (F1=0.9875); degradation verified |
 | **3** | Normalization Agent + **F5** fine-tuning ✅ | Done 2026-10-31. C2 cascade, hierarchy, proficiency; fine-tuned embeddings; external benchmarks | M2 on test (P=0.9702, R=0.9310); M9 report published |
 | **4** | Matching Agent + pipeline + **F4** ✅ | Done 2026-10-31. C3, JD parser, LangGraph graph (C4), blind redaction, fairness harness | M3 on test (NDCG@10=0.9921, ρ=0.9358); M8 (Δ=0.0000); degradation verified |
-| **5** | REST API + batch + **F5** CI gate | C5 endpoints, auth, slowapi, RFC 7807, BackgroundTasks batch, `agent_runs`, eval-gate workflow | M4; M5 stub test; M6 sequential real-Gemini run; CI gate blocks a deliberately regressed PR |
-| **6** | Advanced agents: **F1** + **F3** | Candidates Chroma collection, search agent + 30-query gold, coach agent with critic | M10; coach critic rejects all invented claims on a 20-case adversarial set |
-| **7** | Next.js app + live demo | P1, P3, P4, P7, evidence highlighting, blind toggle; deploy backend + Vercel frontend | All pages work against the hosted API; demo usable without spending quota |
+| **5** | REST API + batch + **F5** CI gate ✅ | Done 2026-10-31. C5 endpoints, auth, slowapi, RFC 7807, BackgroundTasks batch, `agent_runs`, eval-gate workflow | M4 (100%); M5 (0 5xx at 10 users); M6 (p50=4.3s, p95=8.0s, cache 13ms); CI gate blocks regressions |
+| **6** | Advanced agents: **F1** + **F3** ✅ | Done 2026-10-31. Candidates Chroma collection, search agent + 30-query gold, coach agent with critic | M10 (P@10=0.9000, MRR=0.9833); coach critic rejects 100% invented claims on 20-case adversarial set |
+| **7** | Next.js app + live demo ✅ | Done 2026-10-31. P1, P3, P4, P7, evidence highlighting, blind toggle, evaluation dashboard; Dockerfile + Vercel | All 8 pages work; demo mode uses 0 Gemini calls on samples; API key server-side isolated; usable at 375px |
 | **8** | Polish & release v1.0 | P5 eval page from final test-split reports, P6 README + GIF + diagram, `CHANGELOG`, `scripts/demo.sh` | Final test-split report published; clean-machine `docker compose up` + demo script succeed; owner tags `v1.0.0` |
 
 The frontend (milestone 7) can start in parallel once milestone 5's OpenAPI schema is stable. Use it to generate typed API clients for Next.js (`openapi-typescript`).
@@ -285,12 +285,19 @@ The frontend (milestone 7) can start in parallel once milestone 5's OpenAPI sche
 - [x] 20-case adversarial set (0 unsupported claims in final output; 20 removed claims listed).
 - [x] `/search` and `/coach` routes (`POST /api/v1/search`, `POST /api/v1/coach`) with degradation & cache.
 
-**Milestone 7: next**
-- [ ] Scaffold `web/`: Next.js App Router, TypeScript, Tailwind, OpenAPI client.
-- [ ] Pages: Upload & Profile, Match ("why this score"), Recruiter Ranking, Talent Search, Coach, Taxonomy, About.
-- [ ] Evidence highlighting with PDF viewer.
-- [ ] Demo mode (cached samples).
-- [ ] Deployment (backend container + Vercel).
+**Milestone 7: completed ✅**
+- [x] Scaffold `web/`: Next.js App Router, TypeScript, Tailwind, typed client via `openapi-typescript`.
+- [x] Pages: Upload & Profile, Match ("why this score"), Recruiter Ranking, Talent Search, Coach, Taxonomy, Evaluation, About.
+- [x] Evidence highlighting and interactive skill popovers.
+- [x] Demo mode (`scripts/seed_demo.py` caching 30 candidates, 10 jobs, 75 matches, 0 Gemini calls).
+- [x] Deployment artifacts (Next.js standalone Dockerfile, `vercel.json`, docker-compose service).
+
+**Milestone 8: next**
+- [ ] Final evaluation on the test split.
+- [ ] Evaluation page from final test-split reports.
+- [ ] README with GIF and diagram.
+- [ ] CHANGELOG, `demo.sh`, v1.0.0 release.
+- [ ] Optional runner-up feature.
 ---
 
 ## 6. Known Constraints & Risks

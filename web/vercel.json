@@ -1,0 +1,10 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "env": {
+    "BACKEND_URL": "@talentgraph_backend_url",
+    "TALENTGRAPH_API_KEY": "@talentgraph_api_key"
+  }
+}
+
