@@ -19,6 +19,19 @@ export type CoachRequest = components["schemas"]["CoachRequest"];
 export type SkillSearchItem = components["schemas"]["SkillSearchItem"];
 export type CandidateDetailResponse = components["schemas"]["CandidateDetailResponse"];
 
+// Helper to safely extract string from possible object wrappers
+export function toText(val: any, fallback: string = ""): string {
+  if (val === null || val === undefined) return fallback;
+  if (typeof val === "string") return val;
+  if (typeof val === "number" || typeof val === "boolean") return String(val);
+  if (typeof val === "object") {
+    if ("value" in val && val.value !== null && val.value !== undefined) {
+      return toText(val.value, fallback);
+    }
+  }
+  return fallback;
+}
+
 // Client-side helper calling Next.js route proxy (/api/...)
 async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
   const url = path.startsWith("/") ? path : `/${path}`;
@@ -71,7 +84,14 @@ export const api = {
       quality?: number | null;
     }>
   > {
-    return request("/api/v1/candidates");
+    const rawList = await request<any[]>("/api/v1/candidates");
+    return (rawList || []).map((c) => ({
+      ...c,
+      id: String(c.id || ""),
+      name: toText(c.name, "Candidate"),
+      title: toText(c.title, "Professional"),
+      summary: toText(c.summary, ""),
+    }));
   },
 
   async getCandidate(candidateId: string): Promise<CandidateDetailResponse> {
@@ -87,7 +107,13 @@ export const api = {
       requirements: any;
     }>
   > {
-    return request("/api/v1/jobs");
+    const rawList = await request<any[]>("/api/v1/jobs");
+    return (rawList || []).map((j) => ({
+      ...j,
+      id: String(j.id || ""),
+      title: toText(j.title, "Requisition"),
+      raw_text: toText(j.raw_text, ""),
+    }));
   },
 
   // Match
