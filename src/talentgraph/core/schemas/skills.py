@@ -26,7 +26,9 @@ class NormalizedSkill(BaseModel):
         default="", description="One-line explanation of the proficiency calculation"
     )
 
-    confidence: float = Field(default=1.0, ge=0.0, le=1.0, description="Confidence in normalization")
+    confidence: float = Field(
+        default=1.0, ge=0.0, le=1.0, description="Confidence in normalization"
+    )
     inferred: bool = Field(
         default=False, description="True if inferred via hierarchy/implication rules"
     )

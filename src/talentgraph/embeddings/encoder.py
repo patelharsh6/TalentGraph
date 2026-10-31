@@ -17,7 +17,10 @@ class Encoder:
         from sentence_transformers import SentenceTransformer  # heavy import, keep lazy
 
         self.model_name = model_name
-        self._model: Any = SentenceTransformer(model_name, device="cpu")
+        try:
+            self._model: Any = SentenceTransformer(model_name, device="cpu", local_files_only=True)
+        except Exception:
+            self._model = SentenceTransformer(model_name, device="cpu")
 
     @classmethod
     def get(cls) -> "Encoder":
