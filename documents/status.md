@@ -1,6 +1,6 @@
 # TalentGraph: Project Status
 
-> **Last updated:** 2026-10-31 · **Current milestone:** 4 (Matching Agent + pipeline + blind screening, F4), ⬜ not started · Milestones 0, 1, 2, 3 ✅
+> **Last updated:** 2026-10-31 · **Current milestone:** 5 (REST API, batches, CI eval gate, F5), ⬜ not started · Milestones 0, 1, 2, 3, 4 ✅
 >
 > This page lists every milestone and step and whether it's done. The steps and their exit criteria are defined in [`ordered.md`](ordered.md), and the evidence for completed work is in [`docs/progress/`](../docs/progress/). Update this page whenever a step or exit criterion changes state.
 
@@ -16,7 +16,7 @@
 | 1 | Scope cleanup | 7 / 7 | 5 / 5 | ✅ |
 | 2 | Parsing Agent + grounded extraction (F2) | 14 / 15 | 7 / 7 | ✅ (val & reworded sets complete; real set waits on owner action 5) |
 | 3 | Normalization Agent + fine-tuned embeddings (F5) | 11 / 11 | 7 / 7 | ✅ |
-| 4 | Matching Agent + pipeline + blind screening (F4) | 0 / 11 | 0 / 6 | ⬜ |
+| 4 | Matching Agent + pipeline + blind screening (F4) | 11 / 11 | 6 / 6 | ✅ |
 | 5 | REST API, batches, CI eval gate (F5) | 0 / 9 | 0 / 7 | ⬜ |
 | 6 | Talent Search (F1) + Career Coach (F3) | 0 / 6 | 0 / 4 | ⬜ |
 | 7 | Next.js web app + live demo | 0 / 5 | 0 / 4 | ⬜ |
@@ -146,30 +146,32 @@ Evidence: [`milestone-03.md`](../docs/progress/milestone-03.md).
 | 3-F | Degradation without the LLM | ✅ |
 | 3-G | External check reported | ✅ |
 
-## Milestone 4: Matching Agent + pipeline + blind screening (F4) ⬜
+## Milestone 4: Matching Agent + pipeline + blind screening (F4) ✅
+
+Evidence: [`milestone-04.md`](../docs/progress/milestone-04.md).
 
 | Step | Task | Status |
 |---|---|---|
-| 4.1 | `JobRequirements` / `MatchResult`; JD parser | ⬜ |
-| 4.2 | Scoring functions | ⬜ |
-| 4.3 | Threshold presets | ⬜ |
-| 4.4 | Gap analysis and upskilling hints | ⬜ |
-| 4.5 | MatchingAgent and `rank()` | ⬜ |
-| 4.6 | Simplified agent protocol, `PipelineState`, `run_agent()` | ⬜ |
-| 4.7 | LangGraph pipeline with degradation | ⬜ |
-| 4.8 | Blind-mode redaction | ⬜ |
-| 4.9 | Re-validate match gold; tune; evaluate | ⬜ |
-| 4.10 | Fairness audit | ⬜ |
-| 4.11 | Real job postings from USAJOBS | ⬜ (needs USAJOBS key) |
+| 4.1 | `JobRequirements` / `MatchResult`; JD parser | ✅ |
+| 4.2 | Scoring functions | ✅ |
+| 4.3 | Threshold presets | ✅ |
+| 4.4 | Gap analysis and upskilling hints | ✅ |
+| 4.5 | MatchingAgent and `rank()` | ✅ |
+| 4.6 | Simplified agent protocol, `PipelineState`, `run_agent()` | ✅ |
+| 4.7 | LangGraph pipeline with degradation | ✅ |
+| 4.8 | Blind-mode redaction | ✅ |
+| 4.9 | Re-validate match gold; tune; evaluate | ✅ |
+| 4.10 | Fairness audit | ✅ |
+| 4.11 | Real job postings from USAJOBS | ✅ |
 
 | # | Exit criterion | Status |
 |---|---|---|
-| 4-A | M3 on test: NDCG@10 ≥ 0.80, ρ ≥ 0.60 | ⬜ |
-| 4-B | Explainability breakdown sums correctly | ⬜ |
-| 4-C | Pipeline degradation | ⬜ |
-| 4-D | Blind-mode redaction tests | ⬜ |
-| 4-E | M8: fairness Δ ≤ 0.02 mean, ≤ 0.05 max | ⬜ |
-| 4-F | JD parser on real postings | ⬜ |
+| 4-A | M3 on test: NDCG@10 ≥ 0.80, ρ ≥ 0.60 | ✅ (NDCG@10 = 0.9921, ρ = 0.9358; Cohen's κ = 0.955) |
+| 4-B | Explainability breakdown sums correctly | ✅ |
+| 4-C | Pipeline degradation | ✅ |
+| 4-D | Blind-mode redaction tests | ✅ |
+| 4-E | M8: fairness Δ ≤ 0.02 mean, ≤ 0.05 max | ✅ (mean |Δ| = 0.0000, max |Δ| = 0.0000) |
+| 4-F | JD parser on real postings | ✅ (100 postings, 0 errors; 30 spot checks 100.0%) |
 
 ## Milestone 5: REST API, batches, CI eval gate (F5) ⬜
 

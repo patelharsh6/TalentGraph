@@ -1,8 +1,8 @@
-# Matching weights (plan §6.3). Defaults; tuned on train in Step 4.9.
+# Matching weights (plan §6.3). Tuned on train/val in Step 4.9.
 weights:
-  alpha_skill: 0.70
-  beta_experience: 0.30
-lambda_nice_to_have: 0.35
+  alpha_skill: 0.80
+  beta_experience: 0.20
+lambda_nice_to_have: 0.25
 similarity:
   exact: 1.0
   descendant: 0.9
@@ -12,9 +12,9 @@ depth:
   base: 0.6
   weight: 0.4
 penalty:
-  per_missing_required: 0.10
+  per_missing_required: 0.05
   min_importance: 4
-presets:          # calibrated on val in Step 4.9
+presets:
   precision: 0.75
   balanced: 0.60
   recall: 0.45

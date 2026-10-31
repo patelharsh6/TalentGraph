@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import time
-from typing import TYPE_CHECKING, Any
 
 import structlog
 
@@ -166,6 +165,7 @@ class MatchingAgent:
                 raise ValueError("Missing or invalid 'profile' in payload")
 
             job_data = payload.get("job")
+            job: JobRequirements | str
             if isinstance(job_data, dict):
                 job = JobRequirements.model_validate(job_data)
             elif isinstance(job_data, (str, JobRequirements)):

@@ -11,22 +11,16 @@ from __future__ import annotations
 
 import copy
 import re
-from typing import Any
 
 from talentgraph.core.schemas.resume import (
-    Education,
-    Experience,
     Extracted,
     ParsedResume,
-    Personal,
 )
-from talentgraph.core.schemas.skills import NormalizedSkill, SkillProfile
+from talentgraph.core.schemas.skills import SkillProfile
 
 # --- Redaction Regexes ----------------------------------------------------------------------------
 
-GENDER_PRONOUNS_RE = re.compile(
-    r"\b(he|she|him|her|his|hers|himself|herself)\b", re.IGNORECASE
-)
+GENDER_PRONOUNS_RE = re.compile(r"\b(he|she|him|her|his|hers|himself|herself)\b", re.IGNORECASE)
 
 GENDER_NOUNS_RE = re.compile(
     r"\b(mr|mrs|ms|miss|sir|madam|businesswoman|businessman|"
@@ -36,9 +30,7 @@ GENDER_NOUNS_RE = re.compile(
     re.IGNORECASE,
 )
 
-PHOTO_RE = re.compile(
-    r"\b(photo(?:graph)?|picture|headshot|portrait|avatar)\b", re.IGNORECASE
-)
+PHOTO_RE = re.compile(r"\b(photo(?:graph)?|picture|headshot|portrait|avatar)\b", re.IGNORECASE)
 
 AGE_SIGNALS_RE = re.compile(
     r"\b(\d{1,2}\s*(?:years?\s*old|y/?o)|born\s+in\s+\d{4}|dob\s*[:\s]\s*[\d/.-]+|date\s+of\s+birth\s*[:\s]\s*[\d/.-]+)\b",
@@ -67,7 +59,9 @@ def redact_resume(resume: ParsedResume) -> ParsedResume:
     # 1. Redact Personal Contact
     data["personal"] = {
         "name": Extracted(value="[REDACTED_NAME]", confidence=1.0, evidence=None).model_dump(),
-        "email": Extracted(value="redacted@candidate.local", confidence=1.0, evidence=None).model_dump(),
+        "email": Extracted(
+            value="redacted@candidate.local", confidence=1.0, evidence=None
+        ).model_dump(),
         "phone": Extracted(value="[REDACTED_PHONE]", confidence=1.0, evidence=None).model_dump(),
         "location": None,
         "links": [],

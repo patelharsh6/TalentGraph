@@ -21,6 +21,7 @@ from talentgraph.core.schemas.messages import (
 
 if TYPE_CHECKING:
     from sqlalchemy.ext.asyncio import AsyncSession
+
     from talentgraph.orchestrator.state import PipelineState
 
 log = structlog.get_logger(__name__)
@@ -148,9 +149,8 @@ async def run_agent(
 
         except Exception as exc:
             latency_ms = int((time.perf_counter() - t0) * 1000)
-            is_retryable = (
-                getattr(exc, "retryable", False)
-                or isinstance(exc, (ConnectionError, TimeoutError))
+            is_retryable = getattr(exc, "retryable", False) or isinstance(
+                exc, (ConnectionError, TimeoutError)
             )
             code = getattr(exc, "code", exc.__class__.__name__)
             err = AgentError(
