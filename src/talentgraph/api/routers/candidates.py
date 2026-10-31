@@ -1,6 +1,7 @@
 """Step 5.4: GET /api/v1/candidates/{id} and /skills (plan §8)."""
 
 from datetime import UTC, datetime
+from typing import Any
 from uuid import UUID
 
 import structlog
@@ -8,14 +9,87 @@ from fastapi import APIRouter, Query
 from sqlalchemy import select
 
 from talentgraph.api.schemas import CandidateDetailResponse
+from talentgraph.core.schemas.resume import ParsedResume
 from talentgraph.core.errors import NotFound
 from talentgraph.core.schemas.skills import NormalizedSkill, SkillProfile
-from talentgraph.db.in_memory import get_candidate_in_memory
+from talentgraph.db.in_memory import (
+    get_all_candidates_in_memory,
+    get_candidate_in_memory,
+)
 from talentgraph.db.models import Candidate, CandidateSkill, Skill
 from talentgraph.db.session import async_session_scope
 
 router = APIRouter(tags=["candidates"])
 log = structlog.get_logger(__name__)
+
+
+@router.get(
+    "/candidates",
+    summary="List available candidates",
+)
+async def list_candidates() -> list[dict[str, Any]]:
+    """List loaded candidate profiles from in-memory store or DB."""
+    results: list[dict[str, Any]] = []
+
+    # 1. Check in-memory store first
+    mem_cands = get_all_candidates_in_memory()
+    for mem in mem_cands:
+        if isinstance(mem.parsed, ParsedResume):
+            parsed_dict: dict[str, Any] = mem.parsed.model_dump()
+        elif isinstance(mem.parsed, dict):
+            parsed_dict = mem.parsed
+        else:
+            parsed_dict = {}
+        personal = parsed_dict.get("personal", {})
+        experiences = parsed_dict.get("experience", [])
+        title = experiences[0].get("title", "Candidate") if experiences else "Candidate"
+        top_skills = (
+            [s.name for s in mem.profile.skills[:6]] if mem.profile and mem.profile.skills else []
+        )
+        results.append(
+            {
+                "id": str(mem.id),
+                "name": personal.get("name", "Candidate"),
+                "title": title,
+                "summary": parsed_dict.get("summary", ""),
+                "skills_count": len(mem.profile.skills)
+                if mem.profile and mem.profile.skills
+                else 0,
+                "top_skills": top_skills,
+                "quality": mem.quality,
+            }
+        )
+
+    # 2. If memory was empty, check DB
+    if not results:
+        try:
+            async with async_session_scope() as session:
+                stmt = select(Candidate).limit(50)
+                res = await session.execute(stmt)
+                for cand in res.scalars().all():
+                    parsed_dict = cand.parsed or {}
+                    personal = parsed_dict.get("personal", {})
+                    experiences = parsed_dict.get("experience", [])
+                    title = experiences[0].get("title", "Candidate") if experiences else "Candidate"
+                    results.append(
+                        {
+                            "id": str(cand.id),
+                            "name": personal.get("name", "Candidate"),
+                            "title": title,
+                            "summary": parsed_dict.get("summary", ""),
+                            "skills_count": len(parsed_dict.get("skills", [])),
+                            "top_skills": [
+                                s.get("name")
+                                for s in parsed_dict.get("skills", [])[:6]
+                                if isinstance(s, dict)
+                            ],
+                            "quality": cand.quality,
+                        }
+                    )
+        except Exception as exc:
+            log.debug("candidates.list_db_failed", error=str(exc))
+
+    return results
 
 
 @router.get(

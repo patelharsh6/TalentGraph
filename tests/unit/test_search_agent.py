@@ -64,4 +64,3 @@ async def test_search_agent_cache_exit_criterion_6_d():
 
     assert plan1 == plan2
     assert [h.candidate_id for h in hits1] == [h.candidate_id for h in hits2]
-

@@ -1,0 +1,3091 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "TalentGraph API",
+    "description": "Resume parsing, skill normalization and semantic job matching.",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "health"
+        ],
+        "summary": "Liveness probe",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "type": "object",
+                  "title": "Response Health Health Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/healthz": {
+      "get": {
+        "tags": [
+          "health"
+        ],
+        "summary": "Readiness probe (DB, Redis, Chroma)",
+        "operationId": "ready_healthz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ready": {
+      "get": {
+        "tags": [
+          "health"
+        ],
+        "summary": "Readiness probe (DB, Redis, Chroma)",
+        "operationId": "ready_ready_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/parse": {
+      "post": {
+        "tags": [
+          "parse"
+        ],
+        "summary": "Upload and parse a single resume",
+        "description": "Upload one resume (PDF, DOCX, TXT) and return structured data and skills.",
+        "operationId": "parse_resume_api_v1_parse_post",
+        "parameters": [
+          {
+            "name": "include",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Set to 'trace' to include execution timeline",
+              "title": "Include"
+            },
+            "description": "Set to 'trace' to include execution timeline"
+          },
+          {
+            "name": "X-API-Key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Api-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_parse_resume_api_v1_parse_post"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse_ParseResponseData_"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/parse/batch": {
+      "post": {
+        "tags": [
+          "batch"
+        ],
+        "summary": "Upload and process multiple resumes in the background",
+        "description": "Upload up to 20 resumes for background processing with bounded concurrency (plan \u00a78).",
+        "operationId": "parse_batch_api_v1_parse_batch_post",
+        "parameters": [
+          {
+            "name": "X-API-Key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Api-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_parse_batch_api_v1_parse_batch_post"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BatchUploadResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/jobs": {
+      "get": {
+        "tags": [
+          "jobs"
+        ],
+        "summary": "List available jobs",
+        "description": "List loaded job descriptions.",
+        "operationId": "list_jobs_api_v1_jobs_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Jobs Api V1 Jobs Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/jobs/{batch_job_id}": {
+      "get": {
+        "tags": [
+          "jobs"
+        ],
+        "summary": "Get batch processing progress and per-item status",
+        "description": "Retrieve status, counts, and per-file progress for a background batch job.",
+        "operationId": "get_batch_job_status_api_v1_jobs__batch_job_id__get",
+        "parameters": [
+          {
+            "name": "batch_job_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Batch Job Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BatchStatusResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/candidates": {
+      "get": {
+        "tags": [
+          "candidates"
+        ],
+        "summary": "List available candidates",
+        "description": "List loaded candidate profiles from in-memory store or DB.",
+        "operationId": "list_candidates_api_v1_candidates_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Candidates Api V1 Candidates Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/candidates/{candidate_id}": {
+      "get": {
+        "tags": [
+          "candidates"
+        ],
+        "summary": "Retrieve a parsed candidate by ID",
+        "description": "Retrieve candidate parsed details, quality score, and metadata.",
+        "operationId": "get_candidate_api_v1_candidates__candidate_id__get",
+        "parameters": [
+          {
+            "name": "candidate_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Candidate Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CandidateDetailResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/candidates/{candidate_id}/skills": {
+      "get": {
+        "tags": [
+          "candidates"
+        ],
+        "summary": "Retrieve candidate skill profile with filters",
+        "description": "Retrieve normalized skills for a candidate with optional filtering.",
+        "operationId": "get_candidate_skills_api_v1_candidates__candidate_id__skills_get",
+        "parameters": [
+          {
+            "name": "candidate_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Candidate Id"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Filter by skill type: technical, soft, domain",
+              "title": "Type"
+            },
+            "description": "Filter by skill type: technical, soft, domain"
+          },
+          {
+            "name": "min_proficiency",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "maximum": 5,
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Filter by min proficiency",
+              "title": "Min Proficiency"
+            },
+            "description": "Filter by min proficiency"
+          },
+          {
+            "name": "include_inferred",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Include implied/inferred skills",
+              "default": true,
+              "title": "Include Inferred"
+            },
+            "description": "Include implied/inferred skills"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SkillProfile"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/match": {
+      "post": {
+        "tags": [
+          "match"
+        ],
+        "summary": "Match a candidate against a job",
+        "description": "Score candidate SkillProfile against JobRequirements with explainable breakdown.",
+        "operationId": "match_candidate_api_v1_match_post",
+        "parameters": [
+          {
+            "name": "blind",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Run in blind screening mode",
+              "default": false,
+              "title": "Blind"
+            },
+            "description": "Run in blind screening mode"
+          },
+          {
+            "name": "include",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Set to 'trace' to include execution timeline",
+              "title": "Include"
+            },
+            "description": "Set to 'trace' to include execution timeline"
+          },
+          {
+            "name": "X-API-Key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Api-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MatchRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse_MatchResult_"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/match/rank": {
+      "post": {
+        "tags": [
+          "match"
+        ],
+        "summary": "Rank candidates against a job",
+        "description": "Rank multiple candidates against a job description in descending score order.",
+        "operationId": "rank_candidates_api_v1_match_rank_post",
+        "parameters": [
+          {
+            "name": "blind",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "Run in blind screening mode",
+              "default": false,
+              "title": "Blind"
+            },
+            "description": "Run in blind screening mode"
+          },
+          {
+            "name": "X-API-Key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Api-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RankRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RankResponseData"
+                  },
+                  "title": "Response Rank Candidates Api V1 Match Rank Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/skills/taxonomy": {
+      "get": {
+        "tags": [
+          "skills"
+        ],
+        "summary": "Browse the taxonomy hierarchy",
+        "description": "Browse skills from the taxonomy tree by parent ID or root domains.",
+        "operationId": "get_taxonomy_tree_api_v1_skills_taxonomy_get",
+        "parameters": [
+          {
+            "name": "parent_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Parent skill ID (None for root domains)",
+              "title": "Parent Id"
+            },
+            "description": "Parent skill ID (None for root domains)"
+          },
+          {
+            "name": "depth",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 4,
+              "minimum": 1,
+              "description": "Depth of hierarchy to fetch",
+              "default": 1,
+              "title": "Depth"
+            },
+            "description": "Depth of hierarchy to fetch"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 500,
+              "minimum": 1,
+              "default": 100,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true
+                  },
+                  "title": "Response Get Taxonomy Tree Api V1 Skills Taxonomy Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/skills/search": {
+      "get": {
+        "tags": [
+          "skills"
+        ],
+        "summary": "Search skills by keyword or semantic query",
+        "description": "Search skills across alias exact match, fuzzy matching, and embeddings.",
+        "operationId": "search_skills_api_v1_skills_search_get",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Search query string",
+              "title": "Q"
+            },
+            "description": "Search query string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 20,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SkillSearchItem"
+                  },
+                  "title": "Response Search Skills Api V1 Skills Search Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/skills/{skill_id_or_slug}": {
+      "get": {
+        "tags": [
+          "skills"
+        ],
+        "summary": "Get skill details by ID or slug",
+        "description": "Retrieve skill information with full ancestor path, children, aliases, and relations.",
+        "operationId": "get_skill_detail_api_v1_skills__skill_id_or_slug__get",
+        "parameters": [
+          {
+            "name": "skill_id_or_slug",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Skill Id Or Slug"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SkillDetailResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/search": {
+      "post": {
+        "tags": [
+          "search"
+        ],
+        "summary": "Natural language talent search",
+        "description": "Retrieve ranked candidates matching a natural language query with citations.",
+        "operationId": "search_candidates_api_v1_search_post",
+        "parameters": [
+          {
+            "name": "X-API-Key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Api-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse_SearchResponseData_"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/coach": {
+      "post": {
+        "tags": [
+          "coach"
+        ],
+        "summary": "Career Coach report",
+        "description": "Generate personalized learning plan, interview prep, and factual resume rewrites.",
+        "operationId": "generate_coach_report_api_v1_coach_post",
+        "parameters": [
+          {
+            "name": "X-API-Key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Api-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CoachRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse_CoachReport_"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/eval/summary": {
+      "get": {
+        "tags": [
+          "evaluation"
+        ],
+        "summary": "Retrieve aggregated evaluation benchmark metrics (M1-M10)",
+        "description": "Return consolidated metrics M1-M10 for the Evaluation Dashboard.",
+        "operationId": "get_eval_summary_api_v1_eval_summary_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Get Eval Summary Api V1 Eval Summary Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/eval/reports": {
+      "get": {
+        "tags": [
+          "evaluation"
+        ],
+        "summary": "List raw benchmark report files",
+        "description": "List available report files on disk.",
+        "operationId": "list_reports_api_v1_eval_reports_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Reports Api V1 Eval Reports Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ApiResponse_CoachReport_": {
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/CoachReport"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ResponseMeta"
+          }
+        },
+        "type": "object",
+        "required": [
+          "data",
+          "meta"
+        ],
+        "title": "ApiResponse[CoachReport]"
+      },
+      "ApiResponse_MatchResult_": {
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/MatchResult"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ResponseMeta"
+          }
+        },
+        "type": "object",
+        "required": [
+          "data",
+          "meta"
+        ],
+        "title": "ApiResponse[MatchResult]"
+      },
+      "ApiResponse_ParseResponseData_": {
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/ParseResponseData"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ResponseMeta"
+          }
+        },
+        "type": "object",
+        "required": [
+          "data",
+          "meta"
+        ],
+        "title": "ApiResponse[ParseResponseData]"
+      },
+      "ApiResponse_SearchResponseData_": {
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/SearchResponseData"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ResponseMeta"
+          }
+        },
+        "type": "object",
+        "required": [
+          "data",
+          "meta"
+        ],
+        "title": "ApiResponse[SearchResponseData]"
+      },
+      "BatchItemResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "filename": {
+            "type": "string",
+            "title": "Filename"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "candidate_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Candidate Id"
+          },
+          "error": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "filename",
+          "status"
+        ],
+        "title": "BatchItemResponse",
+        "description": "Status of an individual item in a batch."
+      },
+      "BatchStatusResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "succeeded": {
+            "type": "integer",
+            "title": "Succeeded"
+          },
+          "failed": {
+            "type": "integer",
+            "title": "Failed"
+          },
+          "partial": {
+            "type": "integer",
+            "title": "Partial"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "finished_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Finished At"
+          },
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/BatchItemResponse"
+            },
+            "type": "array",
+            "title": "Items"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "total",
+          "succeeded",
+          "failed",
+          "partial",
+          "created_at"
+        ],
+        "title": "BatchStatusResponse",
+        "description": "Response payload for GET /api/v1/jobs/{id}."
+      },
+      "BatchUploadResponse": {
+        "properties": {
+          "batch_job_id": {
+            "type": "string",
+            "title": "Batch Job Id"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          }
+        },
+        "type": "object",
+        "required": [
+          "batch_job_id",
+          "status",
+          "total"
+        ],
+        "title": "BatchUploadResponse",
+        "description": "Response payload for POST /api/v1/parse/batch (202 Accepted)."
+      },
+      "Body_parse_batch_api_v1_parse_batch_post": {
+        "properties": {
+          "files": {
+            "items": {
+              "type": "string",
+              "contentMediaType": "application/octet-stream"
+            },
+            "type": "array",
+            "title": "Files"
+          }
+        },
+        "type": "object",
+        "required": [
+          "files"
+        ],
+        "title": "Body_parse_batch_api_v1_parse_batch_post"
+      },
+      "Body_parse_resume_api_v1_parse_post": {
+        "properties": {
+          "file": {
+            "type": "string",
+            "contentMediaType": "application/octet-stream",
+            "title": "File"
+          }
+        },
+        "type": "object",
+        "required": [
+          "file"
+        ],
+        "title": "Body_parse_resume_api_v1_parse_post"
+      },
+      "BulletRewrite": {
+        "properties": {
+          "original_evidence": {
+            "type": "string",
+            "title": "Original Evidence"
+          },
+          "improved_bullet": {
+            "type": "string",
+            "title": "Improved Bullet"
+          },
+          "highlighted_skills": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Highlighted Skills"
+          },
+          "rationale": {
+            "type": "string",
+            "title": "Rationale"
+          }
+        },
+        "type": "object",
+        "required": [
+          "original_evidence",
+          "improved_bullet",
+          "rationale"
+        ],
+        "title": "BulletRewrite",
+        "description": "Resume bullet rewrite grounded strictly in existing evidence."
+      },
+      "CandidateDetailResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "file_sha256": {
+            "type": "string",
+            "title": "File Sha256"
+          },
+          "parsed": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Parsed"
+          },
+          "quality": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Quality"
+          },
+          "pipeline_version": {
+            "type": "string",
+            "title": "Pipeline Version"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "file_sha256",
+          "parsed",
+          "quality",
+          "pipeline_version",
+          "created_at"
+        ],
+        "title": "CandidateDetailResponse",
+        "description": "Response payload for GET /api/v1/candidates/{id}."
+      },
+      "Certification": {
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/Extracted_str_"
+          },
+          "issuer": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "date": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "credential_id": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "title": "Certification"
+      },
+      "CoachReport": {
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "title": "Candidate Id"
+          },
+          "job_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Job Id"
+          },
+          "learning_plan": {
+            "items": {
+              "$ref": "#/components/schemas/LearningGoal"
+            },
+            "type": "array",
+            "title": "Learning Plan"
+          },
+          "interview_questions": {
+            "items": {
+              "$ref": "#/components/schemas/InterviewQuestion"
+            },
+            "type": "array",
+            "title": "Interview Questions"
+          },
+          "bullet_rewrites": {
+            "items": {
+              "$ref": "#/components/schemas/BulletRewrite"
+            },
+            "type": "array",
+            "title": "Bullet Rewrites"
+          },
+          "removed_claims": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Removed Claims"
+          },
+          "revisions_count": {
+            "type": "integer",
+            "title": "Revisions Count",
+            "default": 0
+          }
+        },
+        "type": "object",
+        "required": [
+          "candidate_id"
+        ],
+        "title": "CoachReport",
+        "description": "Career coach comprehensive report (feature F3)."
+      },
+      "CoachRequest": {
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "title": "Candidate Id",
+            "description": "Target candidate ID"
+          },
+          "job_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Job Id",
+            "description": "Target job ID (if previously saved)"
+          },
+          "job": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/JobInput"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Inline job description"
+          }
+        },
+        "type": "object",
+        "required": [
+          "candidate_id"
+        ],
+        "title": "CoachRequest",
+        "description": "Request payload for POST /api/v1/coach."
+      },
+      "Education": {
+        "properties": {
+          "institution": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "degree": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "field": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "start": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "end": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "grade": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "title": "Education"
+      },
+      "EmergingSkillMention": {
+        "properties": {
+          "raw": {
+            "type": "string",
+            "title": "Raw",
+            "description": "Original surface form of the unrecognized term"
+          },
+          "normalized": {
+            "type": "string",
+            "title": "Normalized",
+            "description": "Cleaned normalized representation"
+          },
+          "context": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Context",
+            "description": "Sentence or bullet context where found"
+          }
+        },
+        "type": "object",
+        "required": [
+          "raw",
+          "normalized"
+        ],
+        "title": "EmergingSkillMention",
+        "description": "An unrecognized skill candidate with context."
+      },
+      "Experience": {
+        "properties": {
+          "company": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "location": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "start": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "end": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "is_current": {
+            "type": "boolean",
+            "title": "Is Current",
+            "default": false
+          },
+          "duration_months": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duration Months"
+          },
+          "responsibilities": {
+            "items": {
+              "$ref": "#/components/schemas/Extracted_str_"
+            },
+            "type": "array",
+            "title": "Responsibilities"
+          },
+          "skills_mentioned": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Skills Mentioned"
+          }
+        },
+        "type": "object",
+        "title": "Experience"
+      },
+      "Extracted_Location_": {
+        "properties": {
+          "confidence": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Confidence",
+            "default": 1.0
+          },
+          "evidence": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidence"
+          },
+          "verified": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verified"
+          },
+          "value": {
+            "$ref": "#/components/schemas/Location"
+          }
+        },
+        "type": "object",
+        "required": [
+          "value"
+        ],
+        "title": "Extracted[Location]"
+      },
+      "Extracted_str_": {
+        "properties": {
+          "confidence": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Confidence",
+            "default": 1.0
+          },
+          "evidence": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidence"
+          },
+          "verified": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verified"
+          },
+          "value": {
+            "type": "string",
+            "title": "Value"
+          }
+        },
+        "type": "object",
+        "required": [
+          "value"
+        ],
+        "title": "Extracted[str]"
+      },
+      "GapItem": {
+        "properties": {
+          "skill_slug": {
+            "type": "string",
+            "title": "Skill Slug"
+          },
+          "skill_name": {
+            "type": "string",
+            "title": "Skill Name"
+          },
+          "required": {
+            "type": "boolean",
+            "title": "Required"
+          },
+          "importance": {
+            "type": "integer",
+            "title": "Importance"
+          },
+          "required_proficiency": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Required Proficiency"
+          },
+          "current_proficiency": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Current Proficiency"
+          },
+          "upskilling_hints": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Upskilling Hints"
+          }
+        },
+        "type": "object",
+        "required": [
+          "skill_slug",
+          "skill_name",
+          "required",
+          "importance"
+        ],
+        "title": "GapItem"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "InterviewQuestion": {
+        "properties": {
+          "requirement_name": {
+            "type": "string",
+            "title": "Requirement Name"
+          },
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "target_competency": {
+            "type": "string",
+            "title": "Target Competency"
+          },
+          "preparation_tip": {
+            "type": "string",
+            "title": "Preparation Tip"
+          }
+        },
+        "type": "object",
+        "required": [
+          "requirement_name",
+          "question",
+          "target_competency",
+          "preparation_tip"
+        ],
+        "title": "InterviewQuestion",
+        "description": "Targeted interview question for requirement verification."
+      },
+      "JobInput": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Title"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 10,
+            "title": "Description"
+          }
+        },
+        "type": "object",
+        "required": [
+          "title",
+          "description"
+        ],
+        "title": "JobInput",
+        "description": "Raw job description input for matching."
+      },
+      "LearningGoal": {
+        "properties": {
+          "skill_slug": {
+            "type": "string",
+            "title": "Skill Slug"
+          },
+          "skill_name": {
+            "type": "string",
+            "title": "Skill Name"
+          },
+          "rationale": {
+            "type": "string",
+            "title": "Rationale"
+          },
+          "prerequisites": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Prerequisites"
+          },
+          "recommended_order": {
+            "type": "integer",
+            "title": "Recommended Order"
+          }
+        },
+        "type": "object",
+        "required": [
+          "skill_slug",
+          "skill_name",
+          "rationale",
+          "recommended_order"
+        ],
+        "title": "LearningGoal",
+        "description": "Structured learning plan item for a skill gap."
+      },
+      "Location": {
+        "properties": {
+          "city": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "City"
+          },
+          "region": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Region"
+          },
+          "country": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Country"
+          }
+        },
+        "type": "object",
+        "title": "Location"
+      },
+      "MatchRequest": {
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Candidate Id"
+          },
+          "job": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/JobInput"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "job_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Job Id"
+          },
+          "threshold": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Threshold"
+          },
+          "preset": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preset"
+          }
+        },
+        "type": "object",
+        "required": [
+          "candidate_id"
+        ],
+        "title": "MatchRequest",
+        "description": "Request payload for POST /api/v1/match."
+      },
+      "MatchResult": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "job_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Job Id"
+          },
+          "candidate_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Candidate Id"
+          },
+          "score": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Score"
+          },
+          "is_match": {
+            "type": "boolean",
+            "title": "Is Match"
+          },
+          "threshold": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Threshold"
+          },
+          "preset": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preset"
+          },
+          "components": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Components"
+          },
+          "breakdown": {
+            "items": {
+              "$ref": "#/components/schemas/RequirementCredit"
+            },
+            "type": "array",
+            "title": "Breakdown"
+          },
+          "gaps": {
+            "items": {
+              "$ref": "#/components/schemas/GapItem"
+            },
+            "type": "array",
+            "title": "Gaps"
+          },
+          "meta": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Meta"
+          }
+        },
+        "type": "object",
+        "required": [
+          "score",
+          "is_match",
+          "threshold"
+        ],
+        "title": "MatchResult"
+      },
+      "NormalizedSkill": {
+        "properties": {
+          "slug": {
+            "type": "string",
+            "title": "Slug",
+            "description": "Unique canonical taxonomy slug (e.g. 'kubernetes', 'python')"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": "Display name of the skill (e.g. 'Kubernetes', 'Python')"
+          },
+          "category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Category",
+            "description": "Taxonomy category name or slug"
+          },
+          "subcategory": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Subcategory",
+            "description": "Taxonomy subcategory name or slug"
+          },
+          "domain": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Domain",
+            "description": "Taxonomy root domain name or slug"
+          },
+          "level": {
+            "type": "integer",
+            "maximum": 3.0,
+            "minimum": 0.0,
+            "title": "Level",
+            "description": "Taxonomy depth: 0=domain .. 3=skill",
+            "default": 3
+          },
+          "proficiency": {
+            "type": "integer",
+            "maximum": 5.0,
+            "minimum": 1.0,
+            "title": "Proficiency",
+            "description": "Proficiency level 1-5",
+            "default": 2
+          },
+          "years": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Years",
+            "description": "Estimated years of experience",
+            "default": 0.0
+          },
+          "explanation": {
+            "type": "string",
+            "title": "Explanation",
+            "description": "One-line explanation of the proficiency calculation",
+            "default": ""
+          },
+          "confidence": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Confidence",
+            "description": "Confidence in normalization",
+            "default": 1.0
+          },
+          "inferred": {
+            "type": "boolean",
+            "title": "Inferred",
+            "description": "True if inferred via hierarchy/implication rules",
+            "default": false
+          },
+          "raw": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Raw",
+            "description": "Original raw surface form(s) matched to this skill"
+          },
+          "evidence": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Evidence",
+            "description": "Evidence snippets or roles supporting this skill"
+          },
+          "method": {
+            "type": "string",
+            "enum": [
+              "exact",
+              "fuzzy",
+              "embedding",
+              "llm",
+              "inferred",
+              "fallback"
+            ],
+            "title": "Method",
+            "description": "Cascade step that accepted this skill",
+            "default": "exact"
+          }
+        },
+        "type": "object",
+        "required": [
+          "slug",
+          "name"
+        ],
+        "title": "NormalizedSkill",
+        "description": "A canonical skill extracted and normalized from a resume or job description."
+      },
+      "ParseResponseData": {
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "title": "Candidate Id"
+          },
+          "parsed": {
+            "$ref": "#/components/schemas/ParsedResume"
+          },
+          "profile": {
+            "$ref": "#/components/schemas/SkillProfile"
+          }
+        },
+        "type": "object",
+        "required": [
+          "candidate_id",
+          "parsed",
+          "profile"
+        ],
+        "title": "ParseResponseData",
+        "description": "Data payload for POST /api/v1/parse."
+      },
+      "ParsedResume": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "title": "Schema Version",
+            "default": "2.0"
+          },
+          "personal": {
+            "$ref": "#/components/schemas/Personal"
+          },
+          "summary": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "experience": {
+            "items": {
+              "$ref": "#/components/schemas/Experience"
+            },
+            "type": "array",
+            "title": "Experience"
+          },
+          "education": {
+            "items": {
+              "$ref": "#/components/schemas/Education"
+            },
+            "type": "array",
+            "title": "Education"
+          },
+          "skills": {
+            "items": {
+              "$ref": "#/components/schemas/Skill"
+            },
+            "type": "array",
+            "title": "Skills"
+          },
+          "certifications": {
+            "items": {
+              "$ref": "#/components/schemas/Certification"
+            },
+            "type": "array",
+            "title": "Certifications"
+          },
+          "projects": {
+            "items": {
+              "$ref": "#/components/schemas/Project"
+            },
+            "type": "array",
+            "title": "Projects"
+          },
+          "publications": {
+            "items": {
+              "$ref": "#/components/schemas/Extracted_str_"
+            },
+            "type": "array",
+            "title": "Publications"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ResumeMeta"
+          }
+        },
+        "type": "object",
+        "title": "ParsedResume"
+      },
+      "Personal": {
+        "properties": {
+          "name": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "email": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "phone": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "location": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_Location_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "links": {
+            "items": {
+              "$ref": "#/components/schemas/Extracted_str_"
+            },
+            "type": "array",
+            "title": "Links"
+          }
+        },
+        "type": "object",
+        "title": "Personal"
+      },
+      "Project": {
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/Extracted_str_"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "technologies": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Technologies"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "dates": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Extracted_str_"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "title": "Project"
+      },
+      "RankRequest": {
+        "properties": {
+          "candidate_ids": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Candidate Ids"
+          },
+          "job": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/JobInput"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "job_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Job Id"
+          },
+          "threshold": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Threshold"
+          },
+          "preset": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preset"
+          },
+          "limit": {
+            "type": "integer",
+            "maximum": 500.0,
+            "minimum": 1.0,
+            "title": "Limit",
+            "default": 50
+          }
+        },
+        "type": "object",
+        "title": "RankRequest",
+        "description": "Request payload for POST /api/v1/match/rank."
+      },
+      "RankResponseData": {
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "title": "Candidate Id"
+          },
+          "match": {
+            "$ref": "#/components/schemas/MatchResult"
+          }
+        },
+        "type": "object",
+        "required": [
+          "candidate_id",
+          "match"
+        ],
+        "title": "RankResponseData",
+        "description": "Ranked match result item."
+      },
+      "RequirementCredit": {
+        "properties": {
+          "requirement_slug": {
+            "type": "string",
+            "title": "Requirement Slug"
+          },
+          "requirement_name": {
+            "type": "string",
+            "title": "Requirement Name"
+          },
+          "required": {
+            "type": "boolean",
+            "title": "Required"
+          },
+          "importance": {
+            "type": "integer",
+            "title": "Importance"
+          },
+          "weight": {
+            "type": "number",
+            "title": "Weight"
+          },
+          "matched_slug": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Matched Slug"
+          },
+          "matched_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Matched Name"
+          },
+          "match_type": {
+            "type": "string",
+            "enum": [
+              "exact",
+              "descendant",
+              "ancestor_or_sibling",
+              "embedding",
+              "missing"
+            ],
+            "title": "Match Type",
+            "default": "missing"
+          },
+          "similarity": {
+            "type": "number",
+            "title": "Similarity",
+            "default": 0.0
+          },
+          "depth": {
+            "type": "number",
+            "title": "Depth",
+            "default": 0.0
+          },
+          "credit": {
+            "type": "number",
+            "title": "Credit",
+            "default": 0.0
+          },
+          "contribution": {
+            "type": "number",
+            "title": "Contribution",
+            "default": 0.0
+          }
+        },
+        "type": "object",
+        "required": [
+          "requirement_slug",
+          "requirement_name",
+          "required",
+          "importance",
+          "weight"
+        ],
+        "title": "RequirementCredit"
+      },
+      "ResponseMeta": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "partial",
+              "failed"
+            ],
+            "title": "Status",
+            "default": "ok"
+          },
+          "trace_id": {
+            "type": "string",
+            "title": "Trace Id"
+          },
+          "pipeline_version": {
+            "type": "string",
+            "title": "Pipeline Version"
+          },
+          "latency_ms": {
+            "type": "integer",
+            "title": "Latency Ms"
+          },
+          "quality": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Quality"
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "trace": {
+            "anyOf": [
+              {
+                "items": {
+                  "additionalProperties": true,
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Trace"
+          }
+        },
+        "type": "object",
+        "required": [
+          "trace_id",
+          "pipeline_version",
+          "latency_ms"
+        ],
+        "title": "ResponseMeta",
+        "description": "Metadata envelope returned with pipeline API responses."
+      },
+      "ResumeMeta": {
+        "properties": {
+          "file_type": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "pdf",
+                  "docx",
+                  "txt"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "File Type"
+          },
+          "layout": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "single",
+                  "multi",
+                  "table",
+                  "creative"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Layout"
+          },
+          "pages": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Pages"
+          },
+          "sections_found": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "contact",
+                "summary",
+                "experience",
+                "education",
+                "skills",
+                "certifications",
+                "projects",
+                "publications",
+                "other"
+              ]
+            },
+            "type": "array",
+            "title": "Sections Found"
+          },
+          "confidence": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confidence"
+          },
+          "field_sources": {
+            "additionalProperties": {
+              "type": "string",
+              "enum": [
+                "rules",
+                "llm",
+                "merged"
+              ]
+            },
+            "type": "object",
+            "title": "Field Sources"
+          },
+          "llm_field_count": {
+            "type": "integer",
+            "title": "Llm Field Count",
+            "default": 0
+          },
+          "unverified_count": {
+            "type": "integer",
+            "title": "Unverified Count",
+            "default": 0
+          }
+        },
+        "additionalProperties": true,
+        "type": "object",
+        "title": "ResumeMeta"
+      },
+      "SearchHit": {
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "title": "Candidate Id"
+          },
+          "score": {
+            "type": "number",
+            "title": "Score"
+          },
+          "reasons": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Reasons"
+          },
+          "citations": {
+            "additionalProperties": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "type": "object",
+            "title": "Citations"
+          },
+          "matched_skills": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Matched Skills"
+          },
+          "missing_skills": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Missing Skills"
+          }
+        },
+        "type": "object",
+        "required": [
+          "candidate_id",
+          "score"
+        ],
+        "title": "SearchHit",
+        "description": "Ranked candidate hit in talent search."
+      },
+      "SearchRequest": {
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Query",
+            "description": "Natural language search query"
+          },
+          "limit": {
+            "type": "integer",
+            "maximum": 50.0,
+            "minimum": 1.0,
+            "title": "Limit",
+            "description": "Maximum candidates to return",
+            "default": 10
+          }
+        },
+        "type": "object",
+        "required": [
+          "query"
+        ],
+        "title": "SearchRequest",
+        "description": "Request payload for POST /api/v1/search."
+      },
+      "SearchResponseData": {
+        "properties": {
+          "plan": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Plan"
+          },
+          "total_candidates": {
+            "type": "integer",
+            "title": "Total Candidates"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/SearchHit"
+            },
+            "type": "array",
+            "title": "Results"
+          }
+        },
+        "type": "object",
+        "required": [
+          "plan",
+          "total_candidates",
+          "results"
+        ],
+        "title": "SearchResponseData",
+        "description": "Data envelope for POST /api/v1/search."
+      },
+      "Skill": {
+        "properties": {
+          "confidence": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Confidence",
+            "default": 1.0
+          },
+          "evidence": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Evidence"
+          },
+          "verified": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verified"
+          },
+          "raw": {
+            "type": "string",
+            "title": "Raw"
+          },
+          "category_hint": {
+            "type": "string",
+            "title": "Category Hint",
+            "default": "unknown"
+          }
+        },
+        "type": "object",
+        "required": [
+          "raw"
+        ],
+        "title": "Skill"
+      },
+      "SkillDetailResponse": {
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "Id"
+          },
+          "slug": {
+            "type": "string",
+            "title": "Slug"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "type": {
+            "type": "string",
+            "title": "Type"
+          },
+          "level": {
+            "type": "integer",
+            "title": "Level"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Description"
+          },
+          "ancestors": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Ancestors"
+          },
+          "children": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Children"
+          },
+          "aliases": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Aliases"
+          },
+          "related": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Related"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "slug",
+          "name",
+          "type",
+          "level"
+        ],
+        "title": "SkillDetailResponse",
+        "description": "Response payload for GET /api/v1/skills/{id}."
+      },
+      "SkillProfile": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "title": "Schema Version",
+            "default": "2.0"
+          },
+          "candidate_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Candidate Id"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "partial",
+              "error"
+            ],
+            "title": "Status",
+            "default": "ok"
+          },
+          "confidence": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Confidence",
+            "description": "Overall profile confidence",
+            "default": 1.0
+          },
+          "skills": {
+            "items": {
+              "$ref": "#/components/schemas/NormalizedSkill"
+            },
+            "type": "array",
+            "title": "Skills",
+            "description": "Canonical normalized skills (both direct and inferred)"
+          },
+          "unrecognized": {
+            "items": {
+              "$ref": "#/components/schemas/EmergingSkillMention"
+            },
+            "type": "array",
+            "title": "Unrecognized",
+            "description": "Unrecognized skill candidates for emerging_skills store"
+          },
+          "pipeline_version": {
+            "type": "string",
+            "title": "Pipeline Version",
+            "default": "1.0"
+          },
+          "timings_ms": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Timings Ms"
+          },
+          "meta": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Meta"
+          }
+        },
+        "type": "object",
+        "title": "SkillProfile",
+        "description": "Complete skill profile produced by the Normalization Agent."
+      },
+      "SkillSearchItem": {
+        "properties": {
+          "slug": {
+            "type": "string",
+            "title": "Slug"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "score": {
+            "type": "number",
+            "title": "Score"
+          },
+          "match_type": {
+            "type": "string",
+            "title": "Match Type"
+          },
+          "type": {
+            "type": "string",
+            "title": "Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "slug",
+          "name",
+          "score",
+          "match_type",
+          "type"
+        ],
+        "title": "SkillSearchItem",
+        "description": "Search hit in GET /api/v1/skills/search."
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

@@ -26,6 +26,7 @@ async def _check(fn: Callable[[], Awaitable[object]]) -> str:
 
 
 @router.get("/ready", summary="Readiness probe (DB, Redis, Chroma)")
+@router.get("/healthz", summary="Readiness probe (DB, Redis, Chroma)")
 async def ready(request: Request) -> JSONResponse:
     state = request.app.state
 

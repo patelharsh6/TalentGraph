@@ -27,14 +27,12 @@ FIXTURES_DIR = ROOT / "tests" / "fixtures"
 
 
 @pytest.fixture
-def app() -> FastAPI:
+def app(monkeypatch: pytest.MonkeyPatch) -> FastAPI:
     """FastAPI test app configured for offline execution."""
-    test_settings = Settings(
-        app_env="test",
-        api_key=None,
-        llm_mode="fake",
-        fixtures_dir=str(FIXTURES_DIR / "llm"),
-    )
+    monkeypatch.setenv("API_KEY", "test-key")
+    from talentgraph.config import get_settings
+    get_settings.cache_clear()
+    test_settings = get_settings()
     application = create_app()
     repo = get_taxonomy_repository(test_settings.taxonomy_dir)
 
@@ -57,7 +55,7 @@ def app() -> FastAPI:
 
 @pytest.fixture
 def client(app: FastAPI) -> TestClient:
-    return TestClient(app)
+    return TestClient(app, headers={"X-API-Key": "test-key"})
 
 
 def test_search_endpoint_degradation_partial(client: TestClient):

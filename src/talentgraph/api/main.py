@@ -30,6 +30,9 @@ from talentgraph.api.routers import (
     search,
     skills,
 )
+from talentgraph.api.routers import (
+    eval as eval_router,
+)
 from talentgraph.config import get_settings
 from talentgraph.db.repositories.taxonomy import get_taxonomy_repository
 from talentgraph.db.session import dispose_engine, init_engine
@@ -91,6 +94,20 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     # 3. Recover stale batch items from previous runs (Step 5.5)
     await recover_stale_batches(app.state.engine)
 
+    # 4. Pre-seed demo datasets into in-memory store and caches (Exit Criterion 7-B)
+    if settings.app_env != "test":
+        try:
+            from scripts.seed_demo import seed_all
+
+            await seed_all(
+                parsing_agent=app.state.parsing_agent,
+                matching_agent=app.state.matching_agent,
+                search_agent=app.state.search_agent,
+                coach_agent=app.state.coach_agent,
+            )
+        except Exception as exc:
+            log.warning("lifespan.seed_demo_skipped", error=str(exc))
+
     yield
 
     # 4. Graceful shutdown
@@ -138,6 +155,7 @@ def create_app() -> FastAPI:
     v1.include_router(skills.router)
     v1.include_router(search.router)
     v1.include_router(coach.router)
+    v1.include_router(eval_router.router)
 
     app.include_router(v1)
 

@@ -8,12 +8,51 @@ from sqlalchemy import select
 
 from talentgraph.api.schemas import BatchItemResponse, BatchStatusResponse
 from talentgraph.core.errors import NotFound
-from talentgraph.db.models import BatchItem, BatchJob
+from talentgraph.db.in_memory import _JOBS
+from talentgraph.db.models import BatchItem, BatchJob, Job
 from talentgraph.db.session import async_session_scope
 from talentgraph.orchestrator.batch import get_in_memory_batch
 
 router = APIRouter(tags=["jobs"])
 log = structlog.get_logger(__name__)
+
+
+@router.get(
+    "/jobs",
+    summary="List available jobs",
+)
+async def list_jobs() -> list[dict[str, object]]:
+    """List loaded job descriptions."""
+    results: list[dict[str, object]] = []
+    for job_rec in _JOBS.values():
+        results.append(
+            {
+                "id": str(job_rec.id),
+                "title": job_rec.title,
+                "raw_text": job_rec.raw_text,
+                "requirements": job_rec.requirements.model_dump()
+                if hasattr(job_rec.requirements, "model_dump")
+                else job_rec.requirements,
+            }
+        )
+
+    if not results:
+        try:
+            async with async_session_scope() as session:
+                res = await session.execute(select(Job).limit(20))
+                for db_job in res.scalars().all():
+                    results.append(
+                        {
+                            "id": str(db_job.id),
+                            "title": db_job.title,
+                            "raw_text": db_job.raw_text,
+                            "requirements": db_job.requirements,
+                        }
+                    )
+        except Exception as exc:
+            log.debug("jobs.list_db_failed", error=str(exc))
+
+    return results
 
 
 @router.get(
