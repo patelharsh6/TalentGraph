@@ -5,6 +5,7 @@ reuse it). Never share an async engine across a fork.
 """
 
 from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
 
 from sqlalchemy.ext.asyncio import (
     AsyncEngine,
@@ -44,3 +45,18 @@ async def get_session() -> AsyncIterator[AsyncSession]:
     assert _sessionmaker is not None
     async with _sessionmaker() as session:
         yield session
+
+
+@asynccontextmanager
+async def async_session_scope() -> AsyncIterator[AsyncSession]:
+    """Context manager for background tasks and offline operations."""
+    if _sessionmaker is None:
+        init_engine()
+    assert _sessionmaker is not None
+    async with _sessionmaker() as session:
+        try:
+            yield session
+            await session.commit()
+        except Exception:
+            await session.rollback()
+            raise

@@ -5,9 +5,10 @@ from typing import Any
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
+from slowapi.errors import RateLimitExceeded as SlowapiRateLimitExceeded
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from talentgraph.core.errors import TalentGraphError
+from talentgraph.core.errors import RateLimitExceeded, TalentGraphError
 
 ERROR_BASE = "https://talentgraph.dev/errors/"
 PROBLEM_JSON = "application/problem+json"
@@ -21,7 +22,9 @@ def problem(
     title: str,
     detail: str,
     errors: list[Any] | None = None,
+    headers: dict[str, str] | None = None,
 ) -> JSONResponse:
+    """Format and return an RFC 7807 problem+json response."""
     body: dict[str, Any] = {
         "type": ERROR_BASE + code,
         "title": title,
@@ -32,15 +35,47 @@ def problem(
     }
     if errors:
         body["errors"] = errors
-    return JSONResponse(body, status_code=status, media_type=PROBLEM_JSON)
+    return JSONResponse(body, status_code=status, media_type=PROBLEM_JSON, headers=headers)
 
 
 def register_problem_handlers(app: FastAPI) -> None:
+    """Register exception handlers on the FastAPI application."""
+
     @app.exception_handler(TalentGraphError)
     async def _tg_error(request: Request, exc: TalentGraphError) -> JSONResponse:
+        headers = {}
+        if isinstance(exc, RateLimitExceeded):
+            headers["Retry-After"] = "60"
         return problem(
-            request, status=exc.http_status, code=exc.code, title=exc.title, detail=exc.detail
+            request,
+            status=exc.http_status,
+            code=exc.code,
+            title=exc.title,
+            detail=exc.detail,
+            headers=headers if headers else None,
         )
+
+    @app.exception_handler(SlowapiRateLimitExceeded)
+    async def _slowapi_rate_limit(request: Request, exc: SlowapiRateLimitExceeded) -> JSONResponse:
+        headers = {"Retry-After": "60"}
+        limiter = getattr(request.app.state, "limiter", None)
+        view_rate_limit = getattr(request.state, "view_rate_limit", None)
+        res = problem(
+            request,
+            status=429,
+            code="rate_limit_exceeded",
+            title="Rate limit exceeded",
+            detail=f"Rate limit exceeded: {exc.detail}",
+            headers=headers,
+        )
+        if limiter and view_rate_limit:
+            try:
+                res = limiter._inject_headers(res, view_rate_limit)
+            except Exception:
+                pass
+        if "Retry-After" not in res.headers:
+            res.headers["Retry-After"] = "60"
+        return res
 
     @app.exception_handler(RequestValidationError)
     async def _validation(request: Request, exc: RequestValidationError) -> JSONResponse:
@@ -55,10 +90,14 @@ def register_problem_handlers(app: FastAPI) -> None:
 
     @app.exception_handler(StarletteHTTPException)
     async def _http(request: Request, exc: StarletteHTTPException) -> JSONResponse:
+        headers = {}
+        if exc.status_code == 429:
+            headers["Retry-After"] = "60"
         return problem(
             request,
             status=exc.status_code,
             code=f"http_{exc.status_code}",
             title=str(exc.detail),
             detail=str(exc.detail),
+            headers=headers if headers else None,
         )

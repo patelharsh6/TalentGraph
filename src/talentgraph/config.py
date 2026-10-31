@@ -38,6 +38,7 @@ class Settings(BaseSettings):
 
     # API
     api_key: SecretStr | None = None
+    web_origin: str = "http://localhost:3000"
     rate_limit_per_min: int = 60
     max_upload_mb: int = 10
     max_pdf_pages: int = 20

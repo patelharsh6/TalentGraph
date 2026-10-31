@@ -38,6 +38,18 @@ class NotFound(TalentGraphError):
     title = "Resource not found"
 
 
+class Unauthorized(TalentGraphError):
+    code = "unauthorized"
+    http_status = 401
+    title = "Unauthorized"
+
+
+class RateLimitExceeded(TalentGraphError):
+    code = "rate_limit_exceeded"
+    http_status = 429
+    title = "Rate limit exceeded"
+
+
 class LLMError(TalentGraphError):
     code = "llm_error"
     http_status = 502
