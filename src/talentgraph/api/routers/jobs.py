@@ -2,13 +2,13 @@
 
 from uuid import UUID
 
+import structlog
 from fastapi import APIRouter
 from sqlalchemy import select
-import structlog
 
 from talentgraph.api.schemas import BatchItemResponse, BatchStatusResponse
 from talentgraph.core.errors import NotFound
-from talentgraph.db.models import BatchJob, BatchItem
+from talentgraph.db.models import BatchItem, BatchJob
 from talentgraph.db.session import async_session_scope
 from talentgraph.orchestrator.batch import get_in_memory_batch
 

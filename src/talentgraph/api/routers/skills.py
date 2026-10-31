@@ -71,7 +71,7 @@ async def search_skills(
     # 1. Exact alias match
     alias_rec = repo.resolve_alias(q_norm)
     if alias_rec:
-        sk = repo.get_skill(alias_rec.canonical_slug)
+        sk = repo.get_skill(alias_rec.slug)
         if sk:
             hits[sk.slug] = SkillSearchItem(
                 slug=sk.slug,
@@ -98,15 +98,15 @@ async def search_skills(
     # 3. Embedding search fallback
     try:
         skill_idx = get_skill_index()
-        vec_hits = skill_idx.query(q, top_k=limit)
-        for slug, sim in vec_hits:
-            if slug not in hits:
-                sk = repo.get_skill(slug)
+        vec_hits = skill_idx.query(q, k=limit)
+        for hit in vec_hits:
+            if hit.id not in hits:
+                sk = repo.get_skill(hit.id)
                 if sk:
-                    hits[slug] = SkillSearchItem(
+                    hits[hit.id] = SkillSearchItem(
                         slug=sk.slug,
                         name=sk.name,
-                        score=float(sim),
+                        score=float(hit.score),
                         match_type="vector",
                         type=sk.type,
                     )
@@ -144,7 +144,7 @@ async def get_skill_detail(
         {"id": c.id, "slug": c.slug, "name": c.name, "level": c.level}
         for c in repo.get_children(skill.slug)
     ]
-    aliases = [a.alias for a in repo.aliases if a.canonical_slug == skill.slug]
+    aliases = [a.alias for a in repo.aliases if a.slug == skill.slug]
     related = [
         {"target_slug": r.related_slug, "kind": r.kind, "weight": r.weight}
         for r in repo.get_relations(skill.slug)

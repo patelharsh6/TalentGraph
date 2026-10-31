@@ -13,7 +13,7 @@ from talentgraph.agents.matching.agent import MatchingAgent
 from talentgraph.agents.matching.blind import redact_resume, redact_skill_profile
 from talentgraph.agents.normalization.agent import NormalizationAgent
 from talentgraph.agents.parsing.agent import ParsingAgent
-from talentgraph.core.schemas.messages import AgentError, AgentMessage, AgentResult, QualityScore
+from talentgraph.core.schemas.messages import AgentError, AgentMessage, AgentResult
 from talentgraph.core.schemas.resume import ParsedResume
 from talentgraph.core.schemas.skills import SkillProfile
 from talentgraph.orchestrator.state import PipelineState
@@ -62,7 +62,7 @@ def create_pipeline_graph(
             return AgentResult(
                 status=parsed_res.status,  # "ok" or "partial"
                 data={"parsed_resume": parsed_res.resume.model_dump()},
-                quality=QualityScore(score=parsed_res.quality),
+                quality=parsed_res.quality,
                 latency_ms=latency_ms,
             )
 

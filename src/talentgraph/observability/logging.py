@@ -1,8 +1,8 @@
 """structlog JSON logging with PII scrubbing processor (Step 5.6, plan §8.1)."""
 
-from collections.abc import MutableMapping
 import logging
 import re
+from collections.abc import MutableMapping
 from typing import Any
 
 import structlog

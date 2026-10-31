@@ -3,9 +3,9 @@
 import time
 from uuid import UUID, uuid4
 
-from fastapi import APIRouter, Depends, Query, Request
-from sqlalchemy import select
 import structlog
+from fastapi import APIRouter, Depends, Query, Request, Response
+from sqlalchemy import select
 
 from talentgraph import PIPELINE_VERSION
 from talentgraph.agents.matching.agent import MatchingAgent
@@ -64,11 +64,11 @@ async def _resolve_candidate_profile(candidate_id: UUID) -> SkillProfile:
             for c_skill, sk in res.all():
                 skills.append(
                     NormalizedSkill(
-                        canonical_slug=sk.slug,
+                        slug=sk.slug,
                         name=sk.name,
-                        type=sk.type,  # type: ignore[arg-type]
-                        proficiency=c_skill.proficiency,  # type: ignore[arg-type]
-                        years=c_skill.years,
+                        category=sk.type,
+                        proficiency=c_skill.proficiency,
+                        years=c_skill.years or 0.0,
                         inferred=c_skill.inferred,
                         confidence=c_skill.confidence,
                         evidence=c_skill.evidence or [],
@@ -76,7 +76,7 @@ async def _resolve_candidate_profile(candidate_id: UUID) -> SkillProfile:
                 )
             return SkillProfile(
                 skills=skills,
-                unrecognized_skills=[],
+                unrecognized=[],
                 meta={"candidate_id": str(candidate_id)},
             )
     except NotFound:
@@ -112,7 +112,7 @@ async def _resolve_job_requirements(
     if body.job is not None:
         # Parse new job
         raw_text = f"{body.job.title}\n\n{body.job.description}"
-        reqs = await job_parser.parse(raw_text, title=body.job.title)
+        reqs = await job_parser.parse(raw_text)
         job_id = uuid4()
 
         # Save in memory and DB
@@ -152,6 +152,7 @@ async def _resolve_job_requirements(
 @limiter.limit("30/minute")
 async def match_candidate(
     request: Request,
+    response: Response,
     body: MatchRequest,
     blind: bool = Query(False, description="Run in blind screening mode"),
     include: str | None = Query(None, description="Set to 'trace' to include execution timeline"),
@@ -221,6 +222,7 @@ async def match_candidate(
 @limiter.limit("20/minute")
 async def rank_candidates(
     request: Request,
+    response: Response,
     body: RankRequest,
     blind: bool = Query(False, description="Run in blind screening mode"),
     matcher: MatchingAgent = Depends(get_matching_agent),

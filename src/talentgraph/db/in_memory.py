@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-from typing import Any
 from uuid import UUID
 
 from talentgraph.core.schemas.matching import JobRequirements, MatchResult
@@ -69,6 +68,13 @@ def save_candidate_in_memory(record: InMemoryCandidateRecord) -> None:
 
 def get_candidate_in_memory(candidate_id: UUID) -> InMemoryCandidateRecord | None:
     return _CANDIDATES.get(candidate_id)
+
+
+def get_candidate_by_sha_in_memory(file_sha256: str) -> InMemoryCandidateRecord | None:
+    for cand in _CANDIDATES.values():
+        if cand.file_sha256 == file_sha256:
+            return cand
+    return None
 
 
 def get_all_candidates_in_memory() -> list[InMemoryCandidateRecord]:

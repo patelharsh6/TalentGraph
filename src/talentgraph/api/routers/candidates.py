@@ -3,9 +3,9 @@
 from datetime import UTC, datetime
 from uuid import UUID
 
+import structlog
 from fastapi import APIRouter, Query
 from sqlalchemy import select
-import structlog
 
 from talentgraph.api.schemas import CandidateDetailResponse
 from talentgraph.core.errors import NotFound
@@ -98,11 +98,11 @@ async def get_candidate_skills(
                 for c_skill, sk in res.all():
                     skills.append(
                         NormalizedSkill(
-                            canonical_slug=sk.slug,
+                            slug=sk.slug,
                             name=sk.name,
-                            type=sk.type,  # type: ignore[arg-type]
-                            proficiency=c_skill.proficiency,  # type: ignore[arg-type]
-                            years=c_skill.years,
+                            category=sk.type,
+                            proficiency=c_skill.proficiency,
+                            years=c_skill.years or 0.0,
                             inferred=c_skill.inferred,
                             confidence=c_skill.confidence,
                             evidence=c_skill.evidence or [],
@@ -110,7 +110,7 @@ async def get_candidate_skills(
                     )
                 raw_profile = SkillProfile(
                     skills=skills,
-                    unrecognized_skills=[],
+                    unrecognized=[],
                     meta={"candidate_id": str(candidate_id)},
                 )
         except NotFound:
@@ -125,13 +125,13 @@ async def get_candidate_skills(
     filtered_skills = [
         sk
         for sk in raw_profile.skills
-        if (type is None or sk.type.lower() == type.lower())
+        if (type is None or (sk.category and sk.category.lower() == type.lower()))
         and (min_proficiency is None or sk.proficiency >= min_proficiency)
         and (include_inferred or not sk.inferred)
     ]
 
     return SkillProfile(
         skills=filtered_skills,
-        unrecognized_skills=raw_profile.unrecognized_skills,
+        unrecognized=raw_profile.unrecognized,
         meta=raw_profile.meta,
     )
