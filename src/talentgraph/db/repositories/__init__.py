@@ -1,3 +1,19 @@
-"""Data-access repositories. `taxonomy.py` arrives in Step 3.1; candidates/jobs/batch in
-Milestones 4-5.
-"""
+"""Data-access repositories."""
+
+from talentgraph.db.repositories.taxonomy import (
+    AliasRecord,
+    ImplicationRecord,
+    RelationRecord,
+    TaxonomyRepository,
+    TaxonomySkill,
+    get_taxonomy_repository,
+)
+
+__all__ = [
+    "AliasRecord",
+    "ImplicationRecord",
+    "RelationRecord",
+    "TaxonomyRepository",
+    "TaxonomySkill",
+    "get_taxonomy_repository",
+]

@@ -9,14 +9,16 @@ from talentgraph.core.schemas.messages import (
     QualityScore,
 )
 from talentgraph.core.schemas.resume import ParsedResume, ParseResult, ResumeExtraction
-from talentgraph.core.schemas.skills import SkillProfile
+from talentgraph.core.schemas.skills import EmergingSkillMention, NormalizedSkill, SkillProfile
 
 __all__ = [
     "AgentError",
     "AgentMessage",
     "AgentName",
     "AgentResult",
+    "EmergingSkillMention",
     "MatchResult",
+    "NormalizedSkill",
     "ParseResult",
     "ParsedResume",
     "QualityScore",

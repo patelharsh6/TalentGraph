@@ -29,6 +29,8 @@ class Encoder:
 
     @property
     def dim(self) -> int:
+        if hasattr(self._model, "get_embedding_dimension"):
+            return int(self._model.get_embedding_dimension())
         return int(self._model.get_sentence_embedding_dimension())
 
     def encode(self, texts: list[str], *, batch_size: int = 64) -> NDArray[np.float32]:
