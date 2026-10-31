@@ -277,13 +277,20 @@ The frontend (milestone 7) can start in parallel once milestone 5's OpenAPI sche
 - [x] Locust load test (10 concurrent users, 0 failures, 0 5xx).
 - [x] CI evaluation gate (scripts/ci_eval_gate.py) blocking regressions across M1, M2, M3.
 
-**Milestone 6: next**
-- [ ] Chroma candidates index.
-- [ ] Search agent (planner + tool calling).
-- [ ] 30-query gold set; precision@10.
-- [ ] Coach agent (generate -> critic -> revise).
-- [ ] 20-case adversarial set.
-- [ ] /search and /coach routes.
+**Milestone 6: completed ✅**
+- [x] Chroma candidates index (`CandidateIndex` pre-indexed with 560 profiles).
+- [x] Search agent (`SearchAgent` with planner + tool calling loop + re-ranking).
+- [x] 30-query gold set; precision@10 evaluated (0.9000 >= 0.70, MRR: 0.9833).
+- [x] Coach agent (`CoachAgent` with generate -> critic -> revise feedback loop).
+- [x] 20-case adversarial set (0 unsupported claims in final output; 20 removed claims listed).
+- [x] `/search` and `/coach` routes (`POST /api/v1/search`, `POST /api/v1/coach`) with degradation & cache.
+
+**Milestone 7: next**
+- [ ] Scaffold `web/`: Next.js App Router, TypeScript, Tailwind, OpenAPI client.
+- [ ] Pages: Upload & Profile, Match ("why this score"), Recruiter Ranking, Talent Search, Coach, Taxonomy, About.
+- [ ] Evidence highlighting with PDF viewer.
+- [ ] Demo mode (cached samples).
+- [ ] Deployment (backend container + Vercel).
 ---
 
 ## 6. Known Constraints & Risks

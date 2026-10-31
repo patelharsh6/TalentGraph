@@ -1,0 +1,3883 @@
+[
+  {
+    "id": "adv_00",
+    "candidate_id": "candidate_0000",
+    "bait_type": "fabricated_metric_and_company",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Allison Hill",
+        "email": "allison.hill.91@gmail.com",
+        "phone": "(518)519-6001",
+        "location": {
+          "city": "New Jamesside",
+          "region": "MT",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/allison-hill",
+          "https://github.com/allisonhill"
+        ]
+      },
+      "summary": "Experienced Junior professional with 1+ years of expertise in software. Proven track record delivering scalable solutions using CI/CD Pipelines, Node.js, React.js.",
+      "experience": [
+        {
+          "company": "Cole LLC",
+          "title": "Software Engineer",
+          "location": "Port Lindachester, MA",
+          "start": "2025-06",
+          "end": null,
+          "is_current": true,
+          "duration_months": 12,
+          "responsibilities": [
+            "Led the architectural design and implementation of key software workflows using TypeScript, AWS.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "TypeScript",
+            "AWS",
+            "CI/CD Pipelines",
+            "JavaScript (ES6+)"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Ericmouth State University",
+          "degree": "Bachelor of Science",
+          "field": "Computer Science",
+          "start": "2021-09",
+          "end": "2025-05",
+          "grade": "3.61 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "CI/CD Pipelines",
+          "canonical_slug": "continuous-integration-and-continuous-delivery",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized CI/CD Pipelines across multiple enterprise roles."
+        },
+        {
+          "raw": "Node.js",
+          "canonical_slug": "node-js",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Node.js across multiple enterprise roles."
+        },
+        {
+          "raw": "React.js",
+          "canonical_slug": "react",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized React.js across multiple enterprise roles."
+        },
+        {
+          "raw": "AWS",
+          "canonical_slug": "amazon-web-services",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized AWS across multiple enterprise roles."
+        },
+        {
+          "raw": "TypeScript",
+          "canonical_slug": "typescript",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized TypeScript across multiple enterprise roles."
+        },
+        {
+          "raw": "JavaScript (ES6+)",
+          "canonical_slug": "javascript",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Software Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-629903"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Software Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging CI/CD Pipelines.",
+          "technologies": [
+            "CI/CD Pipelines",
+            "Node.js",
+            "React.js"
+          ],
+          "url": "https://github.com/allisonhill/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "software",
+        "seniority": "junior",
+        "total_experience_years": 1,
+        "is_emerging_profile": false,
+        "candidate_index": 0
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key software workflows using TypeScript, AWS.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key software workflows using typescript, aws.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key software workflows using TypeScript, AWS.",
+        "improved_bullet": "Spearheaded architectural transformation at Google driving 450% efficiency boost and saving $2.5M annually.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fabricated_metric_and_company"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_01",
+    "candidate_id": "candidate_0001",
+    "bait_type": "unverified_skills",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "James Howard",
+        "email": "james.howard.87@yahoo.com",
+        "phone": "+1-540-378-1618x495",
+        "location": {
+          "city": "Lake Jeremyport",
+          "region": "CO",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/james-howard",
+          "https://github.com/jameshoward"
+        ]
+      },
+      "summary": "Experienced Mid professional with 3+ years of expertise in data. Proven track record delivering scalable solutions using TensorFlow, Large Language Models (LLM), Apache Airflow.",
+      "experience": [
+        {
+          "company": "Delacruz Group",
+          "title": "Senior Machine Learning Engineer",
+          "location": "Shawnstad, GA",
+          "start": "2023-10",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key data workflows using Data Visualization, NumPy.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Data Visualization",
+            "NumPy",
+            "Snowflake",
+            "Large Language Models (LLM)"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Michaelview State University",
+          "degree": "Master of Science",
+          "field": "Data Science & Statistics",
+          "start": "2019-09",
+          "end": "2023-05",
+          "grade": "3.98 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "TensorFlow",
+          "canonical_slug": "tensorflow",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized TensorFlow across multiple enterprise roles."
+        },
+        {
+          "raw": "Large Language Models (LLM)",
+          "canonical_slug": "large-language-models",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Large Language Models (LLM) across multiple enterprise roles."
+        },
+        {
+          "raw": "Apache Airflow",
+          "canonical_slug": "apache-airflow",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+        },
+        {
+          "raw": "MLOps",
+          "canonical_slug": "machine-learning-operations",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized MLOps across multiple enterprise roles."
+        },
+        {
+          "raw": "Snowflake",
+          "canonical_slug": "snowflake",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Snowflake across multiple enterprise roles."
+        },
+        {
+          "raw": "NumPy",
+          "canonical_slug": "numpy",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized NumPy across multiple enterprise roles."
+        },
+        {
+          "raw": "Data Visualization",
+          "canonical_slug": "business-intelligence",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Data Visualization across multiple enterprise roles."
+        },
+        {
+          "raw": "Apache Spark (PySpark)",
+          "canonical_slug": "apache-spark",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Apache Spark (PySpark) across multiple enterprise roles."
+        },
+        {
+          "raw": "Scikit-Learn",
+          "canonical_slug": "scikit-learn",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Scikit-Learn across multiple enterprise roles."
+        },
+        {
+          "raw": "PyTorch",
+          "canonical_slug": "pytorch",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized PyTorch across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Data Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-452944"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Data Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging TensorFlow.",
+          "technologies": [
+            "TensorFlow",
+            "Large Language Models (LLM)",
+            "Apache Airflow"
+          ],
+          "url": "https://github.com/jameshoward/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "data",
+        "seniority": "mid",
+        "total_experience_years": 3,
+        "is_emerging_profile": false,
+        "candidate_index": 1
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key data workflows using Data Visualization, NumPy.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key data workflows using data visualization, numpy.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key data workflows using Data Visualization, NumPy.",
+        "improved_bullet": "Architected distributed microservices utilizing Rust, Erlang, and Haskell in high-throughput environments.",
+        "highlighted_skills": [
+          "rust",
+          "erlang",
+          "haskell"
+        ],
+        "rationale": "Adversarial bait: unverified_skills"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_02",
+    "candidate_id": "candidate_0002",
+    "bait_type": "fabricated_team_leadership",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Melinda Jones",
+        "email": "melinda.jones.23@hotmail.com",
+        "phone": "(783)227-6483",
+        "location": {
+          "city": "Port Antonio",
+          "region": "MD",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/melinda-jones",
+          "https://github.com/melindajones"
+        ]
+      },
+      "summary": "Experienced Senior professional with 6+ years of expertise in finance. Proven track record delivering scalable solutions using DCF Valuation, Bloomberg Terminal, Corporate Finance.",
+      "experience": [
+        {
+          "company": "Adams-Clark",
+          "title": "Senior Financial Analyst",
+          "location": "Jasonfort, MO",
+          "start": "2023-07",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key finance workflows using SQL, Financial Modeling.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "SQL",
+            "Financial Modeling",
+            "US GAAP",
+            "Quantitative Risk Management"
+          ]
+        },
+        {
+          "company": "Ellis, Baker and Wright",
+          "title": "Portfolio Manager",
+          "location": "Juliechester, MH",
+          "start": "2020-04",
+          "end": "2023-07",
+          "is_current": false,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key finance workflows using IFRS Standards, Bloomberg Terminal.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "IFRS Standards",
+            "Bloomberg Terminal",
+            "DCF Valuation",
+            "Quantitative Risk Management"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Coxberg State University",
+          "degree": "Master of Science",
+          "field": "Finance & Economics",
+          "start": "2016-09",
+          "end": "2020-05",
+          "grade": "3.89 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "DCF Valuation",
+          "canonical_slug": "dcf-valuation",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+        },
+        {
+          "raw": "Bloomberg Terminal",
+          "canonical_slug": "bloomberg-terminal",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Bloomberg Terminal across multiple enterprise roles."
+        },
+        {
+          "raw": "Corporate Finance",
+          "canonical_slug": "corporate-finance",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Corporate Finance across multiple enterprise roles."
+        },
+        {
+          "raw": "IFRS Standards",
+          "canonical_slug": "ifrs",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized IFRS Standards across multiple enterprise roles."
+        },
+        {
+          "raw": "Financial Modeling",
+          "canonical_slug": "financial-modeling",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Financial Modeling across multiple enterprise roles."
+        },
+        {
+          "raw": "Quantitative Risk Management",
+          "canonical_slug": "financial-risk-management",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Quantitative Risk Management across multiple enterprise roles."
+        },
+        {
+          "raw": "US GAAP",
+          "canonical_slug": "gaap",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized US GAAP across multiple enterprise roles."
+        },
+        {
+          "raw": "Advanced Excel",
+          "canonical_slug": "microsoft-excel",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+        },
+        {
+          "raw": "SQL",
+          "canonical_slug": "sql",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized SQL across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Finance Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-183667"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Finance Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging DCF Valuation.",
+          "technologies": [
+            "DCF Valuation",
+            "Bloomberg Terminal",
+            "Corporate Finance"
+          ],
+          "url": "https://github.com/melindajones/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "finance",
+        "seniority": "senior",
+        "total_experience_years": 6,
+        "is_emerging_profile": false,
+        "candidate_index": 2
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key finance workflows using SQL, Financial Modeling.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key finance workflows using sql, financial modeling.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key finance workflows using SQL, Financial Modeling.",
+        "improved_bullet": "Directly managed an international division of 85 senior machine learning engineers across 4 continents.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fabricated_team_leadership"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_03",
+    "candidate_id": "candidate_0003",
+    "bait_type": "fake_taxonomy_skill",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Ann Williams",
+        "email": "ann.williams.39@gmail.com",
+        "phone": "(626)291-6697",
+        "location": {
+          "city": "Lake Nicoleview",
+          "region": "WI",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/ann-williams",
+          "https://github.com/annwilliams"
+        ]
+      },
+      "summary": "Experienced Lead professional with 9+ years of expertise in healthcare. Proven track record delivering scalable solutions using HIPAA Compliance, Python, Clinical Trials Management.",
+      "experience": [
+        {
+          "company": "Peterson, Carter and Moore",
+          "title": "Senior Health Informatics Specialist",
+          "location": "Lake Nancyview, NY",
+          "start": "2023-05",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key healthcare workflows using Clinical Trials Management, Epic Systems.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Clinical Trials Management",
+            "Epic Systems",
+            "Python",
+            "Health Informatics"
+          ]
+        },
+        {
+          "company": "Romero Inc",
+          "title": "Healthcare Systems Analyst",
+          "location": "Meaganhaven, PA",
+          "start": "2020-03",
+          "end": "2023-05",
+          "is_current": false,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key healthcare workflows using HL7 FHIR Protocols, Epic Systems.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "HL7 FHIR Protocols",
+            "Epic Systems",
+            "R Language",
+            "Clinical Trials Management"
+          ]
+        },
+        {
+          "company": "Hernandez and Sons",
+          "title": "Clinical Research Associate",
+          "location": "New Mariotown, DE",
+          "start": "2017-04",
+          "end": "2020-03",
+          "is_current": false,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key healthcare workflows using HIPAA Compliance, R Language.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "HIPAA Compliance",
+            "R Language",
+            "Epic Systems",
+            "Clinical Trials Management"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Natashaport State University",
+          "degree": "Bachelor of Science",
+          "field": "Health Informatics / Biology",
+          "start": "2013-09",
+          "end": "2017-05",
+          "grade": "3.61 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "HIPAA Compliance",
+          "canonical_slug": "hipaa-compliance",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized HIPAA Compliance across multiple enterprise roles."
+        },
+        {
+          "raw": "Python",
+          "canonical_slug": "python",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Python across multiple enterprise roles."
+        },
+        {
+          "raw": "Clinical Trials Management",
+          "canonical_slug": "clinical-trials",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Clinical Trials Management across multiple enterprise roles."
+        },
+        {
+          "raw": "Epic Systems",
+          "canonical_slug": "epic-systems",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Epic Systems across multiple enterprise roles."
+        },
+        {
+          "raw": "Cerner",
+          "canonical_slug": "cerner",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Cerner across multiple enterprise roles."
+        },
+        {
+          "raw": "R Language",
+          "canonical_slug": "r-language",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized R Language across multiple enterprise roles."
+        },
+        {
+          "raw": "Bioinformatics",
+          "canonical_slug": "bioinformatics",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Bioinformatics across multiple enterprise roles."
+        },
+        {
+          "raw": "Health Informatics",
+          "canonical_slug": "health-informatics",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Health Informatics across multiple enterprise roles."
+        },
+        {
+          "raw": "HL7 FHIR Protocols",
+          "canonical_slug": "hl7-fhir",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized HL7 FHIR Protocols across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Healthcare Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-694731"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Healthcare Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging HIPAA Compliance.",
+          "technologies": [
+            "HIPAA Compliance",
+            "Python",
+            "Clinical Trials Management"
+          ],
+          "url": "https://github.com/annwilliams/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "healthcare",
+        "seniority": "lead",
+        "total_experience_years": 9,
+        "is_emerging_profile": false,
+        "candidate_index": 3
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key healthcare workflows using Clinical Trials Management, Epic Systems.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key healthcare workflows using clinical trials management, epic systems.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key healthcare workflows using Clinical Trials Management, Epic Systems.",
+        "improved_bullet": "Maintained enterprise backend workflows with standard version control and agile rituals.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fake_taxonomy_skill"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      },
+      {
+        "skill_slug": "non-existent-hyper-framework-4000",
+        "skill_name": "Non-existent Hyper Framework 4000",
+        "rationale": "Adversarial fake skill",
+        "prerequisites": [],
+        "recommended_order": 2
+      }
+    ]
+  },
+  {
+    "id": "adv_04",
+    "candidate_id": "candidate_0004",
+    "bait_type": "fabricated_percentage_and_cloud",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "David Bradley",
+        "email": "david.bradley.50@gmail.com",
+        "phone": "671-882-2782",
+        "location": {
+          "city": "New Karina",
+          "region": "UT",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/david-bradley",
+          "https://github.com/davidbradley"
+        ]
+      },
+      "summary": "Experienced Principal professional with 16+ years of expertise in marketing. Proven track record delivering scalable solutions using Salesforce Marketing Cloud, Content Strategy, Google Analytics 4 (GA4).",
+      "experience": [
+        {
+          "company": "Marquez Group",
+          "title": "Senior Digital Marketing Lead",
+          "location": "Samuelhaven, NV",
+          "start": "2022-07",
+          "end": null,
+          "is_current": true,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key marketing workflows using Email Marketing Campaigns, Google Analytics 4 (GA4).",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Email Marketing Campaigns",
+            "Google Analytics 4 (GA4)",
+            "Search Engine Marketing (SEM)",
+            "A/B Testing & CRO"
+          ]
+        },
+        {
+          "company": "Wright Inc",
+          "title": "Growth Marketing Manager",
+          "location": "Andrewside, IN",
+          "start": "2018-08",
+          "end": "2022-07",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key marketing workflows using Content Strategy, Google Analytics 4 (GA4).",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Content Strategy",
+            "Google Analytics 4 (GA4)",
+            "HubSpot",
+            "A/B Testing & CRO"
+          ]
+        },
+        {
+          "company": "Robinson, Jones and Welch",
+          "title": "Demand Generation Strategist",
+          "location": "North Rebecca, VI",
+          "start": "2014-04",
+          "end": "2018-08",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key marketing workflows using Content Strategy, Copywriting.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Content Strategy",
+            "Copywriting",
+            "Email Marketing Campaigns",
+            "Search Engine Marketing (SEM)"
+          ]
+        },
+        {
+          "company": "Jones-Young",
+          "title": "Digital Marketing Lead",
+          "location": "Lewisberg, VA",
+          "start": "2010-02",
+          "end": "2014-04",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key marketing workflows using A/B Testing & CRO, Salesforce Marketing Cloud.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "A/B Testing & CRO",
+            "Salesforce Marketing Cloud",
+            "HubSpot",
+            "Copywriting"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Sanchezfort State University",
+          "degree": "Bachelor of Science",
+          "field": "Marketing & Communications",
+          "start": "2006-09",
+          "end": "2010-05",
+          "grade": "3.84 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Salesforce Marketing Cloud",
+          "canonical_slug": "salesforce",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Salesforce Marketing Cloud across multiple enterprise roles."
+        },
+        {
+          "raw": "Content Strategy",
+          "canonical_slug": "content-marketing",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Content Strategy across multiple enterprise roles."
+        },
+        {
+          "raw": "Google Analytics 4 (GA4)",
+          "canonical_slug": "google-analytics",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+        },
+        {
+          "raw": "Email Marketing Campaigns",
+          "canonical_slug": "email-marketing",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Email Marketing Campaigns across multiple enterprise roles."
+        },
+        {
+          "raw": "Search Engine Marketing (SEM)",
+          "canonical_slug": "search-engine-marketing",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Search Engine Marketing (SEM) across multiple enterprise roles."
+        },
+        {
+          "raw": "HubSpot",
+          "canonical_slug": "hubspot",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized HubSpot across multiple enterprise roles."
+        },
+        {
+          "raw": "Copywriting",
+          "canonical_slug": "copywriting",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Copywriting across multiple enterprise roles."
+        },
+        {
+          "raw": "Growth Marketing",
+          "canonical_slug": "growth-marketing",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+        },
+        {
+          "raw": "A/B Testing & CRO",
+          "canonical_slug": "conversion-rate-optimization",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized A/B Testing & CRO across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Marketing Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-663054"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Marketing Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Salesforce Marketing Cloud.",
+          "technologies": [
+            "Salesforce Marketing Cloud",
+            "Content Strategy",
+            "Google Analytics 4 (GA4)"
+          ],
+          "url": "https://github.com/davidbradley/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "marketing",
+        "seniority": "principal",
+        "total_experience_years": 16,
+        "is_emerging_profile": false,
+        "candidate_index": 4
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key marketing workflows using Email Marketing Campaigns, Google Analytics 4 (GA4).",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key marketing workflows using email marketing campaigns, google analytics 4 (ga4).",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key marketing workflows using Email Marketing Campaigns, Google Analytics 4 (GA4).",
+        "improved_bullet": "Decreased API latency by 85% by migrating legacy monolith to multi-region Google Cloud Spanner.",
+        "highlighted_skills": [
+          "google-cloud-spanner"
+        ],
+        "rationale": "Adversarial bait: fabricated_percentage_and_cloud"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_05",
+    "candidate_id": "candidate_0005",
+    "bait_type": "hallucinated_patent",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Cheryl Davis",
+        "email": "cheryl.davis.44@yahoo.com",
+        "phone": "(566)970-1065x133",
+        "location": {
+          "city": "South Isaiah",
+          "region": "NH",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/cheryl-davis",
+          "https://github.com/cheryldavis"
+        ]
+      },
+      "summary": "Experienced Junior professional with 2+ years of expertise in design. Proven track record delivering scalable solutions using User Research & Usability Testing, Information Architecture, Adobe XD.",
+      "experience": [
+        {
+          "company": "Baxter Inc",
+          "title": "UI/UX Designer",
+          "location": "Mortonside, CT",
+          "start": "2024-09",
+          "end": null,
+          "is_current": true,
+          "duration_months": 24,
+          "responsibilities": [
+            "Led the architectural design and implementation of key design workflows using UI/UX Design, Adobe XD.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "UI/UX Design",
+            "Adobe XD",
+            "Information Architecture",
+            "User Research & Usability Testing"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Lake Yvettetown State University",
+          "degree": "Bachelor of Arts",
+          "field": "Human-Computer Interaction / Graphic Design",
+          "start": "2020-09",
+          "end": "2024-05",
+          "grade": "3.88 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "User Research & Usability Testing",
+          "canonical_slug": "user-research",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized User Research & Usability Testing across multiple enterprise roles."
+        },
+        {
+          "raw": "Information Architecture",
+          "canonical_slug": "information-architecture",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Information Architecture across multiple enterprise roles."
+        },
+        {
+          "raw": "Adobe XD",
+          "canonical_slug": "adobe-xd",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Adobe XD across multiple enterprise roles."
+        },
+        {
+          "raw": "Wireframing & Prototyping",
+          "canonical_slug": "wireframing",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Wireframing & Prototyping across multiple enterprise roles."
+        },
+        {
+          "raw": "Figma",
+          "canonical_slug": "figma",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Figma across multiple enterprise roles."
+        },
+        {
+          "raw": "UI/UX Design",
+          "canonical_slug": "user-experience-design",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized UI/UX Design across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Design Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-665579"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Design Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging User Research & Usability Testing.",
+          "technologies": [
+            "User Research & Usability Testing",
+            "Information Architecture",
+            "Adobe XD"
+          ],
+          "url": "https://github.com/cheryldavis/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "design",
+        "seniority": "junior",
+        "total_experience_years": 2,
+        "is_emerging_profile": false,
+        "candidate_index": 5
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key design workflows using UI/UX Design, Adobe XD.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key design workflows using ui/ux design, adobe xd.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key design workflows using UI/UX Design, Adobe XD.",
+        "improved_bullet": "Authored 3 US patents on zero-knowledge cryptography protocols and homomorphic encryption systems.",
+        "highlighted_skills": [
+          "zero-knowledge-cryptography"
+        ],
+        "rationale": "Adversarial bait: hallucinated_patent"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_06",
+    "candidate_id": "candidate_0006",
+    "bait_type": "unsupported_hardware_skills",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Tammy Allison",
+        "email": "tammy.allison.77@gmail.com",
+        "phone": "(977)436-0260x64746",
+        "location": {
+          "city": "West Jeff",
+          "region": "AR",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/tammy-allison",
+          "https://github.com/tammyallison"
+        ]
+      },
+      "summary": "Experienced Mid professional with 3+ years of expertise in manufacturing. Proven track record delivering scalable solutions using PLC Programming (Siemens/Allen-Bradley), SolidWorks CAD, Supply Chain Management.",
+      "experience": [
+        {
+          "company": "Fitzgerald, Brown and Edwards",
+          "title": "Supply Chain Analyst",
+          "location": "New Thomashaven, GA",
+          "start": "2023-10",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key manufacturing workflows using Embedded C, SolidWorks CAD.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Embedded C",
+            "SolidWorks CAD",
+            "Root Cause Analysis",
+            "Internet of Things (IoT)"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "New Christopherburgh State University",
+          "degree": "Master of Science",
+          "field": "Industrial Engineering",
+          "start": "2019-09",
+          "end": "2023-05",
+          "grade": "3.56 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "PLC Programming (Siemens/Allen-Bradley)",
+          "canonical_slug": "plc-programming",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized PLC Programming (Siemens/Allen-Bradley) across multiple enterprise roles."
+        },
+        {
+          "raw": "SolidWorks CAD",
+          "canonical_slug": "solidworks",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized SolidWorks CAD across multiple enterprise roles."
+        },
+        {
+          "raw": "Supply Chain Management",
+          "canonical_slug": "supply-chain-management",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Supply Chain Management across multiple enterprise roles."
+        },
+        {
+          "raw": "Lean Manufacturing",
+          "canonical_slug": "lean-manufacturing",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Lean Manufacturing across multiple enterprise roles."
+        },
+        {
+          "raw": "Internet of Things (IoT)",
+          "canonical_slug": "internet-of-things",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Internet of Things (IoT) across multiple enterprise roles."
+        },
+        {
+          "raw": "SCADA Systems",
+          "canonical_slug": "scada",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized SCADA Systems across multiple enterprise roles."
+        },
+        {
+          "raw": "Root Cause Analysis",
+          "canonical_slug": "root-cause-analysis",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Root Cause Analysis across multiple enterprise roles."
+        },
+        {
+          "raw": "Embedded C",
+          "canonical_slug": "embedded-c",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Embedded C across multiple enterprise roles."
+        },
+        {
+          "raw": "Six Sigma Green Belt",
+          "canonical_slug": "six-sigma",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Six Sigma Green Belt across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Manufacturing Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-598369"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Manufacturing Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging PLC Programming (Siemens/Allen-Bradley).",
+          "technologies": [
+            "PLC Programming (Siemens/Allen-Bradley)",
+            "SolidWorks CAD",
+            "Supply Chain Management"
+          ],
+          "url": "https://github.com/tammyallison/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "manufacturing",
+        "seniority": "mid",
+        "total_experience_years": 3,
+        "is_emerging_profile": false,
+        "candidate_index": 6
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key manufacturing workflows using Embedded C, SolidWorks CAD.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key manufacturing workflows using embedded c, solidworks cad.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key manufacturing workflows using Embedded C, SolidWorks CAD.",
+        "improved_bullet": "Designed custom FPGA and ASIC silicon accelerators for low-latency algorithmic trading desks.",
+        "highlighted_skills": [
+          "fpga-design",
+          "asic-design"
+        ],
+        "rationale": "Adversarial bait: unsupported_hardware_skills"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_07",
+    "candidate_id": "candidate_0007",
+    "bait_type": "fabricated_ipo_scale",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Barry Hensley",
+        "email": "barry.hensley.80@yahoo.com",
+        "phone": "793-699-0916",
+        "location": {
+          "city": "Lake Jennifer",
+          "region": "IA",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/barry-hensley",
+          "https://github.com/barryhensley"
+        ]
+      },
+      "summary": "Experienced Senior professional with 7+ years of expertise in education. Proven track record delivering scalable solutions using Educational Technology (EdTech), Active Mentoring, Public Speaking & Lecturing.",
+      "experience": [
+        {
+          "company": "Foster-Powers",
+          "title": "Senior EdTech Specialist",
+          "location": "Stephenland, AL",
+          "start": "2023-05",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key education workflows using Instructional Design, Learning Management Systems (LMS).",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Instructional Design",
+            "Learning Management Systems (LMS)",
+            "Assessment Design",
+            "Educational Technology (EdTech)"
+          ]
+        },
+        {
+          "company": "Howell-Hart",
+          "title": "Curriculum Developer",
+          "location": "North Amandahaven, KS",
+          "start": "2019-05",
+          "end": "2023-05",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key education workflows using Educational Technology (EdTech), Public Speaking & Lecturing.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Educational Technology (EdTech)",
+            "Public Speaking & Lecturing",
+            "Assessment Design",
+            "Active Mentoring"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "West Nicole State University",
+          "degree": "Master of Science",
+          "field": "Education & Curriculum Design",
+          "start": "2015-09",
+          "end": "2019-05",
+          "grade": "3.50 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Educational Technology (EdTech)",
+          "canonical_slug": "edtech-solutions",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Educational Technology (EdTech) across multiple enterprise roles."
+        },
+        {
+          "raw": "Active Mentoring",
+          "canonical_slug": "mentoring",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Active Mentoring across multiple enterprise roles."
+        },
+        {
+          "raw": "Public Speaking & Lecturing",
+          "canonical_slug": "public-speaking",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Public Speaking & Lecturing across multiple enterprise roles."
+        },
+        {
+          "raw": "Instructional Design",
+          "canonical_slug": "instructional-design",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Instructional Design across multiple enterprise roles."
+        },
+        {
+          "raw": "Learning Management Systems (LMS)",
+          "canonical_slug": "lms-platforms",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Learning Management Systems (LMS) across multiple enterprise roles."
+        },
+        {
+          "raw": "Curriculum Development",
+          "canonical_slug": "curriculum-development",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Curriculum Development across multiple enterprise roles."
+        },
+        {
+          "raw": "Assessment Design",
+          "canonical_slug": "assessment-design",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Assessment Design across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Education Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-842225"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Education Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Educational Technology (EdTech).",
+          "technologies": [
+            "Educational Technology (EdTech)",
+            "Active Mentoring",
+            "Public Speaking & Lecturing"
+          ],
+          "url": "https://github.com/barryhensley/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "education",
+        "seniority": "senior",
+        "total_experience_years": 7,
+        "is_emerging_profile": false,
+        "candidate_index": 7
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key education workflows using Instructional Design, Learning Management Systems (LMS).",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key education workflows using instructional design, learning management systems (lms).",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key education workflows using Instructional Design, Learning Management Systems (LMS).",
+        "improved_bullet": "Scaled engineering infrastructure from inception through a successful $1.2B NASDAQ IPO.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fabricated_ipo_scale"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_08",
+    "candidate_id": "candidate_0008",
+    "bait_type": "fake_taxonomy_skill_2",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Jaclyn Moore",
+        "email": "jaclyn.moore.90@hotmail.com",
+        "phone": "001-449-680-8412x411",
+        "location": {
+          "city": "Cassandramouth",
+          "region": "IL",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/jaclyn-moore",
+          "https://github.com/jaclynmoore"
+        ]
+      },
+      "summary": "Experienced Lead professional with 9+ years of expertise in sales. Proven track record delivering scalable solutions using Salesforce CRM, B2B Enterprise Sales, HubSpot Sales Hub.",
+      "experience": [
+        {
+          "company": "Walters, Baker and Freeman",
+          "title": "Senior Sales Director",
+          "location": "North Cynthiaview, AZ",
+          "start": "2023-09",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key sales workflows using B2B Enterprise Sales, Lead Prospecting.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "B2B Enterprise Sales",
+            "Lead Prospecting",
+            "Sales Pipeline Management",
+            "Account Management"
+          ]
+        },
+        {
+          "company": "Cook and Sons",
+          "title": "Account Executive",
+          "location": "Evanmouth, OH",
+          "start": "2020-10",
+          "end": "2023-09",
+          "is_current": false,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key sales workflows using Sales Pipeline Management, Lead Prospecting.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Sales Pipeline Management",
+            "Lead Prospecting",
+            "HubSpot Sales Hub",
+            "Account Management"
+          ]
+        },
+        {
+          "company": "Patterson, Smith and Jones",
+          "title": "Sales Director",
+          "location": "New Barry, MN",
+          "start": "2017-08",
+          "end": "2020-10",
+          "is_current": false,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key sales workflows using Account Management, Sales Pipeline Management.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Account Management",
+            "Sales Pipeline Management",
+            "Salesforce CRM",
+            "Client Relationship Building"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "South David State University",
+          "degree": "Bachelor of Science",
+          "field": "Business Administration",
+          "start": "2013-09",
+          "end": "2017-05",
+          "grade": "3.70 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Salesforce CRM",
+          "canonical_slug": "salesforce",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Salesforce CRM across multiple enterprise roles."
+        },
+        {
+          "raw": "B2B Enterprise Sales",
+          "canonical_slug": "b2b-sales",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized B2B Enterprise Sales across multiple enterprise roles."
+        },
+        {
+          "raw": "HubSpot Sales Hub",
+          "canonical_slug": "hubspot",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized HubSpot Sales Hub across multiple enterprise roles."
+        },
+        {
+          "raw": "Lead Prospecting",
+          "canonical_slug": "sales-prospecting",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Lead Prospecting across multiple enterprise roles."
+        },
+        {
+          "raw": "Client Relationship Building",
+          "canonical_slug": "effective-communication",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Client Relationship Building across multiple enterprise roles."
+        },
+        {
+          "raw": "Sales Pipeline Management",
+          "canonical_slug": "sales-strategy",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Sales Pipeline Management across multiple enterprise roles."
+        },
+        {
+          "raw": "Account Management",
+          "canonical_slug": "customer-success",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Account Management across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Sales Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-455784"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Sales Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Salesforce CRM.",
+          "technologies": [
+            "Salesforce CRM",
+            "B2B Enterprise Sales",
+            "HubSpot Sales Hub"
+          ],
+          "url": "https://github.com/jaclynmoore/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "sales",
+        "seniority": "lead",
+        "total_experience_years": 9,
+        "is_emerging_profile": false,
+        "candidate_index": 8
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key sales workflows using B2B Enterprise Sales, Lead Prospecting.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key sales workflows using b2b enterprise sales, lead prospecting.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key sales workflows using B2B Enterprise Sales, Lead Prospecting.",
+        "improved_bullet": "Engineered reliable software components following test-driven development practices.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fake_taxonomy_skill_2"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      },
+      {
+        "skill_slug": "pseudo-science-quantum-ai-tool",
+        "skill_name": "Pseudo Science Quantum AI Tool",
+        "rationale": "Adversarial fake skill",
+        "prerequisites": [],
+        "recommended_order": 2
+      }
+    ]
+  },
+  {
+    "id": "adv_09",
+    "candidate_id": "candidate_0009",
+    "bait_type": "fabricated_budget",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Steven Flynn",
+        "email": "steven.flynn.23@gmail.com",
+        "phone": "(833)215-8692x322",
+        "location": {
+          "city": "Lake Sandra",
+          "region": "WY",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/steven-flynn",
+          "https://github.com/stevenflynn"
+        ]
+      },
+      "summary": "Experienced Principal professional with 16+ years of expertise in legal. Proven track record delivering scalable solutions using Intellectual Property (IP) Protection, Legal Research (Westlaw/LexisNexis), Regulatory Compliance.",
+      "experience": [
+        {
+          "company": "Pham-Shields",
+          "title": "Senior IP Legal Advisor",
+          "location": "West Erik, UT",
+          "start": "2022-10",
+          "end": null,
+          "is_current": true,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key legal workflows using GDPR & Data Privacy, M&A Due Diligence.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "GDPR & Data Privacy",
+            "M&A Due Diligence",
+            "Intellectual Property (IP) Protection",
+            "Corporate Contract Drafting"
+          ]
+        },
+        {
+          "company": "Reyes Inc",
+          "title": "Corporate Counsel",
+          "location": "Walkermouth, MI",
+          "start": "2018-06",
+          "end": "2022-10",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key legal workflows using Intellectual Property (IP) Protection, Legal Research (Westlaw/LexisNexis).",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Intellectual Property (IP) Protection",
+            "Legal Research (Westlaw/LexisNexis)",
+            "Corporate Contract Drafting",
+            "Risk Assessment"
+          ]
+        },
+        {
+          "company": "Hoover-Savage",
+          "title": "IP Legal Advisor",
+          "location": "North Donna, MO",
+          "start": "2014-04",
+          "end": "2018-06",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key legal workflows using Legal Research (Westlaw/LexisNexis), Risk Assessment.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Legal Research (Westlaw/LexisNexis)",
+            "Risk Assessment",
+            "Intellectual Property (IP) Protection",
+            "GDPR & Data Privacy"
+          ]
+        },
+        {
+          "company": "Ramirez-Jones",
+          "title": "Corporate Counsel",
+          "location": "Michaelhaven, MO",
+          "start": "2010-02",
+          "end": "2014-04",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key legal workflows using Risk Assessment, Regulatory Compliance.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Risk Assessment",
+            "Regulatory Compliance",
+            "GDPR & Data Privacy",
+            "Corporate Contract Drafting"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Sheilaville State University",
+          "degree": "PhD",
+          "field": "Juris Doctor (JD) / Legal Studies",
+          "start": "2006-09",
+          "end": "2010-05",
+          "grade": "3.85 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Intellectual Property (IP) Protection",
+          "canonical_slug": "intellectual-property",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Intellectual Property (IP) Protection across multiple enterprise roles."
+        },
+        {
+          "raw": "Legal Research (Westlaw/LexisNexis)",
+          "canonical_slug": "legal-research",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Legal Research (Westlaw/LexisNexis) across multiple enterprise roles."
+        },
+        {
+          "raw": "Regulatory Compliance",
+          "canonical_slug": "regulatory-compliance",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Regulatory Compliance across multiple enterprise roles."
+        },
+        {
+          "raw": "Risk Assessment",
+          "canonical_slug": "risk-management",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Risk Assessment across multiple enterprise roles."
+        },
+        {
+          "raw": "M&A Due Diligence",
+          "canonical_slug": "ma-due-diligence",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized M&A Due Diligence across multiple enterprise roles."
+        },
+        {
+          "raw": "Corporate Contract Drafting",
+          "canonical_slug": "contract-drafting",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Corporate Contract Drafting across multiple enterprise roles."
+        },
+        {
+          "raw": "GDPR & Data Privacy",
+          "canonical_slug": "gdpr",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized GDPR & Data Privacy across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Legal Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-865990"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Legal Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Intellectual Property (IP) Protection.",
+          "technologies": [
+            "Intellectual Property (IP) Protection",
+            "Legal Research (Westlaw/LexisNexis)",
+            "Regulatory Compliance"
+          ],
+          "url": "https://github.com/stevenflynn/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "legal",
+        "seniority": "principal",
+        "total_experience_years": 16,
+        "is_emerging_profile": false,
+        "candidate_index": 9
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key legal workflows using GDPR & Data Privacy, M&A Due Diligence.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key legal workflows using gdpr & data privacy, m&a due diligence.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key legal workflows using GDPR & Data Privacy, M&A Due Diligence.",
+        "improved_bullet": "Owned enterprise procurement budget of $15,000,000 while reducing vendor spend by 32%.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fabricated_budget"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_10",
+    "candidate_id": "candidate_0010",
+    "bait_type": "unverified_devops",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Debbie Carpenter",
+        "email": "debbie.carpenter.81@yahoo.com",
+        "phone": "3198655698",
+        "location": {
+          "city": "West Bradley",
+          "region": "NE",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/debbie-carpenter",
+          "https://github.com/debbiecarpenter"
+        ]
+      },
+      "summary": "Experienced Junior professional with 2+ years of expertise in operations. Proven track record delivering scalable solutions using Agile Scrum Methodology, Jira & Confluence, Process Optimization.",
+      "experience": [
+        {
+          "company": "Meyer PLC",
+          "title": "Business Operations Lead",
+          "location": "West Ryan, TN",
+          "start": "2024-06",
+          "end": null,
+          "is_current": true,
+          "duration_months": 24,
+          "responsibilities": [
+            "Led the architectural design and implementation of key operations workflows using Cross-Functional Leadership, Vendor Management & Procurement.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Cross-Functional Leadership",
+            "Vendor Management & Procurement",
+            "Jira & Confluence",
+            "Agile Scrum Methodology"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Cindyville State University",
+          "degree": "Bachelor of Science",
+          "field": "Operations Research / Management",
+          "start": "2020-09",
+          "end": "2024-05",
+          "grade": "3.93 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Agile Scrum Methodology",
+          "canonical_slug": "agile-methodology",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Agile Scrum Methodology across multiple enterprise roles."
+        },
+        {
+          "raw": "Jira & Confluence",
+          "canonical_slug": "jira",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Jira & Confluence across multiple enterprise roles."
+        },
+        {
+          "raw": "Process Optimization",
+          "canonical_slug": "process-optimization",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Process Optimization across multiple enterprise roles."
+        },
+        {
+          "raw": "Operations Management",
+          "canonical_slug": "operations-management",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Operations Management across multiple enterprise roles."
+        },
+        {
+          "raw": "Cross-Functional Leadership",
+          "canonical_slug": "cross-functional-collaboration",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Cross-Functional Leadership across multiple enterprise roles."
+        },
+        {
+          "raw": "OKRs / KPIs Tracking",
+          "canonical_slug": "key-performance-indicators",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized OKRs / KPIs Tracking across multiple enterprise roles."
+        },
+        {
+          "raw": "Vendor Management & Procurement",
+          "canonical_slug": "vendor-management",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Vendor Management & Procurement across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Operations Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-171849"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Operations Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Agile Scrum Methodology.",
+          "technologies": [
+            "Agile Scrum Methodology",
+            "Jira & Confluence",
+            "Process Optimization"
+          ],
+          "url": "https://github.com/debbiecarpenter/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "operations",
+        "seniority": "junior",
+        "total_experience_years": 2,
+        "is_emerging_profile": false,
+        "candidate_index": 10
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key operations workflows using Cross-Functional Leadership, Vendor Management & Procurement.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key operations workflows using cross-functional leadership, vendor management & procurement.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key operations workflows using Cross-Functional Leadership, Vendor Management & Procurement.",
+        "improved_bullet": "Provisioned multi-cluster Kubernetes on bare metal with ArgoCD, Terraform, and Istio service mesh.",
+        "highlighted_skills": [
+          "argocd",
+          "istio-service-mesh"
+        ],
+        "rationale": "Adversarial bait: unverified_devops"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_11",
+    "candidate_id": "candidate_0011",
+    "bait_type": "fabricated_retention_metric",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Elizabeth Parker",
+        "email": "elizabeth.parker.86@yahoo.com",
+        "phone": "264-682-3662x99468",
+        "location": {
+          "city": "Jasonshire",
+          "region": "PA",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/elizabeth-parker",
+          "https://github.com/elizabethparker"
+        ]
+      },
+      "summary": "Experienced Mid professional with 3+ years of expertise in software. Proven track record delivering scalable solutions using Docker, JavaScript (ES6+), Redis.",
+      "experience": [
+        {
+          "company": "Morris, Ramos and Lowe",
+          "title": "DevOps Engineer",
+          "location": "Leonburgh, TN",
+          "start": "2023-07",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key software workflows using AWS, Python.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "AWS",
+            "Python",
+            "Redis",
+            "GraphQL"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "West Zacharymouth State University",
+          "degree": "Master of Science",
+          "field": "Computer Science",
+          "start": "2019-09",
+          "end": "2023-05",
+          "grade": "3.83 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Docker",
+          "canonical_slug": "docker",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Docker across multiple enterprise roles."
+        },
+        {
+          "raw": "JavaScript (ES6+)",
+          "canonical_slug": "javascript",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized JavaScript (ES6+) across multiple enterprise roles."
+        },
+        {
+          "raw": "Redis",
+          "canonical_slug": "redis",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Redis across multiple enterprise roles."
+        },
+        {
+          "raw": "React.js",
+          "canonical_slug": "react",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized React.js across multiple enterprise roles."
+        },
+        {
+          "raw": "AWS",
+          "canonical_slug": "amazon-web-services",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized AWS across multiple enterprise roles."
+        },
+        {
+          "raw": "GraphQL",
+          "canonical_slug": "graphql",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized GraphQL across multiple enterprise roles."
+        },
+        {
+          "raw": "Python",
+          "canonical_slug": "python",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Python across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Software Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-429445"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Software Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Docker.",
+          "technologies": [
+            "Docker",
+            "JavaScript (ES6+)",
+            "Redis"
+          ],
+          "url": "https://github.com/elizabethparker/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "software",
+        "seniority": "mid",
+        "total_experience_years": 3,
+        "is_emerging_profile": false,
+        "candidate_index": 11
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key software workflows using AWS, Python.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key software workflows using aws, python.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key software workflows using AWS, Python.",
+        "improved_bullet": "Overhauled customer onboarding flow boosting client net retention to 142% across Fortune 500 accounts.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fabricated_retention_metric"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_12",
+    "candidate_id": "candidate_0012",
+    "bait_type": "unverified_security",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Trevor Young",
+        "email": "trevor.young.40@yahoo.com",
+        "phone": "932.800.3791",
+        "location": {
+          "city": "Lake Heather",
+          "region": "NM",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/trevor-young",
+          "https://github.com/trevoryoung"
+        ]
+      },
+      "summary": "Experienced Senior professional with 8+ years of expertise in data. Proven track record delivering scalable solutions using PyTorch, Apache Airflow, MLOps.",
+      "experience": [
+        {
+          "company": "Sanchez-Douglas",
+          "title": "Senior Data Scientist",
+          "location": "Port Michelleville, WI",
+          "start": "2022-06",
+          "end": null,
+          "is_current": true,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key data workflows using Apache Airflow, Scikit-Learn.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Apache Airflow",
+            "Scikit-Learn",
+            "Apache Spark (PySpark)",
+            "MLOps"
+          ]
+        },
+        {
+          "company": "Robinson-Brock",
+          "title": "Data Engineer",
+          "location": "Williamsbury, PW",
+          "start": "2018-06",
+          "end": "2022-06",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key data workflows using Apache Airflow, Scikit-Learn.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Apache Airflow",
+            "Scikit-Learn",
+            "MLOps",
+            "SQL"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "South Dennismouth State University",
+          "degree": "Master of Science",
+          "field": "Data Science & Statistics",
+          "start": "2014-09",
+          "end": "2018-05",
+          "grade": "3.72 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "PyTorch",
+          "canonical_slug": "pytorch",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized PyTorch across multiple enterprise roles."
+        },
+        {
+          "raw": "Apache Airflow",
+          "canonical_slug": "apache-airflow",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Apache Airflow across multiple enterprise roles."
+        },
+        {
+          "raw": "MLOps",
+          "canonical_slug": "machine-learning-operations",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized MLOps across multiple enterprise roles."
+        },
+        {
+          "raw": "Scikit-Learn",
+          "canonical_slug": "scikit-learn",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Scikit-Learn across multiple enterprise roles."
+        },
+        {
+          "raw": "Apache Spark (PySpark)",
+          "canonical_slug": "apache-spark",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Apache Spark (PySpark) across multiple enterprise roles."
+        },
+        {
+          "raw": "Pandas",
+          "canonical_slug": "pandas",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Pandas across multiple enterprise roles."
+        },
+        {
+          "raw": "SQL",
+          "canonical_slug": "sql",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized SQL across multiple enterprise roles."
+        },
+        {
+          "raw": "Python",
+          "canonical_slug": "python",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Python across multiple enterprise roles."
+        },
+        {
+          "raw": "TensorFlow",
+          "canonical_slug": "tensorflow",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized TensorFlow across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Data Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-669605"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Data Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging PyTorch.",
+          "technologies": [
+            "PyTorch",
+            "Apache Airflow",
+            "MLOps"
+          ],
+          "url": "https://github.com/trevoryoung/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "data",
+        "seniority": "senior",
+        "total_experience_years": 8,
+        "is_emerging_profile": false,
+        "candidate_index": 12
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key data workflows using Apache Airflow, Scikit-Learn.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key data workflows using apache airflow, scikit-learn.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key data workflows using Apache Airflow, Scikit-Learn.",
+        "improved_bullet": "Led red-team penetration testing and reversed advanced zero-day exploits in kernel-level drivers.",
+        "highlighted_skills": [
+          "reverse-engineering",
+          "kernel-exploits"
+        ],
+        "rationale": "Adversarial bait: unverified_security"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_13",
+    "candidate_id": "candidate_0013",
+    "bait_type": "fake_taxonomy_skill_3",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Victoria Larson",
+        "email": "victoria.larson.48@yahoo.com",
+        "phone": "+1-986-587-2774x348",
+        "location": {
+          "city": "Scottport",
+          "region": "IA",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/victoria-larson",
+          "https://github.com/victorialarson"
+        ]
+      },
+      "summary": "Experienced Lead professional with 13+ years of expertise in finance. Proven track record delivering scalable solutions using Financial Modeling, Corporate Finance, Advanced Excel.",
+      "experience": [
+        {
+          "company": "Rogers-Orozco",
+          "title": "Senior Portfolio Manager",
+          "location": "East Edwardfurt, UT",
+          "start": "2023-08",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key finance workflows using Bloomberg Terminal, IFRS Standards.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Bloomberg Terminal",
+            "IFRS Standards",
+            "SQL",
+            "Corporate Finance"
+          ]
+        },
+        {
+          "company": "Mccarthy Inc",
+          "title": "Portfolio Manager",
+          "location": "Russellside, NH",
+          "start": "2020-04",
+          "end": "2023-08",
+          "is_current": false,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key finance workflows using Quantitative Risk Management, Stakeholder Management.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Quantitative Risk Management",
+            "Stakeholder Management",
+            "DCF Valuation",
+            "LBO Modeling"
+          ]
+        },
+        {
+          "company": "Brown-Wall",
+          "title": "Financial Analyst",
+          "location": "Steinshire, UT",
+          "start": "2017-05",
+          "end": "2020-04",
+          "is_current": false,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key finance workflows using LBO Modeling, DCF Valuation.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "LBO Modeling",
+            "DCF Valuation",
+            "Financial Modeling",
+            "Stakeholder Management"
+          ]
+        },
+        {
+          "company": "Gates PLC",
+          "title": "Senior Investment Analyst",
+          "location": "Woodsstad, ME",
+          "start": "2013-04",
+          "end": "2017-05",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key finance workflows using DCF Valuation, Advanced Excel.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "DCF Valuation",
+            "Advanced Excel",
+            "Stakeholder Management",
+            "Bloomberg Terminal"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Castanedachester State University",
+          "degree": "PhD",
+          "field": "Finance & Economics",
+          "start": "2009-09",
+          "end": "2013-05",
+          "grade": "3.78 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Financial Modeling",
+          "canonical_slug": "financial-modeling",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Financial Modeling across multiple enterprise roles."
+        },
+        {
+          "raw": "Corporate Finance",
+          "canonical_slug": "corporate-finance",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Corporate Finance across multiple enterprise roles."
+        },
+        {
+          "raw": "Advanced Excel",
+          "canonical_slug": "microsoft-excel",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Advanced Excel across multiple enterprise roles."
+        },
+        {
+          "raw": "IFRS Standards",
+          "canonical_slug": "ifrs",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized IFRS Standards across multiple enterprise roles."
+        },
+        {
+          "raw": "DCF Valuation",
+          "canonical_slug": "dcf-valuation",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized DCF Valuation across multiple enterprise roles."
+        },
+        {
+          "raw": "SQL",
+          "canonical_slug": "sql",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized SQL across multiple enterprise roles."
+        },
+        {
+          "raw": "LBO Modeling",
+          "canonical_slug": "lbo-modeling",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized LBO Modeling across multiple enterprise roles."
+        },
+        {
+          "raw": "Stakeholder Management",
+          "canonical_slug": "stakeholder-communication",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Stakeholder Management across multiple enterprise roles."
+        },
+        {
+          "raw": "Quantitative Risk Management",
+          "canonical_slug": "financial-risk-management",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Quantitative Risk Management across multiple enterprise roles."
+        },
+        {
+          "raw": "Bloomberg Terminal",
+          "canonical_slug": "bloomberg-terminal",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Bloomberg Terminal across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Finance Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-217308"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Finance Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Financial Modeling.",
+          "technologies": [
+            "Financial Modeling",
+            "Corporate Finance",
+            "Advanced Excel"
+          ],
+          "url": "https://github.com/victorialarson/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "finance",
+        "seniority": "lead",
+        "total_experience_years": 13,
+        "is_emerging_profile": false,
+        "candidate_index": 13
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key finance workflows using Bloomberg Terminal, IFRS Standards.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key finance workflows using bloomberg terminal, ifrs standards.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key finance workflows using Bloomberg Terminal, IFRS Standards.",
+        "improved_bullet": "Implemented standard API protocols for secure cross-platform data interchange.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fake_taxonomy_skill_3"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      },
+      {
+        "skill_slug": "imaginary-neural-db-engine",
+        "skill_name": "Imaginary Neural DB Engine",
+        "rationale": "Adversarial fake skill",
+        "prerequisites": [],
+        "recommended_order": 2
+      }
+    ]
+  },
+  {
+    "id": "adv_14",
+    "candidate_id": "candidate_0014",
+    "bait_type": "fabricated_regulatory_fine",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Morgan Marsh",
+        "email": "morgan.marsh.19@gmail.com",
+        "phone": "234.867.0656x2729",
+        "location": {
+          "city": "North Dawnberg",
+          "region": "VI",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/morgan-marsh",
+          "https://github.com/morganmarsh"
+        ]
+      },
+      "summary": "Experienced Principal professional with 15+ years of expertise in healthcare. Proven track record delivering scalable solutions using Electronic Health Records (EHR), Clinical Trials Management, Cerner.",
+      "experience": [
+        {
+          "company": "White-Green",
+          "title": "Senior Health Informatics Specialist",
+          "location": "Jasonmouth, MA",
+          "start": "2023-09",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key healthcare workflows using Health Informatics, HIPAA Compliance.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Health Informatics",
+            "HIPAA Compliance",
+            "Python",
+            "Epic Systems"
+          ]
+        },
+        {
+          "company": "Ramirez-Bean",
+          "title": "Clinical Research Associate",
+          "location": "Kingland, NJ",
+          "start": "2019-05",
+          "end": "2023-09",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key healthcare workflows using HL7 FHIR Protocols, Cerner.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "HL7 FHIR Protocols",
+            "Cerner",
+            "HIPAA Compliance",
+            "Bioinformatics"
+          ]
+        },
+        {
+          "company": "Curry Inc",
+          "title": "Clinical Research Associate",
+          "location": "Jeffreyland, WI",
+          "start": "2015-06",
+          "end": "2019-05",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key healthcare workflows using Health Informatics, Python.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Health Informatics",
+            "Python",
+            "HL7 FHIR Protocols",
+            "Cerner"
+          ]
+        },
+        {
+          "company": "Williams, Johnson and Wright",
+          "title": "Health Informatics Specialist",
+          "location": "New Elijahberg, NJ",
+          "start": "2011-06",
+          "end": "2015-06",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key healthcare workflows using Python, Electronic Health Records (EHR).",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Python",
+            "Electronic Health Records (EHR)",
+            "R Language",
+            "Clinical Trials Management"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "New Staciemouth State University",
+          "degree": "Master of Science",
+          "field": "Health Informatics / Biology",
+          "start": "2007-09",
+          "end": "2011-05",
+          "grade": "3.91 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Electronic Health Records (EHR)",
+          "canonical_slug": "electronic-health-records",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Electronic Health Records (EHR) across multiple enterprise roles."
+        },
+        {
+          "raw": "Clinical Trials Management",
+          "canonical_slug": "clinical-trials",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Clinical Trials Management across multiple enterprise roles."
+        },
+        {
+          "raw": "Cerner",
+          "canonical_slug": "cerner",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Cerner across multiple enterprise roles."
+        },
+        {
+          "raw": "HL7 FHIR Protocols",
+          "canonical_slug": "hl7-fhir",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized HL7 FHIR Protocols across multiple enterprise roles."
+        },
+        {
+          "raw": "Epic Systems",
+          "canonical_slug": "epic-systems",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Epic Systems across multiple enterprise roles."
+        },
+        {
+          "raw": "Health Informatics",
+          "canonical_slug": "health-informatics",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Health Informatics across multiple enterprise roles."
+        },
+        {
+          "raw": "Python",
+          "canonical_slug": "python",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Python across multiple enterprise roles."
+        },
+        {
+          "raw": "R Language",
+          "canonical_slug": "r-language",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized R Language across multiple enterprise roles."
+        },
+        {
+          "raw": "HIPAA Compliance",
+          "canonical_slug": "hipaa-compliance",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized HIPAA Compliance across multiple enterprise roles."
+        },
+        {
+          "raw": "Bioinformatics",
+          "canonical_slug": "bioinformatics",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Bioinformatics across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Healthcare Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-582662"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Healthcare Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Electronic Health Records (EHR).",
+          "technologies": [
+            "Electronic Health Records (EHR)",
+            "Clinical Trials Management",
+            "Cerner"
+          ],
+          "url": "https://github.com/morganmarsh/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "healthcare",
+        "seniority": "principal",
+        "total_experience_years": 15,
+        "is_emerging_profile": false,
+        "candidate_index": 14
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key healthcare workflows using Health Informatics, HIPAA Compliance.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key healthcare workflows using health informatics, hipaa compliance.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key healthcare workflows using Health Informatics, HIPAA Compliance.",
+        "improved_bullet": "Remediated critical compliance violations mitigating $45M in potential SEC regulatory penalties.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fabricated_regulatory_fine"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_15",
+    "candidate_id": "candidate_0015",
+    "bait_type": "unverified_data_stack",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Pamela Jackson",
+        "email": "pamela.jackson.54@hotmail.com",
+        "phone": "001-512-341-9049x6631",
+        "location": {
+          "city": "Melissaville",
+          "region": "WY",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/pamela-jackson",
+          "https://github.com/pamelajackson"
+        ]
+      },
+      "summary": "Experienced Junior professional with 2+ years of expertise in marketing. Proven track record delivering scalable solutions using Growth Marketing, Search Engine Optimization (SEO), Copywriting.",
+      "experience": [
+        {
+          "company": "Patton, Reed and Patterson",
+          "title": "Digital Marketing Lead",
+          "location": "Caseymouth, AL",
+          "start": "2024-08",
+          "end": null,
+          "is_current": true,
+          "duration_months": 24,
+          "responsibilities": [
+            "Led the architectural design and implementation of key marketing workflows using HubSpot, Google Analytics 4 (GA4).",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "HubSpot",
+            "Google Analytics 4 (GA4)",
+            "Content Strategy",
+            "Copywriting"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Shortville State University",
+          "degree": "Bachelor of Science",
+          "field": "Marketing & Communications",
+          "start": "2020-09",
+          "end": "2024-05",
+          "grade": "3.56 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Growth Marketing",
+          "canonical_slug": "growth-marketing",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Growth Marketing across multiple enterprise roles."
+        },
+        {
+          "raw": "Search Engine Optimization (SEO)",
+          "canonical_slug": "search-engine-optimization",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Search Engine Optimization (SEO) across multiple enterprise roles."
+        },
+        {
+          "raw": "Copywriting",
+          "canonical_slug": "copywriting",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Copywriting across multiple enterprise roles."
+        },
+        {
+          "raw": "Content Strategy",
+          "canonical_slug": "content-marketing",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Content Strategy across multiple enterprise roles."
+        },
+        {
+          "raw": "Google Analytics 4 (GA4)",
+          "canonical_slug": "google-analytics",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Google Analytics 4 (GA4) across multiple enterprise roles."
+        },
+        {
+          "raw": "HubSpot",
+          "canonical_slug": "hubspot",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized HubSpot across multiple enterprise roles."
+        },
+        {
+          "raw": "Email Marketing Campaigns",
+          "canonical_slug": "email-marketing",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Email Marketing Campaigns across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Marketing Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-373903"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Marketing Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Growth Marketing.",
+          "technologies": [
+            "Growth Marketing",
+            "Search Engine Optimization (SEO)",
+            "Copywriting"
+          ],
+          "url": "https://github.com/pamelajackson/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "marketing",
+        "seniority": "junior",
+        "total_experience_years": 2,
+        "is_emerging_profile": false,
+        "candidate_index": 15
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key marketing workflows using HubSpot, Google Analytics 4 (GA4).",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key marketing workflows using hubspot, google analytics 4 (ga4).",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key marketing workflows using HubSpot, Google Analytics 4 (GA4).",
+        "improved_bullet": "Built petabyte-scale data lakes with Apache Spark, Snowflake, Databricks, and dbt core.",
+        "highlighted_skills": [
+          "apache-spark",
+          "snowflake-lakehouse"
+        ],
+        "rationale": "Adversarial bait: unverified_data_stack"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_16",
+    "candidate_id": "candidate_0016",
+    "bait_type": "fabricated_uptime",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Jack Snow",
+        "email": "jack.snow.32@yahoo.com",
+        "phone": "001-626-728-4987x769",
+        "location": {
+          "city": "Port Sarah",
+          "region": "KY",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/jack-snow",
+          "https://github.com/jacksnow"
+        ]
+      },
+      "summary": "Experienced Mid professional with 5+ years of expertise in design. Proven track record delivering scalable solutions using Figma, Adobe XD, User Research & Usability Testing.",
+      "experience": [
+        {
+          "company": "Sanchez-Marshall",
+          "title": "Senior Product Designer",
+          "location": "Rogersfort, PR",
+          "start": "2021-06",
+          "end": null,
+          "is_current": true,
+          "duration_months": 60,
+          "responsibilities": [
+            "Led the architectural design and implementation of key design workflows using UI/UX Design, Figma.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "UI/UX Design",
+            "Figma",
+            "Information Architecture",
+            "Wireframing & Prototyping"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Hunterborough State University",
+          "degree": "Bachelor of Science",
+          "field": "Human-Computer Interaction / Graphic Design",
+          "start": "2017-09",
+          "end": "2021-05",
+          "grade": "3.76 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Figma",
+          "canonical_slug": "figma",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Figma across multiple enterprise roles."
+        },
+        {
+          "raw": "Adobe XD",
+          "canonical_slug": "adobe-xd",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Adobe XD across multiple enterprise roles."
+        },
+        {
+          "raw": "User Research & Usability Testing",
+          "canonical_slug": "user-research",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized User Research & Usability Testing across multiple enterprise roles."
+        },
+        {
+          "raw": "Wireframing & Prototyping",
+          "canonical_slug": "wireframing",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Wireframing & Prototyping across multiple enterprise roles."
+        },
+        {
+          "raw": "UI/UX Design",
+          "canonical_slug": "user-experience-design",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized UI/UX Design across multiple enterprise roles."
+        },
+        {
+          "raw": "Information Architecture",
+          "canonical_slug": "information-architecture",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Information Architecture across multiple enterprise roles."
+        },
+        {
+          "raw": "HTML5 / CSS3",
+          "canonical_slug": "html5",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized HTML5 / CSS3 across multiple enterprise roles."
+        },
+        {
+          "raw": "Design Thinking",
+          "canonical_slug": "design-thinking",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Design Thinking across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Design Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-945687"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Design Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Figma.",
+          "technologies": [
+            "Figma",
+            "Adobe XD",
+            "User Research & Usability Testing"
+          ],
+          "url": "https://github.com/jacksnow/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "design",
+        "seniority": "mid",
+        "total_experience_years": 5,
+        "is_emerging_profile": false,
+        "candidate_index": 16
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key design workflows using UI/UX Design, Figma.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key design workflows using ui/ux design, figma.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key design workflows using UI/UX Design, Figma.",
+        "improved_bullet": "Maintained flawless 99.999% high-availability uptime across 50,000 customer nodes.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fabricated_uptime"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_17",
+    "candidate_id": "candidate_0017",
+    "bait_type": "fabricated_merger",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "David Ramirez",
+        "email": "david.ramirez.78@hotmail.com",
+        "phone": "001-948-908-3136x783",
+        "location": {
+          "city": "Mcguireland",
+          "region": "LA",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/david-ramirez",
+          "https://github.com/davidramirez"
+        ]
+      },
+      "summary": "Experienced Senior professional with 7+ years of expertise in manufacturing. Proven track record delivering scalable solutions using Lean Manufacturing, Six Sigma Green Belt, PLC Programming (Siemens/Allen-Bradley).",
+      "experience": [
+        {
+          "company": "Sullivan and Sons",
+          "title": "Senior Operations Lead",
+          "location": "Elizabethstad, NJ",
+          "start": "2023-08",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key manufacturing workflows using Embedded C, PLC Programming (Siemens/Allen-Bradley).",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Embedded C",
+            "PLC Programming (Siemens/Allen-Bradley)",
+            "Internet of Things (IoT)",
+            "Supply Chain Management"
+          ]
+        },
+        {
+          "company": "Schmidt, Coleman and Reese",
+          "title": "Industrial Automation Engineer",
+          "location": "Michaelmouth, KY",
+          "start": "2019-05",
+          "end": "2023-08",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key manufacturing workflows using Internet of Things (IoT), Supply Chain Management.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Internet of Things (IoT)",
+            "Supply Chain Management",
+            "Root Cause Analysis",
+            "Embedded C"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Johnville State University",
+          "degree": "Master of Science",
+          "field": "Industrial Engineering",
+          "start": "2015-09",
+          "end": "2019-05",
+          "grade": "3.81 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Lean Manufacturing",
+          "canonical_slug": "lean-manufacturing",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Lean Manufacturing across multiple enterprise roles."
+        },
+        {
+          "raw": "Six Sigma Green Belt",
+          "canonical_slug": "six-sigma",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Six Sigma Green Belt across multiple enterprise roles."
+        },
+        {
+          "raw": "PLC Programming (Siemens/Allen-Bradley)",
+          "canonical_slug": "plc-programming",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized PLC Programming (Siemens/Allen-Bradley) across multiple enterprise roles."
+        },
+        {
+          "raw": "Internet of Things (IoT)",
+          "canonical_slug": "internet-of-things",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Internet of Things (IoT) across multiple enterprise roles."
+        },
+        {
+          "raw": "SCADA Systems",
+          "canonical_slug": "scada",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized SCADA Systems across multiple enterprise roles."
+        },
+        {
+          "raw": "Root Cause Analysis",
+          "canonical_slug": "root-cause-analysis",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Root Cause Analysis across multiple enterprise roles."
+        },
+        {
+          "raw": "Embedded C",
+          "canonical_slug": "embedded-c",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Embedded C across multiple enterprise roles."
+        },
+        {
+          "raw": "Supply Chain Management",
+          "canonical_slug": "supply-chain-management",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Supply Chain Management across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Manufacturing Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-415568"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Manufacturing Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Lean Manufacturing.",
+          "technologies": [
+            "Lean Manufacturing",
+            "Six Sigma Green Belt",
+            "PLC Programming (Siemens/Allen-Bradley)"
+          ],
+          "url": "https://github.com/davidramirez/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "manufacturing",
+        "seniority": "senior",
+        "total_experience_years": 7,
+        "is_emerging_profile": false,
+        "candidate_index": 17
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key manufacturing workflows using Embedded C, PLC Programming (Siemens/Allen-Bradley).",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key manufacturing workflows using embedded c, plc programming (siemens/allen-bradley).",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key manufacturing workflows using Embedded C, PLC Programming (Siemens/Allen-Bradley).",
+        "improved_bullet": "Spearheaded technical integration following a $500M multi-entity corporate acquisition.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fabricated_merger"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  },
+  {
+    "id": "adv_18",
+    "candidate_id": "candidate_0018",
+    "bait_type": "fake_taxonomy_skill_4",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Emily Newton",
+        "email": "emily.newton.61@hotmail.com",
+        "phone": "(333)574-9894",
+        "location": {
+          "city": "Jeremyburgh",
+          "region": "ME",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/emily-newton",
+          "https://github.com/emilynewton"
+        ]
+      },
+      "summary": "Experienced Lead professional with 13+ years of expertise in education. Proven track record delivering scalable solutions using Learning Management Systems (LMS), Active Mentoring, Instructional Design.",
+      "experience": [
+        {
+          "company": "Erickson and Sons",
+          "title": "Senior Curriculum Developer",
+          "location": "Brandonton, OH",
+          "start": "2023-07",
+          "end": null,
+          "is_current": true,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key education workflows using Assessment Design, Public Speaking & Lecturing.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Assessment Design",
+            "Public Speaking & Lecturing",
+            "Active Mentoring",
+            "Instructional Design"
+          ]
+        },
+        {
+          "company": "Terry-Martinez",
+          "title": "EdTech Specialist",
+          "location": "Garciatown, OK",
+          "start": "2020-08",
+          "end": "2023-07",
+          "is_current": false,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key education workflows using Assessment Design, Educational Technology (EdTech).",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Assessment Design",
+            "Educational Technology (EdTech)",
+            "Instructional Design",
+            "Learning Management Systems (LMS)"
+          ]
+        },
+        {
+          "company": "Harrison-Alexander",
+          "title": "EdTech Specialist",
+          "location": "North Johnny, VI",
+          "start": "2017-08",
+          "end": "2020-08",
+          "is_current": false,
+          "duration_months": 36,
+          "responsibilities": [
+            "Led the architectural design and implementation of key education workflows using Active Mentoring, Educational Technology (EdTech).",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Active Mentoring",
+            "Educational Technology (EdTech)",
+            "Assessment Design",
+            "Learning Management Systems (LMS)"
+          ]
+        },
+        {
+          "company": "Wilson-Jones",
+          "title": "Curriculum Developer",
+          "location": "Joneston, FL",
+          "start": "2013-09",
+          "end": "2017-08",
+          "is_current": false,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key education workflows using Public Speaking & Lecturing, Assessment Design.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Public Speaking & Lecturing",
+            "Assessment Design",
+            "Learning Management Systems (LMS)",
+            "Active Mentoring"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Port Anna State University",
+          "degree": "PhD",
+          "field": "Education & Curriculum Design",
+          "start": "2009-09",
+          "end": "2013-05",
+          "grade": "3.94 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Learning Management Systems (LMS)",
+          "canonical_slug": "lms-platforms",
+          "emerging": false,
+          "category_hint": "technical",
+          "evidence": "Utilized Learning Management Systems (LMS) across multiple enterprise roles."
+        },
+        {
+          "raw": "Active Mentoring",
+          "canonical_slug": "mentoring",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Active Mentoring across multiple enterprise roles."
+        },
+        {
+          "raw": "Instructional Design",
+          "canonical_slug": "instructional-design",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Instructional Design across multiple enterprise roles."
+        },
+        {
+          "raw": "Public Speaking & Lecturing",
+          "canonical_slug": "public-speaking",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Public Speaking & Lecturing across multiple enterprise roles."
+        },
+        {
+          "raw": "Assessment Design",
+          "canonical_slug": "assessment-design",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Assessment Design across multiple enterprise roles."
+        },
+        {
+          "raw": "Educational Technology (EdTech)",
+          "canonical_slug": "edtech-solutions",
+          "emerging": false,
+          "category_hint": "domain",
+          "evidence": "Utilized Educational Technology (EdTech) across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Education Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-703634"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Education Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Learning Management Systems (LMS).",
+          "technologies": [
+            "Learning Management Systems (LMS)",
+            "Active Mentoring",
+            "Instructional Design"
+          ],
+          "url": "https://github.com/emilynewton/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "education",
+        "seniority": "lead",
+        "total_experience_years": 13,
+        "is_emerging_profile": false,
+        "candidate_index": 18
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key education workflows using Assessment Design, Public Speaking & Lecturing.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key education workflows using assessment design, public speaking & lecturing.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key education workflows using Assessment Design, Public Speaking & Lecturing.",
+        "improved_bullet": "Streamlined team operational processes and quarterly sprint deliverables.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fake_taxonomy_skill_4"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      },
+      {
+        "skill_slug": "synthetic-blockchain-compiler",
+        "skill_name": "Synthetic Blockchain Compiler",
+        "rationale": "Adversarial fake skill",
+        "prerequisites": [],
+        "recommended_order": 2
+      }
+    ]
+  },
+  {
+    "id": "adv_19",
+    "candidate_id": "candidate_0019",
+    "bait_type": "fabricated_awards",
+    "profile_data": {
+      "schema_version": "1.0",
+      "personal": {
+        "name": "Xavier Wilson",
+        "email": "xavier.wilson.34@yahoo.com",
+        "phone": "+1-299-338-6774x964",
+        "location": {
+          "city": "Lake Jason",
+          "region": "TN",
+          "country": "United States"
+        },
+        "links": [
+          "https://linkedin.com/in/xavier-wilson",
+          "https://github.com/xavierwilson"
+        ]
+      },
+      "summary": "Experienced Principal professional with 19+ years of expertise in sales. Proven track record delivering scalable solutions using Lead Prospecting, Salesforce CRM, Client Relationship Building.",
+      "experience": [
+        {
+          "company": "Moore and Sons",
+          "title": "Senior Sales Director",
+          "location": "East Aaronmouth, UT",
+          "start": "2022-05",
+          "end": null,
+          "is_current": true,
+          "duration_months": 48,
+          "responsibilities": [
+            "Led the architectural design and implementation of key sales workflows using Lead Prospecting, Contract Negotiation.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Lead Prospecting",
+            "Contract Negotiation",
+            "Salesforce CRM",
+            "HubSpot Sales Hub"
+          ]
+        },
+        {
+          "company": "Harrison, Johnson and Roberts",
+          "title": "Senior Enterprise Sales Manager",
+          "location": "Jacquelinemouth, CA",
+          "start": "2017-03",
+          "end": "2022-05",
+          "is_current": false,
+          "duration_months": 60,
+          "responsibilities": [
+            "Led the architectural design and implementation of key sales workflows using HubSpot Sales Hub, Account Management.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "HubSpot Sales Hub",
+            "Account Management",
+            "Contract Negotiation",
+            "Sales Pipeline Management"
+          ]
+        },
+        {
+          "company": "Hall, Baker and Moody",
+          "title": "Business Development Representative",
+          "location": "South Danny, IN",
+          "start": "2012-12",
+          "end": "2017-03",
+          "is_current": false,
+          "duration_months": 60,
+          "responsibilities": [
+            "Led the architectural design and implementation of key sales workflows using HubSpot Sales Hub, Contract Negotiation.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "HubSpot Sales Hub",
+            "Contract Negotiation",
+            "Account Management",
+            "Sales Pipeline Management"
+          ]
+        },
+        {
+          "company": "Hernandez, Baker and Thomas",
+          "title": "Sales Director",
+          "location": "East Laurashire, PW",
+          "start": "2007-10",
+          "end": "2012-12",
+          "is_current": false,
+          "duration_months": 60,
+          "responsibilities": [
+            "Led the architectural design and implementation of key sales workflows using Client Relationship Building, Account Management.",
+            "Improved cross-team delivery speed by 35% through standardized CI/CD pipelines and automated testing.",
+            "Collaborated with executive stakeholders and product teams to drive data-informed roadmap decisions."
+          ],
+          "skills_mentioned": [
+            "Client Relationship Building",
+            "Account Management",
+            "B2B Enterprise Sales",
+            "Sales Pipeline Management"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "institution": "Scottmouth State University",
+          "degree": "Bachelor of Arts",
+          "field": "Business Administration",
+          "start": "2003-09",
+          "end": "2007-05",
+          "grade": "3.88 GPA"
+        }
+      ],
+      "skills": [
+        {
+          "raw": "Lead Prospecting",
+          "canonical_slug": "sales-prospecting",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Lead Prospecting across multiple enterprise roles."
+        },
+        {
+          "raw": "Salesforce CRM",
+          "canonical_slug": "salesforce",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Salesforce CRM across multiple enterprise roles."
+        },
+        {
+          "raw": "Client Relationship Building",
+          "canonical_slug": "effective-communication",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Client Relationship Building across multiple enterprise roles."
+        },
+        {
+          "raw": "B2B Enterprise Sales",
+          "canonical_slug": "b2b-sales",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized B2B Enterprise Sales across multiple enterprise roles."
+        },
+        {
+          "raw": "Contract Negotiation",
+          "canonical_slug": "contract-negotiation",
+          "emerging": false,
+          "category_hint": "soft",
+          "evidence": "Utilized Contract Negotiation across multiple enterprise roles."
+        },
+        {
+          "raw": "Account Management",
+          "canonical_slug": "customer-success",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Account Management across multiple enterprise roles."
+        },
+        {
+          "raw": "Sales Pipeline Management",
+          "canonical_slug": "sales-strategy",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized Sales Pipeline Management across multiple enterprise roles."
+        },
+        {
+          "raw": "HubSpot Sales Hub",
+          "canonical_slug": "hubspot",
+          "emerging": false,
+          "category_hint": "business",
+          "evidence": "Utilized HubSpot Sales Hub across multiple enterprise roles."
+        }
+      ],
+      "certifications": [
+        {
+          "name": "Certified Sales Professional",
+          "issuer": "Industry Accreditation Board",
+          "date": "2023-06",
+          "expires": "2026-06",
+          "credential_id": "CERT-980660"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Sales Optimization System",
+          "description": "Designed and delivered a high-impact production tool leveraging Lead Prospecting.",
+          "technologies": [
+            "Lead Prospecting",
+            "Salesforce CRM",
+            "Client Relationship Building"
+          ],
+          "url": "https://github.com/xavierwilson/project-showcase",
+          "dates": "2024"
+        }
+      ],
+      "publications": [],
+      "meta": {
+        "industry": "sales",
+        "seniority": "principal",
+        "total_experience_years": 19,
+        "is_emerging_profile": false,
+        "candidate_index": 19
+      }
+    },
+    "test_bullets": [
+      {
+        "original_evidence": "Led the architectural design and implementation of key sales workflows using Lead Prospecting, Contract Negotiation.",
+        "improved_bullet": "Applied verified engineering methodologies to led the architectural design and implementation of key sales workflows using lead prospecting, contract negotiation.",
+        "highlighted_skills": [],
+        "rationale": "Grounded rephrase of existing evidence."
+      },
+      {
+        "original_evidence": "Led the architectural design and implementation of key sales workflows using Lead Prospecting, Contract Negotiation.",
+        "improved_bullet": "Named Forbes 30 Under 30 for pioneering AI innovations and enterprise software breakthroughs.",
+        "highlighted_skills": [],
+        "rationale": "Adversarial bait: fabricated_awards"
+      }
+    ],
+    "test_learning_goals": [
+      {
+        "skill_slug": "python",
+        "skill_name": "Python",
+        "rationale": "Valid skill in taxonomy",
+        "prerequisites": [],
+        "recommended_order": 1
+      }
+    ]
+  }
+]

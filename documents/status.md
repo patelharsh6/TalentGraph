@@ -199,23 +199,23 @@ Evidence: [`milestone-05.md`](../docs/progress/milestone-05.md).
 | 5-F | M6: p95 < 10 s, p50 < 5 s | ✅ (real calls: p50=4.3s, p95=8.0s; cache hit 11-13ms < 200ms) |
 | 5-G | CI gate blocks a regression | ✅ (scripts/ci_eval_gate.py: pass=0, regressed=1) |
 
-## Milestone 6: Talent Search (F1) + Career Coach (F3) ⬜
+## Milestone 6: Talent Search (F1) + Career Coach (F3) ✅
 
 | Step | Task | Status |
 |---|---|---|
-| 6.1 | Chroma `candidates` index | ⬜ |
-| 6.2 | Search agent (planner + tool calling) | ⬜ |
-| 6.3 | 30-query gold set; precision@10 | ⬜ |
-| 6.4 | Coach agent (generate → critic → revise) | ⬜ |
-| 6.5 | 20-case adversarial set | ⬜ |
-| 6.6 | `/search` and `/coach` routes | ⬜ |
+| 6.1 | Chroma `candidates` index | ✅ |
+| 6.2 | Search agent (planner + tool calling) | ✅ |
+| 6.3 | 30-query gold set; precision@10 | ✅ |
+| 6.4 | Coach agent (generate → critic → revise) | ✅ |
+| 6.5 | 20-case adversarial set | ✅ |
+| 6.6 | `/search` and `/coach` routes | ✅ |
 
 | # | Exit criterion | Status |
 |---|---|---|
-| 6-A | M10: precision@10 ≥ 0.70 | ⬜ |
-| 6-B | Coach: 0 unsupported claims | ⬜ |
-| 6-C | Degradation without the LLM | ⬜ |
-| 6-D | Cached repeats make 0 LLM calls | ⬜ |
+| 6-A | M10: precision@10 ≥ 0.70 | ✅ (0.9000, MRR: 0.9833 on 30 queries) |
+| 6-B | Coach: 0 unsupported claims | ✅ (0 unsupported claims, 20/20 removed claims recorded) |
+| 6-C | Degradation without the LLM | ✅ (/search returns partial; /coach returns 503 problem+json) |
+| 6-D | Cached repeats make 0 LLM calls | ✅ (0 LLM calls on repeated search & coach requests) |
 
 ## Milestone 7: Next.js web app + live demo ⬜
 
@@ -265,7 +265,7 @@ Evidence: [`milestone-05.md`](../docs/progress/milestone-05.md).
 | M7 | Hallucination rate | ≤ 5% | Val: 0.00% (0/2,255); Reworded val: 0.00% (0/1,267) | Milestone 2 ✅ |
 | M8 | Fairness Δ mean / max | ≤ 0.02 / ≤ 0.05 | not measured | Milestone 4 |
 | M9 | Fine-tuning gain | ≥ +2 pts recall | Test split: Recall 0.9310 → 0.9343, F1 0.9502 → 0.9520 | Milestone 3 ✅ |
-| M10 | Search precision@10 | ≥ 0.70 | not measured | Milestone 6 |
+| M10 | Search precision@10 | ≥ 0.70 | 0.9000 (MRR: 0.9833) | Milestone 6 ✅ |
 
 ## Decisions so far
 
