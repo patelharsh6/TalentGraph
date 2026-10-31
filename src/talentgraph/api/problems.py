@@ -1,5 +1,6 @@
 """RFC 7807 problem+json error responses (plan §8.1)."""
 
+import contextlib
 from typing import Any
 
 from fastapi import FastAPI, Request
@@ -69,10 +70,8 @@ def register_problem_handlers(app: FastAPI) -> None:
             headers=headers,
         )
         if limiter and view_rate_limit:
-            try:
+            with contextlib.suppress(Exception):
                 res = limiter._inject_headers(res, view_rate_limit)
-            except Exception:
-                pass
         if "Retry-After" not in res.headers:
             res.headers["Retry-After"] = "60"
         return res

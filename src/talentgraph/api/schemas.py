@@ -1,7 +1,7 @@
 """Pydantic schemas for REST API requests and responses (plan §8)."""
 
 from datetime import datetime
-from typing import Any, Generic, Literal, TypeVar
+from typing import Any, Literal
 from uuid import UUID
 
 from pydantic import BaseModel, Field
@@ -9,8 +9,6 @@ from pydantic import BaseModel, Field
 from talentgraph.core.schemas.matching import MatchResult
 from talentgraph.core.schemas.resume import ParsedResume
 from talentgraph.core.schemas.skills import SkillProfile
-
-T = TypeVar("T")
 
 
 class ResponseMeta(BaseModel):
@@ -25,7 +23,7 @@ class ResponseMeta(BaseModel):
     trace: list[dict[str, Any]] | None = None
 
 
-class ApiResponse(BaseModel, Generic[T]):
+class ApiResponse[T](BaseModel):
     """Standard API response envelope (plan §8.1)."""
 
     data: T
