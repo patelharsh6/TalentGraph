@@ -1,6 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import {
   Target,
   Sliders,
@@ -11,6 +13,8 @@ import {
   XCircle,
   HelpCircle,
   Briefcase,
+  ArrowRight,
+  FileEdit,
 } from "lucide-react";
 import ScoreGauge from "@/components/ScoreGauge";
 import SkillChip from "@/components/SkillChip";
@@ -24,11 +28,14 @@ const PRESETS = [
   { id: "entry_level", label: "Entry-Level (0.60)", threshold: 0.6 },
 ];
 
-export default function MatchPage() {
+function MatchContent() {
+  const searchParams = useSearchParams();
   const [candidates, setCandidates] = useState<any[]>([]);
+  const [jobs, setJobs] = useState<any[]>([]);
   const [selectedCandId, setSelectedCandId] = useState<string>("");
-  const [selectedJobId, setSelectedJobId] = useState<string>("sample-job-1");
+  const [selectedJobId, setSelectedJobId] = useState<string>("");
   const [customJobText, setCustomJobText] = useState<string>("");
+  const [showCustomJob, setShowCustomJob] = useState<boolean>(false);
   const [blind, setBlind] = useState<boolean>(false);
   const [threshold, setThreshold] = useState<number>(0.7);
   const [preset, setPreset] = useState<string>("engineering");
@@ -37,38 +44,54 @@ export default function MatchPage() {
   const [error, setError] = useState<string | null>(null);
   const [matchResult, setMatchResult] = useState<MatchResult | null>(null);
 
-  // Fetch candidates from backend on load
+  // Fetch candidates and jobs from backend on load
   useEffect(() => {
     async function init() {
+      const paramCandId = searchParams?.get("candidate_id") || "";
+      const paramJobId = searchParams?.get("job_id") || "";
+
       try {
-        const cands = await api.listCandidates();
-        if (cands && cands.length > 0) {
-          setCandidates(cands);
-          setSelectedCandId(cands[0].id);
+        const [cands, loadedJobs] = await Promise.allSettled([
+          api.listCandidates(),
+          api.listJobs(),
+        ]);
+
+        if (cands.status === "fulfilled" && cands.value && cands.value.length > 0) {
+          setCandidates(cands.value);
+          const foundC = paramCandId && cands.value.find((c: any) => c.id === paramCandId);
+          setSelectedCandId(foundC ? paramCandId : cands.value[0].id);
         } else {
-          // Fallback to sample candidate UUIDs
-          setCandidates(
-            SAMPLE_CANDIDATES.map((sc, i) => ({
-              id: `00000000-0000-0000-0000-00000000000${i + 1}`,
-              name: sc.name,
-              title: sc.title,
-            }))
-          );
-          setSelectedCandId("00000000-0000-0000-0000-000000000001");
-        }
-      } catch {
-        setCandidates(
-          SAMPLE_CANDIDATES.map((sc, i) => ({
+          const fallbackCands = SAMPLE_CANDIDATES.map((sc, i) => ({
             id: `00000000-0000-0000-0000-00000000000${i + 1}`,
             name: sc.name,
             title: sc.title,
-          }))
-        );
-        setSelectedCandId("00000000-0000-0000-0000-000000000001");
+          }));
+          setCandidates(fallbackCands);
+          setSelectedCandId(fallbackCands[0].id);
+        }
+
+        if (loadedJobs.status === "fulfilled" && loadedJobs.value && loadedJobs.value.length > 0) {
+          setJobs(loadedJobs.value);
+          const foundJ = paramJobId && loadedJobs.value.find((j: any) => j.id === paramJobId);
+          setSelectedJobId(foundJ ? paramJobId : loadedJobs.value[0].id);
+        } else {
+          setJobs(SAMPLE_JOBS as any);
+          setSelectedJobId(SAMPLE_JOBS[0].id);
+        }
+      } catch {
+        const fallbackCands = SAMPLE_CANDIDATES.map((sc, i) => ({
+          id: `00000000-0000-0000-0000-00000000000${i + 1}`,
+          name: sc.name,
+          title: sc.title,
+        }));
+        setCandidates(fallbackCands);
+        setSelectedCandId(fallbackCands[0].id);
+        setJobs(SAMPLE_JOBS as any);
+        setSelectedJobId(SAMPLE_JOBS[0].id);
       }
     }
     init();
-  }, []);
+  }, [searchParams]);
 
   const handleRunMatch = async () => {
     if (!selectedCandId) {
@@ -79,24 +102,32 @@ export default function MatchPage() {
     setError(null);
 
     try {
-      const selectedSampleJob = SAMPLE_JOBS.find((j) => j.id === selectedJobId);
-      const jobPayload = {
-        title: selectedSampleJob ? selectedSampleJob.title : "Target Role",
-        description: customJobText || (selectedSampleJob ? selectedSampleJob.description : "Software Engineer"),
+      const matchPayload: any = {
+        candidate_id: selectedCandId,
+        threshold,
+        preset,
       };
 
-      const result = await api.match(
-        {
-          candidate_id: selectedCandId,
-          job: jobPayload,
-          threshold,
-          preset,
-        },
-        blind
-      );
+      const selectedJob = jobs.find((j) => j.id === selectedJobId) || SAMPLE_JOBS.find((j) => j.id === selectedJobId);
+
+      if (customJobText.trim()) {
+        matchPayload.job = {
+          title: selectedJob ? selectedJob.title : "Custom Role",
+          description: customJobText.trim(),
+        };
+      } else if (selectedJobId && !selectedJobId.startsWith("sample-")) {
+        matchPayload.job_id = selectedJobId;
+      } else {
+        matchPayload.job = {
+          title: selectedJob ? selectedJob.title : "Target Role",
+          description: selectedJob ? (selectedJob.description || selectedJob.raw_text) : "Software Engineer",
+        };
+      }
+
+      const result = await api.match(matchPayload, blind);
       setMatchResult(result);
     } catch (err: any) {
-      // Demo mock fallback if offline
+      // Demo mock fallback if backend is offline
       setMatchResult({
         score: 0.84,
         threshold,
@@ -242,25 +273,47 @@ export default function MatchPage() {
 
         {/* Job Description Selector */}
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-sm space-y-3">
-          <label className="text-xs font-bold text-slate-500 uppercase tracking-wider block">
-            2. Target Job Role
-          </label>
-          <select
-            value={selectedJobId}
-            onChange={(e) => {
-              setSelectedJobId(e.target.value);
-              setCustomJobText("");
-            }}
-            className="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          >
-            {SAMPLE_JOBS.map((j) => (
-              <option key={j.id} value={j.id}>
-                {j.title}
-              </option>
-            ))}
-          </select>
+          <div className="flex items-center justify-between">
+            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider block">
+              2. Target Job Role
+            </label>
+            <button
+              type="button"
+              onClick={() => setShowCustomJob(!showCustomJob)}
+              className="text-[11px] text-indigo-600 dark:text-indigo-400 font-medium hover:underline flex items-center gap-1"
+            >
+              <FileEdit className="w-3 h-3" />
+              <span>{showCustomJob ? "Use Requisitions" : "Paste Custom JD"}</span>
+            </button>
+          </div>
+
+          {!showCustomJob ? (
+            <select
+              value={selectedJobId}
+              onChange={(e) => {
+                setSelectedJobId(e.target.value);
+                setCustomJobText("");
+              }}
+              className="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            >
+              {jobs.map((j) => (
+                <option key={j.id} value={j.id}>
+                  {j.title}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <textarea
+              rows={3}
+              value={customJobText}
+              onChange={(e) => setCustomJobText(e.target.value)}
+              placeholder="Paste custom job title & description requirements here..."
+              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none font-mono"
+            />
+          )}
+
           <p className="text-[11px] text-slate-500">
-            Selected: {SAMPLE_JOBS.find((j) => j.id === selectedJobId)?.company} • Min {SAMPLE_JOBS.find((j) => j.id === selectedJobId)?.minYears}y exp
+            {jobs.length} requisitions loaded • 0 Gemini quota used on pre-seeded roles
           </p>
         </div>
 
@@ -355,6 +408,14 @@ export default function MatchPage() {
                       Blind Screened
                     </span>
                   )}
+                  <Link
+                    href={`/coach?candidate_id=${selectedCandId}&job_id=${selectedJobId}`}
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 hover:underline pl-2"
+                  >
+                    <Sparkles className="w-3 h-3" />
+                    <span>View Career Coach Roadmap</span>
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -387,13 +448,23 @@ export default function MatchPage() {
 
           {/* "Why This Score" Breakdown Table */}
           <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
-            <div className="p-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50">
-              <h3 className="text-sm font-bold text-slate-900 dark:text-white">
-                "Why This Score" — Detailed Requirement Breakdown
-              </h3>
-              <p className="text-xs text-slate-500">
-                Transparent rubric showing weight, match type, taxonomic depth, and semantic similarity.
-              </p>
+            <div className="p-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 className="text-sm font-bold text-slate-900 dark:text-white">
+                  "Why This Score" — Detailed Requirement Breakdown
+                </h3>
+                <p className="text-xs text-slate-500">
+                  Transparent rubric showing weight, match type, taxonomic depth, and semantic similarity.
+                </p>
+              </div>
+              <Link
+                href={`/coach?candidate_id=${selectedCandId}&job_id=${selectedJobId}`}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs font-medium border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 transition-colors self-start sm:self-auto"
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Coach Skill Gaps</span>
+                <ArrowRight className="w-3 h-3" />
+              </Link>
             </div>
 
             <div className="overflow-x-auto">
@@ -467,5 +538,13 @@ export default function MatchPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function MatchPage() {
+  return (
+    <Suspense fallback={<div className="p-8 text-center text-sm text-slate-500">Loading Matching Engine...</div>}>
+      <MatchContent />
+    </Suspense>
   );
 }

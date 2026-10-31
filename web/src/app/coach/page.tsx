@@ -1,6 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import {
   Sparkles,
   BookOpen,
@@ -11,48 +13,69 @@ import {
   AlertCircle,
   ArrowRight,
   TrendingUp,
+  Target,
+  Briefcase,
 } from "lucide-react";
 import { SAMPLE_CANDIDATES, SAMPLE_JOBS } from "@/data/samples";
 import { api, type CoachReport } from "@/lib/api";
 
-export default function CareerCoachPage() {
+function CoachContent() {
+  const searchParams = useSearchParams();
   const [candidates, setCandidates] = useState<any[]>([]);
+  const [jobs, setJobs] = useState<any[]>([]);
   const [selectedCandId, setSelectedCandId] = useState<string>("");
-  const [selectedJobId, setSelectedJobId] = useState<string>("sample-job-1");
+  const [selectedJobId, setSelectedJobId] = useState<string>("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [coachReport, setCoachReport] = useState<CoachReport | null>(null);
 
   useEffect(() => {
-    async function loadCandidates() {
+    async function loadMeta() {
+      const paramCandId = searchParams?.get("candidate_id") || "";
+      const paramJobId = searchParams?.get("job_id") || "";
+
       try {
-        const cands = await api.listCandidates();
-        if (cands && cands.length > 0) {
-          setCandidates(cands);
-          setSelectedCandId(cands[0].id);
+        const [cands, loadedJobs] = await Promise.allSettled([
+          api.listCandidates(),
+          api.listJobs(),
+        ]);
+
+        if (cands.status === "fulfilled" && cands.value && cands.value.length > 0) {
+          setCandidates(cands.value);
+          const foundC = paramCandId && cands.value.find((c: any) => c.id === paramCandId);
+          setSelectedCandId(foundC ? paramCandId : cands.value[0].id);
         } else {
-          setCandidates(
-            SAMPLE_CANDIDATES.map((sc, i) => ({
-              id: `00000000-0000-0000-0000-00000000000${i + 1}`,
-              name: sc.name,
-              title: sc.title,
-            }))
-          );
-          setSelectedCandId("00000000-0000-0000-0000-000000000001");
-        }
-      } catch {
-        setCandidates(
-          SAMPLE_CANDIDATES.map((sc, i) => ({
+          const fallbackCands = SAMPLE_CANDIDATES.map((sc, i) => ({
             id: `00000000-0000-0000-0000-00000000000${i + 1}`,
             name: sc.name,
             title: sc.title,
-          }))
-        );
-        setSelectedCandId("00000000-0000-0000-0000-000000000001");
+          }));
+          setCandidates(fallbackCands);
+          setSelectedCandId(fallbackCands[0].id);
+        }
+
+        if (loadedJobs.status === "fulfilled" && loadedJobs.value && loadedJobs.value.length > 0) {
+          setJobs(loadedJobs.value);
+          const foundJ = paramJobId && loadedJobs.value.find((j: any) => j.id === paramJobId);
+          setSelectedJobId(foundJ ? paramJobId : loadedJobs.value[0].id);
+        } else {
+          setJobs(SAMPLE_JOBS as any);
+          setSelectedJobId(SAMPLE_JOBS[0].id);
+        }
+      } catch {
+        const fallbackCands = SAMPLE_CANDIDATES.map((sc, i) => ({
+          id: `00000000-0000-0000-0000-00000000000${i + 1}`,
+          name: sc.name,
+          title: sc.title,
+        }));
+        setCandidates(fallbackCands);
+        setSelectedCandId(fallbackCands[0].id);
+        setJobs(SAMPLE_JOBS as any);
+        setSelectedJobId(SAMPLE_JOBS[0].id);
       }
     }
-    loadCandidates();
-  }, []);
+    loadMeta();
+  }, [searchParams]);
 
   const handleGenerateCoach = async () => {
     if (!selectedCandId) {
@@ -62,17 +85,23 @@ export default function CareerCoachPage() {
     setLoading(true);
     setError(null);
 
-    const selJob = SAMPLE_JOBS.find((j) => j.id === selectedJobId);
-    const jobPayload = {
-      title: selJob ? selJob.title : "Target Role",
-      description: selJob ? selJob.description : "Engineering position",
+    const selJob = jobs.find((j) => j.id === selectedJobId) || SAMPLE_JOBS.find((j) => j.id === selectedJobId);
+
+    const coachPayload: any = {
+      candidate_id: selectedCandId,
     };
 
+    if (selectedJobId && !selectedJobId.startsWith("sample-")) {
+      coachPayload.job_id = selectedJobId;
+    } else {
+      coachPayload.job = {
+        title: selJob ? selJob.title : "Target Role",
+        description: selJob ? (selJob.description || selJob.raw_text) : "Engineering position",
+      };
+    }
+
     try {
-      const report = await api.getCoachReport({
-        candidate_id: selectedCandId,
-        job: jobPayload,
-      });
+      const report = await api.getCoachReport(coachPayload);
       setCoachReport(report);
     } catch (err: any) {
       // Mock pre-cached report (Exit Criterion 7-B)
@@ -133,6 +162,7 @@ export default function CareerCoachPage() {
         ],
         removed_claims: [
           "Critic removed ungrounded claim 'Scaled systems to 10M DAU' (unsupported in profile experience history).",
+          "Critic removed unverified certificate 'Certified Kubernetes Administrator' (not found in credentials).",
         ],
         revisions_count: 1,
       } as any);
@@ -143,13 +173,26 @@ export default function CareerCoachPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-          AI Career Coach
-        </h1>
-        <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
-          Personalized skill gap roadmaps, interview preparation, and factuality-verified resume bullet rewrites.
-        </p>
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div>
+          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+            AI Career Coach
+          </h1>
+          <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
+            Personalized skill gap roadmaps, interview preparation, and factuality-verified resume bullet rewrites.
+          </p>
+        </div>
+
+        {selectedCandId && selectedJobId && (
+          <Link
+            href={`/match?candidate_id=${selectedCandId}&job_id=${selectedJobId}`}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs font-semibold border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 transition-colors self-start sm:self-auto"
+          >
+            <Target className="w-3.5 h-3.5" />
+            <span>View Match Breakdown</span>
+            <ArrowRight className="w-3 h-3" />
+          </Link>
+        )}
       </div>
 
       {/* Target Selector Bar */}
@@ -180,7 +223,7 @@ export default function CareerCoachPage() {
             onChange={(e) => setSelectedJobId(e.target.value)}
             className="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
           >
-            {SAMPLE_JOBS.map((j) => (
+            {jobs.map((j) => (
               <option key={j.id} value={j.id}>
                 {j.title}
               </option>
@@ -297,7 +340,7 @@ export default function CareerCoachPage() {
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400">
-                      Topic: {q.requirement_name || q.skill_name}
+                      Topic: {q.requirement_name || q.skill_name || "Technical Competency"}
                     </span>
                     <span className="text-[11px] text-slate-400 font-mono">Q#{idx + 1}</span>
                   </div>
@@ -339,13 +382,14 @@ export default function CareerCoachPage() {
                       <TrendingUp className="w-3 h-3" />
                       Improved & Grounded Rewrite
                     </span>
-                    <p className="text-xs sm:text-sm font-medium text-slate-900 dark:text-slate-100">
+                    <p className="text-xs font-semibold text-slate-900 dark:text-white">
                       {b.improved_bullet}
                     </p>
                   </div>
 
-                  <p className="text-xs text-slate-500 italic pt-1">
-                    Why: {b.rationale}
+                  <p className="text-[11px] text-slate-500 italic">
+                    <span className="font-semibold text-slate-600 dark:text-slate-400">Critic Note: </span>
+                    {b.rationale}
                   </p>
                 </div>
               ))}
@@ -354,5 +398,13 @@ export default function CareerCoachPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function CareerCoachPage() {
+  return (
+    <Suspense fallback={<div className="p-8 text-center text-sm text-slate-500">Loading Career Coach...</div>}>
+      <CoachContent />
+    </Suspense>
   );
 }

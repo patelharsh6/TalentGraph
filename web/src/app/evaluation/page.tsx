@@ -97,7 +97,7 @@ export default function EvaluationDashboardPage() {
           </span>
           <div className="flex items-center justify-between">
             <span className="text-3xl font-extrabold text-slate-900 dark:text-white font-mono">
-              300 / 300
+              304 / 304
             </span>
             <CheckCircle2 className="w-8 h-8 text-emerald-500" />
           </div>

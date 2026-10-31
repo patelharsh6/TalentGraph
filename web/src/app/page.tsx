@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
   UploadCloud,
   FileCheck,
@@ -12,6 +13,8 @@ import {
   AlertCircle,
   FileText,
   User,
+  Target,
+  ArrowRight,
 } from "lucide-react";
 import SkillChip from "@/components/SkillChip";
 import UploadWarning from "@/components/UploadWarning";
@@ -59,11 +62,12 @@ export default function UploadPage() {
 
     // Mock instant response from sample data (0 LLM quota, instant demo)
     setParsedData({
-      profile: {
+      candidate_id: sample.id,
+      parsed: {
         schema_version: "2.0",
         personal: {
           name: { value: sample.name, confidence: 1.0, verified: true },
-          email: { value: "sample.engineer@talentgraph.dev", confidence: 1.0, verified: true },
+          email: { value: `${sample.name.toLowerCase().replace(/[^a-z]/g, "")}@example.com`, confidence: 1.0, verified: true },
           phone: { value: "(555) 019-2834", confidence: 1.0, verified: true },
           location: {
             value: { city: "San Francisco", region: "CA", country: "USA" },
@@ -106,7 +110,7 @@ export default function UploadPage() {
             grade: { value: "3.85 GPA", confidence: 1.0, verified: true },
           },
         ],
-        skills: sample.skills.map((name, i) => ({
+        skills: sample.skills.map((name) => ({
           raw: name,
           confidence: 1.0,
           verified: true,
@@ -119,6 +123,19 @@ export default function UploadPage() {
           llm_field_count: 8,
           unverified_count: 0,
         },
+      },
+      profile: {
+        skills: sample.skills.map((name) => ({
+          slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+          name: name,
+          category: "technical",
+          proficiency: 4,
+          years: 3.0,
+          inferred: false,
+          confidence: 1.0,
+          evidence: [`Directly applied ${name} in production project development.`],
+        })),
+        unrecognized: [],
       },
       raw_text: sample.rawText,
       confidence: 0.98,
@@ -257,13 +274,32 @@ export default function UploadPage() {
                 </div>
               </div>
 
-              {/* Pipeline Stage Indicators */}
-              <div className="flex items-center gap-2 border-t md:border-t-0 md:border-l border-slate-200 dark:border-slate-800 pt-3 md:pt-0 md:pl-6 text-xs text-slate-500">
-                <div className="text-right">
-                  <p className="font-semibold text-slate-700 dark:text-slate-300">Agent Trace</p>
-                  <p className="text-[11px]">Parser: 100% Grounded</p>
+              {/* Quick Actions & Pipeline Stage Indicators */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 border-t md:border-t-0 md:border-l border-slate-200 dark:border-slate-800 pt-3 md:pt-0 md:pl-6 text-xs">
+                <div className="flex items-center gap-2">
+                  <Link
+                    href={`/match?candidate_id=${parsedData.candidate_id || selectedSample}`}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-xs shadow-sm transition-colors"
+                  >
+                    <Target className="w-3.5 h-3.5" />
+                    <span>Match against Jobs</span>
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
+                  <Link
+                    href={`/coach?candidate_id=${parsedData.candidate_id || selectedSample}`}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-medium text-xs border border-slate-200 dark:border-slate-700 transition-colors"
+                  >
+                    <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
+                    <span>Career Coach</span>
+                  </Link>
                 </div>
-                <FileCheck className="w-8 h-8 text-indigo-500" />
+                <div className="hidden lg:flex items-center gap-2 text-slate-500 pl-2">
+                  <div className="text-right">
+                    <p className="font-semibold text-slate-700 dark:text-slate-300">Agent Trace</p>
+                    <p className="text-[11px]">Parser: Grounded</p>
+                  </div>
+                  <FileCheck className="w-7 h-7 text-indigo-500" />
+                </div>
               </div>
             </div>
 

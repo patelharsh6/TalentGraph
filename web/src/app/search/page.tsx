@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
   Search,
   Sparkles,
@@ -11,6 +12,8 @@ import {
   Clock,
   Briefcase,
   ChevronRight,
+  Target,
+  ArrowRight,
 } from "lucide-react";
 import { api, type SearchResponseData, type SearchHit, type SearchPlan } from "@/lib/api";
 
@@ -263,6 +266,25 @@ export default function TalentSearchPage() {
                     ))}
                   </div>
                 )}
+
+                {/* Card Actions */}
+                <div className="flex items-center justify-end gap-2 pt-1 border-t border-slate-100 dark:border-slate-800">
+                  <Link
+                    href={`/match?candidate_id=${hit.candidate_id}`}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs font-semibold hover:bg-indigo-100 transition-colors"
+                  >
+                    <Target className="w-3.5 h-3.5" />
+                    <span>Run Match Analysis</span>
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
+                  <Link
+                    href={`/coach?candidate_id=${hit.candidate_id}`}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold hover:bg-slate-200 transition-colors"
+                  >
+                    <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
+                    <span>Career Coach</span>
+                  </Link>
+                </div>
               </div>
             );
           })}
