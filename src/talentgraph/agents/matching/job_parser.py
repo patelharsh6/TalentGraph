@@ -155,9 +155,7 @@ class JobParser:
                 years = existing.min_years
                 if raw_req.min_years is not None:
                     years = (
-                        max(years, raw_req.min_years)
-                        if years is not None
-                        else raw_req.min_years
+                        max(years, raw_req.min_years) if years is not None else raw_req.min_years
                     )
                 req_map[norm_slug] = JobRequirement(
                     skill_slug=norm_slug,

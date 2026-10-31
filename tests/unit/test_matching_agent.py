@@ -1,25 +1,19 @@
 """Unit tests for MatchingAgent, scoring, thresholds, and gap analysis (Steps 4.2 - 4.5)."""
 
-import pytest
 from uuid import uuid4
 
+import pytest
+
 from talentgraph.agents.matching.agent import MatchingAgent
-from talentgraph.agents.matching.gaps import analyze_gaps
 from talentgraph.agents.matching.scoring import (
-    ScoringConfig,
     calculate_depth,
     calculate_match_score,
-    calculate_penalty,
-    calculate_requirement_credit,
-    calculate_skill_score,
     compute_skill_similarity,
 )
 from talentgraph.agents.matching.thresholds import resolve_threshold
 from talentgraph.core.schemas.matching import (
     JobRequirement,
     JobRequirements,
-    MatchResult,
-    RequirementCredit,
 )
 from talentgraph.core.schemas.messages import AgentMessage
 from talentgraph.core.schemas.skills import NormalizedSkill, SkillProfile
@@ -78,7 +72,7 @@ def test_compute_skill_similarity(repo) -> None:
 
 
 def test_exit_criterion_4_b_breakdown_sums_to_skill_score(repo) -> None:
-    """Exit Criterion 4-B: Every MatchResult has a per-requirement breakdown summing to the reported skill score."""
+    """Exit Criterion 4-B: MatchResult breakdown sums to reported skill score."""
     profile = SkillProfile(
         skills=[
             NormalizedSkill(slug="python", name="Python", years=4.0, proficiency=4),
@@ -92,9 +86,23 @@ def test_exit_criterion_4_b_breakdown_sums_to_skill_score(repo) -> None:
         seniority="senior",
         min_total_experience_years=5.0,
         requirements=[
-            JobRequirement(skill_slug="python", name="Python", required=True, importance=5, min_years=3.0),
-            JobRequirement(skill_slug="kubernetes", name="Kubernetes", required=True, importance=4, min_years=2.0),
-            JobRequirement(skill_slug="postgresql", name="PostgreSQL", required=True, importance=4, min_years=2.0),
+            JobRequirement(
+                skill_slug="python", name="Python", required=True, importance=5, min_years=3.0
+            ),
+            JobRequirement(
+                skill_slug="kubernetes",
+                name="Kubernetes",
+                required=True,
+                importance=4,
+                min_years=2.0,
+            ),
+            JobRequirement(
+                skill_slug="postgresql",
+                name="PostgreSQL",
+                required=True,
+                importance=4,
+                min_years=2.0,
+            ),
             JobRequirement(skill_slug="redis", name="Redis", required=False, importance=3),
         ],
     )
@@ -171,9 +179,19 @@ async def test_matching_agent_full_flow(repo) -> None:
         seniority="senior",
         min_total_experience_years=5.0,
         requirements=[
-            JobRequirement(skill_slug="python", name="Python", required=True, importance=5, min_years=4.0),
-            JobRequirement(skill_slug="fastapi", name="FastAPI", required=True, importance=4, min_years=2.0),
-            JobRequirement(skill_slug="kubernetes", name="Kubernetes", required=True, importance=4, min_years=2.0),
+            JobRequirement(
+                skill_slug="python", name="Python", required=True, importance=5, min_years=4.0
+            ),
+            JobRequirement(
+                skill_slug="fastapi", name="FastAPI", required=True, importance=4, min_years=2.0
+            ),
+            JobRequirement(
+                skill_slug="kubernetes",
+                name="Kubernetes",
+                required=True,
+                importance=4,
+                min_years=2.0,
+            ),
         ],
     )
 
@@ -241,7 +259,9 @@ async def test_matching_agent_message_protocol(repo) -> None:
         skills=[NormalizedSkill(slug="python", name="Python", years=3.0, proficiency=3)]
     )
     job = JobRequirements(
-        requirements=[JobRequirement(skill_slug="python", name="Python", required=True, importance=5)]
+        requirements=[
+            JobRequirement(skill_slug="python", name="Python", required=True, importance=5)
+        ]
     )
 
     msg = AgentMessage(

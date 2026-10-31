@@ -72,8 +72,10 @@ def resolve_threshold(
             return val, None
         except ValueError:
             valid_names = ", ".join(active_presets.keys())
-            raise ValueError(
-                f"Unknown threshold preset '{preset_or_value}'. Must be one of ({valid_names}) or a float in [0.0, 1.0]."
+            msg = (
+                f"Unknown threshold preset '{preset_or_value}'. "
+                f"Must be one of ({valid_names}) or a float in [0.0, 1.0]."
             )
+            raise ValueError(msg) from None
 
     raise TypeError(f"Invalid threshold argument type: {type(preset_or_value)}")

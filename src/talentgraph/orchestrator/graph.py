@@ -151,7 +151,11 @@ def create_pipeline_graph(
                 sender="orchestrator",
                 recipient="matcher",
                 type="task",
-                payload={"profile": profile.model_dump(), "job": job_payload, "threshold": threshold},
+                payload={
+                    "profile": profile.model_dump(),
+                    "job": job_payload,
+                    "threshold": threshold,
+                },
             )
             return await m_agent.handle(msg)
 
@@ -212,7 +216,9 @@ def create_pipeline_graph(
             return "match"
         return "persist"
 
-    builder.add_conditional_edges("normalize", route_after_normalize, ["redact", "match", "persist"])
+    builder.add_conditional_edges(
+        "normalize", route_after_normalize, ["redact", "match", "persist"]
+    )
 
     # Redact unconditionally flows to match
     builder.add_edge("redact", "match")

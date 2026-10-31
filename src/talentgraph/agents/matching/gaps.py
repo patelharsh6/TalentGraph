@@ -31,7 +31,8 @@ def format_current_proficiency(credit: RequirementCredit, profile: SkillProfile)
         return "None (0.0 yrs)"
     matched_skill = profile.get(credit.matched_slug)
     if matched_skill is not None:
-        return f"Level {matched_skill.proficiency} ({matched_skill.years:.1f} yrs via {matched_skill.name})"
+        ms = matched_skill
+        return f"Level {ms.proficiency} ({ms.years:.1f} yrs via {ms.name})"
     return f"Partial ({credit.credit:.1%})"
 
 

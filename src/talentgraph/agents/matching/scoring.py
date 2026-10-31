@@ -6,7 +6,7 @@ Per-requirement credit, weighted skill score, years factor, missing-skill penalt
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import TYPE_CHECKING, Any
+from typing import TYPE_CHECKING
 
 import numpy as np
 
@@ -52,6 +52,9 @@ class ScoringConfig:
     penalty_min_importance: int = 4
 
 
+DEFAULT_SCORING_CONFIG = ScoringConfig()
+
+
 def get_required_years(job: JobRequirements) -> float:
     """Determine minimum experience years required for seniority level."""
     if job.min_total_experience_years is not None and job.min_total_experience_years > 0:
@@ -76,7 +79,7 @@ def get_candidate_experience_years(profile: SkillProfile) -> float:
 def calculate_depth(
     skill: NormalizedSkill,
     min_years: float | None,
-    config: ScoringConfig = ScoringConfig(),
+    config: ScoringConfig = DEFAULT_SCORING_CONFIG,
 ) -> float:
     """Calculate depth factor in [0, 1] based on years or proficiency level."""
     if min_years is not None and min_years > 0:
@@ -105,7 +108,7 @@ def compute_skill_similarity(
     req_slug: str,
     repo: TaxonomyRepository | None = None,
     skill_index: SkillIndex | None = None,
-    config: ScoringConfig = ScoringConfig(),
+    config: ScoringConfig = DEFAULT_SCORING_CONFIG,
 ) -> tuple[float, str]:
     """Compute taxonomy/embedding similarity between candidate skill and requirement."""
     if cand_slug == req_slug:
@@ -138,15 +141,19 @@ def compute_skill_similarity(
         try:
             store = skill_index.store
             # Check if store has vectors
-            if hasattr(store, "_ids") and hasattr(store, "_vectors"):
-                if cand_slug in store._ids and req_slug in store._ids:
-                    idx_c = store._ids.index(cand_slug)
-                    idx_r = store._ids.index(req_slug)
-                    vec_c = store._vectors[idx_c]
-                    vec_r = store._vectors[idx_r]
-                    cos_sim = float(np.dot(vec_c, vec_r))
-                    if cos_sim >= config.sim_embedding_floor:
-                        return cos_sim, "embedding"
+            if (
+                hasattr(store, "_ids")
+                and hasattr(store, "_vectors")
+                and cand_slug in store._ids
+                and req_slug in store._ids
+            ):
+                idx_c = store._ids.index(cand_slug)
+                idx_r = store._ids.index(req_slug)
+                vec_c = store._vectors[idx_c]
+                vec_r = store._vectors[idx_r]
+                cos_sim = float(np.dot(vec_c, vec_r))
+                if cos_sim >= config.sim_embedding_floor:
+                    return cos_sim, "embedding"
         except Exception:
             pass
 
@@ -158,7 +165,7 @@ def calculate_requirement_credit(
     profile: SkillProfile,
     repo: TaxonomyRepository | None = None,
     skill_index: SkillIndex | None = None,
-    config: ScoringConfig = ScoringConfig(),
+    config: ScoringConfig = DEFAULT_SCORING_CONFIG,
 ) -> RequirementCredit:
     """Calculate the best match and credit for a single job requirement against a profile."""
     weight = req.importance * (1.0 if req.required else config.lambda_nice)
@@ -191,7 +198,7 @@ def calculate_requirement_credit(
         weight=weight,
         matched_slug=best_cand.slug if best_cand else None,
         matched_name=best_cand.name if best_cand else None,
-        match_type=best_match_type,  # type: ignore[arg-type]
+        match_type=best_match_type,
         similarity=best_sim,
         depth=best_depth,
         credit=best_credit,
@@ -248,7 +255,7 @@ def calculate_experience_score(
 
 def calculate_penalty(
     credits: list[RequirementCredit],
-    config: ScoringConfig = ScoringConfig(),
+    config: ScoringConfig = DEFAULT_SCORING_CONFIG,
 ) -> float:
     """Penalty of 0.1 per missing required skill with importance >= 4."""
     penalty = 0.0
@@ -264,7 +271,7 @@ def calculate_match_score(
     *,
     repo: TaxonomyRepository | None = None,
     skill_index: SkillIndex | None = None,
-    config: ScoringConfig = ScoringConfig(),
+    config: ScoringConfig = DEFAULT_SCORING_CONFIG,
     threshold: float = 0.60,
     preset: str | None = None,
 ) -> MatchResult:

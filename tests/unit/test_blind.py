@@ -1,7 +1,5 @@
 """Unit tests for blind-screening redaction and Exit Criterion 4-D (Step 4.8)."""
 
-import pytest
-
 from talentgraph.agents.matching.blind import (
     redact_resume,
     redact_skill_profile,
@@ -36,14 +34,18 @@ def test_redact_contact_and_personal() -> None:
 def test_redact_gendered_words_and_pronouns() -> None:
     import re
 
-    text = "She is a skilled software engineer. Her team delivered the project and he commended her."
+    text = (
+        "She is a skilled software engineer. Her team delivered the project and he commended her."
+    )
     scrubbed = redact_text(text)
     assert not re.search(r"\bshe\b", scrubbed, re.IGNORECASE)
     assert not re.search(r"\bher\b", scrubbed, re.IGNORECASE)
     assert not re.search(r"\bhe\b", scrubbed, re.IGNORECASE)
     assert "[REDACTED_PRONOUN]" in scrubbed
 
-    gender_noun_text = "Experienced businesswoman and alumna of the university; Mr. Smith recommended her."
+    gender_noun_text = (
+        "Experienced businesswoman and alumna of the university; Mr. Smith recommended her."
+    )
     scrubbed_noun = redact_text(gender_noun_text)
     assert not re.search(r"\bbusinesswoman\b", scrubbed_noun, re.IGNORECASE)
     assert not re.search(r"\balumna\b", scrubbed_noun, re.IGNORECASE)

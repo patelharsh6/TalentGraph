@@ -1,16 +1,14 @@
 """Unit tests for LangGraph pipeline and degradation edges (Exit Criterion 4-C, Step 4.7)."""
 
-import pytest
-from unittest.mock import AsyncMock, patch
+from unittest.mock import AsyncMock
 from uuid import uuid4
+
+import pytest
 
 from talentgraph.agents.matching.agent import MatchingAgent
 from talentgraph.agents.normalization.agent import NormalizationAgent
-from talentgraph.agents.parsing.agent import ParsingAgent
 from talentgraph.core.schemas.matching import JobRequirement, JobRequirements
-from talentgraph.core.schemas.messages import AgentMessage, AgentResult, QualityScore
 from talentgraph.core.schemas.resume import Extracted, ParsedResume, Personal, Skill
-from talentgraph.core.schemas.skills import NormalizedSkill, SkillProfile
 from talentgraph.db.repositories.taxonomy import get_taxonomy_repository
 from talentgraph.orchestrator.graph import run_match_pipeline
 from talentgraph.orchestrator.state import PipelineState
@@ -38,7 +36,9 @@ def sample_job() -> JobRequirements:
 
 
 @pytest.mark.asyncio
-async def test_exit_criterion_4_c_normalizer_failure(sample_resume: ParsedResume, sample_job: JobRequirements) -> None:
+async def test_exit_criterion_4_c_normalizer_failure(
+    sample_resume: ParsedResume, sample_job: JobRequirements
+) -> None:
     """With the normalizer forced to fail, pipeline returns partial with earlier outputs intact."""
     mock_normalizer = AsyncMock(spec=NormalizationAgent)
     mock_normalizer.name = "normalizer"

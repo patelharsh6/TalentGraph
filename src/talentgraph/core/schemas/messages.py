@@ -41,9 +41,7 @@ class AgentMessage(BaseModel):
     created_at: datetime = Field(default_factory=_now)
     attempt: int = 1
 
-    def reply(
-        self, *, type: Literal["result", "error"], payload: dict[str, Any]
-    ) -> "AgentMessage":
+    def reply(self, *, type: Literal["result", "error"], payload: dict[str, Any]) -> "AgentMessage":
         """Build the response envelope, keeping the trace and linking parent_id."""
         return AgentMessage(
             trace_id=self.trace_id,

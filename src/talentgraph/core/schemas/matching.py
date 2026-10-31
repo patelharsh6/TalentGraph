@@ -1,6 +1,7 @@
 """MatchResult and JobRequirements schemas (Step 4.1, plan §6.3)."""
 
 from typing import Any, Literal
+
 from pydantic import BaseModel, Field
 
 

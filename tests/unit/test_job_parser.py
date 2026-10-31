@@ -1,14 +1,12 @@
 """Unit tests for Step 4.1: JobParser and matching schemas."""
 
-import pytest
 from pathlib import Path
+
+import pytest
 
 from talentgraph.agents.matching.job_parser import InMemoryJDCache, JobParser
 from talentgraph.core.schemas.matching import (
-    JobRequirement,
-    JobRequirements,
     RawJobExtraction,
-    RawJobRequirement,
 )
 from talentgraph.llm.fake import FakeLLM
 
