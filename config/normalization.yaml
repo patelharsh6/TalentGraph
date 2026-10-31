@@ -1,6 +1,6 @@
-# Normalization cascade thresholds (plan §6.2). Tuned in Step 3.9.
+# Normalization cascade thresholds (plan §6.2). Tuned in Step 3.9 on val split.
 fuzzy:
-  min_score: 92          # rapidfuzz token_sort_ratio
+  min_score: 88          # rapidfuzz token_sort_ratio (tuned from 92 to 88 on val)
   require_unique_top: true
 embedding:
   min_cosine: 0.82

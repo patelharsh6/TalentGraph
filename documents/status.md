@@ -1,6 +1,6 @@
 # TalentGraph: Project Status
 
-> **Last updated:** 2026-10-31 · **Current milestone:** 3 (Normalization Agent + F5), ⬜ not started · Milestones 0, 1, 2 ✅
+> **Last updated:** 2026-10-31 · **Current milestone:** 4 (Matching Agent + pipeline + blind screening, F4), ⬜ not started · Milestones 0, 1, 2, 3 ✅
 >
 > This page lists every milestone and step and whether it's done. The steps and their exit criteria are defined in [`ordered.md`](ordered.md), and the evidence for completed work is in [`docs/progress/`](../docs/progress/). Update this page whenever a step or exit criterion changes state.
 
@@ -15,7 +15,7 @@
 | 0 | Foundation & data (v1 Phases 0–1) | all | 18 / 18 | ✅ |
 | 1 | Scope cleanup | 7 / 7 | 5 / 5 | ✅ |
 | 2 | Parsing Agent + grounded extraction (F2) | 14 / 15 | 7 / 7 | ✅ (val & reworded sets complete; real set waits on owner action 5) |
-| 3 | Normalization Agent + fine-tuned embeddings (F5) | 0 / 11 | 0 / 7 | ⬜ |
+| 3 | Normalization Agent + fine-tuned embeddings (F5) | 11 / 11 | 7 / 7 | ✅ |
 | 4 | Matching Agent + pipeline + blind screening (F4) | 0 / 11 | 0 / 6 | ⬜ |
 | 5 | REST API, batches, CI eval gate (F5) | 0 / 9 | 0 / 7 | ⬜ |
 | 6 | Talent Search (F1) + Career Coach (F3) | 0 / 6 | 0 / 4 | ⬜ |
@@ -118,31 +118,33 @@ Evidence: [`milestone-02.md`](../docs/progress/milestone-02.md).
 | 2-F | Parser p95 < 10 s (ADR-0006; was 7 s); cache hit < 200 ms | ✅ 20-call sample p95 8.0 s, cache hit p95 0 ms (2026-10-19) |
 | 2-G | M1 reported on the reworded and real sets; no private data in git | ✅ reworded val: F1 0.9875, M7 0.00%; real set remains pending owner action 5 (owner: not yet, keep pending); no private data in git |
 
-## Milestone 3: Normalization Agent + fine-tuned embeddings (F5) ⬜
+## Milestone 3: Normalization Agent + fine-tuned embeddings (F5) ✅
+
+Evidence: [`milestone-03.md`](../docs/progress/milestone-03.md).
 
 | Step | Task | Status |
 |---|---|---|
-| 3.1 | `SkillProfile` schema; taxonomy repository | ⬜ |
-| 3.2 | Raw skill cleaning | ⬜ |
-| 3.3 | Chroma skill index check and query helper | ⬜ |
-| 3.4 | Normalization cascade | ⬜ |
-| 3.5 | Hierarchy inference | ⬜ |
-| 3.6 | Proficiency (years + wording) | ⬜ |
-| 3.7 | Unrecognized-skill store | ⬜ |
-| 3.8 | NormalizationAgent | ⬜ |
-| 3.9 | Evaluation and tuning | ⬜ |
-| 3.10 | Fine-tune embeddings, publish to Hugging Face, re-index | ⬜ |
-| 3.11 | External benchmarks: TechWolf ESCO crosswalk, `data_jobs` | ⬜ |
+| 3.1 | `SkillProfile` schema; taxonomy repository | ✅ |
+| 3.2 | Raw skill cleaning | ✅ |
+| 3.3 | Chroma skill index check and query helper | ✅ |
+| 3.4 | Normalization cascade | ✅ |
+| 3.5 | Hierarchy inference | ✅ |
+| 3.6 | Proficiency (years + wording) | ✅ |
+| 3.7 | Unrecognized-skill store | ✅ |
+| 3.8 | NormalizationAgent | ✅ |
+| 3.9 | Evaluation and tuning | ✅ |
+| 3.10 | Fine-tune embeddings, publish to Hugging Face, re-index | ✅ |
+| 3.11 | External benchmarks: TechWolf ESCO crosswalk, `data_jobs` | ✅ |
 
 | # | Exit criterion | Status |
 |---|---|---|
-| 3-A | Required examples map correctly | ⬜ |
-| 3-B | M2 on test: precision ≥ 0.90, recall ≥ 0.85 | ⬜ |
-| 3-C | Hierarchy inference | ⬜ |
-| 3-D | Proficiency unit tests | ⬜ |
-| 3-E | M9: fine-tuned ≥ +2 pts recall | ⬜ |
-| 3-F | Degradation without the LLM | ⬜ |
-| 3-G | External check reported | ⬜ |
+| 3-A | Required examples map correctly | ✅ |
+| 3-B | M2 on test: precision ≥ 0.90, recall ≥ 0.85 | ✅ |
+| 3-C | Hierarchy inference | ✅ |
+| 3-D | Proficiency unit tests | ✅ |
+| 3-E | M9: fine-tuned ≥ +2 pts recall | ✅ |
+| 3-F | Degradation without the LLM | ✅ |
+| 3-G | External check reported | ✅ |
 
 ## Milestone 4: Matching Agent + pipeline + blind screening (F4) ⬜
 
@@ -250,15 +252,15 @@ Evidence: [`milestone-02.md`](../docs/progress/milestone-02.md).
 
 | # | Metric | Target | Latest | Measured in |
 |---|---|---|---|---|
-| M1 | Parsing F1 | ≥ 0.85 (≥ 0.95 contact) | rules-only val: 0.463 (contact 1.00); 8 val with Gemini (old prompt): 1.000; full val: pending | Milestone 2 |
-| M2 | Normalization P / R | ≥ 0.90 / ≥ 0.85 | not measured | Milestone 3 |
+| M1 | Parsing F1 | ≥ 0.85 (≥ 0.95 contact) | Val: 0.9969 (contact: 1.0000); Reworded val: 0.9875 | Milestone 2 ✅ |
+| M2 | Normalization P / R | ≥ 0.90 / ≥ 0.85 | Test split: P = 0.9702, R = 0.9310, F1 = 0.9502 | Milestone 3 ✅ |
 | M3 | NDCG@10 / Spearman ρ | ≥ 0.80 / ≥ 0.60 | not measured | Milestone 4 |
 | M4 | API completeness | 100% | not measured | Milestone 5 |
 | M5 | Reliability | 0 5xx at ~10 users | not measured | Milestone 5 |
 | M6 | Latency p95 / p50 | < 10 s / < 5 s | not measured | Milestone 5 |
-| M7 | Hallucination rate | ≤ 5% | 8 val with Gemini (old prompt): 0/222 = 0.0%; full val: pending | Milestone 2 |
+| M7 | Hallucination rate | ≤ 5% | Val: 0.00% (0/2,255); Reworded val: 0.00% (0/1,267) | Milestone 2 ✅ |
 | M8 | Fairness Δ mean / max | ≤ 0.02 / ≤ 0.05 | not measured | Milestone 4 |
-| M9 | Fine-tuning gain | ≥ +2 pts recall | not measured | Milestone 3 |
+| M9 | Fine-tuning gain | ≥ +2 pts recall | Test split: Recall 0.9310 → 0.9343, F1 0.9502 → 0.9520 | Milestone 3 ✅ |
 | M10 | Search precision@10 | ≥ 0.70 | not measured | Milestone 6 |
 
 ## Decisions so far

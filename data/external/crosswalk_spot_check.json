@@ -1,0 +1,167 @@
+[
+  {
+    "esco_title": "Amazon Web Services",
+    "mapped_slug": "amazon-web-services",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Apache Kafka",
+    "mapped_slug": "apache-kafka",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Apache Spark",
+    "mapped_slug": "apache-spark",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Bash (scripting language)",
+    "mapped_slug": "shell-scripting",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "C++",
+    "mapped_slug": "c-plus-plus",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Cascading Style Sheets",
+    "mapped_slug": "css3",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Django (framework)",
+    "mapped_slug": "django",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Docker",
+    "mapped_slug": "docker",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Figma",
+    "mapped_slug": "figma",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "GitHub Actions",
+    "mapped_slug": "github-actions",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "GraphQL",
+    "mapped_slug": "graphql",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Jenkins (software)",
+    "mapped_slug": "jenkins",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Kubernetes",
+    "mapped_slug": "kubernetes",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Linux",
+    "mapped_slug": "linux",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Microsoft Excel",
+    "mapped_slug": "microsoft-excel",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "PostgreSQL",
+    "mapped_slug": "postgresql",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "PyTorch",
+    "mapped_slug": "pytorch",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Python (computer programming)",
+    "mapped_slug": "python",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "REST (Representational State Transfer)",
+    "mapped_slug": "representational-state-transfer",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "React (JavaScript library)",
+    "mapped_slug": "react",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "SQL",
+    "mapped_slug": "sql",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Scrum (software development)",
+    "mapped_slug": "scrum",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Snowflake",
+    "mapped_slug": "snowflake",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Swift (programming language)",
+    "mapped_slug": "swift-language",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "SwiftUI",
+    "mapped_slug": "swiftui",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Terraform (software)",
+    "mapped_slug": "terraform",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "TypeScript",
+    "mapped_slug": "typescript",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "Xcode",
+    "mapped_slug": "xcode",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "dbt",
+    "mapped_slug": "dbt",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "machine learning",
+    "mapped_slug": "machine-learning",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "natural language processing",
+    "mapped_slug": "natural-language-processing",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "product management",
+    "mapped_slug": "product-management",
+    "spot_check_verified": true
+  },
+  {
+    "esco_title": "user interface design",
+    "mapped_slug": "user-interface-design",
+    "spot_check_verified": true
+  }
+]

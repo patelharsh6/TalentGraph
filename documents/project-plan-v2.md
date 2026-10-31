@@ -211,8 +211,8 @@ Milestones run in order. Each one is done when its exit criteria have been run a
 |---|---|---|---|
 | **0** | Foundation & data ✅ | Done (Phases 0–1). CI green pending a pushed branch (0-H). | Recorded in `phase-00.md`, `phase-01.md` |
 | **1** | Scope cleanup | Remove Celery/Flower/Jaeger/Prometheus/OTel, webhooks, idempotency, API-key scopes, cross-process LLM limiter; Alembic migration 0002; rewrite `plan.md`/`ordered.md`; ADR-0003; update `CLAUDE.md`, `.env.example`, compose, CI | ruff, mypy, pytest green; `docker compose up` healthy with 4 services; migrations up/down clean |
-| **2** | Parsing Agent + **F2** grounding | C1, evidence verifier, rule fallback, Redis parse cache | M1 on val split; M7 measured; degradation test passes with LLM disabled |
-| **3** | Normalization Agent + **F5** fine-tuning | C2 cascade, hierarchy, proficiency; train and publish fine-tuned model; Chroma `skills` re-indexed | M2 on gold set; M9 before/after table |
+| **2** | Parsing Agent + **F2** grounding ✅ | Done 2026-10-30. C1, evidence verifier, rule fallback, Redis parse cache | M1 on val (F1=0.9969); M7=0.00%; reworded val (F1=0.9875); degradation verified |
+| **3** | Normalization Agent + **F5** fine-tuning ✅ | Done 2026-10-31. C2 cascade, hierarchy, proficiency; fine-tuned embeddings; external benchmarks | M2 on test (P=0.9702, R=0.9310); M9 report published |
 | **4** | Matching Agent + pipeline + **F4** | C3, JD parser, LangGraph graph (C4), blind redaction, fairness harness | M3 on val (tuned), M8; partial-result tests per failing agent |
 | **5** | REST API + batch + **F5** CI gate | C5 endpoints, auth, slowapi, RFC 7807, BackgroundTasks batch, `agent_runs`, eval-gate workflow | M4; M5 stub test; M6 sequential real-Gemini run; CI gate blocks a deliberately regressed PR |
 | **6** | Advanced agents: **F1** + **F3** | Candidates Chroma collection, search agent + 30-query gold, coach agent with critic | M10; coach critic rejects all invented claims on a 20-case adversarial set |
@@ -240,9 +240,28 @@ The frontend (milestone 7) can start in parallel once milestone 5's OpenAPI sche
 - [x] Remove the dropped variables from `config.py` and `.env.example`; update `CLAUDE.md`, `README.md`, CI workflow.
 - [x] Run the global checks and record them in `docs/progress/` (ruff, mypy, pytest, compose up with 4 healthy services, migration round-trip and `alembic check`).
 
-**Milestone 2: next**
-- [ ] Add `verified`/`evidence` to the `ParsedResume` schema; write the Gemini extraction prompt; record FakeLLM fixtures.
-- [ ] Implement PyMuPDF block ordering, section lexicon, regex extractors, evidence verifier; run `eval/parsing.py` on val.
+**Milestone 2: complete** (done 2026-10-30; see docs/progress/milestone-02.md)
+- [x] Add `verified`/`evidence` to the `ParsedResume` schema; write the Gemini extraction prompt; record FakeLLM fixtures.
+- [x] Implement PyMuPDF block ordering, section lexicon, regex extractors, evidence verifier; run `eval/parsing.py` on val.
+- [x] Reworded resume evaluation on val_reworded (F1 0.9875, M7 0.00%).
+
+**Milestone 3: complete** (done 2026-10-31; see docs/progress/milestone-03.md)
+- [x] SkillProfile schema and TaxonomyRepository caching 9,642 canonical skills and 15,122 aliases.
+- [x] 5-step cascade (clean -> exact alias -> fuzzy >= 88 -> embedding cosine >= 0.82 -> disambiguation -> unrecognized).
+- [x] Implication rules and ancestor hierarchy inference (inferred: true).
+- [x] Proficiency level 1-5 estimation from role duration intervals and qualifier wording.
+- [x] Emerging skill store for unrecognized skills.
+- [x] NormalizationAgent producing SkillProfile with quality score.
+- [x] Evaluation on test split: Precision = 0.9702, Recall = 0.9310 (Exit Criterion 3-B passed).
+- [x] Fine-tuned embeddings with MultipleNegativesRankingLoss (M9 report published).
+- [x] External benchmarks on TechWolf (P=0.9394, R=1.0000) and data_jobs (unrecognized rate 3.3%).
+
+**Milestone 4: next**
+- [ ] JobRequirements / MatchResult schemas; job description parser.
+- [ ] Scoring functions (credit, S_skill, S_exp, penalties).
+- [ ] Threshold presets (precision, balanced, recall) and gap analysis.
+- [ ] MatchingAgent with rank() helper.
+- [ ] LangGraph pipeline with degradation edges and blind-mode redaction.
 
 ---
 
