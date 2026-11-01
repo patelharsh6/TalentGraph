@@ -20,7 +20,7 @@
 [![Next.js 14](https://img.shields.io/badge/Next.js-14.2-black.svg?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript 5.6](https://img.shields.io/badge/TypeScript-5.6-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC.svg?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT_(Pending)-blue.svg)](#license)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Milestones-0--7%20Complete%20(100%25)-emerald.svg)](#evaluation--benchmarks)
 
 [Overview](#overview) • [Key Features](#key-features) • [How It Works](#how-it-works) • [Architecture](#architecture) • [Tech Stack](#tech-stack) • [Getting Started](#getting-started) • [API Reference](#api-reference) • [Benchmarks](#evaluation--benchmarks)
@@ -54,7 +54,7 @@
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
-- [Author & Acknowledgements](#author--acknowledgements)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -82,18 +82,20 @@ Enterprise applicant tracking systems (ATS) and talent intelligence tools face t
 
 ## Screenshots & Demo
 
-<!-- Collapsible gallery with placeholder images in docs/images/ -->
 <details open>
-<summary><b>Click to expand UI preview gallery</b></summary>
+<summary><b>Click to expand UI preview gallery (8 Interactive Views)</b></summary>
 <br/>
 
-| Module | Preview |
+| Module | Interface Preview |
 | :--- | :--- |
-| **Upload & Profile View**<br/>_Dropzone, verbatim evidence highlighting, and automated role fit recommendations_ | ![Resume Parsing & Profile](docs/images/upload_view.png)<br/>*(Image placeholder: `docs/images/upload_view.png`)* |
-| **Semantic Match & Scoring**<br/>_Requirement-by-requirement scoring with gap analysis and blind-mode toggle_ | ![Semantic Match & Score](docs/images/match_score.png)<br/>*(Image placeholder: `docs/images/match_score.png`)* |
-| **Recruiter Ranking**<br/>_Multi-candidate stack ranking against requisition requirements_ | ![Recruiter Ranking](docs/images/recruiter_ranking.png)<br/>*(Image placeholder: `docs/images/recruiter_ranking.png`)* |
-| **Natural Language Talent Search**<br/>_Tool-calling search agent executing structured filters and vector retrieval_ | ![Talent Search](docs/images/talent_search.png)<br/>*(Image placeholder: `docs/images/talent_search.png`)* |
-| **Career Coach & Truthful Resume Critic**<br/>_Personalized learning roadmap and verified bullet point rewrites_ | ![Career Coach](docs/images/career_coach.png)<br/>*(Image placeholder: `docs/images/career_coach.png`)* |
+| **Resume Extraction & Talent Profile (`/`)**<br/>_Dropzone upload, verbatim evidence highlighting, taxonomy skill pills, and instant role fit recommendations_ | ![Resume Parsing & Profile](docs/images/upload_view.png) |
+| **Semantic Match & Explainable Scoring (`/match`)**<br/>_Requirement-by-requirement scoring breakdown, multi-tier credit attribution, and anti-bias blind screening mode_ | ![Semantic Match & Score](docs/images/match_score.png) |
+| **Recruiter Candidate Ranking (`/rank`)**<br/>_Multi-candidate stack ranking against active requisitions with gap analysis and anonymized screening_ | ![Recruiter Ranking](docs/images/recruiter_ranking.png) |
+| **Natural Language Talent Search (`/search`)**<br/>_Agentic search planner translating conversational queries into structured constraints and semantic candidate citations_ | ![Natural Language Talent Search](docs/images/talent_search.png) |
+| **AI Career Coach & Resume Critic (`/coach`)**<br/>_Personalized learning roadmap, skill-specific interview preparation, and verified bullet point rewrites_ | ![Career Coach](docs/images/career_coach.png) |
+| **ESCO / O\*NET Skill Taxonomy Explorer (`/taxonomy`)**<br/>_Interactive tree visualization and search across 9,600+ skills and 15,000+ normalized aliases_ | ![Skill Taxonomy Explorer](docs/images/taxonomy.png) |
+| **Evaluation & Benchmark Scorecard (`/evaluation`)**<br/>_Audited metrics dashboard tracking verification gates, latency profiles, and rubric targets (M1–M10)_ | ![Benchmark Scorecard](docs/images/benchmark_scorecard.png) |
+| **System Architecture & Specifications (`/about`)**<br/>_End-to-end multi-agent pipeline specifications, system health metrics, and design methodology_ | ![System Architecture & About](docs/images/about.png) |
 
 </details>
 
@@ -742,14 +744,11 @@ Contributions are welcome! Please follow these steps:
 
 ## License
 
-<!-- TODO: Choose and confirm license (e.g., MIT, Apache 2.0). Ask repository owner before generating LICENSE file. -->
-This project is currently distributed under the **MIT License (Pending Confirmation)**. See `LICENSE` for details once finalized.
+This project is licensed under the terms of the [MIT License](LICENSE).
 
 ---
 
-## Author & Acknowledgements
+## Acknowledgements
 
-- **Author:** Harsh ([@Harsh](https://github.com/))
-<!-- TODO: Add official author contact email and portfolio link -->
-- **Taxonomy Standards:** Built upon open standards from [European Skills, Competences, Qualifications and Occupations (ESCO)](https://esco.ec.europa.eu/) and [O\*NET 31.0](https://www.onetonline.org/).
+- **Taxonomy Standards:** Built upon open standards from [European Skills, Competences, Qualifications and Occupations (ESCO)](https://esco.ec.europa.eu/) and [O*NET 31.0](https://www.onetonline.org/).
 - **AI Infrastructure:** Powered by [Google Gemini](https://ai.google.dev/) and [Hugging Face Sentence Transformers](https://sbert.net/).
