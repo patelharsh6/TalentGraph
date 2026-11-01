@@ -30,12 +30,27 @@ class ApiResponse[T](BaseModel):
     meta: ResponseMeta
 
 
+class SuggestedRole(BaseModel):
+    """A recommended role match for a parsed candidate."""
+
+    job_id: str
+    title: str
+    company: str | None = None
+    match_score: int = Field(..., ge=0, le=100)
+    matched_skills: list[str] = Field(default_factory=list)
+    missing_skills: list[str] = Field(default_factory=list)
+    fit_summary: str = ""
+
+
 class ParseResponseData(BaseModel):
     """Data payload for POST /api/v1/parse."""
 
     candidate_id: str
     parsed: ParsedResume
     profile: SkillProfile
+    status: str = "ok"
+    warnings: list[str] = Field(default_factory=list)
+    suggested_roles: list[SuggestedRole] = Field(default_factory=list)
 
 
 class JobInput(BaseModel):

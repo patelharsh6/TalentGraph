@@ -59,9 +59,19 @@ def create_pipeline_graph(
             t0 = time.perf_counter()
             parsed_res = await p_agent.parse(state.file_bytes, filename=filename)  # type: ignore[arg-type]
             latency_ms = int((time.perf_counter() - t0) * 1000)
+            if parsed_res.warnings:
+                for w in parsed_res.warnings:
+                    state.record_error(
+                        AgentError(
+                            agent="parser",
+                            code="quota_exceeded" if "quota" in w.lower() else "parser_warning",
+                            message=w,
+                            retryable=False,
+                        )
+                    )
             return AgentResult(
                 status=parsed_res.status,  # "ok" or "partial"
-                data={"parsed_resume": parsed_res.resume.model_dump()},
+                data={"parsed_resume": parsed_res.resume.model_dump(), "warnings": parsed_res.warnings},
                 quality=parsed_res.quality,
                 latency_ms=latency_ms,
             )

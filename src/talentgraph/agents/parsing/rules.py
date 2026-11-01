@@ -150,19 +150,58 @@ def find_location(lines: Iterable[str]) -> tuple[tuple[str, str], str] | None:
 
 
 def guess_name(lines: list[str]) -> Match | None:
-    """The first short line of letters at the top of the document."""
-    for line in lines[:5]:
+    """The first short line or segment of letters at the top of the document."""
+    stop_words = {
+        "curriculum", "vitae", "resume", "profile", "summary", "experience",
+        "education", "contact", "skills", "skill", "technologies", "projects",
+        "certifications", "work", "technical", "languages", "tools"
+    }
+    for line in lines[:8]:
         text = line.strip()
+        if not text:
+            continue
         words = text.split()
         if (
             2 <= len(words) <= 5
-            and not any(ch.isdigit() for ch in text)
+            and not any(ch.isdigit() or ch in {":", ";", "{", "}", "[", "]", "(", ")", "=", "+", "/", "\\"} for ch in text)
             and "@" not in text
             and "|" not in text
-            and all(w[0].isalpha() for w in words)
+            and "•" not in text
+            and "·" not in text
+            and all(w.isalpha() for w in words)
+            and not any(w.lower() in stop_words for w in words)
         ):
             value = " ".join(w.capitalize() if w.isupper() else w for w in words)
             return Match(value, text)
+
+        segments = re.split(r"\s*[|•·\t]\s*", text)
+        for seg in segments:
+            seg_text = seg.strip()
+            seg_words = seg_text.split()
+            if (
+                2 <= len(seg_words) <= 4
+                and not any(ch.isdigit() or ch in {":", ";", "{", "}", "[", "]", "(", ")", "=", "+", "/", "\\"} for ch in seg_text)
+                and "@" not in seg_text
+                and "://" not in seg_text
+                and all(w.isalpha() for w in seg_words)
+                and not any(w.lower() in stop_words for w in seg_words)
+            ):
+                value = " ".join(w.capitalize() if w.isupper() else w for w in seg_words)
+                return Match(value, seg_text)
+
+    for line in lines[:10]:
+        em = find_email(line)
+        if em:
+            prefix = em.value.split("@")[0]
+            clean_prefix = re.sub(r"\d+", "", prefix).strip("._-")
+            parts = [p for p in re.split(r"[._-]+", clean_prefix) if len(p) >= 2]
+            if len(parts) >= 2:
+                value = " ".join(p.capitalize() for p in parts[:3])
+                return Match(value, em.evidence)
+            elif len(parts) == 1 and len(parts[0]) >= 3:
+                value = parts[0].capitalize()
+                return Match(value, em.evidence)
+
     return None
 
 

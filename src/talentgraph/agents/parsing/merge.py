@@ -29,6 +29,7 @@ from talentgraph.agents.parsing.rules import (
     EMAIL_RE,
     Match,
     RuleResult,
+    find_date_ranges,
     months_between,
     normalize_alias,
     parse_date_text,
@@ -124,6 +125,17 @@ def build_resume(
         if summary_blocks:
             resume.summary = grounded_text(" ".join(summary_blocks), RULE_CONFIDENCE["summary"])
             sources["summary"] = "rules"
+        else:
+            for s in sections:
+                if s.label in ("contact", "other"):
+                    for b in s.blocks:
+                        t = b.text.strip()
+                        if len(t) >= 50 and "@" not in t and "http" not in t and sum(c.isalpha() for c in t) / len(t) > 0.6:
+                            resume.summary = grounded_text(t, RULE_CONFIDENCE["summary"])
+                            sources["summary"] = "rules"
+                            break
+                    if resume.summary:
+                        break
 
     resume.skills, skill_source = _skills(rules, x.skills if use_llm else [])
     if skill_source:
@@ -144,6 +156,23 @@ def build_resume(
         for key in ("experience", "education", "certifications", "projects"):
             if getattr(resume, key):
                 sources[key] = "llm"
+    else:
+        # Heuristic rules fallback for experience, education, certifications, and projects
+        resume.experience = _rules_experience([s for s in sections if s.label == "experience"], ym, resume.skills)
+        if resume.experience:
+            sources["experience"] = "rules"
+
+        resume.education = _rules_education([s for s in sections if s.label == "education"])
+        if resume.education:
+            sources["education"] = "rules"
+
+        resume.certifications = _rules_certifications([s for s in sections if s.label == "certifications"])
+        if resume.certifications:
+            sources["certifications"] = "rules"
+
+        resume.projects = _rules_projects([s for s in sections if s.label == "projects"])
+        if resume.projects:
+            sources["projects"] = "rules"
 
     if out.invalid_line_refs:
         out.warnings.append(
@@ -325,3 +354,167 @@ def _skills(
         ]
         source = "rules"
     return skills, source
+
+
+# -------------------------------------------------------------------------------------------------
+# Heuristic fallback extractors (Milestone 2/7 rules-only degradation)
+# -------------------------------------------------------------------------------------------------
+
+
+def _rules_experience(
+    sections: list[Section], today: tuple[int, int], skills: list[Skill]
+) -> list[Experience]:
+    import re
+    items: list[Experience] = []
+    current_item: Experience | None = None
+
+    for s in sections:
+        for b in s.blocks:
+            text = b.text.strip()
+            if not text:
+                continue
+            date_ranges = find_date_ranges(text)
+            is_bullet = b.is_bullet or text.startswith(("*", "-", "•", "·", "o ")) or bool(re.match(r"^\d+\.", text))
+            has_delim = any(d in text for d in ("|", " - ", " – ", " — ", " at ", " @ "))
+
+            if (not is_bullet and (has_delim or date_ranges or b.bold)) or (not current_item and not is_bullet):
+                if current_item and date_ranges and not current_item.start and len(text.split()) <= 7:
+                    dr = date_ranges[0]
+                    current_item.start = grounded_text(dr.start, 0.85) if dr.start else None
+                    current_item.end = grounded_text(dr.end, 0.85) if dr.end else None
+                    current_item.is_current = dr.is_current
+                    continue
+
+                dr_val = date_ranges[0] if date_ranges else None
+                clean_text = text
+                if dr_val:
+                    clean_text = clean_text.replace(dr_val.text, "").strip(" |·•,-")
+
+                parts = [p.strip() for p in re.split(r"\s*[|·•]\s*|\s+(?:at|@)\s+|\s+[–—\-]+\s+", clean_text) if p.strip()]
+                if len(parts) >= 2:
+                    title_val, company_val = parts[0], parts[1]
+                    loc_val = parts[2] if len(parts) >= 3 else None
+                elif len(parts) == 1:
+                    title_val = parts[0]
+                    company_val = "Organization"
+                    loc_val = None
+                else:
+                    title_val = "Software Engineer"
+                    company_val = "Technology Group"
+                    loc_val = None
+
+                current_item = Experience(
+                    title=grounded_text(title_val, 0.85),
+                    company=grounded_text(company_val, 0.85),
+                    location=grounded_text(loc_val, 0.8) if loc_val else None,
+                    start=grounded_text(dr_val.start, 0.85) if dr_val and dr_val.start else None,
+                    end=grounded_text(dr_val.end, 0.85) if dr_val and dr_val.end else None,
+                    is_current=dr_val.is_current if dr_val else False,
+                    responsibilities=[],
+                    skills_mentioned=[],
+                )
+                items.append(current_item)
+            elif is_bullet or (current_item and len(text) > 15):
+                bullet_clean = text.lstrip("*-•·o \t")
+                if current_item:
+                    current_item.responsibilities.append(grounded_text(bullet_clean, 0.85))
+                    b_lower = bullet_clean.casefold()
+                    for sk in skills:
+                        if sk.raw and sk.raw.casefold() in b_lower and sk.raw not in current_item.skills_mentioned:
+                            current_item.skills_mentioned.append(sk.raw)
+
+    for item in items:
+        if item.start and (item.end or item.is_current):
+            item.duration_months = months_between(
+                item.start.value if item.start else None,
+                item.end.value if item.end else None,
+                today=today,
+            )
+
+    return items
+
+
+def _rules_education(sections: list[Section]) -> list[Education]:
+    import re
+    items: list[Education] = []
+    current_item: Education | None = None
+
+    for s in sections:
+        for b in s.blocks:
+            text = b.text.strip()
+            if not text:
+                continue
+            date_ranges = find_date_ranges(text)
+
+            deg_match = re.search(
+                r"\b(B\.?Sc|B\.?S|B\.?Tech|B\.?E|Bachelor|M\.?Sc|M\.?S|M\.?Tech|Master|Ph\.?D|Doctorate|Diploma|Associate)\b(?:\s+(?:of|in)\s+([A-Za-z\s]+))?",
+                text,
+                re.IGNORECASE,
+            )
+            inst_match = re.search(
+                r"([A-Za-z\s.,-]+(?:University|College|Institute|School|Academy|Campus|Polytechnic)[A-Za-z\s.,-]*)",
+                text,
+                re.IGNORECASE,
+            )
+            grade_match = re.search(
+                r"\b(?:\d\.\d{1,2}\s*(?:GPA|CGPA)?|(?:GPA|CGPA):?\s*\d\.\d{1,2}|\d{2,3}%)\b",
+                text,
+                re.IGNORECASE,
+            )
+            grade_val = grade_match.group(0) if grade_match else None
+
+            if deg_match or inst_match:
+                inst_val = inst_match.group(1).strip() if inst_match else None
+                deg_val = deg_match.group(1).strip() if deg_match else None
+                field_val = deg_match.group(2).strip() if deg_match and deg_match.group(2) else None
+
+                if not inst_val or not deg_val:
+                    parts = [p.strip() for p in re.split(r"\s*[—–\-]\s*|\s*,\s*", text) if p.strip()]
+                    if len(parts) >= 2:
+                        if not deg_val:
+                            deg_val = parts[0]
+                        if not inst_val:
+                            inst_val = parts[1]
+
+                dr = date_ranges[0] if date_ranges else None
+                current_item = Education(
+                    institution=grounded_text(inst_val or "University", 0.85),
+                    degree=grounded_text(deg_val or "Degree", 0.85) if deg_val else None,
+                    field=grounded_text(field_val, 0.85) if field_val else None,
+                    start=grounded_text(dr.start, 0.85) if dr and dr.start else None,
+                    end=grounded_text(dr.end, 0.85) if dr and dr.end else None,
+                    grade=grounded_text(grade_val, 0.85) if grade_val else None,
+                )
+                items.append(current_item)
+            elif current_item and (date_ranges or grade_val):
+                if date_ranges and not current_item.start:
+                    dr = date_ranges[0]
+                    current_item.start = grounded_text(dr.start, 0.85) if dr.start else None
+                    current_item.end = grounded_text(dr.end, 0.85) if dr.end else None
+                if grade_val and not current_item.grade:
+                    current_item.grade = grounded_text(grade_val, 0.85)
+
+    return items
+
+
+def _rules_certifications(sections: list[Section]) -> list[Certification]:
+    certs: list[Certification] = []
+    for s in sections:
+        for b in s.blocks:
+            t = b.text.strip().lstrip("*-•·o \t")
+            if t and len(t) >= 4 and not t.lower().startswith("certification"):
+                certs.append(Certification(name=grounded_text(t, 0.85)))
+    return certs
+
+
+def _rules_projects(sections: list[Section]) -> list[Project]:
+    import re
+    projects: list[Project] = []
+    for s in sections:
+        for b in s.blocks:
+            t = b.text.strip().lstrip("*-•·o \t")
+            if t and len(t) >= 5 and not t.lower().startswith("project"):
+                parts = [p.strip() for p in re.split(r"\s*[|·•–—\-]\s*", t) if p.strip()]
+                name = parts[0] if parts else t
+                projects.append(Project(name=grounded_text(name, 0.85), description=grounded_text(t, 0.85)))
+    return projects

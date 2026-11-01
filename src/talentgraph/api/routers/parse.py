@@ -75,11 +75,16 @@ async def parse_resume(
             warnings=[],
             trace=[] if include == "trace" else None,
         )
+        from talentgraph.agents.matching.recommend import recommend_roles_for_profile
+        suggested_roles = recommend_roles_for_profile(cached_mem.profile)
         return ApiResponse(
             data=ParseResponseData(
                 candidate_id=str(cached_mem.id),
                 parsed=cached_mem.parsed,
                 profile=cached_mem.profile,
+                status="ok",
+                warnings=[],
+                suggested_roles=suggested_roles,
             ),
             meta=meta,
         )
@@ -191,10 +196,16 @@ async def parse_resume(
         trace=trace_data,
     )
 
+    from talentgraph.agents.matching.recommend import recommend_roles_for_profile
+    suggested_roles = recommend_roles_for_profile(profile)
+
     response_data = ParseResponseData(
         candidate_id=str(candidate_id),
         parsed=result_state.parsed_resume,
-        profile=result_state.skill_profile or SkillProfile(),
+        profile=profile,
+        status=result_state.status,
+        warnings=warnings,
+        suggested_roles=suggested_roles,
     )
 
     return ApiResponse(data=response_data, meta=meta)

@@ -1,6 +1,20 @@
 import type { components, paths } from "./api-types";
 
-export type ParseResponseData = components["schemas"]["ParseResponseData"];
+export interface SuggestedRole {
+  job_id: string;
+  title: string;
+  company?: string | null;
+  match_score: number;
+  matched_skills: string[];
+  missing_skills: string[];
+  fit_summary: string;
+}
+
+export type ParseResponseData = components["schemas"]["ParseResponseData"] & {
+  status?: string;
+  warnings?: string[];
+  suggested_roles?: SuggestedRole[];
+};
 export type MatchResult = components["schemas"]["MatchResult"];
 export type MatchRequest = components["schemas"]["MatchRequest"];
 export type RankRequest = components["schemas"]["RankRequest"];
@@ -65,11 +79,16 @@ export const api = {
   async parseResume(file: File): Promise<ParseResponseData> {
     const formData = new FormData();
     formData.append("file", file);
-    const res = await request<{ data: ParseResponseData }>("/api/v1/parse", {
+    const res = await request<{ data: ParseResponseData; meta?: { status?: string; warnings?: string[] } }>("/api/v1/parse", {
       method: "POST",
       body: formData,
     });
-    return res.data;
+    const data = res.data;
+    if (res.meta) {
+      if (!data.status && res.meta.status) data.status = res.meta.status;
+      if (!data.warnings && res.meta.warnings) data.warnings = res.meta.warnings;
+    }
+    return data;
   },
 
   // Candidates

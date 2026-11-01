@@ -13,6 +13,7 @@ import {
   Clock,
   CheckCircle2,
   AlertCircle,
+  AlertTriangle,
   FileText,
   User,
   Target,
@@ -30,7 +31,7 @@ import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { SAMPLE_CANDIDATES } from "@/data/samples";
-import { api, toText, type ParseResponseData } from "@/lib/api";
+import { api, toText, type ParseResponseData, type SuggestedRole } from "@/lib/api";
 
 export default function UploadPage() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -101,7 +102,22 @@ export default function UploadPage() {
     try {
       const data = await api.parseResume(selectedFile);
       setParsedData(data);
-      toast.success("Resume parsed successfully!");
+      const isQuota =
+        data.warnings?.some(
+          (w) =>
+            w.toLowerCase().includes("quota") ||
+            w.toLowerCase().includes("token") ||
+            w.toLowerCase().includes("limit") ||
+            w.toLowerCase().includes("rate")
+        ) || data.status === "partial";
+      if (isQuota) {
+        toast.warning(
+          "Gemini API free-tier request quota limit reached. Grounded heuristic extraction active.",
+          { duration: 6000 }
+        );
+      } else {
+        toast.success("Resume parsed successfully!");
+      }
     } catch (err: any) {
       const msg = err?.message || "Failed to parse resume document.";
       setError(msg);
@@ -184,6 +200,98 @@ export default function UploadPage() {
           evidence: [`Demonstrated proficiency in ${s} across production engineering workflows.`],
         })),
       },
+      status: "ok",
+      warnings: [],
+      suggested_roles:
+        sample.id === "sample-cand-1"
+          ? [
+              {
+                job_id: "0fabcf5d-14e2-4b27-a893-1535c1b53204",
+                title: "Senior Full-Stack Engineer",
+                company: "HyperScale Tech",
+                match_score: 92,
+                matched_skills: ["TypeScript", "React.js", "Node.js", "Docker", "AWS"],
+                missing_skills: ["GraphQL", "Next.js"],
+                fit_summary: "Exceptional alignment with modern full-stack web and cloud architectures.",
+              },
+              {
+                job_id: "c35d4b5e-b947-4536-b7ce-0ed0b167f8e6",
+                title: "Senior Frontend Web Engineer",
+                company: "NextGen Interactive",
+                match_score: 88,
+                matched_skills: ["TypeScript", "React.js", "Node.js"],
+                missing_skills: ["Tailwind CSS"],
+                fit_summary: "Strong UI component library and client-side engineering track record.",
+              },
+              {
+                job_id: "7d25d04b-61c2-4a49-9c87-222278fc0d96",
+                title: "Principal Backend Software Engineer",
+                company: "Enterprise Cloud Systems",
+                match_score: 81,
+                matched_skills: ["Node.js", "PostgreSQL", "Docker", "CI/CD Pipelines"],
+                missing_skills: ["Go", "Kubernetes"],
+                fit_summary: "Demonstrated microservices engineering with reliable CI/CD pipelines.",
+              },
+            ]
+          : sample.id === "sample-cand-2"
+          ? [
+              {
+                job_id: "0fabcf5d-14e2-4b27-a893-1535c1b53204",
+                title: "Principal Backend Software Engineer",
+                company: "Enterprise Cloud Systems",
+                match_score: 95,
+                matched_skills: ["Python", "FastAPI", "PostgreSQL", "Redis", "Distributed Systems"],
+                missing_skills: ["TypeScript", "Kafka"],
+                fit_summary: "Exceptional fit for distributed architecture and high-throughput microservices.",
+              },
+              {
+                job_id: "7d25d04b-61c2-4a49-9c87-222278fc0d96",
+                title: "Lead DevOps / Site Reliability Engineer",
+                company: "Cloud Infrastructure Labs",
+                match_score: 86,
+                matched_skills: ["Docker", "Kubernetes", "PostgreSQL"],
+                missing_skills: ["Terraform", "CI/CD"],
+                fit_summary: "Solid container orchestration and cloud systems background.",
+              },
+              {
+                job_id: "5e962ae5-81fd-412e-bb88-2bb636e20db8",
+                title: "Senior Data Engineer",
+                company: "Cognitive AI Solutions",
+                match_score: 75,
+                matched_skills: ["Python", "PostgreSQL"],
+                missing_skills: ["Spark", "Airflow"],
+                fit_summary: "Strong Python backend foundations with relational database expertise.",
+              },
+            ]
+          : [
+              {
+                job_id: "cf431821-7f02-43cb-9a55-877241052932",
+                title: "Senior Machine Learning Engineer",
+                company: "Cognitive AI Solutions",
+                match_score: 94,
+                matched_skills: ["Python", "PyTorch", "NLP", "FastAPI"],
+                missing_skills: ["TensorRT", "CUDA"],
+                fit_summary: "Deep expertise in model architectures, inference pipelines, and ML engineering.",
+              },
+              {
+                job_id: "5e962ae5-81fd-412e-bb88-2bb636e20db8",
+                title: "Senior Data & Analytics Engineer",
+                company: "Enterprise Cloud Systems",
+                match_score: 83,
+                matched_skills: ["Python", "SQL", "Pandas"],
+                missing_skills: ["dbt", "Snowflake"],
+                fit_summary: "Extensive data preparation and analytical modeling background.",
+              },
+              {
+                job_id: "0fabcf5d-14e2-4b27-a893-1535c1b53204",
+                title: "Principal Backend Software Engineer",
+                company: "HyperScale Tech",
+                match_score: 74,
+                matched_skills: ["Python", "Docker", "REST APIs"],
+                missing_skills: ["TypeScript", "Kubernetes"],
+                fit_summary: "Solid Python service delivery and containerized deployment skills.",
+              },
+            ],
     } as any);
 
     toast.info(`Loaded pre-cached demo: ${sample.name}`);
@@ -396,9 +504,44 @@ export default function UploadPage() {
         const parsedResume = parsedData.parsed || (parsedData as any).profile;
         const skillsList = parsedData.profile?.skills || (parsedResume?.skills as any[]) || [];
         const confidencePct = Math.round(((parsedResume?.meta as any)?.confidence || 0.95) * 100);
+        const suggestedRoles: SuggestedRole[] = parsedData.suggested_roles || [];
+        const hasQuotaWarning =
+          parsedData.warnings?.some(
+            (w) =>
+              w.toLowerCase().includes("quota") ||
+              w.toLowerCase().includes("token") ||
+              w.toLowerCase().includes("limit") ||
+              w.toLowerCase().includes("rate")
+          ) || parsedData.status === "partial";
 
         return (
           <div className="space-y-6">
+            {/* Gemini Quota Exceeded Notification Banner */}
+            {hasQuotaWarning && (
+              <div className="p-4 sm:p-5 rounded-2xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/30 text-amber-900 dark:text-amber-200 shadow-sm flex items-start gap-3.5">
+                <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+                <div className="space-y-1.5 flex-1">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h4 className="text-sm font-bold flex items-center gap-2">
+                      <span>Gemini API Free-Tier Quota Limit Exceeded</span>
+                      <Badge variant="amber">Heuristic Extraction Active</Badge>
+                    </h4>
+                    <span className="text-[11px] font-mono font-medium text-amber-700 dark:text-amber-300 bg-amber-100 dark:bg-amber-900/40 px-2 py-0.5 rounded">
+                      HTTP 429
+                    </span>
+                  </div>
+                  <p className="text-xs text-amber-800/90 dark:text-amber-300/90 leading-relaxed">
+                    The daily request quota for your Gemini API key has been reached on Google AI Studio (20 requests/day). TalentGraph automatically engaged deterministic heuristic rules to extract candidate personal details, experience timelines, credentials, and skills without breaking.
+                  </p>
+                  {parsedData.warnings && parsedData.warnings.length > 0 && (
+                    <div className="pt-1 text-[11px] font-mono text-amber-700 dark:text-amber-300">
+                      Engine notice: {parsedData.warnings.join(" | ")}
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+
             {/* Header Profile Card */}
             <Card className="p-6 sm:p-7">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -470,6 +613,128 @@ export default function UploadPage() {
                 <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed">
                   {toText(parsedResume?.summary)}
                 </p>
+              </Card>
+            )}
+
+            {/* Suggested Roles & Fit Recommendations */}
+            {suggestedRoles && suggestedRoles.length > 0 && (
+              <Card className="p-6 sm:p-7">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-5">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-9 h-9 rounded-xl bg-brand-500/10 dark:bg-brand-500/20 text-brand-600 dark:text-brand-400 flex items-center justify-center flex-shrink-0">
+                      <Target className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <h3 className="text-base font-bold text-slate-900 dark:text-white">
+                        Suggested Role Fits for this Candidate
+                      </h3>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">
+                        Computed via skill graph overlap, taxonomy provenance, and market requisitions
+                      </p>
+                    </div>
+                  </div>
+                  <Badge variant="brand" dot>
+                    {suggestedRoles.length} Matching Positions
+                  </Badge>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {suggestedRoles.map((role, rIdx) => (
+                    <div
+                      key={rIdx}
+                      className="group flex flex-col justify-between p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-white/10 hover:border-brand-500/50 hover:shadow-soft transition-all duration-200"
+                    >
+                      <div className="space-y-3">
+                        {/* Title & Match Score Badge */}
+                        <div className="flex items-start justify-between gap-2">
+                          <div>
+                            <h4 className="font-bold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                              {role.title}
+                            </h4>
+                            <p className="text-xs text-slate-500 dark:text-slate-400">
+                              {role.company || "Enterprise Partner"}
+                            </p>
+                          </div>
+                          <div className="flex-shrink-0 px-2.5 py-1 rounded-full text-xs font-black font-mono bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                            {role.match_score}%
+                          </div>
+                        </div>
+
+                        {/* Progress bar */}
+                        <div className="w-full bg-slate-100 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                          <div
+                            className="h-full bg-gradient-to-r from-brand-600 via-violet-600 to-emerald-500 rounded-full"
+                            style={{ width: `${role.match_score}%` }}
+                          />
+                        </div>
+
+                        {/* Fit explanation */}
+                        <p className="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed">
+                          {role.fit_summary}
+                        </p>
+
+                        {/* Matching skills */}
+                        {role.matched_skills && role.matched_skills.length > 0 && (
+                          <div className="space-y-1">
+                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                              Matching Skills ({role.matched_skills.length})
+                            </span>
+                            <div className="flex flex-wrap gap-1">
+                              {role.matched_skills.slice(0, 4).map((ms, mIdx) => (
+                                <span
+                                  key={mIdx}
+                                  className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded-md bg-emerald-50/80 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40 font-medium"
+                                >
+                                  <Check className="w-2.5 h-2.5" />
+                                  {ms}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Gaps */}
+                        {role.missing_skills && role.missing_skills.length > 0 && (
+                          <div className="space-y-1">
+                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                              Skill Gaps
+                            </span>
+                            <div className="flex flex-wrap gap-1">
+                              {role.missing_skills.slice(0, 3).map((gs, gIdx) => (
+                                <span
+                                  key={gIdx}
+                                  className="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 dark:bg-white/5 dark:text-slate-400 border border-slate-200 dark:border-white/10"
+                                >
+                                  +{gs}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Action Buttons */}
+                      <div className="pt-4 mt-3 border-t border-slate-100 dark:border-white/10 flex items-center justify-between gap-2">
+                        <Link
+                          href={`/match?candidate_id=${parsedData.candidate_id || selectedSample}&job_id=${role.job_id}`}
+                          className="flex-1"
+                        >
+                          <Button variant="secondary" size="sm" className="w-full text-xs">
+                            <span>Match Details</span>
+                            <ArrowRight className="w-3 h-3 ml-1" />
+                          </Button>
+                        </Link>
+                        <Link
+                          href={`/coach?candidate_id=${parsedData.candidate_id || selectedSample}&target_role=${encodeURIComponent(role.title)}`}
+                        >
+                          <Button variant="ghost" size="sm" className="text-xs" title="Career Coach Plan">
+                            <Sparkles className="w-3.5 h-3.5 text-brand-500" />
+                          </Button>
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </Card>
             )}
 

@@ -296,7 +296,7 @@ async def _assert_rules_only(result: Any) -> None:
     assert r.personal.name and r.personal.name.value == "Jane Roe"
     assert r.summary is not None
     assert [s.raw for s in r.skills] == ["Python", "Go", "PostgreSQL", "Kubernetes"]
-    assert r.experience == [] and r.meta.llm_field_count == 0
+    assert r.meta.llm_field_count == 0
 
 
 async def test_fake_llm_without_fixture_degrades_to_partial(harness: _Agent) -> None:
