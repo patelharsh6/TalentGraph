@@ -154,42 +154,50 @@ def guess_name(lines: list[str]) -> Match | None:
     stop_words = {
         "curriculum", "vitae", "resume", "profile", "summary", "experience",
         "education", "contact", "skills", "skill", "technologies", "projects",
-        "certifications", "work", "technical", "languages", "tools"
+        "certifications", "work", "technical", "languages", "tools", "objective",
+        "personal", "details", "information", "phone", "email", "address", "about"
     }
-    for line in lines[:8]:
+
+    # 1. Clean email prefix matching against lines (high precision, handles concatenated names like shravanasati)
+    for line in lines[:15]:
+        em = find_email(line)
+        if em:
+            prefix = em.value.split("@")[0]
+            clean = re.sub(r"\d+", "", prefix).strip("._-").lower()
+            if len(clean) >= 4:
+                for candidate_line in lines[:15]:
+                    words = re.findall(r"[A-Za-z]+", candidate_line)
+                    if 2 <= len(words) <= 4 and "".join(words).lower() == clean:
+                        value = " ".join(w.capitalize() for w in words)
+                        return Match(value, candidate_line.strip())
+
+    # 2. Look for clean name line or segment (2-4 words, capitalized/letters, no numbers)
+    for line in lines[:12]:
         text = line.strip()
         if not text:
             continue
-        words = text.split()
-        if (
-            2 <= len(words) <= 5
-            and not any(ch.isdigit() or ch in {":", ";", "{", "}", "[", "]", "(", ")", "=", "+", "/", "\\"} for ch in text)
-            and "@" not in text
-            and "|" not in text
-            and "•" not in text
-            and "·" not in text
-            and all(w.isalpha() for w in words)
-            and not any(w.lower() in stop_words for w in words)
-        ):
-            value = " ".join(w.capitalize() if w.isupper() else w for w in words)
-            return Match(value, text)
 
-        segments = re.split(r"\s*[|•·\t]\s*", text)
-        for seg in segments:
-            seg_text = seg.strip()
-            seg_words = seg_text.split()
+        # Split on common separators if line has delimiters: |, •, -, /, etc.
+        candidates = [text]
+        if any(sep in text for sep in ["|", "•", "·", "\t", " - ", " / "]):
+            candidates.extend(re.split(r"\s*(?:[|•·\t]| - | / )\s*", text))
+
+        for cand in candidates:
+            cand = cand.strip().strip("-:,;()[]{}")
+            if not cand or "@" in cand or "://" in cand or any(ch.isdigit() for ch in cand):
+                continue
+            words = cand.split()
+            clean_words = [w.rstrip(".") for w in words]
             if (
-                2 <= len(seg_words) <= 4
-                and not any(ch.isdigit() or ch in {":", ";", "{", "}", "[", "]", "(", ")", "=", "+", "/", "\\"} for ch in seg_text)
-                and "@" not in seg_text
-                and "://" not in seg_text
-                and all(w.isalpha() for w in seg_words)
-                and not any(w.lower() in stop_words for w in seg_words)
+                2 <= len(clean_words) <= 4
+                and all(w.isalpha() for w in clean_words)
+                and not any(w.lower() in stop_words for w in clean_words)
             ):
-                value = " ".join(w.capitalize() if w.isupper() else w for w in seg_words)
-                return Match(value, seg_text)
+                value = " ".join(w.capitalize() if (w.isupper() or len(w) == 1) else w for w in words)
+                return Match(value, cand)
 
-    for line in lines[:10]:
+    # 3. Fallback: Parse name directly from email
+    for line in lines[:15]:
         em = find_email(line)
         if em:
             prefix = em.value.split("@")[0]
@@ -362,13 +370,15 @@ def find_skill_candidates(text: str, index: frozenset[str], *, max_n: int = 5) -
 
 def run_rules(sections: list[Section], full_text: str, alias_index: frozenset[str]) -> RuleResult:
     contact_lines = [b.text for s in sections if s.label == "contact" for b in s.blocks]
+    top_full_lines = [line.strip() for line in full_text.splitlines()[:20] if line.strip()]
+    combined_lines = contact_lines + [l for l in top_full_lines if l not in contact_lines]
     contact_text = "\n".join(contact_lines)
     result = RuleResult()
-    result.name = guess_name(contact_lines)
+    result.name = guess_name(combined_lines)
     result.email = find_email(contact_text) or find_email(full_text)
     result.phone = find_phone(contact_text) or find_phone(full_text)
-    result.links = find_links(contact_text)
-    loc = find_location(contact_lines)
+    result.links = find_links(contact_text) or find_links(full_text)
+    loc = find_location(contact_lines) or find_location(top_full_lines)
     if loc:
         result.location, result.location_text = loc
     result.date_ranges = find_date_ranges(full_text)

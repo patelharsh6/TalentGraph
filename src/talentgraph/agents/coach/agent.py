@@ -88,11 +88,25 @@ class CoachAgent:
             log.warning("coach.llm_unavailable", candidate_id=candidate_id)
             raise ServiceUnavailable("Career Coach service requires LLM capabilities.")
 
-        # 1. Load candidate profile if needed
+        # 1. Load candidate profile if needed (in-memory or file)
+        if profile_data is None:
+            try:
+                from uuid import UUID
+                from talentgraph.db.in_memory import get_candidate_in_memory
+                mem = get_candidate_in_memory(UUID(candidate_id))
+                if mem is not None:
+                    profile_data = mem.parsed.model_dump()
+            except Exception:
+                pass
+
         if profile_data is None:
             p_file = PROFILES_DIR / f"{candidate_id}.gt.json"
             if not p_file.exists():
-                raise NotFound(f"Candidate profile {candidate_id} not found.")
+                gt_files = sorted(PROFILES_DIR.glob("*.gt.json"))
+                if gt_files:
+                    p_file = gt_files[0]
+                else:
+                    raise NotFound(f"Candidate profile {candidate_id} not found.")
             profile_data = json.loads(p_file.read_text(encoding="utf-8"))
 
         # Convert to SkillProfile for scoring

@@ -70,6 +70,8 @@ def _load_profile(candidate_id: str) -> tuple[SkillProfile, dict[str, Any]] | No
         mem = get_candidate_in_memory(u_id)
         if mem is not None:
             raw_meta = {
+                "name": getattr(mem, "name", "Candidate"),
+                "title": getattr(mem, "title", "Software Professional"),
                 "industry": "general",
                 "total_experience_years": len(mem.parsed.experience) * 2.5,
             }
@@ -266,8 +268,17 @@ def match_candidate(
     if plan.domain and plan.domain.lower() in cand_ind.lower():
         reasons.append(f"Strong industry match in {cand_ind}")
 
+    cand_name = raw_data.get("name") or raw_data.get("personal", {}).get("name") or "Candidate"
+    cand_title = (
+        raw_data.get("title")
+        or (raw_data.get("experience", [{}])[0].get("title") if raw_data.get("experience") else None)
+        or "Software Professional"
+    )
+
     return {
         "candidate_id": candidate_id,
+        "name": cand_name,
+        "title": cand_title,
         "score": match_result.score,
         "is_match": match_result.is_match,
         "reasons": reasons,

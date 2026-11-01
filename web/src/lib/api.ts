@@ -19,7 +19,10 @@ export type MatchResult = components["schemas"]["MatchResult"];
 export type MatchRequest = components["schemas"]["MatchRequest"];
 export type RankRequest = components["schemas"]["RankRequest"];
 export type RankResponseData = components["schemas"]["RankResponseData"];
-export type SearchHit = components["schemas"]["SearchHit"];
+export type SearchHit = components["schemas"]["SearchHit"] & {
+  name?: string | null;
+  title?: string | null;
+};
 export interface SearchPlan {
   must_skills?: string[];
   should_skills?: string[];

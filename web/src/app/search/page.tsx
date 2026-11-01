@@ -231,8 +231,8 @@ export default function TalentSearchPage() {
           {searchData.results.map((hit: any, idx: number) => {
             const scorePct = Math.round((hit.score || 0) * 100);
             const candInfo = candidatesMap[hit.candidate_id];
-            const displayName = candInfo?.name || hit.name || `Candidate #${idx + 1}`;
-            const displayTitle = candInfo?.title || hit.title || "Software Professional";
+            const displayName = hit.name || candInfo?.name || `Candidate #${idx + 1}`;
+            const displayTitle = hit.title || candInfo?.title || "Software Professional";
 
             // Normalize citations (object with skill keys or array of strings)
             const citationsList: { skill?: string; quote: string }[] = Array.isArray(hit.citations)

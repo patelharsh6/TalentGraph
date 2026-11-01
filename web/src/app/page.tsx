@@ -514,6 +514,19 @@ export default function UploadPage() {
               w.toLowerCase().includes("rate")
           ) || parsedData.status === "partial";
 
+        const rawEmail = toText(parsedResume?.personal?.email);
+        const emailDerivedName = rawEmail
+          ? rawEmail
+              .split("@")[0]
+              .replace(/[0-9]+/g, "")
+              .split(/[._-]+/)
+              .filter(Boolean)
+              .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
+              .join(" ")
+          : "";
+        const candidateDisplayName =
+          toText(parsedResume?.personal?.name) || emailDerivedName || "Candidate";
+
         return (
           <div className="space-y-6">
             {/* Gemini Quota Exceeded Notification Banner */}
@@ -548,13 +561,13 @@ export default function UploadPage() {
                 <div className="flex items-start sm:items-center gap-4">
                   {/* Initials Avatar */}
                   <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-tr from-brand-600 to-violet-600 text-white flex items-center justify-center text-xl sm:text-2xl font-black font-mono shadow-soft flex-shrink-0">
-                    {toText(parsedResume?.personal?.name, "C")[0] || "C"}
+                    {candidateDisplayName[0] || "C"}
                   </div>
 
                   <div className="space-y-1">
                     <div className="flex flex-wrap items-center gap-2.5">
                       <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
-                        {toText(parsedResume?.personal?.name, "Candidate")}
+                        {candidateDisplayName}
                       </h2>
                       <Badge variant="emerald" dot>
                         Confidence: {confidencePct}%

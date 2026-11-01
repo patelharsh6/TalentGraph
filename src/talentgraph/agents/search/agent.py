@@ -135,6 +135,8 @@ class SearchAgent:
             ranked_hits.append(
                 SearchHit(
                     candidate_id=cand["candidate_id"],
+                    name=cand.get("name"),
+                    title=cand.get("title"),
                     score=round(cand["score"], 4),
                     reasons=cand["reasons"],
                     citations=cand["citations"],

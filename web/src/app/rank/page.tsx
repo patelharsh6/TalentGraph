@@ -263,7 +263,7 @@ function RankingContent() {
                       <td className="py-3.5 px-4 font-semibold text-slate-900 dark:text-white">
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-brand-50 to-violet-50 dark:from-brand-950/60 dark:to-violet-950/60 text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-800 flex items-center justify-center font-bold text-xs flex-shrink-0">
-                            {displayName.slice(0, 2).toUpperCase()}
+                            {String(displayName || "Candidate").slice(0, 2).toUpperCase()}
                           </div>
                           <div>
                             <p className="text-sm font-bold text-slate-900 dark:text-white">{displayName}</p>

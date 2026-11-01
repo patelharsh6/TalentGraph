@@ -172,6 +172,8 @@ class SearchHit(BaseModel):
     """Ranked candidate hit in talent search."""
 
     candidate_id: str
+    name: str | None = None
+    title: str | None = None
     score: float
     reasons: list[str] = Field(default_factory=list)
     citations: dict[str, list[str]] = Field(default_factory=dict)
