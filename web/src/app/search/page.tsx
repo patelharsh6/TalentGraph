@@ -6,23 +6,17 @@ import { motion } from "framer-motion";
 import {
   Search,
   Sparkles,
-  Filter,
   CheckCircle2,
-  AlertCircle,
   Quote,
-  Clock,
-  Briefcase,
-  ChevronRight,
   Target,
-  ArrowRight,
-  Info,
-  Layers,
 } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { api, type SearchResponseData, type SearchHit, type SearchPlan } from "@/lib/api";
+import { EmptyState } from "@/components/ui/EmptyState";
+import { ErrorAlert } from "@/components/ui/ErrorAlert";
+import { CardSkeleton } from "@/components/ui/LoadingSkeleton";
+import { api, type SearchResponseData } from "@/lib/api";
 
 const SAMPLE_QUERIES = [
   "Senior Python backend engineer with FastAPI and Docker",
@@ -60,43 +54,8 @@ export default function TalentSearchPage() {
       const data = await api.searchTalent(searchQuery, 10);
       setSearchData(data);
     } catch (err: any) {
-      // Fallback demo results if backend is offline
-      setSearchData({
-        plan: {
-          must_skills: ["python"],
-          should_skills: ["fastapi", "docker", "postgresql"],
-          min_years: 3,
-          domain: "engineering",
-          seniority: "senior",
-        },
-        total_candidates: 3,
-        results: [
-          {
-            candidate_id: "cand-1",
-            name: "Marcus Vance",
-            title: "Senior Backend Engineer",
-            score: 0.94,
-            citations: [
-              "Designed distributed API gateway handling 40k req/sec using FastAPI and async PostgreSQL.",
-              "Proven expertise in Python (7+ years) and production Docker microservices.",
-            ],
-            matched_skills: ["Python", "FastAPI", "Docker", "PostgreSQL"],
-            missing_skills: [],
-          },
-          {
-            candidate_id: "cand-2",
-            name: "Allison Hill",
-            title: "Software Engineer",
-            score: 0.82,
-            citations: [
-              "Standardized CI/CD pipelines and automated Dockerized testing.",
-              "Architected key software workflows with AWS and cloud databases.",
-            ],
-            matched_skills: ["Docker", "PostgreSQL"],
-            missing_skills: ["FastAPI"],
-          },
-        ],
-      } as any);
+      setError(err?.message || "Talent search failed. Check backend connectivity.");
+      setSearchData(null);
     } finally {
       setLoading(false);
     }
@@ -169,15 +128,51 @@ export default function TalentSearchPage() {
         </div>
       </Card>
 
+      {/* Error display with Retry */}
       {error && (
-        <div className="p-3.5 rounded-xl bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 text-xs sm:text-sm flex items-center gap-2 border border-rose-200 dark:border-rose-800">
-          <AlertCircle className="w-4 h-4 flex-shrink-0" />
-          <span>{error}</span>
+        <ErrorAlert
+          title="Talent Search Error"
+          message={error}
+          onRetry={() => handleSearch()}
+        />
+      )}
+
+      {/* Loading Skeleton */}
+      {loading && (
+        <div className="space-y-4">
+          <Card className="p-6">
+            <CardSkeleton lines={2} />
+          </Card>
+          <Card className="p-6">
+            <CardSkeleton lines={3} />
+          </Card>
         </div>
       )}
 
+      {/* Empty State before any search */}
+      {!loading && !searchData && !error && (
+        <EmptyState
+          icon={Search}
+          title="Discover Candidates by Intent"
+          description="Type a natural language query describing requirements, seniority, or skills, or select one of the quick query presets above to execute an agentic search."
+          actionText="Run Sample Search"
+          onAction={() => handleSearch(SAMPLE_QUERIES[0])}
+        />
+      )}
+
+      {/* Empty State when 0 results */}
+      {!loading && searchData && searchData.results?.length === 0 && (
+        <EmptyState
+          icon={Search}
+          title="No Candidates Matched"
+          description="No candidate profiles in the database matched the extracted constraints. Try broadening your query or removing strict skill requirements."
+          actionText="Try Another Query"
+          onAction={() => handleSearch("Software Engineer")}
+        />
+      )}
+
       {/* Search Plan Display */}
-      {searchData?.plan && (() => {
+      {!loading && searchData?.plan && searchData.results && searchData.results.length > 0 && (() => {
         const plan = searchData.plan as any;
         const mustSkills: string[] = plan.must_skills || [];
         const shouldSkills: string[] = plan.should_skills || [];
@@ -226,7 +221,7 @@ export default function TalentSearchPage() {
       })()}
 
       {/* Candidate Search Hits */}
-      {searchData && searchData.results && (
+      {!loading && searchData && searchData.results && searchData.results.length > 0 && (
         <div className="space-y-4">
           {searchData.results.map((hit: any, idx: number) => {
             const scorePct = Math.round((hit.score || 0) * 100);

@@ -24,6 +24,10 @@ import {
   Check,
   ChevronRight,
   TrendingUp,
+  Mail,
+  Phone,
+  MapPin,
+  RefreshCw,
 } from "lucide-react";
 import SkillChip from "@/components/SkillChip";
 import UploadWarning from "@/components/UploadWarning";
@@ -38,24 +42,35 @@ export default function UploadPage() {
   const [isDragging, setIsDragging] = useState(false);
   const [loading, setLoading] = useState(false);
   const [parsingStep, setParsingStep] = useState(0);
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [parsedData, setParsedData] = useState<ParseResponseData | null>(null);
   const [selectedSample, setSelectedSample] = useState<string>("");
 
-  // Simulated step progression for smooth UX while backend parses
+  // Live progress stepper and elapsed timer
   useEffect(() => {
+    let interval: NodeJS.Timeout;
     let timer1: NodeJS.Timeout;
     let timer2: NodeJS.Timeout;
+    let timer3: NodeJS.Timeout;
+
     if (loading) {
-      setParsingStep(1); // Extracting text
-      timer1 = setTimeout(() => setParsingStep(2), 700); // Detecting sections
-      timer2 = setTimeout(() => setParsingStep(3), 1400); // Building profile
+      setElapsedSeconds(0);
+      setParsingStep(1); // Reading file & layout
+      interval = setInterval(() => {
+        setElapsedSeconds((prev) => +(prev + 0.1).toFixed(1));
+      }, 100);
+      timer1 = setTimeout(() => setParsingStep(2), 600); // Scanning sections & contact heuristics
+      timer2 = setTimeout(() => setParsingStep(3), 1400); // Extracting experience & skills
+      timer3 = setTimeout(() => setParsingStep(4), 2200); // Normalizing taxonomy & computing role fit
     } else {
       setParsingStep(0);
     }
     return () => {
+      clearInterval(interval);
       clearTimeout(timer1);
       clearTimeout(timer2);
+      clearTimeout(timer3);
     };
   }, [loading]);
 
@@ -439,7 +454,10 @@ export default function UploadPage() {
                   </span>
                   <button
                     type="button"
-                    onClick={() => setSelectedFile(null)}
+                    onClick={() => {
+                      setSelectedFile(null);
+                      setError(null);
+                    }}
                     className="p-0.5 rounded hover:bg-slate-200 dark:hover:bg-white/20 text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors"
                   >
                     <X className="w-3.5 h-3.5" />
@@ -460,7 +478,7 @@ export default function UploadPage() {
             )}
           </div>
 
-          {/* Shimmer Stepper during parsing */}
+          {/* Real Stepper and Elapsed Time during parsing */}
           <AnimatePresence>
             {loading && (
               <motion.div
@@ -471,29 +489,62 @@ export default function UploadPage() {
               >
                 <div className="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
                   <div
-                    className="h-full bg-gradient-to-r from-brand-600 via-violet-600 to-cyan-500 transition-all duration-500"
-                    style={{ width: `${parsingStep * 33.3}%` }}
+                    className="h-full bg-gradient-to-r from-brand-600 via-violet-600 to-cyan-500 transition-all duration-300 rounded-full"
+                    style={{ width: `${Math.min(100, Math.max(15, parsingStep * 25))}%` }}
                   />
                 </div>
-                <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
-                  <span className={parsingStep >= 1 ? "font-bold text-brand-600 dark:text-brand-400" : ""}>
-                    1. Extracting text
+                <div className="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+                  <span>
+                    {parsingStep === 1 && "1/4. Reading file & analyzing layout..."}
+                    {parsingStep === 2 && "2/4. Scanning sections & contact heuristics..."}
+                    {parsingStep === 3 && "3/4. Extracting experience & credentials..."}
+                    {parsingStep >= 4 && "4/4. Normalizing taxonomy & evaluating role fits..."}
                   </span>
-                  <span className={parsingStep >= 2 ? "font-bold text-violet-600 dark:text-violet-400" : ""}>
-                    2. Detecting sections
-                  </span>
-                  <span className={parsingStep >= 3 ? "font-bold text-cyan-600 dark:text-cyan-400" : ""}>
-                    3. Building profile
+                  <span className="font-mono text-slate-400">
+                    <Clock className="w-3 h-3 inline mr-1" />
+                    {elapsedSeconds.toFixed(1)}s
                   </span>
                 </div>
               </motion.div>
             )}
           </AnimatePresence>
 
+          {/* Formatted Readable Error Display with Reset Action */}
           {error && (
-            <div className="p-3.5 rounded-xl bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 text-xs sm:text-sm flex items-center justify-center gap-2 border border-rose-200 dark:border-rose-800">
-              <AlertCircle className="w-4 h-4 flex-shrink-0" />
-              <span>{error}</span>
+            <div className="p-4 rounded-xl bg-rose-50 text-rose-800 dark:bg-rose-950/40 dark:text-rose-200 text-xs sm:text-sm border border-rose-200 dark:border-rose-800 space-y-2 text-left">
+              <div className="flex items-start gap-2.5">
+                <AlertCircle className="w-5 h-5 text-rose-600 dark:text-rose-400 flex-shrink-0 mt-0.5" />
+                <div className="space-y-1 flex-1">
+                  <div className="font-bold text-rose-900 dark:text-rose-100">Upload & Parsing Error</div>
+                  <p className="text-xs text-rose-800/90 dark:text-rose-300/90 leading-relaxed">{error}</p>
+                </div>
+              </div>
+              <div className="pt-2 flex justify-end gap-2">
+                {selectedFile && (
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={handleParse}
+                    loading={loading}
+                    className="text-xs"
+                  >
+                    <RefreshCw className="w-3 h-3 mr-1" />
+                    Retry Parse
+                  </Button>
+                )}
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => {
+                    setSelectedFile(null);
+                    setError(null);
+                  }}
+                  className="text-xs text-rose-700 dark:text-rose-300 hover:bg-rose-100 dark:hover:bg-rose-900/40"
+                >
+                  <X className="w-3 h-3 mr-1" />
+                  Choose Another File
+                </Button>
+              </div>
             </div>
           )}
         </div>
@@ -514,7 +565,10 @@ export default function UploadPage() {
               w.toLowerCase().includes("rate")
           ) || parsedData.status === "partial";
 
+        const rawName = toText(parsedResume?.personal?.name);
         const rawEmail = toText(parsedResume?.personal?.email);
+        const rawPhone = toText(parsedResume?.personal?.phone);
+
         const emailDerivedName = rawEmail
           ? rawEmail
               .split("@")[0]
@@ -524,11 +578,55 @@ export default function UploadPage() {
               .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
               .join(" ")
           : "";
-        const candidateDisplayName =
-          toText(parsedResume?.personal?.name) || emailDerivedName || "Candidate";
+
+        const candidateDisplayName = rawName || emailDerivedName || "";
+
+        let locationText = "";
+        if (parsedResume?.personal?.location) {
+          const loc = parsedResume.personal.location;
+          if (typeof loc === "object" && loc !== null) {
+            const locVal = loc.value || loc;
+            if (typeof locVal === "object" && locVal !== null) {
+              const parts = [locVal.city, locVal.region, locVal.country].filter(Boolean);
+              locationText = parts.join(", ");
+            } else if (typeof locVal === "string") {
+              locationText = locVal;
+            }
+          } else if (typeof loc === "string") {
+            locationText = loc;
+          }
+        }
 
         return (
           <div className="space-y-6">
+            {/* Top Bar with Reset Action */}
+            <div className="flex items-center justify-between pb-1">
+              <div className="flex items-center gap-2">
+                <FileCheck className="w-5 h-5 text-emerald-500" />
+                <span className="font-bold text-slate-900 dark:text-white text-sm sm:text-base">
+                  Extracted Profile Result
+                </span>
+                {parsedData.status && (
+                  <Badge variant={parsedData.status === "ok" ? "emerald" : "amber"}>
+                    {parsedData.status === "ok" ? "Complete" : "Heuristic Fallback"}
+                  </Badge>
+                )}
+              </div>
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={() => {
+                  setParsedData(null);
+                  setSelectedFile(null);
+                  setSelectedSample("");
+                  setError(null);
+                }}
+                icon={<RefreshCw className="w-3.5 h-3.5 text-brand-500" />}
+              >
+                Upload Another Resume
+              </Button>
+            </div>
+
             {/* Gemini Quota Exceeded Notification Banner */}
             {hasQuotaWarning && (
               <div className="p-4 sm:p-5 rounded-2xl bg-amber-500/10 dark:bg-amber-500/15 border border-amber-500/30 text-amber-900 dark:text-amber-200 shadow-sm flex items-start gap-3.5">
@@ -561,13 +659,22 @@ export default function UploadPage() {
                 <div className="flex items-start sm:items-center gap-4">
                   {/* Initials Avatar */}
                   <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-tr from-brand-600 to-violet-600 text-white flex items-center justify-center text-xl sm:text-2xl font-black font-mono shadow-soft flex-shrink-0">
-                    {candidateDisplayName[0] || "C"}
+                    {candidateDisplayName ? candidateDisplayName[0].toUpperCase() : "?"}
                   </div>
 
-                  <div className="space-y-1">
+                  <div className="space-y-1.5">
                     <div className="flex flex-wrap items-center gap-2.5">
-                      <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
-                        {candidateDisplayName}
+                      <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                        {rawName ? (
+                          rawName
+                        ) : emailDerivedName ? (
+                          <>
+                            <span>{emailDerivedName}</span>
+                            <Badge variant="slate" className="text-[10px] font-normal py-0">inferred</Badge>
+                          </>
+                        ) : (
+                          <span className="text-slate-400 dark:text-slate-500 italic font-medium">Name not detected</span>
+                        )}
                       </h2>
                       <Badge variant="emerald" dot>
                         Confidence: {confidencePct}%
@@ -575,25 +682,43 @@ export default function UploadPage() {
                     </div>
 
                     <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-                      {toText(parsedResume?.personal?.email) && (
-                        <span>{toText(parsedResume?.personal?.email)}</span>
+                      {rawEmail ? (
+                        <span className="inline-flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
+                          <Mail className="w-3.5 h-3.5 text-brand-500" />
+                          {rawEmail}
+                        </span>
+                      ) : (
+                        <span className="inline-flex items-center gap-1.5 text-slate-400 dark:text-slate-500 italic">
+                          <Mail className="w-3.5 h-3.5 text-slate-400 opacity-60" />
+                          No email detected
+                        </span>
                       )}
-                      {toText(parsedResume?.personal?.phone) && (
-                        <span>• {toText(parsedResume?.personal?.phone)}</span>
+
+                      <span className="opacity-40">•</span>
+
+                      {rawPhone ? (
+                        <span className="inline-flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
+                          <Phone className="w-3.5 h-3.5 text-brand-500" />
+                          {rawPhone}
+                        </span>
+                      ) : (
+                        <span className="inline-flex items-center gap-1.5 text-slate-400 dark:text-slate-500 italic">
+                          <Phone className="w-3.5 h-3.5 text-slate-400 opacity-60" />
+                          No phone detected
+                        </span>
                       )}
-                      {parsedResume?.personal?.location && (
-                        <span>
-                          •{" "}
-                          {typeof parsedResume.personal.location === "object" &&
-                          parsedResume.personal.location !== null
-                            ? parsedResume.personal.location.value
-                              ? typeof parsedResume.personal.location.value === "object"
-                                ? `${(parsedResume.personal.location.value as any).city || ""}, ${(parsedResume.personal.location.value as any).region || ""}`
-                                : String(parsedResume.personal.location.value)
-                              : (parsedResume.personal.location as any).city
-                              ? `${(parsedResume.personal.location as any).city}, ${(parsedResume.personal.location as any).region || ""}`
-                              : ""
-                            : String(parsedResume.personal.location)}
+
+                      <span className="opacity-40">•</span>
+
+                      {locationText ? (
+                        <span className="inline-flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
+                          <MapPin className="w-3.5 h-3.5 text-brand-500" />
+                          {locationText}
+                        </span>
+                      ) : (
+                        <span className="inline-flex items-center gap-1.5 text-slate-400 dark:text-slate-500 italic">
+                          <MapPin className="w-3.5 h-3.5 text-slate-400 opacity-60" />
+                          Location not specified
                         </span>
                       )}
                     </div>
@@ -616,18 +741,27 @@ export default function UploadPage() {
               </div>
             </Card>
 
-            {/* Executive Summary Card */}
-            {toText(parsedResume?.summary) && (
-              <Card className="p-6">
-                <div className="flex items-center gap-2 mb-2.5 text-xs font-bold text-slate-500 uppercase tracking-wider">
+            {/* Executive Summary Card (Always visible with clear empty state) */}
+            <Card className="p-6">
+              <div className="flex items-center justify-between mb-2.5">
+                <div className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
                   <User className="w-4 h-4 text-brand-500" />
                   <span>Executive Summary</span>
                 </div>
+                {!toText(parsedResume?.summary) && (
+                  <span className="text-[11px] text-slate-400 dark:text-slate-500 italic">Not found</span>
+                )}
+              </div>
+              {toText(parsedResume?.summary) ? (
                 <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed">
                   {toText(parsedResume?.summary)}
                 </p>
-              </Card>
-            )}
+              ) : (
+                <p className="text-xs sm:text-sm text-slate-400 dark:text-slate-500 italic">
+                  No executive summary or objective statement was found in this resume.
+                </p>
+              )}
+            </Card>
 
             {/* Suggested Roles & Fit Recommendations */}
             {suggestedRoles && suggestedRoles.length > 0 && (
@@ -751,42 +885,61 @@ export default function UploadPage() {
               </Card>
             )}
 
-            {/* Normalized Skills Grid */}
+            {/* Normalized Skills Grid (Always visible with clear empty state) */}
             <Card className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
                   <Sparkles className="w-4 h-4 text-brand-500" />
                   <span>Normalized Skills & Taxonomy Provenance</span>
                 </div>
-                <span className="text-xs font-mono font-medium text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/60 px-2.5 py-0.5 rounded-full border border-brand-200 dark:border-brand-800">
-                  {skillsList.length} skills detected
+                <span
+                  className={`text-xs font-mono font-medium px-2.5 py-0.5 rounded-full border ${
+                    skillsList.length > 0
+                      ? "text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/60 border-brand-200 dark:border-brand-800"
+                      : "text-slate-400 bg-slate-100 dark:bg-white/5 border-slate-200 dark:border-white/10"
+                  }`}
+                >
+                  {skillsList.length > 0 ? `${skillsList.length} skills detected` : "0 skills detected"}
                 </span>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {skillsList.map((sk: any, idx: number) => (
-                  <SkillChip
-                    key={idx}
-                    name={sk.name || sk.raw || "Skill"}
-                    category={sk.category || sk.category_hint || "technical"}
-                    evidence={
-                      sk.evidence ? (Array.isArray(sk.evidence) ? sk.evidence : [sk.evidence]) : []
-                    }
-                    confidence={sk.confidence || 1.0}
-                    inferred={sk.inferred}
-                    years={sk.years}
-                  />
-                ))}
-              </div>
+              {skillsList.length > 0 ? (
+                <div className="flex flex-wrap gap-2">
+                  {skillsList.map((sk: any, idx: number) => (
+                    <SkillChip
+                      key={idx}
+                      name={sk.name || sk.raw || "Skill"}
+                      category={sk.category || sk.category_hint || "technical"}
+                      evidence={
+                        sk.evidence ? (Array.isArray(sk.evidence) ? sk.evidence : [sk.evidence]) : []
+                      }
+                      confidence={sk.confidence || 1.0}
+                      inferred={sk.inferred}
+                      years={sk.years}
+                    />
+                  ))}
+                </div>
+              ) : (
+                <div className="p-5 rounded-xl bg-slate-50/70 dark:bg-white/5 border border-dashed border-slate-200 dark:border-white/10 text-center text-xs text-slate-400 dark:text-slate-500 italic">
+                  No normalized skills detected in this document.
+                </div>
+              )}
             </Card>
 
-            {/* Experience Timeline */}
-            {parsedResume?.experience && parsedResume.experience.length > 0 && (
-              <Card className="p-6 sm:p-7">
-                <div className="flex items-center gap-2 mb-6 text-xs font-bold text-slate-500 uppercase tracking-wider">
+            {/* Experience Timeline (Always visible with clear empty state) */}
+            <Card className="p-6 sm:p-7">
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
                   <Briefcase className="w-4 h-4 text-brand-500" />
                   <span>Work Experience Timeline</span>
                 </div>
+                {parsedResume?.experience && parsedResume.experience.length > 0 && (
+                  <span className="text-xs font-mono font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-white/10 px-2.5 py-0.5 rounded-full border border-slate-200/80 dark:border-white/10">
+                    {parsedResume.experience.length} roles found
+                  </span>
+                )}
+              </div>
 
+              {parsedResume?.experience && parsedResume.experience.length > 0 ? (
                 <div className="relative pl-6 space-y-8 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-gradient-to-b before:from-brand-500 before:via-violet-500 before:to-slate-300 dark:before:to-slate-700">
                   {parsedResume.experience.map((exp: any, idx: number) => (
                     <div key={idx} className="relative group">
@@ -795,17 +948,22 @@ export default function UploadPage() {
 
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
                         <h4 className="text-base font-bold text-slate-900 dark:text-white">
-                          {toText(exp.title, "Role")} •{" "}
-                          <span className="text-brand-600 dark:text-brand-400 font-semibold">
-                            {toText(exp.company, "Company")}
-                          </span>
+                          {toText(exp.title, "Role not specified")}
+                          {toText(exp.company) ? (
+                            <>
+                              {" "}•{" "}
+                              <span className="text-brand-600 dark:text-brand-400 font-semibold">
+                                {toText(exp.company)}
+                              </span>
+                            </>
+                          ) : null}
                         </h4>
                         <span className="text-xs font-mono font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-white/10 px-2.5 py-0.5 rounded-md self-start sm:self-auto">
                           {toText(exp.start, "Start")} – {exp.is_current ? "Present" : toText(exp.end, "End")}
                         </span>
                       </div>
 
-                      {exp.responsibilities && (
+                      {exp.responsibilities && exp.responsibilities.length > 0 ? (
                         <ul className="space-y-1.5 list-disc list-inside text-xs sm:text-sm text-slate-600 dark:text-slate-300">
                           {exp.responsibilities.map((r: any, rIdx: number) => (
                             <li key={rIdx} className="leading-relaxed">
@@ -813,20 +971,32 @@ export default function UploadPage() {
                             </li>
                           ))}
                         </ul>
-                      )}
+                      ) : null}
                     </div>
                   ))}
                 </div>
-              </Card>
-            )}
+              ) : (
+                <div className="p-5 rounded-xl bg-slate-50/70 dark:bg-white/5 border border-dashed border-slate-200 dark:border-white/10 text-center text-xs text-slate-400 dark:text-slate-500 italic">
+                  No professional work experience timeline detected in this resume.
+                </div>
+              )}
+            </Card>
 
-            {/* Education Credentials */}
-            {parsedResume?.education && parsedResume.education.length > 0 && (
-              <Card className="p-6">
-                <div className="flex items-center gap-2 mb-4 text-xs font-bold text-slate-500 uppercase tracking-wider">
+            {/* Education Credentials (Always visible with clear empty state) */}
+            <Card className="p-6">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
                   <GraduationCap className="w-4 h-4 text-brand-500" />
                   <span>Education & Academic Credentials</span>
                 </div>
+                {parsedResume?.education && parsedResume.education.length > 0 && (
+                  <span className="text-xs font-mono font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-white/10 px-2.5 py-0.5 rounded-full border border-slate-200/80 dark:border-white/10">
+                    {parsedResume.education.length} credentials found
+                  </span>
+                )}
+              </div>
+
+              {parsedResume?.education && parsedResume.education.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   {parsedResume.education.map((edu: any, idx: number) => (
                     <div
@@ -834,21 +1004,30 @@ export default function UploadPage() {
                       className="p-4 rounded-xl bg-slate-50/70 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 space-y-1"
                     >
                       <p className="font-bold text-sm text-slate-900 dark:text-white">
-                        {toText(edu.institution, "University")}
+                        {toText(edu.institution, "Institution not specified")}
                       </p>
                       <p className="text-xs text-slate-600 dark:text-slate-400">
-                        {toText(edu.degree)} {toText(edu.field) ? `in ${toText(edu.field)}` : ""}
+                        {toText(edu.degree, "Degree not specified")} {toText(edu.field) ? `in ${toText(edu.field)}` : ""}
                       </p>
+                      {(toText(edu.start) || toText(edu.end)) && (
+                        <p className="text-[11px] text-slate-400 font-mono">
+                          {toText(edu.start)} {toText(edu.start) && toText(edu.end) ? "–" : ""} {toText(edu.end)}
+                        </p>
+                      )}
                       {toText(edu.grade) && (
                         <p className="text-[11px] text-brand-600 dark:text-brand-400 font-mono font-medium">
-                          GPA: {toText(edu.grade)}
+                          Grade / GPA: {toText(edu.grade)}
                         </p>
                       )}
                     </div>
                   ))}
                 </div>
-              </Card>
-            )}
+              ) : (
+                <div className="p-5 rounded-xl bg-slate-50/70 dark:bg-white/5 border border-dashed border-slate-200 dark:border-white/10 text-center text-xs text-slate-400 dark:text-slate-500 italic">
+                  No academic degrees or educational credentials detected in this resume.
+                </div>
+              )}
+            </Card>
           </div>
         );
       })()}

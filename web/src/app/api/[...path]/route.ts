@@ -1,14 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const BACKEND_URL = process.env.BACKEND_URL || "http://127.0.0.1:8000";
-const API_KEY = process.env.TALENTGRAPH_API_KEY || "dev-key-change-in-prod";
+const BACKEND_URL = (process.env.BACKEND_URL || "http://127.0.0.1:8000").replace(/\/+$/, "");
+const API_KEY = process.env.TALENTGRAPH_API_KEY || process.env.API_KEY || "dev-key-change-in-prod";
 
 async function proxyRequest(req: NextRequest, { params }: { params: { path: string[] } }) {
   try {
-    const subpath = params.path.join("/");
-    // Support paths that already start with api/ or not
-    const backendPath = subpath.startsWith("api/") ? subpath : `api/${subpath}`;
-    const url = new URL(backendPath, BACKEND_URL);
+    const cleanSubpath = params.path.join("/").replace(/^\/+/, "");
+    const backendPath = cleanSubpath.startsWith("api/") ? cleanSubpath : `api/${cleanSubpath}`;
+    const url = new URL(`${BACKEND_URL}/${backendPath}`);
     url.search = req.nextUrl.search;
 
     const headers = new Headers();
@@ -21,7 +20,9 @@ async function proxyRequest(req: NextRequest, { params }: { params: { path: stri
     });
 
     // Securely inject the API key on the server side
-    headers.set("X-API-Key", API_KEY);
+    if (API_KEY) {
+      headers.set("X-API-Key", API_KEY);
+    }
 
     const init: RequestInit = {
       method: req.method,

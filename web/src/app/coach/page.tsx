@@ -10,20 +10,15 @@ import {
   HelpCircle,
   FileEdit,
   ShieldAlert,
-  CheckCircle2,
-  AlertCircle,
-  ArrowRight,
-  TrendingUp,
   Target,
-  Briefcase,
-  User,
-  ShieldCheck,
-  Check,
 } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { EmptyState } from "@/components/ui/EmptyState";
+import { ErrorAlert } from "@/components/ui/ErrorAlert";
+import { CardSkeleton } from "@/components/ui/LoadingSkeleton";
 import { SAMPLE_CANDIDATES, SAMPLE_JOBS } from "@/data/samples";
 import { api, toText, type CoachReport } from "@/lib/api";
 
@@ -87,7 +82,7 @@ function CoachContent() {
 
   const handleGenerateCoach = async () => {
     if (!selectedCandId) {
-      setError("Please select a candidate.");
+      setError("Please select a candidate first.");
       return;
     }
     setLoading(true);
@@ -112,63 +107,8 @@ function CoachContent() {
       const report = await api.getCoachReport(coachPayload);
       setCoachReport(report);
     } catch (err: any) {
-      // Mock pre-cached report (Exit Criterion 7-B)
-      setCoachReport({
-        candidate_id: selectedCandId,
-        job_id: selectedJobId,
-        learning_plan: [
-          {
-            skill_slug: "postgresql",
-            skill_name: "PostgreSQL & Database Optimization",
-            prerequisites: ["SQL", "Relational Modeling"],
-            estimated_weeks: 3,
-            rationale: "Core required data store for backend microservices architecture.",
-          },
-          {
-            skill_slug: "fastapi",
-            skill_name: "FastAPI & Async Python Architecture",
-            prerequisites: ["Python"],
-            estimated_weeks: 2,
-            rationale: "Required API framework for high-throughput microservices.",
-          },
-          {
-            skill_slug: "kubernetes",
-            skill_name: "Kubernetes Cluster Orchestration",
-            prerequisites: ["Docker", "Linux"],
-            estimated_weeks: 4,
-            rationale: "Preferred infrastructure skill for managing multi-container deployments.",
-          },
-        ],
-        interview_questions: [
-          {
-            skill_name: "FastAPI Architecture",
-            question: "How do you handle dependency injection and async background tasks in FastAPI under heavy concurrency?",
-            rationale: "Tests practical mastery of FastAPI's asynchronous event loop and request lifecycle.",
-          },
-          {
-            skill_name: "PostgreSQL Indexing",
-            question: "Describe your approach to tuning slow queries using EXPLAIN ANALYZE and composite B-tree indices.",
-            rationale: "Evaluates production database performance troubleshooting ability.",
-          },
-        ],
-        bullet_rewrites: [
-          {
-            original_bullet: "Led the architectural design and implementation of key software workflows.",
-            improved_bullet: "Architected high-throughput backend services using TypeScript and AWS, reducing p99 latency by 35% across 200k daily requests.",
-            rationale: "Quantifies performance metrics and specifies production scope.",
-          },
-          {
-            original_bullet: "Standardized CI/CD pipelines and automated testing.",
-            improved_bullet: "Engineered automated multi-stage CI/CD pipelines, accelerating release velocity by 40% with 99.9% build reliability.",
-            rationale: "Highlights engineering rigor and business turnaround velocity.",
-          },
-        ],
-        removed_claims: [
-          "Critic removed ungrounded claim 'Scaled systems to 10M DAU' (unsupported in profile experience history).",
-          "Critic removed unverified certificate 'Certified Kubernetes Administrator' (not found in credentials).",
-        ],
-        revisions_count: 1,
-      } as any);
+      setError(err?.message || "Failed to generate Career Coach report. Check backend connectivity.");
+      setCoachReport(null);
     } finally {
       setLoading(false);
     }
@@ -251,15 +191,43 @@ function CoachContent() {
         </div>
       </Card>
 
+      {/* Error Alert with Retry */}
       {error && (
-        <div className="p-3.5 rounded-xl bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 text-xs sm:text-sm flex items-center gap-2 border border-rose-200 dark:border-rose-800">
-          <AlertCircle className="w-4 h-4 flex-shrink-0" />
-          <span>{error}</span>
+        <ErrorAlert
+          title="Career Coach Error"
+          message={error}
+          onRetry={handleGenerateCoach}
+        />
+      )}
+
+      {/* Loading Skeleton */}
+      {loading && (
+        <div className="space-y-6">
+          <Card className="p-6">
+            <CardSkeleton lines={3} />
+          </Card>
+          <Card className="p-6">
+            <CardSkeleton lines={3} />
+          </Card>
+          <Card className="p-6">
+            <CardSkeleton lines={3} />
+          </Card>
         </div>
       )}
 
+      {/* Empty State before report is generated */}
+      {!loading && !coachReport && !error && (
+        <EmptyState
+          icon={Sparkles}
+          title="No Career Coaching Report Generated Yet"
+          description="Select a candidate profile and target job requisition above, then click 'Generate Coach Report' to compute personalized learning goals, interview prep, and critic-verified resume bullet improvements."
+          actionText="Generate Coach Report"
+          onAction={handleGenerateCoach}
+        />
+      )}
+
       {/* Coach Report Content */}
-      {coachReport && (
+      {!loading && coachReport && (
         <div className="space-y-6">
           {/* Critic Findings / Removed Claims */}
           {coachReport.removed_claims && coachReport.removed_claims.length > 0 && (
@@ -334,71 +302,76 @@ function CoachContent() {
             </div>
           </Card>
 
-          {/* Section 2: Targeted Interview Questions */}
+          {/* Section 2: Targeted Technical Interview Questions */}
           <Card className="p-6 sm:p-7 space-y-5">
             <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2.5">
-              <HelpCircle className="w-5 h-5 text-brand-500" />
-              <span>Targeted Interview Questions (Technical Reasoning)</span>
+              <HelpCircle className="w-5 h-5 text-indigo-500" />
+              <span>Targeted Technical Interview Preparation</span>
             </h3>
 
-            <div className="space-y-3">
-              {coachReport.interview_questions?.map((q: any, idx: number) => (
+            <div className="space-y-3.5">
+              {coachReport.interview_questions?.map((item: any, idx: number) => (
                 <div
                   key={idx}
-                  className="p-5 rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-50/50 dark:bg-white/5 space-y-2"
+                  className="p-5 rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-50/70 dark:bg-white/5 space-y-2"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-brand-600 dark:text-brand-400 uppercase tracking-wide">
-                      Topic: {q.requirement_name || q.skill_name || "Technical Competency"}
+                    <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">
+                      Focus: {item.skill_name}
                     </span>
-                    <span className="text-[11px] text-slate-400 font-mono font-medium">Q#{idx + 1}</span>
+                    <span className="text-[10px] font-mono text-slate-400">Q{idx + 1}</span>
                   </div>
-                  <p className="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
-                    "{q.question}"
+                  <p className="text-sm font-semibold text-slate-900 dark:text-white leading-relaxed">
+                    "{item.question}"
                   </p>
-                  <p className="text-xs text-slate-500 italic">
-                    {q.target_competency ? `Competency: ${q.target_competency} • Tip: ${q.preparation_tip || ""}` : `Rationale: ${q.rationale}`}
+                  <p className="text-xs text-slate-500 dark:text-slate-400 pt-1">
+                    <strong className="text-slate-700 dark:text-slate-300">Why this matters: </strong>
+                    {item.rationale}
                   </p>
                 </div>
               ))}
             </div>
           </Card>
 
-          {/* Section 3: Verified Resume Bullet Rewrites */}
+          {/* Section 3: Grounded Resume Bullet Rewrites */}
           <Card className="p-6 sm:p-7 space-y-5">
-            <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2.5">
-              <FileEdit className="w-5 h-5 text-brand-500" />
-              <span>Critic-Verified Resume Bullet Rewrites</span>
-            </h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2.5">
+                <FileEdit className="w-5 h-5 text-emerald-500" />
+                <span>Factuality-Verified Resume Bullet Rewrites</span>
+              </h3>
+              <Badge variant="emerald" size="sm">
+                0% Hallucination Cap
+              </Badge>
+            </div>
 
             <div className="space-y-4">
-              {coachReport.bullet_rewrites?.map((b: any, idx: number) => (
+              {coachReport.bullet_rewrites?.map((item: any, idx: number) => (
                 <div
                   key={idx}
-                  className="p-5 rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white dark:bg-[#111827] space-y-3 shadow-sm"
+                  className="p-5 rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-50/70 dark:bg-white/5 space-y-3"
                 >
                   <div className="space-y-1">
-                    <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
-                      Original Experience Span
+                    <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">
+                      Original Resume Bullet:
                     </span>
                     <p className="text-xs text-slate-500 dark:text-slate-400 line-through">
-                      {b.original_evidence || b.original_bullet}
+                      "{item.original_bullet}"
                     </p>
                   </div>
 
-                  <div className="space-y-1 bg-emerald-50/60 dark:bg-emerald-950/30 p-3.5 rounded-xl border border-emerald-200/80 dark:border-emerald-800/60">
-                    <span className="text-[10px] uppercase font-bold text-emerald-700 dark:text-emerald-300 tracking-wider flex items-center gap-1.5">
-                      <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
-                      Improved & Grounded Rewrite
+                  <div className="space-y-1 bg-emerald-50/60 dark:bg-emerald-950/30 p-3.5 rounded-xl border border-emerald-200/70 dark:border-emerald-800/50">
+                    <span className="text-[11px] font-bold text-emerald-700 dark:text-emerald-300 uppercase tracking-wider block">
+                      Critic-Verified Impact Rewrite:
                     </span>
-                    <p className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white leading-relaxed">
-                      {b.improved_bullet}
+                    <p className="text-xs font-semibold text-slate-900 dark:text-emerald-100">
+                      "{item.improved_bullet}"
                     </p>
                   </div>
 
-                  <p className="text-[11px] text-slate-500 italic">
-                    <span className="font-semibold text-slate-600 dark:text-slate-400">Critic Note: </span>
-                    {b.rationale}
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 pt-0.5">
+                    <strong className="text-slate-700 dark:text-slate-300">Improvement Rationale: </strong>
+                    {item.rationale}
                   </p>
                 </div>
               ))}
@@ -412,7 +385,7 @@ function CoachContent() {
 
 export default function CareerCoachPage() {
   return (
-    <Suspense fallback={<div className="p-8 text-center text-sm text-slate-500">Loading Career Coach...</div>}>
+    <Suspense fallback={<div className="p-8 text-center text-sm text-slate-500">Loading Career Coach Engine...</div>}>
       <CoachContent />
     </Suspense>
   );

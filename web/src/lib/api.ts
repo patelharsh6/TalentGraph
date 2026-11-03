@@ -1,4 +1,4 @@
-import type { components, paths } from "./api-types";
+import type { components } from "./api-types";
 
 export interface SuggestedRole {
   job_id: string;
@@ -106,8 +106,9 @@ export const api = {
       quality?: number | null;
     }>
   > {
-    const rawList = await request<any[]>("/api/v1/candidates");
-    return (rawList || []).map((c) => ({
+    const res = await request<any>("/api/v1/candidates");
+    const rawList = Array.isArray(res) ? res : (Array.isArray(res?.data) ? res.data : []);
+    return rawList.map((c: any) => ({
       ...c,
       id: String(c.id || ""),
       name: toText(c.name, "Candidate"),
@@ -117,7 +118,8 @@ export const api = {
   },
 
   async getCandidate(candidateId: string): Promise<CandidateDetailResponse> {
-    return request(`/api/v1/candidates/${candidateId}`);
+    const res = await request<any>(`/api/v1/candidates/${candidateId}`);
+    return res?.data ?? res;
   },
 
   // Jobs
@@ -129,8 +131,9 @@ export const api = {
       requirements: any;
     }>
   > {
-    const rawList = await request<any[]>("/api/v1/jobs");
-    return (rawList || []).map((j) => ({
+    const res = await request<any>("/api/v1/jobs");
+    const rawList = Array.isArray(res) ? res : (Array.isArray(res?.data) ? res.data : []);
+    return rawList.map((j: any) => ({
       ...j,
       id: String(j.id || ""),
       title: toText(j.title, "Requisition"),
@@ -143,24 +146,25 @@ export const api = {
     req: MatchRequest,
     blind: boolean = false
   ): Promise<MatchResult> {
-    const res = await request<{ data: MatchResult }>(
+    const res = await request<any>(
       `/api/v1/match?blind=${blind}`,
       {
         method: "POST",
         body: JSON.stringify(req),
       }
     );
-    return res.data;
+    return res?.data ?? res;
   },
 
   async rank(
     req: RankRequest,
     blind: boolean = false
   ): Promise<RankResponseData[]> {
-    return request(`/api/v1/match/rank?blind=${blind}`, {
+    const res = await request<any>(`/api/v1/match/rank?blind=${blind}`, {
       method: "POST",
       body: JSON.stringify(req),
     });
+    return Array.isArray(res) ? res : (Array.isArray(res?.data) ? res.data : []);
   },
 
   // Search
@@ -168,20 +172,20 @@ export const api = {
     query: string,
     limit: number = 10
   ): Promise<SearchResponseData> {
-    const res = await request<{ data: SearchResponseData }>("/api/v1/search", {
+    const res = await request<any>("/api/v1/search", {
       method: "POST",
       body: JSON.stringify({ query, limit }),
     });
-    return res.data;
+    return res?.data ?? res;
   },
 
   // Career Coach
   async getCoachReport(req: CoachRequest): Promise<CoachReport> {
-    const res = await request<{ data: CoachReport }>("/api/v1/coach", {
+    const res = await request<any>("/api/v1/coach", {
       method: "POST",
       body: JSON.stringify(req),
     });
-    return res.data;
+    return res?.data ?? res;
   },
 
   // Taxonomy
@@ -202,11 +206,13 @@ export const api = {
     const query = new URLSearchParams();
     if (parentId !== undefined) query.set("parent_id", String(parentId));
     query.set("depth", String(depth));
-    return request(`/api/v1/skills/taxonomy?${query.toString()}`);
+    const res = await request<any>(`/api/v1/skills/taxonomy?${query.toString()}`);
+    return Array.isArray(res) ? res : (Array.isArray(res?.data) ? res.data : []);
   },
 
   async searchTaxonomy(query: string): Promise<SkillSearchItem[]> {
-    return request(`/api/v1/skills/search?q=${encodeURIComponent(query)}`);
+    const res = await request<any>(`/api/v1/skills/search?q=${encodeURIComponent(query)}`);
+    return Array.isArray(res) ? res : (Array.isArray(res?.data) ? res.data : []);
   },
 
   // Evaluation Metrics
@@ -228,6 +234,7 @@ export const api = {
       description: string;
     }>;
   }> {
-    return request("/api/v1/eval/summary");
+    const res = await request<any>("/api/v1/eval/summary");
+    return res?.data ?? res;
   },
 };

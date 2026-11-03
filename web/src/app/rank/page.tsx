@@ -7,21 +7,18 @@ import { motion } from "framer-motion";
 import {
   Users,
   EyeOff,
-  Filter,
   CheckCircle2,
-  AlertCircle,
-  Briefcase,
   Target,
   Sparkles,
-  ArrowRight,
   TrendingUp,
-  ShieldCheck,
-  Award,
 } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { EmptyState } from "@/components/ui/EmptyState";
+import { ErrorAlert } from "@/components/ui/ErrorAlert";
+import { TableSkeleton } from "@/components/ui/LoadingSkeleton";
 import { SAMPLE_CANDIDATES, SAMPLE_JOBS } from "@/data/samples";
 import { api, toText, type RankResponseData } from "@/lib/api";
 
@@ -33,6 +30,7 @@ function RankingContent() {
   const [blind, setBlind] = useState<boolean>(false);
   const [rankings, setRankings] = useState<RankResponseData[]>([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   // Fetch active requisitions and candidate metadata
   useEffect(() => {
@@ -69,7 +67,9 @@ function RankingContent() {
   }, [searchParams]);
 
   const fetchRankings = async (jobId: string, isBlind: boolean) => {
+    if (!jobId) return;
     setLoading(true);
+    setError(null);
     try {
       const allCands = await api.listCandidates();
       const candIds = allCands.map((c) => c.id).slice(0, 15);
@@ -84,36 +84,8 @@ function RankingContent() {
       );
       setRankings(res);
     } catch (err: any) {
-      // Fallback demo rankings
-      setRankings([
-        {
-          candidate_id: "00000000-0000-0000-0000-000000000002",
-          name: isBlind ? "Candidate #1" : "Marcus Vance",
-          score: 0.94,
-          is_match: true,
-          matched_skills: ["Python", "FastAPI", "Docker", "PostgreSQL", "AsyncIO"],
-          missing_skills: [],
-          quality: 1.0,
-        },
-        {
-          candidate_id: "00000000-0000-0000-0000-000000000001",
-          name: isBlind ? "Candidate #2" : "Allison Hill",
-          score: 0.81,
-          is_match: true,
-          matched_skills: ["TypeScript", "Docker", "AWS", "CI/CD Pipelines", "PostgreSQL"],
-          missing_skills: ["FastAPI"],
-          quality: 0.98,
-        },
-        {
-          candidate_id: "00000000-0000-0000-0000-000000000003",
-          name: isBlind ? "Candidate #3" : "Elena Rostova",
-          score: 0.74,
-          is_match: true,
-          matched_skills: ["Python", "Docker", "Kubernetes"],
-          missing_skills: ["FastAPI", "PostgreSQL"],
-          quality: 1.0,
-        },
-      ] as any);
+      setError(err?.message || "Failed to calculate candidate rankings. Check backend status.");
+      setRankings([]);
     } finally {
       setLoading(false);
     }
@@ -133,68 +105,75 @@ function RankingContent() {
       className="space-y-8"
     >
       {/* Page Header */}
-      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-        <SectionHeader
-          eyebrow="Recruiter Talent Hub"
-          eyebrowIcon={<Users className="w-3.5 h-3.5" />}
-          title="Recruiter Candidate Ranking"
-          gradientWord="Candidate Ranking"
-          subtitle="Batch rank talent against requisitions with explainable rubrics and anti-bias redaction."
-        />
+      <SectionHeader
+        eyebrow="Recruiter Ranking Board"
+        eyebrowIcon={<Users className="w-3.5 h-3.5" />}
+        title="Multi-Candidate Role Ranking"
+        gradientWord="Role Ranking"
+        subtitle="Rank your candidate talent pool against open requisitions with explainable skill fit breakdowns."
+      />
 
-        {/* Blind Screening Toggle Card */}
-        <div className="inline-flex items-center gap-3 px-4 py-2.5 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-white/10 shadow-sm self-start sm:self-auto">
-          <EyeOff className={`w-4 h-4 ${blind ? "text-violet-600 dark:text-violet-400" : "text-slate-400"}`} />
-          <div>
-            <span className="text-xs font-bold text-slate-800 dark:text-slate-200 block">
-              Blind Screening
-            </span>
-            <span className="text-[10px] text-slate-400">Anonymize personal info</span>
+      {/* Control Ribbon */}
+      <Card className="p-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+          <div className="space-y-1.5 flex-1 max-w-md">
+            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider block">
+              Target Job Requisition
+            </label>
+            <select
+              value={selectedJobId}
+              onChange={(e) => setSelectedJobId(e.target.value)}
+              className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50/70 dark:bg-white/5 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-500 cursor-pointer font-medium"
+            >
+              {jobs.map((j) => (
+                <option key={j.id} value={j.id}>
+                  {toText(j.title, "Requisition")}
+                </option>
+              ))}
+            </select>
           </div>
-          <input
-            type="checkbox"
-            checked={blind}
-            onChange={(e) => setBlind(e.target.checked)}
-            className="w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500 cursor-pointer ml-1"
-          />
-        </div>
-      </div>
 
-      {/* Requisition Selector Bar */}
-      <Card className="p-6 flex flex-col md:flex-row md:items-center justify-between gap-6">
-        <div className="flex-1 max-w-xl space-y-2">
-          <label className="text-xs font-bold text-slate-500 uppercase tracking-wider block flex items-center gap-1.5">
-            <Briefcase className="w-3.5 h-3.5 text-brand-500" />
-            <span>Select Active Job Requisition</span>
-          </label>
-          <select
-            value={selectedJobId}
-            onChange={(e) => setSelectedJobId(e.target.value)}
-            className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50/70 dark:bg-white/5 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-500 cursor-pointer font-medium"
-          >
-            {jobs.map((j) => (
-              <option key={j.id} value={j.id}>
-                {toText(j.title, "Requisition")}
-              </option>
-            ))}
-          </select>
-        </div>
+          <div className="flex items-center gap-6 self-start sm:self-center pt-2 sm:pt-0">
+            {/* Blind Screening Toggle */}
+            <label className="flex items-center gap-2.5 cursor-pointer select-none">
+              <input
+                type="checkbox"
+                checked={blind}
+                onChange={(e) => setBlind(e.target.checked)}
+                className="w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500 cursor-pointer"
+              />
+              <div>
+                <span className="text-xs font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+                  <EyeOff className="w-3.5 h-3.5 text-violet-500" />
+                  Blind Screening
+                </span>
+                <span className="text-[11px] text-slate-400 block">Redacts names & proxies</span>
+              </div>
+            </label>
 
-        <div className="flex items-center gap-6 text-xs text-slate-500 border-t md:border-t-0 md:border-l border-slate-200/80 dark:border-white/10 pt-4 md:pt-0 md:pl-8">
-          <div>
-            <p className="font-semibold text-slate-700 dark:text-slate-300">Candidates Evaluated</p>
-            <p className="font-mono text-lg text-brand-600 dark:text-brand-400 font-extrabold">
-              {rankings.length}
-            </p>
-          </div>
-          <div>
-            <p className="font-semibold text-slate-700 dark:text-slate-300">Match Model</p>
-            <p className="font-mono text-xs text-slate-600 dark:text-slate-400">Weighted Rubric</p>
+            <Button
+              variant="secondary"
+              size="sm"
+              loading={loading}
+              onClick={() => fetchRankings(selectedJobId, blind)}
+              icon={<TrendingUp className="w-3.5 h-3.5 text-brand-500" />}
+            >
+              Refresh Ranking
+            </Button>
           </div>
         </div>
       </Card>
 
-      {/* Ranked Table */}
+      {/* Error Alert with Retry */}
+      {error && (
+        <ErrorAlert
+          title="Ranking Calculation Error"
+          message={error}
+          onRetry={() => fetchRankings(selectedJobId, blind)}
+        />
+      )}
+
+      {/* Ranking Results Card */}
       <Card className="overflow-hidden">
         <div className="p-5 border-b border-slate-200/80 dark:border-white/10 bg-slate-50/50 dark:bg-white/5 flex items-center justify-between">
           <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
@@ -207,10 +186,15 @@ function RankingContent() {
         </div>
 
         {loading ? (
-          <div className="p-16 text-center text-slate-500 space-y-3">
-            <span className="inline-block w-8 h-8 border-3 border-brand-600 border-t-transparent rounded-full animate-spin" />
-            <p className="text-xs font-semibold">Computing Multi-Candidate Ranking...</p>
-          </div>
+          <TableSkeleton rows={5} cols={6} />
+        ) : !error && rankings.length === 0 ? (
+          <EmptyState
+            icon={Users}
+            title="No Candidates Ranked"
+            description="No candidates were found matching this requisition. Upload candidate resumes on the home page or select a different requisition."
+            actionText="Upload Resumes"
+            onAction={() => window.location.href = "/"}
+          />
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs sm:text-sm">

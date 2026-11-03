@@ -6,26 +6,21 @@ import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import {
   Target,
-  Sliders,
   EyeOff,
   Sparkles,
-  AlertCircle,
   CheckCircle2,
   XCircle,
-  HelpCircle,
-  Briefcase,
   ArrowRight,
   FileEdit,
-  User,
-  Clock,
-  Layers,
 } from "lucide-react";
 import ScoreGauge from "@/components/ScoreGauge";
-import SkillChip from "@/components/SkillChip";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { EmptyState } from "@/components/ui/EmptyState";
+import { ErrorAlert } from "@/components/ui/ErrorAlert";
+import { Skeleton, TableSkeleton } from "@/components/ui/LoadingSkeleton";
 import { SAMPLE_CANDIDATES, SAMPLE_JOBS } from "@/data/samples";
 import { api, toText, type MatchResult } from "@/lib/api";
 
@@ -53,40 +48,21 @@ function MatchContent() {
   const [matchResult, setMatchResult] = useState<MatchResult | null>(null);
 
   // Fetch candidates and jobs from backend on load
-  useEffect(() => {
-    async function init() {
-      const paramCandId = searchParams?.get("candidate_id") || "";
-      const paramJobId = searchParams?.get("job_id") || "";
+  const loadInitialData = async () => {
+    const paramCandId = searchParams?.get("candidate_id") || "";
+    const paramJobId = searchParams?.get("job_id") || "";
 
-      try {
-        const [cands, loadedJobs] = await Promise.allSettled([
-          api.listCandidates(),
-          api.listJobs(),
-        ]);
+    try {
+      const [cands, loadedJobs] = await Promise.allSettled([
+        api.listCandidates(),
+        api.listJobs(),
+      ]);
 
-        if (cands.status === "fulfilled" && cands.value && cands.value.length > 0) {
-          setCandidates(cands.value);
-          const foundC = paramCandId && cands.value.find((c: any) => c.id === paramCandId);
-          setSelectedCandId(foundC ? paramCandId : cands.value[0].id);
-        } else {
-          const fallbackCands = SAMPLE_CANDIDATES.map((sc, i) => ({
-            id: `00000000-0000-0000-0000-00000000000${i + 1}`,
-            name: sc.name,
-            title: sc.title,
-          }));
-          setCandidates(fallbackCands);
-          setSelectedCandId(fallbackCands[0].id);
-        }
-
-        if (loadedJobs.status === "fulfilled" && loadedJobs.value && loadedJobs.value.length > 0) {
-          setJobs(loadedJobs.value);
-          const foundJ = paramJobId && loadedJobs.value.find((j: any) => j.id === paramJobId);
-          setSelectedJobId(foundJ ? paramJobId : loadedJobs.value[0].id);
-        } else {
-          setJobs(SAMPLE_JOBS as any);
-          setSelectedJobId(SAMPLE_JOBS[0].id);
-        }
-      } catch {
+      if (cands.status === "fulfilled" && cands.value && cands.value.length > 0) {
+        setCandidates(cands.value);
+        const foundC = paramCandId && cands.value.find((c: any) => c.id === paramCandId);
+        setSelectedCandId(foundC ? paramCandId : cands.value[0].id);
+      } else {
         const fallbackCands = SAMPLE_CANDIDATES.map((sc, i) => ({
           id: `00000000-0000-0000-0000-00000000000${i + 1}`,
           name: sc.name,
@@ -94,16 +70,36 @@ function MatchContent() {
         }));
         setCandidates(fallbackCands);
         setSelectedCandId(fallbackCands[0].id);
+      }
+
+      if (loadedJobs.status === "fulfilled" && loadedJobs.value && loadedJobs.value.length > 0) {
+        setJobs(loadedJobs.value);
+        const foundJ = paramJobId && loadedJobs.value.find((j: any) => j.id === paramJobId);
+        setSelectedJobId(foundJ ? paramJobId : loadedJobs.value[0].id);
+      } else {
         setJobs(SAMPLE_JOBS as any);
         setSelectedJobId(SAMPLE_JOBS[0].id);
       }
+    } catch {
+      const fallbackCands = SAMPLE_CANDIDATES.map((sc, i) => ({
+        id: `00000000-0000-0000-0000-00000000000${i + 1}`,
+        name: sc.name,
+        title: sc.title,
+      }));
+      setCandidates(fallbackCands);
+      setSelectedCandId(fallbackCands[0].id);
+      setJobs(SAMPLE_JOBS as any);
+      setSelectedJobId(SAMPLE_JOBS[0].id);
     }
-    init();
+  };
+
+  useEffect(() => {
+    loadInitialData();
   }, [searchParams]);
 
   const handleRunMatch = async () => {
     if (!selectedCandId) {
-      setError("Please select a candidate.");
+      setError("Please select a candidate first.");
       return;
     }
     setLoading(true);
@@ -135,89 +131,8 @@ function MatchContent() {
       const result = await api.match(matchPayload, blind);
       setMatchResult(result);
     } catch (err: any) {
-      // Demo mock fallback if backend is offline
-      setMatchResult({
-        score: 0.84,
-        threshold,
-        is_match: 0.84 >= threshold,
-        candidate_id: selectedCandId,
-        blind,
-        breakdown: [
-          {
-            requirement_slug: "python",
-            requirement_name: "Python",
-            required: true,
-            importance: 5,
-            weight: 0.25,
-            matched_slug: "python",
-            matched_name: "Python",
-            match_type: "exact",
-            similarity: 1.0,
-            depth: 0,
-          },
-          {
-            requirement_slug: "fastapi",
-            requirement_name: "FastAPI",
-            required: true,
-            importance: 4,
-            weight: 0.2,
-            matched_slug: "fastapi",
-            matched_name: "FastAPI",
-            match_type: "exact",
-            similarity: 1.0,
-            depth: 0,
-          },
-          {
-            requirement_slug: "postgresql",
-            requirement_name: "PostgreSQL",
-            required: true,
-            importance: 4,
-            weight: 0.2,
-            matched_slug: "sql",
-            matched_name: "SQL",
-            match_type: "ancestor_or_sibling",
-            similarity: 0.85,
-            depth: 1,
-          },
-          {
-            requirement_slug: "docker",
-            requirement_name: "Docker",
-            required: true,
-            importance: 3,
-            weight: 0.15,
-            matched_slug: "docker",
-            matched_name: "Docker",
-            match_type: "exact",
-            similarity: 1.0,
-            depth: 0,
-          },
-          {
-            requirement_slug: "kubernetes",
-            requirement_name: "Kubernetes",
-            required: false,
-            importance: 3,
-            weight: 0.1,
-            matched_slug: null,
-            matched_name: null,
-            match_type: "missing",
-            similarity: 0.0,
-            depth: 0,
-          },
-        ],
-        gaps: [
-          {
-            skill_slug: "kubernetes",
-            skill_name: "Kubernetes",
-            required: false,
-            importance: 3,
-            candidate_has: false,
-            gap_type: "missing",
-          },
-        ],
-        matched_requirements_count: 4,
-        total_requirements_count: 5,
-        latency_ms: 18,
-      } as any);
+      setError(err?.message || "Failed to calculate match score. Check backend reachability.");
+      setMatchResult(null);
     } finally {
       setLoading(false);
     }
@@ -391,15 +306,47 @@ function MatchContent() {
         </Card>
       </div>
 
+      {/* Error state with Retry */}
       {error && (
-        <div className="p-3.5 rounded-xl bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 text-xs sm:text-sm flex items-center gap-2 border border-rose-200 dark:border-rose-800">
-          <AlertCircle className="w-4 h-4 flex-shrink-0" />
-          <span>{error}</span>
+        <ErrorAlert
+          title="Matching Engine Error"
+          message={error}
+          onRetry={handleRunMatch}
+        />
+      )}
+
+      {/* Loading Skeleton */}
+      {loading && (
+        <div className="space-y-6">
+          <Card className="p-8">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <Skeleton className="w-36 h-36 rounded-full flex-shrink-0" />
+              <div className="space-y-3 flex-1 w-full">
+                <Skeleton className="h-6 w-1/3" />
+                <Skeleton className="h-4 w-2/3" />
+                <Skeleton className="h-4 w-1/2" />
+              </div>
+            </div>
+          </Card>
+          <Card className="p-6">
+            <TableSkeleton rows={5} cols={5} />
+          </Card>
         </div>
       )}
 
+      {/* Empty State before running match */}
+      {!loading && !matchResult && !error && (
+        <EmptyState
+          icon={Target}
+          title="No Match Analysis Calculated"
+          description="Select a candidate and target job requisition from the options above, then click 'Calculate Match Score' to compute an explainable taxonomy-grounded breakdown."
+          actionText="Calculate Match Score"
+          onAction={handleRunMatch}
+        />
+      )}
+
       {/* Match Results Display */}
-      {matchResult && (
+      {!loading && matchResult && (
         <div className="space-y-6">
           {/* Hero Score Card */}
           <Card className="p-6 sm:p-8">
@@ -522,8 +469,11 @@ function MatchContent() {
                             {item.required ? "Required" : "Preferred"}
                           </span>
                         </td>
-                        <td className="py-3 px-3 font-mono font-medium">
-                          {Math.round((item.weight || 0) * 100)}%
+                        <td className="py-3 px-3 font-mono font-medium" title={`Importance: ${item.importance}/5, Raw weight: ${item.weight?.toFixed(1)}`}>
+                          {(() => {
+                            const totalW = matchResult.breakdown?.reduce((acc: number, b: any) => acc + (b.weight || 0), 0) || 1;
+                            return `${Math.round(((item.weight || 0) / totalW) * 100)}%`;
+                          })()}
                         </td>
                         <td className="py-3 px-3">
                           {isMatched ? (
