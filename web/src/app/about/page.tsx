@@ -122,7 +122,7 @@ export default function AboutPage() {
                   {stg.title}
                 </h4>
               </div>
-              <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
                 {stg.description}
               </p>
             </div>
@@ -149,7 +149,7 @@ export default function AboutPage() {
               <h4 className="text-sm font-bold text-slate-900 dark:text-white">
                 {adr.title}
               </h4>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
                 {adr.text}
               </p>
             </div>

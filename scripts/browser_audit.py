@@ -25,7 +25,11 @@ from playwright.async_api import async_playwright
 SCREENSHOTS_DIR = Path(
     r"C:\Users\harsh\.gemini\antigravity\brain\b5545534-0865-4396-b114-8e4c867456d1\screenshots"
 )
+SCREENSHOTS_AFTER_DIR = Path(
+    r"C:\Users\harsh\.gemini\antigravity\brain\b5545534-0865-4396-b114-8e4c867456d1\screenshots_after"
+)
 SCREENSHOTS_DIR.mkdir(parents=True, exist_ok=True)
+SCREENSHOTS_AFTER_DIR.mkdir(parents=True, exist_ok=True)
 
 BASE_URL = "http://localhost:3000"
 
@@ -51,6 +55,8 @@ async def run_audit():
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
+
+        # 1. Desktop context (1280x900)
         context = await browser.new_context(
             viewport={"width": 1280, "height": 900},
             device_scale_factor=1.5,
@@ -85,18 +91,23 @@ async def run_audit():
             name = p_info["name"]
             path = p_info["path"]
             url = f"{BASE_URL}{path}"
-            print(f"--> Auditing {name} at {url}...")
+            print(f"--> Auditing {name} at {url} (Desktop 1280px)...")
 
             await page.goto(url, wait_until="networkidle")
             await page.wait_for_timeout(1000)
 
             # Perform page-specific interactions to test dynamic workflows
             if path == "/":
-                # Click first sample resume button
-                sample_btn = page.locator("button:has-text('Marcus Vance')").first
-                if await sample_btn.count() > 0:
-                    await sample_btn.click()
+                # Exercise the 1-click guided demo persona
+                try_btn = page.locator("text='Try This Candidate'").first
+                if await try_btn.count() > 0:
+                    await try_btn.click()
                     await page.wait_for_timeout(800)
+                else:
+                    sample_btn = page.locator("text='Marcus Vance'").first
+                    if await sample_btn.count() > 0:
+                        await sample_btn.click()
+                        await page.wait_for_timeout(800)
 
             elif path == "/match":
                 # Trigger calculate match score
@@ -130,8 +141,10 @@ async def run_audit():
                         await page.wait_for_timeout(1000)
 
             # Take full-page screenshot
-            screenshot_path = SCREENSHOTS_DIR / f"{name}.png"
+            screenshot_path = SCREENSHOTS_AFTER_DIR / f"{name}.png"
             await page.screenshot(path=str(screenshot_path), full_page=True)
+            # Also mirror to main screenshots dir
+            await page.screenshot(path=str(SCREENSHOTS_DIR / f"{name}.png"), full_page=True)
             print(f"    Saved screenshot: {screenshot_path}")
 
             audit_results["pages"][name] = {
@@ -140,6 +153,43 @@ async def run_audit():
                 "url": url,
                 "status": "PASS",
             }
+
+        # 2. Responsive mobile verification at 390px (iPhone 14 width)
+        print("\n--> Auditing mobile responsiveness at 390px...")
+        mobile_context = await browser.new_context(
+            viewport={"width": 390, "height": 844},
+            device_scale_factor=2,
+            is_mobile=True,
+        )
+        mobile_page = await mobile_context.new_page()
+        for p_info in PAGES[:3]:  # Check key interaction flows on mobile
+            name = p_info["name"]
+            path = p_info["path"]
+            url = f"{BASE_URL}{path}"
+            await mobile_page.goto(url, wait_until="networkidle")
+            await mobile_page.wait_for_timeout(600)
+            mobile_shot = SCREENSHOTS_AFTER_DIR / f"{name}_390px.png"
+            await mobile_page.screenshot(path=str(mobile_shot), full_page=True)
+            print(f"    Mobile (390px) shot saved: {mobile_shot}")
+        await mobile_context.close()
+
+        # 3. Responsive tablet verification at 768px (iPad Mini width)
+        print("\n--> Auditing tablet responsiveness at 768px...")
+        tablet_context = await browser.new_context(
+            viewport={"width": 768, "height": 1024},
+            device_scale_factor=1.5,
+        )
+        tablet_page = await tablet_context.new_page()
+        for p_info in PAGES[:2]:
+            name = p_info["name"]
+            path = p_info["path"]
+            url = f"{BASE_URL}{path}"
+            await tablet_page.goto(url, wait_until="networkidle")
+            await tablet_page.wait_for_timeout(600)
+            tablet_shot = SCREENSHOTS_AFTER_DIR / f"{name}_768px.png"
+            await tablet_page.screenshot(path=str(tablet_shot), full_page=True)
+            print(f"    Tablet (768px) shot saved: {tablet_shot}")
+        await tablet_context.close()
 
         await browser.close()
 

@@ -25,13 +25,13 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <Link
               href="/about"
-              className="relative py-0.5 text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-brand-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+              className="relative py-0.5 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-white transition-colors after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-brand-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
             >
               Architecture
             </Link>
             <Link
               href="/evaluation"
-              className="relative py-0.5 text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-brand-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+              className="relative py-0.5 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-white transition-colors after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-brand-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
             >
               Benchmarks
             </Link>
@@ -39,7 +39,7 @@ export default function Footer() {
               href="/healthz"
               target="_blank"
               rel="noreferrer"
-              className="relative py-0.5 text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-brand-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform flex items-center gap-1.5"
+              className="relative py-0.5 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-white transition-colors after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-brand-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform flex items-center gap-1.5"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
               <span>System Health</span>

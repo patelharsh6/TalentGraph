@@ -59,7 +59,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Desktop Navigation on a single line */}
+          {/* Desktop Navigation on a single line (>= xl) */}
           <nav className="hidden xl:flex items-center gap-0.5">
             {NAV_LINKS.map(({ href, label, icon: Icon }) => {
               const isActive = pathname === href;
@@ -70,7 +70,7 @@ export default function Navbar() {
                   className={`relative flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors duration-150 ${
                     isActive
                       ? "text-brand-600 dark:text-brand-300 font-semibold"
-                      : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100/70 dark:hover:bg-white/5"
+                      : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-white/5"
                   }`}
                 >
                   {isActive && (
@@ -87,10 +87,16 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* Medium Desktop Compact View (lg only) */}
-          <nav className="hidden lg:flex xl:hidden items-center gap-1">
-            {NAV_LINKS.slice(0, 6).map(({ href, label, icon: Icon }) => {
+          {/* Medium Desktop Compact View (lg to xl) - All 8 links with compact labels */}
+          <nav className="hidden lg:flex xl:hidden items-center gap-0.5">
+            {NAV_LINKS.map(({ href, label, icon: Icon }) => {
               const isActive = pathname === href;
+              const shortLabel =
+                label === "Recruiter Ranking"
+                  ? "Rank"
+                  : label === "Evaluation"
+                  ? "Eval"
+                  : label.split(" ")[0];
               return (
                 <Link
                   key={href}
@@ -98,7 +104,7 @@ export default function Navbar() {
                   className={`relative flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
                     isActive
                       ? "text-brand-600 dark:text-brand-300 font-semibold"
-                      : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100"
+                      : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/70 dark:hover:bg-white/5"
                   }`}
                 >
                   {isActive && (
@@ -108,8 +114,8 @@ export default function Navbar() {
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
-                  <Icon className="w-3.5 h-3.5" />
-                  <span>{label.split(" ")[0]}</span>
+                  <Icon className="w-3.5 h-3.5 flex-shrink-0" />
+                  <span>{shortLabel}</span>
                 </Link>
               );
             })}

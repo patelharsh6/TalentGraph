@@ -25,7 +25,7 @@ from talentgraph.api.schemas import (
 from talentgraph.config import Settings, get_settings
 from talentgraph.core.errors import NotFound, ServiceUnavailable
 from talentgraph.core.schemas.matching import JobRequirements
-from talentgraph.core.schemas.skills import SkillProfile
+from talentgraph.core.schemas.skills import NormalizedSkill, SkillProfile
 from talentgraph.db.repositories.taxonomy import TaxonomyRepository, get_taxonomy_repository
 from talentgraph.embeddings.skill_index import SkillIndex, get_skill_index
 from talentgraph.llm.client import LLMClient, get_llm
@@ -89,6 +89,7 @@ class CoachAgent:
             raise ServiceUnavailable("Career Coach service requires LLM capabilities.")
 
         # 1. Load candidate profile if needed (in-memory or file)
+        skill_profile: SkillProfile | None = None
         if profile_data is None:
             try:
                 from uuid import UUID
@@ -97,9 +98,47 @@ class CoachAgent:
 
                 mem = get_candidate_in_memory(UUID(candidate_id))
                 if mem is not None:
-                    profile_data = mem.parsed.model_dump()
-            except Exception:
-                pass
+                    skill_profile = mem.profile
+                    exp_list: list[dict[str, Any]] = []
+                    for exp in mem.parsed.experience:
+                        resps: list[str] = []
+                        for resp_item in exp.responsibilities:
+                            val = getattr(resp_item, "value", resp_item)
+                            if isinstance(val, dict):
+                                val = val.get("value", "")
+                            if val:
+                                resps.append(str(val).strip())
+                        exp_list.append({
+                            "company": getattr(exp.company, "value", None) if exp.company else None,
+                            "title": getattr(exp.title, "value", None) if exp.title else None,
+                            "responsibilities": resps,
+                        })
+
+                    profile_skills: list[dict[str, Any]] = []
+                    for s in mem.profile.skills:
+                        ev_text = " ".join(s.evidence) if s.evidence else f"Proficient in {s.name}"
+                        profile_skills.append({
+                            "canonical_slug": s.slug,
+                            "raw": s.name,
+                            "evidence": ev_text,
+                        })
+
+                    cand_name = (
+                        getattr(mem.parsed.personal.name, "value", "Candidate")
+                        if mem.parsed.personal and mem.parsed.personal.name
+                        else "Candidate"
+                    )
+                    cand_summary = (
+                        getattr(mem.parsed.summary, "value", "") if mem.parsed.summary else ""
+                    )
+                    profile_data = {
+                        "name": cand_name,
+                        "summary": cand_summary,
+                        "experience": exp_list,
+                        "skills": profile_skills,
+                    }
+            except Exception as exc:
+                log.debug("coach.mem_candidate_lookup_failed", error=str(exc))
 
         if profile_data is None:
             p_file = PROFILES_DIR / f"{candidate_id}.gt.json"
@@ -111,13 +150,36 @@ class CoachAgent:
                     raise NotFound(f"Candidate profile {candidate_id} not found.")
             profile_data = json.loads(p_file.read_text(encoding="utf-8"))
 
-        # Convert to SkillProfile for scoring
-        skill_profile = SkillProfile.model_validate(profile_data)
+        # Convert to SkillProfile for scoring if not already resolved
+        if skill_profile is None:
+            try:
+                skill_profile = SkillProfile.model_validate(profile_data)
+            except Exception:
+                norm_skills = []
+                for s in profile_data.get("skills", []):
+                    slug = s.get("slug") or s.get("canonical_slug") or ""
+                    name = s.get("name") or s.get("raw") or slug.replace("-", " ").title()
+                    ev = s.get("evidence", [])
+                    if isinstance(ev, str):
+                        ev = [ev] if ev else []
+                    norm_skills.append(NormalizedSkill(slug=slug, name=name, evidence=ev))
+                skill_profile = SkillProfile(skills=norm_skills)
 
         # 2. Load job requirements if needed
         if job_reqs is None:
             if job_id:
-                job_reqs = JobParser.load_from_ground_truth(job_id)
+                try:
+                    from uuid import UUID
+
+                    from talentgraph.db.in_memory import get_job_in_memory
+
+                    mem_j = get_job_in_memory(UUID(job_id))
+                    if mem_j is not None:
+                        job_reqs = mem_j.requirements
+                except Exception:
+                    pass
+                if job_reqs is None:
+                    job_reqs = JobParser.load_from_ground_truth(job_id)
             else:
                 raise NotFound("Either job_id or job_reqs must be provided.")
 
@@ -140,9 +202,15 @@ class CoachAgent:
         existing_bullets: list[str] = []
         for exp in profile_data.get("experience", []):
             for resp in exp.get("responsibilities", []):
-                if len(resp.strip()) > 15:
-                    existing_bullets.append(resp.strip())
+                val = getattr(resp, "value", resp)
+                if isinstance(val, dict):
+                    val = val.get("value", "")
+                val_str = str(val).strip()
+                if len(val_str) > 15:
+                    existing_bullets.append(val_str)
         existing_bullets = existing_bullets[:5]
+        if not existing_bullets and profile_data.get("summary"):
+            existing_bullets = [profile_data["summary"].strip()]
 
         # Weakest requirements for interview prep
         weak_reqs = sorted(

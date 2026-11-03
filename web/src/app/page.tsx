@@ -348,44 +348,148 @@ export default function UploadPage() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
           Extract verbatim-grounded personal information, experience timelines, and normalize skills
           into hierarchical ESCO/O*NET taxonomy standards with sub-3s latency.
         </p>
+      </div>
 
-        {/* Demo Samples Pills */}
-        <div className="flex flex-wrap items-center gap-2.5 pt-2">
-          <span className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
-            Demo Samples:
-          </span>
-          {SAMPLE_CANDIDATES.map((sample) => {
+      {/* Guided First-Run Experience: 1-Click Demo Profiles */}
+      <Card className="p-6 sm:p-7 border-brand-200/80 dark:border-brand-800/60 bg-gradient-to-br from-brand-50/40 via-white to-violet-50/30 dark:from-brand-950/20 dark:via-[#111827] dark:to-violet-950/20 space-y-5">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="space-y-1">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-brand-100 dark:bg-brand-950/80 text-brand-700 dark:text-brand-300 border border-brand-300/80 dark:border-brand-700/60">
+              <Sparkles className="w-3.5 h-3.5 text-brand-500" />
+              <span>Guided First-Run Experience</span>
+            </div>
+            <h2 className="text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white">
+              Try a Pre-Seeded Candidate in 1 Click
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+              Select an archetype to instantly evaluate semantic extraction, role alignment, and career coaching without consuming LLM quota.
+            </p>
+          </div>
+          <Badge variant="emerald" dot className="self-start sm:self-center">
+            0 API Quota Used
+          </Badge>
+        </div>
+
+        {/* 3 Interactive Candidate Persona Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-1">
+          {SAMPLE_CANDIDATES.map((sample, idx) => {
             const isSelected = selectedSample === sample.id;
+            const gradients = [
+              "from-indigo-600 to-blue-500",
+              "from-brand-600 to-violet-600",
+              "from-purple-600 to-cyan-500",
+            ];
+            const tags = [
+              "Junior/Mid • Full-Stack",
+              "Senior • 7+ Years Exp",
+              "ML Specialist • AI Ops",
+            ];
+
             return (
-              <button
+              <div
                 key={sample.id}
                 onClick={() => loadSample(sample.id)}
-                className={`group inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 ${
+                className={`relative p-5 rounded-2xl border transition-all duration-200 cursor-pointer flex flex-col justify-between space-y-4 ${
                   isSelected
-                    ? "bg-brand-50 text-brand-700 dark:bg-brand-950/60 dark:text-brand-300 border-2 border-brand-500 shadow-glow shadow-brand-500/10 scale-[1.02]"
-                    : "bg-white dark:bg-[#111827] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-white/10 hover:border-brand-400 dark:hover:border-brand-500 hover:-translate-y-0.5 shadow-sm"
+                    ? "bg-white dark:bg-brand-950/40 border-brand-500 dark:border-brand-500 shadow-glow shadow-brand-500/15 ring-2 ring-brand-500/30 scale-[1.01]"
+                    : "bg-white/90 dark:bg-white/5 border-slate-200/90 dark:border-white/10 hover:border-brand-400 dark:hover:border-brand-600 hover:shadow-soft hover:-translate-y-0.5"
                 }`}
               >
-                <span
-                  className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
-                    isSelected
-                      ? "bg-brand-600 text-white"
-                      : "bg-slate-100 dark:bg-white/10 text-slate-600 dark:text-slate-300 group-hover:bg-brand-100 dark:group-hover:bg-brand-900/60"
-                  }`}
-                >
-                  {getInitials(sample.name)}
-                </span>
-                <span>{sample.name}</span>
-                <span className="text-[11px] opacity-60 font-normal">({sample.title.split(" ")[0]})</span>
-              </button>
+                <div className="space-y-3">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <div
+                        className={`w-11 h-11 rounded-xl bg-gradient-to-tr ${gradients[idx % 3]} text-white flex items-center justify-center font-bold text-sm font-mono shadow-sm flex-shrink-0`}
+                      >
+                        {getInitials(sample.name)}
+                      </div>
+                      <div>
+                        <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white leading-tight">
+                          {sample.name}
+                        </h3>
+                        <p className="text-xs text-slate-500 dark:text-slate-400">
+                          {sample.title}
+                        </p>
+                      </div>
+                    </div>
+                    {isSelected && (
+                      <span className="flex-shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-brand-500 text-white shadow-sm flex items-center gap-1">
+                        <Check className="w-3 h-3" />
+                        Active
+                      </span>
+                    )}
+                  </div>
+
+                  <span className="inline-block text-[11px] font-mono font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-white/10 px-2.5 py-0.5 rounded-md">
+                    {tags[idx % 3]}
+                  </span>
+
+                  <div className="flex flex-wrap gap-1.5 pt-1">
+                    {sample.skills.slice(0, 4).map((sk, sIdx) => (
+                      <span
+                        key={sIdx}
+                        className="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-white/5 text-slate-700 dark:text-slate-300 border border-slate-200/70 dark:border-white/10 font-medium"
+                      >
+                        {sk}
+                      </span>
+                    ))}
+                    {sample.skills.length > 4 && (
+                      <span className="text-[10px] text-slate-400 self-center font-mono">
+                        +{sample.skills.length - 4}
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <div className="pt-2 border-t border-slate-100 dark:border-white/10">
+                  <button
+                    type="button"
+                    className={`w-full py-2 px-3 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors ${
+                      isSelected
+                        ? "bg-brand-600 text-white shadow-sm"
+                        : "bg-slate-50 dark:bg-white/5 text-brand-600 dark:text-brand-300 hover:bg-brand-50 dark:hover:bg-brand-950/60"
+                    }`}
+                  >
+                    <span>{isSelected ? "Active Profile Loaded" : "Try This Candidate"}</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              </div>
             );
           })}
         </div>
-      </div>
+
+        {/* 3-Step Guided Journey Visual Ribbon */}
+        <div className="p-3.5 rounded-xl bg-slate-100/70 dark:bg-white/5 border border-slate-200/60 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+          <span className="font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+            <Target className="w-3.5 h-3.5 text-brand-500" />
+            <span>End-to-End Evaluation Workflow:</span>
+          </span>
+          <div className="flex flex-wrap items-center gap-2 font-medium text-slate-700 dark:text-slate-300">
+            <span className="px-2.5 py-1 rounded-lg bg-brand-500 text-white font-bold text-[11px]">
+              1. Extract & Profile
+            </span>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+            <Link
+              href={parsedData?.candidate_id ? `/match?candidate_id=${parsedData.candidate_id}` : "/match"}
+              className="px-2.5 py-1 rounded-lg bg-white dark:bg-white/10 hover:bg-slate-50 text-slate-700 dark:text-slate-200 hover:text-brand-600 border border-slate-200 dark:border-white/10 transition-colors"
+            >
+              2. Match & Score
+            </Link>
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+            <Link
+              href={parsedData?.candidate_id ? `/coach?candidate_id=${parsedData.candidate_id}` : "/coach"}
+              className="px-2.5 py-1 rounded-lg bg-white dark:bg-white/10 hover:bg-slate-50 text-slate-700 dark:text-slate-200 hover:text-brand-600 border border-slate-200 dark:border-white/10 transition-colors"
+            >
+              3. Career Coach
+            </Link>
+          </div>
+        </div>
+      </Card>
 
       {/* Upload Dropzone (Main Focal Point) */}
       <Card
@@ -737,6 +841,18 @@ export default function UploadPage() {
                       Career Coach
                     </Button>
                   </Link>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    disabled
+                    className="opacity-60 cursor-not-allowed text-xs"
+                    title="Export to HRIS / JSON schema is in development"
+                  >
+                    <span>Export JSON</span>
+                    <span className="text-[9px] px-1.5 py-0.2 rounded bg-slate-200 dark:bg-white/10 font-mono uppercase">
+                      Soon
+                    </span>
+                  </Button>
                 </div>
               </div>
             </Card>

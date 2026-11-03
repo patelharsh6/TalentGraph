@@ -170,6 +170,9 @@ async def match_candidate(
 
     thresh = body.threshold if body.threshold is not None else body.preset
     result = await matcher.match(profile, job_reqs, threshold=thresh)
+    result.meta["blind"] = blind
+    if blind:
+        result.meta["anonymized_id"] = f"ANON-{str(body.candidate_id)[:8].upper()}"
 
     # Persist match record
     match_id = uuid4()
@@ -253,7 +256,7 @@ async def rank_candidates(
     ranked_items: list[RankResponseData] = []
     thresh = body.threshold if body.threshold is not None else body.preset
 
-    for cid in cand_ids[: body.limit]:
+    for cid in cand_ids:
         try:
             profile = await _resolve_candidate_profile(cid)
             if blind:
@@ -268,4 +271,5 @@ async def rank_candidates(
         reverse=True,
     )
 
-    return ranked_items
+    limit = body.limit if body.limit and body.limit > 0 else 10
+    return ranked_items[:limit]

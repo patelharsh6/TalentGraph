@@ -143,7 +143,7 @@ function CoachContent() {
       {/* Target Selector Bar */}
       <Card className="p-6 grid grid-cols-1 md:grid-cols-3 gap-5 items-end">
         <div className="space-y-2">
-          <label className="text-xs font-bold text-slate-500 uppercase tracking-wider block">
+          <label className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block">
             Select Candidate Profile
           </label>
           <select
@@ -160,7 +160,7 @@ function CoachContent() {
         </div>
 
         <div className="space-y-2">
-          <label className="text-xs font-bold text-slate-500 uppercase tracking-wider block">
+          <label className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block">
             Select Target Job Requisition
           </label>
           <select

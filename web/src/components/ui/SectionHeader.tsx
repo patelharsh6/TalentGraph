@@ -48,7 +48,7 @@ export function SectionHeader({
           {titleNode}
         </h1>
         {subtitle && (
-          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
             {subtitle}
           </p>
         )}

@@ -109,7 +109,7 @@ export default function TalentSearchPage() {
 
         {/* Quick Sample Queries */}
         <div className="flex flex-wrap items-center gap-2 pt-1">
-          <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+          <span className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
             Quick Queries:
           </span>
           {SAMPLE_QUERIES.map((qText, i) => (
@@ -184,7 +184,7 @@ export default function TalentSearchPage() {
                 <span>Agentic Search Plan Deconstruction</span>
               </h3>
               <span className="text-xs font-mono font-bold text-brand-700 dark:text-brand-300 bg-white/80 dark:bg-black/20 px-2.5 py-0.5 rounded-full border border-brand-200/60 dark:border-brand-800/60">
-                {searchData.total_candidates || 0} candidates matching
+                {searchData.total_candidates ?? searchData.results?.length ?? 0} candidates matching
               </span>
             </div>
 

@@ -237,7 +237,7 @@ export default function TaxonomyBrowserPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Left Pane: Domains & Categories */}
           <Card className="p-5 space-y-3">
-            <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider px-2 flex items-center gap-2">
+            <h3 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider px-2 flex items-center gap-2">
               <Layers className="w-4 h-4 text-brand-500" />
               <span>Root Taxonomy Domains</span>
             </h3>
@@ -313,7 +313,7 @@ export default function TaxonomyBrowserPage() {
 
                 {/* Children Sub-skills */}
                 <div className="space-y-3">
-                  <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider">
+                  <h4 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                     Child Skills & Sub-Specializations ({childrenNodes.length})
                   </h4>
                   {childrenNodes.length === 0 ? (

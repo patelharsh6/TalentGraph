@@ -258,6 +258,21 @@ async def seed_all(
                             resp_item.value if hasattr(resp_item, "value") else str(resp_item)
                         )
 
+                    cand_skills = [s.name for s in prof.skills if s.name.lower() in first_resp.lower()]
+                    if not cand_skills and prof.skills:
+                        cand_skills = [prof.skills[0].name]
+                    improved_bullet = (
+                        f"{first_resp.rstrip('.')}, establishing robust automated testing and maintaining system reliability."
+                    )
+                    bullet_rewrites = [
+                        BulletRewrite(
+                            original_evidence=first_resp,
+                            improved_bullet=improved_bullet,
+                            highlighted_skills=cand_skills[:2],
+                            rationale="Improves technical clarity and action-oriented impact while strictly preserving resume facts.",
+                        )
+                    ]
+
                     report = CoachReport(
                         candidate_id=str(cid),
                         job_id=str(jid),
@@ -282,17 +297,7 @@ async def seed_all(
                                 preparation_tip="Explain how you communicate trade-offs using data and design docs.",
                             ),
                         ],
-                        bullet_rewrites=[
-                            BulletRewrite(
-                                original_evidence=first_resp,
-                                improved_bullet=f"{first_resp.rstrip('.')} with 35% improved throughput and strict automated testing.",
-                                highlighted_skills=[
-                                    "Backend Architecture",
-                                    "Production Reliability",
-                                ],
-                                rationale="Elevates business impact and quantifiable technical achievement.",
-                            )
-                        ],
+                        bullet_rewrites=bullet_rewrites,
                         removed_claims=[],
                         revisions_count=0,
                     )

@@ -36,7 +36,7 @@ class LLMCriticResponse(BaseModel):
 
 def extract_numbers_and_metrics(text: str) -> set[str]:
     """Extract numbers, percentages, dollar amounts, and multipliers."""
-    tokens = re.findall(r"\b\d+(?:\.\d+)?%?|\$\d+(?:\.\d+)?|\b\d+x\b", text.lower())
+    tokens = re.findall(r"\b\d+(?:\.\d+)?x\b|\$\d+(?:\.\d+)?|\b\d+(?:\.\d+)?%?", text.lower())
     return set(tokens)
 
 
