@@ -1,5 +1,6 @@
 """FastAPI application. Run with `uvicorn talentgraph.api.main:app`."""
 
+import asyncio
 import contextlib
 from collections.abc import AsyncIterator, Callable
 from contextlib import asynccontextmanager
@@ -34,8 +35,14 @@ from talentgraph.api.routers import (
     eval as eval_router,
 )
 from talentgraph.config import get_settings
+from talentgraph.core.net import is_service_reachable_async, parse_host_port
 from talentgraph.db.repositories.taxonomy import get_taxonomy_repository
-from talentgraph.db.session import dispose_engine, init_engine
+from talentgraph.db.session import (
+    dispose_engine,
+    init_engine,
+    is_db_available,
+    set_db_available,
+)
 from talentgraph.llm.client import get_llm
 from talentgraph.observability.logging import configure_logging
 from talentgraph.orchestrator.batch import recover_stale_batches
@@ -57,22 +64,52 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     settings = get_settings()
     configure_logging(settings.log_level)
 
-    # 1. Initialize databases and caches (with resilient fallbacks if offline)
-    try:
-        app.state.engine = init_engine(settings.database_url)
-    except Exception as exc:
-        log.warning("lifespan.db_init_warning", error=str(exc))
-        app.state.engine = None
+    # 1. Non-blocking service probe for Postgres, Redis, and Chroma concurrently (<250ms total)
+    db_host, db_port = parse_host_port(settings.database_url, 5432)
+    redis_host, redis_port = parse_host_port(settings.redis_url, 6379)
+    chroma_host, chroma_port = settings.chroma_host, settings.chroma_port
 
-    try:
-        app.state.redis = Redis.from_url(settings.redis_url)
-    except Exception as exc:
-        log.warning("lifespan.redis_init_warning", error=str(exc))
-        app.state.redis = None
-
-    app.state.chroma_heartbeat = _chroma_heartbeat_factory(
-        settings.chroma_host, settings.chroma_port
+    db_ok, redis_ok, chroma_ok = await asyncio.gather(
+        is_service_reachable_async(db_host, db_port, timeout_s=0.25),
+        is_service_reachable_async(redis_host, redis_port, timeout_s=0.25),
+        is_service_reachable_async(chroma_host, chroma_port, timeout_s=0.25),
+        return_exceptions=True,
     )
+
+    # Initialize Postgres (or fallback to in-memory)
+    if db_ok is True:
+        try:
+            app.state.engine = init_engine(settings.database_url)
+            set_db_available(True)
+            log.info("lifespan.db_connected", host=db_host, port=db_port)
+        except Exception as exc:
+            log.warning("lifespan.db_init_warning", error=str(exc))
+            app.state.engine = None
+            set_db_available(False)
+    else:
+        app.state.engine = None
+        set_db_available(False)
+        log.info("lifespan.db_offline_fallback", host=db_host, port=db_port)
+
+    # Initialize Redis (or fallback to in-memory)
+    if redis_ok is True:
+        try:
+            app.state.redis = Redis.from_url(settings.redis_url)
+            log.info("lifespan.redis_connected", host=redis_host, port=redis_port)
+        except Exception as exc:
+            log.warning("lifespan.redis_init_warning", error=str(exc))
+            app.state.redis = None
+    else:
+        app.state.redis = None
+        log.info("lifespan.redis_offline_fallback", host=redis_host, port=redis_port)
+
+    # Initialize Chroma (or fallback to numpy store)
+    if chroma_ok is True:
+        app.state.chroma_heartbeat = _chroma_heartbeat_factory(chroma_host, chroma_port)
+        log.info("lifespan.chroma_connected", host=chroma_host, port=chroma_port)
+    else:
+        app.state.chroma_heartbeat = None
+        log.info("lifespan.chroma_offline_fallback", host=chroma_host, port=chroma_port)
 
     # 2. Initialize Agents & Repositories (Step 5.1)
     llm = get_llm(settings)
@@ -92,7 +129,10 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     app.state.taxonomy_repo = repo
 
     # 3. Recover stale batch items from previous runs (Step 5.5)
-    await recover_stale_batches(app.state.engine)
+    if app.state.engine is not None and is_db_available():
+        await recover_stale_batches(app.state.engine)
+    else:
+        await recover_stale_batches(None)
 
     # 4. Pre-seed demo datasets into in-memory store and caches (Exit Criterion 7-B)
     if settings.app_env != "test":
@@ -111,7 +151,7 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     yield
 
     # 4. Graceful shutdown
-    if app.state.redis is not None:
+    if getattr(app.state, "redis", None) is not None:
         with contextlib.suppress(Exception):
             await app.state.redis.aclose()
     await dispose_engine()
@@ -130,7 +170,10 @@ def create_app() -> FastAPI:
     app.state.limiter = limiter
 
     # CORS middleware (Step 5.1)
-    origins = [settings.web_origin] if settings.web_origin else ["*"]
+    origins = [settings.web_origin] if settings.web_origin else []
+    for origin in ("http://localhost:3000", "http://127.0.0.1:3000"):
+        if origin not in origins:
+            origins.append(origin)
     app.add_middleware(
         CORSMiddleware,
         allow_origins=origins,

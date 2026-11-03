@@ -152,13 +152,34 @@ def find_location(lines: Iterable[str]) -> tuple[tuple[str, str], str] | None:
 def guess_name(lines: list[str]) -> Match | None:
     """The first short line or segment of letters at the top of the document."""
     stop_words = {
-        "curriculum", "vitae", "resume", "profile", "summary", "experience",
-        "education", "contact", "skills", "skill", "technologies", "projects",
-        "certifications", "work", "technical", "languages", "tools", "objective",
-        "personal", "details", "information", "phone", "email", "address", "about"
+        "curriculum",
+        "vitae",
+        "resume",
+        "profile",
+        "summary",
+        "experience",
+        "education",
+        "contact",
+        "skills",
+        "skill",
+        "technologies",
+        "projects",
+        "certifications",
+        "work",
+        "technical",
+        "languages",
+        "tools",
+        "objective",
+        "personal",
+        "details",
+        "information",
+        "phone",
+        "email",
+        "address",
+        "about",
     }
 
-    # 1. Clean email prefix matching against lines (high precision, handles concatenated names like shravanasati)
+    # 1. Clean email prefix matching against lines (handles names like shravanasati)
     for line in lines[:15]:
         em = find_email(line)
         if em:
@@ -193,10 +214,16 @@ def guess_name(lines: list[str]) -> Match | None:
                 and all(w.isalpha() for w in clean_words)
                 and not any(w.lower() in stop_words for w in clean_words)
             ):
-                value = " ".join(w.capitalize() if (w.isupper() or len(w) == 1) else w for w in words)
+                value = " ".join(
+                    w.capitalize() if (w.isupper() or len(w) == 1) else w for w in words
+                )
                 return Match(value, cand)
 
-    # 3. Fallback: Parse name directly from email
+    # 3. Fallback: Parse name directly from email if document has other context
+    non_empty = [item.strip() for item in lines if item.strip()]
+    if len(non_empty) <= 1 and non_empty and EMAIL_RE.fullmatch(non_empty[0]):
+        return None
+
     for line in lines[:15]:
         em = find_email(line)
         if em:
@@ -371,7 +398,7 @@ def find_skill_candidates(text: str, index: frozenset[str], *, max_n: int = 5) -
 def run_rules(sections: list[Section], full_text: str, alias_index: frozenset[str]) -> RuleResult:
     contact_lines = [b.text for s in sections if s.label == "contact" for b in s.blocks]
     top_full_lines = [line.strip() for line in full_text.splitlines()[:20] if line.strip()]
-    combined_lines = contact_lines + [l for l in top_full_lines if l not in contact_lines]
+    combined_lines = contact_lines + [x for x in top_full_lines if x not in contact_lines]
     contact_text = "\n".join(contact_lines)
     result = RuleResult()
     result.name = guess_name(combined_lines)

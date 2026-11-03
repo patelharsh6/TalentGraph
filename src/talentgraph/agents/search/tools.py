@@ -271,7 +271,9 @@ def match_candidate(
     cand_name = raw_data.get("name") or raw_data.get("personal", {}).get("name") or "Candidate"
     cand_title = (
         raw_data.get("title")
-        or (raw_data.get("experience", [{}])[0].get("title") if raw_data.get("experience") else None)
+        or (
+            raw_data.get("experience", [{}])[0].get("title") if raw_data.get("experience") else None
+        )
         or "Software Professional"
     )
 

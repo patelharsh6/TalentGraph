@@ -1,6 +1,5 @@
 """Application settings. The only place that reads environment variables (plan §12)."""
 
-from functools import lru_cache
 from typing import Literal
 
 from pydantic import Field, SecretStr, field_validator
@@ -64,6 +63,14 @@ class Settings(BaseSettings):
             return None
         return value
 
+    @field_validator("llm_model", mode="before")
+    @classmethod
+    def _validate_llm_model(cls, value: object) -> str:
+        """Allow configuring any valid Gemini model name; defaults to gemini-3.8-flash."""
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+        return "gemini-3.8-flash"
+
     @property
     def llm_effective_mode(self) -> Literal["real", "fake", "stub"]:
         """`real` silently degrades to `fake` when no API key is configured."""
@@ -72,6 +79,51 @@ class Settings(BaseSettings):
         return self.llm_mode
 
 
-@lru_cache
+_settings_instance: Settings | None = None
+
+
+def clear_settings_cache() -> None:
+    global _settings_instance
+    _settings_instance = None
+
+
 def get_settings() -> Settings:
-    return Settings()
+    global _settings_instance
+    if _settings_instance is not None:
+        return _settings_instance
+
+    import sys
+    from pathlib import Path
+
+    from pydantic import ValidationError
+
+    env_path = Path(".env")
+    if not env_path.exists():
+        import structlog
+
+        structlog.get_logger(__name__).info(
+            "config.env_missing",
+            detail="No .env file found; using default dev configuration with in-memory fallbacks.",
+        )
+
+    try:
+        _settings_instance = Settings()
+        return _settings_instance
+    except ValidationError as exc:
+        print("\n" + "=" * 65, file=sys.stderr)
+        print("[!] TalentGraph Configuration Error (.env):", file=sys.stderr)
+        for err in exc.errors():
+            field = " -> ".join(str(loc) for loc in err["loc"])
+            msg = err["msg"]
+            print(f"   * {field}: {msg}", file=sys.stderr)
+        print(
+            "\nPlease check your environment variables or restore .env from .env.example:",
+            file=sys.stderr,
+        )
+        print("   Copy-Item .env.example .env (Windows PowerShell)", file=sys.stderr)
+        print("   cp .env.example .env (Linux/macOS)", file=sys.stderr)
+        print("=" * 65 + "\n", file=sys.stderr)
+        sys.exit(1)
+
+
+get_settings.cache_clear = clear_settings_cache  # type: ignore[attr-defined]

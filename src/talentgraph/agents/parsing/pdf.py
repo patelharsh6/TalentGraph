@@ -75,7 +75,8 @@ def extract_pdf(data: bytes, *, max_pages: int = 20) -> LayoutDocument:
                 kinds.add("creative")
             blocks.extend(_to_block(line, page.number or 0) for u in ordered for line in u.lines)
 
-        if len(low_text_pages) == doc.page_count:
+        no_usable_text = not any(b.text.strip() for b in blocks)
+        if doc.page_count == 0 or len(low_text_pages) == doc.page_count or no_usable_text:
             raise UnsupportedContent(
                 "The PDF has no usable text layer (it looks scanned). OCR is not supported; "
                 "upload a text-based PDF or a DOCX."

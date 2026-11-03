@@ -92,7 +92,9 @@ class CoachAgent:
         if profile_data is None:
             try:
                 from uuid import UUID
+
                 from talentgraph.db.in_memory import get_candidate_in_memory
+
                 mem = get_candidate_in_memory(UUID(candidate_id))
                 if mem is not None:
                     profile_data = mem.parsed.model_dump()

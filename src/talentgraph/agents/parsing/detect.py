@@ -13,6 +13,8 @@ from talentgraph.core.schemas.resume import FileKind
 
 # Leading bytes of formats people commonly upload by mistake.
 _BINARY_SIGNATURES: dict[bytes, str] = {
+    b"MZ": "Windows executable (.exe)",
+    b"\x7fELF": "Linux ELF binary",
     b"\x89PNG\r\n\x1a\n": "PNG image",
     b"\xff\xd8\xff": "JPEG image",
     b"GIF87a": "GIF image",

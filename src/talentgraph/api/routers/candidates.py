@@ -9,15 +9,15 @@ from fastapi import APIRouter, Query
 from sqlalchemy import select
 
 from talentgraph.api.schemas import CandidateDetailResponse
-from talentgraph.core.schemas.resume import ParsedResume
 from talentgraph.core.errors import NotFound
+from talentgraph.core.schemas.resume import ParsedResume
 from talentgraph.core.schemas.skills import NormalizedSkill, SkillProfile
 from talentgraph.db.in_memory import (
     get_all_candidates_in_memory,
     get_candidate_in_memory,
 )
 from talentgraph.db.models import Candidate, CandidateSkill, Skill
-from talentgraph.db.session import async_session_scope
+from talentgraph.db.session import async_session_scope, is_db_available
 
 router = APIRouter(tags=["candidates"])
 log = structlog.get_logger(__name__)
@@ -30,7 +30,7 @@ def _extract_str(val: Any, default: str = "") -> str:
     if isinstance(val, dict):
         return str(val.get("value") or default)
     if hasattr(val, "value"):
-        return str(getattr(val, "value") or default)
+        return str(val.value or default)
     return str(val)
 
 
@@ -118,25 +118,7 @@ async def list_candidates() -> list[dict[str, Any]]:
 )
 async def get_candidate(candidate_id: UUID) -> CandidateDetailResponse:
     """Retrieve candidate parsed details, quality score, and metadata."""
-    # 1. Try DB first
-    try:
-        async with async_session_scope() as session:
-            stmt = select(Candidate).where(Candidate.id == candidate_id)
-            res = await session.execute(stmt)
-            cand = res.scalar_one_or_none()
-            if cand is not None:
-                return CandidateDetailResponse(
-                    id=str(cand.id),
-                    file_sha256=cand.file_sha256,
-                    parsed=cand.parsed,
-                    quality=cand.quality,
-                    pipeline_version=cand.pipeline_version,
-                    created_at=cand.created_at,
-                )
-    except Exception as exc:
-        log.debug("candidates.db_lookup_failed", error=str(exc))
-
-    # 2. Try in-memory fallback
+    # 1. Try in-memory store first
     mem = get_candidate_in_memory(candidate_id)
     if mem is not None:
         return CandidateDetailResponse(
@@ -147,6 +129,25 @@ async def get_candidate(candidate_id: UUID) -> CandidateDetailResponse:
             pipeline_version="0.1.0",
             created_at=datetime.now(UTC),
         )
+
+    # 2. Try DB if available
+    if is_db_available():
+        try:
+            async with async_session_scope() as session:
+                stmt = select(Candidate).where(Candidate.id == candidate_id)
+                res = await session.execute(stmt)
+                cand = res.scalar_one_or_none()
+                if cand is not None:
+                    return CandidateDetailResponse(
+                        id=str(cand.id),
+                        file_sha256=cand.file_sha256,
+                        parsed=cand.parsed,
+                        quality=cand.quality,
+                        pipeline_version=cand.pipeline_version,
+                        created_at=cand.created_at,
+                    )
+        except Exception as exc:
+            log.debug("candidates.db_lookup_failed", error=str(exc))
 
     raise NotFound(f"Candidate {candidate_id} not found")
 

@@ -130,7 +130,8 @@ def build_resume(
                 if s.label in ("contact", "other"):
                     for b in s.blocks:
                         t = b.text.strip()
-                        if len(t) >= 50 and "@" not in t and "http" not in t and sum(c.isalpha() for c in t) / len(t) > 0.6:
+                        is_prose = sum(c.isalpha() for c in t) / len(t) > 0.6 if t else False
+                        if len(t) >= 50 and "@" not in t and "http" not in t and is_prose:
                             resume.summary = grounded_text(t, RULE_CONFIDENCE["summary"])
                             sources["summary"] = "rules"
                             break
@@ -158,7 +159,8 @@ def build_resume(
                 sources[key] = "llm"
     else:
         # Heuristic rules fallback for experience, education, certifications, and projects
-        resume.experience = _rules_experience([s for s in sections if s.label == "experience"], ym, resume.skills)
+        exp_secs = [s for s in sections if s.label == "experience"]
+        resume.experience = _rules_experience(exp_secs, ym, resume.skills)
         if resume.experience:
             sources["experience"] = "rules"
 
@@ -166,7 +168,8 @@ def build_resume(
         if resume.education:
             sources["education"] = "rules"
 
-        resume.certifications = _rules_certifications([s for s in sections if s.label == "certifications"])
+        cert_secs = [s for s in sections if s.label == "certifications"]
+        resume.certifications = _rules_certifications(cert_secs)
         if resume.certifications:
             sources["certifications"] = "rules"
 
@@ -365,6 +368,7 @@ def _rules_experience(
     sections: list[Section], today: tuple[int, int], skills: list[Skill]
 ) -> list[Experience]:
     import re
+
     items: list[Experience] = []
     current_item: Experience | None = None
 
@@ -374,11 +378,18 @@ def _rules_experience(
             if not text:
                 continue
             date_ranges = find_date_ranges(text)
-            is_bullet = b.is_bullet or text.startswith(("*", "-", "•", "·", "o ")) or bool(re.match(r"^\d+\.", text))
+            has_bullet_prefix = text.startswith(("*", "-", "•", "·", "o "))
+            is_bullet = b.is_bullet or has_bullet_prefix or bool(re.match(r"^\d+\.", text))
             has_delim = any(d in text for d in ("|", " - ", " – ", " — ", " at ", " @ "))
 
-            if (not is_bullet and (has_delim or date_ranges or b.bold)) or (not current_item and not is_bullet):
-                if current_item and date_ranges and not current_item.start and len(text.split()) <= 7:
+            is_header = not is_bullet and (has_delim or date_ranges or b.bold)
+            if is_header or (not current_item and not is_bullet):
+                if (
+                    current_item is not None
+                    and not current_item.start
+                    and date_ranges
+                    and len(text.split()) <= 7
+                ):
                     dr = date_ranges[0]
                     current_item.start = grounded_text(dr.start, 0.85) if dr.start else None
                     current_item.end = grounded_text(dr.end, 0.85) if dr.end else None
@@ -390,7 +401,8 @@ def _rules_experience(
                 if dr_val:
                     clean_text = clean_text.replace(dr_val.text, "").strip(" |·•,-")
 
-                parts = [p.strip() for p in re.split(r"\s*[|·•]\s*|\s+(?:at|@)\s+|\s+[–—\-]+\s+", clean_text) if p.strip()]
+                sep_pat = r"\s*[|·•]\s*|\s+(?:at|@)\s+|\s+[–—\-]+\s+"
+                parts = [p.strip() for p in re.split(sep_pat, clean_text) if p.strip()]
                 if len(parts) >= 2:
                     title_val, company_val = parts[0], parts[1]
                     loc_val = parts[2] if len(parts) >= 3 else None
@@ -420,7 +432,8 @@ def _rules_experience(
                     current_item.responsibilities.append(grounded_text(bullet_clean, 0.85))
                     b_lower = bullet_clean.casefold()
                     for sk in skills:
-                        if sk.raw and sk.raw.casefold() in b_lower and sk.raw not in current_item.skills_mentioned:
+                        matched = sk.raw and sk.raw.casefold() in b_lower
+                        if matched and sk.raw and sk.raw not in current_item.skills_mentioned:
                             current_item.skills_mentioned.append(sk.raw)
 
     for item in items:
@@ -436,6 +449,7 @@ def _rules_experience(
 
 def _rules_education(sections: list[Section]) -> list[Education]:
     import re
+
     items: list[Education] = []
     current_item: Education | None = None
 
@@ -469,7 +483,8 @@ def _rules_education(sections: list[Section]) -> list[Education]:
                 field_val = deg_match.group(2).strip() if deg_match and deg_match.group(2) else None
 
                 if not inst_val or not deg_val:
-                    parts = [p.strip() for p in re.split(r"\s*[—–\-]\s*|\s*,\s*", text) if p.strip()]
+                    ed_pat = r"\s*[—–\-]\s*|\s*,\s*"
+                    parts = [p.strip() for p in re.split(ed_pat, text) if p.strip()]
                     if len(parts) >= 2:
                         if not deg_val:
                             deg_val = parts[0]
@@ -509,6 +524,7 @@ def _rules_certifications(sections: list[Section]) -> list[Certification]:
 
 def _rules_projects(sections: list[Section]) -> list[Project]:
     import re
+
     projects: list[Project] = []
     for s in sections:
         for b in s.blocks:
@@ -516,5 +532,6 @@ def _rules_projects(sections: list[Section]) -> list[Project]:
             if t and len(t) >= 5 and not t.lower().startswith("project"):
                 parts = [p.strip() for p in re.split(r"\s*[|·•–—\-]\s*", t) if p.strip()]
                 name = parts[0] if parts else t
-                projects.append(Project(name=grounded_text(name, 0.85), description=grounded_text(t, 0.85)))
+                proj_name = grounded_text(name, 0.85)
+                projects.append(Project(name=proj_name, description=grounded_text(t, 0.85)))
     return projects
