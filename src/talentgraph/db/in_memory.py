@@ -17,12 +17,16 @@ class InMemoryCandidateRecord:
         parsed: ParsedResume,
         profile: SkillProfile,
         quality: float | None = None,
+        status: str = "ok",
+        warnings: list[str] | None = None,
     ) -> None:
         self.id = candidate_id
         self.file_sha256 = file_sha256
         self.parsed = parsed
         self.profile = profile
         self.quality = quality
+        self.status = status
+        self.warnings = warnings or []
 
 
 class InMemoryJobRecord:
@@ -95,3 +99,10 @@ def save_match_in_memory(record: InMemoryMatchRecord) -> None:
 
 def get_match_in_memory(match_id: UUID) -> InMemoryMatchRecord | None:
     return _MATCHES.get(match_id)
+
+
+def clear_in_memory_db() -> None:
+    """Clear all in-memory records (useful for test isolation)."""
+    _CANDIDATES.clear()
+    _JOBS.clear()
+    _MATCHES.clear()

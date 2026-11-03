@@ -31,7 +31,11 @@ class LLMClient(Protocol):
 
 def _is_retryable(exc: BaseException) -> bool:
     if isinstance(exc, genai_errors.APIError):
-        return exc.code == 429 or exc.code >= 500
+        if exc.code == 429:
+            msg = str(exc).lower()
+            permanent = any(w in msg for w in ("per day", "daily", "limit exceeded", "quota"))
+            return not permanent
+        return exc.code >= 500
     return isinstance(exc, (TimeoutError, ConnectionError, LLMError))
 
 

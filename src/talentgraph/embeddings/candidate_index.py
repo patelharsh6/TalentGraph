@@ -14,6 +14,7 @@ import numpy as np
 from numpy.typing import NDArray
 
 from talentgraph.config import get_settings
+from talentgraph.core.net import check_tcp_reachability
 from talentgraph.embeddings.encoder import Encoder
 from talentgraph.embeddings.vector_store import (
     ChromaVectorStore,
@@ -105,11 +106,13 @@ def get_candidate_index(
     host = chroma_host or settings.chroma_host
     port = chroma_port or settings.chroma_port
 
-    try:
-        store = ChromaVectorStore(host=host, port=port, collection="candidates")
-        # Probe heartbeat to ensure Chroma is reachable
-        store.heartbeat()
-        return CandidateIndex(store)
-    except Exception:
-        # Fallback to local numpy store
-        return CandidateIndex.from_numpy_cache(cache_path)
+    if check_tcp_reachability(host, port, timeout=0.25):
+        try:
+            store = ChromaVectorStore(host=host, port=port, collection="candidates")
+            # Probe heartbeat to ensure Chroma is reachable
+            store.heartbeat()
+            return CandidateIndex(store)
+        except Exception:
+            pass
+    # Fallback to local numpy store
+    return CandidateIndex.from_numpy_cache(cache_path)

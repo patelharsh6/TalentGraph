@@ -71,7 +71,10 @@ def create_pipeline_graph(
                     )
             return AgentResult(
                 status=parsed_res.status,  # "ok" or "partial"
-                data={"parsed_resume": parsed_res.resume.model_dump(), "warnings": parsed_res.warnings},
+                data={
+                    "parsed_resume": parsed_res.resume.model_dump(),
+                    "warnings": parsed_res.warnings,
+                },
                 quality=parsed_res.quality,
                 latency_ms=latency_ms,
             )

@@ -67,23 +67,24 @@ async def parse_resume(
     if cached_mem is not None:
         total_latency = int((time.perf_counter() - t0) * 1000)
         meta = ResponseMeta(
-            status="ok",
+            status=cached_mem.status,
             trace_id=str(uuid4()),
             pipeline_version=PIPELINE_VERSION,
             latency_ms=total_latency,
             quality=cached_mem.quality or 1.0,
-            warnings=[],
+            warnings=cached_mem.warnings,
             trace=[] if include == "trace" else None,
         )
         from talentgraph.agents.matching.recommend import recommend_roles_for_profile
+
         suggested_roles = recommend_roles_for_profile(cached_mem.profile)
         return ApiResponse(
             data=ParseResponseData(
                 candidate_id=str(cached_mem.id),
                 parsed=cached_mem.parsed,
                 profile=cached_mem.profile,
-                status="ok",
-                warnings=[],
+                status=cached_mem.status,
+                warnings=cached_mem.warnings,
                 suggested_roles=suggested_roles,
             ),
             meta=meta,
@@ -108,6 +109,7 @@ async def parse_resume(
         r.quality for r in result_state.agent_runs if r.agent == "parser" and r.quality is not None
     ]
     quality = parser_scores[0] if parser_scores else 1.0
+    warnings = [e.message for e in result_state.errors]
 
     # In-memory save for offline test availability
     profile = result_state.skill_profile or SkillProfile()
@@ -118,6 +120,8 @@ async def parse_resume(
             parsed=result_state.parsed_resume,
             profile=profile,
             quality=quality,
+            status=result_state.status,
+            warnings=warnings,
         )
     )
 
@@ -197,6 +201,7 @@ async def parse_resume(
     )
 
     from talentgraph.agents.matching.recommend import recommend_roles_for_profile
+
     suggested_roles = recommend_roles_for_profile(profile)
 
     response_data = ParseResponseData(

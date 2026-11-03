@@ -17,7 +17,6 @@ from talentgraph.agents.coach.agent import CoachAgent
 from talentgraph.agents.search.agent import SearchAgent
 from talentgraph.api.main import create_app
 from talentgraph.api.schemas import BulletRewrite, CoachReport, InterviewQuestion, LearningGoal
-from talentgraph.config import Settings
 from talentgraph.db.repositories.taxonomy import get_taxonomy_repository
 
 pytestmark = [pytest.mark.unit]
@@ -31,6 +30,7 @@ def app(monkeypatch: pytest.MonkeyPatch) -> FastAPI:
     """FastAPI test app configured for offline execution."""
     monkeypatch.setenv("API_KEY", "test-key")
     from talentgraph.config import get_settings
+
     get_settings.cache_clear()
     test_settings = get_settings()
     application = create_app()

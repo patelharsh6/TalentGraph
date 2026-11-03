@@ -15,6 +15,7 @@ import numpy as np
 from numpy.typing import NDArray
 
 from talentgraph.config import get_settings
+from talentgraph.core.net import check_tcp_reachability
 from talentgraph.embeddings.encoder import Encoder
 from talentgraph.embeddings.vector_store import (
     ChromaVectorStore,
@@ -82,12 +83,13 @@ class SkillIndex:
     def from_chroma_or_fallback(cls) -> SkillIndex:
         """Connect to ChromaDB if reachable and seeded; otherwise load the Numpy store."""
         settings = get_settings()
-        try:
-            chroma = ChromaVectorStore(settings.chroma_host, settings.chroma_port, "skills")
-            if chroma.count() > 0:
-                return cls(store=chroma)
-        except Exception:
-            pass
+        if check_tcp_reachability(settings.chroma_host, settings.chroma_port, timeout=0.25):
+            try:
+                chroma = ChromaVectorStore(settings.chroma_host, settings.chroma_port, "skills")
+                if chroma.count() > 0:
+                    return cls(store=chroma)
+            except Exception:
+                pass
         return cls.from_numpy_cache()
 
 
